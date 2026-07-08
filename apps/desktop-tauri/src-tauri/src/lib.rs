@@ -19,6 +19,12 @@ fn migrations() -> Vec<Migration> {
             sql: include_str!("../migrations/0002_seed_feature_flags.sql"),
             kind: MigrationKind::Up,
         },
+        Migration {
+            version: 3,
+            description: "pronunciation_rules",
+            sql: include_str!("../migrations/0003_pronunciation_rules.sql"),
+            kind: MigrationKind::Up,
+        },
     ]
 }
 

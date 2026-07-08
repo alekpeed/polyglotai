@@ -13,9 +13,11 @@
   },
   "dependencies": {
     "@polyglotai/shared-types": "workspace:*",
-    "@polyglotai/spaced-repetition": "workspace:*"
+    "@polyglotai/spaced-repetition": "workspace:*",
+    "@polyglotai/language-pack-sdk": "workspace:*"
   },
   "devDependencies": {
+    "@types/node": "^20.16.0",
     "typescript": "^5.6.0",
     "vitest": "^2.1.0"
   }

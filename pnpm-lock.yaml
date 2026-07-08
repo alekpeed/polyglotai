@@ -85,6 +85,9 @@ importers:
 
   packages/core-learning:
     dependencies:
+      '@polyglotai/language-pack-sdk':
+        specifier: workspace:*
+        version: link:../language-pack-sdk
       '@polyglotai/shared-types':
         specifier: workspace:*
         version: link:../shared-types
@@ -92,6 +95,9 @@ importers:
         specifier: workspace:*
         version: link:../spaced-repetition
     devDependencies:
+      '@types/node':
+        specifier: ^20.16.0
+        version: 20.19.43
       typescript:
         specifier: ^5.6.0
         version: 5.9.3

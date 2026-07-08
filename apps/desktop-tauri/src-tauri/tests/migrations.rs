@@ -7,6 +7,7 @@ use sqlx::Row;
 
 const MIGRATION_0001: &str = include_str!("../migrations/0001_initial.sql");
 const MIGRATION_0002: &str = include_str!("../migrations/0002_seed_feature_flags.sql");
+const MIGRATION_0003: &str = include_str!("../migrations/0003_pronunciation_rules.sql");
 
 const EXPECTED_TABLES: &[&str] = &[
     "schema_meta",
@@ -17,6 +18,7 @@ const EXPECTED_TABLES: &[&str] = &[
     "real_speech_items",
     "dialogues",
     "lessons",
+    "pronunciation_rules",
     "review_items",
     "review_results",
     "conversations",
@@ -41,6 +43,10 @@ async fn fresh_database_migrates_to_head() {
         .execute(&pool)
         .await
         .expect("migration 0002 should apply cleanly after 0001");
+    sqlx::raw_sql(MIGRATION_0003)
+        .execute(&pool)
+        .await
+        .expect("migration 0003 should apply cleanly after 0002");
 
     for table in EXPECTED_TABLES {
         let row = sqlx::query("SELECT name FROM sqlite_master WHERE type = 'table' AND name = ?")
@@ -56,7 +62,7 @@ async fn fresh_database_migrates_to_head() {
         .await
         .expect("schema_meta should have a db_version row")
         .get(0);
-    assert_eq!(db_version, "1");
+    assert_eq!(db_version, "2", "0003 bumps db_version to 2");
 
     let flag_count: i64 = sqlx::query("SELECT COUNT(*) FROM feature_flags")
         .fetch_one(&pool)

@@ -528,6 +528,11 @@ CREATE TABLE feature_flags (
 - Onboarding's diagnostic result (§6 steps 7–9) is recorded as a `progress_events` row
   (`kind='diagnostic_completed'`) rather than a dedicated table — it's a one-time MVP event,
   not an ongoing tracked entity.
+- **Migration 0003 adds a `pronunciation_rules` content table** (grapheme, ipa, description,
+  minimal_pairs_json, keyed by `(pack_id, item_key)`). The original schema above had
+  `pronunciation_attempts` (user recordings) but no home for pack-authored pronunciation
+  *content*, which §10.1 counts (20 drills) and the pack declares in `pronunciation/rules.json`.
+  Added as an additive migration, which also exercises the versioned-upgrade path (risk 4).
 
 ---
 
