@@ -720,6 +720,29 @@ lockstep.
 self-contained `pt-br` pack (no base), but the resolver is built and tested so regional
 sub-packs (e.g. `pt-br-rj`) can inherit later without core changes.
 
+### 5.5 Future: country/culture theme packs (post-MVP roadmap idea)
+
+Owner's idea (captured here, not scheduled for MVP): every language that's official in
+multiple countries should eventually get a themed pack per country/culture — e.g. Portuguese
+→ Brazil, Portugal, Angola, Mozambique; English → USA, UK, Ghana, Australia; Spanish → Mexico,
+Argentina, Spain. Goal: make the app as comprehensive and immersive as possible, not just
+"one dialect represents the whole language."
+
+This is **architecturally free** — it's the same `basePack` inheritance mechanism above, one
+level up: a shared "Portuguese core" pack holds what's common (core grammar, base vocabulary),
+and `pt-br`, `pt-pt`, `pt-ao` etc. each inherit it and override/extend with their own slang,
+idioms, profanity, dialogues, cultural notes, and regional pronunciation — exactly like the
+existing `pt-br-rj` sub-pack idea, just at country scope instead of city scope. No core-engine
+changes needed: the loader, validator, and DB import already handle inheritance and multiple
+installed packs per language.
+
+**The real cost is content, not code.** Each country pack needs its own genuine authoring pass
+— Angolan Portuguese slang isn't Brazilian slang with a flag swapped — comparable in effort to
+the `pt-br` Tier-1 pass already done. So this is a content-investment roadmap item (candidate
+for Phase 8/9, alongside the plugin ecosystem and paid language-pack add-ons), not a technical
+blocker. When it's time to build it: define the shared-core pack first, then greenlight one
+country pack at a time through the same authoring-agent + validator pipeline used for `pt-br`.
+
 ---
 
 ## 6. First Brazilian Portuguese Language Pack (structure)
