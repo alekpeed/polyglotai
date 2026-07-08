@@ -1,0 +1,11 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.cafe-order",
+    "scenario": "café",
+    "speakers": [{ "id": "a", "name": "Ana" }],
+    "transcript": [{ "speakerId": "a", "text": "Quero água, por favor." }],
+    "translation": [{ "speakerId": "a", "text": "I want water, please." }],
+    "keyVocabulary": ["vocab.agua"]
+  }
+]

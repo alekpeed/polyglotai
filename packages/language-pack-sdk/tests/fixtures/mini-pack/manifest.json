@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "mini",
+  "name": "Mini Test Pack",
+  "languageCode": "pt-BR",
+  "packVersion": "0.0.1",
+  "basePack": null,
+  "contents": {
+    "vocabulary": ["vocabulary/a1.json"],
+    "grammar": ["grammar/core.json"],
+    "dialogues": ["dialogues/general.json"]
+  }
+}
