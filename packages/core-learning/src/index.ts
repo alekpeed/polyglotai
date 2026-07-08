@@ -17,3 +17,4 @@ export * from "./repos.js";
 export * from "./services/onboarding.js";
 export * from "./services/dashboard.js";
 export * from "./services/reviewCard.js";
+export * from "./services/content.js";

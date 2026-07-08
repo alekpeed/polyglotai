@@ -238,3 +238,73 @@ button.link {
   color: #646cff;
   margin-top: 1rem;
 }
+
+/* ---- Library ---- */
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  padding: 0.4em 0.9em;
+  font-size: 0.9em;
+}
+
+.tabs button.active {
+  border-color: #396cd8;
+  background-color: #eef2ff;
+}
+
+.entry-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.entry-list li {
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.entry-front {
+  font-weight: 700;
+}
+
+.entry-back {
+  color: #444;
+}
+
+.entry-tag {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.entry-list li.locked {
+  opacity: 0.7;
+  background: rgba(127, 127, 127, 0.06);
+}
+
+.grammar-entry .entry-back {
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
+
+@media (prefers-color-scheme: dark) {
+  .tabs button.active {
+    background-color: #1e2a55;
+  }
+  .entry-back {
+    color: #cfcfcf;
+  }
+}

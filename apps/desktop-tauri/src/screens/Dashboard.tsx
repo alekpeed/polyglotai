@@ -6,9 +6,10 @@ interface Props {
   repos: Repos;
   profile: LearnerProfile;
   onStartReview: () => void;
+  onOpenLibrary: () => void;
 }
 
-export function Dashboard({ repos, profile, onStartReview }: Props) {
+export function Dashboard({ repos, profile, onStartReview, onOpenLibrary }: Props) {
   const [data, setData] = useState<DashboardData | null>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -54,6 +55,10 @@ export function Dashboard({ repos, profile, onStartReview }: Props) {
           <span className="stat-n">{data.totals.dialogues}</span> dialogues
         </div>
       </section>
+
+      <button type="button" className="link" onClick={onOpenLibrary}>
+        Browse library
+      </button>
     </main>
   );
 }

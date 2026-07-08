@@ -6,9 +6,10 @@ import { bootstrap } from "./app/bootstrap";
 import { Onboarding } from "./screens/Onboarding";
 import { Dashboard } from "./screens/Dashboard";
 import { Review } from "./screens/Review";
+import { Library } from "./screens/Library";
 import "./App.css";
 
-type View = "dashboard" | "review";
+type View = "dashboard" | "review" | "library";
 
 function App() {
   const [ready, setReady] = useState<{ repos: Repos; pack: LoadedPack } | null>(null);
@@ -51,7 +52,18 @@ function App() {
     return <Review repos={ready.repos} profile={profile} onDone={() => setView("dashboard")} />;
   }
 
-  return <Dashboard repos={ready.repos} profile={profile} onStartReview={() => setView("review")} />;
+  if (view === "library") {
+    return <Library repos={ready.repos} profile={profile} onDone={() => setView("dashboard")} />;
+  }
+
+  return (
+    <Dashboard
+      repos={ready.repos}
+      profile={profile}
+      onStartReview={() => setView("review")}
+      onOpenLibrary={() => setView("library")}
+    />
+  );
 }
 
 export default App;
