@@ -104,6 +104,34 @@ async function proxyTranscriptions(req: Request, deviceId: string): Promise<Resp
   return new Response(resultText, { status: upstream.status, headers: { ...CORS_HEADERS, "content-type": "application/json" } });
 }
 
+/** Text-to-speech (spec §12 TTSProvider). Unlike the JSON endpoints above, OpenAI returns raw
+ * audio bytes here — passed straight through rather than parsed. */
+async function proxyAudioSpeech(req: Request, deviceId: string): Promise<Response> {
+  const bodyText = await req.text();
+  const upstream = await fetch(`${OPENAI_BASE}/audio/speech`, {
+    method: "POST",
+    headers: { "content-type": "application/json", authorization: `Bearer ${OPENAI_API_KEY}` },
+    body: bodyText,
+  });
+
+  if (!upstream.ok) {
+    const errText = await upstream.text();
+    return new Response(errText, { status: upstream.status, headers: { ...CORS_HEADERS, "content-type": "application/json" } });
+  }
+
+  const audio = await upstream.arrayBuffer();
+  try {
+    const reqBody = JSON.parse(bodyText) as { model?: string };
+    await logUsage(deviceId, "audio.speech", reqBody.model ?? null, null);
+  } catch {
+    // Best-effort logging only — a malformed request body shouldn't block the audio response.
+  }
+  return new Response(audio, {
+    status: upstream.status,
+    headers: { ...CORS_HEADERS, "content-type": upstream.headers.get("content-type") ?? "audio/mpeg" },
+  });
+}
+
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: CORS_HEADERS });
 
@@ -122,6 +150,7 @@ Deno.serve(async (req) => {
 
   if (path === "/chat/completions") return proxyChatCompletions(req, deviceId);
   if (path === "/audio/transcriptions") return proxyTranscriptions(req, deviceId);
+  if (path === "/audio/speech") return proxyAudioSpeech(req, deviceId);
 
   return json({ error: "not found" }, 404);
 });

@@ -8,7 +8,7 @@ user to type in.
 - `migrations/0001_device_proxy.sql` — `devices` (hashed tokens) and `usage_log` (per-request
   logging; no cap is enforced yet, by design — see the code comments if you want to add one).
 - `functions/openai-proxy/index.ts` — the proxy itself: `POST /register`, `POST
-  /chat/completions`, `POST /audio/transcriptions`.
+  /chat/completions`, `POST /audio/transcriptions`, `POST /audio/speech`.
 
 ## One-time setup
 
@@ -44,6 +44,10 @@ VITE_AI_PROXY_URL=https://YOUR-PROJECT-REF.supabase.co/functions/v1/openai-proxy
 Then build/run the app as usual (`pnpm dev` / `pnpm build`). Without this set, AI screens
 (Tutor, Conversation, Live Interpreter, Pronunciation) show "AI features aren't available right
 now" — everything else works normally.
+
+Conversation and Live Interpreter also speak AI turns aloud (`gpt-4o-mini-tts`, ~$0.015/min)
+and accept a spoken reply via the mic button (Whisper, same as Pronunciation) — both ride the
+same device token, no separate setup.
 
 ## Verify it's working
 

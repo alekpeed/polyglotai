@@ -8,8 +8,8 @@ export interface SpeechProvider {
 }
 
 /**
- * TTSProvider — spec §12. Interface only; unimplemented in MVP. §12's general voices and
- * dialect-specific voice selection are Phase 4 work, not required by the §23 MVP scope.
+ * TTSProvider — spec §12. Implemented by OpenAiTtsProvider (providers/tts.ts). Dialect-specific
+ * voice selection (§12) is still Phase 4 work; the current adapter uses one fixed voice.
  */
 export interface TTSProvider {
   readonly name: string;
@@ -18,3 +18,4 @@ export interface TTSProvider {
 
 export * from "./score.js";
 export * from "./providers/whisper.js";
+export * from "./providers/tts.js";

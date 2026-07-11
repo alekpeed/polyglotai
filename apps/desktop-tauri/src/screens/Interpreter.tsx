@@ -3,7 +3,8 @@ import { InterpreterSession, type InterpretationGrade, type InterpreterTurn } fr
 import type { Repos } from "@polyglotai/core-learning";
 import type { LoadedPack } from "@polyglotai/language-pack-sdk";
 import type { LearnerProfile } from "@polyglotai/shared-types";
-import { makeLearnerContext, useAiProvider } from "../ai/aiContext";
+import { makeLearnerContext, useAiProvider, useSpeechProvider, useTtsProvider } from "../ai/aiContext";
+import { playAudioBlob, useVoiceRecorder } from "../ai/voice";
 
 interface Props {
   repos: Repos;
@@ -32,8 +33,13 @@ const TURN_SECONDS = 20;
  * the next in English, that the learner interprets live, under a per-turn clock. */
 export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Props) {
   const { value: provider, ready } = useAiProvider(repos, profile);
+  const speechLanguage = pack.manifest.languageCode.split("-")[0]; // "pt-BR" -> "pt"
+  const { value: speechProvider } = useSpeechProvider(repos, profile, speechLanguage);
+  const { value: ttsProvider } = useTtsProvider(repos, profile);
+  const recorder = useVoiceRecorder(speechProvider);
   const sessionRef = useRef<InterpreterSession | null>(null);
   const inputRef = useRef("");
+  const audioCacheRef = useRef<Map<number, Blob>>(new Map());
 
   const [topic, setTopic] = useState<string | null>(null);
   const [turns, setTurns] = useState<InterpreterTurn[]>([]);
@@ -44,12 +50,47 @@ export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Pr
   const [results, setResults] = useState<InterpretationGrade[]>([]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [playingTurn, setPlayingTurn] = useState<number | null>(null);
 
   const currentTurn = turns[turnIndex] ?? null;
 
   useEffect(() => {
     inputRef.current = input;
   }, [input]);
+
+  async function playTurnAudio(index: number, text: string) {
+    if (!ttsProvider) return;
+    try {
+      setPlayingTurn(index);
+      let blob = audioCacheRef.current.get(index);
+      if (!blob) {
+        blob = await ttsProvider.synthesize(text, { languageCode: speechLanguage });
+        audioCacheRef.current.set(index, blob);
+      }
+      await playAudioBlob(blob);
+    } catch {
+      // Non-fatal — the line is already readable on screen either way.
+    } finally {
+      setPlayingTurn((i) => (i === index ? null : i));
+    }
+  }
+
+  // Speak each new turn aloud as it appears — the point of "live" interpreting is listening,
+  // not reading ahead.
+  useEffect(() => {
+    if (!currentTurn || !ttsProvider) return;
+    void playTurnAudio(turnIndex, currentTurn.text);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [turnIndex, currentTurn?.text, ttsProvider]);
+
+  async function handleMicClick() {
+    if (recorder.phase === "recording") {
+      const text = await recorder.stop();
+      if (text) setInput(text);
+    } else if (recorder.phase === "idle") {
+      await recorder.start();
+    }
+  }
 
   const submitInterpretation = useCallback(async () => {
     const session = sessionRef.current;
@@ -189,7 +230,20 @@ export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Pr
         <div className="entry-tag">
           Speaker {currentTurn.speaker} · {currentTurn.language === "target" ? pack.manifest.name : "English"}
         </div>
-        <div className="review-front">{currentTurn.text}</div>
+        <div className="review-front">
+          {currentTurn.text}
+          {ttsProvider && (
+            <button
+              type="button"
+              className="bubble-play"
+              onClick={() => playTurnAudio(turnIndex, currentTurn.text)}
+              disabled={playingTurn === turnIndex}
+              aria-label="Play line aloud"
+            >
+              {playingTurn === turnIndex ? "◆" : "🔊"}
+            </button>
+          )}
+        </div>
 
         {!grade ? (
           <form
@@ -205,6 +259,17 @@ export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Pr
               disabled={busy}
               autoFocus
             />
+            {speechProvider && (
+              <button
+                type="button"
+                className={`mic-btn ${recorder.phase === "recording" ? "recording" : ""}`}
+                onClick={handleMicClick}
+                disabled={busy || recorder.phase === "transcribing"}
+                aria-label={recorder.phase === "recording" ? "Stop recording" : "Speak your interpretation"}
+              >
+                {recorder.phase === "recording" ? "■" : recorder.phase === "transcribing" ? "…" : "🎤"}
+              </button>
+            )}
             <button type="submit" disabled={busy || !input.trim()}>
               Submit
             </button>
@@ -226,6 +291,7 @@ export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Pr
       </section>
 
       {error && <p className="error">{error}</p>}
+      {recorder.error && <p className="error">{recorder.error}</p>}
 
       <button type="button" className="link" onClick={onDone}>
         Stop for now

@@ -3,7 +3,8 @@ import { ConversationSession } from "@polyglotai/ai-orchestration";
 import type { Repos } from "@polyglotai/core-learning";
 import type { LoadedPack } from "@polyglotai/language-pack-sdk";
 import type { LearnerProfile } from "@polyglotai/shared-types";
-import { makeConversationTaskPrompt, makeLearnerContext, useAiProvider } from "../ai/aiContext";
+import { makeConversationTaskPrompt, makeLearnerContext, useAiProvider, useSpeechProvider, useTtsProvider } from "../ai/aiContext";
+import { playAudioBlob, useVoiceRecorder } from "../ai/voice";
 
 interface Props {
   repos: Repos;
@@ -34,13 +35,19 @@ interface Bubble {
 
 export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: Props) {
   const { value: provider, ready } = useAiProvider(repos, profile);
+  const speechLanguage = pack.manifest.languageCode.split("-")[0]; // "pt-BR" -> "pt"
+  const { value: speechProvider } = useSpeechProvider(repos, profile, speechLanguage);
+  const { value: ttsProvider } = useTtsProvider(repos, profile);
+  const recorder = useVoiceRecorder(speechProvider);
   const [scenario, setScenario] = useState<string | null>(null);
   const [bubbles, setBubbles] = useState<Bubble[]>([]);
   const [input, setInput] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [playingIndex, setPlayingIndex] = useState<number | null>(null);
   const sessionRef = useRef<ConversationSession | null>(null);
   const conversationIdRef = useRef<string | null>(null);
+  const audioCacheRef = useRef<Map<number, Blob>>(new Map());
 
   if (!ready) return <p className="container">Connecting…</p>;
 
@@ -84,7 +91,11 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
     setBubbles((b) => [...b, { role: "user", content: text }]);
     try {
       const reply = await session.send(text);
-      setBubbles((b) => [...b, { role: "assistant", content: reply }]);
+      let replyIndex = -1;
+      setBubbles((b) => {
+        replyIndex = b.length;
+        return [...b, { role: "assistant", content: reply }];
+      });
       const convoId = conversationIdRef.current;
       if (convoId) {
         await repos.conversations.appendMessage(convoId, "user", text);
@@ -92,10 +103,38 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
           tokens: session.tokensSpent,
         });
       }
+      if (replyIndex >= 0) void playBubble(replyIndex, reply);
     } catch (err) {
       setError(String(err));
     } finally {
       setBusy(false);
+    }
+  }
+
+  /** Speaks a bubble aloud — synthesized once per index, then cached for instant replay. */
+  async function playBubble(index: number, text: string) {
+    if (!ttsProvider) return;
+    try {
+      setPlayingIndex(index);
+      let blob = audioCacheRef.current.get(index);
+      if (!blob) {
+        blob = await ttsProvider.synthesize(text, { languageCode: speechLanguage });
+        audioCacheRef.current.set(index, blob);
+      }
+      await playAudioBlob(blob);
+    } catch {
+      // Non-fatal — the text bubble is already on screen either way.
+    } finally {
+      setPlayingIndex((i) => (i === index ? null : i));
+    }
+  }
+
+  async function handleMicClick() {
+    if (recorder.phase === "recording") {
+      const text = await recorder.stop();
+      if (text) setInput(text);
+    } else if (recorder.phase === "idle") {
+      await recorder.start();
     }
   }
 
@@ -131,13 +170,25 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
         {bubbles.length === 0 && <p className="subtitle">Say something to start — in Portuguese if you can!</p>}
         {bubbles.map((b, i) => (
           <div key={i} className={`bubble ${b.role}`}>
-            {b.content}
+            <span>{b.content}</span>
+            {b.role === "assistant" && ttsProvider && (
+              <button
+                type="button"
+                className="bubble-play"
+                onClick={() => playBubble(i, b.content)}
+                disabled={playingIndex === i}
+                aria-label="Play aloud"
+              >
+                {playingIndex === i ? "◆" : "🔊"}
+              </button>
+            )}
           </div>
         ))}
         {busy && <div className="bubble assistant pending">…</div>}
       </section>
 
       {error && <p className="error">{error}</p>}
+      {recorder.error && <p className="error">{recorder.error}</p>}
 
       <form className="chat-input" onSubmit={handleSend}>
         <input
@@ -146,6 +197,17 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
           placeholder="Escreva aqui…"
           disabled={busy}
         />
+        {speechProvider && (
+          <button
+            type="button"
+            className={`mic-btn ${recorder.phase === "recording" ? "recording" : ""}`}
+            onClick={handleMicClick}
+            disabled={busy || recorder.phase === "transcribing"}
+            aria-label={recorder.phase === "recording" ? "Stop recording" : "Speak your reply"}
+          >
+            {recorder.phase === "recording" ? "■" : recorder.phase === "transcribing" ? "…" : "🎤"}
+          </button>
+        )}
         <button type="submit" disabled={busy || !input.trim()}>
           Send
         </button>

@@ -7,7 +7,7 @@ import {
   type AIProvider,
   type LearnerContext,
 } from "@polyglotai/ai-orchestration";
-import { WhisperProvider, type SpeechProvider } from "@polyglotai/pronunciation";
+import { OpenAiTtsProvider, WhisperProvider, type SpeechProvider, type TTSProvider } from "@polyglotai/pronunciation";
 import { effectiveSeverityCeiling, type Repos } from "@polyglotai/core-learning";
 import type { LoadedPack } from "@polyglotai/language-pack-sdk";
 import type { LearnerProfile } from "@polyglotai/shared-types";
@@ -84,6 +84,14 @@ export async function makeSpeechProvider(
   return new WhisperProvider({ apiKey: token, baseUrl: PROXY_BASE_URL, ...(language ? { language } : {}) });
 }
 
+/** Same proxy, TTS endpoint — used to speak AI turns aloud in Conversation/Live Interpreter. */
+export async function makeTtsProvider(repos: Repos, profile: LearnerProfile): Promise<TTSProvider | null> {
+  if (!PROXY_BASE_URL) return null;
+  const token = await ensureDeviceToken(repos, profile);
+  if (!token) return null;
+  return new OpenAiTtsProvider({ apiKey: token, baseUrl: PROXY_BASE_URL });
+}
+
 interface AsyncResource<T> {
   value: T | null;
   ready: boolean;
@@ -117,6 +125,10 @@ export function useSpeechProvider(
   language?: string,
 ): AsyncResource<SpeechProvider> {
   return useAsyncProvider(() => makeSpeechProvider(repos, profile, language), [repos, profile.id, language]);
+}
+
+export function useTtsProvider(repos: Repos, profile: LearnerProfile): AsyncResource<TTSProvider> {
+  return useAsyncProvider(() => makeTtsProvider(repos, profile), [repos, profile.id]);
 }
 
 /** Learner context for prompts (spec §14) straight from the profile + pack. */
