@@ -6,9 +6,20 @@ import type { Database as CoreDatabase, SqlValue } from "@polyglotai/core-learni
  * (sqlx/SQLite). All core SQL uses `?` positional placeholders, which sqlx-SQLite binds in
  * order (verified by the Rust migration test) — the same style node:sqlite uses in unit tests.
  *
- * `transaction` is best-effort: the plugin pools connections, so BEGIN/COMMIT issued as
- * separate calls may not share a connection (plan risk 5). core-learning's writes are all
- * idempotent upserts, so correctness never depends on rollback — this just narrows the window.
+ * IMPORTANT — no app-level BEGIN/COMMIT here. The plugin's Rust side calls `pool.execute()`
+ * per invocation (confirmed by reading tauri-plugin-sql's source), meaning every `execute`/
+ * `select` call can be served by a *different* pooled connection with zero session affinity.
+ * A `BEGIN` sent from here can land on one connection and simply sit there holding a lock
+ * while later statements land on other connections — which is exactly what caused a real
+ * "database is locked" (SQLITE_BUSY) error during onboarding's pack import. Every write in
+ * core-learning is an idempotent upsert specifically so correctness never depends on
+ * atomicity (plan risk 5) — so `transaction()` here is a no-op wrapper, not best-effort.
+ *
+ * Same reasoning applies to per-connection PRAGMAs (e.g. foreign_keys): a PRAGMA set via one
+ * `execute()` call only affects the connection that happened to serve it, not the pool as a
+ * whole. This plugin version exposes no pool-wide connection-setup hook, so FK enforcement is
+ * not reliably active — a follow-up, not urgent (our own code never writes a dangling
+ * reference; the DB-level constraint would only catch a bug we don't currently have).
  */
 export class TauriDatabase implements CoreDatabase {
   private constructor(private readonly db: Database) {}
@@ -16,7 +27,6 @@ export class TauriDatabase implements CoreDatabase {
   static async connect(dbName = "polyglotai.db"): Promise<TauriDatabase> {
     // Migrations registered in Rust (lib.rs) run on load.
     const db = await Database.load(`sqlite:${dbName}`);
-    await db.execute("PRAGMA foreign_keys = ON");
     return new TauriDatabase(db);
   }
 
@@ -29,19 +39,6 @@ export class TauriDatabase implements CoreDatabase {
   }
 
   async transaction<T>(fn: (tx: CoreDatabase) => Promise<T>): Promise<T> {
-    await this.run("BEGIN");
-    try {
-      const result = await fn(this);
-      await this.run("COMMIT");
-      return result;
-    } catch (err) {
-      try {
-        await this.run("ROLLBACK");
-      } catch {
-        // Ignore rollback failure (e.g. no active tx on a pooled connection); surface the
-        // original error below.
-      }
-      throw err;
-    }
+    return fn(this);
   }
 }
