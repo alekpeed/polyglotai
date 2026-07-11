@@ -171,7 +171,10 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
       <div>
         <span className="eyebrow">Conversation</span>
         <h1>Pick a scenario</h1>
-        <p className="subtitle">Your partner speaks {pack.manifest.name}.</p>
+        <p className="subtitle">
+          Your partner speaks only {pack.manifest.name} — reply in it too. Drift into English and they'll gently
+          steer you back, not switch to match you.
+        </p>
         <div className="scenario-grid">
           {SCENARIOS.map((s) => (
             <button key={s} type="button" onClick={() => start(s)}>
