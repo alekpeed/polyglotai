@@ -14,6 +14,11 @@ import { createClient } from "jsr:@supabase/supabase-js@2";
 const OPENAI_API_KEY = Deno.env.get("OPENAI_API_KEY");
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
 const SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+// Optional: when set, /register requires a matching passcode in the request body. Lets a link
+// (e.g. the public web build) be shared without opening registration to anyone who finds the
+// URL — leave unset for no gate at all. Rotate/unset anytime via the ACCESS_PASSCODE GitHub
+// secret; doesn't affect devices that already registered (see supabase/README.md to revoke those).
+const ACCESS_PASSCODE = Deno.env.get("ACCESS_PASSCODE");
 const OPENAI_BASE = "https://api.openai.com/v1";
 
 const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY);
@@ -45,7 +50,17 @@ function routePath(url: URL): string {
   return url.pathname.replace(/^\/(functions\/v1\/)?openai-proxy/, "") || "/";
 }
 
-async function registerDevice(): Promise<Response> {
+async function registerDevice(req: Request): Promise<Response> {
+  if (ACCESS_PASSCODE) {
+    let passcode = "";
+    try {
+      const body = (await req.json()) as { passcode?: string };
+      passcode = typeof body.passcode === "string" ? body.passcode : "";
+    } catch {
+      // No/invalid JSON body -> passcode stays empty, rejected below same as a wrong one.
+    }
+    if (passcode !== ACCESS_PASSCODE) return json({ error: "invalid passcode" }, 401);
+  }
   const token = crypto.randomUUID() + crypto.randomUUID();
   const tokenHash = await sha256Hex(token);
   const { error } = await supabase.from("devices").insert({ token_hash: tokenHash });
@@ -139,7 +154,7 @@ Deno.serve(async (req) => {
 
   // Registration never touches OpenAI, so it must not be gated behind OPENAI_API_KEY — a
   // fresh deploy (secret not set yet) should still let devices register.
-  if (path === "/register" && req.method === "POST") return registerDevice();
+  if (path === "/register" && req.method === "POST") return registerDevice(req);
 
   if (req.method !== "POST") return json({ error: "not found" }, 404);
 

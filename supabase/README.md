@@ -87,3 +87,22 @@ supabase db push                                         # schema only
   forwarding to OpenAI, and reject with a 429 over the limit.
 - A device token is exactly as sensitive as a login session token for this proxy — if the app
   is ever handed to genuinely untrusted parties at scale, revisit this.
+
+## Access passcode (optional, for sharing a link)
+
+Set the `ACCESS_PASSCODE` repo secret (same place as `SUPABASE_ACCESS_TOKEN`) and the deploy
+workflow pushes it to Supabase automatically; `/register` then requires it. The client (both
+the desktop app and the browser build) tries with no passcode first — a no-op for your own
+already-registered devices — and only prompts if the proxy actually rejects it, so this never
+disrupts your own use.
+
+- **To let someone in:** set the secret, push (or re-run the workflow), and tell them the
+  passcode out of band (not in the link itself).
+- **To stop new people from getting in:** rotate or delete the `ACCESS_PASSCODE` secret and
+  re-run the workflow. This only blocks *new* registrations — anyone already registered keeps
+  their existing device token (registration is a one-time handshake; the passcode isn't
+  re-checked on every request).
+- **To cut off someone who already registered:** open the Supabase dashboard → Table Editor →
+  `devices`, find their row (newest `created_at`/`last_seen_at` that isn't you), and delete it.
+  Their cached token stops authenticating on their very next request — immediate, no redeploy
+  needed.

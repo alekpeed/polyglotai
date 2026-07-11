@@ -38,6 +38,17 @@ export function readAiSettings(profile: LearnerProfile): AiSettings {
 // and won't reflect a token persisted mid-session by a different screen.
 let deviceTokenCache: string | null = null;
 
+async function registerDevice(passcode: string): Promise<string | null> {
+  const res = await fetch(`${PROXY_BASE_URL}/register`, {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ passcode }),
+  });
+  if (!res.ok) return null;
+  const data = (await res.json()) as { token?: string };
+  return data.token ?? null;
+}
+
 async function ensureDeviceToken(repos: Repos, profile: LearnerProfile): Promise<string | null> {
   if (deviceTokenCache) return deviceTokenCache;
 
@@ -49,13 +60,17 @@ async function ensureDeviceToken(repos: Repos, profile: LearnerProfile): Promise
 
   if (!PROXY_BASE_URL) return null;
   try {
-    const res = await fetch(`${PROXY_BASE_URL}/register`, { method: "POST" });
-    if (!res.ok) return null;
-    const data = (await res.json()) as { token?: string };
-    if (!data.token) return null;
-    deviceTokenCache = data.token;
-    await repos.profiles.update(profile.id, { settings: { ...profile.settings, deviceToken: data.token } });
-    return data.token;
+    // Try with no passcode first — a no-op when the proxy has no access gate set, and the
+    // common case for the desktop app. Only prompt if the proxy actually rejects it.
+    let token = await registerDevice("");
+    if (!token && typeof window !== "undefined") {
+      const passcode = window.prompt("Enter the access code to enable AI features:");
+      if (passcode) token = await registerDevice(passcode);
+    }
+    if (!token) return null;
+    deviceTokenCache = token;
+    await repos.profiles.update(profile.id, { settings: { ...profile.settings, deviceToken: token } });
+    return token;
   } catch {
     return null;
   }
