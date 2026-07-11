@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { scorePronunciation, WhisperProvider } from "@polyglotai/pronunciation";
+import { scorePronunciation } from "@polyglotai/pronunciation";
 import type { Repos } from "@polyglotai/core-learning";
 import type { LoadedPack } from "@polyglotai/language-pack-sdk";
 import type { LearnerProfile } from "@polyglotai/shared-types";
-import { readAiSettings } from "../ai/aiContext";
+import { useSpeechProvider } from "../ai/aiContext";
 
 interface Props {
   repos: Repos;
@@ -44,7 +44,8 @@ export function Pronunciation({ repos, profile, pack, onDone, onOpenSettings }: 
   const recorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
 
-  const { openaiApiKey } = readAiSettings(profile);
+  const speechLanguage = pack.manifest.languageCode.split("-")[0]; // "pt-BR" -> "pt"
+  const { value: speechProvider, ready } = useSpeechProvider(repos, profile, speechLanguage);
   const target = targets[index];
 
   useEffect(() => () => {
@@ -53,11 +54,13 @@ export function Pronunciation({ repos, profile, pack, onDone, onOpenSettings }: 
     recorderRef.current?.stream.getTracks().forEach((t) => t.stop());
   }, [audioUrl]);
 
-  if (!openaiApiKey) {
+  if (!ready) return <p className="container">Connecting…</p>;
+
+  if (!speechProvider) {
     return (
       <main className="container">
         <h1>Pronunciation</h1>
-        <p className="subtitle">Add your OpenAI API key in Settings — transcription uses Whisper.</p>
+        <p className="subtitle">AI features aren't available right now — check your connection and try again.</p>
         <button type="button" onClick={onOpenSettings}>
           Open Settings
         </button>
@@ -98,12 +101,7 @@ export function Pronunciation({ repos, profile, pack, onDone, onOpenSettings }: 
     const blob = new Blob(chunksRef.current, { type: recorder.mimeType || "audio/webm" });
     setAudioUrl(URL.createObjectURL(blob));
     try {
-      const language = pack.manifest.languageCode.split("-")[0]; // "pt-BR" -> "pt"
-      const provider = new WhisperProvider({
-        apiKey: openaiApiKey!,
-        ...(language ? { language } : {}),
-      });
-      const heard = await provider.transcribe(blob);
+      const heard = await speechProvider!.transcribe(blob);
       const s = scorePronunciation(target!.text, heard);
       setTranscript(heard);
       setScore(s);

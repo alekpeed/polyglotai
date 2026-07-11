@@ -1,9 +1,9 @@
-import { useMemo, useRef, useState, type FormEvent } from "react";
+import { useRef, useState, type FormEvent } from "react";
 import { ConversationSession } from "@polyglotai/ai-orchestration";
 import type { Repos } from "@polyglotai/core-learning";
 import type { LoadedPack } from "@polyglotai/language-pack-sdk";
 import type { LearnerProfile } from "@polyglotai/shared-types";
-import { makeConversationTaskPrompt, makeLearnerContext, makeProvider } from "../ai/aiContext";
+import { makeConversationTaskPrompt, makeLearnerContext, useAiProvider } from "../ai/aiContext";
 
 interface Props {
   repos: Repos;
@@ -33,7 +33,7 @@ interface Bubble {
 }
 
 export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: Props) {
-  const provider = useMemo(() => makeProvider(profile), [profile]);
+  const { value: provider, ready } = useAiProvider(repos, profile);
   const [scenario, setScenario] = useState<string | null>(null);
   const [bubbles, setBubbles] = useState<Bubble[]>([]);
   const [input, setInput] = useState("");
@@ -42,11 +42,13 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
   const sessionRef = useRef<ConversationSession | null>(null);
   const conversationIdRef = useRef<string | null>(null);
 
+  if (!ready) return <p className="container">Connecting…</p>;
+
   if (!provider) {
     return (
       <main className="container">
         <h1>Conversation</h1>
-        <p className="subtitle">Add your OpenAI API key in Settings to enable conversation practice.</p>
+        <p className="subtitle">AI features aren't available right now — check your connection and try again.</p>
         <button type="button" onClick={onOpenSettings}>
           Open Settings
         </button>

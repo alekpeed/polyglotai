@@ -15,7 +15,6 @@ const STRICTNESS = ["lenient", "balanced", "strict"] as const;
 
 export function Settings({ repos, profile, onSaved, onDone }: Props) {
   const initial = readAiSettings(profile);
-  const [apiKey, setApiKey] = useState(initial.openaiApiKey ?? "");
   const [model, setModel] = useState(initial.openaiModel ?? "gpt-4o-mini");
   const [level, setLevel] = useState<RealSpeechLevel>(profile.realSpeechLevel);
   const [strictness, setStrictness] = useState(profile.correctionStrictness);
@@ -28,12 +27,10 @@ export function Settings({ repos, profile, onSaved, onDone }: Props) {
 
   async function handleSave(e: FormEvent) {
     e.preventDefault();
-    // API key lives in the local SQLite profile settings — local-first personal app (spec
-    // §22); nothing leaves the machine except direct calls to the provider.
     const updated = await repos.profiles.update(profile.id, {
       realSpeechLevel: level,
       correctionStrictness: strictness,
-      settings: { ...profile.settings, openaiApiKey: apiKey.trim(), openaiModel: model.trim() },
+      settings: { ...profile.settings, openaiModel: model.trim() },
     });
     await repos.flags.setEnabled("conversation_logging", logging);
     onSaved(updated);
@@ -45,17 +42,11 @@ export function Settings({ repos, profile, onSaved, onDone }: Props) {
       <h1>Settings</h1>
       <form className="onboarding" onSubmit={handleSave}>
         <label>
-          OpenAI API key
-          <input
-            type="password"
-            value={apiKey}
-            onChange={(e) => setApiKey(e.currentTarget.value)}
-            placeholder="sk-…"
-          />
-        </label>
-        <label>
-          Model
+          AI model
           <input value={model} onChange={(e) => setModel(e.currentTarget.value)} />
+          <span className="onboard-hint">
+            AI features run through PolyglotAI's shared backend — no API key needed here.
+          </span>
         </label>
         <label>
           Real-speech level

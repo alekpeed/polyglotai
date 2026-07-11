@@ -31,7 +31,10 @@ export class OpenAIProvider implements AIProvider {
     this.apiKey = options.apiKey;
     this.model = options.model ?? "gpt-4o-mini";
     this.baseUrl = options.baseUrl ?? "https://api.openai.com/v1";
-    this.fetchFn = options.fetchFn ?? fetch;
+    // Wrap (not just reference) the global fetch: native fetch throws "Illegal invocation" when
+    // invoked as a method of this instance (this.fetchFn(...)), since it requires `this` to be a
+    // Window/WorkerGlobalScope. The arrow calls it bare, preserving the correct binding.
+    this.fetchFn = options.fetchFn ?? ((input, init) => fetch(input, init));
   }
 
   async complete(request: AICompletionRequest): Promise<AICompletionResult> {

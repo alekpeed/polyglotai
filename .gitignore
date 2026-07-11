@@ -23,3 +23,7 @@ apps/desktop-tauri/src-tauri/gen/
 # App data (local SQLite DB, recordings) if ever created inside the repo during dev
 *.sqlite
 *.sqlite3
+
+# Supabase CLI local state (created by `supabase link`/`supabase start`)
+supabase/.temp/
+supabase/.branches/

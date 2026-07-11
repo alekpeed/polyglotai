@@ -1,9 +1,9 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { InterpreterSession, type InterpretationGrade, type InterpreterTurn } from "@polyglotai/ai-orchestration";
 import type { Repos } from "@polyglotai/core-learning";
 import type { LoadedPack } from "@polyglotai/language-pack-sdk";
 import type { LearnerProfile } from "@polyglotai/shared-types";
-import { makeLearnerContext, makeProvider } from "../ai/aiContext";
+import { makeLearnerContext, useAiProvider } from "../ai/aiContext";
 
 interface Props {
   repos: Repos;
@@ -30,8 +30,8 @@ const TURN_SECONDS = 20;
 
 /** Unhinged idea #1: an AI-generated two-speaker dialogue, one line in the target language,
  * the next in English, that the learner interprets live, under a per-turn clock. */
-export function Interpreter({ profile, pack, onDone, onOpenSettings }: Props) {
-  const provider = useMemo(() => makeProvider(profile), [profile]);
+export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Props) {
+  const { value: provider, ready } = useAiProvider(repos, profile);
   const sessionRef = useRef<InterpreterSession | null>(null);
   const inputRef = useRef("");
 
@@ -86,11 +86,13 @@ export function Interpreter({ profile, pack, onDone, onOpenSettings }: Props) {
     return () => clearInterval(id);
   }, [turnIndex, currentTurn, grade, submitInterpretation]);
 
+  if (!ready) return <p className="container">Connecting…</p>;
+
   if (!provider) {
     return (
       <main className="container">
         <h1>Live Interpreter</h1>
-        <p className="subtitle">Add your OpenAI API key in Settings to enable live interpreting.</p>
+        <p className="subtitle">AI features aren't available right now — check your connection and try again.</p>
         <button type="button" onClick={onOpenSettings}>
           Open Settings
         </button>

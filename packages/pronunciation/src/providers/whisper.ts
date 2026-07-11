@@ -27,7 +27,9 @@ export class WhisperProvider implements SpeechProvider {
     this.model = options.model ?? "whisper-1";
     this.baseUrl = options.baseUrl ?? "https://api.openai.com/v1";
     this.language = options.language;
-    this.fetchFn = options.fetchFn ?? fetch;
+    // Wrap (not just reference) global fetch — native fetch throws "Illegal invocation" when
+    // called as a method of this instance (this.fetchFn(...)); the arrow calls it bare.
+    this.fetchFn = options.fetchFn ?? ((input, init) => fetch(input, init));
   }
 
   async transcribe(audio: Blob): Promise<string> {

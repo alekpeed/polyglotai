@@ -1,9 +1,9 @@
-import { useMemo, useState, type FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import type { AiCorrection } from "@polyglotai/shared-types";
 import type { LearnerProfile } from "@polyglotai/shared-types";
 import type { Repos } from "@polyglotai/core-learning";
 import type { LoadedPack } from "@polyglotai/language-pack-sdk";
-import { makeCorrectionEngine, makeLearnerContext, makeProvider } from "../ai/aiContext";
+import { makeCorrectionEngine, makeLearnerContext, useAiProvider } from "../ai/aiContext";
 
 interface Props {
   repos: Repos;
@@ -25,18 +25,20 @@ const FIELD_LABELS: Array<[keyof AiCorrection, string]> = [
   ["pronunciationNotes", "Pronunciation"],
 ];
 
-export function Tutor({ profile, pack, onDone, onOpenSettings }: Props) {
-  const provider = useMemo(() => makeProvider(profile), [profile]);
+export function Tutor({ repos, profile, pack, onDone, onOpenSettings }: Props) {
+  const { value: provider, ready } = useAiProvider(repos, profile);
   const [text, setText] = useState("");
   const [busy, setBusy] = useState(false);
   const [correction, setCorrection] = useState<AiCorrection | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  if (!ready) return <p className="container">Connecting…</p>;
+
   if (!provider) {
     return (
       <main className="container">
         <h1>AI Tutor</h1>
-        <p className="subtitle">Add your OpenAI API key in Settings to enable the tutor.</p>
+        <p className="subtitle">AI features aren't available right now — check your connection and try again.</p>
         <button type="button" onClick={onOpenSettings}>
           Open Settings
         </button>
