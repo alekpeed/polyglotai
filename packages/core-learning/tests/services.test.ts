@@ -58,11 +58,35 @@ describe("loadDashboard", () => {
     const repos = createRepos(createMigratedDb().database, () => T0);
     const profile = await runOnboarding(repos, { displayName: "Alek", pack: seedPack() });
 
-    const data = await loadDashboard(repos, profile.id);
+    const data = await loadDashboard(repos, profile.id, () => T0);
     expect(data.profile.id).toBe(profile.id);
     expect(data.activePackName).toBe("Brazilian Portuguese");
     expect(data.dueCount).toBe(3);
     expect(data.totals.vocabulary).toBe(3);
     expect(data.totals.grammar).toBe(0);
+  });
+
+  it("computes a real review streak from review_results, not a fabricated stat", async () => {
+    const repos = createRepos(createMigratedDb().database, () => T0);
+    const profile = await runOnboarding(repos, { displayName: "Alek", pack: seedPack() });
+
+    const zero = await loadDashboard(repos, profile.id, () => T0);
+    expect(zero.streakDays).toBe(0);
+    expect(zero.streakLast7.every((d) => d === false)).toBe(true);
+
+    const [item] = await repos.reviews.listDue(profile.id);
+    const dayIso = (offsetDays: number) => new Date(T0.getTime() + offsetDays * 86_400_000).toISOString();
+    for (const offset of [-2, -1, 0]) {
+      await repos.db.run(
+        `INSERT INTO review_results (id, review_item_id, rating, reviewed_at, schema_version, created_at)
+         VALUES (?, ?, ?, ?, ?, ?)`,
+        [`r-${offset}`, item!.id, 3, dayIso(offset), 1, dayIso(offset)],
+      );
+    }
+
+    const withStreak = await loadDashboard(repos, profile.id, () => T0);
+    expect(withStreak.streakDays).toBe(3);
+    expect(withStreak.streakLast7.slice(-3)).toEqual([true, true, true]);
+    expect(withStreak.streakLast7.slice(0, 4)).toEqual([false, false, false, false]);
   });
 });

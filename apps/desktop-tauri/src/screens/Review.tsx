@@ -13,11 +13,11 @@ interface Props {
   onDone: () => void;
 }
 
-const GRADES: { rating: 1 | 2 | 3 | 4; label: string }[] = [
-  { rating: 1, label: "Again" },
-  { rating: 2, label: "Hard" },
-  { rating: 3, label: "Good" },
-  { rating: 4, label: "Easy" },
+const GRADES: { rating: 1 | 2 | 3 | 4; label: string; g: string }[] = [
+  { rating: 1, label: "Again", g: "again" },
+  { rating: 2, label: "Hard", g: "hard" },
+  { rating: 3, label: "Good", g: "good" },
+  { rating: 4, label: "Easy", g: "easy" },
 ];
 
 export function Review({ repos, profile, onDone }: Props) {
@@ -63,24 +63,24 @@ export function Review({ repos, profile, onDone }: Props) {
     await showFront(rest);
   }
 
-  if (loading) return <p className="container">Loading review…</p>;
+  if (loading) return <p>Loading review…</p>;
 
   if (!card) {
     return (
-      <main className="container">
+      <div>
         <h1>Review complete</h1>
         <p className="subtitle">You reviewed {reviewed} item(s).</p>
         <button type="button" onClick={onDone}>
           Back to dashboard
         </button>
-      </main>
+      </div>
     );
   }
 
   return (
-    <main className="container">
+    <div className="review-wrap">
       <p className="progress">{queue.length} left</p>
-      <section className="card review-card">
+      <section className="review-card">
         <div className="review-front">{card.front}</div>
         {revealed ? (
           <>
@@ -98,7 +98,7 @@ export function Review({ repos, profile, onDone }: Props) {
       {revealed && (
         <div className="grades">
           {GRADES.map((g) => (
-            <button key={g.rating} type="button" onClick={() => grade(g.rating)}>
+            <button key={g.rating} type="button" data-g={g.g} onClick={() => grade(g.rating)}>
               {g.label}
             </button>
           ))}
@@ -108,6 +108,6 @@ export function Review({ repos, profile, onDone }: Props) {
       <button type="button" className="link" onClick={onDone}>
         Stop for now
       </button>
-    </main>
+    </div>
   );
 }

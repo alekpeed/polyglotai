@@ -12,6 +12,11 @@ export interface DashboardData {
     realSpeech: number;
     dialogues: number;
   };
+  /** Consecutive days (ending today, or yesterday if today has no review yet) with at least
+   * one recorded review — real, derived from review_results, not a separately-tracked stat. */
+  streakDays: number;
+  /** Whether each of the last 7 calendar days (oldest first, today last) had a review. */
+  streakLast7: boolean[];
 }
 
 async function count(repos: Repos, table: string, packId: string): Promise<number> {
@@ -22,8 +27,50 @@ async function count(repos: Repos, table: string, packId: string): Promise<numbe
   return rows[0]?.n ?? 0;
 }
 
-/** Aggregates the home dashboard (spec §5.1): profile, active pack, due count, content totals. */
-export async function loadDashboard(repos: Repos, profileId: string): Promise<DashboardData> {
+function toIsoDate(d: Date): string {
+  return d.toISOString().slice(0, 10);
+}
+
+async function reviewedDays(repos: Repos, profileId: string): Promise<Set<string>> {
+  const rows = await repos.db.all<{ d: string }>(
+    `SELECT DISTINCT date(rr.reviewed_at) AS d
+       FROM review_results rr
+       JOIN review_items ri ON ri.id = rr.review_item_id
+      WHERE ri.profile_id = ?`,
+    [profileId as SqlValue],
+  );
+  return new Set(rows.map((r) => r.d));
+}
+
+function streakFrom(days: Set<string>, today: Date): number {
+  if (days.size === 0) return 0;
+  const cursor = new Date(today);
+  if (!days.has(toIsoDate(cursor))) cursor.setUTCDate(cursor.getUTCDate() - 1);
+  let streak = 0;
+  while (days.has(toIsoDate(cursor))) {
+    streak += 1;
+    cursor.setUTCDate(cursor.getUTCDate() - 1);
+  }
+  return streak;
+}
+
+function last7From(days: Set<string>, today: Date): boolean[] {
+  const out: boolean[] = [];
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date(today);
+    d.setUTCDate(today.getUTCDate() - i);
+    out.push(days.has(toIsoDate(d)));
+  }
+  return out;
+}
+
+/** Aggregates the home dashboard (spec §5.1): profile, active pack, due count, content totals,
+ * and review streak. `now` is injected for deterministic tests. */
+export async function loadDashboard(
+  repos: Repos,
+  profileId: string,
+  now: () => Date = () => new Date(),
+): Promise<DashboardData> {
   const profile = await repos.profiles.get(profileId);
   if (!profile) throw new Error(`profile ${profileId} not found`);
 
@@ -40,5 +87,15 @@ export async function loadDashboard(repos: Repos, profileId: string): Promise<Da
       }
     : { vocabulary: 0, grammar: 0, realSpeech: 0, dialogues: 0 };
 
-  return { profile, activePackName: activePack?.name ?? null, dueCount, totals };
+  const days = await reviewedDays(repos, profileId);
+  const today = now();
+
+  return {
+    profile,
+    activePackName: activePack?.name ?? null,
+    dueCount,
+    totals,
+    streakDays: streakFrom(days, today),
+    streakLast7: last7From(days, today),
+  };
 }

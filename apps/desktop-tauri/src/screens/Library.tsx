@@ -9,7 +9,7 @@ import {
   type Repos,
   type VocabularyEntry,
 } from "@polyglotai/core-learning";
-import type { LearnerProfile } from "@polyglotai/shared-types";
+import type { LearnerProfile, Severity } from "@polyglotai/shared-types";
 
 type Tab = "vocabulary" | "grammar" | "slang";
 
@@ -24,6 +24,21 @@ interface Data {
   grammar: GrammarEntry[];
   realSpeech: RealSpeechEntry[];
   slangEnabled: boolean;
+  ceiling: Severity;
+}
+
+const HEAT = ["var(--heat-1)", "var(--heat-2)", "var(--heat-3)", "var(--heat-4)", "var(--heat-5)", "var(--heat-6)", "var(--heat-7)"];
+
+/** A 7-segment heat meter reused for both the legend and each row — filled up to `severity`
+ * in that severity's own heat color, so the shape reads at a glance even when locked. */
+function HeatBar({ severity }: { severity: Severity }) {
+  return (
+    <div className="bar">
+      {HEAT.map((color, i) => (
+        <i key={i} style={i < severity ? { background: color } : undefined} />
+      ))}
+    </div>
+  );
 }
 
 export function Library({ repos, profile, onDone }: Props) {
@@ -41,7 +56,7 @@ export function Library({ repos, profile, onDone }: Props) {
       listRealSpeech(repos, packId, ceiling),
       repos.flags.isEnabled("slang_mode"),
     ]).then(([vocabulary, grammar, realSpeech, slangEnabled]) => {
-      if (active) setData({ vocabulary, grammar, realSpeech, slangEnabled });
+      if (active) setData({ vocabulary, grammar, realSpeech, slangEnabled, ceiling });
     });
     return () => {
       active = false;
@@ -52,74 +67,88 @@ export function Library({ repos, profile, onDone }: Props) {
   if (!data) return <p className="container">Loading library…</p>;
 
   return (
-    <main className="container">
+    <div>
       <h1>Library</h1>
-      <nav className="tabs">
+
+      <nav className="lib-tabs">
         <button type="button" className={tab === "vocabulary" ? "active" : ""} onClick={() => setTab("vocabulary")}>
-          Vocabulary ({data.vocabulary.length})
+          Vocabulary <span className="mono">{data.vocabulary.length}</span>
         </button>
         <button type="button" className={tab === "grammar" ? "active" : ""} onClick={() => setTab("grammar")}>
-          Grammar ({data.grammar.length})
+          Grammar <span className="mono">{data.grammar.length}</span>
         </button>
         {data.slangEnabled && (
           <button type="button" className={tab === "slang" ? "active" : ""} onClick={() => setTab("slang")}>
-            Slang & Register ({data.realSpeech.length})
+            Slang & Register <span className="mono">{data.realSpeech.length}</span>
           </button>
         )}
       </nav>
 
       {tab === "vocabulary" && (
-        <ul className="entry-list">
+        <div className="lib-list">
           {data.vocabulary.map((v) => (
-            <li key={v.key}>
-              <span className="entry-front">{v.lemma}</span>
-              <span className="entry-back">{v.translation}</span>
-              <span className="entry-tag">{v.register ?? ""}</span>
-            </li>
+            <div key={v.key} className="lib-row">
+              <div className="word">
+                <span className="p">{v.lemma}</span>
+                <span className="m">{v.translation}</span>
+              </div>
+              <span className="register-chip">{v.register ?? v.entryType}</span>
+              <div />
+            </div>
           ))}
-        </ul>
+        </div>
       )}
 
       {tab === "grammar" && (
-        <ul className="entry-list">
+        <div className="lib-list">
           {data.grammar.map((g) => (
-            <li key={g.key} className="grammar-entry">
-              <span className="entry-front">
-                {g.title} {g.cefr && <em>({g.cefr})</em>}
-              </span>
-              <span className="entry-back">{g.explanationMd}</span>
-            </li>
+            <div key={g.key} className="lib-row">
+              <div className="word">
+                <span className="p">{g.title}</span>
+                <span className="m">{g.explanationMd}</span>
+              </div>
+              <span className="register-chip">{g.cefr ?? "—"}</span>
+              <div />
+            </div>
           ))}
-        </ul>
+        </div>
       )}
 
       {tab === "slang" && data.slangEnabled && (
-        <ul className="entry-list">
-          {data.realSpeech.map((s) =>
-            s.withinComfort ? (
-              <li key={s.key}>
-                <span className="entry-front">{s.phrase}</span>
-                <span className="entry-back">{s.natural}</span>
-                <span className="entry-tag">
-                  {s.register} · sev {s.severity}/7 · {s.learnerShouldUse}
-                </span>
-                {s.culturalWarning && <span className="review-note">{s.culturalWarning}</span>}
-              </li>
-            ) : (
-              <li key={s.key} className="locked">
-                <span className="entry-front">🔒 hidden</span>
-                <span className="entry-tag">
-                  {s.register} · severity {s.severity}/7 — raise your real-speech level in Settings to reveal
-                </span>
-              </li>
-            ),
-          )}
-        </ul>
+        <>
+          <div className="heat-legend">
+            <span className="txt">Heat:</span>
+            <HeatBar severity={7} />
+            <span className="txt">mild → severe · your ceiling is set to {data.ceiling} in Settings</span>
+          </div>
+          <div className="lib-list">
+            {data.realSpeech.map((s) => (
+              <div key={s.key} className={s.withinComfort ? "lib-row" : "lib-row locked"}>
+                <div className="word">
+                  <span className="p">{s.phrase}</span>
+                  <span className="m">{s.withinComfort ? (s.natural ?? "") : "raise your real-speech level in Settings to reveal"}</span>
+                </div>
+                <span className="register-chip">{s.register}</span>
+                <div className="heat-meter">
+                  <HeatBar severity={s.severity} />
+                  {s.withinComfort ? (
+                    <span className="num">{s.severity} / 7</span>
+                  ) : (
+                    <span className="lock-note">
+                      <span className="lock-icon" />
+                      {s.severity} / 7
+                    </span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </>
       )}
 
       <button type="button" className="link" onClick={onDone}>
         Back to dashboard
       </button>
-    </main>
+    </div>
   );
 }

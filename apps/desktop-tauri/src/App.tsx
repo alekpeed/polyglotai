@@ -3,6 +3,7 @@ import type { Repos } from "@polyglotai/core-learning";
 import type { LoadedPack } from "@polyglotai/language-pack-sdk";
 import type { LearnerProfile } from "@polyglotai/shared-types";
 import { bootstrap } from "./app/bootstrap";
+import { AppShell, type NavKey } from "./app/AppShell";
 import { Onboarding } from "./screens/Onboarding";
 import { Dashboard } from "./screens/Dashboard";
 import { Review } from "./screens/Review";
@@ -15,21 +16,10 @@ import { Settings } from "./screens/Settings";
 import { Pronunciation } from "./screens/Pronunciation";
 import "./App.css";
 
-type View =
-  | "dashboard"
-  | "review"
-  | "drill"
-  | "library"
-  | "tutor"
-  | "conversation"
-  | "interpreter"
-  | "settings"
-  | "pronunciation";
-
 function App() {
   const [ready, setReady] = useState<{ repos: Repos; pack: LoadedPack } | null>(null);
   const [profile, setProfile] = useState<LearnerProfile | null>(null);
-  const [view, setView] = useState<View>("dashboard");
+  const [view, setView] = useState<NavKey>("dashboard");
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -64,84 +54,81 @@ function App() {
   }
 
   const goHome = () => setView("dashboard");
+  const openSettings = () => setView("settings");
 
-  if (view === "review") {
-    return <Review repos={ready.repos} profile={profile} onDone={goHome} />;
-  }
-
-  if (view === "drill") {
-    return <Drill repos={ready.repos} profile={profile} onDone={goHome} />;
-  }
-
-  if (view === "library") {
-    return <Library repos={ready.repos} profile={profile} onDone={goHome} />;
-  }
-
-  if (view === "tutor") {
-    return (
-      <Tutor
-        repos={ready.repos}
-        profile={profile}
-        pack={ready.pack}
-        onDone={goHome}
-        onOpenSettings={() => setView("settings")}
-      />
-    );
-  }
-
-  if (view === "conversation") {
-    return (
-      <Conversation
-        repos={ready.repos}
-        profile={profile}
-        pack={ready.pack}
-        onDone={goHome}
-        onOpenSettings={() => setView("settings")}
-      />
-    );
-  }
-
-  if (view === "interpreter") {
-    return (
-      <Interpreter
-        repos={ready.repos}
-        profile={profile}
-        pack={ready.pack}
-        onDone={goHome}
-        onOpenSettings={() => setView("settings")}
-      />
-    );
-  }
-
-  if (view === "pronunciation") {
-    return (
-      <Pronunciation
-        repos={ready.repos}
-        profile={profile}
-        pack={ready.pack}
-        onDone={goHome}
-        onOpenSettings={() => setView("settings")}
-      />
-    );
-  }
-
-  if (view === "settings") {
-    return <Settings repos={ready.repos} profile={profile} onSaved={setProfile} onDone={goHome} />;
+  let screen: React.ReactNode;
+  switch (view) {
+    case "review":
+      screen = <Review repos={ready.repos} profile={profile} onDone={goHome} />;
+      break;
+    case "drill":
+      screen = <Drill repos={ready.repos} profile={profile} onDone={goHome} />;
+      break;
+    case "library":
+      screen = <Library repos={ready.repos} profile={profile} onDone={goHome} />;
+      break;
+    case "tutor":
+      screen = (
+        <Tutor repos={ready.repos} profile={profile} pack={ready.pack} onDone={goHome} onOpenSettings={openSettings} />
+      );
+      break;
+    case "conversation":
+      screen = (
+        <Conversation
+          repos={ready.repos}
+          profile={profile}
+          pack={ready.pack}
+          onDone={goHome}
+          onOpenSettings={openSettings}
+        />
+      );
+      break;
+    case "interpreter":
+      screen = (
+        <Interpreter
+          repos={ready.repos}
+          profile={profile}
+          pack={ready.pack}
+          onDone={goHome}
+          onOpenSettings={openSettings}
+        />
+      );
+      break;
+    case "pronunciation":
+      screen = (
+        <Pronunciation
+          repos={ready.repos}
+          profile={profile}
+          pack={ready.pack}
+          onDone={goHome}
+          onOpenSettings={openSettings}
+        />
+      );
+      break;
+    case "settings":
+      screen = <Settings repos={ready.repos} profile={profile} onSaved={setProfile} onDone={goHome} />;
+      break;
+    default:
+      screen = (
+        <Dashboard
+          repos={ready.repos}
+          profile={profile}
+          onStartReview={() => setView("review")}
+          onStartDrill={() => setView("drill")}
+          onOpenLibrary={() => setView("library")}
+          onOpenTutor={() => setView("tutor")}
+          onOpenConversation={() => setView("conversation")}
+          onOpenInterpreter={() => setView("interpreter")}
+          onOpenPronunciation={() => setView("pronunciation")}
+          onOpenSettings={openSettings}
+        />
+      );
   }
 
   return (
-    <Dashboard
-      repos={ready.repos}
-      profile={profile}
-      onStartReview={() => setView("review")}
-      onStartDrill={() => setView("drill")}
-      onOpenLibrary={() => setView("library")}
-      onOpenTutor={() => setView("tutor")}
-      onOpenConversation={() => setView("conversation")}
-      onOpenInterpreter={() => setView("interpreter")}
-      onOpenPronunciation={() => setView("pronunciation")}
-      onOpenSettings={() => setView("settings")}
-    />
+    <AppShell repos={ready.repos} profile={profile} pack={ready.pack} active={view} onNavigate={setView}>
+      {screen}
+    </AppShell>
   );
 }
 

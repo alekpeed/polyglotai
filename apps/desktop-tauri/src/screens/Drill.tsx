@@ -74,11 +74,11 @@ export function Drill({ repos, profile, onDone }: Props) {
     await showNext(rest);
   }
 
-  if (loading) return <p className="container">Loading ladder drills…</p>;
+  if (loading) return <p>Loading ladder drills…</p>;
 
   if (!card) {
     return (
-      <main className="container">
+      <div>
         <h1>Ladder drill complete</h1>
         <p className="subtitle">
           {reviewed > 0 ? `You drilled ${reviewed} step(s).` : "No substitution ladders are due right now."}
@@ -86,14 +86,14 @@ export function Drill({ repos, profile, onDone }: Props) {
         <button type="button" onClick={onDone}>
           Back to dashboard
         </button>
-      </main>
+      </div>
     );
   }
 
   return (
-    <main className="container">
+    <div className="review-wrap">
       <p className="progress">{queue.length} left</p>
-      <section className="card review-card">
+      <section className="review-card">
         <div className="review-front">{card.front}</div>
         {card.note && <div className="review-note">{card.note}</div>}
 
@@ -144,6 +144,6 @@ export function Drill({ repos, profile, onDone }: Props) {
       <button type="button" className="link" onClick={onDone}>
         Stop for now
       </button>
-    </main>
+    </div>
   );
 }
