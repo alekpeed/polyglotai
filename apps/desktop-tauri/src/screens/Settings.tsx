@@ -32,7 +32,7 @@ const THEMES: { value: ThemePreference; label: string; hint: string }[] = [
 
 export function Settings({ repos, profile, onSaved, onDone }: Props) {
   const initial = readAiSettings(profile);
-  const [model, setModel] = useState(initial.openaiModel ?? "gpt-4o-mini");
+  const [model, setModel] = useState(initial.openaiModel ?? "gpt-5.6-luna");
   const [level, setLevel] = useState<RealSpeechLevel>(profile.realSpeechLevel);
   const [strictness, setStrictness] = useState(profile.correctionStrictness);
   const [logging, setLogging] = useState(false);
