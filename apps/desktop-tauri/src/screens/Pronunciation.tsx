@@ -3,7 +3,8 @@ import { scorePronunciation } from "@polyglotai/pronunciation";
 import type { Repos } from "@polyglotai/core-learning";
 import type { LoadedPack } from "@polyglotai/language-pack-sdk";
 import type { LearnerProfile } from "@polyglotai/shared-types";
-import { useSpeechProvider } from "../ai/aiContext";
+import { describeAccent, useSpeechProvider, useTtsProvider } from "../ai/aiContext";
+import { playAudioBlob } from "../ai/voice";
 
 interface Props {
   repos: Repos;
@@ -41,12 +42,36 @@ export function Pronunciation({ repos, profile, pack, onDone, onOpenSettings }: 
   const [transcript, setTranscript] = useState<string | null>(null);
   const [score, setScore] = useState<number | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
+  const [playing, setPlaying] = useState(false);
   const recorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
+  const audioCacheRef = useRef<Map<number, Blob>>(new Map());
 
   const speechLanguage = pack.manifest.languageCode.split("-")[0]; // "pt-BR" -> "pt"
   const { value: speechProvider, ready } = useSpeechProvider(repos, profile, speechLanguage);
+  const { value: ttsProvider } = useTtsProvider(repos, profile);
+  const accentHint = describeAccent(profile, pack);
   const target = targets[index];
+
+  /** On-demand model pronunciation — not auto-played, so hearing it is a deliberate choice
+   * (before attempting, as a hint, or after scoring, to compare) rather than something you'd
+   * reflexively mimic right before recording. Cached per target index for instant replay. */
+  async function playTarget() {
+    if (!ttsProvider || !target) return;
+    try {
+      setPlaying(true);
+      let blob = audioCacheRef.current.get(index);
+      if (!blob) {
+        blob = await ttsProvider.synthesize(target.text, { languageCode: speechLanguage, accentHint });
+        audioCacheRef.current.set(index, blob);
+      }
+      await playAudioBlob(blob);
+    } catch {
+      // Non-fatal — the written target is still on screen either way.
+    } finally {
+      setPlaying(false);
+    }
+  }
 
   useEffect(() => () => {
     // Release the object URL and mic on unmount.
@@ -148,7 +173,20 @@ export function Pronunciation({ repos, profile, pack, onDone, onOpenSettings }: 
       </p>
 
       <section className="review-card">
-        <div className="review-front">{target.text}</div>
+        <div className="review-front">
+          {target.text}
+          {ttsProvider && (
+            <button
+              type="button"
+              className="bubble-play"
+              onClick={playTarget}
+              disabled={playing}
+              aria-label="Hear it"
+            >
+              {playing ? "◆" : "🔊"}
+            </button>
+          )}
+        </div>
         {target.hint && <div className="review-note">{target.hint}</div>}
 
         {phase === "idle" && (
