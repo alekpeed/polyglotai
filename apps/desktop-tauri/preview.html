@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PolyglotAI — web build</title>
     <style>
+      /* Deliberately NOT position:fixed — a fixed banner needs its height mirrored as padding
+         on #root, and that height isn't constant (this text wraps to 2+ lines on narrow phone
+         screens), so a fixed padding-top silently let content render underneath it. Sitting in
+         normal document flow instead means #root is always pushed down by however tall the
+         banner actually renders, on any screen size, with no magic number to keep in sync. */
       #preview-banner {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 9999;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
-        padding: 0.4rem 1rem;
+        gap: 0.6rem 1rem;
+        padding: 0.5rem 1rem;
         background: #14181b;
         color: #fafaf7;
         font-family: system-ui, sans-serif;
         font-size: 0.78rem;
+        text-align: center;
       }
       #preview-banner button {
         background: none;
@@ -29,9 +31,7 @@
         padding: 0.15rem 0.6rem;
         font-size: 0.72rem;
         cursor: pointer;
-      }
-      #root {
-        padding-top: 28px;
+        flex-shrink: 0;
       }
     </style>
   </head>
