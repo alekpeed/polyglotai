@@ -76,14 +76,32 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
 
   async function start(chosen: string) {
     setScenario(chosen);
-    sessionRef.current = new ConversationSession(provider!, {
+    setBusy(true);
+    setError(null);
+    const session = new ConversationSession(provider!, {
       taskPrompt: makeConversationTaskPrompt(pack, chosen),
       ctx: makeLearnerContext(profile, pack),
     });
+    sessionRef.current = session;
     // Persist only when the learner opted in (conversation_logging, off by default).
     if (await repos.flags.isEnabled("conversation_logging")) {
       const record = await repos.conversations.create(profile.id, "roleplay-partner", chosen);
       conversationIdRef.current = record.id;
+    }
+    try {
+      // The AI partner opens in character (spec: a barista/interviewer/date speaks first in
+      // real life) rather than handing the learner a blank input with nothing to react to.
+      const opener = await session.start();
+      setBubbles([{ role: "assistant", content: opener }]);
+      const convoId = conversationIdRef.current;
+      if (convoId) {
+        await repos.conversations.appendMessage(convoId, "assistant", opener, { tokens: session.tokensSpent });
+      }
+      void playBubble(0, opener);
+    } catch (err) {
+      setError(String(err));
+    } finally {
+      setBusy(false);
     }
   }
 
@@ -177,7 +195,7 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
         </div>
       </div>
       <section className="chat">
-        {bubbles.length === 0 && <p className="subtitle">Say something to start — in Portuguese if you can!</p>}
+        {bubbles.length === 0 && !busy && <p className="subtitle">Reply in Portuguese if you can!</p>}
         {bubbles.map((b, i) => (
           <div key={i} className={`bubble ${b.role}`}>
             <span>{b.content}</span>

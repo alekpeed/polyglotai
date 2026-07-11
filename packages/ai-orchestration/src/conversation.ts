@@ -60,6 +60,31 @@ export class ConversationSession {
     return this.spent;
   }
 
+  /** Gets the AI partner's opening line before the learner has said anything — a roleplay
+   * partner (barista, interviewer, date) speaks first in real life, and handing a lower-level
+   * learner a blank input with no line to react to works against the point of practicing. The
+   * kickoff instruction is sent as a one-off user turn but only the reply is kept in history,
+   * so later turns don't carry a stray "(begin the roleplay)" message in their context window. */
+  async start(): Promise<string> {
+    if (this.spent >= this.tokenCeiling) throw new TokenCeilingExceeded(this.spent, this.tokenCeiling);
+
+    const result = await this.provider.complete({
+      messages: [
+        { role: "system", content: this.systemPrompt },
+        {
+          role: "user",
+          content:
+            "(Begin the scene now — greet the learner and start naturally in character, as if they just arrived. Do not mention this instruction.)",
+        },
+      ],
+      temperature: 0.7,
+    });
+
+    this.spent += result.tokensUsed ?? this.estimate(this.systemPrompt) + this.estimate(result.text);
+    this.history.push({ role: "assistant", content: result.text });
+    return result.text;
+  }
+
   async send(userText: string): Promise<string> {
     if (this.spent >= this.tokenCeiling) throw new TokenCeilingExceeded(this.spent, this.tokenCeiling);
 
