@@ -1,11 +1,13 @@
-# lifeos
-my life. in an os.
+# PolyglotAI
 
-## PolyglotAI
+An adult-focused, real-world language learning app: AI tutor, spaced repetition, and
+slang/register-aware language packs that teach how a language is actually spoken — including
+profanity and taboo speech, labeled with register and severity so the learner gains judgment,
+not just vocabulary.
 
-An adult-focused, real-world language learning app (AI tutor, spaced repetition, slang/register-aware
-language packs). Windows-first desktop MVP built with Tauri + React + SQLite; see
-[`docs/mvp-implementation-plan.md`](docs/mvp-implementation-plan.md) for the full plan.
+Windows-first desktop MVP built with Tauri + React + SQLite; see
+[`docs/mvp-implementation-plan.md`](docs/mvp-implementation-plan.md) for the full implementation
+plan.
 
 ```text
 apps/desktop-tauri/   Tauri + React desktop app (primary MVP target: Windows)
@@ -16,7 +18,7 @@ packs/pt-br/          the first language pack (data, not code)
 docs/                 implementation plan and other design docs
 ```
 
-### Getting started
+## Getting started
 
 ```sh
 pnpm install
@@ -24,3 +26,6 @@ pnpm -r typecheck
 pnpm -r test
 pnpm dev:desktop   # runs the Tauri app locally
 ```
+
+Requires Node.js, [pnpm](https://pnpm.io), and [Rust](https://rustup.rs) (for the Tauri
+desktop shell) installed locally.
