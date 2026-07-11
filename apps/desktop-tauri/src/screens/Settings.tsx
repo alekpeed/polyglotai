@@ -2,6 +2,7 @@ import { useEffect, useState, type FormEvent } from "react";
 import type { Repos } from "@polyglotai/core-learning";
 import type { LearnerProfile, RealSpeechLevel } from "@polyglotai/shared-types";
 import { readAiSettings } from "../ai/aiContext";
+import { getStoredTheme, setTheme, type ThemePreference } from "../theme";
 
 interface Props {
   repos: Repos;
@@ -23,6 +24,12 @@ const STRICTNESS: { value: "lenient" | "balanced" | "strict"; label: string; hin
   { value: "strict", label: "Strict", hint: "Correct every error, including minor ones." },
 ];
 
+const THEMES: { value: ThemePreference; label: string; hint: string }[] = [
+  { value: "system", label: "Match system", hint: "Follows your OS's light/dark setting." },
+  { value: "light", label: "Light", hint: "Always light, regardless of OS setting." },
+  { value: "dark", label: "Dark", hint: "Always dark, regardless of OS setting." },
+];
+
 export function Settings({ repos, profile, onSaved, onDone }: Props) {
   const initial = readAiSettings(profile);
   const [model, setModel] = useState(initial.openaiModel ?? "gpt-4o-mini");
@@ -30,6 +37,12 @@ export function Settings({ repos, profile, onSaved, onDone }: Props) {
   const [strictness, setStrictness] = useState(profile.correctionStrictness);
   const [logging, setLogging] = useState(false);
   const [saved, setSaved] = useState(false);
+  const [themePref, setThemePref] = useState<ThemePreference>(getStoredTheme());
+
+  function handleThemeChange(pref: ThemePreference) {
+    setTheme(pref);
+    setThemePref(pref);
+  }
 
   useEffect(() => {
     repos.flags.isEnabled("conversation_logging").then(setLogging);
@@ -51,6 +64,28 @@ export function Settings({ repos, profile, onSaved, onDone }: Props) {
     <div>
       <span className="eyebrow">Account</span>
       <h1>Settings</h1>
+
+      <div className="settings-list">
+        <section className="settings-card">
+          <div className="settings-card-head">
+            <h3>Appearance</h3>
+            <p>Applies immediately — no need to save.</p>
+          </div>
+          <div className="pill-select">
+            {THEMES.map((t) => (
+              <button
+                key={t.value}
+                type="button"
+                className={`neutral ${themePref === t.value ? "active" : ""}`}
+                onClick={() => handleThemeChange(t.value)}
+              >
+                {t.label}
+              </button>
+            ))}
+            <span className="hint">{THEMES.find((t) => t.value === themePref)?.hint}</span>
+          </div>
+        </section>
+      </div>
 
       <form onSubmit={handleSave}>
         <div className="settings-list">

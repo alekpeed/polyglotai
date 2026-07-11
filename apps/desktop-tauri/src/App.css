@@ -50,6 +50,9 @@
   --radius-curve: 120px 8px 8px 8px;
 }
 
+/* System preference, used only when the in-app toggle (Settings → Appearance) hasn't set an
+   explicit override. A `:root[data-theme]` selector outranks this on specificity regardless of
+   source order, so the explicit blocks below always win once the user picks one. */
 @media (prefers-color-scheme: dark) {
   :root {
     --ink: #f1efe9;
@@ -64,6 +67,36 @@
     --indigo-soft: #202a3e;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
   }
+}
+
+/* Explicit in-app override (Settings → Appearance) — set via theme.ts, wins over both the OS
+   preference above and the light defaults regardless of source order (attribute selector on
+   :root is higher specificity than a bare :root, media-query-wrapped or not). */
+:root[data-theme="dark"] {
+  --ink: #f1efe9;
+  --ink-soft: #b7bab6;
+  --paper: #14171a;
+  --surface: #1d2124;
+  --surface-raised: #23272b;
+  --line: #33383c;
+  --gold: #e9b34d;
+  --gold-ink: #2a1d06;
+  --indigo: #7c93c9;
+  --indigo-soft: #202a3e;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
+}
+:root[data-theme="light"] {
+  --ink: #14181b;
+  --ink-soft: #4b5259;
+  --paper: #fafaf7;
+  --surface: #eff0ea;
+  --surface-raised: #ffffff;
+  --line: #dcddd5;
+  --gold: #e2a431;
+  --gold-ink: #5a3e0c;
+  --indigo: #263a66;
+  --indigo-soft: #eaedf4;
+  --shadow: 0 1px 2px rgba(20, 24, 27, 0.06), 0 8px 24px -12px rgba(20, 24, 27, 0.18);
 }
 
 * {
