@@ -106,13 +106,16 @@ async function proxyTranscriptions(req: Request, deviceId: string): Promise<Resp
 
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { headers: CORS_HEADERS });
-  if (!OPENAI_API_KEY) return json({ error: "server misconfigured: OPENAI_API_KEY not set" }, 500);
 
   const path = routePath(new URL(req.url));
 
+  // Registration never touches OpenAI, so it must not be gated behind OPENAI_API_KEY — a
+  // fresh deploy (secret not set yet) should still let devices register.
   if (path === "/register" && req.method === "POST") return registerDevice();
 
   if (req.method !== "POST") return json({ error: "not found" }, 404);
+
+  if (!OPENAI_API_KEY) return json({ error: "server misconfigured: OPENAI_API_KEY not set" }, 500);
 
   const deviceId = await authenticateDevice(req);
   if (!deviceId) return json({ error: "invalid or missing device token" }, 401);
