@@ -3,7 +3,14 @@ import { ConversationSession } from "@polyglotai/ai-orchestration";
 import type { Repos } from "@polyglotai/core-learning";
 import type { LoadedPack } from "@polyglotai/language-pack-sdk";
 import type { LearnerProfile } from "@polyglotai/shared-types";
-import { makeConversationTaskPrompt, makeLearnerContext, useAiProvider, useSpeechProvider, useTtsProvider } from "../ai/aiContext";
+import {
+  describeAccent,
+  makeConversationTaskPrompt,
+  makeLearnerContext,
+  useAiProvider,
+  useSpeechProvider,
+  useTtsProvider,
+} from "../ai/aiContext";
 import { playAudioBlob, useVoiceRecorder } from "../ai/voice";
 
 interface Props {
@@ -38,6 +45,7 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
   const speechLanguage = pack.manifest.languageCode.split("-")[0]; // "pt-BR" -> "pt"
   const { value: speechProvider } = useSpeechProvider(repos, profile, speechLanguage);
   const { value: ttsProvider } = useTtsProvider(repos, profile);
+  const accentHint = describeAccent(profile, pack);
   const recorder = useVoiceRecorder(speechProvider);
   const [scenario, setScenario] = useState<string | null>(null);
   const [bubbles, setBubbles] = useState<Bubble[]>([]);
@@ -88,14 +96,16 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
     setBusy(true);
     setError(null);
     setInput("");
+    // The assistant bubble about to be appended will land at this index — computed from the
+    // current render's `bubbles` (this send is the only mutation in flight, `busy` blocks
+    // re-entrancy) rather than read back out of the setState updater, since that updater isn't
+    // guaranteed to run synchronously and previously left this value stuck at -1, silently
+    // skipping every auto-play.
+    const replyIndex = bubbles.length + 1;
     setBubbles((b) => [...b, { role: "user", content: text }]);
     try {
       const reply = await session.send(text);
-      let replyIndex = -1;
-      setBubbles((b) => {
-        replyIndex = b.length;
-        return [...b, { role: "assistant", content: reply }];
-      });
+      setBubbles((b) => [...b, { role: "assistant", content: reply }]);
       const convoId = conversationIdRef.current;
       if (convoId) {
         await repos.conversations.appendMessage(convoId, "user", text);
@@ -103,7 +113,7 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
           tokens: session.tokensSpent,
         });
       }
-      if (replyIndex >= 0) void playBubble(replyIndex, reply);
+      void playBubble(replyIndex, reply);
     } catch (err) {
       setError(String(err));
     } finally {
@@ -118,7 +128,7 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
       setPlayingIndex(index);
       let blob = audioCacheRef.current.get(index);
       if (!blob) {
-        blob = await ttsProvider.synthesize(text, { languageCode: speechLanguage });
+        blob = await ttsProvider.synthesize(text, { languageCode: speechLanguage, accentHint });
         audioCacheRef.current.set(index, blob);
       }
       await playAudioBlob(blob);

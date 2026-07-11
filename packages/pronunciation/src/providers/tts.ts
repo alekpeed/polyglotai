@@ -34,11 +34,23 @@ export class OpenAiTtsProvider implements TTSProvider {
     this.fetchFn = options.fetchFn ?? ((input, init) => fetch(input, init));
   }
 
-  async synthesize(text: string): Promise<Blob> {
+  async synthesize(text: string, voice?: { languageCode: string; accentHint?: string }): Promise<Blob> {
+    // gpt-4o-mini-tts (unlike tts-1/tts-1-hd) accepts a free-text "instructions" field that
+    // steers delivery — without it, the model defaults to reading foreign-language text in an
+    // American accent rather than a native one.
+    const instructions = voice?.accentHint
+      ? `Speak with a natural, native ${voice.accentHint} accent — like a native speaker from that region, not an American accent reading foreign text.`
+      : undefined;
     const response = await this.fetchFn(`${this.baseUrl}/audio/speech`, {
       method: "POST",
       headers: { "content-type": "application/json", authorization: `Bearer ${this.apiKey}` },
-      body: JSON.stringify({ model: this.model, voice: this.voice, input: text, response_format: "mp3" }),
+      body: JSON.stringify({
+        model: this.model,
+        voice: this.voice,
+        input: text,
+        response_format: "mp3",
+        ...(instructions ? { instructions } : {}),
+      }),
     });
 
     if (!response.ok) {

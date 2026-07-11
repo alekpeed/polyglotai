@@ -8,12 +8,15 @@ export interface SpeechProvider {
 }
 
 /**
- * TTSProvider — spec §12. Implemented by OpenAiTtsProvider (providers/tts.ts). Dialect-specific
- * voice selection (§12) is still Phase 4 work; the current adapter uses one fixed voice.
+ * TTSProvider — spec §12. Implemented by OpenAiTtsProvider (providers/tts.ts). `accentHint` is
+ * a natural-language steer (e.g. "native Brazilian Portuguese accent, São Paulo dialect") —
+ * OpenAI's voices are English-centric by default and read foreign-language text with an
+ * American accent unless explicitly told otherwise. Full per-dialect voice selection (spec §12)
+ * is still Phase 4 work; this is a same-voice, prompted-accent stopgap.
  */
 export interface TTSProvider {
   readonly name: string;
-  synthesize(text: string, voice: { languageCode: string }): Promise<Blob>;
+  synthesize(text: string, voice: { languageCode: string; accentHint?: string }): Promise<Blob>;
 }
 
 export * from "./score.js";

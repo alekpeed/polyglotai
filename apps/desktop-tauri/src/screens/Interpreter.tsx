@@ -3,7 +3,7 @@ import { InterpreterSession, type InterpretationGrade, type InterpreterTurn } fr
 import type { Repos } from "@polyglotai/core-learning";
 import type { LoadedPack } from "@polyglotai/language-pack-sdk";
 import type { LearnerProfile } from "@polyglotai/shared-types";
-import { makeLearnerContext, useAiProvider, useSpeechProvider, useTtsProvider } from "../ai/aiContext";
+import { describeAccent, makeLearnerContext, useAiProvider, useSpeechProvider, useTtsProvider } from "../ai/aiContext";
 import { playAudioBlob, useVoiceRecorder } from "../ai/voice";
 
 interface Props {
@@ -36,6 +36,7 @@ export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Pr
   const speechLanguage = pack.manifest.languageCode.split("-")[0]; // "pt-BR" -> "pt"
   const { value: speechProvider } = useSpeechProvider(repos, profile, speechLanguage);
   const { value: ttsProvider } = useTtsProvider(repos, profile);
+  const accentHint = describeAccent(profile, pack);
   const recorder = useVoiceRecorder(speechProvider);
   const sessionRef = useRef<InterpreterSession | null>(null);
   const inputRef = useRef("");
@@ -58,13 +59,18 @@ export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Pr
     inputRef.current = input;
   }, [input]);
 
-  async function playTurnAudio(index: number, text: string) {
+  async function playTurnAudio(index: number, text: string, language: "target" | "native") {
     if (!ttsProvider) return;
     try {
       setPlayingTurn(index);
       let blob = audioCacheRef.current.get(index);
       if (!blob) {
-        blob = await ttsProvider.synthesize(text, { languageCode: speechLanguage });
+        // Only the target-language lines need the accent steer — forcing it onto the English
+        // lines (speaker B) would give them a foreign accent instead of a native English one.
+        blob = await ttsProvider.synthesize(text, {
+          languageCode: speechLanguage,
+          ...(language === "target" ? { accentHint } : {}),
+        });
         audioCacheRef.current.set(index, blob);
       }
       await playAudioBlob(blob);
@@ -79,9 +85,9 @@ export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Pr
   // not reading ahead.
   useEffect(() => {
     if (!currentTurn || !ttsProvider) return;
-    void playTurnAudio(turnIndex, currentTurn.text);
+    void playTurnAudio(turnIndex, currentTurn.text, currentTurn.language);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [turnIndex, currentTurn?.text, ttsProvider]);
+  }, [turnIndex, currentTurn?.text, currentTurn?.language, ttsProvider]);
 
   async function handleMicClick() {
     if (recorder.phase === "recording") {
@@ -236,7 +242,7 @@ export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Pr
             <button
               type="button"
               className="bubble-play"
-              onClick={() => playTurnAudio(turnIndex, currentTurn.text)}
+              onClick={() => playTurnAudio(turnIndex, currentTurn.text, currentTurn.language)}
               disabled={playingTurn === turnIndex}
               aria-label="Play line aloud"
             >

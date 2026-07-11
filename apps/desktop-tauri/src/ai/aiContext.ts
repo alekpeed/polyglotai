@@ -152,6 +152,15 @@ export function useTtsProvider(repos: Repos, profile: LearnerProfile): AsyncReso
   return useAsyncProvider(() => makeTtsProvider(repos, profile), [repos, profile.id]);
 }
 
+/** A natural-language accent description for TTS (e.g. "Brazilian Portuguese, São Paulo
+ * dialect") — resolves the learner's chosen dialect id against the pack's dialect list, falling
+ * back to the pack's language name alone if no dialect is set or matched. */
+export function describeAccent(profile: LearnerProfile, pack: LoadedPack): string {
+  const dialectId = profile.targetDialect ?? pack.manifest.defaultDialect;
+  const dialect = pack.manifest.dialects.find((d) => d.id === dialectId);
+  return dialect ? `${pack.manifest.name}, ${dialect.name} dialect` : pack.manifest.name;
+}
+
 /** Learner context for prompts (spec §14) straight from the profile + pack. */
 export function makeLearnerContext(profile: LearnerProfile, pack: LoadedPack): LearnerContext {
   return {
