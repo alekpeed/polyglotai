@@ -79,6 +79,7 @@ export function Drill({ repos, profile, onDone }: Props) {
   if (!card) {
     return (
       <div>
+        <span className="eyebrow">Substitution Drills</span>
         <h1>Ladder drill complete</h1>
         <p className="subtitle">
           {reviewed > 0 ? `You drilled ${reviewed} step(s).` : "No substitution ladders are due right now."}

@@ -139,29 +139,38 @@ export function Pronunciation({ repos, profile, pack, onDone, onOpenSettings }: 
   }
 
   return (
-    <main className="container">
-      <h1>Pronunciation</h1>
-      <p className="subtitle">Say the phrase, then compare what Whisper heard. (Comprehensibility check — phoneme-level feedback comes later.)</p>
+    <div className="review-wrap">
+      <span className="eyebrow">Pronunciation</span>
+      <h1>Say it back</h1>
+      <p className="subtitle">
+        Say the phrase, then compare what Whisper heard. (Comprehensibility check — phoneme-level feedback comes
+        later.)
+      </p>
 
-      <section className="card review-card">
+      <section className="review-card">
         <div className="review-front">{target.text}</div>
         {target.hint && <div className="review-note">{target.hint}</div>}
 
         {phase === "idle" && (
-          <button type="button" onClick={startRecording}>
+          <button type="button" className="btn-primary" onClick={startRecording}>
             ● Record
           </button>
         )}
         {phase === "recording" && (
-          <button type="button" onClick={stopRecording}>
-            ■ Stop
-          </button>
+          <>
+            <div className="recording-indicator">
+              <span className="rec-dot" /> Recording…
+            </div>
+            <button type="button" onClick={stopRecording}>
+              ■ Stop
+            </button>
+          </>
         )}
         {phase === "processing" && <p>Transcribing…</p>}
 
         {phase === "scored" && score !== null && (
           <>
-            <div className="due-count">{Math.round(score * 100)}%</div>
+            <div className="pron-score mono">{Math.round(score * 100)}%</div>
             <div className="review-back">heard: “{transcript}”</div>
             {audioUrl && <audio controls src={audioUrl} />}
             <div className="grades">
@@ -181,6 +190,6 @@ export function Pronunciation({ repos, profile, pack, onDone, onOpenSettings }: 
       <button type="button" className="link" onClick={onDone}>
         Back to dashboard
       </button>
-    </main>
+    </div>
   );
 }

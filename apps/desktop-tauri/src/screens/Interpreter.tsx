@@ -130,8 +130,9 @@ export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Pr
 
   if (!topic) {
     return (
-      <main className="container">
-        <h1>Live Interpreter</h1>
+      <div>
+        <span className="eyebrow">Live Interpreter</span>
+        <h1>Pick a topic</h1>
         <p className="subtitle">
           Two speakers talk — one in {pack.manifest.name}, one in English. Interpret each line before the clock
           runs out.
@@ -147,7 +148,7 @@ export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Pr
         <button type="button" className="link" onClick={onDone}>
           Back to dashboard
         </button>
-      </main>
+      </div>
     );
   }
 
@@ -158,7 +159,8 @@ export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Pr
   if (!currentTurn) {
     const avg = results.length > 0 ? (results.reduce((s, r) => s + r.score, 0) / results.length).toFixed(1) : "—";
     return (
-      <main className="container">
+      <div>
+        <span className="eyebrow">Live Interpreter</span>
         <h1>Interpreting complete</h1>
         <p className="subtitle">
           {results.length} turn(s) interpreted · average score {avg}/5
@@ -166,19 +168,24 @@ export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Pr
         <button type="button" onClick={onDone}>
           Back to dashboard
         </button>
-      </main>
+      </div>
     );
   }
 
   const interpretInto = currentTurn.language === "target" ? "English" : pack.manifest.name;
 
   return (
-    <main className="container">
-      <p className="progress">
-        Turn {turnIndex + 1} of {turns.length} · {secondsLeft}s
-      </p>
+    <div className="review-wrap">
+      <div className="interpreter-meta">
+        <span className="progress">
+          Turn {turnIndex + 1} of {turns.length}
+        </span>
+        <span className="interpreter-timer mono" data-urgent={secondsLeft <= 5}>
+          {secondsLeft}s
+        </span>
+      </div>
 
-      <section className="card review-card">
+      <section className="review-card">
         <div className="entry-tag">
           Speaker {currentTurn.speaker} · {currentTurn.language === "target" ? pack.manifest.name : "English"}
         </div>
@@ -223,6 +230,6 @@ export function Interpreter({ repos, profile, pack, onDone, onOpenSettings }: Pr
       <button type="button" className="link" onClick={onDone}>
         Stop for now
       </button>
-    </main>
+    </div>
   );
 }

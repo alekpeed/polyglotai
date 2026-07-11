@@ -101,9 +101,10 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
 
   if (!scenario) {
     return (
-      <main className="container">
-        <h1>Conversation</h1>
-        <p className="subtitle">Pick a scenario — your partner speaks {pack.manifest.name}.</p>
+      <div>
+        <span className="eyebrow">Conversation</span>
+        <h1>Pick a scenario</h1>
+        <p className="subtitle">Your partner speaks {pack.manifest.name}.</p>
         <div className="scenario-grid">
           {SCENARIOS.map((s) => (
             <button key={s} type="button" onClick={() => start(s)}>
@@ -114,13 +115,18 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
         <button type="button" className="link" onClick={onDone}>
           Back to dashboard
         </button>
-      </main>
+      </div>
     );
   }
 
   return (
-    <main className="container">
-      <h1>{scenario}</h1>
+    <div>
+      <div className="chat-head">
+        <div>
+          <span className="eyebrow">Conversation</span>
+          <h1>{scenario}</h1>
+        </div>
+      </div>
       <section className="chat">
         {bubbles.length === 0 && <p className="subtitle">Say something to start — in Portuguese if you can!</p>}
         {bubbles.map((b, i) => (
@@ -148,6 +154,6 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
       <button type="button" className="link" onClick={onDone}>
         End conversation
       </button>
-    </main>
+    </div>
   );
 }

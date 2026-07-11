@@ -65,43 +65,55 @@ export function Tutor({ repos, profile, pack, onDone, onOpenSettings }: Props) {
     }
   }
 
+  const corrected = correction?.corrected;
+  const otherFields = FIELD_LABELS.filter(([key]) => key !== "corrected");
+
   return (
-    <main className="container">
-      <h1>AI Tutor</h1>
+    <div>
+      <span className="eyebrow">AI Tutor</span>
+      <h1>Write it, get it corrected</h1>
       <p className="subtitle">Write a sentence in {pack.manifest.name}; get the full correction.</p>
 
-      <form className="tutor-form" onSubmit={handleSubmit}>
+      <form className="tutor-card" onSubmit={handleSubmit}>
         <textarea
           value={text}
           onChange={(e) => setText(e.currentTarget.value)}
           rows={3}
           placeholder="Eu sou cansado hoje…"
         />
-        <button type="submit" disabled={busy || !text.trim()}>
-          {busy ? "Correcting…" : "Correct it"}
+        <button type="submit" className="btn-primary" disabled={busy || !text.trim()}>
+          {busy ? "Correcting…" : "Correct it"} <span className="arrow">→</span>
         </button>
       </form>
 
       {error && <p className="error">{error}</p>}
 
       {correction && (
-        <section className="card correction">
-          {FIELD_LABELS.map(([key, label]) => {
-            const value = correction[key];
-            if (!value || (Array.isArray(value) && value.length === 0)) return null;
-            return (
-              <div key={key} className="correction-row">
-                <span className="correction-label">{label}</span>
-                <span className="correction-value">{String(value)}</span>
-              </div>
-            );
-          })}
-        </section>
+        <div className="correction-result">
+          {corrected && (
+            <div className="correction-hero">
+              <span className="eyebrow">Corrected</span>
+              <div className="correction-hero-text">{corrected}</div>
+            </div>
+          )}
+          <div className="correction-grid">
+            {otherFields.map(([key, label]) => {
+              const value = correction[key];
+              if (!value || (Array.isArray(value) && value.length === 0)) return null;
+              return (
+                <div key={key} className="correction-tile">
+                  <span className="correction-label">{label}</span>
+                  <span className="correction-value">{String(value)}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       )}
 
       <button type="button" className="link" onClick={onDone}>
         Back to dashboard
       </button>
-    </main>
+    </div>
   );
 }
