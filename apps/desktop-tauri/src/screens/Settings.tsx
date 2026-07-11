@@ -10,8 +10,18 @@ interface Props {
   onDone: () => void;
 }
 
-const LEVELS: RealSpeechLevel[] = ["standard", "informal", "slang", "profanity"];
-const STRICTNESS = ["lenient", "balanced", "strict"] as const;
+const LEVELS: { value: RealSpeechLevel; label: string; heat: 1 | 2 | 3 | 4; hint: string }[] = [
+  { value: "standard", label: "Standard only", heat: 1, hint: "Textbook-safe. No slang, no surprises." },
+  { value: "informal", label: "Informal included", heat: 2, hint: "How people actually talk — casual, still comfortable." },
+  { value: "slang", label: "Slang included", heat: 3, hint: "Street-level Portuguese, softly labeled by register." },
+  { value: "profanity", label: "Profanity explained", heat: 4, hint: "Everything, explained honestly — full severity labels included." },
+];
+
+const STRICTNESS: { value: "lenient" | "balanced" | "strict"; label: string; hint: string }[] = [
+  { value: "lenient", label: "Lenient", hint: "Correct only errors that block understanding." },
+  { value: "balanced", label: "Balanced", hint: "Correct meaningful errors, note small recurring ones." },
+  { value: "strict", label: "Strict", hint: "Correct every error, including minor ones." },
+];
 
 export function Settings({ repos, profile, onSaved, onDone }: Props) {
   const initial = readAiSettings(profile);
@@ -38,49 +48,84 @@ export function Settings({ repos, profile, onSaved, onDone }: Props) {
   }
 
   return (
-    <main className="container">
+    <div>
+      <span className="eyebrow">Account</span>
       <h1>Settings</h1>
-      <form className="onboarding" onSubmit={handleSave}>
-        <label>
-          AI model
-          <input value={model} onChange={(e) => setModel(e.currentTarget.value)} />
-          <span className="onboard-hint">
-            AI features run through PolyglotAI's shared backend — no API key needed here.
-          </span>
-        </label>
-        <label>
-          Real-speech level
-          <select value={level} onChange={(e) => setLevel(e.currentTarget.value as RealSpeechLevel)}>
-            {LEVELS.map((l) => (
-              <option key={l} value={l}>
-                {l}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          Correction strictness
-          <select
-            value={strictness}
-            onChange={(e) => setStrictness(e.currentTarget.value as (typeof STRICTNESS)[number])}
-          >
-            {STRICTNESS.map((s) => (
-              <option key={s} value={s}>
-                {s}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label className="checkbox">
-          <input type="checkbox" checked={logging} onChange={(e) => setLogging(e.currentTarget.checked)} />
-          Save conversation logs locally (off by default)
-        </label>
-        <button type="submit">Save</button>
-        {saved && <p className="subtitle">Saved.</p>}
+
+      <form onSubmit={handleSave}>
+        <div className="settings-list">
+          <section className="settings-card">
+            <div className="settings-card-head">
+              <h3>AI model</h3>
+              <p>AI features run through PolyglotAI's shared backend — no API key needed here.</p>
+            </div>
+            <input type="text" value={model} onChange={(e) => setModel(e.currentTarget.value)} />
+          </section>
+
+          <section className="settings-card">
+            <div className="settings-card-head">
+              <h3>Real-speech level</h3>
+              <p>How much slang, register, and profanity the library and tutor surface — mild to full severity.</p>
+            </div>
+            <div className="pill-select">
+              {LEVELS.map((l) => (
+                <button
+                  key={l.value}
+                  type="button"
+                  data-heat={l.heat}
+                  className={level === l.value ? "active" : ""}
+                  onClick={() => setLevel(l.value)}
+                >
+                  {l.label}
+                </button>
+              ))}
+              <span className="hint">{LEVELS.find((l) => l.value === level)?.hint}</span>
+            </div>
+          </section>
+
+          <section className="settings-card">
+            <div className="settings-card-head">
+              <h3>Correction strictness</h3>
+              <p>How picky the AI Tutor is when correcting your writing.</p>
+            </div>
+            <div className="pill-select">
+              {STRICTNESS.map((s) => (
+                <button
+                  key={s.value}
+                  type="button"
+                  className={`neutral ${strictness === s.value ? "active" : ""}`}
+                  onClick={() => setStrictness(s.value)}
+                >
+                  {s.label}
+                </button>
+              ))}
+              <span className="hint">{STRICTNESS.find((s) => s.value === strictness)?.hint}</span>
+            </div>
+          </section>
+
+          <section className="settings-card">
+            <div className="settings-card-head">
+              <h3>Conversation logs</h3>
+              <p>Save Conversation-mode transcripts locally on this device. Off by default.</p>
+            </div>
+            <label className="settings-checkbox">
+              <input type="checkbox" checked={logging} onChange={(e) => setLogging(e.currentTarget.checked)} />
+              Save conversation logs locally
+            </label>
+          </section>
+        </div>
+
+        <div className="settings-actions">
+          <button type="submit" className="btn-primary">
+            Save changes
+          </button>
+          {saved && <span className="settings-saved">Saved.</span>}
+        </div>
       </form>
+
       <button type="button" className="link" onClick={onDone}>
         Back to dashboard
       </button>
-    </main>
+    </div>
   );
 }
