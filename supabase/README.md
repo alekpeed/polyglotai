@@ -64,16 +64,16 @@ curl -X POST https://YOUR-PROJECT-REF.supabase.co/functions/v1/openai-proxy/chat
 
 ## Redeploying after changes
 
-Only `functions/openai-proxy/index.ts` changed:
+Automatic: `.github/workflows/deploy-supabase.yml` runs `supabase db push` +
+`supabase functions deploy` on every push to `main` that touches `supabase/**`, using the
+`SUPABASE_ACCESS_TOKEN` repo secret. Just push — nothing to run by hand.
+
+Manual (if you need to redeploy without a code change, e.g. after rotating a secret): open the
+repo's Actions tab → "Deploy Supabase" → "Run workflow." Or from the CLI:
 
 ```sh
-supabase functions deploy openai-proxy --no-verify-jwt
-```
-
-Only the schema changed (new migration file):
-
-```sh
-supabase db push
+supabase functions deploy openai-proxy --no-verify-jwt   # function only
+supabase db push                                         # schema only
 ```
 
 ## What this does and doesn't protect against
