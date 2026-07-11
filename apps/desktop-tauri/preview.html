@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PolyglotAI — design preview</title>
+    <title>PolyglotAI — web build</title>
     <style>
       #preview-banner {
         position: fixed;
@@ -38,12 +38,13 @@
 
   <body>
     <div id="preview-banner">
-      <span>Design preview build — demo data only, not your real app or account.</span>
-      <button id="preview-reset" type="button">Reset demo data</button>
+      <span>Browser build — your progress is stored in this browser only (not synced elsewhere). A real offline app is coming.</span>
+      <button id="preview-reset" type="button">Reset local data</button>
     </div>
     <div id="root"></div>
     <script>
       document.getElementById("preview-reset").addEventListener("click", () => {
+        if (!confirm("This clears all progress stored in this browser. Continue?")) return;
         localStorage.removeItem("polyglotai-preview-db-v1");
         location.reload();
       });
