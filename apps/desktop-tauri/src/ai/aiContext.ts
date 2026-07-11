@@ -33,10 +33,14 @@ export function readAiSettings(profile: LearnerProfile): AiSettings {
   };
 }
 
-// Cached in-memory so every screen visited in one session reuses the same registration instead
-// of re-hitting /register each time — the `profile` prop screens hold is a snapshot from launch
-// and won't reflect a token persisted mid-session by a different screen.
-let deviceTokenCache: string | null = null;
+// Single-flight in-memory registration, shared across every hook that needs it. A single AI
+// screen mounts useAiProvider/useSpeechProvider/useTtsProvider together, and each independently
+// calls ensureDeviceToken on mount — without sharing one in-flight promise, each would race to
+// its own /register call and (if a passcode is required) pop its own separate prompt() dialog.
+// Caching only the *resolved* token (not the promise) left that window open; caching the promise
+// itself closes it, since every caller in the same tick sees it already set before any of them
+// await past it. Cleared on failure so a wrong/cancelled passcode doesn't permanently block retries.
+let deviceTokenPromise: Promise<string | null> | null = null;
 
 async function registerDevice(passcode: string): Promise<string | null> {
   const res = await fetch(`${PROXY_BASE_URL}/register`, {
@@ -49,31 +53,33 @@ async function registerDevice(passcode: string): Promise<string | null> {
   return data.token ?? null;
 }
 
-async function ensureDeviceToken(repos: Repos, profile: LearnerProfile): Promise<string | null> {
-  if (deviceTokenCache) return deviceTokenCache;
-
+function ensureDeviceToken(repos: Repos, profile: LearnerProfile): Promise<string | null> {
   const existing = readAiSettings(profile).deviceToken;
-  if (existing) {
-    deviceTokenCache = existing;
-    return existing;
-  }
+  if (existing) return Promise.resolve(existing);
 
-  if (!PROXY_BASE_URL) return null;
-  try {
-    // Try with no passcode first — a no-op when the proxy has no access gate set, and the
-    // common case for the desktop app. Only prompt if the proxy actually rejects it.
-    let token = await registerDevice("");
-    if (!token && typeof window !== "undefined") {
-      const passcode = window.prompt("Enter the access code to enable AI features:");
-      if (passcode) token = await registerDevice(passcode);
-    }
-    if (!token) return null;
-    deviceTokenCache = token;
-    await repos.profiles.update(profile.id, { settings: { ...profile.settings, deviceToken: token } });
-    return token;
-  } catch {
-    return null;
+  if (!PROXY_BASE_URL) return Promise.resolve(null);
+
+  if (!deviceTokenPromise) {
+    deviceTokenPromise = (async () => {
+      try {
+        // Try with no passcode first — a no-op when the proxy has no access gate set, and the
+        // common case for the desktop app. Only prompt if the proxy actually rejects it.
+        let token = await registerDevice("");
+        if (!token && typeof window !== "undefined") {
+          const passcode = window.prompt("Enter the access code to enable AI features:");
+          if (passcode) token = await registerDevice(passcode);
+        }
+        if (token) await repos.profiles.update(profile.id, { settings: { ...profile.settings, deviceToken: token } });
+        return token;
+      } catch {
+        return null;
+      }
+    })();
+    deviceTokenPromise.then((token) => {
+      if (!token) deviceTokenPromise = null;
+    });
   }
+  return deviceTokenPromise;
 }
 
 /** Builds the chat provider via the backend proxy, or null when the proxy isn't configured
