@@ -15,9 +15,21 @@ type SqlValue = string | number | boolean | null;
 
 const STORAGE_KEY = "polyglotai-preview-db-v1";
 
+// The wasm import above is inlined as a base64 data: URI (vite.preview.config.ts sets
+// assetsInlineLimit sky-high). Handing that URI to sql.js's `locateFile` makes it `fetch()`
+// the wasm — which sandboxed hosts (e.g. Claude Artifacts) block, failing with "both async
+// and sync fetching of the wasm failed". Decoding the data URI synchronously into bytes and
+// passing `wasmBinary` skips fetch entirely.
+function dataUriToBytes(dataUri: string): Uint8Array {
+  const binary = atob(dataUri.slice(dataUri.indexOf(",") + 1));
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  return bytes;
+}
+
 let sqlJsPromise: Promise<Awaited<ReturnType<typeof initSqlJs>>> | null = null;
 function getSqlJs() {
-  sqlJsPromise ??= initSqlJs({ locateFile: () => sqlWasmUrl });
+  sqlJsPromise ??= initSqlJs({ wasmBinary: dataUriToBytes(sqlWasmUrl).buffer as ArrayBuffer });
   return sqlJsPromise;
 }
 
