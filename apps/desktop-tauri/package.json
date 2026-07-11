@@ -7,30 +7,34 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "preview:build": "vite build --config vite.preview.config.ts",
     "tauri": "tauri",
     "typecheck": "tsc --noEmit",
     "test": "echo \"no tests yet\"",
     "lint": "eslint src"
   },
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "@polyglotai/ai-orchestration": "workspace:*",
+    "@polyglotai/core-learning": "workspace:*",
+    "@polyglotai/language-pack-sdk": "workspace:*",
+    "@polyglotai/pronunciation": "workspace:*",
+    "@polyglotai/shared-types": "workspace:*",
+    "@polyglotai/spaced-repetition": "workspace:*",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-opener": "^2",
     "@tauri-apps/plugin-sql": "^2",
-    "@polyglotai/shared-types": "workspace:*",
-    "@polyglotai/core-learning": "workspace:*",
-    "@polyglotai/language-pack-sdk": "workspace:*",
-    "@polyglotai/spaced-repetition": "workspace:*",
-    "@polyglotai/ai-orchestration": "workspace:*",
-    "@polyglotai/pronunciation": "workspace:*"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^2",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+    "@types/sql.js": "^1.4.11",
     "@vitejs/plugin-react": "^4.6.0",
+    "sql.js": "^1.14.1",
     "typescript": "~5.8.3",
     "vite": "^7.0.4",
-    "@tauri-apps/cli": "^2"
+    "vite-plugin-singlefile": "^2.3.3"
   }
 }

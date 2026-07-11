@@ -1,6 +1,7 @@
 node_modules/
 dist/
 dist-bin/
+dist-preview/
 *.log
 .DS_Store
 

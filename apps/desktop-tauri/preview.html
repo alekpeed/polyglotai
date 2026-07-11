@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PolyglotAI — design preview</title>
+    <style>
+      #preview-banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.4rem 1rem;
+        background: #14181b;
+        color: #fafaf7;
+        font-family: system-ui, sans-serif;
+        font-size: 0.78rem;
+      }
+      #preview-banner button {
+        background: none;
+        border: 1px solid rgba(250, 250, 247, 0.4);
+        color: inherit;
+        border-radius: 3px;
+        padding: 0.15rem 0.6rem;
+        font-size: 0.72rem;
+        cursor: pointer;
+      }
+      #root {
+        padding-top: 28px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="preview-banner">
+      <span>Design preview build — demo data only, not your real app or account.</span>
+      <button id="preview-reset" type="button">Reset demo data</button>
+    </div>
+    <div id="root"></div>
+    <script>
+      document.getElementById("preview-reset").addEventListener("click", () => {
+        localStorage.removeItem("polyglotai-preview-db-v1");
+        location.reload();
+      });
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
