@@ -1,0 +1,59 @@
+name: Deploy Web Build
+
+# Builds the browser build (packages/apps compiled with the in-browser sql.js storage shim
+# instead of native Tauri SQLite — see apps/desktop-tauri/vite.preview.config.ts) and publishes
+# it to GitHub Pages on every push to main. This is the interim "runs from a URL, not your HD"
+# stopgap ahead of a real native (.exe) release — see apps/desktop-tauri/preview.html for the
+# in-app disclosure about local-only storage.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Build browser web app
+        working-directory: apps/desktop-tauri
+        run: pnpm preview:build
+        env:
+          # Public by necessity (baked into a client-side bundle) — the proxy itself holds the
+          # real OpenAI key server-side, so this URL alone grants no access to anything.
+          VITE_AI_PROXY_URL: https://qddglfcuipmazrjoxpin.supabase.co/functions/v1/openai-proxy
+      - name: Prepare Pages output
+        run: |
+          mkdir -p pages-out
+          cp apps/desktop-tauri/dist-preview/preview.html pages-out/index.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: pages-out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
