@@ -1,0 +1,184 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "gram.wa-ga",
+    "title": "Particles は and が (topic vs. subject)",
+    "cefr": "A1",
+    "explanationMd": "は (pronounced *wa*, not *ha*, when used as this particle) marks the **topic** — what the sentence is about. が marks the **subject** — specifically what does or is something, often introducing new information. 私は学生です (Watashi wa gakusei desu) sets up 'as for me' and comments on it; 誰が来ましたか (Dare ga kimashita ka, 'who came?') asks specifically which person did the action. Most beginner sentences reach for は by default, and that's fine — が becomes important once you're contrasting or answering a 'who/what' question.",
+    "examples": [
+      { "text": "私は日本人です。", "reading": "わたしはにほんじんです。", "romaji": "Watashi wa nihonjin desu.", "translation": "I am Japanese. (topic: me)" },
+      { "text": "猫が好きです。", "reading": "ねこがすきです。", "romaji": "Neko ga suki desu.", "translation": "I like cats. (が marks 猫 as the thing that's likeable)" }
+    ],
+    "commonErrors": [
+      { "wrong": "だれは来ましたか", "right": "誰が来ましたか", "note": "Question words asking 'who/what did X' almost always take が, not は." }
+    ],
+    "drills": [
+      { "prompt": "私＿好きです。 (I like it.)", "answer": "は" },
+      { "prompt": "何＿ありますか。 (What is there?)", "answer": "が" }
+    ],
+    "relatedVocabulary": ["vocab.watashi", "vocab.suki", "vocab.nani"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.wo-particle",
+    "title": "Particle を — marking the direct object",
+    "cefr": "A1",
+    "explanationMd": "を (pronounced *o*) marks the direct object of a verb — the thing the action is done to. It always comes right after the noun and right before the verb: 水を飲みます (Mizu o nomimasu, 'I drink water'). を almost never appears anywhere else, so once you can spot it, you can immediately tell which noun is on the receiving end of the action.",
+    "examples": [
+      { "text": "ご飯を食べます。", "reading": "ごはんをたべます。", "romaji": "Gohan o tabemasu.", "translation": "I eat rice/a meal." },
+      { "text": "日本語を話します。", "reading": "にほんごをはなします。", "romaji": "Nihongo o hanashimasu.", "translation": "I speak Japanese." }
+    ],
+    "commonErrors": [
+      { "wrong": "水は飲みます (when meaning simply 'I drink water')", "right": "水を飲みます", "note": "は isn't wrong here, but it shifts the meaning to 'as for water, I drink it' (implying contrast with something else) — を is the neutral, default choice for a plain direct object." }
+    ],
+    "drills": [
+      { "prompt": "コーヒー＿飲みます。 (I drink coffee.)", "answer": "を" }
+    ],
+    "relatedVocabulary": ["vocab.mizu", "vocab.taberu", "vocab.nomu", "vocab.hanasu"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.ni-de",
+    "title": "Particles に and で — location and direction",
+    "cefr": "A1",
+    "explanationMd": "に marks a destination or a fixed point in time/space — where something *goes to*, or where something simply *is*: 学校に行きます (Gakkou ni ikimasu, 'I go to school'). で marks where an action *happens* — the scene of the activity: 学校で勉強します (Gakkou de benkyou shimasu, 'I study at school'). The quick test: does the sentence describe existing/arriving somewhere (に), or doing something while there (で)?",
+    "examples": [
+      { "text": "駅に行きます。", "reading": "えきにいきます。", "romaji": "Eki ni ikimasu.", "translation": "I'm going to the station." },
+      { "text": "店で食べます。", "reading": "みせでたべます。", "romaji": "Mise de tabemasu.", "translation": "I eat at the store/shop." }
+    ],
+    "commonErrors": [
+      { "wrong": "店に食べます", "right": "店で食べます", "note": "食べる is an action performed at a place, so it needs で, not に." }
+    ],
+    "drills": [
+      { "prompt": "家＿帰ります。 (I return home.)", "answer": "に" },
+      { "prompt": "学校＿日本語を話します。 (I speak Japanese at school.)", "answer": "で" }
+    ],
+    "relatedVocabulary": ["vocab.eki", "vocab.iku", "vocab.gakkou", "vocab.mise", "vocab.ie"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.desu-masu",
+    "title": "です/ます — the polite form",
+    "cefr": "A1",
+    "explanationMd": "です attaches to nouns and adjectives, ます attaches to verbs, and together they're the default polite register you use with strangers, coworkers, and anyone you're not close to — the safe choice while learning. 私は学生です (Watashi wa gakusei desu, 'I am a student'); 食べます (Tabemasu, 'I eat/will eat'). Verbs go from their dictionary form to their ます-form by changing the final vowel: 食べる → 食べます, 飲む → 飲みます, 話す → 話します.",
+    "examples": [
+      { "text": "毎日、水を飲みます。", "reading": "まいにち、みずをのみます。", "romaji": "Mainichi, mizu o nomimasu.", "translation": "I drink water every day." }
+    ],
+    "commonErrors": [
+      { "wrong": "食べるです", "right": "食べます", "note": "です attaches to nouns/adjectives; verbs get their own polite ending (ます), never です stacked on the dictionary form." }
+    ],
+    "drills": [
+      { "prompt": "見る → ＿＿＿ (polite form)", "answer": "見ます" },
+      { "prompt": "行く → ＿＿＿ (polite form)", "answer": "行きます" }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.masu-form",
+        "title": "ます-form across verbs",
+        "pattern": "わたしは{slot}。",
+        "steps": [
+          { "prompt": "わたしは＿＿＿。 (たべる)", "answer": "わたしはたべます。", "note": "食べる → 食べます" },
+          { "prompt": "わたしは＿＿＿。 (のむ)", "answer": "わたしはのみます。", "note": "飲む → 飲みます" },
+          { "prompt": "わたしは＿＿＿。 (いく)", "answer": "わたしはいきます。", "note": "行く → 行きます" },
+          { "prompt": "わたしは＿＿＿。 (みる)", "answer": "わたしはみます。", "note": "見る → 見ます" },
+          { "prompt": "わたしは＿＿＿。 (はなす)", "answer": "わたしははなします。", "note": "話す → 話します" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["vocab.taberu", "vocab.nomu", "vocab.iku", "vocab.miru", "vocab.hanasu"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.i-na-adjectives",
+    "title": "い-adjectives vs. な-adjectives",
+    "cefr": "A1",
+    "explanationMd": "Japanese has two adjective families that conjugate differently. い-adjectives end in い (大きい ookii, 'big'; おいしい oishii, 'delicious') and can go straight in front of a noun or directly before です. な-adjectives (好き suki, 'likeable'; 元気 genki, 'energetic') need な inserted before a noun — 好きな食べ物 (sukina tabemono, 'a food I like') — but drop the な before です. Mixing these up is one of the most common beginner slips.",
+    "examples": [
+      { "text": "大きい家です。", "reading": "おおきいいえです。", "romaji": "Ookii ie desu.", "translation": "It's a big house. (い-adjective, no な needed)" },
+      { "text": "好きな食べ物は何ですか。", "reading": "すきなたべものはなんですか。", "romaji": "Sukina tabemono wa nan desu ka.", "translation": "What food do you like? (な-adjective + noun)" }
+    ],
+    "commonErrors": [
+      { "wrong": "好き食べ物", "right": "好きな食べ物", "note": "な-adjectives need な before the noun they describe — 好き alone can't modify a noun directly." },
+      { "wrong": "大きいな家", "right": "大きい家", "note": "い-adjectives never take な — that's exclusively for the な-adjective family." }
+    ],
+    "drills": [
+      { "prompt": "＿＿＿食べ物 (a delicious food)", "answer": "おいしい食べ物" },
+      { "prompt": "＿＿＿人 (an energetic person, 元気)", "answer": "元気な人" }
+    ],
+    "relatedVocabulary": ["vocab.ookii", "vocab.oishii", "vocab.suki", "vocab.tabemono"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.negation",
+    "title": "Negation — ません, くない, じゃないです",
+    "cefr": "A1",
+    "explanationMd": "Each word type negates differently in polite speech. Verbs: swap ます for ません — 食べます → 食べません. い-adjectives: drop the final い and add くない(です) — おいしい → おいしくない(です). Nouns and な-adjectives: add じゃないです (casual) or ではありません (more formal) — 学生です → 学生じゃないです.",
+    "examples": [
+      { "text": "今日は行きません。", "reading": "きょうはいきません。", "romaji": "Kyou wa ikimasen.", "translation": "I'm not going today." },
+      { "text": "これはおいしくないです。", "romaji": "Kore wa oishikunai desu.", "translation": "This isn't delicious." },
+      { "text": "学生じゃないです。", "reading": "がくせいじゃないです。", "romaji": "Gakusei janai desu.", "translation": "I'm not a student." }
+    ],
+    "commonErrors": [
+      { "wrong": "おいしいくないです", "right": "おいしくないです", "note": "The final い of the adjective is replaced by くない, not kept in front of it." }
+    ],
+    "drills": [
+      { "prompt": "飲みます → ＿＿＿ (negative)", "answer": "飲みません" },
+      { "prompt": "大きい → ＿＿＿ (negative)", "answer": "大きくない" }
+    ],
+    "relatedVocabulary": ["vocab.iku", "vocab.oishii", "vocab.nomu", "vocab.ookii"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.past-tense",
+    "title": "Past tense — でした and ました",
+    "cefr": "A1",
+    "explanationMd": "です becomes でした in the past; ます becomes ました. 学生です → 学生でした ('I was a student'). 食べます → 食べました ('I ate'). The pattern is completely regular once you know the polite present form — no separate conjugation table to memorize.",
+    "examples": [
+      { "text": "昨日、店で食べました。", "reading": "きのう、みせでたべました。", "romaji": "Kinou, mise de tabemashita.", "translation": "Yesterday, I ate at a shop." },
+      { "text": "楽しかったです。", "reading": "たのしかったです。", "romaji": "Tanoshikatta desu.", "translation": "It was fun.", "register": "neutral" }
+    ],
+    "commonErrors": [
+      { "wrong": "楽しいでした", "right": "楽しかったです", "note": "い-adjectives have their own past form (かった) — です doesn't carry the past tense for them the way it does for nouns." }
+    ],
+    "drills": [
+      { "prompt": "行きます → ＿＿＿ (past)", "answer": "行きました" },
+      { "prompt": "学生です → ＿＿＿ (past)", "answer": "学生でした" }
+    ],
+    "relatedVocabulary": ["vocab.taberu", "vocab.mise", "vocab.tanoshii", "vocab.kinou"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.ka-question",
+    "title": "Questions with か",
+    "cefr": "A1",
+    "explanationMd": "Adding か to the end of any polite sentence turns it into a question — no word order change, no extra verb like English 'do/does'. これは何ですか (Kore wa nan desu ka, 'What is this?'). In casual speech か is often dropped and rising intonation alone does the job (これ、何？), but か is the safe, unambiguous default while learning.",
+    "examples": [
+      { "text": "お名前は何ですか。", "reading": "おなまえはなんですか。", "romaji": "Onamae wa nan desu ka.", "translation": "What is your name?" },
+      { "text": "駅はどこですか。", "reading": "えきはどこですか。", "romaji": "Eki wa doko desu ka.", "translation": "Where is the station?" }
+    ],
+    "commonErrors": [
+      { "wrong": "何ですか？ですか is question mark redundant?", "right": "何ですか (no ？ needed, but harmless if added)", "note": "か already marks the question grammatically; a written ？ is optional stylistic reinforcement, not required." }
+    ],
+    "drills": [
+      { "prompt": "Turn into a question: 学生です", "answer": "学生ですか" }
+    ],
+    "relatedVocabulary": ["vocab.namae", "vocab.eki", "vocab.doko", "vocab.nani"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.no-particle",
+    "title": "Particle の — possession and description",
+    "cefr": "A1",
+    "explanationMd": "の links two nouns, with the first describing or owning the second — the mirror image of English 'X's Y' or 'Y of X'. 私の名前 (watashi no namae, 'my name'), 日本の食べ物 (Nihon no tabemono, 'Japanese food' / 'food of Japan'). Once you have の, you can chain simple nouns into a huge range of descriptions without needing separate adjectives.",
+    "examples": [
+      { "text": "これは友達の家です。", "reading": "これはともだちのいえです。", "romaji": "Kore wa tomodachi no ie desu.", "translation": "This is my friend's house." }
+    ],
+    "commonErrors": [
+      { "wrong": "私家 (dropping の entirely)", "right": "私の家", "note": "の is required between the two nouns — Japanese doesn't allow simply stacking nouns the way some possessive-less constructions might suggest." }
+    ],
+    "drills": [
+      { "prompt": "私＿名前 (my name)", "answer": "の" }
+    ],
+    "relatedVocabulary": ["vocab.watashi", "vocab.namae", "vocab.tomodachi", "vocab.ie"]
+  }
+]

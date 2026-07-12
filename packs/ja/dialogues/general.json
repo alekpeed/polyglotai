@@ -1,0 +1,81 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "dlg.self-introduction",
+    "scenario": "Meeting someone for the first time",
+    "speakers": [
+      { "id": "a", "name": "田中", "role": "coworker" },
+      { "id": "b", "name": "You" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "a", "text": "はじめまして。田中です。", "reading": "はじめまして。たなかです。", "romaji": "Hajimemashite. Tanaka desu." },
+      { "speakerId": "b", "text": "はじめまして。よろしくお願いします。", "reading": "はじめまして。よろしくおねがいします。", "romaji": "Hajimemashite. Yoroshiku onegaishimasu." },
+      { "speakerId": "a", "text": "お名前は何ですか。", "reading": "おなまえはなんですか。", "romaji": "Onamae wa nan desu ka." },
+      { "speakerId": "b", "text": "私の名前はアナです。", "reading": "わたしのなまえはあなです。", "romaji": "Watashi no namae wa Ana desu." },
+      { "speakerId": "a", "text": "アナさんですね。よろしくお願いします。", "reading": "あなさんですね。よろしくおねがいします。", "romaji": "Ana-san desu ne. Yoroshiku onegaishimasu." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "Nice to meet you. I'm Tanaka." },
+      { "speakerId": "b", "text": "Nice to meet you too. I look forward to working with you." },
+      { "speakerId": "a", "text": "What's your name?" },
+      { "speakerId": "b", "text": "My name is Ana." },
+      { "speakerId": "a", "text": "Ana, is it. Nice to meet you." }
+    ],
+    "keyVocabulary": ["vocab.namae", "vocab.watashi"],
+    "grammarNotes": "はじめまして and よろしくお願いします are a fixed pair used almost every first meeting — closer to ritual phrases than sentences you build word by word. Note さん attached after a name (never your own) as a neutral title, like Mr./Ms. but used far more broadly."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.cafe-order",
+    "scenario": "Ordering at a café",
+    "speakers": [
+      { "id": "staff", "name": "Staff", "role": "cafe staff" },
+      { "id": "customer", "name": "You" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "staff", "text": "いらっしゃいませ。", "romaji": "Irasshaimase." },
+      { "speakerId": "customer", "text": "すみません、お茶をお願いします。", "reading": "すみません、おちゃをおねがいします。", "romaji": "Sumimasen, ocha o onegaishimasu." },
+      { "speakerId": "staff", "text": "お茶ですね。他に何かありますか。", "reading": "おちゃですね。ほかになにかありますか。", "romaji": "Ocha desu ne. Hoka ni nanika arimasu ka." },
+      { "speakerId": "customer", "text": "いいえ、それだけです。", "romaji": "Iie, sore dake desu." },
+      { "speakerId": "staff", "text": "かしこまりました。少々お待ちください。", "reading": "かしこまりました。しょうしょうおまちください。", "romaji": "Kashikomarimashita. Shoushou omachi kudasai." }
+    ],
+    "translation": [
+      { "speakerId": "staff", "text": "Welcome!" },
+      { "speakerId": "customer", "text": "Excuse me, could I have some tea, please?" },
+      { "speakerId": "staff", "text": "Tea, got it. Anything else?" },
+      { "speakerId": "customer", "text": "No, that's all." },
+      { "speakerId": "staff", "text": "Certainly. Please wait a moment." }
+    ],
+    "keyVocabulary": ["vocab.ocha", "vocab.sumimasen", "vocab.iie"],
+    "grammarNotes": "いらっしゃいませ is what staff say to every customer on entry — you're not expected to respond to it. お願いします after a noun is the standard polite way to request something, much softer and more common than a direct command."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.asking-directions",
+    "scenario": "Asking for directions to the station",
+    "speakers": [
+      { "id": "a", "name": "You" },
+      { "id": "b", "name": "Passerby" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "a", "text": "すみません、駅はどこですか。", "reading": "すみません、えきはどこですか。", "romaji": "Sumimasen, eki wa doko desu ka." },
+      { "speakerId": "b", "text": "駅ですか。あそこです。", "reading": "えきですか。あそこです。", "romaji": "Eki desu ka. Asoko desu." },
+      { "speakerId": "a", "text": "ありがとうございます。", "romaji": "Arigatou gozaimasu." },
+      { "speakerId": "b", "text": "いいえ、どういたしまして。", "romaji": "Iie, dou itashimashite." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "Excuse me, where is the station?" },
+      { "speakerId": "b", "text": "The station? It's over there." },
+      { "speakerId": "a", "text": "Thank you very much." },
+      { "speakerId": "b", "text": "Not at all, you're welcome." }
+    ],
+    "keyVocabulary": ["vocab.sumimasen", "vocab.eki", "vocab.doko", "vocab.arigatou-gozaimasu"],
+    "grammarNotes": "すみません doubles as both 'excuse me' (getting a stranger's attention) and 'sorry' — here it's the opener for a polite request to a stranger, not an apology."
+  }
+]

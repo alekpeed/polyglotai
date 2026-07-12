@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "ja",
+  "name": "Japanese",
+  "languageCode": "ja-JP",
+  "packVersion": "0.1.0",
+  "basePack": null,
+  "authors": ["PolyglotAI"],
+  "license": "proprietary",
+  "dialects": [{ "id": "ja-JP-standard", "name": "Standard (Tokyo)" }],
+  "defaultDialect": "ja-JP-standard",
+  "cefrRange": ["A1", "A1"],
+  "featureFlags": { "slang": false, "profanity": false },
+  "contents": {
+    "vocabulary": ["vocabulary/n5-core.json"],
+    "grammar": ["grammar/core.json"],
+    "pronunciation": ["pronunciation/rules.json"],
+    "dialogues": ["dialogues/general.json"]
+  }
+}

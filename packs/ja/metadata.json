@@ -1,0 +1,7 @@
+{
+  "description": "Japanese language pack — pilot scope. 60 vocabulary items, 9 grammar points (with one substitution ladder), 3 dialogues, 7 pronunciation rules, all A1/N5-equivalent. Built to validate the multi-language pipeline (import, review, AI tutor, pronunciation) end-to-end before investing in full Tier-1 volume.",
+  "coverage": "A1 everyday basics: greetings, self-introduction, numbers, time, family, food, core verbs, i/na-adjectives, and the eight most load-bearing particles/conjugation patterns (は/が, を, に/で, です/ます, negation, past tense, か questions, の). Deliberately excludes slang, keigo/formality levels, and profanity — Japanese's real register axis is politeness, not crudeness, and that deserves its own design pass rather than reusing the pt-br severity model as-is.",
+  "status": "pilot",
+  "reviewStatus": "authored-by-claude-pending-native-review",
+  "editorialNotes": "Kanji/kana/romaji were authored directly (no machine translation pass); pitch-accent and naturalness notes in particular should get a native speaker's sign-off before this pack is treated as more than a pilot. See NATIVE_REVIEW.md."
+}

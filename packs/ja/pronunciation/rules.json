@@ -1,0 +1,74 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "pron.long-vowels",
+    "grapheme": "ー / あ・い・う・え・お repeated",
+    "ipa": "Vː",
+    "description": "Vowel length changes meaning, not just emphasis — おばさん (obasan, 'aunt') and おばあさん (obaasan, 'grandmother') differ only in how long the 'a' is held. A long vowel is written by doubling the kana (ああ, いい, うう) or, for え and お, sometimes by adding い or う (せんせい, とうきょう). Katakana marks length with a simple dash: コーヒー (koohii, 'coffee').",
+    "minimalPairs": [
+      { "a": "おばさん", "b": "おばあさん", "note": "obasan (aunt) vs. obaasan (grandmother) — length alone changes the word." },
+      { "a": "ここ", "b": "こうこう", "note": "koko (here) vs. koukou (high school) — same idea with お/おう." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.sokuon",
+    "grapheme": "っ (small tsu)",
+    "ipa": "ʔ / gemination",
+    "description": "A small っ before a consonant doubles it — a brief, silent held stop before the sound continues. がっこう (gakkou, 'school') has a distinct pause-then-k that plain がこう would not. It never appears before vowels or ん, and it's always written smaller than a regular つ so it's easy to spot in text.",
+    "minimalPairs": [
+      { "a": "きて", "b": "きって", "note": "kite ('come', casual command) vs. kitte ('stamp') — the small っ is the only difference." },
+      { "a": "さか", "b": "さっか", "note": "saka (slope) vs. sakka (author/writer)." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.r-sound",
+    "grapheme": "ら・り・る・れ・ろ",
+    "ipa": "ɾ",
+    "description": "The Japanese 'r' is a quick flap of the tongue against the ridge behind the teeth — closer to a Spanish single 'r' (as in 'pero') or even a soft English 'd' than to an English 'r' or 'l'. Trying to round the lips for an English 'r', or fully touching the tongue for an English 'l', both overshoot the mark.",
+    "minimalPairs": [
+      { "a": "から", "b": "かな", "note": "kara (from) vs. kana (question-ish particle) — a check that the tongue only taps, doesn't hold." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.fu-sound",
+    "grapheme": "ふ",
+    "ipa": "ɸɯ",
+    "description": "ふ isn't an English 'f' or 'h' — it's made by pushing air through nearly-closed lips, like softly blowing out a candle, with no teeth involved. English speakers default to a dental 'f' (top teeth on bottom lip), which is close enough to be understood but noticeably off.",
+    "minimalPairs": [
+      { "a": "ふゆ", "b": "ゆふ", "note": "fuyu (winter) vs. a reordering, to isolate ふ at the front of the word." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.pitch-accent",
+    "grapheme": "high-low pitch pattern",
+    "ipa": "ꜛꜜ (pitch, not stress)",
+    "description": "Japanese doesn't stress syllables the way English does (LOUD-er, not loud-ER) — instead, words carry a pattern of high and low pitch. はし can mean 'chopsticks' (high-low) or 'bridge' (low-high) depending purely on pitch, with identical vowels and consonants. Pitch accent is worth being aware of early, but it's learned mostly by ear from native audio rather than by rule.",
+    "minimalPairs": [
+      { "a": "はし (箸)", "b": "はし (橋)", "note": "hashi (chopsticks, high-low) vs. hashi (bridge, low-high)." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.g-nasal",
+    "grapheme": "が行 mid-word",
+    "ipa": "ŋ",
+    "description": "In much of standard/Tokyo Japanese, が/ぎ/ぐ/げ/ご inside a word (not at the very start) can soften to a nasal 'ng' sound, like the 'ng' in English 'singer' rather than a hard 'g'. かがみ (kagami, 'mirror') often comes out closer to 'ka-ngami'. This is a regional/generational tendency, not a strict rule, and a plain hard 'g' is always understood.",
+    "minimalPairs": [
+      { "a": "かがみ", "b": "かかみ", "note": "kagami (mirror, real word) vs. a nonsense contrast to isolate the mid-word が sound." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.devoiced-vowels",
+    "grapheme": "い・う between voiceless consonants",
+    "ipa": "i̥ / ɯ̥",
+    "description": "い and う often become whispered/silent when squeezed between two voiceless consonants like き/く, し/す, ち/つ, ひ/ふ, ぴ/ぷ — です often sounds closer to 'des' than 'de-su', and 好き (suki) closer to 'ski' than 'su-ki'. Learners who pronounce every vowel fully tend to sound over-enunciated rather than more correct.",
+    "minimalPairs": [
+      { "a": "です", "b": "でーす", "note": "desu (natural, u devoiced) vs. an exaggerated 'deesu' that overpronounces the u." }
+    ]
+  }
+]
