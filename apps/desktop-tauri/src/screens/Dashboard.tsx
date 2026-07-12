@@ -97,7 +97,7 @@ export function Dashboard({
 
   return (
     <div>
-      <span className="eyebrow">Olá, {firstName}</span>
+      <span className="eyebrow">Welcome back, {firstName}</span>
       <h1>{data.activePackName ?? "No pack installed"}</h1>
 
       <div className="hero-row">

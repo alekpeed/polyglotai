@@ -20,6 +20,22 @@
   font-style: normal;
   font-display: swap;
 }
+/* Custom Google Fonts subset (text= query) containing only the glyphs actually used across the
+   ja pack's content + UI chrome — ~195KB each instead of several MB for the full CJK set. */
+@font-face {
+  font-family: "Noto Serif JP";
+  src: url("./assets/fonts/noto-serif-jp-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto Serif JP";
+  src: url("./assets/fonts/noto-serif-jp-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* ============ TOKENS — Brasil · Concreto & Ipê (design handoff v1) ============ */
 :root {
@@ -142,37 +158,90 @@
   --shadow: 0 1px 2px rgba(20, 24, 27, 0.06), 0 8px 24px -12px rgba(20, 24, 27, 0.18);
 }
 
-/* ---- Pack theme: Japanese — ai-iro (indigo) + kin (gold), replacing the pt-br pack's
-   Brazil-flag palette in the shared accent-token slots. Surfaces (paper/ink/line/shadow) are
-   still shared across every pack here; the full Japanese design overhaul (own typography,
-   vertical tategaki, background-image layer, reshaped components) is built separately as
-   [data-pack="ja"] structural overrides below. Vermilion (shu-iro) is deliberately OFF for now
-   — the third accent slot points at indigo so nothing orange shows; it may return later. ---- */
+/* ---- Pack theme: Japanese — 藍と墨 "ai to sumi" (indigo and ink). A deliberately different
+   visual world, not a recolor: warm washi paper + sumi ink neutrals, a single ai (indigo) accent
+   for interactive/text emphasis, and kin (antique gold) held back for hairlines, borders and the
+   hanko seal — never a loud fill. Every shared token used elsewhere in this file is remapped here
+   so existing components inherit the palette automatically; [data-pack="ja"] structural overrides
+   further down reshape the handful of components (cards, nav, hero) that need actual layout
+   changes, not just new colors. Green (--verde-*) is intentionally folded into the ai indigo, same
+   as vermilion — this pack is a two-hue system, not three. ---- */
 :root[data-pack="ja"] {
-  --indigo: #1b4b73;
-  --indigo-fill: #6fa8d7;
-  --gold: #c99a2e;
-  --gold-fill: #e3cc98;
-  --verde-fill: #6fa8d7;
-  --verde-ink: #0f2a3f;
+  --paper: #e7dfce;
+  --surface: #ddd3bd;
+  --surface-raised: #f2ecdd;
+  --ink: #1c1712;
+  --ink-soft: #574f43;
+  --line: #cfc4ac;
+  --indigo: #22384c;
+  --indigo-soft: #dfe6ea;
+  --indigo-fill: #22384c;
+  --gold: #927639;
+  --gold-ink: #4a3b1a;
+  --gold-fill: #cdbb92;
+  --verde-fill: #22384c;
+  --verde-ink: #f2ecdd;
+  --shadow: none;
+  --radius-curve: 0;
+  --mincho: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", "Fraunces", serif;
+  --seigaiha: rgba(34, 56, 76, 0.05);
+  --paper-veil: rgba(231, 223, 206, 0.82);
 }
 @media (prefers-color-scheme: dark) {
   :root[data-pack="ja"] {
-    --indigo: #6fa8d7;
-    --indigo-fill: #1b4b73;
-    --gold: #e3cc98;
-    --gold-fill: #c99a2e;
-    --verde-fill: #1b4b73;
-    --verde-ink: #eaf2f8;
+    --paper: #14110c;
+    --surface: #100d09;
+    --surface-raised: #1d1913;
+    --ink: #ece3d1;
+    --ink-soft: #a89e8b;
+    --line: #322c22;
+    --indigo: #8bb6d6;
+    --indigo-soft: #1c2830;
+    --indigo-fill: #22384c;
+    --gold: #c2a15e;
+    --gold-ink: #ece3d1;
+    --gold-fill: #4a3f2c;
+    --verde-fill: #22384c;
+    --verde-ink: #f2ecdd;
+    --seigaiha: rgba(139, 182, 214, 0.06);
+    --paper-veil: rgba(20, 17, 12, 0.78);
   }
 }
 :root[data-pack="ja"][data-theme="dark"] {
-  --indigo: #6fa8d7;
-  --indigo-fill: #1b4b73;
-  --gold: #e3cc98;
-  --gold-fill: #c99a2e;
-  --verde-fill: #1b4b73;
-  --verde-ink: #eaf2f8;
+  --paper: #14110c;
+  --surface: #100d09;
+  --surface-raised: #1d1913;
+  --ink: #ece3d1;
+  --ink-soft: #a89e8b;
+  --line: #322c22;
+  --indigo: #8bb6d6;
+  --indigo-soft: #1c2830;
+  --indigo-fill: #22384c;
+  --gold: #c2a15e;
+  --gold-ink: #ece3d1;
+  --gold-fill: #4a3f2c;
+  --verde-fill: #22384c;
+  --verde-ink: #f2ecdd;
+  --seigaiha: rgba(139, 182, 214, 0.06);
+  --paper-veil: rgba(20, 17, 12, 0.78);
+}
+:root[data-pack="ja"][data-theme="light"] {
+  --paper: #e7dfce;
+  --surface: #ddd3bd;
+  --surface-raised: #f2ecdd;
+  --ink: #1c1712;
+  --ink-soft: #574f43;
+  --line: #cfc4ac;
+  --indigo: #22384c;
+  --indigo-soft: #dfe6ea;
+  --indigo-fill: #22384c;
+  --gold: #927639;
+  --gold-ink: #4a3b1a;
+  --gold-fill: #cdbb92;
+  --verde-fill: #22384c;
+  --verde-ink: #f2ecdd;
+  --seigaiha: rgba(34, 56, 76, 0.05);
+  --paper-veil: rgba(231, 223, 206, 0.82);
 }
 
 * {
@@ -1542,4 +1611,270 @@ button.link:hover {
   .app-main {
     padding: 1.5rem 1.2rem 3rem;
   }
+}
+
+/* ============================================================================
+   PACK STRUCTURE — Japanese: 藍と墨 "ai to sumi" (indigo and ink)
+   Everything above this point recolors existing components via the token remap.
+   This block reshapes the specific components where the mockup's identity is
+   structural, not just chromatic: flat hairline surfaces instead of curved,
+   shadowed cards, mincho serif for headings and glossed words (plain numerals
+   stay in Fraunces — hero-num/streak-num/pron-score are untouched below), a
+   vertical tategaki title + nav rail, a hanko ink-seal in place of gold-filled
+   badges, and a background-image slot for the user's own artwork. Scoped
+   entirely under [data-pack="ja"]; pt-br/default never match these rules.
+   ============================================================================ */
+
+/* ---- typography: mincho for headings + glossed/foreign-word text; numerals and
+   the Latin brand wordmark deliberately keep Fraunces (design sign-off). ---- */
+[data-pack="ja"] h1,
+[data-pack="ja"] h2,
+[data-pack="ja"] h3,
+[data-pack="ja"] h4,
+[data-pack="ja"] .display,
+[data-pack="ja"] .shelf-card h4,
+[data-pack="ja"] .lib-row .word .p,
+[data-pack="ja"] .review-front,
+[data-pack="ja"] .lang-picker-card .name,
+[data-pack="ja"] .scenario-grid button,
+[data-pack="ja"] .correction-hero-text,
+[data-pack="ja"] .onboard-hero-texture span,
+[data-pack="ja"] .onboard-headline {
+  font-family: var(--mincho);
+}
+
+/* ---- background slot: drop artwork into --ja-bg-image; until then a faint
+   seigaiha (青海波, "blue sea waves") pattern stands in so the composition
+   still reads as considered rather than empty. ---- */
+[data-pack="ja"] .app-main,
+[data-pack="ja"] .onboard-form-panel {
+  position: relative;
+  background-color: var(--paper);
+  background-image: var(--ja-bg-image, none),
+    radial-gradient(
+      circle at 50% 100%,
+      transparent 32%,
+      var(--seigaiha) 32%,
+      var(--seigaiha) 37%,
+      transparent 37%,
+      transparent 45%,
+      var(--seigaiha) 45%,
+      var(--seigaiha) 50%,
+      transparent 50%,
+      transparent 58%,
+      var(--seigaiha) 58%,
+      var(--seigaiha) 63%,
+      transparent 63%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      transparent 32%,
+      var(--seigaiha) 32%,
+      var(--seigaiha) 37%,
+      transparent 37%,
+      transparent 45%,
+      var(--seigaiha) 45%,
+      var(--seigaiha) 50%,
+      transparent 50%,
+      transparent 58%,
+      var(--seigaiha) 58%,
+      var(--seigaiha) 63%,
+      transparent 63%
+    );
+  background-size: cover, 88px 44px, 88px 44px;
+  background-position: center, 0 0, 44px 22px;
+  background-repeat: no-repeat, repeat, repeat;
+}
+[data-pack="ja"] .app-main::before,
+[data-pack="ja"] .onboard-form-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--paper-veil);
+  pointer-events: none;
+}
+[data-pack="ja"] .app-main > *,
+[data-pack="ja"] .onboard-form-panel > * {
+  position: relative;
+}
+
+/* ---- flatten every curved/shadowed card into a crisp hairline rectangle;
+   an --indigo top rule replaces the old colored blob/curve as the one accent
+   each card gets, echoing the mockup's .due/.rcard top-bar treatment. ---- */
+[data-pack="ja"] .card,
+[data-pack="ja"] .hero-card,
+[data-pack="ja"] .streak-card,
+[data-pack="ja"] .review-card,
+[data-pack="ja"] .tutor-card,
+[data-pack="ja"] .correction-hero,
+[data-pack="ja"] .chat,
+[data-pack="ja"] .lang-picker-card {
+  border-radius: 0;
+  box-shadow: none;
+}
+[data-pack="ja"] .hero-card,
+[data-pack="ja"] .review-card,
+[data-pack="ja"] .streak-card,
+[data-pack="ja"] .tutor-card {
+  border-top: 2px solid var(--gold);
+}
+[data-pack="ja"] .hero-card::after {
+  display: none;
+}
+[data-pack="ja"] .scenario-grid button,
+[data-pack="ja"] .bubble,
+[data-pack="ja"] .bubble.user,
+[data-pack="ja"] .bubble.assistant {
+  border-radius: 0;
+}
+[data-pack="ja"] .bubble.user {
+  border-bottom-right-radius: 0;
+}
+[data-pack="ja"] .bubble.assistant {
+  border-bottom-left-radius: 0;
+}
+
+/* ---- restrained gold: kin is a hairline/seal material here, never a solid
+   fill. Everything that used to be a gold-filled badge becomes an ink-bordered
+   seal-like mark instead; the primary CTA moves from gold to the ai indigo,
+   matching the mockup's .btn-ink. True --gold stays reserved for thin borders,
+   the tag/badge text color, and the seal itself. ---- */
+[data-pack="ja"] .btn-primary {
+  background: var(--indigo-fill);
+  color: #f2ecdd;
+}
+[data-pack="ja"] .app-brand .mark {
+  background: transparent;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+}
+[data-pack="ja"] .app-profile .av {
+  background: transparent;
+  color: var(--gold);
+  border: 1.5px solid var(--gold);
+}
+[data-pack="ja"] .nav-badge {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 0;
+}
+[data-pack="ja"] .onboard-step-num {
+  background: transparent;
+  color: var(--indigo);
+  border: 1.5px solid var(--indigo);
+  border-radius: 50%;
+}
+[data-pack="ja"] .streak-days span.on {
+  background: var(--indigo-fill);
+}
+[data-pack="ja"] .shelf-card .tag,
+[data-pack="ja"] .shelf-card:nth-child(3n + 2) .tag,
+[data-pack="ja"] .shelf-card:nth-child(3n) .tag {
+  background: transparent;
+  color: var(--indigo);
+  border: 1px solid var(--line);
+  border-radius: 0;
+}
+[data-pack="ja"] .lang-picker-card.new {
+  border-left-color: var(--gold);
+}
+
+/* ---- onboarding hero: the signature move — a vertical tategaki title running
+   top-to-bottom, a hanko ink seal, and a quieter texture (no spinning gold
+   sunburst, no rounded skyline hills — those read as the old app's language,
+   not this one's). ---- */
+[data-pack="ja"] .onboard-hero {
+  background: var(--indigo-fill);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+[data-pack="ja"] .onboard-sunburst,
+[data-pack="ja"] .onboard-skyline {
+  display: none;
+}
+[data-pack="ja"] .onboard-headline {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  height: 480px;
+  font-size: clamp(2.6rem, 6vw, 4rem);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.05;
+  margin: 0;
+  padding-top: 0.4rem;
+  position: relative;
+}
+[data-pack="ja"] .onboard-headline::before {
+  content: "";
+  position: absolute;
+  top: -0.9rem;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background: var(--gold);
+}
+[data-pack="ja"] .onboard-hero-content {
+  padding-top: 0.6rem;
+  max-width: 40ch;
+}
+[data-pack="ja"] .onboard-hero-content::after {
+  content: "語";
+  display: grid;
+  place-items: center;
+  margin: 2rem 0 0;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  font-family: var(--mincho);
+  font-size: 1.7rem;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+/* ---- AppShell: a slim vertical rail with tategaki nav labels, echoing the
+   hero title, in place of the wide horizontal sidebar every other pack uses. ---- */
+[data-pack="ja"] .app-sidebar {
+  width: 96px;
+  padding: 1.4rem 0.6rem;
+  align-items: center;
+}
+[data-pack="ja"] .app-brand .name,
+[data-pack="ja"] .theme-picker .tp-text,
+[data-pack="ja"] .nav-group-label,
+[data-pack="ja"] .app-profile .an,
+[data-pack="ja"] .app-profile .ag {
+  display: none;
+}
+[data-pack="ja"] .theme-picker {
+  background: transparent;
+  border: none;
+  padding: 0;
+  justify-content: center;
+}
+[data-pack="ja"] .app-nav {
+  align-items: center;
+  gap: 0.3rem;
+}
+[data-pack="ja"] .app-nav button {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 0.4rem;
+  border-radius: 0;
+  font-family: var(--mincho);
+  letter-spacing: 0.18em;
+}
+[data-pack="ja"] .app-nav button.active {
+  background: transparent;
+  border-left: 2px solid var(--gold);
+}
+[data-pack="ja"] .app-profile {
+  justify-content: center;
+  border-top-color: rgba(255, 255, 255, 0.12);
 }
