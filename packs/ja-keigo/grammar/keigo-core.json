@@ -1,0 +1,220 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "kggram.three-tier-system",
+    "title": "The three tiers: teineigo, sonkeigo, kenjougo",
+    "cefr": "B1",
+    "explanationMd": "Japanese politeness runs on three separate systems, not one sliding scale. **Teineigo** (丁寧語, \"polite language\") is the です/ます baseline you already know — it makes a sentence polite without changing who it's about. **Sonkeigo** (尊敬語, \"respect language\") *elevates* the person you're talking about — their actions get special verbs (いらっしゃる, なさる) because they're too important for you to describe with a plain verb. **Kenjougo** (謙譲語, \"humble language\") does the opposite: it *lowers* your own actions (まいる, いたす) to put the other person relatively higher.\n\nThe mistake most learners make is treating sonkeigo and kenjougo as \"more polite versions\" of the same thing. They're not interchangeable — sonkeigo is never used for yourself, and kenjougo is never used for someone you're respecting. Get the direction wrong and the sentence describes the wrong person, or accidentally elevates yourself.",
+    "examples": [
+      { "text": "先生が来ます。", "romaji": "Sensei ga kimasu.", "translation": "The teacher will come. (teineigo — plain, polite verb)", "register": "neutral" },
+      { "text": "先生がいらっしゃいます。", "romaji": "Sensei ga irasshaimasu.", "translation": "The teacher will come. (sonkeigo — elevates the teacher)", "register": "formal" },
+      { "text": "私がまいります。", "romaji": "Watashi ga mairimasu.", "translation": "I will come. (kenjougo — lowers the speaker)", "register": "formal" }
+    ],
+    "commonErrors": [
+      { "wrong": "私がいらっしゃいます", "right": "私がまいります", "note": "いらっしゃる elevates the subject — using it for yourself accidentally makes you the important one, which is backwards." }
+    ],
+    "drills": [
+      { "prompt": "お客様が＿＿＿＿＿＿（来ます）。 (sonkeigo)", "answer": "いらっしゃいます" },
+      { "prompt": "私が＿＿＿＿＿（行きます）。 (kenjougo)", "answer": "まいります" }
+    ],
+    "relatedVocabulary": ["kgvocab.irassharu", "kgvocab.mairu"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.sonkeigo-irregular-verbs",
+    "title": "Sonkeigo irregular verbs — elevating the listener's actions",
+    "cefr": "B1",
+    "explanationMd": "A handful of everyday verbs have their own dedicated sonkeigo replacement instead of following a regular pattern. These are irregular and must be memorized individually:\n\n- 行く／来る／いる → **いらっしゃる** (irasshaimasu)\n- する → **なさる** (nasaimasu)\n- 言う → **おっしゃる** (osshaimasu)\n- 見る → **ご覧になる** (goran ni narimasu)\n\nAll four take the -masu stem irregularly: いらっしゃる, なさる, and おっしゃる drop the り before ます (いらっしゃります → いらっしゃいます), which trips up learners who try to conjugate them like regular godan verbs. Use these only for someone you're showing respect to — a customer, a superior, a client — never for yourself.",
+    "examples": [
+      { "text": "部長は今どちらにいらっしゃいますか。", "reading": "ぶちょうはいまどちらにいらっしゃいますか。", "romaji": "Buchō wa ima dochira ni irasshaimasu ka.", "translation": "Where is the department head right now?" },
+      { "text": "何になさいますか。", "reading": "なにになさいますか。", "romaji": "Nani ni nasaimasu ka.", "translation": "What will you have? (e.g. from a menu)" }
+    ],
+    "commonErrors": [
+      { "wrong": "いらっしゃります", "right": "いらっしゃいます", "note": "The -masu stem is irregular — り drops before ます, unlike a normal godan verb." }
+    ],
+    "drills": [
+      { "prompt": "先生は明日＿＿＿＿＿＿＿か。（来ますか） (sonkeigo)", "answer": "いらっしゃいます" },
+      { "prompt": "こちらの資料をもう＿＿＿＿＿＿＿＿か。（見ましたか） (sonkeigo)", "answer": "ご覧になりました" }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.sonkeigo-verbs",
+        "title": "Everyday verb → sonkeigo replacement",
+        "pattern": "{plain} → {sonkeigo}",
+        "steps": [
+          { "prompt": "行く／来る／いる → ＿＿＿＿＿＿", "answer": "いらっしゃる", "note": "one verb covers all three meanings; context tells you which" },
+          { "prompt": "する → ＿＿＿", "answer": "なさる", "note": "-masu stem: なさいます" },
+          { "prompt": "言う → ＿＿＿＿＿", "answer": "おっしゃる", "note": "-masu stem: おっしゃいます" },
+          { "prompt": "見る → ＿＿＿＿＿＿＿", "answer": "ご覧になる", "note": "built on お/ご + noun + になる, but memorize as a set phrase" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["kgvocab.irassharu", "kgvocab.nasaru", "kgvocab.ossharu", "kgvocab.goran-ni-naru"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.kenjougo-irregular-verbs",
+    "title": "Kenjougo irregular verbs — humbling your own actions",
+    "cefr": "B1",
+    "explanationMd": "The kenjougo mirror image of the sonkeigo set — these lower the speaker's own action, and are just as irregular:\n\n- 行く／来る → **まいる** (mairimasu), or **伺う** (ukagaimasu) when the destination is someone you respect (visiting a client, for example)\n- する → **いたす** (itashimasu)\n- 言う → **申す** (mōshimasu), or the deeper **申し上げる** (mōshiagemasu)\n- 見る → **拝見する** (haiken shimasu)\n\n伺う also covers 聞く (\"to ask\" or \"to hear\") — 一つ伺ってもよろしいでしょうか (\"may I ask you one thing?\") is one of the most common phrases in business Japanese. Note the direction again: these describe *your own* actions toward someone you're respecting, never theirs.",
+    "examples": [
+      { "text": "明日十時に伺います。", "reading": "あしたじゅうじにうかがいます。", "romaji": "Ashita jūji ni ukagaimasu.", "translation": "I will visit at 10 tomorrow." },
+      { "text": "資料を拝見しました。", "reading": "しりょうをはいけんしました。", "romaji": "Shiryō o haiken shimashita.", "translation": "I have looked over the documents." }
+    ],
+    "commonErrors": [
+      { "wrong": "お客様が伺います", "right": "お客様がいらっしゃいます", "note": "伺う lowers the subject — it can't be used for a customer's own visit, only for your visit to them." }
+    ],
+    "drills": [
+      { "prompt": "私が資料を＿＿＿＿＿＿＿＿（見ました）。 (kenjougo)", "answer": "拝見しました" },
+      { "prompt": "田中と＿＿＿＿＿＿（言います）。 (kenjougo, self-introduction)", "answer": "申します" }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.kenjougo-verbs",
+        "title": "Everyday verb → kenjougo replacement",
+        "pattern": "{plain} → {kenjougo}",
+        "steps": [
+          { "prompt": "行く／来る → ＿＿＿＿", "answer": "まいる", "note": "neutral kenjougo for your own movement" },
+          { "prompt": "行く／来る（respected destination）→ ＿＿＿", "answer": "伺う", "note": "used when visiting/approaching someone you respect" },
+          { "prompt": "する → ＿＿＿", "answer": "いたす", "note": "the most common kenjougo verb in business speech" },
+          { "prompt": "言う → ＿＿＿", "answer": "申す", "note": "plain kenjougo, as in ～と申します" },
+          { "prompt": "見る → ＿＿＿＿＿", "answer": "拝見する", "note": "kenjougo for your own act of looking" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["kgvocab.mairu", "kgvocab.ukagau", "kgvocab.itasu", "kgvocab.mousu", "kgvocab.haiken-suru"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.giving-receiving-keigo",
+    "title": "くださる and 差し上げる／いただく — keigo for giving and receiving",
+    "cefr": "B2",
+    "explanationMd": "The plain giving/receiving verbs (あげる, くれる, もらう) each have a keigo replacement, and which tier they belong to follows the same elevate/lower logic:\n\n- くれる (someone gives to me) → **くださる** (sonkeigo — elevates the giver, since they're doing something for you)\n- あげる (I give to someone) → **差し上げる** (kenjougo — lowers the giver, i.e. you)\n- もらう (I receive) → **いただく** (kenjougo — lowers the receiver, i.e. you)\n\nくださる and いただく are both extremely common — くださる shows up constantly as ～てくださる (a polite version of ～てくれる), and いただく is the base of the request pattern ～ていただけますか. 差し上げる is rarer in everyday use; toward a same-level colleague it can sound oddly formal or even backhanded, so many speakers default to a plain て-form request instead of forcing 差し上げる in.",
+    "examples": [
+      { "text": "部長が資料をくださいました。", "reading": "ぶちょうがしりょうをくださいました。", "romaji": "Buchō ga shiryō o kudasaimashita.", "translation": "The department head gave me the documents." },
+      { "text": "資料をいただきました。", "reading": "しりょうをいただきました。", "romaji": "Shiryō o itadakimashita.", "translation": "I received the documents." }
+    ],
+    "commonErrors": [
+      { "wrong": "資料を差し上げました (said about a colleague at the same level)", "right": "資料をお渡ししました", "note": "差し上げる is for giving to someone clearly above you — toward an equal it can sound stiff or oddly self-important; a plain handoff verb reads more natural." }
+    ],
+    "drills": [
+      { "prompt": "先生が本を＿＿＿＿＿＿＿＿（くれました）。 (sonkeigo)", "answer": "くださいました" },
+      { "prompt": "先生から本を＿＿＿＿＿＿＿＿（もらいました）。 (kenjougo)", "answer": "いただきました" }
+    ],
+    "relatedVocabulary": ["kgvocab.kudasaru", "kgvocab.itadaku", "kgvocab.sashiageru"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.o-ni-naru-pattern",
+    "title": "お／ご＋stem＋になる — the productive sonkeigo pattern",
+    "cefr": "B2",
+    "explanationMd": "Beyond the irregular verbs, most other verbs make sonkeigo productively with **お + verb stem + になる** (native Japanese verbs) or **ご + noun + になる** (verbs made from Chinese-derived nouns + する). This is the pattern to reach for once you've run out of memorized irregulars: 読む → お読みになる (\"to read,\" sonkeigo), 使う → お使いになる (\"to use,\" sonkeigo), 利用する → ご利用になる (\"to use/utilize,\" sonkeigo).\n\nOne wrinkle: verbs that already have an irregular sonkeigo form (行く, 見る, する, etc. — see the earlier grammar items) don't get この pattern layered on top — お行きになる doesn't happen, because いらっしゃる already fills that slot. Reserve お/ご～になる for verbs outside that irregular set.",
+    "examples": [
+      { "text": "こちらの本をお読みになりましたか。", "reading": "こちらのほんをおよみになりましたか。", "romaji": "Kochira no hon o oyomi ni narimashita ka.", "translation": "Have you read this book?" },
+      { "text": "こちらのサービスをご利用になれます。", "reading": "こちらのサービスをごりようになれます。", "romaji": "Kochira no sābisu o goriyō ni naremasu.", "translation": "You are able to use this service." }
+    ],
+    "commonErrors": [
+      { "wrong": "お行きになる", "right": "いらっしゃる", "note": "行く already has a dedicated irregular sonkeigo verb — the productive お～になる pattern is only for verbs without one." }
+    ],
+    "drills": [
+      { "prompt": "使う → お＿＿＿になる (sonkeigo)", "answer": "使い" },
+      { "prompt": "利用する → ご＿＿＿になる (sonkeigo)", "answer": "利用" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.o-suru-pattern",
+    "title": "お／ご＋stem＋する — the productive kenjougo pattern",
+    "cefr": "B2",
+    "explanationMd": "The kenjougo mirror of the previous pattern: **お + verb stem + する** (native verbs) or **ご + noun + する** (する-verbs from Chinese-derived nouns) humbles your own action toward someone you respect. 持つ → お持ちする (\"I'll carry/hold it\"), 送る → お送りする (\"I'll send it\"), 案内する → ご案内する (\"I'll guide/show you\").\n\nA polite variant swaps する for いたす (お持ちいたします, ご案内いたします) — layering the productive pattern on top of the irregular kenjougo verb いたす, which is extremely common in business speech and slightly more formal than plain する. As with お～になる, this pattern is for verbs *without* their own irregular kenjougo replacement (見る, する, 言う already have 拝見する, いたす, 申す).",
+    "examples": [
+      { "text": "お荷物をお持ちします。", "reading": "おにもつをおもちします。", "romaji": "Onimotsu o omochi shimasu.", "translation": "I will carry your luggage." },
+      { "text": "会議室にご案内いたします。", "reading": "かいぎしつにごあんないいたします。", "romaji": "Kaigishitsu ni go-annai itashimasu.", "translation": "I will show you to the meeting room." }
+    ],
+    "commonErrors": [
+      { "wrong": "お見しました", "right": "拝見しました", "note": "見る already has a dedicated irregular kenjougo verb — the productive お～する pattern isn't layered on top of it." }
+    ],
+    "drills": [
+      { "prompt": "持つ → お＿＿＿する (kenjougo)", "answer": "持ち" },
+      { "prompt": "案内する → ご＿＿＿いたします (kenjougo, いたす variant)", "answer": "案内" }
+    ],
+    "relatedVocabulary": ["kgvocab.itasu"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.polite-requests",
+    "title": "～ていただけますか vs ～てください — dialing request politeness",
+    "cefr": "B1",
+    "explanationMd": "～てください is a fine, ordinary polite request in teineigo — but toward a superior, a client, or anyone you owe extra deference to, it can land as a touch direct, almost like an instruction. Business Japanese instead reaches for **～ていただけますか** (\"could you possibly do ~ for me?\"), built on the kenjougo verb いただく plus the potential form — literally asking whether you could *receive the favor of* them doing something, which softens a request into something closer to a humble favor-ask.\n\nThere's a politeness ladder here, roughly least to most deferential: ～てください → ～ていただけますか → ～ていただけますでしょうか (adding でしょう makes it even softer/more indirect, common in written business Japanese, though some style guides consider it slightly redundant).",
+    "examples": [
+      { "text": "少々お待ちください。", "reading": "しょうしょうおまちください。", "romaji": "Shōshō omachi kudasai.", "translation": "Please wait a moment. (ordinary polite request)" },
+      { "text": "少し早めにいただけますか。", "reading": "すこしはやめにいただけますか。", "romaji": "Sukoshi hayame ni itadakemasu ka.", "translation": "Could you possibly do it a bit earlier?" },
+      { "text": "こちらにサインをいただけますでしょうか。", "reading": "こちらにサインをいただけますでしょうか。", "romaji": "Kochira ni sain o itadakemasu deshō ka.", "translation": "Would you be able to sign here?" }
+    ],
+    "commonErrors": [
+      { "wrong": "部長、これを直してください。", "right": "部長、これを直していただけますか。", "note": "てください toward a superior about their own work can sound like an order — いただけますか frames it as a request for a favor instead." }
+    ],
+    "drills": [
+      { "prompt": "少し待って＿＿＿＿＿＿＿か。（丁寧なお願い）", "answer": "いただけます" },
+      { "prompt": "資料を送って＿＿＿＿＿＿＿＿か。（もっと丁寧に）", "answer": "いただけますでしょう" }
+    ],
+    "relatedVocabulary": ["kgvocab.te-itadakemasu-ka", "kgvocab.itadaku", "kgvocab.shoushou-omachi-kudasai"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.teineigo-baseline",
+    "title": "Where teineigo ends and keigo begins",
+    "cefr": "B1",
+    "explanationMd": "です/ます teineigo, which the base course covers, is a complete, self-sufficient polite register on its own — most of daily life in Japan runs on it, and it's never *wrong* to use it. What changes in business settings isn't that teineigo becomes insufficient grammatically; it's that certain relationships (staff to customer, junior to senior, your company to a client company) carry a social expectation of the extra respect/humility layer that sonkeigo and kenjougo add on top.\n\nConcretely: 田中さんが来ます (teineigo) is a complete, correct, polite sentence. 田中様がいらっしゃいます (sonkeigo) says the same thing but marks 田中 as someone the speaker owes deference to. Keigo doesn't replace teineigo's ます endings — it layers onto them; いらっしゃいます, なさいます, and いたします are themselves still ます-form verbs.",
+    "examples": [
+      { "text": "田中さんが来ます。", "reading": "たなかさんがきます。", "romaji": "Tanaka-san ga kimasu.", "translation": "Mr./Ms. Tanaka will come. (teineigo — plain polite)" },
+      { "text": "田中様がいらっしゃいます。", "reading": "たなかさまがいらっしゃいます。", "romaji": "Tanaka-sama ga irasshaimasu.", "translation": "Mr./Ms. Tanaka will come. (sonkeigo — added respect)" }
+    ],
+    "commonErrors": [],
+    "drills": [
+      { "prompt": "友達に「＿＿＿＿？」と聞く。（元気ですか, casual teineigo）", "answer": "元気ですか" },
+      { "prompt": "取引先に「ご＿＿＿＿ですか？」と聞く。（元気, keigo-flavored version）", "answer": "健勝" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.when-keigo-is-overkill",
+    "title": "When keigo is overkill",
+    "cefr": "B2",
+    "explanationMd": "Keigo is calibrated to social distance and hierarchy, not to abstract \"politeness points\" — using it in the wrong setting doesn't read as extra-respectful, it reads as strange, stiff, or even comic. A few situations where full sonkeigo/kenjougo would be overkill: chatting with a close coworker of equal rank, talking to family, or speaking to a store clerk you have no ongoing relationship with (plain teineigo is completely normal both directions in casual retail interactions — you don't need to use kenjougo back at a cashier).\n\nA useful rule of thumb: keigo tracks *role*, not just age or seniority in the abstract. A 25-year-old store manager may use polished keigo toward a customer decades older, while that same manager speaks plain teineigo or even casually to friends outside work who happen to be the same age as that customer. It's the relationship in that specific context — service staff/customer, junior/senior at this company — that decides the register, not a fixed personal politeness setting.",
+    "examples": [
+      { "text": "（同僚に）これ、終わった？", "romaji": "(Dōryō ni) Kore, owatta?", "translation": "(To a coworker) Is this done? — casual, appropriate between equals" },
+      { "text": "（お客様に）こちらの資料はご覧になりましたか。", "reading": "（おきゃくさまに）こちらのしりょうはごらんになりましたか。", "romaji": "(Okyakusama ni) Kochira no shiryō wa goran ni narimashita ka.", "translation": "(To a customer) Have you looked over this document? — sonkeigo, appropriate for the role gap" }
+    ],
+    "commonErrors": [
+      { "wrong": "(to a close same-age coworker) 何をなさいますか。", "right": "(to a close same-age coworker) 何する？", "note": "Full sonkeigo toward an equal-status coworker you're friendly with typically reads as odd or sarcastic distance, not extra respect." }
+    ],
+    "drills": [
+      { "prompt": "友達に「今何してる？」→ keigo needed? (yes/no)", "answer": "no" },
+      { "prompt": "初めて会う取引先の方に「今何をなさっていますか」→ keigo needed? (yes/no)", "answer": "yes" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.double-keigo-errors",
+    "title": "二重敬語 — double honorifics, a mistake even native speakers make",
+    "cefr": "B2",
+    "explanationMd": "二重敬語 (nijū keigo, \"double honorifics\") is stacking two honorific markers onto a single verb when one is already enough — and it's common enough among native speakers that style guides and business manners books call it out by name. A frequent example: お + verb stem + になる is already a full sonkeigo transformation, so adding られる (the other, separate sonkeigo-ish passive/respect form) on top — お読みになられる — is redundant. The correct form is just お読みになる, or plain 読まれる, not both stacked together.\n\nSimilarly, ご覧になられる (ご覧になる + られる) and おっしゃられる (おっしゃる + られる) are both common real-world double-honorific slips — おっしゃる already is the sonkeigo form of 言う, so おっしゃられる honors 言う twice over. None of these cause actual miscommunication, and you'll hear them in the wild, but a careful business writer avoids them.",
+    "examples": [
+      { "text": "お読みになる", "romaji": "oyomi ni naru", "translation": "to read (sonkeigo, correct — single honorific)", "register": "formal" },
+      { "text": "お読みになられる", "romaji": "oyomi ni narareru", "translation": "to read (double honorific — considered an error, avoid)", "register": "formal" }
+    ],
+    "commonErrors": [
+      { "wrong": "おっしゃられる", "right": "おっしゃる", "note": "おっしゃる is already sonkeigo for 言う; adding られる honors the same verb a second time." },
+      { "wrong": "ご覧になられる", "right": "ご覧になる", "note": "ご覧になる is already sonkeigo for 見る; られる is unnecessary and considered a stacking error." }
+    ],
+    "drills": [
+      { "prompt": "お読みになられる → fix the double honorific", "answer": "お読みになる" },
+      { "prompt": "ご覧になられましたか → fix the double honorific", "answer": "ご覧になりましたか" }
+    ],
+    "relatedVocabulary": ["kgvocab.ossharu", "kgvocab.goran-ni-naru"]
+  }
+]

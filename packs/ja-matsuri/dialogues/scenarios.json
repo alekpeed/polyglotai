@@ -1,0 +1,194 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "msdlg.buying-takoyaki",
+    "scenario": "Buying takoyaki at a food stall",
+    "speakers": [
+      { "id": "vendor", "name": "屋台の店主", "role": "stall vendor" },
+      { "id": "you", "name": "You" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "vendor", "text": "いらっしゃい！たこ焼きどう？", "reading": "いらっしゃい！たこやきどう？", "romaji": "Irasshai! Takoyaki dō?" },
+      { "speakerId": "you", "text": "たこ焼きを一つください。", "reading": "たこやきをひとつください。", "romaji": "Takoyaki o hitotsu kudasai." },
+      { "speakerId": "vendor", "text": "はい、一つね。ソースと マヨネーズ、両方？", "reading": "はい、ひとつね。ソースとマヨネーズ、りょうほう？", "romaji": "Hai, hitotsu ne. Sōsu to mayonēzu, ryōhō?" },
+      { "speakerId": "you", "text": "はい、両方お願いします。全部でいくらですか。", "reading": "はい、りょうほうおねがいします。ぜんぶでいくらですか。", "romaji": "Hai, ryōhō onegaishimasu. Zenbu de ikura desu ka." },
+      { "speakerId": "vendor", "text": "六百円です。", "reading": "ろっぴゃくえんです。", "romaji": "Roppyaku-en desu." },
+      { "speakerId": "you", "text": "はい、どうぞ。熱いから気をつけますね。", "reading": "はい、どうぞ。あついからきをつけますね。", "romaji": "Hai, dōzo. Atsui kara ki o tsukemasu ne." }
+    ],
+    "translation": [
+      { "speakerId": "vendor", "text": "Welcome! Takoyaki, how about it?" },
+      { "speakerId": "you", "text": "One order of takoyaki, please." },
+      { "speakerId": "vendor", "text": "Sure, one. Sauce and mayonnaise, both?" },
+      { "speakerId": "you", "text": "Yes, both please. How much is it all together?" },
+      { "speakerId": "vendor", "text": "That's 600 yen." },
+      { "speakerId": "you", "text": "Here you go. I'll be careful since it's hot." }
+    ],
+    "keyVocabulary": ["msvocab.yatai", "msvocab.takoyaki", "msvocab.hitotsu-kudasai", "msvocab.zenbu-de-ikura-desu-ka"],
+    "grammarNotes": "屋台 vendors tend to speak fast and casually — いらっしゃい (a shortened, friendlier いらっしゃいませ) and dropped particles like ソースとマヨネーズ、両方？ are normal here even though a department store clerk would never talk this way."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msdlg.kingyo-sukui",
+    "scenario": "Playing goldfish scooping",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "attendant", "name": "係の人", "role": "game attendant" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "金魚すくいをやってみたいです。", "reading": "きんぎょすくいをやってみたいです。", "romaji": "Kingyo-sukui o yattemitai desu." },
+      { "speakerId": "attendant", "text": "一回三百円だよ。ポイは三枚あげるね。", "reading": "いっかいさんびゃくえんだよ。ポイはさんまいあげるね。", "romaji": "Ikkai sanbyaku-en da yo. Poi wa sanmai ageru ne." },
+      { "speakerId": "you", "text": "分かりました。あ、破れちゃいました。", "reading": "わかりました。あ、やぶれちゃいました。", "romaji": "Wakarimashita. A, yaburechaimashita." },
+      { "speakerId": "attendant", "text": "斜めに入れると長持ちするよ。", "reading": "ななめにいれるとながもちするよ。", "romaji": "Naname ni ireru to nagamochi suru yo." },
+      { "speakerId": "you", "text": "一匹すくえました！", "reading": "いっぴきすくえました！", "romaji": "Ippiki sukuemashita!" },
+      { "speakerId": "attendant", "text": "上手だね！袋に入れてあげる。", "reading": "じょうずだね！ふくろにいれてあげる。", "romaji": "Jōzu da ne! Fukuro ni irete ageru." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "I'd like to try goldfish scooping." },
+      { "speakerId": "attendant", "text": "It's 300 yen a round. I'll give you three poi." },
+      { "speakerId": "you", "text": "Got it. Oh, it tore already." },
+      { "speakerId": "attendant", "text": "If you tilt it in at an angle it lasts longer." },
+      { "speakerId": "you", "text": "I scooped one!" },
+      { "speakerId": "attendant", "text": "Nice job! I'll put it in a bag for you." }
+    ],
+    "keyVocabulary": ["msvocab.kingyo-sukui", "msvocab.poi"],
+    "grammarNotes": "破れちゃいました uses the casual contraction ～ちゃう (from ～てしまう) to express something happening unintentionally or regrettably — very common in spoken, informal Japanese."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msdlg.mikoshi-timing",
+    "scenario": "Asking a local about the mikoshi procession timing",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "local", "name": "地元の人", "role": "local resident" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "神輿の行列は何時から始まりますか。", "reading": "みこしのぎょうれつはなんじからはじまりますか。", "romaji": "Mikoshi no gyōretsu wa nanji kara hajimarimasu ka." },
+      { "speakerId": "local", "text": "午後四時に神社を出発しますよ。", "reading": "ごごよじにじんじゃをしゅっぱつしますよ。", "romaji": "Gogo yoji ni jinja o shuppatsu shimasu yo." },
+      { "speakerId": "you", "text": "この通りを通りますか。", "reading": "このとおりをとおりますか。", "romaji": "Kono tōri o tōrimasu ka." },
+      { "speakerId": "local", "text": "はい、商店街を通ってから駅前に行きます。わっしょいって声が聞こえてきますよ。", "reading": "はい、しょうてんがいをとおってからえきまえにいきます。わっしょいってこえがきこえてきますよ。", "romaji": "Hai, shōtengai o tōtte kara ekimae ni ikimasu. Wasshoi tte koe ga kikoete kimasu yo." },
+      { "speakerId": "you", "text": "楽しみです。ありがとうございます。", "reading": "たのしみです。ありがとうございます。", "romaji": "Tanoshimi desu. Arigatō gozaimasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "What time does the mikoshi procession start?" },
+      { "speakerId": "local", "text": "It leaves the shrine at 4pm." },
+      { "speakerId": "you", "text": "Does it come through this street?" },
+      { "speakerId": "local", "text": "Yes, it goes through the shopping street and then to the station. You'll hear the wasshoi calls coming." },
+      { "speakerId": "you", "text": "I'm looking forward to it. Thank you." }
+    ],
+    "keyVocabulary": ["msvocab.mikoshi", "msvocab.gyouretsu", "msvocab.nanji-kara-hajimarimasu-ka", "msvocab.wasshoi"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msdlg.yukata-rental",
+    "scenario": "Asking about renting a yukata before the festival",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "staff", "name": "レンタル店の店員", "role": "rental shop staff" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "浴衣のレンタルはできますか。", "reading": "ゆかたのレンタルはできますか。", "romaji": "Yukata no rentaru wa dekimasu ka." },
+      { "speakerId": "staff", "text": "はい、帯や下駄もセットになっています。", "reading": "はい、おびやげたもセットになっています。", "romaji": "Hai, obi ya geta mo setto ni natte imasu." },
+      { "speakerId": "you", "text": "着付けもお願いできますか。", "reading": "きつけもおねがいできますか。", "romaji": "Kitsuke mo onegai dekimasu ka." },
+      { "speakerId": "staff", "text": "もちろんです。着付けに二十分くらいかかります。", "reading": "もちろんです。きつけににじゅっぷんくらいかかります。", "romaji": "Mochiron desu. Kitsuke ni nijuppun kurai kakarimasu." },
+      { "speakerId": "you", "text": "下駄で歩くのは大変ですか。", "reading": "げたであるくのはたいへんですか。", "romaji": "Geta de aruku no wa taihen desu ka." },
+      { "speakerId": "staff", "text": "最初は少し歩きにくいですが、すぐ慣れますよ。", "reading": "さいしょはすこしあるきにくいですが、すぐなれますよ。", "romaji": "Saisho wa sukoshi arukinikui desu ga, sugu naremasu yo." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Can I rent a yukata here?" },
+      { "speakerId": "staff", "text": "Yes, it comes as a set with a sash and sandals too." },
+      { "speakerId": "you", "text": "Could you also help me get dressed in it?" },
+      { "speakerId": "staff", "text": "Of course. Dressing takes about twenty minutes." },
+      { "speakerId": "you", "text": "Is it hard to walk in geta?" },
+      { "speakerId": "staff", "text": "It's a little awkward at first, but you get used to it quickly." }
+    ],
+    "keyVocabulary": ["msvocab.yukata", "msvocab.obi", "msvocab.geta"],
+    "grammarNotes": "着付け (kitsuke, \"the art of dressing in kimono/yukata\") is a set phrase worth learning as a unit — most rental shops offer it as an add-on since the wrapping and tying is genuinely difficult to do alone."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msdlg.hanabi-meetup",
+    "scenario": "Meeting friends and claiming a spot to watch hanabi",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "friend", "name": "友達", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "friend", "text": "花火大会、何時から始まる？", "reading": "はなびたいかい、なんじからはじまる？", "romaji": "Hanabi taikai, nanji kara hajimaru?" },
+      { "speakerId": "you", "text": "七時半からだって。もう場所取りしたほうがいいかな。", "reading": "しちじはんからだって。もうばしょとりしたほうがいいかな。", "romaji": "Shichiji-han kara da tte. Mō basho-tori shita hō ga ii ka na." },
+      { "speakerId": "friend", "text": "うん、レジャーシート持ってきた。あそこに座ろう。", "reading": "うん、レジャーシートもってきた。あそこにすわろう。", "romaji": "Un, rejā shīto mottekita. Asoko ni suwarō." },
+      { "speakerId": "you", "text": "すみません、ここに座ってもいいですか。", "reading": "すみません、ここにすわってもいいですか。", "romaji": "Sumimasen, koko ni suwattemo ii desu ka." },
+      { "speakerId": "friend", "text": "うん、大丈夫。誰もいないよ。", "reading": "うん、だいじょうぶ。だれもいないよ。", "romaji": "Un, daijōbu. Dare mo inai yo." }
+    ],
+    "translation": [
+      { "speakerId": "friend", "text": "What time does the fireworks festival start?" },
+      { "speakerId": "you", "text": "I heard 7:30. We should probably claim a spot already." },
+      { "speakerId": "friend", "text": "Yeah, I brought a ground sheet. Let's sit over there." },
+      { "speakerId": "you", "text": "Excuse me, is it all right to sit here?" },
+      { "speakerId": "friend", "text": "Yeah, it's fine. No one's there." }
+    ],
+    "keyVocabulary": ["msvocab.hanabi-taikai", "msvocab.enkai-basho-tori", "msvocab.reijou", "msvocab.koko-ni-suwattemo-ii-desu-ka"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msdlg.toilet-exit-crowd",
+    "scenario": "Asking where the restroom and exit are in a crowd",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "staff", "name": "警備スタッフ", "role": "festival staff" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "すみません、トイレはどこですか。", "reading": "すみません、トイレはどこですか。", "romaji": "Sumimasen, toire wa doko desu ka." },
+      { "speakerId": "staff", "text": "あの提灯の先を右です。少し並んでいますよ。", "reading": "あのちょうちんのさきをみぎです。すこしならんでいますよ。", "romaji": "Ano chōchin no saki o migi desu. Sukoshi narande imasu yo." },
+      { "speakerId": "you", "text": "分かりました。それから、出口はどこですか。人混みがすごくて。", "reading": "わかりました。それから、でぐちはどこですか。ひとごみがすごくて。", "romaji": "Wakarimashita. Sorekara, deguchi wa doko desu ka. Hitogomi ga sugokute." },
+      { "speakerId": "staff", "text": "北口が近いですが、今は南口のほうが空いています。", "reading": "きたぐちがちかいですが、いまはみなみぐちのほうがすいています。", "romaji": "Kitaguchi ga chikai desu ga, ima wa minamiguchi no hō ga suite imasu." },
+      { "speakerId": "you", "text": "南口にします。ありがとうございます。", "reading": "みなみぐちにします。ありがとうございます。", "romaji": "Minamiguchi ni shimasu. Arigatō gozaimasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Excuse me, where is the restroom?" },
+      { "speakerId": "staff", "text": "Past that lantern, on the right. There's a bit of a line." },
+      { "speakerId": "you", "text": "Got it. Also, where's the exit? It's really crowded." },
+      { "speakerId": "staff", "text": "The north exit is closer, but the south exit is less crowded right now." },
+      { "speakerId": "you", "text": "I'll go with the south exit. Thank you." }
+    ],
+    "keyVocabulary": ["msvocab.toire-wa-doko-desu-ka", "msvocab.deguchi-wa-doko-desu-ka", "msvocab.hitogomi", "msvocab.chouchin"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msdlg.bon-odori-joining",
+    "scenario": "Being invited to join the bon-odori dance",
+    "speakers": [
+      { "id": "friend", "name": "友達", "role": "friend" },
+      { "id": "you", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "friend", "text": "盆踊り、一緒に踊らない？", "reading": "ぼんおどり、いっしょにおどらない？", "romaji": "Bon-odori, issho ni odoranai?" },
+      { "speakerId": "you", "text": "踊り方が分かりません。見てるだけじゃだめですか。", "reading": "おどりかたがわかりません。みてるだけじゃだめですか。", "romaji": "Odorikata ga wakarimasen. Miteru dake ja dame desu ka." },
+      { "speakerId": "friend", "text": "大丈夫、見よう見まねでいいよ。みんな輪になって踊るんだ。", "reading": "だいじょうぶ、みようみまねでいいよ。みんなわになっておどるんだ。", "romaji": "Daijōbu, miyō-mimane de ii yo. Minna wa ni natte odorun da." },
+      { "speakerId": "you", "text": "櫓の周りをぐるぐる回るんですね。", "reading": "やぐらのまわりをぐるぐるまわるんですね。", "romaji": "Yagura no mawari o guruguru mawarun desu ne." },
+      { "speakerId": "friend", "text": "そう、音頭に合わせて。誰でも参加できるんだよ。", "reading": "そう、おんどにあわせて。だれでもさんかできるんだよ。", "romaji": "Sō, ondo ni awasete. Dare demo sanka dekirun da yo." }
+    ],
+    "translation": [
+      { "speakerId": "friend", "text": "Want to dance the bon-odori together?" },
+      { "speakerId": "you", "text": "I don't know the steps. Is it not okay to just watch?" },
+      { "speakerId": "friend", "text": "It's fine, just copy what you see. Everyone forms a circle and dances." },
+      { "speakerId": "you", "text": "So you go round and round the tower." },
+      { "speakerId": "friend", "text": "Right, in time with the music. Anyone can join in." }
+    ],
+    "keyVocabulary": ["msvocab.bon-odori", "msvocab.yagura", "msvocab.wa-ni-naru", "msvocab.ondo"],
+    "grammarNotes": "見よう見まね (miyō-mimane, \"learning by watching and imitating\") is a handy set phrase for describing how most people actually pick up bon-odori steps — there's rarely a formal lesson."
+  }
+]

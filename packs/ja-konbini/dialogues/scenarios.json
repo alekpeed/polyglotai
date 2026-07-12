@@ -1,0 +1,207 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "kbdlg.heating-bento",
+    "scenario": "Buying a bento and asking to have it heated",
+    "speakers": [
+      { "id": "clerk", "name": "店員", "role": "konbini clerk" },
+      { "id": "you", "name": "You" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "clerk", "text": "いらっしゃいませ。", "romaji": "Irasshaimase." },
+      { "speakerId": "clerk", "text": "お弁当、温めますか。", "reading": "おべんとう、あたためますか。", "romaji": "Obentō, atatamemasu ka." },
+      { "speakerId": "you", "text": "はい、お願いします。", "reading": "はい、おねがいします。", "romaji": "Hai, onegaishimasu." },
+      { "speakerId": "clerk", "text": "お箸はお付けしますか。", "reading": "おはしはおつけしますか。", "romaji": "Ohashi wa otsuke shimasu ka." },
+      { "speakerId": "you", "text": "はい、一つください。", "reading": "はい、ひとつください。", "romaji": "Hai, hitotsu kudasai." },
+      { "speakerId": "clerk", "text": "袋はご利用ですか。", "reading": "ふくろはごりようですか。", "romaji": "Fukuro wa goriyō desu ka." },
+      { "speakerId": "you", "text": "袋は大丈夫です、そのままで。", "reading": "ふくろはだいじょうぶです、そのままで。", "romaji": "Fukuro wa daijōbu desu, sono mama de." }
+    ],
+    "translation": [
+      { "speakerId": "clerk", "text": "Welcome!" },
+      { "speakerId": "clerk", "text": "Shall I heat up the bento?" },
+      { "speakerId": "you", "text": "Yes, please." },
+      { "speakerId": "clerk", "text": "Would you like chopsticks with that?" },
+      { "speakerId": "you", "text": "Yes, one set please." },
+      { "speakerId": "clerk", "text": "Would you like a bag?" },
+      { "speakerId": "you", "text": "No bag needed, just as it is." }
+    ],
+    "keyVocabulary": ["kbvocab.irasshaimase", "kbvocab.bentou", "kbvocab.atatamemasu-ka", "kbvocab.ohashi", "kbvocab.fukuro-wa-goriyou-desu-ka", "kbvocab.fukuro-daijoubu-desu"],
+    "grammarNotes": "The clerk's questions all use the polite ます form and are asked as a fixed sequence at nearly every register — you can answer each with a plain はい/いいえ plus お願いします or 大丈夫です without needing full sentences."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kbdlg.paying-utility-bill",
+    "scenario": "Paying a utility bill at the register",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "clerk", "name": "店員", "role": "konbini clerk" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "すみません、これの支払いをお願いします。", "reading": "すみません、これのしはらいをおねがいします。", "romaji": "Sumimasen, kore no shiharai o onegaishimasu." },
+      { "speakerId": "clerk", "text": "公共料金の払込票ですね、お預かりします。", "reading": "こうきょうりょうきんのはらいこみひょうですね、おあずかりします。", "romaji": "Kōkyō ryōkin no haraikomihyō desu ne, oazukari shimasu." },
+      { "speakerId": "clerk", "text": "バーコードを読み取ります。", "reading": "バーコードをよみとります。", "romaji": "Bākōdo o yomitorimasu." },
+      { "speakerId": "clerk", "text": "五千円になります。", "reading": "ごせんえんになります。", "romaji": "Gosen-en ni narimasu." },
+      { "speakerId": "you", "text": "はい、お願いします。", "reading": "はい、おねがいします。", "romaji": "Hai, onegaishimasu." },
+      { "speakerId": "clerk", "text": "ありがとうございます。こちら領収書です。", "reading": "ありがとうございます。こちらりょうしゅうしょです。", "romaji": "Arigatō gozaimasu. Kochira ryōshūsho desu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Excuse me, I'd like to pay this." },
+      { "speakerId": "clerk", "text": "A utility payment slip, got it — I'll take this." },
+      { "speakerId": "clerk", "text": "I'll scan the barcode." },
+      { "speakerId": "clerk", "text": "That comes to 5000 yen." },
+      { "speakerId": "you", "text": "Yes, go ahead." },
+      { "speakerId": "clerk", "text": "Thank you. Here's your receipt." }
+    ],
+    "keyVocabulary": ["kbvocab.kore-no-shiharai-o-onegaishimasu", "kbvocab.kokyou-ryoukin", "kbvocab.haraikomihyou", "kbvocab.baakoodo", "kbvocab.ryoushuusho"],
+    "grammarNotes": "Any konbini register can process a 払込票, no bank account or app needed — the barcode carries all the billing information, so you never have to say who the bill is from."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kbdlg.using-atm",
+    "scenario": "A friend walking you through using the konbini ATM",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "friend", "name": "友達", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "ATMで現金を引き出したいです。", "reading": "エーティーエムでげんきんをひきだしたいです。", "romaji": "ATM de genkin o hikidashitai desu." },
+      { "speakerId": "friend", "text": "カードを入れて、暗証番号を押して。", "reading": "カードをいれて、あんしょうばんごうをおして。", "romaji": "Kādo o irete, anshō bangō o oshite." },
+      { "speakerId": "you", "text": "あ、暗証番号を間違えた。", "reading": "あ、あんしょうばんごうをまちがえた。", "romaji": "A, anshō bangō o machigaeta." },
+      { "speakerId": "friend", "text": "大丈夫、もう一度押して。", "reading": "だいじょうぶ、もういちどおして。", "romaji": "Daijōbu, mō ichido oshite." },
+      { "speakerId": "you", "text": "先に残高を確認したいな。", "reading": "さきにざんだかをかくにんしたいな。", "romaji": "Saki ni zandaka o kakunin shitai na." },
+      { "speakerId": "friend", "text": "この画面でできるよ。", "reading": "このがめんでできるよ。", "romaji": "Kono gamen de dekiru yo." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "I want to withdraw cash from the ATM." },
+      { "speakerId": "friend", "text": "Put your card in, then enter your PIN." },
+      { "speakerId": "you", "text": "Oh, I got my PIN wrong." },
+      { "speakerId": "friend", "text": "It's fine, just enter it again." },
+      { "speakerId": "you", "text": "I want to check my balance first." },
+      { "speakerId": "friend", "text": "You can do that on this screen." }
+    ],
+    "keyVocabulary": ["kbvocab.eeteiemu", "kbvocab.genkin", "kbvocab.hikidasu", "kbvocab.anshou-bangou", "kbvocab.zandaka"],
+    "grammarNotes": "Casual て-form requests (入れて, 押して) drop です/ます between friends — the polite equivalents would be 入れてください and 押してください."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kbdlg.sending-takkyubin",
+    "scenario": "Sending a takkyūbin package from the counter",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "clerk", "name": "店員", "role": "konbini clerk" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "宅急便をお願いします。", "reading": "たっきゅうびんをおねがいします。", "romaji": "Takkyūbin o onegaishimasu." },
+      { "speakerId": "clerk", "text": "伝票はお持ちですか。", "reading": "でんぴょうはおもちですか。", "romaji": "Denpyō wa omochi desu ka." },
+      { "speakerId": "you", "text": "いいえ、ここで書けますか。", "reading": "いいえ、ここでかけますか。", "romaji": "Iie, koko de kakemasu ka." },
+      { "speakerId": "clerk", "text": "はい、こちらにご記入ください。", "reading": "はい、こちらにごきにゅうください。", "romaji": "Hai, kochira ni gokinyū kudasai." },
+      { "speakerId": "you", "text": "着払いでお願いします。", "reading": "ちゃくばらいでおねがいします。", "romaji": "Chakubarai de onegaishimasu." },
+      { "speakerId": "clerk", "text": "かしこまりました。控えをどうぞ。", "reading": "かしこまりました。ひかえをどうぞ。", "romaji": "Kashikomarimashita. Hikae o dōzo." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "I'd like to send a package, please." },
+      { "speakerId": "clerk", "text": "Do you have a shipping slip?" },
+      { "speakerId": "you", "text": "No, can I fill one out here?" },
+      { "speakerId": "clerk", "text": "Yes, please fill it in here." },
+      { "speakerId": "you", "text": "Cash on delivery, please." },
+      { "speakerId": "clerk", "text": "Certainly. Here's your copy." }
+    ],
+    "keyVocabulary": ["kbvocab.takkyuubin-o-onegaishimasu", "kbvocab.denpyou", "kbvocab.chakubarai", "kbvocab.kashikomarimashita"],
+    "grammarNotes": "着払い vs 元払い is the one thing you must decide before handing the slip back — say whichever applies with 〜でお願いします rather than a full sentence."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kbdlg.finding-photocopier-and-bathroom",
+    "scenario": "Asking where the photocopier and bathroom are",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "clerk", "name": "店員", "role": "konbini clerk" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "すみません、コピー機はどこですか。", "reading": "すみません、コピーきはどこですか。", "romaji": "Sumimasen, kopīki wa doko desu ka." },
+      { "speakerId": "clerk", "text": "あちらの棚の横にあります。", "reading": "あちらのたなのよこにあります。", "romaji": "Achira no tana no yoko ni arimasu." },
+      { "speakerId": "you", "text": "トイレはどこですか。", "reading": "トイレはどこですか。", "romaji": "Toire wa doko desu ka." },
+      { "speakerId": "clerk", "text": "店の外、左側にございます。鍵はレジにあります。", "reading": "みせのそと、ひだりがわにございます。かぎはレジにあります。", "romaji": "Mise no soto, hidarigawa ni gozaimasu. Kagi wa reji ni arimasu." },
+      { "speakerId": "you", "text": "ありがとうございます。先にコピーを取ります。", "reading": "ありがとうございます。さきにコピーをとります。", "romaji": "Arigatō gozaimasu. Saki ni kopī o torimasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Excuse me, where's the photocopier?" },
+      { "speakerId": "clerk", "text": "It's next to that shelf over there." },
+      { "speakerId": "you", "text": "Where's the bathroom?" },
+      { "speakerId": "clerk", "text": "It's outside the store, on the left. The key is at the register." },
+      { "speakerId": "you", "text": "Thank you. I'll make my copy first." }
+    ],
+    "keyVocabulary": ["kbvocab.kopiiki", "kbvocab.toire-wa-doko-desu-ka", "kbvocab.kagi", "kbvocab.kopii-o-toru"],
+    "grammarNotes": "ございます is the shop-keeper humble form of あります — you'll hear it constantly from staff but wouldn't use it yourself as a customer."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kbdlg.using-point-card",
+    "scenario": "Using a point card at checkout",
+    "speakers": [
+      { "id": "clerk", "name": "店員", "role": "konbini clerk" },
+      { "id": "you", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "clerk", "text": "ポイントカードはお持ちですか。", "reading": "ポイントカードはおもちですか。", "romaji": "Pointo kādo wa omochi desu ka." },
+      { "speakerId": "you", "text": "はい、あります。", "reading": "はい、あります。", "romaji": "Hai, arimasu." },
+      { "speakerId": "clerk", "text": "こちら、お預かりします。", "reading": "こちら、おあずかりします。", "romaji": "Kochira, oazukari shimasu." },
+      { "speakerId": "clerk", "text": "三十ポイント貯まりました。", "reading": "さんじゅっポイントたまりました。", "romaji": "Sanjuppointo tamarimashita." },
+      { "speakerId": "you", "text": "今のポイントを使えますか。", "reading": "いまのポイントをつかえますか。", "romaji": "Ima no pointo o tsukaemasu ka." },
+      { "speakerId": "clerk", "text": "はい、何ポイントお使いになりますか。", "reading": "はい、なんポイントおつかいになりますか。", "romaji": "Hai, nan pointo otsukai ni narimasu ka." },
+      { "speakerId": "you", "text": "全部お願いします。", "reading": "ぜんぶおねがいします。", "romaji": "Zenbu onegaishimasu." }
+    ],
+    "translation": [
+      { "speakerId": "clerk", "text": "Do you have a point card?" },
+      { "speakerId": "you", "text": "Yes, I do." },
+      { "speakerId": "clerk", "text": "I'll take that." },
+      { "speakerId": "clerk", "text": "You've earned 30 points." },
+      { "speakerId": "you", "text": "Can I use my current points?" },
+      { "speakerId": "clerk", "text": "Yes, how many points would you like to use?" },
+      { "speakerId": "you", "text": "All of them, please." }
+    ],
+    "keyVocabulary": ["kbvocab.pointo-kaado-wa-omochi-desu-ka", "kbvocab.pointo-kaado", "kbvocab.pointo-ga-tamaru", "kbvocab.pointo-o-tsukau"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kbdlg.self-checkout-payment",
+    "scenario": "Checking out at a self-checkout register",
+    "speakers": [
+      { "id": "clerk", "name": "店員", "role": "konbini clerk" },
+      { "id": "you", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "clerk", "text": "セルフレジでお願いします。", "reading": "セルフレジでおねがいします。", "romaji": "Serufureji de onegaishimasu." },
+      { "speakerId": "you", "text": "使い方が分かりません。", "reading": "つかいかたがわかりません。", "romaji": "Tsukaikata ga wakarimasen." },
+      { "speakerId": "clerk", "text": "バーコードをここにかざしてください。", "reading": "バーコードをここにかざしてください。", "romaji": "Bākōdo o koko ni kazashite kudasai." },
+      { "speakerId": "you", "text": "支払い方法は選べますか。", "reading": "しはらいほうほうはえらべますか。", "romaji": "Shiharai hōhō wa erabemasu ka." },
+      { "speakerId": "clerk", "text": "はい、現金、カード、電子マネーが使えます。", "reading": "はい、げんきん、カード、でんしマネーがつかえます。", "romaji": "Hai, genkin, kādo, denshi manē ga tsukaemasu." },
+      { "speakerId": "you", "text": "タッチ決済でお願いします。", "reading": "タッチけっさいでおねがいします。", "romaji": "Tacchi kessai de onegaishimasu." },
+      { "speakerId": "clerk", "text": "こちらにカードをタッチしてください。", "reading": "こちらにカードをタッチしてください。", "romaji": "Kochira ni kādo o tacchi shite kudasai." }
+    ],
+    "translation": [
+      { "speakerId": "clerk", "text": "Please use the self-checkout register." },
+      { "speakerId": "you", "text": "I don't know how to use it." },
+      { "speakerId": "clerk", "text": "Please hold the barcode up here." },
+      { "speakerId": "you", "text": "Can I choose the payment method?" },
+      { "speakerId": "clerk", "text": "Yes, you can use cash, card, or e-money." },
+      { "speakerId": "you", "text": "Contactless payment, please." },
+      { "speakerId": "clerk", "text": "Please tap your card here." }
+    ],
+    "keyVocabulary": ["kbvocab.serufureji", "kbvocab.baakoodo", "kbvocab.shiharai-houhou", "kbvocab.genkin", "kbvocab.denshi-manee", "kbvocab.tacchi-kessai"]
+  }
+]

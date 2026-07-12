@@ -1,0 +1,554 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.matsuri",
+    "entryType": "word",
+    "lemma": "祭り",
+    "reading": "まつり",
+    "romaji": "matsuri",
+    "translation": "festival",
+    "naturalMeaning": "Almost always tied to a local shrine's calendar, not just a generic fair — even a small neighborhood matsuri usually has a shrine or deity behind it.",
+    "tags": ["festival", "core"],
+    "examples": [
+      { "text": "今週末、近所で祭りがあります。", "reading": "こんしゅうまつ、きんじょでまつりがあります。", "romaji": "Konshūmatsu, kinjo de matsuri ga arimasu.", "translation": "There's a festival in the neighborhood this weekend." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.natsu-matsuri",
+    "entryType": "word",
+    "lemma": "夏祭り",
+    "reading": "なつまつり",
+    "romaji": "natsu matsuri",
+    "translation": "summer festival",
+    "naturalMeaning": "The generic term for the small-to-medium neighborhood or shrine festivals held all over Japan in summer — as opposed to a named, famous festival like 祇園祭.",
+    "tags": ["festival", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.ennichi",
+    "entryType": "word",
+    "lemma": "縁日",
+    "reading": "えんにち",
+    "romaji": "ennichi",
+    "translation": "festival day / temple fair day",
+    "naturalMeaning": "A day tied to a specific shrine or temple deity when stalls and games appear on the grounds — many neighborhood natsu matsuri are technically an ennichi.",
+    "tags": ["festival"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.gion-matsuri",
+    "entryType": "word",
+    "lemma": "祇園祭",
+    "reading": "ぎおんまつり",
+    "romaji": "Gion Matsuri",
+    "translation": "the Gion Festival (Kyoto)",
+    "naturalMeaning": "One of Japan's three great festivals, held throughout July in Kyoto — famous for its towering float procession, the 山鉾巡行.",
+    "tags": ["festival", "famous"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.tanabata-matsuri",
+    "entryType": "word",
+    "lemma": "七夕祭り",
+    "reading": "たなばたまつり",
+    "romaji": "Tanabata Matsuri",
+    "translation": "the Star Festival",
+    "naturalMeaning": "Held around July 7th — people write wishes on colorful strips of paper (短冊) and hang them on bamboo branches.",
+    "tags": ["festival", "famous"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.obon",
+    "entryType": "word",
+    "lemma": "お盆",
+    "reading": "おぼん",
+    "romaji": "Obon",
+    "translation": "Obon (mid-August ancestor festival)",
+    "naturalMeaning": "A holiday period when ancestors' spirits are said to return home — many bon-odori dances and summer matsuri cluster around this time, though not every natsu matsuri is an Obon event.",
+    "tags": ["festival"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.yatai",
+    "entryType": "word",
+    "lemma": "屋台",
+    "reading": "やたい",
+    "romaji": "yatai",
+    "translation": "food stall / street stall",
+    "naturalMeaning": "The rows of small stalls lining a shrine's approach path during a festival, each usually run by a single vendor selling one or two items.",
+    "tags": ["food", "core"],
+    "examples": [
+      { "text": "参道に屋台がたくさん並んでいます。", "reading": "さんどうにやたいがたくさんならんでいます。", "romaji": "Sandō ni yatai ga takusan narande imasu.", "translation": "There are lots of stalls lined up along the approach path." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.takoyaki",
+    "entryType": "word",
+    "lemma": "たこ焼き",
+    "reading": "たこやき",
+    "romaji": "takoyaki",
+    "translation": "octopus balls (fried batter balls with octopus)",
+    "naturalMeaning": "Round balls of savory batter with a piece of octopus inside, topped with sauce, mayonnaise, and dried bonito flakes that flutter in the steam.",
+    "tags": ["food", "core"],
+    "examples": [
+      { "text": "たこ焼きを一パックください。", "reading": "たこやきをいちパックください。", "romaji": "Takoyaki o ippakku kudasai.", "translation": "One pack of takoyaki, please." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.yakisoba",
+    "entryType": "word",
+    "lemma": "焼きそば",
+    "reading": "やきそば",
+    "romaji": "yakisoba",
+    "translation": "fried noodles",
+    "naturalMeaning": "Wheat noodles stir-fried with cabbage, pork, and a thick, slightly sweet sauce — one of the most common yatai dishes.",
+    "tags": ["food", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.ringo-ame",
+    "entryType": "word",
+    "lemma": "りんご飴",
+    "reading": "りんごあめ",
+    "romaji": "ringo-ame",
+    "translation": "candy apple",
+    "naturalMeaning": "A whole apple coated in hard, glossy red or clear syrup on a stick — a classic festival treat, more decoration than snack for some buyers.",
+    "tags": ["food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.kakigori",
+    "entryType": "word",
+    "lemma": "かき氷",
+    "reading": "かきごおり",
+    "romaji": "kakigōri",
+    "translation": "shaved ice",
+    "naturalMeaning": "Finely shaved ice doused in flavored syrup — a summer staple you'll see at nearly every natsu matsuri.",
+    "tags": ["food", "core"],
+    "examples": [
+      { "text": "かき氷のいちご味をお願いします。", "reading": "かきごおりのいちごあじをおねがいします。", "romaji": "Kakigōri no ichigo-aji o onegaishimasu.", "translation": "Strawberry-flavor shaved ice, please." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.ikayaki",
+    "entryType": "word",
+    "lemma": "いか焼き",
+    "reading": "いかやき",
+    "romaji": "ikayaki",
+    "translation": "grilled squid",
+    "naturalMeaning": "A whole squid pressed flat and grilled on a griddle, brushed with soy sauce — the smell often carries across the whole festival grounds.",
+    "tags": ["food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.wataame",
+    "entryType": "word",
+    "lemma": "わたあめ",
+    "romaji": "wataame",
+    "translation": "cotton candy",
+    "tags": ["food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.yakitori",
+    "entryType": "word",
+    "lemma": "焼き鳥",
+    "reading": "やきとり",
+    "romaji": "yakitori",
+    "translation": "grilled chicken skewers",
+    "tags": ["food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.jaga-bataa",
+    "entryType": "word",
+    "lemma": "じゃがバター",
+    "romaji": "jaga bataa",
+    "translation": "butter-topped baked potato",
+    "tags": ["food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.choko-banana",
+    "entryType": "word",
+    "lemma": "チョコバナナ",
+    "romaji": "choko banana",
+    "translation": "chocolate-covered banana",
+    "naturalMeaning": "A banana on a stick, dipped in chocolate and often decorated with colorful sprinkles — a favorite with kids.",
+    "tags": ["food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.yukata",
+    "entryType": "word",
+    "lemma": "浴衣",
+    "reading": "ゆかた",
+    "romaji": "yukata",
+    "translation": "casual summer kimono",
+    "naturalMeaning": "An unlined cotton robe worn in summer — much more casual than a formal kimono, and the default festival outfit for young people. See the culture notes on how it differs from a real kimono.",
+    "tags": ["clothing", "core"],
+    "examples": [
+      { "text": "浴衣を着て祭りに行きます。", "reading": "ゆかたをきてまつりにいきます。", "romaji": "Yukata o kite matsuri ni ikimasu.", "translation": "I'm wearing a yukata to the festival." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.geta",
+    "entryType": "word",
+    "lemma": "下駄",
+    "reading": "げた",
+    "romaji": "geta",
+    "translation": "wooden sandals",
+    "naturalMeaning": "Worn with a yukata — the raised wooden soles make a distinctive clacking sound on pavement, and blisters between the toes are a common first-timer complaint.",
+    "tags": ["clothing"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.obi",
+    "entryType": "word",
+    "lemma": "帯",
+    "reading": "おび",
+    "romaji": "obi",
+    "translation": "sash (worn with a yukata or kimono)",
+    "tags": ["clothing"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.jinbei",
+    "entryType": "word",
+    "lemma": "甚平",
+    "reading": "じんべい",
+    "romaji": "jinbei",
+    "translation": "men's/children's casual summer set (top and shorts)",
+    "naturalMeaning": "A simpler, more practical alternative to a yukata — a loose short-sleeved top and matching shorts, common on young boys and men who don't want to deal with an obi.",
+    "tags": ["clothing"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.kinchaku",
+    "entryType": "word",
+    "lemma": "巾着",
+    "reading": "きんちゃく",
+    "romaji": "kinchaku",
+    "translation": "drawstring pouch",
+    "naturalMeaning": "A small cloth drawstring bag carried instead of a purse when wearing a yukata, since the outfit has no real pockets.",
+    "tags": ["clothing"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.mikoshi",
+    "entryType": "word",
+    "lemma": "神輿",
+    "reading": "みこし",
+    "romaji": "mikoshi",
+    "translation": "portable shrine",
+    "naturalMeaning": "A miniature shrine believed to carry the local deity through the neighborhood during the festival, carried on the shoulders of a team of bearers.",
+    "tags": ["ritual", "core"],
+    "examples": [
+      { "text": "神輿が街を練り歩きます。", "reading": "みこしがまちをねりあるきます。", "romaji": "Mikoshi ga machi o neriarukimasu.", "translation": "The mikoshi parades through the town." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.katsugu",
+    "entryType": "word",
+    "lemma": "担ぐ",
+    "reading": "かつぐ",
+    "romaji": "katsugu",
+    "translation": "to carry on one's shoulder(s)",
+    "tags": ["ritual"],
+    "examples": [
+      { "text": "みんなで神輿を担ぎます。", "reading": "みんなでみこしをかつぎます。", "romaji": "Minna de mikoshi o katsugimasu.", "translation": "Everyone carries the mikoshi together." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.wasshoi",
+    "entryType": "phrase",
+    "lemma": "わっしょい",
+    "romaji": "wasshoi",
+    "translation": "heave-ho! (mikoshi-carrying chant)",
+    "naturalMeaning": "The rhythmic shout bearers call out together to stay in step while carrying a mikoshi — said to have no fixed meaning of its own, it's pure chant.",
+    "tags": ["ritual", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.dashi",
+    "entryType": "word",
+    "lemma": "山車",
+    "reading": "だし",
+    "romaji": "dashi",
+    "translation": "festival float",
+    "naturalMeaning": "A large wheeled float, often multi-tiered and elaborately decorated, pulled through the streets rather than carried on shoulders like a mikoshi.",
+    "tags": ["ritual"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.gyouretsu",
+    "entryType": "word",
+    "lemma": "行列",
+    "reading": "ぎょうれつ",
+    "romaji": "gyōretsu",
+    "translation": "procession / line of people",
+    "tags": ["ritual"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.hanabi",
+    "entryType": "word",
+    "lemma": "花火",
+    "reading": "はなび",
+    "romaji": "hanabi",
+    "translation": "fireworks",
+    "tags": ["fireworks", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.hanabi-taikai",
+    "entryType": "word",
+    "lemma": "花火大会",
+    "reading": "はなびたいかい",
+    "romaji": "hanabi taikai",
+    "translation": "fireworks festival",
+    "naturalMeaning": "A large-scale evening event, often riverside, with tens of thousands of shells launched over an hour or more — one of the biggest reasons people wear yukata in summer.",
+    "tags": ["fireworks", "core"],
+    "examples": [
+      { "text": "今夜、花火大会があります。", "reading": "こんや、はなびたいかいがあります。", "romaji": "Kon'ya, hanabi taikai ga arimasu.", "translation": "There's a fireworks festival tonight." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.uchiage-hanabi",
+    "entryType": "word",
+    "lemma": "打ち上げ花火",
+    "reading": "うちあげはなび",
+    "romaji": "uchiage hanabi",
+    "translation": "aerial fireworks (launched shells)",
+    "tags": ["fireworks"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.senkou-hanabi",
+    "entryType": "word",
+    "lemma": "線香花火",
+    "reading": "せんこうはなび",
+    "romaji": "senkō hanabi",
+    "translation": "handheld sparkler",
+    "naturalMeaning": "A small stick sparkler you light and hold, watching the glowing tip drop through stages until the ember finally falls — considered a quiet, almost meditative summer pastime.",
+    "tags": ["fireworks"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.kingyo-sukui",
+    "entryType": "word",
+    "lemma": "金魚すくい",
+    "reading": "きんぎょすくい",
+    "romaji": "kingyo-sukui",
+    "translation": "goldfish scooping",
+    "naturalMeaning": "A classic festival game: scoop live goldfish out of a shallow pool using a poi, a paper-thin scoop that dissolves quickly once wet.",
+    "tags": ["games", "core"],
+    "examples": [
+      { "text": "金魚すくいをやってみたいです。", "reading": "きんぎょすくいをやってみたいです。", "romaji": "Kingyo-sukui o yattemitai desu.", "translation": "I'd like to try goldfish scooping." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.poi",
+    "entryType": "word",
+    "lemma": "ポイ",
+    "romaji": "poi",
+    "translation": "paper scoop (used in goldfish scooping)",
+    "naturalMeaning": "A round frame with a thin paper membrane — tilt it wrong or hesitate too long and the wet paper tears, ending your turn.",
+    "tags": ["games"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.shateki",
+    "entryType": "word",
+    "lemma": "射的",
+    "reading": "しゃてき",
+    "romaji": "shateki",
+    "translation": "shooting gallery (cork-gun game)",
+    "naturalMeaning": "Knock a prize off a shelf with a cork-firing toy rifle from a set distance; hitting it is only half the battle — it also has to fall.",
+    "tags": ["games"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.kuji-biki",
+    "entryType": "word",
+    "lemma": "くじ引き",
+    "reading": "くじびき",
+    "romaji": "kuji-biki",
+    "translation": "lottery draw (prize game)",
+    "tags": ["games"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.bon-odori",
+    "entryType": "word",
+    "lemma": "盆踊り",
+    "reading": "ぼんおどり",
+    "romaji": "bon-odori",
+    "translation": "Bon dance",
+    "naturalMeaning": "A circle dance performed around a central tower during Obon, historically to welcome and comfort the spirits of ancestors — everyone is meant to join in, not just watch. See the culture notes.",
+    "tags": ["dance", "core"],
+    "examples": [
+      { "text": "みんなで盆踊りを踊りましょう。", "reading": "みんなでぼんおどりをおどりましょう。", "romaji": "Minna de bon-odori o odorimashō.", "translation": "Let's all dance the bon-odori together." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.yagura",
+    "entryType": "word",
+    "lemma": "櫓",
+    "reading": "やぐら",
+    "romaji": "yagura",
+    "translation": "wooden tower (bon-odori dance platform)",
+    "naturalMeaning": "The raised wooden scaffold in the center of the dance area where musicians and lead dancers perform, with everyone else circling around it.",
+    "tags": ["dance"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.ondo",
+    "entryType": "word",
+    "lemma": "音頭",
+    "reading": "おんど",
+    "romaji": "ondo",
+    "translation": "festival dance tune",
+    "naturalMeaning": "The looping call-and-response songs that accompany bon-odori, often named after the region — Tokyo Ondo, Tanko Bushi, and so on.",
+    "tags": ["dance"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.wa-ni-naru",
+    "entryType": "phrase",
+    "lemma": "輪になる",
+    "reading": "わになる",
+    "romaji": "wa ni naru",
+    "translation": "to form a circle",
+    "tags": ["dance"],
+    "examples": [
+      { "text": "櫓の周りで輪になって踊ります。", "reading": "やぐらのまわりでわになっておどります。", "romaji": "Yagura no mawari de wa ni natte odorimasu.", "translation": "We form a circle around the tower and dance." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.chouchin",
+    "entryType": "word",
+    "lemma": "提灯",
+    "reading": "ちょうちん",
+    "romaji": "chōchin",
+    "translation": "paper lantern",
+    "naturalMeaning": "Strung along stalls and shrine approach paths to light the evening — the warm glow is one of the defining visuals of a natsu matsuri.",
+    "tags": ["festival"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.hitotsu-kudasai",
+    "entryType": "phrase",
+    "lemma": "一つください",
+    "reading": "ひとつください",
+    "romaji": "Hitotsu kudasai.",
+    "translation": "One, please.",
+    "tags": ["phrase", "food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.zenbu-de-ikura-desu-ka",
+    "entryType": "phrase",
+    "lemma": "全部でいくらですか",
+    "reading": "ぜんぶでいくらですか",
+    "romaji": "Zenbu de ikura desu ka.",
+    "translation": "How much is that all together?",
+    "tags": ["phrase", "money"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.nanji-kara-hajimarimasu-ka",
+    "entryType": "phrase",
+    "lemma": "何時から始まりますか",
+    "reading": "なんじからはじまりますか",
+    "romaji": "Nanji kara hajimarimasu ka.",
+    "translation": "What time does it start?",
+    "tags": ["phrase", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.toire-wa-doko-desu-ka",
+    "entryType": "phrase",
+    "lemma": "トイレはどこですか",
+    "romaji": "Toire wa doko desu ka.",
+    "translation": "Where is the restroom?",
+    "tags": ["phrase", "practical", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.deguchi-wa-doko-desu-ka",
+    "entryType": "phrase",
+    "lemma": "出口はどこですか",
+    "reading": "でぐちはどこですか",
+    "romaji": "Deguchi wa doko desu ka.",
+    "translation": "Where is the exit?",
+    "tags": ["phrase", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.koko-ni-suwattemo-ii-desu-ka",
+    "entryType": "phrase",
+    "lemma": "ここに座ってもいいですか",
+    "reading": "ここにすわってもいいですか",
+    "romaji": "Koko ni suwattemo ii desu ka.",
+    "translation": "Is it all right to sit here?",
+    "naturalMeaning": "Worth asking before spreading a blanket for hanabi viewing — spots are often informally claimed hours in advance; see the culture notes.",
+    "tags": ["phrase", "practical", "fireworks"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.gomi-wa-doko-ni-sutemasu-ka",
+    "entryType": "phrase",
+    "lemma": "ごみはどこに捨てますか",
+    "reading": "ごみはどこにすてますか",
+    "romaji": "Gomi wa doko ni sutemasu ka.",
+    "translation": "Where do I throw away trash?",
+    "naturalMeaning": "Public trash cans are scarce at festivals; most stalls that sell food provide a bin right at the stall, and visitors are expected to carry trash out otherwise.",
+    "tags": ["phrase", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.hitogomi",
+    "entryType": "word",
+    "lemma": "人混み",
+    "reading": "ひとごみ",
+    "romaji": "hitogomi",
+    "translation": "crowd of people",
+    "tags": ["practical"],
+    "examples": [
+      { "text": "花火大会の後は人混みがすごいです。", "reading": "はなびたいかいのあとはひとごみがすごいです。", "romaji": "Hanabi taikai no ato wa hitogomi ga sugoi desu.", "translation": "The crowds are intense after the fireworks festival." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.reijou",
+    "entryType": "word",
+    "lemma": "レジャーシート",
+    "romaji": "rejā shīto",
+    "translation": "picnic/ground sheet",
+    "naturalMeaning": "The plastic sheet spread on the ground to claim and mark a viewing spot for fireworks or a parade, often hours before the event starts.",
+    "tags": ["practical", "fireworks"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msvocab.enkai-basho-tori",
+    "entryType": "phrase",
+    "lemma": "場所取り",
+    "reading": "ばしょとり",
+    "romaji": "basho-tori",
+    "translation": "spot-claiming (reserving a viewing place)",
+    "naturalMeaning": "The practice of laying down a sheet or marker early to reserve ground for watching hanabi or a parade — an accepted, expected custom rather than rude behavior.",
+    "tags": ["practical", "fireworks", "core"]
+  }
+]

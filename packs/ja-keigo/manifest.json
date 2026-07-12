@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "ja-keigo",
+  "name": "Business Keigo",
+  "languageCode": "ja-JP",
+  "packVersion": "0.1.0",
+  "basePack": "ja",
+  "authors": ["PolyglotAI"],
+  "license": "proprietary",
+  "dialects": [{ "id": "ja-JP-standard", "name": "Standard (Tokyo)" }],
+  "defaultDialect": "ja-JP-standard",
+  "cefrRange": ["B1", "B2"],
+  "featureFlags": { "slang": false, "profanity": false },
+  "contents": {
+    "grammar": ["grammar/keigo-core.json"],
+    "vocabulary": ["vocabulary/keigo-core.json"],
+    "dialogues": ["dialogues/scenarios.json"],
+    "culture": ["culture/notes.json"]
+  }
+}

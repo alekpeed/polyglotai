@@ -1,0 +1,538 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.irassharu",
+    "entryType": "word",
+    "lemma": "いらっしゃる",
+    "reading": "いらっしゃる",
+    "romaji": "irassharu",
+    "translation": "to go / to come / to be (sonkeigo)",
+    "naturalMeaning": "The single sonkeigo verb that covers 行く, 来る, and いる — which one it means is read from context. Elevates the subject, so you use it for a customer, client, or superior, never for yourself.",
+    "partOfSpeech": "verb",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "sonkeigo", "verb"],
+    "examples": [
+      { "text": "社長は明日いらっしゃいます。", "reading": "しゃちょうはあしたいらっしゃいます。", "romaji": "Shachō wa ashita irasshaimasu.", "translation": "The president will be here/go/come tomorrow." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.nasaru",
+    "entryType": "word",
+    "lemma": "なさる",
+    "reading": "なさる",
+    "romaji": "nasaru",
+    "translation": "to do (sonkeigo)",
+    "naturalMeaning": "The sonkeigo replacement for する — irregular ます-stem なさいます, not なさります.",
+    "partOfSpeech": "verb",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "sonkeigo", "verb"],
+    "examples": [
+      { "text": "お客様は何をなさいますか。", "reading": "おきゃくさまはなにをなさいますか。", "romaji": "Okyakusama wa nani o nasaimasu ka.", "translation": "What will the customer do/have?" }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.ossharu",
+    "entryType": "word",
+    "lemma": "おっしゃる",
+    "reading": "おっしゃる",
+    "romaji": "ossharu",
+    "translation": "to say (sonkeigo)",
+    "naturalMeaning": "The sonkeigo replacement for 言う — irregular ます-stem おっしゃいます, not おっしゃります.",
+    "partOfSpeech": "verb",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "sonkeigo", "verb"],
+    "examples": [
+      { "text": "部長がそうおっしゃいました。", "reading": "ぶちょうがそうおっしゃいました。", "romaji": "Buchō ga sō osshaimashita.", "translation": "The department head said so." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.goran-ni-naru",
+    "entryType": "phrase",
+    "lemma": "ご覧になる",
+    "reading": "ごらんになる",
+    "romaji": "goran ni naru",
+    "translation": "to see / to look at (sonkeigo)",
+    "naturalMeaning": "The sonkeigo replacement for 見る — built from an お/ご + noun + になる pattern, but memorized as a set phrase since 覧 alone isn't used this way elsewhere.",
+    "partOfSpeech": "verb phrase",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "sonkeigo", "verb"],
+    "examples": [
+      { "text": "こちらの資料をご覧になりましたか。", "reading": "こちらのしりょうをごらんになりましたか。", "romaji": "Kochira no shiryō o goran ni narimashita ka.", "translation": "Have you looked at this document?" }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.mairu",
+    "entryType": "word",
+    "lemma": "まいる",
+    "reading": "まいる",
+    "romaji": "mairu",
+    "translation": "to go / to come (kenjougo)",
+    "naturalMeaning": "The kenjougo replacement for 行く/来る — lowers the speaker, so it's used for your own movement, never someone else's.",
+    "partOfSpeech": "verb",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "kenjougo", "verb"],
+    "examples": [
+      { "text": "明日十時にまいります。", "reading": "あしたじゅうじにまいります。", "romaji": "Ashita jūji ni mairimasu.", "translation": "I will come/go at 10 tomorrow." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.ukagau",
+    "entryType": "word",
+    "lemma": "伺う",
+    "reading": "うかがう",
+    "romaji": "ukagau",
+    "translation": "to visit / to ask / to hear (kenjougo)",
+    "naturalMeaning": "A three-way kenjougo verb: covers 行く/来る (visit), 聞く (ask), and 聞く (hear/be told) — which meaning applies comes from context.",
+    "partOfSpeech": "verb",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "kenjougo", "verb"],
+    "examples": [
+      { "text": "一つ伺ってもよろしいでしょうか。", "reading": "ひとつうかがってもよろしいでしょうか。", "romaji": "Hitotsu ukagattemo yoroshii deshō ka.", "translation": "May I ask you one thing?" }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.itasu",
+    "entryType": "word",
+    "lemma": "いたす",
+    "reading": "いたす",
+    "romaji": "itasu",
+    "translation": "to do (kenjougo)",
+    "naturalMeaning": "The kenjougo replacement for する — the most common kenjougo verb in business Japanese, seen constantly in set phrases like よろしくお願いいたします.",
+    "partOfSpeech": "verb",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "kenjougo", "verb", "core"],
+    "examples": [
+      { "text": "私が担当いたします。", "reading": "わたしがたんとういたします。", "romaji": "Watashi ga tantō itashimasu.", "translation": "I will be the one in charge." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.mousu",
+    "entryType": "word",
+    "lemma": "申す",
+    "reading": "もうす",
+    "romaji": "mōsu",
+    "translation": "to say / to be named (kenjougo)",
+    "naturalMeaning": "The plain kenjougo replacement for 言う, best known from the self-introduction line ～と申します.",
+    "partOfSpeech": "verb",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "kenjougo", "verb"],
+    "examples": [
+      { "text": "田中と申します。", "reading": "たなかともうします。", "romaji": "Tanaka to mōshimasu.", "translation": "My name is Tanaka." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.moushiageru",
+    "entryType": "word",
+    "lemma": "申し上げる",
+    "reading": "もうしあげる",
+    "romaji": "mōshiageru",
+    "translation": "to say / to tell (kenjougo, deeper)",
+    "naturalMeaning": "A deeper kenjougo version of 申す, built from 申す + 上げる — used toward someone clearly above you, common in お礼申し上げます (\"I express my thanks\").",
+    "partOfSpeech": "verb",
+    "cefr": "B2",
+    "register": "formal",
+    "tags": ["keigo", "kenjougo", "verb"],
+    "examples": [
+      { "text": "心よりお礼申し上げます。", "reading": "こころよりおれいもうしあげます。", "romaji": "Kokoro yori orei mōshiagemasu.", "translation": "I express my heartfelt thanks." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.haiken-suru",
+    "entryType": "phrase",
+    "lemma": "拝見する",
+    "reading": "はいけんする",
+    "romaji": "haiken suru",
+    "translation": "to see / to look at (kenjougo)",
+    "naturalMeaning": "The kenjougo replacement for 見る — lowers your own act of looking, common when reviewing a client's documents.",
+    "partOfSpeech": "verb",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "kenjougo", "verb"],
+    "examples": [
+      { "text": "資料を拝見しました。", "reading": "しりょうをはいけんしました。", "romaji": "Shiryō o haiken shimashita.", "translation": "I have looked over the documents." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.itadaku",
+    "entryType": "word",
+    "lemma": "いただく",
+    "reading": "いただく",
+    "romaji": "itadaku",
+    "translation": "to receive / to eat / to drink (kenjougo)",
+    "naturalMeaning": "Kenjougo for もらう (receive) — also doubles as the humble form of 食べる/飲む. Also the base of the request pattern ～ていただけますか.",
+    "partOfSpeech": "verb",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "kenjougo", "verb", "core"],
+    "examples": [
+      { "text": "資料をいただきました。", "reading": "しりょうをいただきました。", "romaji": "Shiryō o itadakimashita.", "translation": "I received the documents." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.sashiageru",
+    "entryType": "word",
+    "lemma": "差し上げる",
+    "reading": "さしあげる",
+    "romaji": "sashiageru",
+    "translation": "to give (kenjougo, to someone above you)",
+    "naturalMeaning": "Kenjougo for あげる — lowers the giver (you) when giving to someone of higher status; overused toward equals it can sound obsequious.",
+    "partOfSpeech": "verb",
+    "cefr": "B2",
+    "register": "formal",
+    "tags": ["keigo", "kenjougo", "verb"],
+    "examples": [
+      { "text": "資料をお送り差し上げます。", "reading": "しりょうをおおくりさしあげます。", "romaji": "Shiryō o o-okuri sashiagemasu.", "translation": "I will send you the documents." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.kudasaru",
+    "entryType": "word",
+    "lemma": "くださる",
+    "reading": "くださる",
+    "romaji": "kudasaru",
+    "translation": "to give (sonkeigo, someone above gives to you)",
+    "naturalMeaning": "Sonkeigo for くれる — elevates the giver when they give something to you or your in-group; irregular ます-stem くださいます.",
+    "partOfSpeech": "verb",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "sonkeigo", "verb"],
+    "examples": [
+      { "text": "部長が資料をくださいました。", "reading": "ぶちょうがしりょうをくださいました。", "romaji": "Buchō ga shiryō o kudasaimashita.", "translation": "The department head gave me the documents." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.zonjiru",
+    "entryType": "word",
+    "lemma": "存じる",
+    "reading": "ぞんじる",
+    "romaji": "zonjiru",
+    "translation": "to know / to think (kenjougo)",
+    "naturalMeaning": "Kenjougo for 知る/思う — common in the set phrase 存じております (\"I am aware\").",
+    "partOfSpeech": "verb",
+    "cefr": "B2",
+    "register": "formal",
+    "tags": ["keigo", "kenjougo", "verb"],
+    "examples": [
+      { "text": "その件は存じております。", "reading": "そのけんはぞんじております。", "romaji": "Sono ken wa zonjite orimasu.", "translation": "I am aware of that matter." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.gozonji",
+    "entryType": "phrase",
+    "lemma": "ご存知",
+    "reading": "ごぞんじ",
+    "romaji": "gozonji",
+    "translation": "to know (sonkeigo)",
+    "naturalMeaning": "The sonkeigo counterpart to 存じる — asks whether the listener knows something, as in ご存知ですか (\"Are you aware...?\"). Easy to confuse with the kenjougo 存じております, which describes the speaker's own knowledge instead.",
+    "partOfSpeech": "noun",
+    "cefr": "B2",
+    "register": "formal",
+    "tags": ["keigo", "sonkeigo"],
+    "examples": [
+      { "text": "田中部長をご存知ですか。", "reading": "たなかぶちょうをごぞんじですか。", "romaji": "Tanaka buchō o gozonji desu ka.", "translation": "Do you know Department Head Tanaka?" }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.meishi",
+    "entryType": "word",
+    "lemma": "名刺",
+    "reading": "めいし",
+    "romaji": "meishi",
+    "translation": "business card",
+    "tags": ["business", "office"],
+    "examples": [
+      { "text": "名刺を交換しましょう。", "reading": "めいしをこうかんしましょう。", "romaji": "Meishi o kōkan shimashō.", "translation": "Let's exchange business cards." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.kaigi",
+    "entryType": "word",
+    "lemma": "会議",
+    "reading": "かいぎ",
+    "romaji": "kaigi",
+    "translation": "meeting",
+    "tags": ["business", "office"],
+    "examples": [
+      { "text": "会議は三時からです。", "reading": "かいぎはさんじからです。", "romaji": "Kaigi wa sanji kara desu.", "translation": "The meeting is from 3 o'clock." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.torihikisaki",
+    "entryType": "word",
+    "lemma": "取引先",
+    "reading": "とりひきさき",
+    "romaji": "torihikisaki",
+    "translation": "business partner / client company",
+    "tags": ["business"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.joushi",
+    "entryType": "word",
+    "lemma": "上司",
+    "reading": "じょうし",
+    "romaji": "jōshi",
+    "translation": "superior / boss",
+    "tags": ["business", "people"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.buka",
+    "entryType": "word",
+    "lemma": "部下",
+    "reading": "ぶか",
+    "romaji": "buka",
+    "translation": "subordinate",
+    "tags": ["business", "people"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.kyakusama",
+    "entryType": "word",
+    "lemma": "お客様",
+    "reading": "おきゃくさま",
+    "romaji": "okyakusama",
+    "translation": "customer / guest (honorific)",
+    "naturalMeaning": "The standard business/service way to refer to a customer or client — お客 alone is plainer, さん is too casual for service contexts.",
+    "tags": ["business", "people", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.uchiawase",
+    "entryType": "word",
+    "lemma": "打ち合わせ",
+    "reading": "うちあわせ",
+    "romaji": "uchiawase",
+    "translation": "preparatory meeting / consultation",
+    "naturalMeaning": "A working meeting to align on details — smaller and less formal than 会議, common between two people or small teams.",
+    "tags": ["business", "office"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.yakusoku",
+    "entryType": "word",
+    "lemma": "約束",
+    "reading": "やくそく",
+    "romaji": "yakusoku",
+    "translation": "appointment / promise",
+    "tags": ["business"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.shorui",
+    "entryType": "word",
+    "lemma": "書類",
+    "reading": "しょるい",
+    "romaji": "shorui",
+    "translation": "documents",
+    "tags": ["business", "office"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.nouki",
+    "entryType": "word",
+    "lemma": "納期",
+    "reading": "のうき",
+    "romaji": "nōki",
+    "translation": "deadline / delivery date",
+    "tags": ["business"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.tantou",
+    "entryType": "word",
+    "lemma": "担当",
+    "reading": "たんとう",
+    "romaji": "tantō",
+    "translation": "person in charge",
+    "tags": ["business", "people"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.kaisha",
+    "entryType": "word",
+    "lemma": "会社",
+    "reading": "かいしゃ",
+    "romaji": "kaisha",
+    "translation": "company",
+    "tags": ["business"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.uketsuke",
+    "entryType": "word",
+    "lemma": "受付",
+    "reading": "うけつけ",
+    "romaji": "uketsuke",
+    "translation": "reception desk",
+    "tags": ["business", "office"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.osewa-ni-natte-orimasu",
+    "entryType": "phrase",
+    "lemma": "お世話になっております",
+    "reading": "おせわになっております",
+    "romaji": "osewa ni natte orimasu",
+    "translation": "Thank you for your continued support",
+    "naturalMeaning": "The standard opening line of a business phone call or email to someone at a partner company — literally \"I am indebted to your care,\" said regardless of whether anything specific happened recently.",
+    "partOfSpeech": "phrase",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "business", "phrase", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.yoroshiku-onegai-itashimasu",
+    "entryType": "phrase",
+    "lemma": "よろしくお願いいたします",
+    "reading": "よろしくおねがいいたします",
+    "romaji": "yoroshiku onegai itashimasu",
+    "translation": "Thank you in advance / I appreciate your cooperation",
+    "naturalMeaning": "The kenjougo-upgraded version of よろしくお願いします (いたす replacing する) — used to close emails, requests, and introductions in business contexts.",
+    "partOfSpeech": "phrase",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "business", "phrase", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.moushiwake-gozaimasen",
+    "entryType": "phrase",
+    "lemma": "申し訳ございません",
+    "reading": "もうしわけございません",
+    "romaji": "mōshiwake gozaimasen",
+    "translation": "I am terribly sorry",
+    "naturalMeaning": "A formal apology, stronger than すみません — ございません is the polite negative of ござる, keigo's formal copula. Standard for apologizing to a client for a delay or mistake.",
+    "partOfSpeech": "phrase",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "business", "phrase", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.shitsurei-shimasu",
+    "entryType": "phrase",
+    "lemma": "失礼します",
+    "reading": "しつれいします",
+    "romaji": "shitsurei shimasu",
+    "translation": "Excuse me (entering/leaving, ending a call)",
+    "naturalMeaning": "A flexible business phrase used entering someone's office, stepping out of a meeting, or hanging up a phone call — literally \"I will be rude.\"",
+    "partOfSpeech": "phrase",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["business", "phrase"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.shoushou-omachi-kudasai",
+    "entryType": "phrase",
+    "lemma": "少々お待ちください",
+    "reading": "しょうしょうおまちください",
+    "romaji": "shōshō omachi kudasai",
+    "translation": "Please wait a moment",
+    "naturalMeaning": "The formal service-register version of ちょっと待ってください — standard at reception desks and on business phone calls.",
+    "partOfSpeech": "phrase",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["business", "phrase"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.kashikomarimashita",
+    "entryType": "phrase",
+    "lemma": "かしこまりました",
+    "reading": "かしこまりました",
+    "romaji": "kashikomarimashita",
+    "translation": "Certainly / understood",
+    "naturalMeaning": "The formal service-register version of わかりました — signals full compliance, common from staff toward customers or from a subordinate toward a superior.",
+    "partOfSpeech": "phrase",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["business", "phrase", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.osaki-ni-shitsurei-shimasu",
+    "entryType": "phrase",
+    "lemma": "お先に失礼します",
+    "reading": "おさきにしつれいします",
+    "romaji": "osaki ni shitsurei shimasu",
+    "translation": "Excuse me for leaving first",
+    "naturalMeaning": "Said when leaving the office before coworkers who are still working — a small courtesy phrase, not a literal apology.",
+    "partOfSpeech": "phrase",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["business", "phrase"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.otsukaresama-desu",
+    "entryType": "phrase",
+    "lemma": "お疲れ様です",
+    "reading": "おつかれさまです",
+    "romaji": "otsukaresama desu",
+    "translation": "Thank you for your hard work (greeting)",
+    "naturalMeaning": "An all-purpose workplace greeting used at almost any time of day among coworkers, regardless of whether anyone is actually tired — the past-tense お疲れ様でした is used when work is finished.",
+    "partOfSpeech": "phrase",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["business", "phrase", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.omachi-shite-orimasu",
+    "entryType": "phrase",
+    "lemma": "お待ちしております",
+    "reading": "おまちしております",
+    "romaji": "omachi shite orimasu",
+    "translation": "I will be waiting for you / looking forward to it",
+    "naturalMeaning": "A kenjougo pattern (お + stem + する, then ～ております for the humble ongoing form) used to close an email or invitation politely.",
+    "partOfSpeech": "phrase",
+    "cefr": "B2",
+    "register": "formal",
+    "tags": ["keigo", "business", "phrase"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgvocab.te-itadakemasu-ka",
+    "entryType": "chunk",
+    "lemma": "～ていただけますか",
+    "reading": "～ていただけますか",
+    "romaji": "~te itadakemasu ka",
+    "translation": "Could you possibly do ~ for me?",
+    "naturalMeaning": "The polite-request pattern built on いただく — softer and more deferential than ～てください, standard when asking a superior or client for something.",
+    "partOfSpeech": "grammar chunk",
+    "cefr": "B1",
+    "register": "formal",
+    "tags": ["keigo", "grammar", "core"],
+    "examples": [
+      { "text": "少しお待ちいただけますか。", "reading": "すこしおまちいただけますか。", "romaji": "Sukoshi omachi itadakemasu ka.", "translation": "Could you please wait a little?" }
+    ]
+  }
+]

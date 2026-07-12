@@ -1,0 +1,543 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.onsen",
+    "entryType": "word",
+    "lemma": "温泉",
+    "reading": "おんせん",
+    "romaji": "onsen",
+    "translation": "hot spring",
+    "naturalMeaning": "Legally in Japan, water must meet a mineral-content or temperature threshold at the source to be called 温泉 — not every hot bath qualifies.",
+    "tags": ["core", "onsen"],
+    "examples": [
+      { "text": "この辺りは温泉で有名です。", "reading": "このあたりはおんせんでゆうめいです。", "romaji": "Kono atari wa onsen de yūmei desu.", "translation": "This area is famous for its hot springs." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.ryokan",
+    "entryType": "word",
+    "lemma": "旅館",
+    "reading": "りょかん",
+    "romaji": "ryokan",
+    "translation": "traditional Japanese inn",
+    "naturalMeaning": "Distinguished from a hotel (ホテル) mainly by tatami rooms, futon bedding, an included multi-course dinner, and staff who look after your room.",
+    "tags": ["core", "lodging"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.yoyaku",
+    "entryType": "word",
+    "lemma": "予約",
+    "reading": "よやく",
+    "romaji": "yoyaku",
+    "translation": "reservation",
+    "tags": ["lodging", "practical"],
+    "examples": [
+      { "text": "今晩、予約をしています。", "reading": "こんばん、よやくをしています。", "romaji": "Konban, yoyaku o shite imasu.", "translation": "I have a reservation for tonight." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.check-in",
+    "entryType": "word",
+    "lemma": "チェックイン",
+    "romaji": "chekku in",
+    "translation": "check-in",
+    "tags": ["lodging", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.check-out",
+    "entryType": "word",
+    "lemma": "チェックアウト",
+    "romaji": "chekku auto",
+    "translation": "check-out",
+    "tags": ["lodging", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.shukuhaku",
+    "entryType": "word",
+    "lemma": "宿泊",
+    "reading": "しゅくはく",
+    "romaji": "shukuhaku",
+    "translation": "lodging / staying overnight",
+    "tags": ["lodging"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.ippaku-nishoku",
+    "entryType": "phrase",
+    "lemma": "一泊二食付き",
+    "reading": "いっぱくにしょくつき",
+    "romaji": "ippaku nishoku-tsuki",
+    "translation": "one night with two meals included",
+    "naturalMeaning": "The standard ryokan rate plan: one night's stay plus dinner and breakfast. It's how most ryokan list prices, so it's worth recognizing on a booking page.",
+    "tags": ["lodging", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.sudomari",
+    "entryType": "word",
+    "lemma": "素泊まり",
+    "reading": "すどまり",
+    "romaji": "sudomari",
+    "translation": "room-only stay (no meals)",
+    "naturalMeaning": "The cheaper alternative to 一泊二食付き — you skip the included dinner and breakfast, common if you'd rather eat out.",
+    "tags": ["lodging"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.okami",
+    "entryType": "word",
+    "lemma": "女将",
+    "reading": "おかみ",
+    "romaji": "okami",
+    "translation": "female proprietress of a ryokan",
+    "naturalMeaning": "Traditionally the public face of the inn — greeting guests, checking on the dinner, sometimes even the owner's spouse rather than an employee.",
+    "tags": ["lodging", "people"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.nakai",
+    "entryType": "word",
+    "lemma": "仲居",
+    "reading": "なかい",
+    "romaji": "nakai",
+    "translation": "ryokan room attendant",
+    "naturalMeaning": "Brings your tea on arrival, serves your in-room dinner, and lays out your futon in the evening — often the same person for your whole stay.",
+    "tags": ["lodging", "people"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.heyashoku",
+    "entryType": "word",
+    "lemma": "部屋食",
+    "reading": "へやしょく",
+    "romaji": "heyashoku",
+    "translation": "meal served in your room",
+    "tags": ["lodging", "food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.daiyokujo",
+    "entryType": "word",
+    "lemma": "大浴場",
+    "reading": "だいよくじょう",
+    "romaji": "daiyokujō",
+    "translation": "large communal bath",
+    "tags": ["onsen", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.rotenburo",
+    "entryType": "word",
+    "lemma": "露天風呂",
+    "reading": "ろてんぶろ",
+    "romaji": "rotenburo",
+    "translation": "outdoor hot spring bath",
+    "naturalMeaning": "Open to the air, often overlooking a garden, mountain, or the sea — usually the highlight photo of any ryokan's listing.",
+    "tags": ["onsen", "core"],
+    "examples": [
+      { "text": "露天風呂からの景色がきれいです。", "reading": "ろてんぶろからのけしきがきれいです。", "romaji": "Rotenburo kara no keshiki ga kirei desu.", "translation": "The view from the outdoor bath is beautiful." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.uchiburo",
+    "entryType": "word",
+    "lemma": "内風呂",
+    "reading": "うちぶろ",
+    "romaji": "uchiburo",
+    "translation": "indoor bath",
+    "tags": ["onsen"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.kashikiriburo",
+    "entryType": "word",
+    "lemma": "貸切風呂",
+    "reading": "かしきりぶろ",
+    "romaji": "kashikiriburo",
+    "translation": "private reservable bath",
+    "naturalMeaning": "Booked in advance for a set time slot (often 45 minutes), so couples, families, or the tattooed and the anxious can bathe without an audience.",
+    "tags": ["onsen", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.konyoku",
+    "entryType": "word",
+    "lemma": "混浴",
+    "reading": "こんよく",
+    "romaji": "kon'yoku",
+    "translation": "mixed-gender bathing",
+    "naturalMeaning": "Increasingly rare — most modern onsen split baths by gender (男湯/女湯), sometimes alternating which side is which by time of day.",
+    "tags": ["onsen", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.otokoyu",
+    "entryType": "word",
+    "lemma": "男湯",
+    "reading": "おとこゆ",
+    "romaji": "otokoyu",
+    "translation": "men's bath",
+    "tags": ["onsen"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.onnayu",
+    "entryType": "word",
+    "lemma": "女湯",
+    "reading": "おんなゆ",
+    "romaji": "onnayu",
+    "translation": "women's bath",
+    "tags": ["onsen"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.nyuyoku-jikan",
+    "entryType": "word",
+    "lemma": "入浴時間",
+    "reading": "にゅうよくじかん",
+    "romaji": "nyūyoku jikan",
+    "translation": "bathing hours",
+    "tags": ["onsen", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.kakeyu",
+    "entryType": "word",
+    "lemma": "かけ湯",
+    "reading": "かけゆ",
+    "romaji": "kakeyu",
+    "translation": "rinsing off with hot water before entering the bath",
+    "naturalMeaning": "A quick scoop or two of hot water over the body at the edge of the tub, done after washing and right before stepping in — not optional.",
+    "tags": ["onsen", "ritual", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.araiba",
+    "entryType": "word",
+    "lemma": "洗い場",
+    "reading": "あらいば",
+    "romaji": "araiba",
+    "translation": "washing area",
+    "naturalMeaning": "The row of low stools and shower heads where everyone washes and rinses thoroughly before ever approaching the tub itself.",
+    "tags": ["onsen", "ritual"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.yubune",
+    "entryType": "word",
+    "lemma": "湯船",
+    "reading": "ゆぶね",
+    "romaji": "yubune",
+    "translation": "the bath tub (for soaking)",
+    "tags": ["onsen"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.tenugui",
+    "entryType": "word",
+    "lemma": "手ぬぐい",
+    "reading": "てぬぐい",
+    "romaji": "tenugui",
+    "translation": "small cotton hand towel",
+    "naturalMeaning": "Used to wash and for modesty walking to the tub, but it never goes in the water itself — most bathers fold it and rest it on their head or set it aside at the tub's edge.",
+    "tags": ["onsen", "etiquette", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.irezumi",
+    "entryType": "word",
+    "lemma": "入れ墨",
+    "reading": "いれずみ",
+    "romaji": "irezumi",
+    "translation": "tattoo",
+    "naturalMeaning": "The word you'll see on signage as 入れ墨・タトゥーのある方はご遠慮ください (\"those with tattoos are asked to refrain\") — see the culture notes for why, and for workarounds.",
+    "tags": ["onsen", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.tatu-shiiru",
+    "entryType": "word",
+    "lemma": "タトゥーシール",
+    "romaji": "tatū shīru",
+    "translation": "tattoo-covering seal/patch",
+    "naturalMeaning": "A skin-colored adhesive patch sold or lent at some onsen specifically to cover a small tattoo so it stays out of sight.",
+    "tags": ["onsen", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.datsuijo",
+    "entryType": "word",
+    "lemma": "脱衣所",
+    "reading": "だついじょ",
+    "romaji": "datsuijo",
+    "translation": "changing room",
+    "tags": ["onsen", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.yuatari",
+    "entryType": "word",
+    "lemma": "湯あたり",
+    "reading": "ゆあたり",
+    "romaji": "yuatari",
+    "translation": "feeling faint or unwell from soaking too long",
+    "tags": ["onsen", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.onsen-tamago",
+    "entryType": "word",
+    "lemma": "温泉卵",
+    "reading": "おんせんたまご",
+    "romaji": "onsen tamago",
+    "translation": "hot-spring egg",
+    "naturalMeaning": "A soft, custardy egg slow-cooked at onsen bathing temperature rather than boiled — a common souvenir snack at onsen towns.",
+    "tags": ["onsen", "food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.gensen-kakenagashi",
+    "entryType": "phrase",
+    "lemma": "源泉かけ流し",
+    "reading": "げんせんかけながし",
+    "romaji": "gensen kakenagashi",
+    "translation": "fresh, non-recirculated spring water (constantly flowing in and out)",
+    "naturalMeaning": "A point of pride on ryokan signage — the water runs straight from the source and out again rather than being filtered and reused, considered the mark of a serious onsen.",
+    "tags": ["onsen"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.yumeguri",
+    "entryType": "word",
+    "lemma": "湯めぐり",
+    "reading": "ゆめぐり",
+    "romaji": "yumeguri",
+    "translation": "hot-spring hopping (visiting several baths in one trip)",
+    "naturalMeaning": "Many onsen towns sell a 湯めぐり pass — a set of tickets letting you try several different inns' baths without staying the night at each.",
+    "tags": ["onsen", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.touji",
+    "entryType": "word",
+    "lemma": "湯治",
+    "reading": "とうじ",
+    "romaji": "tōji",
+    "translation": "hot-spring recuperation stay",
+    "naturalMeaning": "A longer, old-fashioned style of onsen visit — historically several days to weeks at one spring for a specific ailment, rather than a single overnight trip.",
+    "tags": ["onsen", "history"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.hitou",
+    "entryType": "word",
+    "lemma": "秘湯",
+    "reading": "ひとう",
+    "romaji": "hitō",
+    "translation": "secluded/hidden hot spring",
+    "naturalMeaning": "Marketing shorthand for a remote, hard-to-reach onsen — often mountain inns reachable only by a long drive or a hike.",
+    "tags": ["onsen"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.onsengai",
+    "entryType": "word",
+    "lemma": "温泉街",
+    "reading": "おんせんがい",
+    "romaji": "onsengai",
+    "translation": "hot spring town",
+    "naturalMeaning": "A town built around a cluster of onsen, usually with a strollable main street of foot baths, souvenir shops, and guests wandering in yukata after dinner.",
+    "tags": ["onsen", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.yukata",
+    "entryType": "word",
+    "lemma": "浴衣",
+    "reading": "ゆかた",
+    "romaji": "yukata",
+    "translation": "casual cotton robe",
+    "naturalMeaning": "Provided in your ryokan room to wear around the inn, to dinner, and even out into the onsen town — not just sleepwear.",
+    "tags": ["onsen", "clothing", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.obi",
+    "entryType": "word",
+    "lemma": "帯",
+    "reading": "おび",
+    "romaji": "obi",
+    "translation": "sash (worn to close a yukata)",
+    "tags": ["clothing"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.migimae",
+    "entryType": "word",
+    "lemma": "右前",
+    "reading": "みぎまえ",
+    "romaji": "migimae",
+    "translation": "wrapped with the right side closest to the body (the correct way to wear a yukata)",
+    "naturalMeaning": "Confusingly named — it means the right side goes on first, next to your skin, so the left panel ends up on top. Wrapping it the other way (左前) is reserved for dressing the dead, so it's worth getting right.",
+    "tags": ["clothing", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.kaiseki-ryori",
+    "entryType": "word",
+    "lemma": "会席料理",
+    "reading": "かいせきりょうり",
+    "romaji": "kaiseki ryōri",
+    "translation": "multi-course banquet-style dinner",
+    "naturalMeaning": "The elaborate small-plate dinner typical of a ryokan stay — seasonal, often ten or more courses. Not to be confused with 懐石料理 (chakaiseki), the sparser meal that precedes a tea ceremony; they're pronounced identically but written differently.",
+    "tags": ["food", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.choushoku",
+    "entryType": "word",
+    "lemma": "朝食",
+    "reading": "ちょうしょく",
+    "romaji": "chōshoku",
+    "translation": "breakfast",
+    "tags": ["food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.yuushoku",
+    "entryType": "word",
+    "lemma": "夕食",
+    "reading": "ゆうしょく",
+    "romaji": "yūshoku",
+    "translation": "dinner",
+    "tags": ["food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.oshinagaki",
+    "entryType": "word",
+    "lemma": "お品書き",
+    "reading": "おしながき",
+    "romaji": "oshinagaki",
+    "translation": "written course menu",
+    "naturalMeaning": "The small printed card listing each course of the kaiseki dinner by name, often left at your place setting as a keepsake.",
+    "tags": ["food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.jizake",
+    "entryType": "word",
+    "lemma": "地酒",
+    "reading": "じざけ",
+    "romaji": "jizake",
+    "translation": "local sake",
+    "naturalMeaning": "Sake brewed regionally rather than a big national brand — ryokan dinners often pair the kaiseki courses with one from the local area.",
+    "tags": ["food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.futon",
+    "entryType": "word",
+    "lemma": "布団",
+    "reading": "ふとん",
+    "romaji": "futon",
+    "translation": "Japanese bedding (mattress and quilt laid on tatami)",
+    "tags": ["lodging", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.futon-o-shiku",
+    "entryType": "phrase",
+    "lemma": "布団を敷く",
+    "reading": "ふとんをしく",
+    "romaji": "futon o shiku",
+    "translation": "to lay out the futon",
+    "naturalMeaning": "At most ryokan, the 仲居 does this for you while you're at dinner — the room you left as a sitting area is a bedroom by the time you return.",
+    "tags": ["lodging"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.makura",
+    "entryType": "word",
+    "lemma": "枕",
+    "reading": "まくら",
+    "romaji": "makura",
+    "translation": "pillow",
+    "tags": ["lodging"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.checkin-onegaishimasu",
+    "entryType": "phrase",
+    "lemma": "チェックインをお願いします",
+    "romaji": "Chekku in o onegaishimasu.",
+    "translation": "I'd like to check in, please.",
+    "tags": ["phrase", "lodging"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.nanji-kara-ofuro",
+    "entryType": "phrase",
+    "lemma": "何時からお風呂に入れますか",
+    "reading": "なんじからおふろにはいれますか",
+    "romaji": "Nanji kara ofuro ni hairemasu ka.",
+    "translation": "From what time can I use the bath?",
+    "tags": ["phrase", "onsen", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.irezumi-daijoubu",
+    "entryType": "phrase",
+    "lemma": "入れ墨があっても大丈夫ですか",
+    "reading": "いれずみがあってもだいじょうぶですか",
+    "romaji": "Irezumi ga atte mo daijōbu desu ka.",
+    "translation": "Is it okay even if I have a tattoo?",
+    "tags": ["phrase", "onsen", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.kashikiriburo-yoyaku",
+    "entryType": "phrase",
+    "lemma": "貸切風呂を予約したいです",
+    "reading": "かしきりぶろをよやくしたいです",
+    "romaji": "Kashikiriburo o yoyaku shitai desu.",
+    "translation": "I'd like to reserve a private bath.",
+    "tags": ["phrase", "onsen", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.yukata-size",
+    "entryType": "phrase",
+    "lemma": "浴衣のサイズを変えてもらえますか",
+    "reading": "ゆかたのさいずをかえてもらえますか",
+    "romaji": "Yukata no saizu o kaete moraemasu ka.",
+    "translation": "Could I get a different yukata size?",
+    "tags": ["phrase", "clothing", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.taoru-heya",
+    "entryType": "phrase",
+    "lemma": "タオルは部屋にありますか",
+    "reading": "タオルはへやにありますか",
+    "romaji": "Taoru wa heya ni arimasu ka.",
+    "translation": "Is there a towel in the room?",
+    "tags": ["phrase", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onvocab.checkout-nanji",
+    "entryType": "phrase",
+    "lemma": "チェックアウトは何時ですか",
+    "reading": "チェックアウトはなんじですか",
+    "romaji": "Chekku auto wa nanji desu ka.",
+    "translation": "What time is check-out?",
+    "tags": ["phrase", "lodging", "practical"]
+  }
+]

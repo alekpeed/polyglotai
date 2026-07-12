@@ -1,0 +1,181 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "kgdlg.business-card-exchange",
+    "scenario": "Exchanging business cards at a first meeting",
+    "speakers": [
+      { "id": "sato", "name": "佐藤", "role": "visitor" },
+      { "id": "tanaka", "name": "田中", "role": "host" }
+    ],
+    "targetLevel": "B1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "sato", "text": "はじめまして。ABC商事の佐藤と申します。", "reading": "はじめまして。エービーシーしょうじのさとうともうします。", "romaji": "Hajimemashite. Ē-bī-shī shōji no Satō to mōshimasu." },
+      { "speakerId": "sato", "text": "こちら、私の名刺でございます。", "reading": "こちら、わたしのめいしでございます。", "romaji": "Kochira, watashi no meishi de gozaimasu." },
+      { "speakerId": "tanaka", "text": "頂戴いたします。田中と申します。よろしくお願いいたします。", "reading": "ちょうだいいたします。たなかともうします。よろしくおねがいいたします。", "romaji": "Chōdai itashimasu. Tanaka to mōshimasu. Yoroshiku onegai itashimasu." },
+      { "speakerId": "tanaka", "text": "こちらこそ、よろしくお願いいたします。", "reading": "こちらこそ、よろしくおねがいいたします。", "romaji": "Kochira koso, yoroshiku onegai itashimasu." }
+    ],
+    "translation": [
+      { "speakerId": "sato", "text": "Nice to meet you. I'm Sato from ABC Trading." },
+      { "speakerId": "sato", "text": "Here is my business card." },
+      { "speakerId": "tanaka", "text": "I'll gratefully accept it. I'm Tanaka. Thank you in advance for your cooperation." },
+      { "speakerId": "tanaka", "text": "Likewise, thank you for your cooperation." }
+    ],
+    "keyVocabulary": ["kgvocab.meishi", "kgvocab.mousu", "kgvocab.yoroshiku-onegai-itashimasu"],
+    "grammarNotes": "頂戴いたします (chōdai itashimasu, \"I humbly receive\") is another kenjougo way to say いただきます when accepting something handed to you — common specifically in the meishi-exchange ritual."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgdlg.greeting-client-at-reception",
+    "scenario": "Greeting a client who has arrived at the reception desk",
+    "speakers": [
+      { "id": "staff", "name": "受付係", "role": "reception staff" },
+      { "id": "kimura", "name": "木村様", "role": "client" }
+    ],
+    "targetLevel": "B1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "kimura", "text": "すみません、二時に木村と申しますが、山田様はいらっしゃいますか。", "reading": "すみません、にじにきむらともうしますが、やまださまはいらっしゃいますか。", "romaji": "Sumimasen, niji ni Kimura to mōshimasu ga, Yamada-sama wa irasshaimasu ka." },
+      { "speakerId": "staff", "text": "木村様、お待ちしておりました。少々お待ちください。", "reading": "きむらさま、おまちしておりました。しょうしょうおまちください。", "romaji": "Kimura-sama, omachi shite orimashita. Shōshō omachi kudasai." },
+      { "speakerId": "staff", "text": "山田はただいままいります。", "reading": "やまだはただいままいります。", "romaji": "Yamada wa tadaima mairimasu." },
+      { "speakerId": "kimura", "text": "はい、よろしくお願いいたします。", "reading": "はい、よろしくおねがいいたします。", "romaji": "Hai, yoroshiku onegai itashimasu." }
+    ],
+    "translation": [
+      { "speakerId": "kimura", "text": "Excuse me, I'm Kimura, here for a 2 o'clock appointment — is Mr./Ms. Yamada available?" },
+      { "speakerId": "staff", "text": "Mr./Ms. Kimura, we've been expecting you. One moment, please." },
+      { "speakerId": "staff", "text": "Yamada will come right away." },
+      { "speakerId": "kimura", "text": "Yes, thank you." }
+    ],
+    "keyVocabulary": ["kgvocab.uketsuke", "kgvocab.kyakusama", "kgvocab.irassharu", "kgvocab.mairu", "kgvocab.omachi-shite-orimasu", "kgvocab.shoushou-omachi-kudasai"],
+    "grammarNotes": "Notice 山田はただいままいります — the receptionist uses the humble まいる for their own colleague Yamada, because from the client's perspective Yamada belongs to the receptionist's in-group (their own company), which gets the humble treatment even though internally Yamada might outrank the receptionist."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgdlg.apologizing-for-a-delay",
+    "scenario": "Apologizing to a client for a missed deadline",
+    "speakers": [
+      { "id": "you", "name": "You", "role": "vendor representative" },
+      { "id": "client", "name": "取引先", "role": "client" }
+    ],
+    "targetLevel": "B2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "この度は納期に遅れ、誠に申し訳ございません。", "reading": "このたびはのうきにおくれ、まことにもうしわけございません。", "romaji": "Kono tabi wa nōki ni okure, makoto ni mōshiwake gozaimasen." },
+      { "speakerId": "client", "text": "状況を教えていただけますか。", "reading": "じょうきょうをおしえていただけますか。", "romaji": "Jōkyō o oshiete itadakemasu ka." },
+      { "speakerId": "you", "text": "はい。来週の月曜日までに書類を納品いたします。", "reading": "はい。らいしゅうのげつようびまでにしょるいをのうひんいたします。", "romaji": "Hai. Raishū no getsuyōbi made ni shorui o nōhin itashimasu." },
+      { "speakerId": "client", "text": "承知いたしました。よろしくお願いいたします。", "reading": "しょうちいたしました。よろしくおねがいいたします。", "romaji": "Shōchi itashimashita. Yoroshiku onegai itashimasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "I am truly sorry that we are behind on the deadline this time." },
+      { "speakerId": "client", "text": "Could you tell me the situation?" },
+      { "speakerId": "you", "text": "Yes. We will deliver the documents by next Monday." },
+      { "speakerId": "client", "text": "Understood. Thank you for your cooperation." }
+    ],
+    "keyVocabulary": ["kgvocab.moushiwake-gozaimasen", "kgvocab.nouki", "kgvocab.shorui", "kgvocab.te-itadakemasu-ka", "kgvocab.yoroshiku-onegai-itashimasu"],
+    "grammarNotes": "承知いたしました (shōchi itashimashita) is a business-register alternative to わかりました/かしこまりました, often used when confirming that terms or a plan are acceptable."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgdlg.asking-a-superior-a-favor",
+    "scenario": "Asking a superior to review a document before a meeting",
+    "speakers": [
+      { "id": "you", "name": "You", "role": "employee" },
+      { "id": "joushi", "name": "上司", "role": "superior" }
+    ],
+    "targetLevel": "B2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "お忙しいところ恐れ入りますが、少しお時間よろしいでしょうか。", "reading": "おいそがしいところおそれいりますが、すこしおじかんよろしいでしょうか。", "romaji": "Oisogashii tokoro osoreirimasu ga, sukoshi ojikan yoroshii deshō ka." },
+      { "speakerId": "joushi", "text": "はい、何でしょう。", "reading": "はい、なんでしょう。", "romaji": "Hai, nan deshō." },
+      { "speakerId": "you", "text": "会議の前に、この書類を拝見していただけますか。", "reading": "かいぎのまえに、このしょるいをはいけんしていただけますか。", "romaji": "Kaigi no mae ni, kono shorui o haiken shite itadakemasu ka." },
+      { "speakerId": "joushi", "text": "分かりました。今からご覧になりますか、それとも後で？", "reading": "わかりました。いまからごらんになりますか、それともあとで？", "romaji": "Wakarimashita. Ima kara goran ni narimasu ka, soretomo ato de?" },
+      { "speakerId": "you", "text": "今お願いできますと助かります。", "reading": "いまおねがいできますとたすかります。", "romaji": "Ima onegai dekimasu to tasukarimasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "I'm sorry to bother you when you're busy, but do you have a moment?" },
+      { "speakerId": "joushi", "text": "Yes, what is it?" },
+      { "speakerId": "you", "text": "Before the meeting, could you please look over this document?" },
+      { "speakerId": "joushi", "text": "Understood. Will you look at it now, or later?" },
+      { "speakerId": "you", "text": "It would help if I could ask you to do it now." }
+    ],
+    "keyVocabulary": ["kgvocab.joushi", "kgvocab.kaigi", "kgvocab.shorui", "kgvocab.haiken-suru", "kgvocab.goran-ni-naru", "kgvocab.te-itadakemasu-ka"],
+    "grammarNotes": "Notice the mismatch on purpose: 拝見していただけますか uses 拝見する (kenjougo, for the speaker's request framing) chained with いただく, while the boss's own act of looking gets ご覧になる (sonkeigo) in the next line — a good example of the two systems used correctly side by side for two different people."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgdlg.answering-a-business-call",
+    "scenario": "Answering a business phone call from a partner company",
+    "speakers": [
+      { "id": "caller", "name": "取引先", "role": "caller" },
+      { "id": "you", "name": "You", "role": "employee answering the phone" }
+    ],
+    "targetLevel": "B1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "はい、ABC商事でございます。", "reading": "はい、エービーシーしょうじでございます。", "romaji": "Hai, Ē-bī-shī shōji de gozaimasu." },
+      { "speakerId": "caller", "text": "いつもお世話になっております。XYZ物産の鈴木と申します。", "reading": "いつもおせわになっております。エックスワイゼットぶっさんのすずきともうします。", "romaji": "Itsumo osewa ni natte orimasu. XYZ Bussan no Suzuki to mōshimasu." },
+      { "speakerId": "caller", "text": "田中様はいらっしゃいますでしょうか。", "reading": "たなかさまはいらっしゃいますでしょうか。", "romaji": "Tanaka-sama wa irasshaimasu deshō ka." },
+      { "speakerId": "you", "text": "少々お待ちください。ただいま代わります。", "reading": "しょうしょうおまちください。ただいまかわります。", "romaji": "Shōshō omachi kudasai. Tadaima kawarimasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Hello, this is ABC Trading." },
+      { "speakerId": "caller", "text": "Thank you for your continued support. I'm Suzuki from XYZ Bussan." },
+      { "speakerId": "caller", "text": "Is Mr./Ms. Tanaka available?" },
+      { "speakerId": "you", "text": "One moment, please. I'll transfer you now." }
+    ],
+    "keyVocabulary": ["kgvocab.osewa-ni-natte-orimasu", "kgvocab.mousu", "kgvocab.irassharu", "kgvocab.shoushou-omachi-kudasai", "kgvocab.torihikisaki"],
+    "grammarNotes": "でございます is the keigo-flavored copula (upgrading です) — standard for a company answering its own phone, as in ABC商事でございます."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgdlg.ending-a-business-meeting",
+    "scenario": "Wrapping up a business meeting with a client",
+    "speakers": [
+      { "id": "host", "name": "田中", "role": "host" },
+      { "id": "client", "name": "取引先", "role": "client" }
+    ],
+    "targetLevel": "B1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "host", "text": "本日はお忙しい中、お時間をいただき、誠にありがとうございました。", "reading": "ほんじつはおいそがしいなか、おじかんをいただき、まことにありがとうございました。", "romaji": "Honjitsu wa oisogashii naka, ojikan o itadaki, makoto ni arigatō gozaimashita." },
+      { "speakerId": "client", "text": "こちらこそ、貴重なお話をありがとうございました。", "reading": "こちらこそ、きちょうなおはなしをありがとうございました。", "romaji": "Kochira koso, kichō na ohanashi o arigatō gozaimashita." },
+      { "speakerId": "host", "text": "次回の打ち合わせの件、改めてご連絡いたします。", "reading": "じかいのうちあわせのけん、あらためてごれんらくいたします。", "romaji": "Jikai no uchiawase no ken, aratamete go-renraku itashimasu." },
+      { "speakerId": "client", "text": "よろしくお願いいたします。", "reading": "よろしくおねがいいたします。", "romaji": "Yoroshiku onegai itashimasu." },
+      { "speakerId": "host", "text": "お気をつけてお帰りください。", "reading": "おきをつけてかえりください。", "romaji": "Oki o tsukete okaeri kudasai." }
+    ],
+    "translation": [
+      { "speakerId": "host", "text": "Thank you very much for taking the time out of your busy day today." },
+      { "speakerId": "client", "text": "Thank you as well for the valuable discussion." },
+      { "speakerId": "host", "text": "I will contact you again about the next meeting." },
+      { "speakerId": "client", "text": "Thank you, I look forward to it." },
+      { "speakerId": "host", "text": "Please travel home safely." }
+    ],
+    "keyVocabulary": ["kgvocab.uchiawase", "kgvocab.yoroshiku-onegai-itashimasu", "kgvocab.itadaku"],
+    "grammarNotes": "お気をつけてお帰りください uses the productive お＋stem＋ください sonkeigo-flavored request pattern (built on 帰る) — a soft, respectful send-off line."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgdlg.introducing-yourself-formally",
+    "scenario": "Introducing yourself and your company at the start of a first business meeting",
+    "speakers": [
+      { "id": "you", "name": "You", "role": "employee" },
+      { "id": "torihikisaki", "name": "取引先の担当者", "role": "client representative" }
+    ],
+    "targetLevel": "B1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "本日は貴重なお時間をいただき、ありがとうございます。", "reading": "ほんじつはきちょうなおじかんをいただき、ありがとうございます。", "romaji": "Honjitsu wa kichō na ojikan o itadaki, arigatō gozaimasu." },
+      { "speakerId": "you", "text": "私、この案件を担当いたします佐藤と申します。", "reading": "わたくし、このあんけんをたんとういたしますさとうともうします。", "romaji": "Watakushi, kono anken o tantō itashimasu Satō to mōshimasu." },
+      { "speakerId": "torihikisaki", "text": "こちらこそ、よろしくお願いいたします。ご担当は佐藤様おひとりでしょうか。", "reading": "こちらこそ、よろしくおねがいいたします。ごたんとうはさとうさまおひとりでしょうか。", "romaji": "Kochira koso, yoroshiku onegai itashimasu. Gotantō wa Satō-sama ohitori deshō ka." },
+      { "speakerId": "you", "text": "いいえ、上司の田中も担当いたします。", "reading": "いいえ、じょうしのたなかもたんとういたします。", "romaji": "Iie, jōshi no Tanaka mo tantō itashimasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Thank you for your valuable time today." },
+      { "speakerId": "you", "text": "I'm Sato, and I'll be in charge of this project." },
+      { "speakerId": "torihikisaki", "text": "Thank you as well. Are you the only one in charge?" },
+      { "speakerId": "you", "text": "No, my superior Tanaka will also be handling it." }
+    ],
+    "keyVocabulary": ["kgvocab.tantou", "kgvocab.joushi", "kgvocab.torihikisaki", "kgvocab.mousu", "kgvocab.itasu"],
+    "grammarNotes": "私 is read 私 (わたし) casually but 私 (わたくし) in this formal self-introduction register — わたくし is the more formal first-person pronoun business speakers use when representing their company. Note also 上司の田中 with no honorific title on your own boss's name — your own company's people never get -san/-sama when speaking to an outside client."
+  }
+]

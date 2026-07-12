@@ -1,0 +1,44 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "kbculture.konbini-as-utility",
+    "title": "The konbini is infrastructure, not just a snack shop",
+    "bodyMd": "It's easy to think of a コンビニ (konbini) as a smaller, always-open version of a grocery store, but that undersells how much daily-life admin actually happens there. A single counter routinely handles: paying 公共料金 (electricity, gas, water, and phone bills) by scanning the barcode on a mailed 払込票, withdrawing or depositing cash at an ATM, dropping off or picking up 宅急便 packages, printing and photocopying documents, buying event and transit tickets, and paying at government-office windows for things like resident registration copies.\n\nFor residents and long-term visitors, this matters practically: many of these tasks would otherwise mean a trip to a bank (open limited hours) or a post office, while the konbini down the street is open 24 hours and takes a couple of minutes.",
+    "tags": ["essentials", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kbculture.atatamemasu-ritual",
+    "title": "The \"atatamemasu ka?\" ritual",
+    "bodyMd": "Buy a bento, rice ball, or ready meal and the clerk will almost always ask 温めますか (atatamemasu ka — \"shall I heat this up?\") before finishing the sale. It isn't optional small talk; it's a genuine question because not every item is meant to be heated (some onigiri and sandwiches are meant to stay cool), and the clerk can't always tell from the packaging alone.\n\nA plain はい、お願いします or いいえ、大丈夫です answers it completely — there's no need to specify how long or how hot. Heating happens instantly behind the counter in a few seconds, and it's completely normal to eat a heated bento standing right outside the store or at an in-store counter if one is available.",
+    "tags": ["ritual", "food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kbculture.self-checkout-etiquette",
+    "title": "Self-checkout etiquette",
+    "bodyMd": "セルフレジ (self-checkout registers) have spread quickly, but the etiquette is stricter than it looks. Scan items yourself, keep them in the bagging area until the total is confirmed, and don't bag anything before payment completes — sensors and staff both watch for this. If an item won't scan or a discount code needs entering, staff will step in without being asked; there's no need to call out.\n\nMost self-checkout lanes still require a staff member to approve age-restricted purchases (alcohol, cigarettes) by pressing a button on their own terminal, so buying those items is never fully self-service even at a \"self\" register.",
+    "tags": ["etiquette", "checkout"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kbculture.cashless-norms",
+    "title": "Cash still works everywhere, but cashless is the default",
+    "bodyMd": "Japan's reputation as cash-only is outdated at konbini specifically — every major chain accepts 現金 (cash), credit cards, 電子マネー (e-money like Suica, PASMO, or WAON), QR-code apps like PayPay, and タッチ決済 (contactless tap payment) side by side. Staff will ask 支払い方法は? (how will you be paying?) or simply wait for you to tap, insert, or hand over cash at the register.\n\nOne quirk worth knowing: transit IC cards (Suica/PASMO) double as e-money at nearly every konbini, so a card residents already carry for trains covers most small purchases without ever touching a wallet.",
+    "tags": ["payment", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kbculture.staff-routine-phrases",
+    "title": "Staff phrases you're not expected to answer",
+    "bodyMd": "A lot of what konbini staff say is scripted service language, not a real question aimed at you personally. いらっしゃいませ (\"welcome!\") is said to every person who walks in, whether or not they make eye contact back — no reply needed, ever. かしこまりました (\"certainly/understood\") is their acknowledgment after you've answered something, not a request for more input. ございます forms (ございます, ございません) are the humble-polite register staff use toward customers; you wouldn't use these yourself when speaking to them.\n\nThe genuine questions to listen for are the ones with content: 温めますか (heat it up?), 袋はご利用ですか (need a bag?), ポイントカードはお持ちですか (have a point card?), and 支払い方法は (how are you paying?). Everything else is safe to let wash past you.",
+    "tags": ["etiquette", "listening"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kbculture.oden-and-coffee-seasons",
+    "title": "Konbini coffee and oden have seasons",
+    "bodyMd": "The self-serve coffee machine (押すだけ — just press a button after paying at the register) runs year-round, but おでん — fish cakes, daikon, boiled eggs, and more simmering in dashi broth right next to the register — is a cold-weather fixture. It typically appears on shelves as autumn starts and disappears by early spring; chains even compete on their broth recipe and seasonal specials.\n\nOrdering oden is done by pointing at what you want through the counter glass and telling staff how many of each, then they ladle it into a cup or tray for you — there's no menu to read, just watch what regulars are doing if you're unsure.",
+    "tags": ["seasonal", "food"]
+  }
+]

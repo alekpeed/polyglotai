@@ -1,0 +1,177 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "izdlg.arrival-seating",
+    "scenario": "Arriving at an izakaya and being shown to a seat",
+    "speakers": [
+      { "id": "staff", "name": "店員", "role": "izakaya staff" },
+      { "id": "you", "name": "You" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "staff", "text": "いらっしゃいませ。何名様ですか。", "reading": "いらっしゃいませ。なんめいさまですか。", "romaji": "Irasshaimase. Nanmei-sama desu ka." },
+      { "speakerId": "you", "text": "三人です。", "reading": "さんにんです。", "romaji": "San-nin desu." },
+      { "speakerId": "staff", "text": "お席は座敷とカウンター席、どちらがよろしいですか。", "reading": "おせきはざしきとカウンターせき、どちらがよろしいですか。", "romaji": "Oseki wa zashiki to kauntā-seki, dochira ga yoroshii desu ka." },
+      { "speakerId": "you", "text": "座敷でお願いします。", "reading": "ざしきでおねがいします。", "romaji": "Zashiki de onegaishimasu." },
+      { "speakerId": "staff", "text": "かしこまりました。こちらで靴を脱いでください。", "reading": "かしこまりました。こちらでくつをぬいでください。", "romaji": "Kashikomarimashita. Kochira de kutsu o nuide kudasai." },
+      { "speakerId": "you", "text": "はい、分かりました。", "reading": "はい、わかりました。", "romaji": "Hai, wakarimashita." }
+    ],
+    "translation": [
+      { "speakerId": "staff", "text": "Welcome! How many people?" },
+      { "speakerId": "you", "text": "Three." },
+      { "speakerId": "staff", "text": "Would you prefer a tatami seating area or a counter seat?" },
+      { "speakerId": "you", "text": "The tatami area, please." },
+      { "speakerId": "staff", "text": "Certainly. Please take off your shoes here." },
+      { "speakerId": "you", "text": "Yes, understood." }
+    ],
+    "keyVocabulary": ["izvocab.zashiki", "izvocab.kauntaa-seki", "izvocab.kutsu-o-nugu"],
+    "grammarNotes": "何名様 (nanmei-sama) is the polite way staff ask party size — 何人 (nan-nin) alone would sound blunt from a customer-facing role, but is fine when you answer."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izdlg.first-order",
+    "scenario": "Ordering the first round of drinks and food",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "friend", "name": "友達", "role": "friend" },
+      { "id": "staff", "name": "店員", "role": "izakaya staff" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "とりあえずビールでいい？", "romaji": "Toriaezu bīru de ii?" },
+      { "speakerId": "friend", "text": "うん、いいよ。", "romaji": "Un, ii yo." },
+      { "speakerId": "you", "text": "すみませーん、生ビール二つお願いします。", "reading": "すみませーん、なまビールふたつおねがいします。", "romaji": "Sumimasēn, nama bīru futatsu onegaishimasu." },
+      { "speakerId": "staff", "text": "かしこまりました。お食事はいかがですか。", "reading": "かしこまりました。おしょくじはいかがですか。", "romaji": "Kashikomarimashita. Oshokuji wa ikaga desu ka." },
+      { "speakerId": "you", "text": "枝豆と焼き鳥の盛り合わせをください。", "reading": "えだまめとやきとりのもりあわせをください。", "romaji": "Edamame to yakitori no moriawase o kudasai." },
+      { "speakerId": "friend", "text": "唐揚げも頼もうよ。", "reading": "からあげもたのもうよ。", "romaji": "Karaage mo tanomō yo." },
+      { "speakerId": "staff", "text": "承知しました。少々お待ちください。", "reading": "しょうちしました。しょうしょうおまちください。", "romaji": "Shōchi shimashita. Shōshō omachi kudasai." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Beer to start, okay?" },
+      { "speakerId": "friend", "text": "Yeah, sounds good." },
+      { "speakerId": "you", "text": "Excuse me! Two draft beers, please." },
+      { "speakerId": "staff", "text": "Certainly. How about some food?" },
+      { "speakerId": "you", "text": "Edamame and an assorted yakitori platter, please." },
+      { "speakerId": "friend", "text": "Let's also get karaage." },
+      { "speakerId": "staff", "text": "Understood. One moment please." }
+    ],
+    "keyVocabulary": ["izvocab.toriaezu-biiru", "izvocab.nama-biiru", "izvocab.sumimasen-yobu", "izvocab.edamame", "izvocab.yakitori", "izvocab.karaage"],
+    "grammarNotes": "頼もう (tanomō) is the volitional form of 頼む (\"to order/request\") — casual \"let's order X\" between friends, distinct from the polite お願いします used toward staff."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izdlg.what-is-otoshi",
+    "scenario": "A confused first-timer asking about the surprise starter dish",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "friend", "name": "友達", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "これ、頼んでないよね？何？", "reading": "これ、たのんでないよね？なに？", "romaji": "Kore, tanondenai yo ne? Nani?" },
+      { "speakerId": "friend", "text": "ああ、それはお通し。", "reading": "ああ、それはおとおし。", "romaji": "Ā, sore wa otōshi." },
+      { "speakerId": "you", "text": "頼んでないのにお金を払うの？", "reading": "たのんでないのにおかねをはらうの？", "romaji": "Tanondenai noni okane o harau no?" },
+      { "speakerId": "friend", "text": "うん、席料みたいなもの。だいたい三百円くらいだよ。", "reading": "うん、せきりょうみたいなもの。だいたいさんびゃくえんくらいだよ。", "romaji": "Un, sekiryō mitai na mono. Daitai sanbyaku-en kurai da yo." },
+      { "speakerId": "you", "text": "なるほど、居酒屋のルールなんだね。", "reading": "なるほど、いざかやのルールなんだね。", "romaji": "Naruhodo, izakaya no rūru nan da ne." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "We didn't order this, right? What is it?" },
+      { "speakerId": "friend", "text": "Oh, that's otōshi." },
+      { "speakerId": "you", "text": "We have to pay for it even though we didn't order it?" },
+      { "speakerId": "friend", "text": "Yeah, it's basically like a seating charge. About 300 yen usually." },
+      { "speakerId": "you", "text": "I see, it's an izakaya thing." }
+    ],
+    "keyVocabulary": ["izvocab.otoshi", "izvocab.izakaya"],
+    "grammarNotes": "席料 (sekiryō, \"seating fee\") isn't the official name for お通し, but it's exactly how friends often explain the charge informally — see the culture notes for the real reasoning."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izdlg.calling-waiter-midmeal",
+    "scenario": "Calling a server over mid-meal to add an order",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "staff", "name": "店員", "role": "izakaya staff" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "すみませーん！", "romaji": "Sumimasēn!" },
+      { "speakerId": "staff", "text": "はい、ただいま伺います。", "reading": "はい、ただいまうかがいます。", "romaji": "Hai, tadaima ukagaimasu." },
+      { "speakerId": "you", "text": "冷奴と、あと注文をお願いします。", "reading": "ひややっこと、あとちゅうもんをおねがいします。", "romaji": "Hiyayakko to, ato chūmon o onegaishimasu." },
+      { "speakerId": "staff", "text": "冷奴ですね。お飲み物のお代わりはよろしいですか。", "reading": "ひややっこですね。おのみもののおかわりはよろしいですか。", "romaji": "Hiyayakko desu ne. Onomimono no okawari wa yoroshii desu ka." },
+      { "speakerId": "you", "text": "あ、レモンサワーもう一杯ください。", "reading": "あ、レモンサワーもういっぱいください。", "romaji": "A, remon sawā mō ippai kudasai." },
+      { "speakerId": "staff", "text": "かしこまりました。", "romaji": "Kashikomarimashita." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Excuse me!" },
+      { "speakerId": "staff", "text": "Yes, coming right away." },
+      { "speakerId": "you", "text": "Cold tofu, and also I'd like to order." },
+      { "speakerId": "staff", "text": "One cold tofu. Would you like another drink as well?" },
+      { "speakerId": "you", "text": "Oh, one more lemon sour, please." },
+      { "speakerId": "staff", "text": "Certainly." }
+    ],
+    "keyVocabulary": ["izvocab.sumimasen-yobu", "izvocab.hiyayakko", "izvocab.chuumon-onegaishimasu", "izvocab.remon-sawaa", "izvocab.mou-ippai"],
+    "grammarNotes": "伺います (ukagaimasu) is humble-form \"I'll come/ask\" — staff use it instead of plain 行きます when responding to a customer."
+  },
+  {
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "friend", "name": "友達", "role": "friend" },
+      { "id": "staff", "name": "店員", "role": "izakaya staff" }
+    ],
+    "schemaVersion": 1,
+    "key": "izdlg.bill-and-split",
+    "scenario": "Asking for the bill and splitting it evenly",
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "すみません、お会計お願いします。", "reading": "すみません、おかいけいおねがいします。", "romaji": "Sumimasen, okaikei onegaishimasu." },
+      { "speakerId": "staff", "text": "お会計は別々にできますか、それとも一緒ですか。", "reading": "おかいけいはべつべつにできますか、それともいっしょですか。", "romaji": "Okaikei wa betsubetsu ni dekimasu ka, soretomo issho desu ka." },
+      { "speakerId": "you", "text": "一緒にしてください。", "reading": "いっしょにしてください。", "romaji": "Issho ni shite kudasai." },
+      { "speakerId": "staff", "text": "かしこまりました。合計八千円になります。", "reading": "かしこまりました。ごうけいはっせんえんになります。", "romaji": "Kashikomarimashita. Gōkei hassen-en ni narimasu." },
+      { "speakerId": "you", "text": "じゃあ、割り勘で一人四千円ずつだね。", "reading": "じゃあ、わりかんでひとりよんせんえんずつだね。", "romaji": "Jā, warikan de hitori yonsen-en zutsu da ne." },
+      { "speakerId": "friend", "text": "うん、それでいいよ。", "romaji": "Un, sore de ii yo." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Excuse me, check please." },
+      { "speakerId": "staff", "text": "Can you pay separately, or together?" },
+      { "speakerId": "you", "text": "Please put it all on one bill." },
+      { "speakerId": "staff", "text": "Certainly. The total comes to 8,000 yen." },
+      { "speakerId": "you", "text": "Okay, so splitting evenly that's 4,000 yen each." },
+      { "speakerId": "friend", "text": "Yeah, that works." }
+    ],
+    "keyVocabulary": ["izvocab.okaikei-onegaishimasu", "izvocab.betsubetsu-ni", "izvocab.issho-ni-shite-kudasai", "izvocab.warikan"],
+    "grammarNotes": "In casual groups the math is often rounded rather than divided to the yen — see the culture notes on how 割り勘 actually plays out in practice."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izdlg.another-round",
+    "scenario": "Ordering another round as the nomihōdai time limit approaches",
+    "speakers": [
+      { "id": "staff", "name": "店員", "role": "izakaya staff" },
+      { "id": "you", "name": "You" },
+      { "id": "friend", "name": "友達", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "staff", "text": "飲み放題の時間はあと十分です。ラストオーダーはお決まりですか。", "reading": "のみほうだいのじかんはあとじゅっぷんです。ラストオーダーはおきまりですか。", "romaji": "Nomihōdai no jikan wa ato juppun desu. Rasuto ōdā wa okimari desu ka." },
+      { "speakerId": "you", "text": "え、もう？じゃあ最後にもう一杯頼もう。", "reading": "え、もう？じゃあさいごにもういっぱいたのもう。", "romaji": "E, mō? Jā saigo ni mō ippai tanomō." },
+      { "speakerId": "friend", "text": "同じものをもう一つお願いします。", "reading": "おなじものをもうひとつおねがいします。", "romaji": "Onaji mono o mō hitotsu onegaishimasu." },
+      { "speakerId": "you", "text": "私は酎ハイをください。", "reading": "わたしはちゅうハイをください。", "romaji": "Watashi wa chūhai o kudasai." },
+      { "speakerId": "staff", "text": "かしこまりました。すぐお持ちします。", "reading": "かしこまりました。すぐおもちします。", "romaji": "Kashikomarimashita. Sugu omochi shimasu." }
+    ],
+    "translation": [
+      { "speakerId": "staff", "text": "There are 10 minutes left on the all-you-can-drink plan. Have you decided your last order?" },
+      { "speakerId": "you", "text": "Oh, already? Okay, let's order one more round to finish." },
+      { "speakerId": "friend", "text": "Another one of the same for me, please." },
+      { "speakerId": "you", "text": "I'll have a shochu highball." },
+      { "speakerId": "staff", "text": "Certainly. I'll bring it right out." }
+    ],
+    "keyVocabulary": ["izvocab.nomihoudai-jikan", "izvocab.rasuto-odaa", "izvocab.onaji-mono-o-mou-hitotsu", "izvocab.chuuhai"],
+    "grammarNotes": "お決まりですか (okimari desu ka, \"have you decided?\") is standard service-industry phrasing for checking if a customer is ready to order — you'll hear it well beyond just izakayas."
+  }
+]

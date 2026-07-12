@@ -1,0 +1,51 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "msculture.what-is-a-matsuri",
+    "title": "A matsuri is a shrine event first, a fair second",
+    "bodyMd": "It's easy to experience a 祭り as a street fair — food stalls, games, music — and stop there. But nearly every matsuri exists because of a Shinto shrine's ritual calendar: it usually marks a deity's festival day, a harvest, or a purification rite, and the food stalls and games grew up around that core event rather than the other way around.\n\nThis is why a mikoshi procession or a ritual dance often sits at the center of the schedule, even at a small neighborhood matsuri, while the yatai lining the approach path are almost a side effect of the crowd the ritual draws. Knowing this changes how you read the evening: the procession isn't a parade staged for visitors, it's the actual point.",
+    "tags": ["essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msculture.yukata-vs-kimono",
+    "title": "Yukata etiquette — and how it differs from a real kimono",
+    "bodyMd": "A 浴衣 is unlined cotton, meant for summer, and traditionally something you could throw on straight after a bath (the name literally means \"bathing robe\"). A formal kimono is layered, often silk, worn with different undergarments, and reserved for far more formal occasions — weddings, tea ceremony, coming-of-age day. Wearing a yukata to a matsuri is completely normal and expected of young people especially; wearing a full kimono would actually look overdressed and out of place.\n\nA few small points of yukata etiquette: the left side always folds over the right (right-over-left is how the dead are dressed for burial, so it's a real mistake, not just a style choice), and the obi is tied in a simple bow at the back rather than the elaborate knots used for formal kimono. Rental shops handle all of this for visitors, so it's not something you need to master — just know the left-over-right rule if you're dressing yourself.",
+    "tags": ["clothing", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msculture.mikoshi-carrying-customs",
+    "title": "Why mikoshi bearers shout \"wasshoi\"",
+    "bodyMd": "A 神輿 is believed to carry the local kami through its parish for the day, which is why it's handled with real physical exertion rather than gentle transport — deliberately jostling and shaking the mikoshi as it moves is thought to energize the deity inside, not disrespect it.\n\nThe rhythmic shout わっしょい (or regional variants like せいや and ホイサ) keeps dozens of bearers in step and builds momentum for lifting; you'll often see teams change shoulders and rotate bearers on the move without ever setting the mikoshi down. Onlookers don't join the chant, but cheering the bearers on as they pass is completely normal, and many festivals let anyone with proper attire and a stamina for crowds sign up to carry for a stretch.",
+    "tags": ["ritual"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msculture.hanabi-viewing-etiquette",
+    "title": "Hanabi viewing: blankets, spot-claiming, and crowd norms",
+    "bodyMd": "At a big 花火大会, prime riverside viewing spots are often claimed hours in advance with a レジャーシート spread on the ground — this 場所取り custom is an accepted part of festival culture, not queue-jumping, so don't be surprised to find sheets staking out territory well before sunset.\n\nOnce seated, it's polite to keep your footprint within your sheet, not block the view of people behind you by standing for the whole show, and to pack out your own trash since public bins are scarce. Afterward, expect the exits and train stations to be genuinely overwhelmed — many locals build in a deliberate half-hour wait after the finale before even trying to leave, rather than joining the initial crush.",
+    "tags": ["fireworks", "etiquette", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msculture.yatai-cash-norms",
+    "title": "Festival stalls run on cash, and small bills help",
+    "bodyMd": "Most 屋台 are single-vendor operations with no card reader and no interest in setting one up for a few nights a year — bring cash, and bring it in reasonably small denominations. A 10,000-yen note for a 500-yen order of takoyaki is a genuine inconvenience for a vendor working from a small cash box.\n\nPrices are usually fixed and posted, so haggling isn't part of the culture here the way it might be at a market elsewhere; the standard interaction is quick, friendly, and transactional. Tipping is not expected or practiced.",
+    "tags": ["food", "money", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msculture.bon-odori-is-participatory",
+    "title": "Bon-odori is something you join, not something you watch",
+    "bodyMd": "It's tempting to treat 盆踊り as a performance happening near the 櫓 tower, but it was never designed as a spectator event — it began as a way for communities to welcome and send off ancestral spirits during Obon, with everyone in the circle taking part. Standing at the edge just watching is fine and nobody will pressure you, but stepping into the 輪 is the more authentic way to experience it, and dancers of every skill level circle together without anyone standing out.\n\nThe steps repeat in a short, simple loop keyed to the 音頭 song playing, so most first-timers pick it up within one or two laps around the tower by imitating whoever's in front of them (見よう見まね). No partner or registration is needed — you simply join the moving circle when you're ready.",
+    "tags": ["dance", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "msculture.natsu-matsuri-vs-famous-festivals",
+    "title": "Neighborhood natsu matsuri vs. named, famous festivals",
+    "bodyMd": "Most of what a visitor experiences — stalls, a small mikoshi circuit, maybe a bon-odori circle in a park or shrine courtyard — falls under the generic label 夏祭り, and there are thousands of these happening independently in towns and neighborhoods across Japan every summer weekend.\n\nA smaller number of festivals have their own proper names, decades or centuries of specific history, and draw visitors from across the country or world: Kyoto's 祇園祭 with its towering float procession, Aomori's Nebuta lantern-float festival, Tokushima's Awa Odori dance festival, and Tanabata's star-crossed-lovers theme each have a distinct story and format that a generic natsu matsuri doesn't share. It's worth checking which kind you're attending, since expectations around crowd size, procession scale, and how early to arrive differ enormously between the two.",
+    "tags": ["festival", "essentials"]
+  }
+]

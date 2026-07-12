@@ -1,0 +1,194 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "ondlg.checkin",
+    "scenario": "Checking into a ryokan",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "okami", "name": "女将", "role": "innkeeper" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "こんにちは。チェックインをお願いします。", "reading": "こんにちは。チェックインをおねがいします。", "romaji": "Konnichiwa. Chekku in o onegaishimasu." },
+      { "speakerId": "okami", "text": "いらっしゃいませ。お名前をお願いします。", "reading": "いらっしゃいませ。おなまえをおねがいします。", "romaji": "Irasshaimase. Onamae o onegaishimasu." },
+      { "speakerId": "you", "text": "田中と申します。今晩、予約をしています。", "reading": "たなかともうします。こんばん、よやくをしています。", "romaji": "Tanaka to mōshimasu. Konban, yoyaku o shite imasu." },
+      { "speakerId": "okami", "text": "田中様、お待ちしておりました。一泊二食付きですね。", "reading": "たなかさま、おまちしておりました。いっぱくにしょくつきですね。", "romaji": "Tanaka-sama, omachi shite orimashita. Ippaku nishoku-tsuki desu ne." },
+      { "speakerId": "you", "text": "はい、そうです。", "romaji": "Hai, sō desu." },
+      { "speakerId": "okami", "text": "お部屋にご案内します。夕食は六時からです。", "reading": "おへやにごあんないします。ゆうしょくはろくじからです。", "romaji": "Oheya ni goannai shimasu. Yūshoku wa rokuji kara desu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Hello. I'd like to check in, please." },
+      { "speakerId": "okami", "text": "Welcome. Could I have your name?" },
+      { "speakerId": "you", "text": "I'm Tanaka. I have a reservation for tonight." },
+      { "speakerId": "okami", "text": "Mr./Ms. Tanaka, we've been expecting you. One night with two meals, correct?" },
+      { "speakerId": "you", "text": "Yes, that's right." },
+      { "speakerId": "okami", "text": "I'll show you to your room. Dinner is from 6 o'clock." }
+    ],
+    "keyVocabulary": ["onvocab.checkin-onegaishimasu", "onvocab.yoyaku", "onvocab.ippaku-nishoku", "onvocab.okami", "onvocab.yuushoku"],
+    "grammarNotes": "〜と申します is the humble way to give your own name, more polite than 〜です — appropriate here since you're speaking to inn staff for the first time."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "ondlg.bath-hours",
+    "scenario": "Asking about the bathing hours",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "nakai", "name": "仲居", "role": "room attendant" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "すみません、何時からお風呂に入れますか。", "reading": "すみません、なんじからおふろにはいれますか。", "romaji": "Sumimasen, nanji kara ofuro ni hairemasu ka." },
+      { "speakerId": "nakai", "text": "大浴場は午後三時からです。", "reading": "だいよくじょうはごごさんじからです。", "romaji": "Daiyokujō wa gogo sanji kara desu." },
+      { "speakerId": "you", "text": "露天風呂もありますか。", "reading": "ろてんぶろもありますか。", "romaji": "Rotenburo mo arimasu ka." },
+      { "speakerId": "nakai", "text": "はい、大浴場の奥に露天風呂があります。入浴時間は同じです。", "reading": "はい、だいよくじょうのおくにろてんぶろがあります。にゅうよくじかんはおなじです。", "romaji": "Hai, daiyokujō no oku ni rotenburo ga arimasu. Nyūyoku jikan wa onaji desu." },
+      { "speakerId": "you", "text": "何時までですか。", "reading": "なんじまでですか。", "romaji": "Nanji made desu ka." },
+      { "speakerId": "nakai", "text": "夜十一時までです。", "reading": "よるじゅういちじまでです。", "romaji": "Yoru jūichi-ji made desu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Excuse me, from what time can I use the bath?" },
+      { "speakerId": "nakai", "text": "The large communal bath is from 3 pm." },
+      { "speakerId": "you", "text": "Is there an outdoor bath too?" },
+      { "speakerId": "nakai", "text": "Yes, there's an outdoor bath just past the main bath. The hours are the same." },
+      { "speakerId": "you", "text": "Until what time?" },
+      { "speakerId": "nakai", "text": "Until 11 pm." }
+    ],
+    "keyVocabulary": ["onvocab.nanji-kara-ofuro", "onvocab.daiyokujo", "onvocab.rotenburo", "onvocab.nyuyoku-jikan"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "ondlg.tattoo-policy",
+    "scenario": "Asking whether tattoos are allowed in the bath",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "nakai", "name": "仲居", "role": "room attendant" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "あの、入れ墨があっても大丈夫ですか。", "reading": "あの、いれずみがあってもだいじょうぶですか。", "romaji": "Ano, irezumi ga atte mo daijōbu desu ka." },
+      { "speakerId": "nakai", "text": "申し訳ございません、大浴場では入れ墨のある方はご遠慮いただいております。", "reading": "もうしわけございません、だいよくじょうではいれずみのあるかたはごえんりょいただいております。", "romaji": "Mōshiwake gozaimasen, daiyokujō de wa irezumi no aru kata wa goenryo itadaite orimasu." },
+      { "speakerId": "you", "text": "貸切風呂を予約したいです。", "reading": "かしきりぶろをよやくしたいです。", "romaji": "Kashikiriburo o yoyaku shitai desu." },
+      { "speakerId": "nakai", "text": "かしこまりました。貸切風呂でしたら問題ございません。", "reading": "かしこまりました。かしきりぶろでしたらもんだいございません。", "romaji": "Kashikomarimashita. Kashikiriburo deshitara mondai gozaimasen." },
+      { "speakerId": "you", "text": "小さいタトゥーシールもありますか。", "reading": "ちいさいタトゥーシールもありますか。", "romaji": "Chiisai tatū shīru mo arimasu ka." },
+      { "speakerId": "nakai", "text": "はい、フロントにございます。", "reading": "はい、フロントにございます。", "romaji": "Hai, furonto ni gozaimasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Um, is it okay even if I have a tattoo?" },
+      { "speakerId": "nakai", "text": "I'm very sorry, but in the large communal bath we ask guests with tattoos to refrain." },
+      { "speakerId": "you", "text": "I'd like to reserve a private bath." },
+      { "speakerId": "nakai", "text": "Certainly. A private bath won't be a problem at all." },
+      { "speakerId": "you", "text": "Do you also have small tattoo-covering seals?" },
+      { "speakerId": "nakai", "text": "Yes, they're available at the front desk." }
+    ],
+    "keyVocabulary": ["onvocab.irezumi-daijoubu", "onvocab.irezumi", "onvocab.kashikiriburo-yoyaku", "onvocab.kashikiriburo", "onvocab.tatu-shiiru"],
+    "grammarNotes": "ご遠慮いただいております is a very soft, indirect way of saying \"we ask you not to\" — common on Japanese signage and in polite refusals; it avoids a direct 禁止 (\"prohibited\") tone."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "ondlg.kaiseki-dinner",
+    "scenario": "Being served the kaiseki dinner",
+    "speakers": [
+      { "id": "nakai", "name": "仲居", "role": "room attendant" },
+      { "id": "you", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "nakai", "text": "お待たせいたしました。本日の会席料理でございます。", "reading": "おまたせいたしました。ほんじつのかいせきりょうりでございます。", "romaji": "Omatase itashimashita. Honjitsu no kaiseki ryōri de gozaimasu." },
+      { "speakerId": "you", "text": "わあ、豪華ですね。これはお品書きですか。", "reading": "わあ、ごうかですね。これはおしながきですか。", "romaji": "Wā, gōka desu ne. Kore wa oshinagaki desu ka." },
+      { "speakerId": "nakai", "text": "はい、そうです。お飲み物は地酒もございます。", "reading": "はい、そうです。おのみものはじざけもございます。", "romaji": "Hai, sō desu. Onomimono wa jizake mo gozaimasu." },
+      { "speakerId": "you", "text": "では、地酒を一つお願いします。", "reading": "では、じざけをひとつおねがいします。", "romaji": "Dewa, jizake o hitotsu onegaishimasu." },
+      { "speakerId": "nakai", "text": "かしこまりました。朝食は七時からでよろしいですか。", "reading": "かしこまりました。ちょうしょくはしちじからでよろしいですか。", "romaji": "Kashikomarimashita. Chōshoku wa shichiji kara de yoroshii desu ka." },
+      { "speakerId": "you", "text": "はい、大丈夫です。", "romaji": "Hai, daijōbu desu." }
+    ],
+    "translation": [
+      { "speakerId": "nakai", "text": "Thank you for waiting. This is this evening's kaiseki dinner." },
+      { "speakerId": "you", "text": "Wow, it's lavish. Is this the course menu?" },
+      { "speakerId": "nakai", "text": "Yes, it is. We also have local sake to drink." },
+      { "speakerId": "you", "text": "Then I'll have a local sake, please." },
+      { "speakerId": "nakai", "text": "Certainly. Is breakfast from 7 o'clock all right?" },
+      { "speakerId": "you", "text": "Yes, that's fine." }
+    ],
+    "keyVocabulary": ["onvocab.kaiseki-ryori", "onvocab.oshinagaki", "onvocab.jizake", "onvocab.choushoku"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "ondlg.yukata-sizing",
+    "scenario": "Asking for a different yukata size",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "nakai", "name": "仲居", "role": "room attendant" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "すみません、浴衣のサイズを変えてもらえますか。", "reading": "すみません、ゆかたのさいずをかえてもらえますか。", "romaji": "Sumimasen, yukata no saizu o kaete moraemasu ka." },
+      { "speakerId": "nakai", "text": "かしこまりました。少し大きいサイズをお持ちしますね。", "reading": "かしこまりました。すこしおおきいさいずをおもちしますね。", "romaji": "Kashikomarimashita. Sukoshi ōkii saizu o omochi shimasu ne." },
+      { "speakerId": "you", "text": "帯の結び方が分かりません。", "reading": "おびのむすびかたがわかりません。", "romaji": "Obi no musubikata ga wakarimasen." },
+      { "speakerId": "nakai", "text": "お手伝いします。右前に着るのがポイントです。", "reading": "おてつだいします。みぎまえにきるのがポイントです。", "romaji": "Otetsudai shimasu. Migimae ni kiru no ga pointo desu." },
+      { "speakerId": "you", "text": "ありがとうございます、助かります。", "reading": "ありがとうございます、たすかります。", "romaji": "Arigatō gozaimasu, tasukarimasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Excuse me, could I get a different yukata size?" },
+      { "speakerId": "nakai", "text": "Certainly. I'll bring a slightly larger size." },
+      { "speakerId": "you", "text": "I don't know how to tie the sash." },
+      { "speakerId": "nakai", "text": "I'll help you. The key point is wearing it right-side-in." },
+      { "speakerId": "you", "text": "Thank you, that's a big help." }
+    ],
+    "keyVocabulary": ["onvocab.yukata-size", "onvocab.yukata", "onvocab.obi", "onvocab.migimae"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "ondlg.private-bath",
+    "scenario": "Booking a private bath for the evening",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "staff", "name": "係員", "role": "front desk staff" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "貸切風呂を予約したいです。", "reading": "かしきりぶろをよやくしたいです。", "romaji": "Kashikiriburo o yoyaku shitai desu." },
+      { "speakerId": "staff", "text": "承知しました。ご希望のお時間はございますか。", "reading": "しょうちしました。ごきぼうのおじかんはございますか。", "romaji": "Shōchi shimashita. Gokibō no ojikan wa gozaimasu ka." },
+      { "speakerId": "you", "text": "夕食のあと、八時ごろでお願いします。", "reading": "ゆうしょくのあと、はちじごろでおねがいします。", "romaji": "Yūshoku no ato, hachiji-goro de onegaishimasu." },
+      { "speakerId": "staff", "text": "四十五分間ご利用いただけます。露天風呂タイプでよろしいですか。", "reading": "よんじゅうごふんかんごりよういただけます。ろてんぶろタイプでよろしいですか。", "romaji": "Yonjūgo-fun-kan goriyō itadakemasu. Rotenburo taipu de yoroshii desu ka." },
+      { "speakerId": "you", "text": "はい、それでお願いします。", "romaji": "Hai, sore de onegaishimasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "I'd like to reserve a private bath." },
+      { "speakerId": "staff", "text": "Understood. Do you have a preferred time?" },
+      { "speakerId": "you", "text": "After dinner, around 8 o'clock, please." },
+      { "speakerId": "staff", "text": "You can use it for 45 minutes. Is the outdoor-style one all right?" },
+      { "speakerId": "you", "text": "Yes, that one, please." }
+    ],
+    "keyVocabulary": ["onvocab.kashikiriburo-yoyaku", "onvocab.kashikiriburo", "onvocab.rotenburo", "onvocab.yuushoku"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "ondlg.checkout",
+    "scenario": "Checking out of the ryokan",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "okami", "name": "女将", "role": "innkeeper" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "すみません、チェックアウトは何時ですか。", "reading": "すみません、チェックアウトはなんじですか。", "romaji": "Sumimasen, chekku auto wa nanji desu ka." },
+      { "speakerId": "okami", "text": "午前十時でございます。", "reading": "ごぜんじゅうじでございます。", "romaji": "Gozen jūji de gozaimasu." },
+      { "speakerId": "you", "text": "タオルは部屋にありますか。持って帰ってもいいですか。", "reading": "タオルはへやにありますか。もってかえってもいいですか。", "romaji": "Taoru wa heya ni arimasu ka. Motte kaettemo ii desu ka." },
+      { "speakerId": "okami", "text": "手ぬぐいはお持ち帰りいただけますが、バスタオルは置いていってくださいね。", "reading": "てぬぐいはおもちかえりいただけますが、バスタオルはおいていってくださいね。", "romaji": "Tenugui wa omochikaeri itadakemasu ga, basutaoru wa oite itte kudasai ne." },
+      { "speakerId": "you", "text": "分かりました。楽しい滞在でした。ありがとうございました。", "reading": "わかりました。たのしいたいざいでした。ありがとうございました。", "romaji": "Wakarimashita. Tanoshii taizai deshita. Arigatō gozaimashita." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Excuse me, what time is check-out?" },
+      { "speakerId": "okami", "text": "It's 10 am." },
+      { "speakerId": "you", "text": "Is there a towel in the room? Can I take it home?" },
+      { "speakerId": "okami", "text": "You're welcome to take the hand towel home, but please leave the bath towel behind." },
+      { "speakerId": "you", "text": "Understood. It was a lovely stay. Thank you very much." }
+    ],
+    "keyVocabulary": ["onvocab.checkout-nanji", "onvocab.taoru-heya", "onvocab.tenugui"]
+  }
+]

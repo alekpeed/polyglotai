@@ -1,0 +1,44 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "izculture.otoshi-explained",
+    "title": "Why you're charged for a dish you never ordered",
+    "bodyMd": "Sit down at almost any izakaya and a small dish — a few bites of simmered vegetables, a scoop of potato salad, sometimes just edamame — will appear at your table within a minute, completely unasked for. This is お通し (otōshi), or 突き出し (tsukidashi) in western Japan, and it is not a complimentary gift: it will show up on your bill, typically ¥300–¥500 per person.\n\nThe honest way to think about it is closer to a seating charge or table charge that happens to arrive in edible form, rather than a menu item you can decline. It's standard practice, not a scam or a mistake, and asking to have it removed will usually just confuse the staff. If you genuinely can't eat what's brought (an allergy, for example), it's fine to mention it — but expect the charge to remain even if the dish is swapped or skipped.",
+    "tags": ["money", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izculture.nomihoudai-etiquette",
+    "title": "Nomihōdai: all-you-can-drink has a clock and some rules",
+    "bodyMd": "飲み放題 (nomihōdai) is a fixed-price drink plan for the whole table, almost always time-limited — 90 or 120 minutes is typical — rather than an all-night open bar. When you book or order it, everyone at the table is usually expected to join; it's uncommon (and a bit awkward) for only some people at a table to be on the plan while others order à la carte.\n\nA few practical things worth knowing: staff will often announce a ラストオーダー (last order) call 10–15 minutes before time runs out, which is your last chance to order anything else covered by the plan. Some menus also exclude a handful of premium drinks from nomihōdai, marked separately — worth a glance before you assume everything is included. And no, unfinished drinks at the end of the window don't extend your time.",
+    "tags": ["drinks", "money", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izculture.toriaezu-biiru-ritual",
+    "title": "\"Toriaezu biiru\": the ritual first order",
+    "bodyMd": "とりあえずビール — literally \"for now, beer\" — is less an actual preference and more a social reflex. At the start of almost any group izakaya outing, someone says it (or just says \"biiru de ii?\", \"beer's fine, right?\") and the whole table's first round gets ordered before anyone has properly looked at the menu.\n\nIt isn't a rule that everyone must drink beer, and it isn't really about beer being the best choice — it's a shortcut that lets the group get a drink in hand and start the 乾杯 (kanpai) toast quickly, while food and other drink choices get sorted out afterward at a more relaxed pace. If you don't want beer, it's completely normal to just say so — \"私はウーロン茶で\" (I'll have oolong tea) draws no attention at all.",
+    "tags": ["drinks", "ritual", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izculture.seating-styles",
+    "title": "Zashiki, counter, or table: choosing (and behaving in) your seat",
+    "bodyMd": "Most izakaya offer a mix of seating: 座敷 (zashiki) — raised tatami-mat seating where shoes come off and you sit on cushions, sometimes at low tables, sometimes with a leg-well cut into the floor for comfort; カウンター席 (kauntā-seki) — bar-style seats facing the kitchen or grill, common for solo visitors or couples; and テーブル席 (tēburu-seki) — ordinary Western-style table seating, shoes on.\n\nAt a zashiki table, shoes are removed at the edge of the raised platform, not at the restaurant's front door, and are usually left in a small cubby or shelf right there. Stepping onto the tatami with shoes on is a genuine faux pas, not just an informal preference. Bags and coats generally go on the floor beside you or on a small provided stool/basket — not on the seating cushions.",
+    "tags": ["seating", "etiquette", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izculture.calling-staff",
+    "title": "Calling staff over: すみません, not eye contact",
+    "bodyMd": "Unlike restaurant cultures where a server checks in periodically, izakaya staff generally leave a table alone until called — there's no equivalent of a waiter hovering to ask how everything's going. Waiting quietly for someone to notice you often means waiting a long time.\n\nThe normal move is to say すみません (sumimasen) clearly, often drawn out a little (すみませーん) and with a raised hand, loud enough to carry over the room's noise. This is not considered rude or impatient — it's simply how the system works, from placing your first order to asking for the bill. Repeating it once or twice if the first call goes unnoticed in a noisy room is completely normal.",
+    "tags": ["etiquette", "practical", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izculture.warikan-in-practice",
+    "title": "How 割り勘 actually works at the table",
+    "bodyMd": "割り勘 (warikan) — splitting the bill evenly per person — is the default for casual group outings in Japan, even when people ordered different amounts or drank at different paces. Precisely itemizing who owes what for every dish is unusual among friends; it's seen as more trouble than it's worth for a casual meal.\n\nIn practice, the total is often rounded to a convenient number per person (rounding up, not down) rather than divided to the exact yen, and one person frequently pays the full amount up front with everyone else transferring or handing over cash afterward — increasingly via a mobile payment app rather than physical coins. Among close friends the split may also silently favor whoever earns more or is celebrating something, without it ever being stated directly. If a group genuinely wants to pay separately, ask early — 別々にできますか (can we pay separately?) — since some izakaya can only split a bill a limited number of ways, or not at all once everything's been rung up together.",
+    "tags": ["money", "practical"]
+  }
+]

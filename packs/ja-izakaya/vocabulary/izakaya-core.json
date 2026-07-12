@@ -1,0 +1,534 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.izakaya",
+    "entryType": "word",
+    "lemma": "居酒屋",
+    "reading": "いざかや",
+    "romaji": "izakaya",
+    "translation": "Japanese casual pub / gastropub",
+    "naturalMeaning": "A casual after-work drinking-and-eating spot — small shared plates, cheap drinks, loud and informal, closer to a tapas bar than a restaurant.",
+    "tags": ["core", "place"],
+    "examples": [
+      { "text": "今日は居酒屋に行きませんか。", "reading": "きょうはいざかやにいきませんか。", "romaji": "Kyō wa izakaya ni ikimasen ka.", "translation": "Want to go to an izakaya today?" }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.nomihoudai",
+    "entryType": "word",
+    "lemma": "飲み放題",
+    "reading": "のみほうだい",
+    "romaji": "nomihōdai",
+    "translation": "all-you-can-drink",
+    "naturalMeaning": "A fixed-price, time-limited drink plan — typically 90 or 120 minutes — ordered for the whole table at once, not per person on request.",
+    "tags": ["core", "drinks", "money"],
+    "examples": [
+      { "text": "飲み放題は九十分です。", "reading": "のみほうだいはきゅうじゅっぷんです。", "romaji": "Nomihōdai wa kyūjuppun desu.", "translation": "The all-you-can-drink plan is 90 minutes." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.toriaezu-biiru",
+    "entryType": "phrase",
+    "lemma": "とりあえずビール",
+    "romaji": "toriaezu bīru",
+    "translation": "let's start with beer (for now)",
+    "literalMeaning": "for the time being, beer",
+    "naturalMeaning": "The reflexive first order at almost any izakaya gathering — you order beer for the whole table before anyone has even opened the menu, then figure out food and other drinks after. See the culture notes.",
+    "tags": ["core", "drinks", "ritual"],
+    "examples": [
+      { "text": "とりあえずビールでいいですか。", "romaji": "Toriaezu bīru de ii desu ka.", "translation": "Beer to start for everyone, is that okay?" }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.nama-biiru",
+    "entryType": "word",
+    "lemma": "生ビール",
+    "reading": "なまビール",
+    "romaji": "nama bīru",
+    "translation": "draft beer",
+    "naturalMeaning": "Often shortened to just 「生」 (nama) when ordering — \"nama hitotsu\" is enough to get a draft beer.",
+    "tags": ["drinks"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.bin-biiru",
+    "entryType": "word",
+    "lemma": "瓶ビール",
+    "reading": "びんビール",
+    "romaji": "bin bīru",
+    "translation": "bottled beer",
+    "tags": ["drinks"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.chuuhai",
+    "entryType": "word",
+    "lemma": "酎ハイ",
+    "reading": "ちゅうハイ",
+    "romaji": "chūhai",
+    "translation": "shochu highball",
+    "naturalMeaning": "Shochu mixed with soda and usually flavored syrup or juice — lighter and sweeter than it sounds, a common alternative to beer.",
+    "tags": ["drinks"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.remon-sawaa",
+    "entryType": "word",
+    "lemma": "レモンサワー",
+    "reading": "レモンサワー",
+    "romaji": "remon sawā",
+    "translation": "lemon sour",
+    "naturalMeaning": "The single most popular izakaya chūhai flavor — shochu, soda, and lemon, often served with a wedge to squeeze in yourself.",
+    "tags": ["drinks", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.sawaa",
+    "entryType": "word",
+    "lemma": "サワー",
+    "romaji": "sawā",
+    "translation": "sour (fruit-flavored shochu highball)",
+    "tags": ["drinks"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.nihonshu",
+    "entryType": "word",
+    "lemma": "日本酒",
+    "reading": "にほんしゅ",
+    "romaji": "nihonshu",
+    "translation": "sake (Japanese rice wine)",
+    "naturalMeaning": "The formal/generic term — the loanword \"sake\" (酒) in Japanese can just mean \"alcohol\" in general, so 日本酒 is the word to actually order rice wine.",
+    "tags": ["drinks", "core"],
+    "examples": [
+      { "text": "日本酒は熱燗と冷やがあります。", "reading": "にほんしゅはあつかんとひやがあります。", "romaji": "Nihonshu wa atsukan to hiya ga arimasu.", "translation": "For sake, we have it warmed or chilled." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.shochu",
+    "entryType": "word",
+    "lemma": "焼酎",
+    "reading": "しょうちゅう",
+    "romaji": "shōchū",
+    "translation": "shochu (distilled spirit)",
+    "naturalMeaning": "Distilled, usually from sweet potato, barley, or rice — stronger than sake, often drunk on the rocks, with water (水割り), or as a highball base.",
+    "tags": ["drinks"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.uron-hai",
+    "entryType": "word",
+    "lemma": "ウーロンハイ",
+    "romaji": "ūron-hai",
+    "translation": "oolong-hai (shochu with oolong tea)",
+    "naturalMeaning": "Shochu mixed with oolong tea instead of soda — a common lower-sugar order for people who don't want a sweet chūhai.",
+    "tags": ["drinks"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.otoshi",
+    "entryType": "word",
+    "lemma": "お通し",
+    "reading": "おとおし",
+    "romaji": "otōshi",
+    "translation": "obligatory small starter dish",
+    "naturalMeaning": "A tiny dish brought out automatically the moment you sit down — you didn't order it, and it isn't free. Functions as a seating/table charge disguised as food. See the culture notes.",
+    "tags": ["core", "food", "money"],
+    "examples": [
+      { "text": "お通し代は三百円です。", "reading": "おとおしだいはさんびゃくえんです。", "romaji": "Otōshi-dai wa sanbyaku-en desu.", "translation": "The otōshi charge is 300 yen." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.tsukidashi",
+    "entryType": "word",
+    "lemma": "突き出し",
+    "reading": "つきだし",
+    "romaji": "tsukidashi",
+    "translation": "small starter dish (same idea as otōshi)",
+    "naturalMeaning": "Largely interchangeable with お通し — つきだし is heard more in the Kansai region, おとおし more in and around Tokyo.",
+    "tags": ["food", "money"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.kanpai",
+    "entryType": "word",
+    "lemma": "乾杯",
+    "reading": "かんぱい",
+    "romaji": "kanpai",
+    "translation": "cheers!",
+    "naturalMeaning": "Said together, glasses raised, before anyone takes their first sip — drinking before the group toast is considered a small faux pas.",
+    "tags": ["core", "ritual"],
+    "examples": [
+      { "text": "それでは、乾杯！", "reading": "それでは、かんぱい！", "romaji": "Soredewa, kanpai!", "translation": "Alright then, cheers!" }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.okawari",
+    "entryType": "word",
+    "lemma": "お代わり",
+    "reading": "おかわり",
+    "romaji": "okawari",
+    "translation": "another helping / refill",
+    "tags": ["core", "drinks", "food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.mou-ippai",
+    "entryType": "phrase",
+    "lemma": "もう一杯",
+    "reading": "もういっぱい",
+    "romaji": "mō ippai",
+    "translation": "one more (drink)",
+    "tags": ["drinks", "phrase"],
+    "examples": [
+      { "text": "すみません、もう一杯ください。", "reading": "すみません、もういっぱいください。", "romaji": "Sumimasen, mō ippai kudasai.", "translation": "Excuse me, one more please." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.onaji-mono-o-mou-hitotsu",
+    "entryType": "phrase",
+    "lemma": "同じものをもう一つ",
+    "reading": "おなじものをもうひとつ",
+    "romaji": "onaji mono o mō hitotsu",
+    "translation": "another one of the same, please",
+    "tags": ["drinks", "food", "phrase"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.yakitori",
+    "entryType": "word",
+    "lemma": "焼き鳥",
+    "reading": "やきとり",
+    "romaji": "yakitori",
+    "translation": "grilled chicken skewers",
+    "naturalMeaning": "Ordered by the cut, not just \"chicken\" — a table usually orders a mixed assortment across several cuts rather than many of one kind.",
+    "tags": ["core", "food"],
+    "examples": [
+      { "text": "焼き鳥の盛り合わせをお願いします。", "reading": "やきとりのもりあわせをおねがいします。", "romaji": "Yakitori no moriawase o onegaishimasu.", "translation": "An assorted yakitori platter, please." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.momo",
+    "entryType": "word",
+    "lemma": "もも",
+    "romaji": "momo",
+    "translation": "chicken thigh (yakitori cut)",
+    "naturalMeaning": "The most common, crowd-pleasing yakitori cut — juicy dark meat, a safe default order.",
+    "tags": ["food", "yakitori"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.negima",
+    "entryType": "word",
+    "lemma": "ねぎま",
+    "romaji": "negima",
+    "translation": "chicken and leek skewer",
+    "tags": ["food", "yakitori"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.tsukune",
+    "entryType": "word",
+    "lemma": "つくね",
+    "romaji": "tsukune",
+    "translation": "chicken meatball skewer",
+    "naturalMeaning": "Often served with a raw egg yolk on the side for dipping — ask for 卵付き (tamago-tsuki) if you want it that way.",
+    "tags": ["food", "yakitori"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.kawa",
+    "entryType": "word",
+    "lemma": "皮",
+    "reading": "かわ",
+    "romaji": "kawa",
+    "translation": "chicken skin (yakitori cut)",
+    "naturalMeaning": "Grilled until crisp — one of the more polarizing cuts for first-timers, but a favorite among regulars.",
+    "tags": ["food", "yakitori"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.rebaa",
+    "entryType": "word",
+    "lemma": "レバー",
+    "romaji": "rebā",
+    "translation": "chicken liver (yakitori cut)",
+    "tags": ["food", "yakitori"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.nankotsu",
+    "entryType": "word",
+    "lemma": "軟骨",
+    "reading": "なんこつ",
+    "romaji": "nankotsu",
+    "translation": "cartilage (yakitori cut)",
+    "naturalMeaning": "Prized for its crunchy texture rather than flavor — a very different eating experience from the other cuts.",
+    "tags": ["food", "yakitori"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.tare",
+    "entryType": "word",
+    "lemma": "たれ",
+    "romaji": "tare",
+    "translation": "sweet soy glaze (yakitori sauce option)",
+    "naturalMeaning": "One of the two standard ways to season yakitori — a thick, sweet-savory brushed sauce, as opposed to plain salt.",
+    "tags": ["food", "yakitori"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.shio",
+    "entryType": "word",
+    "lemma": "塩",
+    "reading": "しお",
+    "romaji": "shio",
+    "translation": "salt (yakitori seasoning option)",
+    "tags": ["food", "yakitori"],
+    "examples": [
+      { "text": "ねぎまは塩でお願いします。", "reading": "ねぎまはしおでおねがいします。", "romaji": "Negima wa shio de onegaishimasu.", "translation": "Negima with salt, please." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.edamame",
+    "entryType": "word",
+    "lemma": "枝豆",
+    "reading": "えだまめ",
+    "romaji": "edamame",
+    "translation": "salted boiled soybeans",
+    "naturalMeaning": "The default order while everyone's still deciding on the rest of the meal — cheap, fast, and eaten straight from the pod.",
+    "tags": ["core", "food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.karaage",
+    "entryType": "word",
+    "lemma": "唐揚げ",
+    "reading": "からあげ",
+    "romaji": "karaage",
+    "translation": "Japanese-style fried chicken",
+    "naturalMeaning": "Bite-sized, marinated in soy/garlic/ginger before frying — a near-universal izakaya order, distinct from Western fried chicken.",
+    "tags": ["core", "food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.hiyayakko",
+    "entryType": "word",
+    "lemma": "冷奴",
+    "reading": "ひややっこ",
+    "romaji": "hiyayakko",
+    "translation": "cold tofu (topped with green onion and grated ginger)",
+    "tags": ["food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.agedashi-doufu",
+    "entryType": "word",
+    "lemma": "揚げ出し豆腐",
+    "reading": "あげだしどうふ",
+    "romaji": "agedashi-dōfu",
+    "translation": "fried tofu in dashi broth",
+    "naturalMeaning": "Lightly dusted with starch, fried, then served in a savory dashi-based sauce — different from hiyayakko, which is served cold and plain.",
+    "tags": ["food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.sashimi-moriawase",
+    "entryType": "word",
+    "lemma": "刺身盛り合わせ",
+    "reading": "さしみもりあわせ",
+    "romaji": "sashimi moriawase",
+    "translation": "assorted sashimi platter",
+    "tags": ["food"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.zashiki",
+    "entryType": "word",
+    "lemma": "座敷",
+    "reading": "ざしき",
+    "romaji": "zashiki",
+    "translation": "tatami-mat seating area",
+    "naturalMeaning": "Raised, shoe-off floor seating, often behind a sliding partition for a semi-private feel — the classic izakaya seating style alongside counter and table seats.",
+    "tags": ["core", "seating"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.kutsu-o-nugu",
+    "entryType": "phrase",
+    "lemma": "靴を脱ぐ",
+    "reading": "くつをぬぐ",
+    "romaji": "kutsu o nugu",
+    "translation": "to take off one's shoes",
+    "naturalMeaning": "Required before stepping up onto a 座敷 — shoes are usually left in a small cubby or on a step just below the raised floor.",
+    "tags": ["seating", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.kauntaa-seki",
+    "entryType": "word",
+    "lemma": "カウンター席",
+    "romaji": "kauntā-seki",
+    "translation": "counter seat",
+    "naturalMeaning": "Seating right at the bar facing the kitchen or grill — common for solo diners and couples, and often first-come first-served.",
+    "tags": ["seating"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.teeburu-seki",
+    "entryType": "word",
+    "lemma": "テーブル席",
+    "romaji": "tēburu-seki",
+    "translation": "table seat (Western-style, shoes on)",
+    "tags": ["seating"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.koshitsu",
+    "entryType": "word",
+    "lemma": "個室",
+    "reading": "こしつ",
+    "romaji": "koshitsu",
+    "translation": "private room",
+    "naturalMeaning": "A fully enclosed room, sometimes reservation-only — common for larger groups or work parties (nomikai) who want privacy.",
+    "tags": ["seating"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.ten-in",
+    "entryType": "word",
+    "lemma": "店員",
+    "reading": "てんいん",
+    "romaji": "ten'in",
+    "translation": "staff member / server",
+    "tags": ["people"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.sumimasen-yobu",
+    "entryType": "phrase",
+    "lemma": "すみませーん",
+    "romaji": "sumimasēn",
+    "translation": "excuse me! (calling a server over)",
+    "naturalMeaning": "Stretched out and said at some volume across the room — the normal, non-rude way to summon staff at an izakaya, since nobody comes to check on you unprompted. See the culture notes.",
+    "tags": ["core", "practical", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.chuumon",
+    "entryType": "word",
+    "lemma": "注文",
+    "reading": "ちゅうもん",
+    "romaji": "chūmon",
+    "translation": "order (for food/drink)",
+    "tags": ["practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.chuumon-onegaishimasu",
+    "entryType": "phrase",
+    "lemma": "注文をお願いします",
+    "reading": "ちゅうもんをおねがいします",
+    "romaji": "Chūmon o onegaishimasu.",
+    "translation": "I'd like to order, please.",
+    "tags": ["core", "practical", "phrase"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.okaikei",
+    "entryType": "word",
+    "lemma": "お会計",
+    "reading": "おかいけい",
+    "romaji": "okaikei",
+    "translation": "the bill / check",
+    "tags": ["core", "money"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.kanjou",
+    "entryType": "word",
+    "lemma": "勘定",
+    "reading": "かんじょう",
+    "romaji": "kanjō",
+    "translation": "the bill (older/more casual term)",
+    "naturalMeaning": "Older or more blunt-sounding than お会計 — お勘定 with the honorific prefix softens it back to polite register.",
+    "tags": ["money"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.okaikei-onegaishimasu",
+    "entryType": "phrase",
+    "lemma": "お会計お願いします",
+    "reading": "おかいけいおねがいします",
+    "romaji": "Okaikei onegaishimasu.",
+    "translation": "Check, please.",
+    "tags": ["core", "money", "phrase"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.warikan",
+    "entryType": "word",
+    "lemma": "割り勘",
+    "reading": "わりかん",
+    "romaji": "warikan",
+    "translation": "splitting the bill evenly",
+    "naturalMeaning": "The default way groups pay in Japan — the total is usually divided equally per head rather than itemized per person, even if orders weren't identical. See the culture notes.",
+    "tags": ["core", "money"],
+    "examples": [
+      { "text": "今日は割り勘にしましょう。", "reading": "きょうはわりかんにしましょう。", "romaji": "Kyō wa warikan ni shimashō.", "translation": "Let's split the bill evenly today." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.betsubetsu-ni",
+    "entryType": "phrase",
+    "lemma": "別々に",
+    "reading": "べつべつに",
+    "romaji": "betsubetsu ni",
+    "translation": "separately (pay separately)",
+    "tags": ["money", "phrase"],
+    "examples": [
+      { "text": "お会計は別々にできますか。", "reading": "おかいけいはべつべつにできますか。", "romaji": "Okaikei wa betsubetsu ni dekimasu ka.", "translation": "Can we pay separately?" }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.issho-ni-shite-kudasai",
+    "entryType": "phrase",
+    "lemma": "一緒にしてください",
+    "reading": "いっしょにしてください",
+    "romaji": "Issho ni shite kudasai.",
+    "translation": "Please put it all on one bill.",
+    "tags": ["money", "phrase"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.nomihoudai-jikan",
+    "entryType": "word",
+    "lemma": "飲み放題の時間",
+    "reading": "のみほうだいのじかん",
+    "romaji": "nomihōdai no jikan",
+    "translation": "the nomihōdai time limit",
+    "naturalMeaning": "Usually announced or reminded near the end — staff will often check in with 'あと何分です' (there are X minutes left) shortly before it expires.",
+    "tags": ["drinks", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "izvocab.rasuto-odaa",
+    "entryType": "word",
+    "lemma": "ラストオーダー",
+    "romaji": "rasuto ōdā",
+    "translation": "last order",
+    "naturalMeaning": "The final call for ordering, both for a nomihōdai window and for the restaurant's closing time — worth listening for so you're not caught wanting one more round.",
+    "tags": ["practical"]
+  }
+]

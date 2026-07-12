@@ -1,0 +1,50 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "kgculture.elevate-vs-lower-logic",
+    "title": "It's not \"more polite\" — it's elevate-them vs. lower-yourself",
+    "bodyMd": "The single most common conceptual mistake learners make with keigo is treating sonkeigo and kenjougo as two strengths of the same dial, like teineigo is \"polite\" and keigo is \"extra polite.\" They're actually two different operations pointed in opposite directions.\n\nSonkeigo raises the person you're describing — you use it for a customer's, client's, or superior's actions, and never for your own (that would be like praising yourself with a title). Kenjougo lowers your own actions relative to theirs — you use it for what you yourself do, and never to describe someone you're respecting (that would accidentally talk down to them). Once this clicks, verb choice stops being a memorization problem and becomes a simple question: whose action is this, and which direction does it need to point?",
+    "tags": ["essentials", "sonkeigo", "kenjougo"],
+    "cefr": "B1"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgculture.meishi-exchange-ritual",
+    "title": "The business card exchange isn't just handing over contact info",
+    "bodyMd": "名刺交換 (meishi exchange) at a first business meeting follows a small, fairly fixed ritual: cards are presented and received with both hands, held so the text faces the recipient (right-side up for them to read), and the person of lower status or the visitor typically offers their card first, slightly lower than the other person's card if both are extended at once.\n\nOnce received, a card is treated as a stand-in for the person — it's set on the table in front of you for the rest of the meeting (never pocketed immediately, never written on in front of them, never left behind), roughly in the seating order of the people across the table, as a small memory aid for names and titles.",
+    "tags": ["etiquette", "business-card"],
+    "cefr": "B1"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgculture.when-keigo-sounds-stiff",
+    "title": "When even native speakers dial keigo back",
+    "bodyMd": "Full sonkeigo/kenjougo is not the default register of Japanese life — it's reserved for specific role relationships: customer-facing service work, junior-to-senior speech inside a company, and dealings with an outside client or partner company. Among friends, family, and same-rank coworkers you're close with, plain teineigo or even casual speech is completely normal and expected; reaching for いらっしゃる or 申す with a close coworker would land as odd formality, distance, or even light sarcasm rather than respect.\n\nEven within business contexts, keigo density varies — a startup with a flat culture may use noticeably lighter keigo internally than a traditional trading company, and younger employees increasingly report finding heavy keigo stiff or old-fashioned in casual internal chat, reserving the fullest forms for clients and very senior staff.",
+    "tags": ["register", "social-context"],
+    "cefr": "B2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgculture.double-honorific-mistakes",
+    "title": "Native speakers get this wrong too: 二重敬語",
+    "bodyMd": "二重敬語 (double honorifics) — stacking two separate honorific markers on one verb, like おっしゃられる instead of おっしゃる, or 拝見させていただきます where either 拝見する or させていただく alone would be enough — is common enough in real Japanese that it's a named, discussed phenomenon in business-manners guides and style references, not just a foreigner's error.\n\nIt happens because keigo has multiple ways to raise politeness (irregular verbs, the お/ご～になる pattern, the passive-like られる, and layering いただく on top of things), and stacking two of them feels intuitively \"more polite\" even though it's considered redundant by careful usage. Some double-honorific forms are common enough that they're borderline accepted in casual business speech even though a style guide would flag them — this is a live, unsettled area of the language, not a clean-cut rule.",
+    "tags": ["mistakes", "nuance"],
+    "cefr": "B2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgculture.generational-variance",
+    "title": "How strictly keigo is followed varies by generation and workplace",
+    "bodyMd": "Keigo norms are not perfectly uniform across Japanese society — older, more traditional industries (banking, established manufacturing, government) tend to expect fuller, more textbook-correct keigo than newer sectors like tech startups, where flatter internal hierarchies and casual company culture can mean far lighter use of sonkeigo/kenjougo even between junior and senior staff.\n\nYounger employees are also somewhat more likely to lean on simplified or partially-collapsed keigo forms in daily speech (for instance treating れる/られる passive-respect forms as \"good enough\" sonkeigo rather than reaching for the fully irregular verb), while older speakers and traditional manners training place more weight on getting the classic irregular forms exactly right. None of this means keigo is optional to learn — client-facing and cross-company communication still expects it — but the bar for \"correct enough\" does shift with context and generation.",
+    "tags": ["social-context", "register"],
+    "cefr": "B2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgculture.in-group-out-group-keigo",
+    "title": "Why you humble your own boss's actions to an outside client",
+    "bodyMd": "One of the most confusing moments for learners is hearing a Japanese speaker use humble kenjougo language to describe their *own boss's* actions — 上司の田中もまいります (\"my superior Tanaka will also come\") — when internally that boss clearly outranks the speaker and would normally get sonkeigo respect.\n\nThe answer is that keigo tracks in-group vs. out-group, not just personal rank. Speaking to an outside client, your entire company — including your boss — is your in-group, and the client's side is the out-group that gets elevated. So your boss's actions get humbled (kenjougo) precisely because they're being described *to* someone outside the company, even though inside the office that same boss would normally receive sonkeigo. This in-group/out-group flip is one of the genuinely advanced parts of keigo and trips up learners long after the basic verb forms are memorized.",
+    "tags": ["nuance", "sonkeigo", "kenjougo"],
+    "cefr": "B2"
+  }
+]

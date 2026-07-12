@@ -1,0 +1,51 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "onculture.washing-before-bathing",
+    "title": "Wash first, soak second",
+    "bodyMd": "The single rule every onsen and sentō shares: you get completely clean at the 洗い場 (washing area) — soap, shampoo, a full rinse — *before* you ever step into the shared tub. The tub itself is for soaking, not washing; nobody scrubs in it, and nothing you wash with goes in it either.\n\nOnce you're clean, a quick かけ湯 (splashing hot water over yourself at the tub's edge) right before getting in is standard, partly to rinse any last soap and partly to acclimatize your body to the water temperature. Skipping the wash and heading straight for the water is the fastest way to get stared at.",
+    "tags": ["ritual", "etiquette", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onculture.tattoo-policy",
+    "title": "Why so many onsen still ban tattoos",
+    "bodyMd": "The policy traces back to Japan's organized crime groups (yakuza), who traditionally wear large, full-body tattoos — bathhouses historically refused entry to visibly tattooed customers to keep them out, and the blanket rule stuck even as tattoos became mainstream elsewhere. It has nothing to do with hygiene.\n\nEnforcement varies a lot by establishment. Many city sentō and older ryokan still refuse any visible tattoo, however small or clearly decorative. But a growing number of onsen, especially ones used to foreign guests, allow small tattoos covered with a patch (タトゥーシール), or simply don't enforce the rule at all. If you have a tattoo, it's worth checking a ryokan's policy before booking, and a 貸切風呂 (reservable private bath) is almost always a safe workaround since nobody else is around to object.",
+    "tags": ["etiquette", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onculture.bath-etiquette",
+    "title": "The unwritten rules of the communal bath",
+    "bodyMd": "A short list that covers almost every situation:\n\n- No swimsuits. The bath is entered nude; bringing swimwear (unless a rare mixed-gender or resort-style pool explicitly allows it) reads as ignoring the point of the bath.\n- Long hair gets tied up and kept out of the water.\n- Your 手ぬぐい (small towel) can rest folded on your head or beside the tub — it never goes in the water.\n- No photos, ever, even of empty rooms — other guests are undressed nearby and phones are assumed to be cameras.\n- Keep voices down and don't swim laps or splash; it's a place to sit quietly, not exercise.\n- Long hair and jewelry aside, minimal is the rule: rings and watches usually come off too, since some spring water reacts with metal.",
+    "tags": ["etiquette", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onculture.onsen-vs-sento",
+    "title": "Onsen vs. sentō — not the same thing",
+    "bodyMd": "Both are public bathhouses with the same washing-first etiquette, but the water is different. 温泉 (onsen) water comes from an actual geothermal spring and by law must meet a minimum temperature or mineral-content threshold at the source. 銭湯 (sentō) is an ordinary neighborhood bathhouse using regular heated tap water — historically built for city dwellers whose homes didn't have their own bath.\n\nSentō are cheaper (often a few hundred yen), usually no-frills, and still function as a genuine local amenity in many neighborhoods rather than a tourist draw. Onsen are the destination experience — often attached to a ryokan, sometimes with mineral water advertised for specific health benefits (skin, circulation, joint pain), and the ones in onsen towns are built around the view as much as the water.",
+    "tags": ["essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onculture.ryokan-tipping",
+    "title": "Do you tip at a ryokan? Basically no",
+    "bodyMd": "Tipping isn't part of Japanese service culture, and a ryokan is no exception — attentive service, including a 仲居 looking after your room all evening, is simply what the room rate already covers. Offering cash directly can even cause an awkward moment, since staff are trained to politely refuse it.\n\nThe one traditional exception is 心付け (kokorozuke): at a small number of high-end, old-style ryokan, guests slip a small envelope of cash (a few thousand yen) to the room attendant right at check-in, as a thank-you in advance for a good stay — not a tip for service already rendered. It's optional, increasingly rare, and never expected at a typical ryokan today. When in doubt, simply saying ありがとうございました warmly at checkout is worth more than cash.",
+    "tags": ["money", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onculture.yukata-etiquette",
+    "title": "Wearing your yukata without looking like a tourist",
+    "bodyMd": "The one rule that matters: wrap it 右前 (migimae) — your right side goes against your body first, so the left panel folds over on top. Wrapped the other way (左前), it's the way corpses are dressed for a funeral, so getting it backwards is more than a fashion slip.\n\nBeyond that, ryokan yukata are meant to be worn around the inn, to dinner, and strolling the onsen town afterward — not just as pajamas. Keep the front closed high enough to be modest, secure it with the 帯 (sash) at the waist, and don't worry about it being perfectly crisp; a slightly loose, lived-in look is completely normal after a bath and a meal.",
+    "tags": ["clothing", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "onculture.ryokan-rhythm",
+    "title": "The rhythm of a ryokan evening",
+    "bodyMd": "A typical overnight stay follows a set shape: check in mid-afternoon, get shown to your room and served tea, change into your yukata, bathe before dinner, eat an elaborate 会席料理 dinner (often in your room), bathe again afterward if you like, and come back to find your 布団 already laid out on the tatami where your table used to be.\n\nKnowing this rhythm in advance helps a lot — dinner times are often fixed and staggered between rooms, so arriving late to a scheduled meal can throw off the kitchen, and the room-turnover between dinner and bedtime happens while you're out, not something you need to ask for.",
+    "tags": ["practical", "essentials"]
+  }
+]
