@@ -48,11 +48,20 @@ resolve against the expanded vocab/phrase set. Worth a native check on:
   worth confirming the one-line explanations hold up and whether any deserve their own
   full grammar entry in a future pass.
 
+## slangRegister filled via idioms (0 → 21)
+
+Added `idioms/core.json`: 21 `RealSpeechItem`s of `kind: "idiom"` — everyday 慣用句 (body-part
+idioms like 頭がいい, 気にする, 目がない), yojijukugo (一石二鳥), and a few ことわざ/proverbs
+(猿も木から落ちる, 郷に入っては郷に従え). All are `register: "neutral"` or `"informal"` and
+`severity: 1` — deliberately no slang, profanity, or severity ramp, per the scope decision
+below. `learnerShouldUse` is split between `"use"` (safe, common, low-risk to produce) and
+`"recognize-only"` (idioms that are fine to understand but where a learner producing them
+might sound unnatural or overly bookish coming from a non-native speaker) — that judgment call
+is itself worth a native sanity check, since it's more subjective than the schema/grammar
+content.
+
 ## Still deliberately not built (scope for a follow-up session)
 
-- **slangRegister** (target 20) is intentionally empty for now; the agreed approach is to fill
-  it via the schema's `idiom` kind (慣用句 / set expressions with register notes), honoring the
-  "no crude slang / no keigo severity ramp" stance below — not yet authored.
 - **Lesson-based categories** — listening exercises, writing prompts, assessments, and roleplay
   scenarios (all target >0) are not yet built.
 
