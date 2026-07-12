@@ -11,6 +11,7 @@ export interface VocabularyEntry {
   translation: string;
   register: string | null;
   cefr: string | null;
+  tags: string[];
 }
 
 export interface GrammarEntry {
@@ -43,8 +44,9 @@ export async function listVocabulary(repos: Repos, packId: string): Promise<Voca
     translation: string;
     register: string | null;
     cefr: string | null;
+    tags_json: string;
   }>(
-    "SELECT item_key, entry_type, lemma, reading, romaji, translation, register, cefr FROM vocabulary_items WHERE pack_id = ? ORDER BY entry_type, lemma",
+    "SELECT item_key, entry_type, lemma, reading, romaji, translation, register, cefr, tags_json FROM vocabulary_items WHERE pack_id = ? ORDER BY entry_type, lemma",
     [packId as SqlValue],
   );
   return rows.map((r) => ({
@@ -56,6 +58,7 @@ export async function listVocabulary(repos: Repos, packId: string): Promise<Voca
     translation: r.translation,
     register: r.register,
     cefr: r.cefr,
+    tags: JSON.parse(r.tags_json) as string[],
   }));
 }
 

@@ -69,6 +69,26 @@ interface Data {
   ceiling: Severity;
 }
 
+/** "food-drink" -> "Food & Drink"; a lone word just gets capitalized. Generic and data-driven —
+ * works for any pack's tag vocabulary without a per-language label table to maintain. */
+function prettyTopic(tag: string): string {
+  const words = tag.split(/[-_]/).map((w) => w.charAt(0).toUpperCase() + w.slice(1));
+  return words.join(tag.includes("-") ? " & " : " ");
+}
+
+/** Groups items by their first tag (an item's primary topic), preserving each group's first-
+ * appearance order — that order already follows the pack's authored curriculum sequence (e.g.
+ * greetings before numbers before food), so it reads as a sensible table of contents for free. */
+function groupByTopic<T extends { tags: string[] }>(items: T[]): { topic: string; items: T[] }[] {
+  const groups = new Map<string, T[]>();
+  for (const item of items) {
+    const topic = item.tags[0] ?? "other";
+    if (!groups.has(topic)) groups.set(topic, []);
+    groups.get(topic)!.push(item);
+  }
+  return [...groups.entries()].map(([topic, items]) => ({ topic, items }));
+}
+
 const HEAT = ["var(--heat-1)", "var(--heat-2)", "var(--heat-3)", "var(--heat-4)", "var(--heat-5)", "var(--heat-6)", "var(--heat-7)"];
 
 /** A 7-segment heat meter reused for both the legend and each row — filled up to `severity`
@@ -89,6 +109,18 @@ export function Library({ repos, profile, pack, allProfiles, onContinuePack, onS
   const packId = profile.activePackId;
   const microPacksState = useSiblingMicroPacks(pack);
   const profileByPackId = new Map(allProfiles.map((p) => [p.activePackId, p]));
+
+  // Which topic groups are collapsed, keyed "vocabulary:greeting" / "culture:etiquette" so the
+  // two tabs' collapse state don't collide. Groups start expanded — collapsing hides nothing by
+  // default, it's just a way to compact a topic once you've already seen it.
+  const [collapsedTopics, setCollapsedTopics] = useState<Set<string>>(new Set());
+  const toggleTopic = (id: string) =>
+    setCollapsedTopics((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
 
   useEffect(() => {
     if (!packId) return;
@@ -138,23 +170,36 @@ export function Library({ repos, profile, pack, allProfiles, onContinuePack, onS
         )}
       </nav>
 
-      {tab === "vocabulary" && (
-        <div className="lib-list">
-          {data.vocabulary.map((v) => (
-            <div key={v.key} className="lib-row">
-              <div className="word">
-                <span className="p">{v.lemma}</span>
-                {(v.reading || v.romaji) && (
-                  <span className="r">{[v.reading, v.romaji].filter(Boolean).join(" · ")}</span>
-                )}
-                <span className="m">{v.translation}</span>
-              </div>
-              <span className="register-chip">{v.register ?? v.entryType}</span>
-              <div />
-            </div>
-          ))}
-        </div>
-      )}
+      {tab === "vocabulary" &&
+        groupByTopic(data.vocabulary).map(({ topic, items }) => {
+          const groupId = `vocabulary:${topic}`;
+          const collapsed = collapsedTopics.has(groupId);
+          return (
+            <section key={topic} className="lib-topic-group">
+              <button type="button" className="lib-topic-header" onClick={() => toggleTopic(groupId)}>
+                <span className={collapsed ? "chevron collapsed" : "chevron"} aria-hidden="true" />
+                {prettyTopic(topic)} <span className="mono">{items.length}</span>
+              </button>
+              {!collapsed && (
+                <div className="lib-list">
+                  {items.map((v) => (
+                    <div key={v.key} className="lib-row">
+                      <div className="word">
+                        <span className="p">{v.lemma}</span>
+                        {(v.reading || v.romaji) && (
+                          <span className="r">{[v.reading, v.romaji].filter(Boolean).join(" · ")}</span>
+                        )}
+                        <span className="m">{v.translation}</span>
+                      </div>
+                      <span className="register-chip">{v.register ?? v.entryType}</span>
+                      <div />
+                    </div>
+                  ))}
+                </div>
+              )}
+            </section>
+          );
+        })}
 
       {tab === "grammar" && (
         <div className="lib-list">
@@ -203,27 +248,40 @@ export function Library({ repos, profile, pack, allProfiles, onContinuePack, onS
         </>
       )}
 
-      {tab === "culture" && (
-        <div className="culture-list">
-          {pack.culture.map((note) => (
-            <article key={note.key} className="culture-note">
-              <h3>{note.title}</h3>
-              {note.bodyMd.split(/\n\n+/).map((para, i) => (
-                <p key={i}>{para}</p>
-              ))}
-              {note.tags.length > 0 && (
-                <div className="culture-tags">
-                  {note.tags.map((t) => (
-                    <span key={t} className="register-chip">
-                      {t}
-                    </span>
+      {tab === "culture" &&
+        groupByTopic(pack.culture).map(({ topic, items }) => {
+          const groupId = `culture:${topic}`;
+          const collapsed = collapsedTopics.has(groupId);
+          return (
+            <section key={topic} className="lib-topic-group">
+              <button type="button" className="lib-topic-header" onClick={() => toggleTopic(groupId)}>
+                <span className={collapsed ? "chevron collapsed" : "chevron"} aria-hidden="true" />
+                {prettyTopic(topic)} <span className="mono">{items.length}</span>
+              </button>
+              {!collapsed && (
+                <div className="culture-list">
+                  {items.map((note) => (
+                    <article key={note.key} className="culture-note">
+                      <h3>{note.title}</h3>
+                      {note.bodyMd.split(/\n\n+/).map((para, i) => (
+                        <p key={i}>{para}</p>
+                      ))}
+                      {note.tags.length > 0 && (
+                        <div className="culture-tags">
+                          {note.tags.map((t) => (
+                            <span key={t} className="register-chip">
+                              {t}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </article>
                   ))}
                 </div>
               )}
-            </article>
-          ))}
-        </div>
-      )}
+            </section>
+          );
+        })}
 
       {tab === "microPacks" && microPacksState && (
         <div className="lib-list">

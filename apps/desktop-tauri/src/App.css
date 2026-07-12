@@ -873,6 +873,44 @@ button.link:hover {
   color: var(--ink-soft);
 }
 
+.lib-topic-group {
+  margin-bottom: 1.6rem;
+}
+.lib-topic-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-align: left;
+}
+.lib-topic-header .mono {
+  color: inherit;
+  opacity: 0.7;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.lib-topic-header .chevron {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  transition: transform 0.12s ease;
+}
+.lib-topic-header .chevron.collapsed {
+  transform: rotate(-90deg);
+}
+
 .lib-list {
   display: flex;
   flex-direction: column;
