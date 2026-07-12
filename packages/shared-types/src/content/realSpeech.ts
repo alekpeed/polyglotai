@@ -13,6 +13,10 @@ export const RealSpeechItemSchema = z.object({
   key: z.string(),
   kind: RealSpeechKindSchema,
   phrase: z.string(),
+  /** Reading for non-Latin-script lemmas (e.g. Japanese kana for a kanji/mixed-script phrase) —
+   * see VocabularyItem. */
+  reading: z.string().optional(),
+  romaji: z.string().optional(),
   literal: z.string().optional(),
   natural: z.string().optional(),
   register: RegisterSchema,

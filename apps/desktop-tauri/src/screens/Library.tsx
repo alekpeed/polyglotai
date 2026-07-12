@@ -228,6 +228,9 @@ export function Library({ repos, profile, pack, allProfiles, onContinuePack, onS
               <div key={s.key} className={s.withinComfort ? "lib-row" : "lib-row locked"}>
                 <div className="word">
                   <span className="p">{s.phrase}</span>
+                  {(s.reading || s.romaji) && (
+                    <span className="r">{[s.reading, s.romaji].filter(Boolean).join(" · ")}</span>
+                  )}
                   <span className="m">{s.withinComfort ? (s.natural ?? "") : "raise your real-speech level in Settings to reveal"}</span>
                 </div>
                 <span className="register-chip">{s.register}</span>

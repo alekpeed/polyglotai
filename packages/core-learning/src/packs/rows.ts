@@ -125,6 +125,8 @@ export function realSpeechRow(packId: string, item: RealSpeechItem, now: string)
     item_key: item.key,
     kind: item.kind,
     phrase: item.phrase,
+    reading: item.reading ?? null,
+    romaji: item.romaji ?? null,
     literal: item.literal ?? null,
     natural: item.natural ?? null,
     register: item.register,

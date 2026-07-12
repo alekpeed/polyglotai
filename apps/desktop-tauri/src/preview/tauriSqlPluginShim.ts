@@ -11,6 +11,7 @@ import m2 from "../../src-tauri/migrations/0002_seed_feature_flags.sql?raw";
 import m3 from "../../src-tauri/migrations/0003_pronunciation_rules.sql?raw";
 import m4 from "../../src-tauri/migrations/0004_grammar_ladders.sql?raw";
 import m5 from "../../src-tauri/migrations/0005_vocab_reading.sql?raw";
+import m6 from "../../src-tauri/migrations/0006_real_speech_reading.sql?raw";
 
 type SqlValue = string | number | boolean | null;
 
@@ -67,7 +68,7 @@ export default class Database {
     if (saved) return new Database(new SQL.Database(saved));
 
     const db = new SQL.Database();
-    for (const migration of [m1, m2, m3, m4, m5]) db.exec(migration);
+    for (const migration of [m1, m2, m3, m4, m5, m6]) db.exec(migration);
     save(db);
     return new Database(db);
   }

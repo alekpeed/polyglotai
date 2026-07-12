@@ -37,6 +37,12 @@ fn migrations() -> Vec<Migration> {
             sql: include_str!("../migrations/0005_vocab_reading.sql"),
             kind: MigrationKind::Up,
         },
+        Migration {
+            version: 6,
+            description: "real_speech_reading",
+            sql: include_str!("../migrations/0006_real_speech_reading.sql"),
+            kind: MigrationKind::Up,
+        },
     ]
 }
 

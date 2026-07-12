@@ -58,6 +58,7 @@ const MIGRATION_FILES = [
   "0003_pronunciation_rules.sql",
   "0004_grammar_ladders.sql",
   "0005_vocab_reading.sql",
+  "0006_real_speech_reading.sql",
 ];
 
 /** Creates an in-memory SQLite DB migrated to head, wrapped in the Database port. */

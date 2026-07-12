@@ -25,6 +25,8 @@ export interface RealSpeechEntry {
   key: string;
   kind: string;
   phrase: string;
+  reading: string | null;
+  romaji: string | null;
   natural: string | null;
   register: Register;
   severity: Severity;
@@ -89,19 +91,23 @@ export async function listRealSpeech(
     item_key: string;
     kind: string;
     phrase: string;
+    reading: string | null;
+    romaji: string | null;
     natural: string | null;
     register: string;
     severity: number;
     learner_should_use: string | null;
     cultural_warning: string | null;
   }>(
-    "SELECT item_key, kind, phrase, natural, register, severity, learner_should_use, cultural_warning FROM real_speech_items WHERE pack_id = ? ORDER BY severity, phrase",
+    "SELECT item_key, kind, phrase, reading, romaji, natural, register, severity, learner_should_use, cultural_warning FROM real_speech_items WHERE pack_id = ? ORDER BY severity, phrase",
     [packId as SqlValue],
   );
   return rows.map((r) => ({
     key: r.item_key,
     kind: r.kind,
     phrase: r.phrase,
+    reading: r.reading,
+    romaji: r.romaji,
     natural: r.natural,
     register: r.register as Register,
     severity: r.severity as Severity,

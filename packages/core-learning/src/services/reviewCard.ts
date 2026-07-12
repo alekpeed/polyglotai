@@ -57,17 +57,23 @@ export async function loadReviewCard(repos: Repos, item: ReviewItem): Promise<Re
   // real_speech
   const rows = await repos.db.all<{
     phrase: string;
+    reading: string | null;
+    romaji: string | null;
     natural: string | null;
     register: string;
     severity: number;
     cultural_warning: string | null;
-  }>("SELECT phrase, natural, register, severity, cultural_warning FROM real_speech_items WHERE id = ?", [id]);
+  }>(
+    "SELECT phrase, reading, romaji, natural, register, severity, cultural_warning FROM real_speech_items WHERE id = ?",
+    [id],
+  );
   const r = rows[0];
   if (!r) throw new Error(`real-speech content ${item.contentId} not found`);
+  const reading = [r.reading, r.romaji].filter(Boolean).join(" · ");
   const warning = r.cultural_warning ? ` — ${r.cultural_warning}` : "";
   return {
     front: r.phrase,
     back: r.natural ?? r.phrase,
-    note: `${r.register} · severity ${r.severity}/7${warning}`,
+    note: `${[reading, `${r.register} · severity ${r.severity}/7`].filter(Boolean).join(" — ")}${warning}`,
   };
 }
