@@ -12,6 +12,11 @@ export const VocabularyItemSchema = z.object({
   key: z.string(),
   entryType: VocabEntryTypeSchema.default("word"),
   lemma: z.string(),
+  /** Reading for non-Latin-script lemmas (e.g. Japanese hiragana for a kanji lemma). */
+  reading: z.string().optional(),
+  /** Romanization, alongside `reading` — kana-only readings don't help a learner who can't
+   * read kana yet. */
+  romaji: z.string().optional(),
   translation: z.string(),
   literalMeaning: z.string().optional(),
   naturalMeaning: z.string().optional(),

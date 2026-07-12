@@ -18,15 +18,18 @@ export async function loadReviewCard(repos: Repos, item: ReviewItem): Promise<Re
   const id = item.contentId as SqlValue;
 
   if (item.itemType === "vocabulary") {
-    const rows = await repos.db.all<{ lemma: string; translation: string; pronunciation_notes: string | null }>(
-      "SELECT lemma, translation, pronunciation_notes FROM vocabulary_items WHERE id = ?",
-      [id],
-    );
+    const rows = await repos.db.all<{
+      lemma: string;
+      translation: string;
+      pronunciation_notes: string | null;
+      reading: string | null;
+      romaji: string | null;
+    }>("SELECT lemma, translation, pronunciation_notes, reading, romaji FROM vocabulary_items WHERE id = ?", [id]);
     const r = rows[0];
     if (!r) throw new Error(`vocabulary content ${item.contentId} not found`);
-    return r.pronunciation_notes
-      ? { front: r.lemma, back: r.translation, note: r.pronunciation_notes }
-      : { front: r.lemma, back: r.translation };
+    const reading = [r.reading, r.romaji].filter(Boolean).join(" · ");
+    const note = [reading, r.pronunciation_notes].filter(Boolean).join(" — ");
+    return note ? { front: r.lemma, back: r.translation, note } : { front: r.lemma, back: r.translation };
   }
 
   if (item.itemType === "grammar") {

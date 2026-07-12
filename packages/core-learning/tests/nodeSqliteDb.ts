@@ -57,6 +57,7 @@ const MIGRATION_FILES = [
   "0002_seed_feature_flags.sql",
   "0003_pronunciation_rules.sql",
   "0004_grammar_ladders.sql",
+  "0005_vocab_reading.sql",
 ];
 
 /** Creates an in-memory SQLite DB migrated to head, wrapped in the Database port. */

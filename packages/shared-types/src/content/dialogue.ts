@@ -10,6 +10,9 @@ const SpeakerSchema = z.object({
 const TranscriptLineSchema = z.object({
   speakerId: z.string(),
   text: z.string(),
+  /** Reading/romanization for `text` in non-Latin-script packs — see VocabularyItem. */
+  reading: z.string().optional(),
+  romaji: z.string().optional(),
 });
 
 /** Dialogue — first-class content entity per spec §11, one of the 10 §10.1 MVP categories. */

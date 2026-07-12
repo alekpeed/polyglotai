@@ -90,6 +90,9 @@ export function Library({ repos, profile, onDone }: Props) {
             <div key={v.key} className="lib-row">
               <div className="word">
                 <span className="p">{v.lemma}</span>
+                {(v.reading || v.romaji) && (
+                  <span className="r">{[v.reading, v.romaji].filter(Boolean).join(" · ")}</span>
+                )}
                 <span className="m">{v.translation}</span>
               </div>
               <span className="register-chip">{v.register ?? v.entryType}</span>

@@ -39,6 +39,8 @@ export function vocabularyRow(packId: string, item: VocabularyItem, now: string)
     item_key: item.key,
     entry_type: item.entryType,
     lemma: item.lemma,
+    reading: item.reading ?? null,
+    romaji: item.romaji ?? null,
     translation: item.translation,
     literal_meaning: item.literalMeaning ?? null,
     natural_meaning: item.naturalMeaning ?? null,

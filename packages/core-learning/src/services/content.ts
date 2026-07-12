@@ -6,6 +6,8 @@ export interface VocabularyEntry {
   key: string;
   entryType: string;
   lemma: string;
+  reading: string | null;
+  romaji: string | null;
   translation: string;
   register: string | null;
   cefr: string | null;
@@ -36,17 +38,21 @@ export async function listVocabulary(repos: Repos, packId: string): Promise<Voca
     item_key: string;
     entry_type: string;
     lemma: string;
+    reading: string | null;
+    romaji: string | null;
     translation: string;
     register: string | null;
     cefr: string | null;
   }>(
-    "SELECT item_key, entry_type, lemma, translation, register, cefr FROM vocabulary_items WHERE pack_id = ? ORDER BY entry_type, lemma",
+    "SELECT item_key, entry_type, lemma, reading, romaji, translation, register, cefr FROM vocabulary_items WHERE pack_id = ? ORDER BY entry_type, lemma",
     [packId as SqlValue],
   );
   return rows.map((r) => ({
     key: r.item_key,
     entryType: r.entry_type,
     lemma: r.lemma,
+    reading: r.reading,
+    romaji: r.romaji,
     translation: r.translation,
     register: r.register,
     cefr: r.cefr,
