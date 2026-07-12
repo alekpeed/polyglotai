@@ -142,6 +142,39 @@
   --shadow: 0 1px 2px rgba(20, 24, 27, 0.06), 0 8px 24px -12px rgba(20, 24, 27, 0.18);
 }
 
+/* ---- Pack theme: Japanese — ai-iro (indigo), kin (gold), shu-iro (vermillion), replacing
+   the pt-br pack's Brazil-flag palette in the same three token slots. Surfaces (paper/ink/
+   line/shadow) are shared across every pack; only the brand accent tokens change, set by
+   App.tsx via document.documentElement.dataset.pack. No Classic variant — there's no prior
+   look to preserve here, so [data-theme="classic"] just falls through to this block's default
+   (light) values, same as an unset theme would. ---- */
+:root[data-pack="ja"] {
+  --indigo: #1b4b73;
+  --indigo-fill: #6fa8d7;
+  --gold: #c99a2e;
+  --gold-fill: #e3cc98;
+  --verde-fill: #ef9c78;
+  --verde-ink: #4a1508;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-pack="ja"] {
+    --indigo: #6fa8d7;
+    --indigo-fill: #1b4b73;
+    --gold: #e3cc98;
+    --gold-fill: #c99a2e;
+    --verde-fill: #c1440e;
+    --verde-ink: #fdeee8;
+  }
+}
+:root[data-pack="ja"][data-theme="dark"] {
+  --indigo: #6fa8d7;
+  --indigo-fill: #1b4b73;
+  --gold: #e3cc98;
+  --gold-fill: #c99a2e;
+  --verde-fill: #c1440e;
+  --verde-ink: #fdeee8;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -398,7 +431,9 @@ button.link:hover {
 .onboard-skyline .a1 {
   height: 55%;
   margin-right: -8%;
-  background: rgba(226, 164, 49, 0.18);
+  /* color-mix (not a hardcoded rgba) so the skyline picks up whichever pack's gold is active,
+     instead of always showing pt-br's regardless of the current pack theme. */
+  background: color-mix(in srgb, var(--gold-fill) 18%, transparent);
 }
 .onboard-skyline .a2 {
   height: 92%;
@@ -407,9 +442,9 @@ button.link:hover {
 .onboard-skyline .a3 {
   height: 42%;
   margin-left: -8%;
-  /* Green instead of a second gold hill — the skyline reads as all three brand colors instead
-     of just gold-on-blue, echoing the flag badge in the sidebar. */
-  background: rgba(30, 138, 74, 0.2);
+  /* A second accent color instead of a second gold hill — the skyline reads as the pack's full
+     palette, not just gold-on-blue, echoing the flag badge in the sidebar. */
+  background: color-mix(in srgb, var(--verde-fill) 20%, transparent);
 }
 
 .onboard-form-panel {
@@ -470,6 +505,39 @@ button.link:hover {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.2rem;
+}
+
+.lang-picker-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.6rem;
+}
+.lang-picker-card {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding: 0.85rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface-raised);
+  text-align: left;
+  border-left: 3px solid var(--indigo-fill);
+}
+.lang-picker-card.new {
+  border-left-color: var(--gold-fill);
+  border-style: dashed;
+}
+.lang-picker-card .name {
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+.lang-picker-card .sub {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
 }
 
 @media (max-width: 860px) {
@@ -751,6 +819,11 @@ button.link:hover {
   font-family: "Fraunces", serif;
   font-size: 1.1rem;
   font-weight: 500;
+}
+.lib-row .word .r {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.76rem;
+  color: var(--ink-soft);
 }
 .lib-row .word .m {
   font-size: 0.82rem;

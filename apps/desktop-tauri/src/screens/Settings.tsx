@@ -11,6 +11,7 @@ interface Props {
   profile: LearnerProfile;
   onSaved: (profile: LearnerProfile) => void;
   onDone: () => void;
+  onSwitchLanguage: () => void;
 }
 
 const LEVELS: { value: RealSpeechLevel; label: string; heat: 1 | 2 | 3 | 4; hint: string }[] = [
@@ -33,7 +34,7 @@ const THEMES: { value: ThemePreference; label: string; hint: string }[] = [
   { value: "classic", label: "Classic", hint: "The original navy-blue look, before the periwinkle update." },
 ];
 
-export function Settings({ repos, profile, onSaved, onDone }: Props) {
+export function Settings({ repos, profile, onSaved, onDone, onSwitchLanguage }: Props) {
   const initial = readAiSettings(profile);
   const [model, setModel] = useState(initial.openaiModel ?? "gpt-5.6-luna");
   const [level, setLevel] = useState<RealSpeechLevel>(profile.realSpeechLevel);
@@ -69,6 +70,16 @@ export function Settings({ repos, profile, onSaved, onDone }: Props) {
       <h1>Settings</h1>
 
       <div className="settings-list">
+        <section className="settings-card">
+          <div className="settings-card-head">
+            <h3>Language</h3>
+            <p>Switch to another language you've started, or pick up a new one.</p>
+          </div>
+          <button type="button" onClick={onSwitchLanguage}>
+            Switch language
+          </button>
+        </section>
+
         <section className="settings-card">
           <div className="settings-card-head">
             <h3>Appearance</h3>

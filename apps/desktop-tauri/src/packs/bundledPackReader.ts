@@ -1,29 +1,47 @@
 import type { PackFileReader } from "@polyglotai/language-pack-sdk";
 
-// Vite inlines every JSON file under the canonical packs/pt-br directory at build time, keyed
-// by resolved path. This bundles the seed pack into the app with no filesystem/permission
-// wiring — the reader just serves the pre-loaded contents as text.
-const modules = import.meta.glob("../../../../packs/pt-br/**/*.json", {
+// Vite inlines every JSON file under packs/* at build time, keyed by resolved path — one glob
+// covers every bundled pack (pt-br, ja, ...) so adding a new language pack directory is enough
+// to make it available, no reader/build-config change needed per language.
+const modules = import.meta.glob("../../../../packs/*/**/*.json", {
   import: "default",
   eager: true,
 }) as Record<string, unknown>;
 
-const PACK_ROOT = "packs/pt-br/";
+const PACKS_ROOT = "packs/";
 
-function buildFileMap(): Record<string, string> {
-  const map: Record<string, string> = {};
+/** packId -> { relativePath -> JSON text }, built once at module load. */
+function buildPackFileMaps(): Record<string, Record<string, string>> {
+  const packs: Record<string, Record<string, string>> = {};
   for (const [absPath, contents] of Object.entries(modules)) {
-    const idx = absPath.indexOf(PACK_ROOT);
+    const idx = absPath.indexOf(PACKS_ROOT);
     if (idx === -1) continue;
-    const rel = absPath.slice(idx + PACK_ROOT.length);
-    map[rel] = JSON.stringify(contents);
+    const rel = absPath.slice(idx + PACKS_ROOT.length); // e.g. "ja/vocabulary/n5.json"
+    const slash = rel.indexOf("/");
+    if (slash === -1) continue;
+    const packId = rel.slice(0, slash);
+    const filePath = rel.slice(slash + 1); // e.g. "vocabulary/n5.json"
+    (packs[packId] ??= {})[filePath] = JSON.stringify(contents);
   }
-  return map;
+  return packs;
 }
 
-/** PackFileReader backed by Vite-bundled JSON — the app's source for the seed pt-br pack. */
+const PACK_FILES = buildPackFileMaps();
+
+/** Every bundled pack id (directory name under packs/), sorted for a stable picker order. */
+export function listBundledPackIds(): string[] {
+  return Object.keys(PACK_FILES).sort();
+}
+
+/** PackFileReader backed by Vite-bundled JSON for one specific pack. */
 export class BundledPackReader implements PackFileReader {
-  private readonly files = buildFileMap();
+  private readonly files: Record<string, string>;
+
+  constructor(packId: string) {
+    const files = PACK_FILES[packId];
+    if (!files) throw new Error(`bundled pack: unknown pack id "${packId}"`);
+    this.files = files;
+  }
 
   async readText(relativePath: string): Promise<string> {
     const text = this.files[relativePath];

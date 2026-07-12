@@ -72,6 +72,10 @@ export interface IProfileRepo {
   create(input: ProfileCreateInput): Promise<LearnerProfile>;
   get(id: string): Promise<LearnerProfile | null>;
   getFirst(): Promise<LearnerProfile | null>;
+  /** Every profile on this account — one per language pack the learner has started (a
+   * Duolingo-style course switcher, not a single-profile MVP anymore). */
+  listAll(): Promise<LearnerProfile[]>;
+  getByPackId(packId: string): Promise<LearnerProfile | null>;
   update(id: string, patch: ProfileUpdate): Promise<LearnerProfile>;
 }
 
@@ -117,10 +121,25 @@ export class ProfileRepo implements IProfileRepo {
     return rows[0] ? rowToProfile(rows[0]) : null;
   }
 
-  /** Convenience for the single-profile MVP: the oldest (and normally only) profile. */
+  /** The oldest profile — used only to detect "has this device ever onboarded at all" before
+   * an active-profile choice exists; not "the" profile anymore now that an account can carry
+   * one per language. */
   async getFirst(): Promise<LearnerProfile | null> {
     const rows = await this.db.all<ProfileRow>(
       "SELECT * FROM learner_profiles ORDER BY created_at, id LIMIT 1",
+    );
+    return rows[0] ? rowToProfile(rows[0]) : null;
+  }
+
+  async listAll(): Promise<LearnerProfile[]> {
+    const rows = await this.db.all<ProfileRow>("SELECT * FROM learner_profiles ORDER BY created_at, id");
+    return rows.map(rowToProfile);
+  }
+
+  async getByPackId(packId: string): Promise<LearnerProfile | null> {
+    const rows = await this.db.all<ProfileRow>(
+      "SELECT * FROM learner_profiles WHERE active_pack_id = ? ORDER BY created_at, id LIMIT 1",
+      [packId],
     );
     return rows[0] ? rowToProfile(rows[0]) : null;
   }

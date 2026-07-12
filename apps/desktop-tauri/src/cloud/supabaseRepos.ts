@@ -110,12 +110,37 @@ class SupabaseProfileRepo implements IProfileRepo {
     return data ? rowToProfile(data) : null;
   }
 
-  /** One profile per account in this model — "first" just means "this user's". */
+  /** The oldest profile on this account — used only to detect "has this account ever
+   * onboarded at all"; an account can carry one profile per language pack now. */
   async getFirst(): Promise<LearnerProfile | null> {
     const { data, error } = await this.client
       .from("learner_profiles")
       .select("*")
       .eq("user_id", this.userId)
+      .order("created_at", { ascending: true })
+      .limit(1)
+      .maybeSingle<ProfileRow>();
+    if (error) throw new Error(`profile fetch failed: ${error.message}`);
+    return data ? rowToProfile(data) : null;
+  }
+
+  async listAll(): Promise<LearnerProfile[]> {
+    const { data, error } = await this.client
+      .from("learner_profiles")
+      .select("*")
+      .eq("user_id", this.userId)
+      .order("created_at", { ascending: true })
+      .returns<ProfileRow[]>();
+    if (error) throw new Error(`profiles fetch failed: ${error.message}`);
+    return (data ?? []).map(rowToProfile);
+  }
+
+  async getByPackId(packId: string): Promise<LearnerProfile | null> {
+    const { data, error } = await this.client
+      .from("learner_profiles")
+      .select("*")
+      .eq("user_id", this.userId)
+      .eq("active_pack_id", packId)
       .order("created_at", { ascending: true })
       .limit(1)
       .maybeSingle<ProfileRow>();
@@ -258,7 +283,6 @@ class SupabaseReviewRepo implements IReviewRepo {
     packId: string,
     itemTypes: ReviewItemType[] = ALL_ITEM_TYPES,
   ): Promise<number> {
-    void profileId;
     const now = new Date();
     const seed = this.scheduler.initialState(now);
     const ts = now.toISOString();
@@ -277,7 +301,7 @@ class SupabaseReviewRepo implements IReviewRepo {
       const { data: existing, error: existingErr } = await this.client
         .from("review_items")
         .select("content_id")
-        .eq("user_id", this.userId)
+        .eq("profile_id", profileId)
         .eq("item_type", itemType)
         .in(
           "content_id",
@@ -293,6 +317,7 @@ class SupabaseReviewRepo implements IReviewRepo {
       const { error: insertErr } = await this.client.from("review_items").insert(
         missing.map((r) => ({
           user_id: this.userId,
+          profile_id: profileId,
           item_type: itemType,
           content_id: r.id,
           difficulty: seed.difficulty,
@@ -320,6 +345,7 @@ class SupabaseReviewRepo implements IReviewRepo {
       .from("review_items")
       .select("*")
       .eq("user_id", this.userId)
+      .eq("profile_id", profileId)
       .or(`due_at.is.null,due_at.lte.${now}`)
       .order("due_at", { ascending: true, nullsFirst: true })
       .limit(limit);
@@ -330,12 +356,12 @@ class SupabaseReviewRepo implements IReviewRepo {
   }
 
   async countDue(profileId: string): Promise<number> {
-    void profileId;
     const now = new Date().toISOString();
     const { count, error } = await this.client
       .from("review_items")
       .select("*", { count: "exact", head: true })
       .eq("user_id", this.userId)
+      .eq("profile_id", profileId)
       .or(`due_at.is.null,due_at.lte.${now}`);
     if (error) throw new Error(`due count failed: ${error.message}`);
     return count ?? 0;
@@ -396,7 +422,7 @@ class SupabaseConversationRepo implements IConversationRepo {
   async create(profileId: string, mode: string, scenario?: string, title?: string): Promise<ConversationRecord> {
     const { data, error } = await this.client
       .from("conversations")
-      .insert({ user_id: this.userId, mode, scenario: scenario ?? null, title: title ?? null })
+      .insert({ user_id: this.userId, profile_id: profileId, mode, scenario: scenario ?? null, title: title ?? null })
       .select()
       .single<{ id: string; mode: string; scenario: string | null; title: string | null; created_at: string }>();
     if (error || !data) throw new Error(`conversation create failed: ${error?.message}`);
@@ -458,6 +484,7 @@ class SupabaseConversationRepo implements IConversationRepo {
       .from("conversations")
       .select("id, mode, scenario, title, created_at")
       .eq("user_id", this.userId)
+      .eq("profile_id", profileId)
       .order("created_at", { ascending: false })
       .returns<{ id: string; mode: string; scenario: string | null; title: string | null; created_at: string }[]>();
     if (error) throw new Error(`conversations fetch failed: ${error.message}`);
@@ -482,13 +509,13 @@ class SupabasePronunciationRepo implements IPronunciationRepo {
     profileId: string,
     input: { targetText: string; transcript?: string; score?: number; audioPath?: string },
   ): Promise<PronunciationAttempt> {
-    void profileId;
     // audioPath is accepted for interface parity but never persisted anywhere in this app —
     // audio bytes stay in-memory only, matching the local implementation's behavior.
     const { data, error } = await this.client
       .from("pronunciation_attempts")
       .insert({
         user_id: this.userId,
+        profile_id: profileId,
         target_text: input.targetText,
         transcript: input.transcript ?? null,
         score: input.score ?? null,
@@ -506,11 +533,11 @@ class SupabasePronunciationRepo implements IPronunciationRepo {
   }
 
   async listRecent(profileId: string, limit = 20): Promise<PronunciationAttempt[]> {
-    void profileId;
     const { data, error } = await this.client
       .from("pronunciation_attempts")
       .select("id, target_text, transcript, score, created_at")
       .eq("user_id", this.userId)
+      .eq("profile_id", profileId)
       .order("created_at", { ascending: false })
       .limit(limit)
       .returns<{ id: string; target_text: string; transcript: string | null; score: number | null; created_at: string }[]>();
