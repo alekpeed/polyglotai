@@ -30,6 +30,7 @@ const THEMES: { value: ThemePreference; label: string; hint: string }[] = [
   { value: "system", label: "Match system", hint: "Follows your OS's light/dark setting." },
   { value: "light", label: "Light", hint: "Always light, regardless of OS setting." },
   { value: "dark", label: "Dark", hint: "Always dark, regardless of OS setting." },
+  { value: "classic", label: "Classic", hint: "The original navy-blue look, before the periwinkle update." },
 ];
 
 export function Settings({ repos, profile, onSaved, onDone }: Props) {
