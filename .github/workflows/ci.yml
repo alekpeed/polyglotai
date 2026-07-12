@@ -23,6 +23,10 @@ jobs:
       - run: pnpm -r test
       - name: Validate pt-br pack (schema, cross-refs, §10.1 volume targets)
         run: pnpm --filter @polyglotai/language-pack-sdk run validate ../../packs/pt-br
+      - name: Validate ja pack (schema, cross-refs, §10.1 volume targets)
+        run: pnpm --filter @polyglotai/language-pack-sdk run validate ../../packs/ja
+      - name: Validate ja-goshuin pack (schema, cross-refs, §10.1 volume targets)
+        run: pnpm --filter @polyglotai/language-pack-sdk run validate ../../packs/ja-goshuin
 
   rust-tests:
     name: Rust migration tests
