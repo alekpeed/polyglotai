@@ -1,24 +1,22 @@
-import { createRepos, type Repos } from "@polyglotai/core-learning";
+import type { Database } from "@polyglotai/core-learning";
 import { loadPack, type LoadedPack } from "@polyglotai/language-pack-sdk";
-import type { LearnerProfile } from "@polyglotai/shared-types";
 import { TauriDatabase } from "../db/tauriDatabase";
 import { BundledPackReader } from "../packs/bundledPackReader";
 
 export interface AppBootstrap {
-  repos: Repos;
+  db: Database;
   pack: LoadedPack;
-  profile: LearnerProfile | null;
 }
 
 /**
- * App startup: open the SQLite DB (migrations run in Rust on load), validate + load the
- * bundled seed pack, wire the repositories, and fetch the existing local profile if any.
- * A null profile means first run → onboarding.
+ * App startup: open the SQLite DB (migrations run in Rust on load) and validate + load the
+ * bundled seed pack. This is the same for every account model — local-only or cloud-synced —
+ * since pack content is always local (see cloud/supabaseRepos.ts). Which Repos implementation
+ * to wire over this `db`, and which profile (if any) is active, is decided in App.tsx based on
+ * auth state.
  */
 export async function bootstrap(): Promise<AppBootstrap> {
   const db = await TauriDatabase.connect();
-  const repos = createRepos(db);
   const pack = await loadPack(new BundledPackReader());
-  const profile = await repos.profiles.getFirst();
-  return { repos, pack, profile };
+  return { db, pack };
 }

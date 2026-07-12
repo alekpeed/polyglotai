@@ -2,6 +2,8 @@ import { useEffect, useState, type FormEvent } from "react";
 import type { Repos } from "@polyglotai/core-learning";
 import type { LearnerProfile, RealSpeechLevel } from "@polyglotai/shared-types";
 import { readAiSettings } from "../ai/aiContext";
+import { signOut } from "../auth/authContext";
+import { supabase } from "../auth/supabaseClient";
 import { getStoredTheme, setTheme, type ThemePreference } from "../theme";
 
 interface Props {
@@ -85,6 +87,18 @@ export function Settings({ repos, profile, onSaved, onDone }: Props) {
             <span className="hint">{THEMES.find((t) => t.value === themePref)?.hint}</span>
           </div>
         </section>
+
+        {supabase && (
+          <section className="settings-card">
+            <div className="settings-card-head">
+              <h3>Account</h3>
+              <p>Signed in — your progress syncs to this account automatically.</p>
+            </div>
+            <button type="button" onClick={() => void signOut()}>
+              Sign out
+            </button>
+          </section>
+        )}
       </div>
 
       <form onSubmit={handleSave}>

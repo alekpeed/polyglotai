@@ -38,11 +38,21 @@
 
   <body>
     <div id="preview-banner">
-      <span>Browser build — your progress is stored in this browser only (not synced elsewhere). A real offline app is coming.</span>
+      <span id="preview-banner-text">Browser build. A real offline app is coming.</span>
       <button id="preview-reset" type="button">Reset local data</button>
     </div>
     <div id="root"></div>
-    <script>
+    <script type="module">
+      // Accounts builds sync learner data to Supabase, so "stored in this browser only" would be
+      // wrong once a build has VITE_SUPABASE_URL/ANON_KEY set — this picks the accurate wording
+      // for whichever build actually shipped (see src/auth/supabaseClient.ts for the same check).
+      const accountsConfigured = Boolean(
+        import.meta.env.VITE_SUPABASE_URL && import.meta.env.VITE_SUPABASE_ANON_KEY,
+      );
+      document.getElementById("preview-banner-text").textContent = accountsConfigured
+        ? "Browser build — sign in and your progress syncs to your account. A real offline app is coming."
+        : "Browser build — your progress is stored in this browser only (not synced elsewhere). A real offline app is coming.";
+
       document.getElementById("preview-reset").addEventListener("click", () => {
         if (!confirm("This clears all progress stored in this browser. Continue?")) return;
         localStorage.removeItem("polyglotai-preview-db-v1");
