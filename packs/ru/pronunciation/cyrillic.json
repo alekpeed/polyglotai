@@ -1,0 +1,99 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "pron.false-friends-consonants",
+    "grapheme": "В, Н, Р, С, У, Х (Latin-lookalike letters)",
+    "ipa": "v, n, r, s, u, x",
+    "description": "The single biggest trap for a first-time reader of Cyrillic: several letters are shaped exactly like Latin letters but represent completely different sounds. В looks like Latin B but says 'v'. Н looks like Latin H but says 'n'. Р looks like Latin P but says 'r' (a tongue-tap r, not English r). С looks like Latin C but says 's'. У looks like Latin Y but says 'oo'. Х looks like Latin X but says a throat-clearing 'kh' (like the ch in German 'Bach'). None of these are related to their Latin lookalikes' sounds — the resemblance is a pure visual coincidence from both alphabets' shared Greek ancestor, and it has to be unlearned deliberately rather than picked up by intuition.",
+    "minimalPairs": [
+      { "a": "рот", "b": "год", "note": "rot (mouth) vs. got — isolating the Р/Р sound (r-tap) from a true Cyrillic г (g)." },
+      { "a": "нас", "b": "нам", "note": "nas (us, accusative) vs. nam (us, dative) — Н is 'n', never the 'h' its shape suggests." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.true-new-letters",
+    "grapheme": "Б, Г, Д, Ж, Л, П, Ф, Ц, Ч, Ш, Щ, Э, Ю, Я (genuinely new shapes)",
+    "ipa": "b, g, d, ʐ, l, p, f, ts, tɕ, ʂ, ɕː, e, ju, ja",
+    "description": "Alongside the false-friend letters, a second group has no Latin-alphabet shape at all, so there's nothing to unlearn — just new shapes to memorize outright. Б=b, Г=g (hard, as in 'go', never soft like in 'gem'), Д=d, Ж=zh (like the 's' in 'pleasure'), Л=l, П=p, Ф=f, Ц=ts (as in 'cats'), Ч=ch, Ш=sh, Щ=a longer, softer 'shch' distinct from Ш, Э=e (as in 'bet'), Ю=yu, Я=ya. These are the letters worth drilling with flashcards first, since false-friend letters trick you into false confidence while these get skipped as 'the hard ones' and then linger unlearned.",
+    "minimalPairs": [
+      { "a": "жар", "b": "шар", "note": "zhar (heat) vs. shar (sphere/balloon) — ж vs ш, both unfamiliar shapes with a genuine sound contrast." },
+      { "a": "цель", "b": "щель", "note": "tsel' (goal) vs. shchel' (crack/slit) — ц vs щ, easy to blur without deliberate practice." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.hard-and-soft-signs",
+    "grapheme": "Ь (soft sign) and Ъ (hard sign)",
+    "ipa": "ʲ (palatalization marker) / ∅ (separator)",
+    "description": "Ь and Ъ are the two Cyrillic letters with no sound of their own — they're pure modifiers. Ь (soft sign) tells you the preceding consonant is palatalized (pronounced with the tongue raised toward the roof of the mouth, roughly like the 'ny' in 'canyon' but folded into a single consonant): мать (mother) ends on a soft т, distinct from a plain т. Ъ (hard sign) is rare in modern Russian and mainly appears to block a preceding consonant from softening before an iotated vowel across a prefix boundary (объявление, 'announcement'). Neither letter is ever the first letter of a word.",
+    "minimalPairs": [
+      { "a": "мат", "b": "мать", "note": "mat (mat/checkmate) vs. mat' (mother) — the soft sign alone changes the word." },
+      { "a": "брат", "b": "брать", "note": "brat (brother) vs. brat' (to take) — same pattern, noun vs. infinitive verb." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.iotated-vowels",
+    "grapheme": "Я, Ё, Ю, Е (iotated vowels)",
+    "ipa": "ja, jo, ju, je (word-initial/after vowel) — a, o, u, e + palatalization (after a consonant)",
+    "description": "Four vowel letters do double duty depending on what comes before them. At the start of a word or after another vowel, they add a 'y' glide: я=ya, ё=yo, ю=yu, е=ye (яблоко 'apple' starts 'ya-'). After a consonant, they instead signal that the consonant is palatalized (softened) and the vowel itself is plain: тётя ('aunt') — the т is softened by ё, but the vowel is just 'o'. This is the mechanism behind most palatalization in Russian, more often than the soft sign ь itself.",
+    "minimalPairs": [
+      { "a": "мал", "b": "мял", "note": "mal (small, short form) vs. myal (crumpled, past tense) — я softens the preceding consonant rather than adding a full 'ya'." },
+      { "a": "нос", "b": "нёс", "note": "nos (nose) vs. nyos (carried, past tense) — ё softens the н and shifts the vowel." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.y-vs-i",
+    "grapheme": "Ы vs. И",
+    "ipa": "ɨ vs. i",
+    "description": "Ы is a vowel sound English simply doesn't have — pronounced with the tongue pulled back and the lips unrounded, roughly between the 'i' in 'bit' and the 'u' in 'put' but further back in the mouth. И is the vowel closer to English 'ee'. The two are never interchangeable and often the only difference between two real words, so it's worth deliberately drilling ты (ty) against ти-type syllables rather than letting them blur into one 'i' sound the way an English ear defaults to.",
+    "minimalPairs": [
+      { "a": "мыл", "b": "мил", "note": "myl (washed) vs. mil (dear, short form) — ы vs. и is the entire difference." },
+      { "a": "ты", "b": "ти", "note": "ty (you) vs. the syllable 'ti' as it would sound in a loanword — isolates the back/unrounded ы against front и." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.akanye-reduction",
+    "grapheme": "unstressed о and а (akanye)",
+    "ipa": "ə / ɐ (reduced) vs. o / a (stressed)",
+    "description": "Word stress falls on exactly one syllable per word, and every unstressed о reduces toward an 'a' sound (a pattern called akanye) — молоко ('milk') is spelled with three о's but pronounced roughly 'malakó', with only the final, stressed о kept as a full 'o'. Unstressed а reduces similarly, though less drastically. This is not optional or regional — it's standard educated Moscow pronunciation, and reading о as 'o' in every position is the single most common way a learner's Russian sounds foreign even with perfect grammar.",
+    "minimalPairs": [
+      { "a": "молоко (as written)", "b": "malakó (as said)", "note": "Same word — the spelling keeps three о's for historical/grammatical reasons, but only the stressed syllable is a true 'o'." },
+      { "a": "вода", "b": "vadá", "note": "The unstressed о in вода reduces fully to 'a' — vadá, not vodá." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.word-stress",
+    "grapheme": "word stress (unmarked in normal text)",
+    "ipa": "ˈ (stress, position not predictable from spelling)",
+    "description": "Russian stress is not shown in normal writing (dictionaries and textbooks add an acute accent — до́ма — purely as a learning aid) and it isn't predictable from spelling the way, say, Spanish stress usually is. It can fall on any syllable, can shift between forms of the same word, and changes the vowel reduction pattern around it (see akanye) as well as, occasionally, the meaning: за́мок ('castle') vs. замо́к ('lock') are spelled identically and differ only in stress. Because so much else (which о's reduce, which vowel is 'true') depends on knowing the stress, this pack marks it with an accent in every romanization.",
+    "minimalPairs": [
+      { "a": "за́мок", "b": "замо́к", "note": "zámok (castle) vs. zamók (lock) — identical spelling, stress alone carries the meaning." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.final-devoicing",
+    "grapheme": "voiced consonants at the end of a word",
+    "ipa": "b→p, v→f, g→k, d→t, zh→sh, z→s (word-finally)",
+    "description": "A voiced consonant (б, в, г, д, ж, з) at the very end of a word is devoiced in pronunciation — друг ('friend') is spelled with a г but said 'druk', with a 'k' sound, because word-final г devoices to k. This is a completely regular, exceptionless rule of standard Russian, not a special case for any one word — any word ending in one of these six letters devoices the same way.",
+    "minimalPairs": [
+      { "a": "друг", "b": "друк (as pronounced)", "note": "The spelling keeps г, but the actual sound at word-end is a plain 'k'." },
+      { "a": "хлеб", "b": "khlyep (as pronounced)", "note": "Final б devoices to 'p' — the written б never surfaces as 'b' at the end of a word." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.gogo-genitive",
+    "grapheme": "-ого / -его endings (adjective/pronoun genitive)",
+    "ipa": "-ovo / -yevo (г pronounced as в)",
+    "description": "One specific, very common irregularity: the genitive singular masculine/neuter adjective and pronoun ending, spelled -ого or -его, is pronounced with a 'v' sound in place of the г — его ('his/him') sounds like 'yevó', not 'yegó'. This is a fossil from Old Church Slavonic that survived only in this one grammatical ending, unlike the fully regular final-devoicing rule above; it has to be learned as a specific exception rather than derived from a general pattern.",
+    "minimalPairs": [
+      { "a": "его", "b": "yevó (as pronounced)", "note": "The most common word affected by this exception — 'his/him', not 'yegó'." }
+    ]
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "gram.gender",
+    "title": "Noun gender — masculine, feminine, neuter",
+    "cefr": "A1",
+    "explanationMd": "Every Russian noun has a grammatical gender, and the ending almost always gives it away in the dictionary form. **Masculine**: ends in a consonant (дом, друг) or й (чай). **Feminine**: ends in а/я (сестра, семья). **Neuter**: ends in о/е (молоко, метро). Gender matters constantly — adjectives, past-tense verbs, and pronouns all change to agree with it, so it's worth fixing in memory from the very first noun you learn, not something to patch in later.",
+    "examples": [
+      { "text": "Это большой дом.", "romaji": "Eto bal'shóy dom.", "translation": "This is a big house. (masculine agreement: большой)" },
+      { "text": "Это большая семья.", "romaji": "Eto bal'sháya sem'yá.", "translation": "This is a big family. (feminine agreement: большая)" }
+    ],
+    "commonErrors": [
+      { "wrong": "большой семья", "right": "большая семья", "note": "семья is feminine (ends in я), so the adjective must take the feminine ending -ая, not the masculine большой." }
+    ],
+    "drills": [
+      { "prompt": "What gender is друг (based on its ending)?", "answer": "Masculine — ends in a consonant." },
+      { "prompt": "What gender is школа?", "answer": "Feminine — ends in а." }
+    ],
+    "relatedVocabulary": ["vocab.dom", "vocab.semya", "vocab.moloko", "vocab.drug", "vocab.shkola"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.no-be-verb",
+    "title": "Present tense has no 'to be'",
+    "cefr": "A1",
+    "explanationMd": "Russian simply drops the present-tense 'to be' — there's no equivalent of 'am/is/are' to insert. Я студент means 'I [am a] student', word for word 'I student'. A dash (—) often stands in for it in writing when both sides are nouns: Москва — столица России ('Moscow is the capital of Russia'). This isn't an abbreviation of anything; the verb genuinely isn't there in the present tense (it reappears as был/была/было in the past and будет in the future).",
+    "examples": [
+      { "text": "Я студент.", "romaji": "Ya studyént.", "translation": "I am a student." },
+      { "text": "Она врач.", "romaji": "Aná vrach.", "translation": "She is a doctor." }
+    ],
+    "commonErrors": [
+      { "wrong": "Я есть студент. (inserting есть as if it were 'am')", "right": "Я студент.", "note": "есть as an existential 'there is' survives in a few fixed patterns (У меня есть...), but not as a general-purpose 'to be' linking a subject to a noun/adjective." }
+    ],
+    "drills": [
+      { "prompt": "Translate: 'He is a friend.'", "answer": "Он друг." },
+      { "prompt": "Translate: 'This is water.'", "answer": "Это вода." }
+    ],
+    "relatedVocabulary": ["vocab.ya", "vocab.on", "vocab.ona", "vocab.drug"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.case-system-overview",
+    "title": "The six-case system — what a 'case' actually does",
+    "cefr": "A1",
+    "explanationMd": "Russian nouns, pronouns, and adjectives change their endings depending on their grammatical role in the sentence — this is the case system, and it's the single biggest structural difference from English. There are six cases: **nominative** (the subject, dictionary form), **genitive** (possession/negation, roughly 'of'), **dative** (indirect object, roughly 'to'), **accusative** (direct object), **instrumental** (the means, roughly 'by/with'), and **prepositional** (location, always after certain prepositions). Word order in Russian is flexible precisely because the case endings — not position in the sentence — mark who's doing what to whom. This pack introduces the prepositional (for location) and genitive (for negation) first, since they carry the most everyday weight; the rest are follow-up work.",
+    "examples": [
+      { "text": "Это Анна.", "romaji": "Eto Ánna.", "translation": "This is Anna. (nominative — the base/dictionary form)" },
+      { "text": "У Анны есть брат.", "romaji": "U Ánny yest' brat.", "translation": "Anna has a brother. (genitive: Анны, not Анна)" }
+    ],
+    "commonErrors": [
+      { "wrong": "У Анна есть брат. (leaving the name in nominative)", "right": "У Анны есть брат.", "note": "After у ('by/at', used for possession), the noun must switch to genitive — nominative Анна isn't grammatical here." }
+    ],
+    "drills": [
+      { "prompt": "How many grammatical cases does Russian have?", "answer": "Six: nominative, genitive, dative, accusative, instrumental, prepositional." }
+    ],
+    "relatedVocabulary": ["vocab.semya", "vocab.brat", "vocab.sestra"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.prepositional-case",
+    "title": "Prepositional case — saying where something is",
+    "cefr": "A1",
+    "explanationMd": "To say something is located somewhere, use **в** ('in') or **на** ('on/at') plus the noun in the **prepositional case** — for most nouns, that means adding -е to the stem. дом → в доме́ ('in the house'), Москва → в Москве́ ('in Moscow'), работа → на рабо́те ('at work'). This case is called 'prepositional' precisely because it only ever appears after a preposition — в and на are its two most common triggers at this level. в generally means inside an enclosed space; на is for surfaces, events, and a set list of exceptions (на работе, на почте) that are best memorized as vocabulary.",
+    "examples": [
+      { "text": "Я живу в Москве.", "romaji": "Ya zhivú v Maskvyé.", "translation": "I live in Moscow." },
+      { "text": "Она на работе.", "romaji": "Aná na rabótye.", "translation": "She's at work." }
+    ],
+    "commonErrors": [
+      { "wrong": "Я живу в Москва.", "right": "Я живу в Москве.", "note": "The noun after в must take the prepositional ending -е — leaving it in nominative (Москва) is a common beginner slip." }
+    ],
+    "drills": [
+      { "prompt": "'in the house' — дом → в ___?", "answer": "в доме" },
+      { "prompt": "'at work' — работа → на ___?", "answer": "на работе" }
+    ],
+    "relatedVocabulary": ["vocab.dom", "vocab.rabota", "vocab.zhit", "vocab.shkola"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.genitive-negation",
+    "title": "Genitive case — negating 'there is' with нет",
+    "cefr": "A1",
+    "explanationMd": "'There isn't/aren't any' uses **нет** plus the noun in the **genitive case** — the mirror image of the affirmative у меня есть pattern from the case-system overview. У меня есть брат ('I have a brother') negates to У меня нет бра́та ('I don't have a brother') — брат becomes бра́та, not just tacking нет onto the nominative. This genitive-after-negation pattern is extremely common and worth internalizing early, since it comes up constantly in daily complaints and simple statements alike.",
+    "examples": [
+      { "text": "У меня нет времени.", "romaji": "U menyá nyet vryémyeni.", "translation": "I don't have (any) time." },
+      { "text": "Здесь нет воды.", "romaji": "Zdyes' nyet vadý.", "translation": "There's no water here." }
+    ],
+    "commonErrors": [
+      { "wrong": "У меня нет брат.", "right": "У меня нет брата.", "note": "нет requires the following noun in genitive — брат must become брата, the same way Анна became Анны after у." }
+    ],
+    "drills": [
+      { "prompt": "'no water' — вода → нет ___?", "answer": "нет воды" }
+    ],
+    "relatedVocabulary": ["vocab.net", "vocab.voda", "vocab.brat"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.present-tense-1st-conj",
+    "title": "First conjugation present tense (-е/-ю verbs)",
+    "cefr": "A1",
+    "explanationMd": "Most Russian verbs fall into one of two present-tense patterns. First-conjugation verbs (infinitives typically ending in -ать/-ять, like знать and читать) use these endings: я -ю/-у, ты -ешь, он/она -ет, мы -ем, вы -ете, они -ют/-ут. знать ('to know') conjugates: я зна́ю, ты зна́ешь, он зна́ет, мы зна́ем, вы зна́ете, они зна́ют. The stem (зна-) stays constant — only the ending changes, which makes this pattern genuinely predictable once you've seen it a few times.",
+    "examples": [
+      { "text": "Ты зна́ешь его?", "romaji": "Ty znáyesh' yevó?", "translation": "Do you know him?" },
+      { "text": "Мы понима́ем.", "romaji": "My panimáyem.", "translation": "We understand." }
+    ],
+    "commonErrors": [
+      { "wrong": "он знаю", "right": "он знает", "note": "-ю is the я-ending only; the он/она-form always takes -ет in first conjugation." }
+    ],
+    "drills": [
+      { "prompt": "понимать (to understand): я поним__?", "answer": "понимаю" },
+      { "prompt": "понимать: они поним__?", "answer": "понимают" }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.znat-conjugation",
+        "title": "знать across all persons",
+        "pattern": "{slot} зна́{ending}",
+        "steps": [
+          { "prompt": "я зна___", "answer": "я знаю", "note": "я → -ю" },
+          { "prompt": "ты зна___", "answer": "ты знаешь", "note": "ты → -ешь" },
+          { "prompt": "он зна___", "answer": "он знает", "note": "он/она → -ет" },
+          { "prompt": "мы зна___", "answer": "мы знаем", "note": "мы → -ем" },
+          { "prompt": "они зна___", "answer": "они знают", "note": "они → -ют" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["vocab.znat", "vocab.ponimat"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.present-tense-2nd-conj",
+    "title": "Second conjugation present tense (-и verbs)",
+    "cefr": "A1",
+    "explanationMd": "Second-conjugation verbs (infinitives typically ending in -ить, like говорить) use a different ending set: я -ю/-у, ты -ишь, он/она -ит, мы -им, вы -ите, они -ят/-ат. говорить conjugates: я говорю́, ты говори́шь, он говори́т, мы говори́м, вы говори́те, они говоря́т. The я and они forms often look similar to first conjugation at a glance, but the ты/он/мы/вы middle forms (-ишь/-ит/-им/-ите) are the reliable tell for which pattern a verb follows.",
+    "examples": [
+      { "text": "Вы говори́те по-английски?", "romaji": "Vy gavaríte pa-angliyski?", "translation": "Do you speak English?" },
+      { "text": "Она ви́дит меня.", "romaji": "Aná vídit menyá.", "translation": "She sees me." }
+    ],
+    "commonErrors": [
+      { "wrong": "он говорет", "right": "он говорит", "note": "Second conjugation он/она-forms take -ит, not the first-conjugation -ет." }
+    ],
+    "drills": [
+      { "prompt": "говорить: ты говор__?", "answer": "говоришь" },
+      { "prompt": "видеть: мы вид__?", "answer": "видим" }
+    ],
+    "relatedVocabulary": ["vocab.govorit", "vocab.videt"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.adjective-agreement",
+    "title": "Adjective agreement with noun gender",
+    "cefr": "A1",
+    "explanationMd": "An adjective's ending must match the gender (and later, case) of the noun it describes. The dictionary/masculine form typically ends in -ый/-ий/-ой; feminine swaps to -ая/-яя; neuter to -ое/-ее. большой дом (m), большая семья (f), — there's no neuter example among this pack's nouns yet, but the pattern is большое молоко-type endings for neuter nouns. Get in the habit of checking a noun's gender before reaching for an adjective ending, the same reflex as checking subject-verb agreement in English.",
+    "examples": [
+      { "text": "Хороший друг.", "romaji": "Kharóshiy druk.", "translation": "A good friend. (masculine: хороший)" },
+      { "text": "Хорошая работа.", "romaji": "Kharósháya rabóta.", "translation": "A good job. (feminine: хорошая)" }
+    ],
+    "commonErrors": [
+      { "wrong": "хороший работа", "right": "хорошая работа", "note": "работа is feminine, so the adjective needs the feminine ending -ая, not masculine -ий." }
+    ],
+    "drills": [
+      { "prompt": "большой + семья → ?", "answer": "большая семья" },
+      { "prompt": "маленький + дом → ?", "answer": "маленький дом" }
+    ],
+    "relatedVocabulary": ["vocab.khoroshiy", "vocab.bolshoy", "vocab.malenkiy", "vocab.rabota", "vocab.drug"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.questions-intonation",
+    "title": "Yes/no questions — intonation, not word order",
+    "cefr": "A1",
+    "explanationMd": "Russian doesn't invert word order or add a helper word to turn a statement into a yes/no question the way English does with 'do/does'. Ты говоришь по-русски ('you speak Russian') becomes a question purely through rising intonation: Ты говоришь по-русски? ('do you speak Russian?'). In writing, only the question mark shows it changed. Question-word questions (что, где, кто, когда, как, почему) go at the front of the sentence, much like English, and don't need any additional marker either.",
+    "examples": [
+      { "text": "Ты говоришь по-русски?", "romaji": "Ty gavarísh' pa-rússki?", "translation": "Do you speak Russian?" },
+      { "text": "Где ты живёшь?", "romaji": "Gdye ty zhivyósh'?", "translation": "Where do you live?" }
+    ],
+    "commonErrors": [
+      { "wrong": "Do you speak Russian? → До ты говоришь по-русски? (inventing a 'do' word)", "right": "Ты говоришь по-русски?", "note": "There's no equivalent of English 'do' to insert — rising intonation alone marks the question." }
+    ],
+    "drills": [
+      { "prompt": "Turn into a question: Она понимает.", "answer": "Она понимает? (same words, rising intonation)" }
+    ],
+    "relatedVocabulary": ["vocab.chto", "vocab.gde", "vocab.kto", "vocab.kogda", "vocab.pochemu", "vocab.govorit"]
+  }
+]

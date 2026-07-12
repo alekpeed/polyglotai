@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "ru",
+  "name": "Russian",
+  "languageCode": "ru-RU",
+  "packVersion": "0.1.0",
+  "basePack": null,
+  "authors": ["PolyglotAI"],
+  "license": "proprietary",
+  "dialects": [{ "id": "ru-RU-standard", "name": "Standard (Moscow)" }],
+  "defaultDialect": "ru-RU-standard",
+  "cefrRange": ["A1", "A1"],
+  "featureFlags": { "slang": false, "profanity": false },
+  "contents": {
+    "vocabulary": ["vocabulary/a1-core.json"],
+    "grammar": ["grammar/core.json"],
+    "pronunciation": ["pronunciation/cyrillic.json"],
+    "dialogues": ["dialogues/general.json"]
+  }
+}

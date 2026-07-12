@@ -1,0 +1,85 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "dlg.self-introduction",
+    "scenario": "Meeting someone for the first time",
+    "speakers": [
+      { "id": "a", "name": "Анна", "role": "new acquaintance" },
+      { "id": "b", "name": "You" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "a", "text": "Здравствуйте! Меня зовут Анна. А как вас зовут?", "romaji": "Zdrávstvuyte! Menyá zavút Ánna. A kak vas zavút?" },
+      { "speakerId": "b", "text": "Здравствуйте! Меня зовут Джон. Очень приятно.", "romaji": "Zdrávstvuyte! Menyá zavút Dzhon. Óchen' priyátno." },
+      { "speakerId": "a", "text": "Очень приятно. Вы говорите по-русски?", "romaji": "Óchen' priyátno. Vy gavaríte pa-rússki?" },
+      { "speakerId": "b", "text": "Да, немного. Я живу в Москве.", "romaji": "Da, nyemnógo. Ya zhivú v Maskvyé." },
+      { "speakerId": "a", "text": "Отлично! До свидания.", "romaji": "Atlíchno! Da svidániya." },
+      { "speakerId": "b", "text": "До свидания!", "romaji": "Da svidániya!" }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "Hello! My name is Anna. And what's your name?" },
+      { "speakerId": "b", "text": "Hello! My name is John. Nice to meet you." },
+      { "speakerId": "a", "text": "Nice to meet you too. Do you speak Russian?" },
+      { "speakerId": "b", "text": "Yes, a little. I live in Moscow." },
+      { "speakerId": "a", "text": "Great! Goodbye." },
+      { "speakerId": "b", "text": "Goodbye!" }
+    ],
+    "keyVocabulary": ["vocab.zdravstvuyte", "vocab.zvat", "vocab.govorit", "vocab.zhit", "vocab.do-svidaniya"],
+    "grammarNotes": "Меня зовут (literally 'they call me') is the standard way to give your name — there's no direct verb 'to be named' the way English has. Note вы here, not ты — a first meeting between adults defaults to the formal/polite form."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.cafe-order",
+    "scenario": "Ordering tea at a café",
+    "speakers": [
+      { "id": "staff", "name": "Staff", "role": "cafe staff" },
+      { "id": "customer", "name": "You" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "staff", "text": "Здравствуйте! Что вы хотите?", "romaji": "Zdrávstvuyte! Shto vy khatíte?" },
+      { "speakerId": "customer", "text": "Здравствуйте. Чай, пожалуйста.", "romaji": "Zdrávstvuyte. Chay, pazhálusta." },
+      { "speakerId": "staff", "text": "Хорошо. Что-нибудь ещё?", "romaji": "Kharashó. Shto-nibúd' yeshchó?" },
+      { "speakerId": "customer", "text": "Нет, спасибо. Это всё.", "romaji": "Nyet, spasíbo. Eto vsyo." },
+      { "speakerId": "staff", "text": "Пожалуйста, вот ваш чай.", "romaji": "Pazhálusta, vot vash chay." },
+      { "speakerId": "customer", "text": "Спасибо большое!", "romaji": "Spasíbo bal'shóye!" }
+    ],
+    "translation": [
+      { "speakerId": "staff", "text": "Hello! What would you like?" },
+      { "speakerId": "customer", "text": "Hello. Tea, please." },
+      { "speakerId": "staff", "text": "Okay. Anything else?" },
+      { "speakerId": "customer", "text": "No, thank you. That's all." },
+      { "speakerId": "staff", "text": "Here you go, here's your tea." },
+      { "speakerId": "customer", "text": "Thank you very much!" }
+    ],
+    "keyVocabulary": ["vocab.zdravstvuyte", "vocab.khotet", "vocab.chay", "vocab.pozhaluysta", "vocab.net", "vocab.spasibo"],
+    "grammarNotes": "Пожалуйста does double duty in this exchange — 'please' when the customer orders, and 'here you go' when the staff hands the tea over, the same word covering both a request and a presenting gesture."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.asking-directions",
+    "scenario": "Asking a passerby for directions to the metro",
+    "speakers": [
+      { "id": "a", "name": "You" },
+      { "id": "b", "name": "Passerby" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "a", "text": "Извините, где метро?", "romaji": "Izviníte, gdye myetró?" },
+      { "speakerId": "b", "text": "Метро там, недалеко.", "romaji": "Myetró tam, nyedalyekó." },
+      { "speakerId": "a", "text": "Спасибо большое!", "romaji": "Spasíbo bal'shóye!" },
+      { "speakerId": "b", "text": "Пожалуйста!", "romaji": "Pazhálusta!" }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "Excuse me, where's the metro?" },
+      { "speakerId": "b", "text": "The metro's over there, not far." },
+      { "speakerId": "a", "text": "Thank you very much!" },
+      { "speakerId": "b", "text": "You're welcome!" }
+    ],
+    "keyVocabulary": ["vocab.izvinite", "vocab.gde", "vocab.metro", "vocab.spasibo", "vocab.pozhaluysta"],
+    "grammarNotes": "там ('there/over there') plus a simple description is the natural, minimal way to give directions at this level — full prepositional-case direction phrases (turn left, go straight) are a follow-up grammar point, not covered yet in this pilot."
+  }
+]
