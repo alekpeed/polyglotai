@@ -21,12 +21,14 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm -r typecheck
       - run: pnpm -r test
-      - name: Validate pt-br pack (schema, cross-refs, §10.1 volume targets)
-        run: pnpm --filter @polyglotai/language-pack-sdk run validate ../../packs/pt-br
-      - name: Validate ja pack (schema, cross-refs, §10.1 volume targets)
-        run: pnpm --filter @polyglotai/language-pack-sdk run validate ../../packs/ja
-      - name: Validate ja-goshuin pack (schema, cross-refs, §10.1 volume targets)
-        run: pnpm --filter @polyglotai/language-pack-sdk run validate ../../packs/ja-goshuin
+      - name: Validate every content pack (schema, cross-refs, §10.1 volume targets)
+        run: |
+          for pack in packs/*/; do
+            id="$(basename "$pack")"
+            echo "::group::Validate $id"
+            pnpm --filter @polyglotai/language-pack-sdk run validate "../../packs/$id"
+            echo "::endgroup::"
+          done
 
   rust-tests:
     name: Rust migration tests
