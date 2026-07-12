@@ -1,0 +1,186 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "fbdlg.watching-at-the-bar",
+    "scenario": "Meeting friends at a bar to watch a match",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "marcos", "name": "Marcos", "role": "friend" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "marcos", "text": "E aí! Chegou na hora certa, o jogo já vai começar." },
+      { "speakerId": "you", "text": "Que bom! Onde a gente senta?" },
+      { "speakerId": "marcos", "text": "Ali perto da TV, dá pra ver a escalação direitinho." },
+      { "speakerId": "you", "text": "Beleza. Vamos pedir uma cerveja antes?" },
+      { "speakerId": "marcos", "text": "Vamos sim, bora torcer!" }
+    ],
+    "translation": [
+      { "speakerId": "marcos", "text": "Hey! You got here right on time, the match is about to start." },
+      { "speakerId": "you", "text": "Great! Where should we sit?" },
+      { "speakerId": "marcos", "text": "Over there near the TV, you can see the lineup nice and clear." },
+      { "speakerId": "you", "text": "Cool. Should we order a beer first?" },
+      { "speakerId": "marcos", "text": "Yeah, let's do it, let's go cheer!" }
+    ],
+    "keyVocabulary": ["fbvocab.escalacao", "fbvocab.bora-torcer"],
+    "grammarNotes": "'Beleza' is an all-purpose informal 'okay/cool', extremely common in casual Brazilian speech."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fbdlg.reacting-to-a-goal",
+    "scenario": "Reacting to a goal in real time",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "julia", "name": "Júlia", "role": "friend" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "julia", "text": "Olha, olha, vai, vai, vai!" },
+      { "speakerId": "you", "text": "GOOOOOLLL!!!" },
+      { "speakerId": "julia", "text": "Isso aí! Que golaço!" },
+      { "speakerId": "you", "text": "Foi um gol de placa mesmo, sensacional." },
+      { "speakerId": "julia", "text": "Esse artilheiro não para de marcar." }
+    ],
+    "translation": [
+      { "speakerId": "julia", "text": "Look, look, go, go, go!" },
+      { "speakerId": "you", "text": "GOOOOOAL!!!" },
+      { "speakerId": "julia", "text": "That's it! What an amazing goal!" },
+      { "speakerId": "you", "text": "That really was a postcard goal, sensational." },
+      { "speakerId": "julia", "text": "This top scorer doesn't stop scoring." }
+    ],
+    "keyVocabulary": ["fbvocab.vai-vai-vai", "fbvocab.gooool", "fbvocab.isso-ai", "fbvocab.gol-de-placa", "fbvocab.artilheiro"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fbdlg.arguing-about-the-referee",
+    "scenario": "Lightly arguing about a referee's call",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "marcos", "name": "Marcos", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Isso foi falta clara! O juiz não viu?" },
+      { "speakerId": "marcos", "text": "Não foi falta, não. Foi só um empurrãozinho." },
+      { "speakerId": "you", "text": "Empurrãozinho? Ele quase caiu! Devia ser cartão amarelo." },
+      { "speakerId": "marcos", "text": "Calma, calma. O bandeirinha também não marcou nada." },
+      { "speakerId": "you", "text": "Vai por impedimento na próxima, aposto." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "That was a clear foul! Didn't the referee see it?" },
+      { "speakerId": "marcos", "text": "It wasn't a foul. It was just a little push." },
+      { "speakerId": "you", "text": "A little push? He almost fell! That should be a yellow card." },
+      { "speakerId": "marcos", "text": "Easy, easy. The linesman didn't flag anything either." },
+      { "speakerId": "you", "text": "He'll get it wrong on an offside call next, I bet." }
+    ],
+    "keyVocabulary": ["fbvocab.falta", "fbvocab.juiz", "fbvocab.cartao-amarelo", "fbvocab.bandeirinha", "fbvocab.impedimento"],
+    "grammarNotes": "Friendly disagreement over a call is a normal, almost expected part of watching football together in Brazil — see the culture notes on expressiveness."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fbdlg.asking-which-team",
+    "scenario": "Small talk: asking someone which team they support",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "ana", "name": "Ana", "role": "new acquaintance" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "ana", "text": "Você gosta de futebol?" },
+      { "speakerId": "you", "text": "Gosto bastante! Qual é o seu time?" },
+      { "speakerId": "ana", "text": "Sou do Palmeiras, e você?" },
+      { "speakerId": "you", "text": "Sou do Flamengo." },
+      { "speakerId": "ana", "text": "Ah, então a gente é rival!" }
+    ],
+    "translation": [
+      { "speakerId": "ana", "text": "Do you like football?" },
+      { "speakerId": "you", "text": "I like it a lot! What team do you support?" },
+      { "speakerId": "ana", "text": "I support Palmeiras, and you?" },
+      { "speakerId": "you", "text": "I support Flamengo." },
+      { "speakerId": "ana", "text": "Ah, so we're rivals!" }
+    ],
+    "keyVocabulary": ["fbvocab.qual-e-o-seu-time", "fbvocab.sou-do", "fbvocab.rival"],
+    "grammarNotes": "This exchange is treated almost like asking where someone is from — see the culture notes on torcida as identity."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fbdlg.planning-the-classico",
+    "scenario": "Planning to watch a clássico together",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "julia", "name": "Júlia", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "julia", "text": "Domingo tem clássico, você vai assistir?" },
+      { "speakerId": "you", "text": "Vou! Vamos assistir ao jogo juntos?" },
+      { "speakerId": "julia", "text": "Vamos! Na sua casa ou no bar?" },
+      { "speakerId": "you", "text": "Bar é melhor, a torcida lá é animada." },
+      { "speakerId": "julia", "text": "Combinado. Vai ter gente com a camisa do time inteira." }
+    ],
+    "translation": [
+      { "speakerId": "julia", "text": "There's a big rivalry match on Sunday, are you going to watch?" },
+      { "speakerId": "you", "text": "I am! Should we watch the match together?" },
+      { "speakerId": "julia", "text": "Let's do it! At your place or at the bar?" },
+      { "speakerId": "you", "text": "The bar is better, the crowd there is lively." },
+      { "speakerId": "julia", "text": "Deal. There'll be people decked out in the team jersey." }
+    ],
+    "keyVocabulary": ["fbvocab.classico", "fbvocab.assistir-ao-jogo", "fbvocab.torcida", "fbvocab.camisa"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fbdlg.reacting-to-a-big-win",
+    "scenario": "Reacting the next day to a big win",
+    "speakers": [
+      { "id": "marcos", "name": "Marcos", "role": "friend" },
+      { "id": "you", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "marcos", "text": "E aí, viu o jogo ontem? Que jogaço!" },
+      { "speakerId": "you", "text": "Vi sim! A gente venceu por 3 a 0, foi lindo." },
+      { "speakerId": "marcos", "text": "O time jogou muito. Já pode se dizer campeão." },
+      { "speakerId": "you", "text": "Calma, ainda falta o campeonato inteiro. Mas hoje o bar tava um caos de tanta festa." }
+    ],
+    "translation": [
+      { "speakerId": "marcos", "text": "Hey, did you see the match yesterday? What a great match!" },
+      { "speakerId": "you", "text": "I sure did! We won 3-0, it was beautiful." },
+      { "speakerId": "marcos", "text": "The team played really well. You could already call them champions." },
+      { "speakerId": "you", "text": "Easy, there's still the whole championship left. But today the bar was chaos from all the celebrating." }
+    ],
+    "keyVocabulary": ["fbvocab.que-jogaco", "fbvocab.vencer", "fbvocab.time", "fbvocab.campeao", "fbvocab.campeonato"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fbdlg.reacting-to-a-loss",
+    "scenario": "Reacting the next day to a painful loss",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "ana", "name": "Ana", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Nem fala nada do jogo de ontem, por favor." },
+      { "speakerId": "ana", "text": "Foi tão ruim assim? Eu nem vi." },
+      { "speakerId": "you", "text": "A gente perdeu de novo. Empatava até que era melhor que aquilo." },
+      { "speakerId": "ana", "text": "Poxa, sinto muito. O goleiro pelo menos jogou bem?" },
+      { "speakerId": "you", "text": "Jogou, mas o resto do time não ajudou nada." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Please don't even mention yesterday's match." },
+      { "speakerId": "ana", "text": "Was it that bad? I didn't even watch." },
+      { "speakerId": "you", "text": "We lost again. Even a draw would've been better than that." },
+      { "speakerId": "ana", "text": "Aw, I'm sorry. Did the goalkeeper at least play well?" },
+      { "speakerId": "you", "text": "He did, but the rest of the team didn't help at all." }
+    ],
+    "keyVocabulary": ["fbvocab.perder", "fbvocab.empatar", "fbvocab.goleiro", "fbvocab.time"],
+    "grammarNotes": "'Poxa' is a mild, all-purpose exclamation of disappointment or sympathy — much softer than any profanity, and works in almost any casual context."
+  }
+]

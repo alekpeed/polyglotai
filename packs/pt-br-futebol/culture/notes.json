@@ -1,0 +1,51 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "fbculture.futebol-in-daily-life",
+    "title": "Football isn't a hobby here, it's the background noise of daily life",
+    "bodyMd": "In Brazil, football is less a pastime and more a shared language. It comes up at the bakery counter, in the elevator, at the start of a work meeting, in a taxi — anywhere two strangers need something easy and safe to talk about. You don't need to be a fan yourself to be expected to have an opinion on last night's match; even a polite \"não vi o jogo, como foi?\" (\"I didn't see the match, how was it?\") is enough to keep a conversation going.\n\nBars fill up before big matches the way they might for a holiday elsewhere, and it's completely normal for a workplace to informally end early or go quiet during a nationally important game. Learning a handful of football phrases will get you further in casual small talk than almost any other single topic.",
+    "tags": ["essentials", "social"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fbculture.torcida-as-identity",
+    "title": "Your torcida is treated like part of your identity",
+    "bodyMd": "Asking \"qual é o seu time?\" (\"what team do you support?\") is one of the most common questions you'll get as a newcomer, often right alongside \"where are you from?\" and \"what do you do?\" The team someone supports (their torcida) is usually inherited from family, tied to the city or region they grew up in, and rarely changes over a lifetime — switching teams as an adult is viewed with the same suspicion as switching your nationality.\n\nBecause of this, the question is not idle curiosity. The answer tells people something about your background and gives them an immediate, friendly way to place you — as a rival, an ally, or simply someone to rib good-naturedly for the rest of the conversation.",
+    "tags": ["essentials", "social", "identity"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fbculture.major-rivalries",
+    "title": "Rivalries are regional pride, not just sport",
+    "bodyMd": "Brazil's biggest rivalries (clássicos) map onto real geographic and social history, which is why they matter far beyond the scoreline. In São Paulo, Corinthians vs. Palmeiras and Corinthians vs. São Paulo carry old class and community associations going back over a century. In Rio de Janeiro, Flamengo vs. Fluminense and Flamengo vs. Vasco da Gama are similarly loaded with neighborhood and historical identity. Other cities have their own fierce local pairs, like Grêmio vs. Internacional in Porto Alegre.\n\nA clássico match can shut down a city's ordinary rhythm for an afternoon, with fans openly wearing colors, honking horns after a win, and replaying disputed calls for days on talk radio. None of this is really about the 90 minutes — it's the yearly renewal of a much older local pride.",
+    "tags": ["rivalries", "regional"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fbculture.expressiveness-is-normal",
+    "title": "Loud reactions are enthusiasm, not aggression",
+    "bodyMd": "Watching a match with Brazilians can feel intense if you're not used to it: people jump up, shout at the television, groan theatrically at a bad pass, and argue passionately about a referee's call — sometimes all within the same minute. To an outsider this can look like anger or even the start of a real conflict, but it almost never is.\n\nThis expressiveness is simply how football is experienced together — it's participatory, not passive viewing. The loudest person in the bar during a disputed penalty call is usually laughing again within a minute of the next play. Matching the energy, even a little, tends to be read as warmth rather than overstepping.",
+    "tags": ["etiquette", "social"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fbculture.dont-trash-talk-too-hard",
+    "title": "Etiquette for a guest: needle gently, don't trash-talk",
+    "bodyMd": "Friendly rivalry banter is expected and welcomed — telling a Corinthians fan their team choked again, or teasing a Flamengo supporter about an old loss, is completely normal between friends. As a foreigner or guest, though, it's worth reading the room before going too far: genuinely harsh insults about someone's club, especially early in a friendship, can land differently coming from an outsider than from a lifelong friend.\n\nA safe approach is to let your hosts start the teasing, respond in kind but keep it light, and always be ready to laugh at your own team's failures too. Showing you can take a joke about your own club goes a long way toward being accepted into the banter rather than being seen as an outsider poking at something that isn't really yours to poke at yet.",
+    "tags": ["etiquette", "social"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fbculture.bar-culture",
+    "title": "The bar is the real stadium for most people",
+    "bodyMd": "Stadium tickets, travel, and time off work put in-person attendance out of reach for many fans on a normal weekend, so the neighborhood bar (or a friend's living room) fills that role instead. A boteco (a casual, no-frills corner bar) with a TV mounted in the corner is often packed shoulder to shoulder before an important match, plastic chairs spilling out onto the sidewalk.\n\nOrdering a cold beer (uma cerveja bem gelada) or a chope (draft beer) is practically part of the ritual, and it's completely normal to strike up conversation with strangers at the next table over a shared reaction to a play. Showing up in your team's camisa (jersey) is a quick, unspoken way to signal which side of the bar's cheering you're on.",
+    "tags": ["social", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fbculture.the-gol-call",
+    "title": "Why the commentator's \"goool\" goes on forever",
+    "bodyMd": "One of the first things that stands out to newcomers watching Brazilian broadcasts is the narrador's goal call — a single syllable stretched out for five, ten, sometimes fifteen seconds or more. It isn't a mistake or a broadcasting quirk; it's a tradition, treated almost as its own art form, and commentators are sometimes judged and remembered specifically for how they deliver it.\n\nThe length and intensity of the call is meant to match the importance of the goal — a routine goal in a meaningless match gets a shorter shout, while a last-minute winner in a clássico can get a call that goes on long enough to become a meme the next day. Don't be surprised if a group of friends collectively imitates a famous call from years ago when a similar goal happens live.",
+    "tags": ["media", "essentials"]
+  }
+]

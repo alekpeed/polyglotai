@@ -1,0 +1,170 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "chdlg.convite-o-que-levar",
+    "scenario": "Being invited to a churrasco and asking what to bring",
+    "speakers": [
+      { "id": "marcos", "name": "Marcos", "role": "host" },
+      { "id": "you", "name": "Você" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "marcos", "text": "Vou fazer um churrasco no sábado. Você vem?" },
+      { "speakerId": "you", "text": "Vou sim! O que eu levo?" },
+      { "speakerId": "marcos", "text": "Eu levo a carne. Cada um leva o seu, então pode levar bebida." },
+      { "speakerId": "you", "text": "Posso levar cerveja e um refrigerante também." },
+      { "speakerId": "marcos", "text": "Perfeito. Chega lá umas duas da tarde." },
+      { "speakerId": "you", "text": "Combinado. Até sábado!" }
+    ],
+    "translation": [
+      { "speakerId": "marcos", "text": "I'm having a barbecue on Saturday. Are you coming?" },
+      { "speakerId": "you", "text": "Yes, I am! What should I bring?" },
+      { "speakerId": "marcos", "text": "I've got the meat covered. Everyone brings their own, so you could bring drinks." },
+      { "speakerId": "you", "text": "I can bring beer and a soda too." },
+      { "speakerId": "marcos", "text": "Perfect. Show up around two in the afternoon." },
+      { "speakerId": "you", "text": "Deal. See you Saturday!" }
+    ],
+    "keyVocabulary": ["chvocab.o-que-eu-levo", "chvocab.levar-bebida", "chvocab.cada-um-leva-o-seu", "chvocab.churrasco-de-fim-de-semana"],
+    "grammarNotes": "\"Cada um leva o seu\" is the standard way to signal the unwritten rule of Brazilian barbecues: the host usually covers the meat, guests cover their own drinks."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "chdlg.ponto-da-carne",
+    "scenario": "Ordering meat doneness at the grill",
+    "speakers": [
+      { "id": "churrasqueiro", "name": "Seu Ivo", "role": "churrasqueiro" },
+      { "id": "you", "name": "Você" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "churrasqueiro", "text": "Qual é o seu ponto da carne?" },
+      { "speakerId": "you", "text": "Pra mim, mal passado, por favor." },
+      { "speakerId": "churrasqueiro", "text": "E pro seu amigo?" },
+      { "speakerId": "you", "text": "Ele gosta bem passado." },
+      { "speakerId": "churrasqueiro", "text": "Tá bom, já corto um pedaço ao ponto pra vocês provarem também." },
+      { "speakerId": "you", "text": "Beleza, obrigado!" }
+    ],
+    "translation": [
+      { "speakerId": "churrasqueiro", "text": "What doneness do you want your meat?" },
+      { "speakerId": "you", "text": "Rare for me, please." },
+      { "speakerId": "churrasqueiro", "text": "And for your friend?" },
+      { "speakerId": "you", "text": "He likes it well done." },
+      { "speakerId": "churrasqueiro", "text": "Okay, I'll also cut a medium piece for you two to try." },
+      { "speakerId": "you", "text": "Cool, thanks!" }
+    ],
+    "keyVocabulary": ["chvocab.ponto-da-carne", "chvocab.mal-passado", "chvocab.bem-passado", "chvocab.ao-ponto"],
+    "grammarNotes": "At a churrasco the churrasqueiro often slices straight off the skewer table-side, asking each guest's ponto individually rather than cooking everything to one doneness."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "chdlg.elogiando-o-churrasqueiro",
+    "scenario": "Complimenting the churrasqueiro on the meat",
+    "speakers": [
+      { "id": "you", "name": "Você" },
+      { "id": "tia-marta", "name": "Tia Marta", "role": "guest" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Que delícia essa picanha!" },
+      { "speakerId": "tia-marta", "text": "Foi o Marcos que fez, viu?" },
+      { "speakerId": "you", "text": "Mandou bem na carne hoje!" },
+      { "speakerId": "tia-marta", "text": "Ele vai adorar ouvir isso." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "This picanha is so good!" },
+      { "speakerId": "tia-marta", "text": "Marcos made it, you know." },
+      { "speakerId": "you", "text": "He did a great job with the meat today!" },
+      { "speakerId": "tia-marta", "text": "He's going to love hearing that." }
+    ],
+    "keyVocabulary": ["chvocab.que-delicia", "chvocab.mandou-bem-na-carne", "chvocab.picanha", "chvocab.churrasqueiro"],
+    "grammarNotes": "Praise usually goes straight to whoever manned the grill, not just \"the food\" in general — the churrasqueiro's skill is part of the social credit of hosting."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "chdlg.perguntando-sobre-o-corte",
+    "scenario": "Asking about a specific cut of meat on the grill",
+    "speakers": [
+      { "id": "you", "name": "Você" },
+      { "id": "churrasqueiro", "name": "Seu Ivo", "role": "churrasqueiro" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "O que é esse corte aí, com aquela capa de gordura?" },
+      { "speakerId": "churrasqueiro", "text": "Isso é maminha. É mais leve que a picanha." },
+      { "speakerId": "you", "text": "E aquele ali, mais escuro?" },
+      { "speakerId": "churrasqueiro", "text": "Cupim. Ele fica umas quatro horas no fogo antes de ficar macio." },
+      { "speakerId": "you", "text": "Nossa, vale a pena esperar?" },
+      { "speakerId": "churrasqueiro", "text": "Vale sim, desmancha na boca." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "What cut is that one, with that fat cap?" },
+      { "speakerId": "churrasqueiro", "text": "That's maminha. It's lighter than picanha." },
+      { "speakerId": "you", "text": "And that one over there, the darker one?" },
+      { "speakerId": "churrasqueiro", "text": "Cupim. It sits on the fire for about four hours before it gets tender." },
+      { "speakerId": "you", "text": "Wow, is it worth the wait?" },
+      { "speakerId": "churrasqueiro", "text": "It is, it falls apart in your mouth." }
+    ],
+    "keyVocabulary": ["chvocab.maminha", "chvocab.cupim", "chvocab.picanha", "chvocab.assar"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "chdlg.oferecendo-ajuda",
+    "scenario": "Offering to help set up and later clean up",
+    "speakers": [
+      { "id": "you", "name": "Você" },
+      { "id": "marcos", "name": "Marcos", "role": "host" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Cheguei cedo. Posso ajudar a arrumar a mesa?" },
+      { "speakerId": "marcos", "text": "Pode sim, os pratos estão na cozinha." },
+      { "speakerId": "you", "text": "E o carvão, já acendeu o fogo?" },
+      { "speakerId": "marcos", "text": "Ainda não, vou acender agora." },
+      { "speakerId": "you", "text": "No final eu ajudo a limpar também, pode deixar." },
+      { "speakerId": "marcos", "text": "Você é gente boa, viu?" }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "I got here early. Can I help set up the table?" },
+      { "speakerId": "marcos", "text": "Sure, the plates are in the kitchen." },
+      { "speakerId": "you", "text": "And the charcoal, have you lit the fire already?" },
+      { "speakerId": "marcos", "text": "Not yet, I'm about to light it." },
+      { "speakerId": "you", "text": "At the end I'll help clean up too, don't worry about it." },
+      { "speakerId": "marcos", "text": "You're a good one, you know that?" }
+    ],
+    "keyVocabulary": ["chvocab.ajudar-a-arrumar", "chvocab.ajudar-a-limpar", "chvocab.acender-o-fogo", "chvocab.carvao"],
+    "grammarNotes": "\"Pode deixar\" (literally \"you can leave it [to me]\") is a very common informal way to reassure someone you've got something handled."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "chdlg.papo-esperando-a-carne",
+    "scenario": "Small talk while waiting for the meat to be ready",
+    "speakers": [
+      { "id": "you", "name": "Você" },
+      { "id": "julia", "name": "Júlia", "role": "guest" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Quanto tempo falta pra carne ficar pronta?" },
+      { "speakerId": "julia", "text": "Uns vinte minutos, acho. Quer um espetinho de queijo coalho enquanto isso?" },
+      { "speakerId": "you", "text": "Quero sim, tô com fome já." },
+      { "speakerId": "julia", "text": "Passa o molho de pimenta pra mim, por favor." },
+      { "speakerId": "you", "text": "Toma. Esse churrasco tá ótimo, viu?" },
+      { "speakerId": "julia", "text": "Tá mesmo. E ainda nem chegou a fraldinha." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "How much longer until the meat's ready?" },
+      { "speakerId": "julia", "text": "About twenty minutes, I think. Want a grilled cheese skewer in the meantime?" },
+      { "speakerId": "you", "text": "Yes please, I'm already hungry." },
+      { "speakerId": "julia", "text": "Pass me the hot sauce, please." },
+      { "speakerId": "you", "text": "Here. This barbecue is great, you know?" },
+      { "speakerId": "julia", "text": "It really is. And the fraldinha hasn't even come out yet." }
+    ],
+    "keyVocabulary": ["chvocab.queijo-coalho", "chvocab.molho-de-pimenta", "chvocab.fraldinha", "chvocab.tirar-do-fogo"]
+  }
+]

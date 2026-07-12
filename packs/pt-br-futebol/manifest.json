@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "pt-br-futebol",
+  "name": "Futebol",
+  "languageCode": "pt-BR",
+  "packVersion": "0.1.0",
+  "basePack": "pt-br",
+  "authors": ["PolyglotAI"],
+  "license": "proprietary",
+  "dialects": [
+    { "id": "pt-BR-SP", "name": "São Paulo" },
+    { "id": "pt-BR-RJ", "name": "Rio de Janeiro (Carioca)" }
+  ],
+  "defaultDialect": "pt-BR-SP",
+  "cefrRange": ["A1", "A2"],
+  "featureFlags": { "slang": false, "profanity": false },
+  "contents": {
+    "vocabulary": ["vocabulary/futebol-core.json"],
+    "dialogues": ["dialogues/scenarios.json"],
+    "culture": ["culture/notes.json"]
+  }
+}

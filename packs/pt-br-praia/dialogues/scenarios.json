@@ -1,0 +1,164 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "prdlg.alugar-cadeira-e-guarda-sol",
+    "scenario": "Renting a beach chair and umbrella from the guy on the sand",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "locador", "name": "Seu Nelson", "role": "chair/umbrella renter" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Oi, quanto tá a cadeira e o guarda-sol?" },
+      { "speakerId": "locador", "text": "Cadeira é oito reais, guarda-sol é dez. Se pegar os dois, fico em quinze." },
+      { "speakerId": "you", "text": "Fecho os dois, então. Onde posso fincar o guarda-sol?" },
+      { "speakerId": "locador", "text": "Pode escolher o lugar, só não fica muito perto da água por causa da maré." },
+      { "speakerId": "you", "text": "Beleza. E vocês ficam até que horas?" },
+      { "speakerId": "locador", "text": "Até umas seis, seis e meia." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Hi, how much for the chair and the umbrella?" },
+      { "speakerId": "locador", "text": "The chair is eight reais, the umbrella is ten. If you take both, I'll do fifteen." },
+      { "speakerId": "you", "text": "I'll take both, then. Where can I set up the umbrella?" },
+      { "speakerId": "locador", "text": "Pick any spot, just not too close to the water because of the tide." },
+      { "speakerId": "you", "text": "Cool. And what time do you guys close up?" },
+      { "speakerId": "locador", "text": "Around six, six-thirty." }
+    ],
+    "keyVocabulary": ["prvocab.cadeira-de-praia", "prvocab.guarda-sol", "prvocab.fincar-o-guarda-sol", "prvocab.mare"],
+    "grammarNotes": "'Fecho os dois' uses 'fechar' in its everyday sense of 'to seal a deal', very common in informal price negotiations, not just 'to close'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prdlg.agua-de-coco-do-ambulante",
+    "scenario": "Buying água de coco from a beach vendor",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "ambulante", "name": "Ambulante", "role": "beach vendor" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Água de coco, por favor!" },
+      { "speakerId": "ambulante", "text": "Gelada, na hora. Quer com canudo?" },
+      { "speakerId": "you", "text": "Quero sim. Quanto custa?" },
+      { "speakerId": "ambulante", "text": "Oito reais o grande, seis o pequeno." },
+      { "speakerId": "you", "text": "Pode ser o grande, então." },
+      { "speakerId": "ambulante", "text": "Aproveita que hoje o coco tá bem docinho." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Coconut water, please!" },
+      { "speakerId": "ambulante", "text": "Ice cold, cracked right now. Want it with a straw?" },
+      { "speakerId": "you", "text": "Yes please. How much is it?" },
+      { "speakerId": "ambulante", "text": "Eight reais for the big one, six for the small one." },
+      { "speakerId": "you", "text": "The big one, then." },
+      { "speakerId": "ambulante", "text": "Enjoy it, the coconut's really sweet today." }
+    ],
+    "keyVocabulary": ["prvocab.agua-de-coco", "prvocab.ambulante"],
+    "grammarNotes": "Vendors sell in cash on the spot, so prices are usually stated directly rather than haggled — see the culture notes on ambulante etiquette."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prdlg.pergunta-sobre-a-bandeira",
+    "scenario": "Asking whether the flag color means it's safe to swim",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "amigo", "name": "Amigo", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "A bandeira hoje tá verde ou amarela?" },
+      { "speakerId": "amigo", "text": "Hoje amanheceu vermelha, o mar tá bem agitado." },
+      { "speakerId": "you", "text": "Então não dá pra nadar?" },
+      { "speakerId": "amigo", "text": "Dá pra molhar o pé, mas nada de nadar longe. Tem ressaca forte." },
+      { "speakerId": "you", "text": "Melhor eu ficar na areia, então." },
+      { "speakerId": "amigo", "text": "Boa ideia. O guarda-vidas já tirou todo mundo da água mais cedo." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Is the flag green or yellow today?" },
+      { "speakerId": "amigo", "text": "It came up red this morning, the sea's pretty rough." },
+      { "speakerId": "you", "text": "So it's not okay to swim?" },
+      { "speakerId": "amigo", "text": "You can wet your feet, but no swimming out. There's a strong rip current." },
+      { "speakerId": "you", "text": "Better I just stay on the sand, then." },
+      { "speakerId": "amigo", "text": "Good call. The lifeguard already got everyone out of the water earlier." }
+    ],
+    "keyVocabulary": ["prvocab.bandeira-verde", "prvocab.bandeira-amarela", "prvocab.bandeira-vermelha", "prvocab.ressaca", "prvocab.guarda-vidas", "prvocab.areia"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prdlg.entrando-no-jogo",
+    "scenario": "Asking to join a game of futevôlei or altinho",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "jogador", "name": "Jogador", "role": "player" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Posso jogar com vocês? Nunca joguei futevôlei." },
+      { "speakerId": "jogador", "text": "Pode sim, mas aqui a gente também joga altinho, é mais tranquilo pra começar." },
+      { "speakerId": "you", "text": "Show, prefiro o altinho mesmo pra pegar o jeito." },
+      { "speakerId": "jogador", "text": "Bora! Só não pode usar a mão, hein." },
+      { "speakerId": "you", "text": "Combinado." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Can I play with you guys? I've never played footvolley." },
+      { "speakerId": "jogador", "text": "Sure, but we also play altinho here, it's more relaxed to start with." },
+      { "speakerId": "you", "text": "Nice, I'd rather do altinho to get the hang of it." },
+      { "speakerId": "jogador", "text": "Let's go! Just no hands, okay." },
+      { "speakerId": "you", "text": "Deal." }
+    ],
+    "keyVocabulary": ["prvocab.futevolei", "prvocab.altinho"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prdlg.encontro-no-posto",
+    "scenario": "Arranging to meet friends by a numbered posto",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "amiga", "name": "Amiga", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Cheguei na praia, onde vocês tão?" },
+      { "speakerId": "amiga", "text": "A gente tá no Posto 9, perto do quiosque amarelo." },
+      { "speakerId": "you", "text": "Beleza, é depois do Posto 8?" },
+      { "speakerId": "amiga", "text": "Isso, mais pra frente. Se chegar no calçadão você já vê a gente." },
+      { "speakerId": "you", "text": "Já tô quase chegando." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "I'm at the beach, where are you guys?" },
+      { "speakerId": "amiga", "text": "We're at Posto 9, near the yellow kiosk." },
+      { "speakerId": "you", "text": "Cool, is that past Posto 8?" },
+      { "speakerId": "amiga", "text": "Yeah, further along. Once you reach the boardwalk you'll spot us." },
+      { "speakerId": "you", "text": "I'm almost there." }
+    ],
+    "keyVocabulary": ["prvocab.posto", "prvocab.posto-9", "prvocab.quiosque", "prvocab.calcadao"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prdlg.cuidando-das-coisas",
+    "scenario": "Asking someone to watch your stuff while you swim",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "amigo", "name": "Amigo", "role": "friend" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Você pode tomar conta das minhas coisas um pouquinho? Vou dar um mergulho." },
+      { "speakerId": "amigo", "text": "Pode ir, fico de olho aqui." },
+      { "speakerId": "you", "text": "Valeu! Não deixa ninguém mexer na minha bolsa, tá?" },
+      { "speakerId": "amigo", "text": "Pode ficar tranquilo." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Can you watch my stuff for a bit? I'm going to take a dip." },
+      { "speakerId": "amigo", "text": "Go ahead, I'll keep an eye on things here." },
+      { "speakerId": "you", "text": "Thanks! Don't let anyone touch my bag, okay?" },
+      { "speakerId": "amigo", "text": "Don't worry about it." }
+    ],
+    "keyVocabulary": ["prvocab.tomar-conta-das-coisas", "prvocab.dar-um-mergulho", "prvocab.bolsa-de-praia"]
+  }
+]

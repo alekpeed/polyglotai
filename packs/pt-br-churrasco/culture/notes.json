@@ -1,0 +1,44 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "chculture.o-que-e-churrasco",
+    "title": "Churrasco isn't a meal, it's an afternoon",
+    "bodyMd": "In English, \"barbecue\" describes food. In Brazil, um churrasco describes an event — a Saturday or Sunday that starts around noon or one o'clock and often doesn't wrap up until well after dark. Nobody shows up expecting to eat and leave; you show up expecting to sit around a table, drink slowly, talk, and eat in waves as different cuts come off the grill over several hours.\n\nThis is why asking \"quanto tempo falta pra carne ficar pronta?\" (how much longer until the meat's ready) is almost a rhetorical question among Brazilians — the honest answer is usually \"it's ready when it's ready, so relax.\" The linguiça and coração de galinha come out early to keep everyone fed while the slower cuts, like costela or cupim, might still be hours away.",
+    "tags": ["essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "chculture.quem-convida-nao-paga-sozinho",
+    "title": "Being invited doesn't mean being a guest for free",
+    "bodyMd": "The unwritten rule of a Brazilian churrasco is cada um leva o seu — everyone brings their own. Typically the dono do churrasco (the host, whose house or building it's at) buys and grills the meat, but drinks are usually every guest's own responsibility, and it's completely normal to chip in for a shared bag of ice, charcoal, or extra sides.\n\nIf you're invited and unsure what's expected, the safest and most natural question to ask is simply \"o que eu levo?\" (what should I bring?). Showing up empty-handed to a churrasco you didn't help plan can read as a little clueless — even close friends usually text ahead to sort out who's bringing what.",
+    "tags": ["etiquette", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "chculture.churrasqueiro-etiquette",
+    "title": "The churrasqueiro's grill is not a group project",
+    "bodyMd": "Every churrasco has one person, informally and often unofficially appointed, running the grill for the whole afternoon: o churrasqueiro. It's treated less like kitchen chores and more like a small position of trust — they decide when meat goes on, when it gets salted, when it's flipped, and when it comes off.\n\nUnless you're explicitly asked to help, it's considered mildly rude to grab tongs and start turning meat yourself, even with good intentions. The polite move is to compliment the food directly to the churrasqueiro (\"mandou bem na carne!\") rather than critique timing or technique, and to offer help with adjacent tasks — setting the table, refilling drinks, watching the fire's coals — rather than the grill itself.",
+    "tags": ["etiquette", "people"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "chculture.variacoes-regionais",
+    "title": "Gaúcho-style versus everywhere else",
+    "bodyMd": "The most traditional version of churrasco comes from Rio Grande do Sul in Brazil's far south, home of the gaúcho cowboy culture: whole cuts salted with nothing but sal grosso, skewered at an angle, and cooked slowly around an open fogo de chão (ground fire) rather than a raised metal grill. This is the style most rodízio steakhouses outside Brazil try to imitate.\n\nElsewhere in Brazil, churrasco adapts to whatever space is available — a brick churrasqueira in a suburban backyard, a portable one on an apartment varanda, or, especially in cities like Rio and São Paulo, a churrasco na laje on a rooftop slab when there's no yard at all. The meat, sides, and spirit stay recognizably the same even as the setup changes completely.",
+    "tags": ["regional", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "chculture.por-que-picanha",
+    "title": "Why picanha became the iconic cut",
+    "bodyMd": "Picanha wasn't always Brazil's signature barbecue cut — for much of the 20th century, butchers considered the top sirloin cap a lower-value trim and it was often ground into sausage. That changed as São Paulo steakhouses in the 1960s and 70s began serving it whole, fat-cap-on, curved into its trademark C-shape and grilled over high heat before being sliced thin against the grain at the table.\n\nThe fat cap is the key: it bastes the meat as it renders, and slicing it at the very end (rather than before cooking) keeps every piece juicy. Today asking for picanha specifically, and asking for it mal passado or ao ponto so the fat has time to render without drying out the meat, is the closest thing to a default order at a Brazilian churrasco.",
+    "tags": ["history", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "chculture.ordem-dos-cortes",
+    "title": "There's an order to what comes off the grill",
+    "bodyMd": "Churrasco follows a rough sequence, even if nobody states it out loud. Linguiça and small skewers like coração de galinha or queijo coalho come first, both because they cook fast and because they keep hungry guests satisfied during the long wait. Then come the mid-size cuts — fraldinha, maminha, alcatra — before the star, picanha, usually makes its entrance once the grill and the crowd have both warmed up.\n\nSlow cuts like costela or cupim, when included, might have started hours earlier and get served last, almost as a reward for people who stuck around. Understanding this rhythm helps explain why nobody panics when \"the meat\" takes what feels like all afternoon to fully arrive — it was never meant to arrive all at once.",
+    "tags": ["essentials", "food"]
+  }
+]

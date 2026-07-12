@@ -1,0 +1,192 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "fedlg.asking-price-fruit",
+    "scenario": "Asking the price of fruit at a stall",
+    "speakers": [
+      { "id": "cliente", "name": "Você", "role": "customer" },
+      { "id": "feirante", "name": "Seu Beto", "role": "vendor" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "cliente", "text": "Bom dia! Quanto custa o quilo da manga?" },
+      { "speakerId": "feirante", "text": "Bom dia! Tá a seis reais o quilo, tudo fresquinho." },
+      { "speakerId": "cliente", "text": "Essa aqui já tá no ponto?" },
+      { "speakerId": "feirante", "text": "Tá sim, pode levar essa que ela é boa." },
+      { "speakerId": "cliente", "text": "Então me dá um quilo, por favor." }
+    ],
+    "translation": [
+      { "speakerId": "cliente", "text": "Good morning! How much is the mango per kilo?" },
+      { "speakerId": "feirante", "text": "Good morning! It's six reais a kilo, all nice and fresh." },
+      { "speakerId": "cliente", "text": "Is this one ripe already?" },
+      { "speakerId": "feirante", "text": "It is, you can take this one, it's good." },
+      { "speakerId": "cliente", "text": "Then give me a kilo, please." }
+    ],
+    "keyVocabulary": ["fevocab.quanto-custa-o-quilo", "fevocab.manga", "fevocab.fresquinho", "fevocab.no-ponto", "fevocab.quilo"],
+    "grammarNotes": "'Tá' is the everyday spoken contraction of 'está' — extremely common at a feira and in casual speech generally."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fedlg.buying-in-bulk",
+    "scenario": "Buying in bulk for a better price",
+    "speakers": [
+      { "id": "cliente", "name": "Você", "role": "customer" },
+      { "id": "feirante", "name": "Dona Marta", "role": "vendor" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "cliente", "text": "Vou levar bastante tomate hoje. Leva mais barato se eu levar mais?" },
+      { "speakerId": "feirante", "text": "Levando três quilos, eu faço a cinco reais o quilo." },
+      { "speakerId": "cliente", "text": "Fechado! E cebola, tem também?" },
+      { "speakerId": "feirante", "text": "Tenho. Quer um maço de couve pra levar também? Tá bem barata." },
+      { "speakerId": "cliente", "text": "Pode ser, coloca um maço aí." }
+    ],
+    "translation": [
+      { "speakerId": "cliente", "text": "I'm going to buy a lot of tomatoes today. Is it cheaper if I take more?" },
+      { "speakerId": "feirante", "text": "If you take three kilos, I'll do five reais a kilo." },
+      { "speakerId": "cliente", "text": "Deal! And onions, do you have those too?" },
+      { "speakerId": "feirante", "text": "I do. Want a bunch of collard greens too? It's really cheap." },
+      { "speakerId": "cliente", "text": "Sure, throw in a bunch." }
+    ],
+    "keyVocabulary": ["fevocab.leva-mais-barato", "fevocab.tomate", "fevocab.quilo", "fevocab.cebola", "fevocab.maco", "fevocab.couve"],
+    "grammarNotes": "'Fechado!' (literally 'closed!') is how Brazilians casually confirm a deal — equivalent to 'deal!' or 'you got it!'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fedlg.friendly-haggling",
+    "scenario": "A little friendly haggling over the price",
+    "speakers": [
+      { "id": "cliente", "name": "Você", "role": "customer" },
+      { "id": "feirante", "name": "Seu Beto", "role": "vendor" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "cliente", "text": "Duas dúzias de laranja, quanto fica?" },
+      { "speakerId": "feirante", "text": "Fica vinte reais." },
+      { "speakerId": "cliente", "text": "Nossa, faz um precinho? Sou freguesa toda semana!" },
+      { "speakerId": "feirante", "text": "Já que é freguesa, fica dezoito." },
+      { "speakerId": "cliente", "text": "Show, obrigada!" }
+    ],
+    "translation": [
+      { "speakerId": "cliente", "text": "Two dozen oranges, how much does that come to?" },
+      { "speakerId": "feirante", "text": "That comes to twenty reais." },
+      { "speakerId": "cliente", "text": "Wow, can you give me a little discount? I'm a regular every week!" },
+      { "speakerId": "feirante", "text": "Since you're a regular, it'll be eighteen." },
+      { "speakerId": "cliente", "text": "Great, thank you!" }
+    ],
+    "keyVocabulary": ["fevocab.duzia", "fevocab.laranja", "fevocab.faz-um-precinho", "fevocab.fregues"],
+    "grammarNotes": "Haggling at a feira is usually this mild — a small, friendly ask rather than a real back-and-forth negotiation. See the culture notes for more.",
+    "slangRegisterNotes": "'Show' here is informal slang for 'great/awesome', very common in casual Brazilian speech."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fedlg.asking-recommendation",
+    "scenario": "Asking a vendor what's fresh and in season",
+    "speakers": [
+      { "id": "cliente", "name": "Você", "role": "customer" },
+      { "id": "feirante", "name": "Dona Marta", "role": "vendor" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "cliente", "text": "Oi! O que tá fresco hoje?" },
+      { "speakerId": "feirante", "text": "Hoje o morango e a uva chegaram lindos, colhidos ontem." },
+      { "speakerId": "cliente", "text": "E a melancia, tá boa?" },
+      { "speakerId": "feirante", "text": "Tá doce, pode confiar. Quer que eu escolha uma pra você?" },
+      { "speakerId": "cliente", "text": "Quero sim, pode caprichar!" }
+    ],
+    "translation": [
+      { "speakerId": "cliente", "text": "Hi! What's fresh today?" },
+      { "speakerId": "feirante", "text": "Today the strawberries and grapes came in beautiful, picked yesterday." },
+      { "speakerId": "cliente", "text": "And the watermelon, is it good?" },
+      { "speakerId": "feirante", "text": "It's sweet, trust me. Want me to pick one for you?" },
+      { "speakerId": "cliente", "text": "Yes please, pick me your best one!" }
+    ],
+    "keyVocabulary": ["fevocab.o-que-ta-fresco-hoje", "fevocab.morango", "fevocab.uva", "fevocab.melancia", "fevocab.escolher", "fevocab.pode-caprichar"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fedlg.asking-for-bag",
+    "scenario": "Asking for a bag and wrapping",
+    "speakers": [
+      { "id": "cliente", "name": "Você", "role": "customer" },
+      { "id": "feirante", "name": "Seu Beto", "role": "vendor" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "cliente", "text": "Pode colocar numa sacolinha, por favor?" },
+      { "speakerId": "feirante", "text": "Claro. Quer que eu embrulhe a alface separado, pra não amassar o resto?" },
+      { "speakerId": "cliente", "text": "Quero, boa ideia." },
+      { "speakerId": "feirante", "text": "Prontinho, pode conferir." }
+    ],
+    "translation": [
+      { "speakerId": "cliente", "text": "Can you put it in a bag, please?" },
+      { "speakerId": "feirante", "text": "Sure. Want me to wrap the lettuce separately, so it doesn't crush the rest?" },
+      { "speakerId": "cliente", "text": "Yes, good idea." },
+      { "speakerId": "feirante", "text": "All set, feel free to check." }
+    ],
+    "keyVocabulary": ["fevocab.uma-sacolinha", "fevocab.embrulhar", "fevocab.alface", "fevocab.sacola"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fedlg.paying-cash-or-card",
+    "scenario": "Deciding how to pay: cash, card, or Pix",
+    "speakers": [
+      { "id": "cliente", "name": "Você", "role": "customer" },
+      { "id": "feirante", "name": "Dona Marta", "role": "vendor" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "cliente", "text": "Vocês passam cartão ou só dinheiro?" },
+      { "speakerId": "feirante", "text": "Cartão eu não tenho maquininha ainda, mas faço Pix." },
+      { "speakerId": "cliente", "text": "Ah, perfeito, posso fazer um Pix pra você." },
+      { "speakerId": "feirante", "text": "Isso, o QR code tá aqui na barraca." },
+      { "speakerId": "cliente", "text": "Tá pronto, já caiu?" },
+      { "speakerId": "feirante", "text": "Caiu sim, obrigada!" }
+    ],
+    "translation": [
+      { "speakerId": "cliente", "text": "Do you take card, or only cash?" },
+      { "speakerId": "feirante", "text": "I don't have a card machine yet, but I do Pix." },
+      { "speakerId": "cliente", "text": "Ah, perfect, I can send you a Pix." },
+      { "speakerId": "feirante", "text": "That's right, the QR code is here at the stall." },
+      { "speakerId": "cliente", "text": "It's done, has it come through?" },
+      { "speakerId": "feirante", "text": "It has, thank you!" }
+    ],
+    "keyVocabulary": ["fevocab.cartao", "fevocab.dinheiro", "fevocab.pix"],
+    "grammarNotes": "'Caiu?' ('did it fall/land?') is the natural way Brazilians ask whether a Pix transfer has arrived — a small but very common idiom around this payment method."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "fedlg.paying-and-goodbye",
+    "scenario": "Paying with cash and a warm goodbye to a regular vendor",
+    "speakers": [
+      { "id": "cliente", "name": "Você", "role": "customer" },
+      { "id": "feirante", "name": "Seu Beto", "role": "vendor" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "cliente", "text": "Deu quanto no total?" },
+      { "speakerId": "feirante", "text": "Deu vinte e três reais." },
+      { "speakerId": "cliente", "text": "Só tenho uma nota de cinquenta. Tem troco?" },
+      { "speakerId": "feirante", "text": "Tenho sim, calma que eu já vejo aqui." },
+      { "speakerId": "cliente", "text": "Valeu, Seu Beto. Até semana que vem!" },
+      { "speakerId": "feirante", "text": "Até semana que vem, freguesa! Um abraço." }
+    ],
+    "translation": [
+      { "speakerId": "cliente", "text": "How much did it come to in total?" },
+      { "speakerId": "feirante", "text": "It came to twenty-three reais." },
+      { "speakerId": "cliente", "text": "I only have a fifty note. Do you have change?" },
+      { "speakerId": "feirante", "text": "I do, hang on, let me check here." },
+      { "speakerId": "cliente", "text": "Thanks, Seu Beto. See you next week!" },
+      { "speakerId": "feirante", "text": "See you next week, my regular! Take care." }
+    ],
+    "keyVocabulary": ["fevocab.troco", "fevocab.tem-troco-pra", "fevocab.ate-semana-que-vem", "fevocab.fregues"],
+    "grammarNotes": "'Seu' before a first name (Seu Beto) is a warm, informal term of respect for an older or familiar man — common between neighbors and regular customers, not a formal title."
+  }
+]

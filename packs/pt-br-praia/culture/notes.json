@@ -1,0 +1,50 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "prculture.praia-como-vida-social",
+    "title": "The beach is daily life, not a vacation",
+    "bodyMd": "In cities like Rio de Janeiro, Salvador, or Fortaleza, going to the beach isn't a special trip you plan for a holiday — it's where a huge amount of ordinary social life happens. People go before work to swim, meet friends there on weekends the way others meet at a bar, do their exercise on the calçadão, and treat a stretch of sand near their posto almost like a second living room.\n\nThis shapes the vocabulary and etiquette around it: nobody says 'we're going on a beach trip', they say 'vamos pegar praia' — a plan as casual as grabbing coffee. Regulars often return to the exact same spot for years, recognize the same ambulantes, and know the other families who set up nearby. If you're invited to 'pegar uma praia' with Brazilian friends, expect a half-day-plus social event, not a quick dip.",
+    "tags": ["essentials", "culture"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prculture.como-funciona-o-ambulante",
+    "title": "How buying from an ambulante actually works",
+    "bodyMd": "Ambulantes are self-employed vendors who walk the sand all day carrying coolers, trays, or portable grills, selling everything from água de coco to grilled cheese to sunglasses. A few things surprise first-time visitors:\n\n- **Cash only, small bills.** Card readers are rare; having change (or a few 5/10/20 real notes) makes transactions much faster.\n- **Prices are usually fixed and stated upfront**, not haggled hard — Brazil isn't a bargaining culture at the beach the way some markets abroad are. Very mild negotiation sometimes happens on volume ('leva dois que fica mais barato'), but demanding a big discount is considered rude.\n- **You don't have to flag every vendor down.** They pass by regularly and announce themselves with a distinctive pregão (sing-song call), so you can just wait and listen for the one you want.\n- **A small tip or rounding up isn't expected** the way it might be at a restaurant, but it's appreciated for a good chat or extra service, like cutting up fruit for you.",
+    "tags": ["vendors", "money", "etiquette"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prculture.lendo-as-bandeiras",
+    "title": "Reading the flag system",
+    "bodyMd": "Lifeguards (guarda-vidas) plant a colored bandeira de praia near each posto and update it through the day as the sea changes:\n\n- **Verde (green):** calm conditions, safe to swim.\n- **Amarela (yellow):** caution — moderate current, swim close to shore and stay alert.\n- **Vermelha (red):** dangerous — strong ressaca (rip current) or rough surf. Wading at the edge is generally tolerated, but swimming out is not, and lifeguards will actively call people back or blow a whistle.\n\nThe flag can change more than once in a single afternoon, especially with the tide, so it's worth glancing over periodically rather than checking only when you arrive. When in doubt, asking the nearest guarda-vidas directly is completely normal and expected, even for locals.",
+    "tags": ["safety", "essentials"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prculture.postos-como-referencia",
+    "title": "Posto numbers as real navigational landmarks",
+    "bodyMd": "Along Rio's Copacabana and Ipanema beaches, the numbered lifeguard posts (postos) aren't just safety infrastructure — they're the city's actual system for giving directions and meeting points. Cariocas will say 'te encontro no Posto 9' or 'more perto do Posto 6' the way people elsewhere might name a street corner or subway stop.\n\nEach posto number also carries a bit of a reputation: Posto 9 in Ipanema, for instance, is historically known as a spot for a younger, artsy, LGBTQ+-friendly crowd, while other postos along the same beach skew toward families, surfers, or a fitness-focused crowd. Learning to navigate by posto number — and picking up on what each one signals — is a genuinely useful, very local skill, not just trivia.",
+    "tags": ["landmarks", "essentials"],
+    "cefr": "B1"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prculture.seguranca-pertences-e-protetor-solar",
+    "title": "Sun, safety, and looking after your things",
+    "bodyMd": "A few practical norms that locals follow without thinking twice:\n\n- **Never leave a bag or phone fully unattended.** It's standard to ask a beach neighbor — even a stranger nearby — 'você pode tomar conta das minhas coisas um minuto?' while you swim. People generally say yes and genuinely keep half an eye on it; refusing outright would be unusual, but so would leaving valuables in plain sight and walking far off.\n- **Sunscreen is taken seriously and reapplied often**, not just put on once in the morning — the sun near the equator is much stronger than many visitors expect, and reddened tourists are an instantly recognizable sight.\n- **Bring small cash, not cards or large bills**, since almost every transaction on the sand — chairs, food, drinks — runs on ambulantes and quiosques that mostly deal in cash.\n- **Shade (sombra) is planned for, not improvised.** Renting a guarda-sol early in the day, before the sun gets strong, is completely normal even for a short visit.",
+    "tags": ["safety", "practical", "etiquette"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prculture.a-vontade-com-o-corpo",
+    "title": "The informality around bodies and beachwear",
+    "bodyMd": "One of the biggest adjustments for many first-time visitors is how relaxed Brazilian beach culture is about bodies and swimwear. Sungas, biquínis, and maiôs are worn by people of every age and body type without much self-consciousness, and it's considered completely normal — not attention-seeking — to wear something snug-fitting regardless of how closely it matches conventional 'beach body' standards seen in some other cultures.\n\nThis isn't the same as anything-goes: nudity isn't accepted on regular urban beaches (that's reserved for a handful of designated naturist beaches), and cat-calling or staring is not considered acceptable behavior, whatever some outdated stereotypes suggest. The underlying attitude is closer to 'the beach is for everyone, dress comfortably, and mind your own business' — visitors who arrive expecting either extreme (total modesty or a free-for-all) are usually surprised by how unremarkable it actually feels once you're there.",
+    "tags": ["culture", "etiquette"],
+    "cefr": "B1"
+  }
+]

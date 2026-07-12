@@ -1,0 +1,202 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "cvdlg.escolhendo-o-bloco",
+    "scenario": "Deciding which bloco to go to with friends",
+    "speakers": [
+      { "id": "carla", "name": "Carla", "role": "friend" },
+      { "id": "vc", "name": "Você", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "carla", "text": "E aí, qual bloco a gente vai seguir amanhã?" },
+      { "speakerId": "vc", "text": "Tem um bloco de rua saindo da praça, é gratuito." },
+      { "speakerId": "carla", "text": "Que horas é a concentração?" },
+      { "speakerId": "vc", "text": "Às oito da manhã, mas ele só sai mesmo umas nove." },
+      { "speakerId": "carla", "text": "Beleza, os foliões já devem estar lá cedo." },
+      { "speakerId": "vc", "text": "com certeza. Vou levar protetor solar e bastante água." }
+    ],
+    "translation": [
+      { "speakerId": "carla", "text": "Hey, which bloco are we following tomorrow?" },
+      { "speakerId": "vc", "text": "There's a street bloco leaving from the square, it's free." },
+      { "speakerId": "carla", "text": "What time is the gathering point?" },
+      { "speakerId": "vc", "text": "8am, but it doesn't actually move off until around nine." },
+      { "speakerId": "carla", "text": "Cool, the revelers are probably already there early." },
+      { "speakerId": "vc", "text": "For sure. I'm bringing sunscreen and plenty of water." }
+    ],
+    "keyVocabulary": ["cvvocab.bloco", "cvvocab.bloco-de-rua", "cvvocab.gratuito", "cvvocab.concentracao", "cvvocab.foliao", "cvvocab.protetor-solar"],
+    "grammarNotes": "'a gente' is the everyday spoken substitute for 'nós' (we), always conjugated in the third-person singular: 'a gente vai', not 'a gente vamos'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "cvdlg.fantasia-de-ultima-hora",
+    "scenario": "Buying a costume last minute",
+    "speakers": [
+      { "id": "vc", "name": "Você", "role": "customer" },
+      { "id": "vendedor", "name": "Vendedor", "role": "shop clerk" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "vc", "text": "Oi, ainda tem fantasia pra hoje?" },
+      { "speakerId": "vendedor", "text": "Tem sim, chegou muita coisa de última hora." },
+      { "speakerId": "vc", "text": "Legal, e vocês têm abadá também?" },
+      { "speakerId": "vendedor", "text": "Temos. O abadá do bloco daqui é aquele ali, verde." },
+      { "speakerId": "vc", "text": "Perfeito, vou levar os dois. Quanto é?" },
+      { "speakerId": "vendedor", "text": "Cinquenta reais pela fantasia e vinte pelo abadá." }
+    ],
+    "translation": [
+      { "speakerId": "vc", "text": "Hi, do you still have any costumes for today?" },
+      { "speakerId": "vendedor", "text": "We do, a lot came in last minute." },
+      { "speakerId": "vc", "text": "Nice, and do you have abadás too?" },
+      { "speakerId": "vendedor", "text": "We do. This neighborhood bloco's abadá is that green one over there." },
+      { "speakerId": "vc", "text": "Perfect, I'll take both. How much is it?" },
+      { "speakerId": "vendedor", "text": "Fifty reais for the costume and twenty for the abadá." }
+    ],
+    "keyVocabulary": ["cvvocab.fantasia", "cvvocab.abada"],
+    "grammarNotes": "'de última hora' (last minute) is a fixed expression — literally 'of last hour'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "cvdlg.perguntando-sobre-camarote",
+    "scenario": "Asking about camarote tickets",
+    "speakers": [
+      { "id": "vc", "name": "Você", "role": "customer" },
+      { "id": "atendente", "name": "Atendente", "role": "sales staff" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "vc", "text": "Boa tarde, o ingresso do camarote já está à venda?" },
+      { "speakerId": "atendente", "text": "Já sim. O senhor prefere um dia específico do desfile?" },
+      { "speakerId": "vc", "text": "Prefiro o dia das escolas especiais, no sambódromo." },
+      { "speakerId": "atendente", "text": "Nesse caso o camarote inclui open bar e uma vista ótima da bateria." },
+      { "speakerId": "vc", "text": "E se eu preferir algo mais barato, tem arquibancada?" },
+      { "speakerId": "atendente", "text": "Tem, a arquibancada custa bem menos que o camarote." }
+    ],
+    "translation": [
+      { "speakerId": "vc", "text": "Good afternoon, are VIP box tickets on sale yet?" },
+      { "speakerId": "atendente", "text": "They are. Do you prefer a specific day of the parade?" },
+      { "speakerId": "vc", "text": "I'd prefer the top-division schools' day, at the sambadrome." },
+      { "speakerId": "atendente", "text": "In that case the VIP box includes an open bar and a great view of the drum section." },
+      { "speakerId": "vc", "text": "And if I'd prefer something cheaper, is there grandstand seating?" },
+      { "speakerId": "atendente", "text": "There is, the grandstand costs a lot less than the VIP box." }
+    ],
+    "keyVocabulary": ["cvvocab.ingresso", "cvvocab.camarote", "cvvocab.sambodromo", "cvvocab.bateria", "cvvocab.arquibancada"],
+    "grammarNotes": "'O senhor' is a polite, formal way to address someone directly, common with sales staff talking to an unfamiliar customer."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "cvdlg.encontro-na-multidao",
+    "scenario": "Meeting up with friends in a crowd when phones have no signal",
+    "speakers": [
+      { "id": "vc", "name": "Você", "role": "friend" },
+      { "id": "bruno", "name": "Bruno", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "vc", "text": "Bruno, não estou conseguindo te ligar, o sinal caiu." },
+      { "speakerId": "bruno", "text": "Aqui também. Vamos combinar um ponto antes de entrar no bloco." },
+      { "speakerId": "vc", "text": "Bora nos encontrar perto da corda, do lado esquerdo." },
+      { "speakerId": "bruno", "text": "Boa, ali dá pra ver de longe. Se eu não achar vocês, fico na pipoca." },
+      { "speakerId": "vc", "text": "Combinado. Daqui a uma hora a gente se encontra ali de novo." }
+    ],
+    "translation": [
+      { "speakerId": "vc", "text": "Bruno, I can't get through to you, the signal dropped." },
+      { "speakerId": "bruno", "text": "Same here. Let's agree on a spot before we go into the bloco." },
+      { "speakerId": "vc", "text": "Let's meet near the cordon rope, on the left side." },
+      { "speakerId": "bruno", "text": "Good, that's visible from far away. If I can't find you all, I'll stay in the loose crowd." },
+      { "speakerId": "vc", "text": "Deal. In an hour we'll meet there again." }
+    ],
+    "keyVocabulary": ["cvvocab.corda", "cvvocab.pipoca", "cvvocab.bloco"],
+    "grammarNotes": "'Bora' is the clipped, everyday form of 'vamos embora' — used constantly to mean 'let's go' or 'let's...' before a verb."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "cvdlg.horario-do-desfile",
+    "scenario": "Asking about the desfile schedule",
+    "speakers": [
+      { "id": "vc", "name": "Você", "role": "visitor" },
+      { "id": "guia", "name": "Guia", "role": "local guide" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "vc", "text": "A que horas começa o desfile das escolas de samba hoje?" },
+      { "speakerId": "guia", "text": "A primeira escola entra na avenida às oito da noite." },
+      { "speakerId": "vc", "text": "E quanto tempo dura o desfile de cada uma?" },
+      { "speakerId": "guia", "text": "Cada escola tem cerca de setenta minutos pra passar com o enredo completo." },
+      { "speakerId": "vc", "text": "Vale a pena chegar antes pra ver a comissão de frente?" },
+      { "speakerId": "guia", "text": "Vale muito, é sempre a parte mais bonita de cada apresentação." }
+    ],
+    "translation": [
+      { "speakerId": "vc", "text": "What time does the samba schools' parade start today?" },
+      { "speakerId": "guia", "text": "The first school enters the avenue at 8pm." },
+      { "speakerId": "vc", "text": "And how long does each one's parade last?" },
+      { "speakerId": "guia", "text": "Each school has about seventy minutes to get through with the full theme." },
+      { "speakerId": "vc", "text": "Is it worth arriving early to see the front commission?" },
+      { "speakerId": "guia", "text": "Very much so, it's always the prettiest part of each performance." }
+    ],
+    "keyVocabulary": ["cvvocab.desfile", "cvvocab.escola-de-samba", "cvvocab.enredo", "cvvocab.comissao-de-frente"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "cvdlg.na-avenida",
+    "scenario": "Watching the parade live and talking about the performers",
+    "speakers": [
+      { "id": "vc", "name": "Você", "role": "visitor" },
+      { "id": "renata", "name": "Renata", "role": "local friend" }
+    ],
+    "targetLevel": "B1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "vc", "text": "Nossa, olha o carro alegórico chegando!" },
+      { "speakerId": "renata", "text": "Espera o mestre-sala e a porta-bandeira, é o meu momento favorito." },
+      { "speakerId": "vc", "text": "E aquela mulher toda de plumas na frente da bateria?" },
+      { "speakerId": "renata", "text": "É a rainha de bateria. E o cara cantando no carro de som é o puxador." },
+      { "speakerId": "vc", "text": "O samba-enredo desse ano tá muito bom." },
+      { "speakerId": "renata", "text": "Verdade, o carnavalesco caprichou no enredo dessa vez." }
+    ],
+    "translation": [
+      { "speakerId": "vc", "text": "Wow, look at the float coming!" },
+      { "speakerId": "renata", "text": "Wait for the master of ceremonies and the flag bearer, that's my favorite moment." },
+      { "speakerId": "vc", "text": "And that woman all in feathers in front of the drum section?" },
+      { "speakerId": "renata", "text": "That's the drum-section queen. And the guy singing on the sound truck is the lead singer." },
+      { "speakerId": "vc", "text": "This year's theme samba is really good." },
+      { "speakerId": "renata", "text": "True, the art director really outdid himself on the theme this time." }
+    ],
+    "keyVocabulary": ["cvvocab.carro-alegorico", "cvvocab.mestre-sala", "cvvocab.porta-bandeira", "cvvocab.rainha-de-bateria", "cvvocab.bateria", "cvvocab.puxador", "cvvocab.samba-enredo", "cvvocab.carnavalesco", "cvvocab.enredo"],
+    "grammarNotes": "'caprichar' (here 'caprichou') means to put extra care/effort into something — common praise for craftsmanship of any kind."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "cvdlg.ressaca-de-carnaval",
+    "scenario": "Small talk recovering the day after Carnival",
+    "speakers": [
+      { "id": "vc", "name": "Você", "role": "friend" },
+      { "id": "diego", "name": "Diego", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "vc", "text": "Diego, como você tá hoje?" },
+      { "speakerId": "diego", "text": "Com uma ressaca de carnaval terrível, cara." },
+      { "speakerId": "vc", "text": "Bebeu água ontem à noite?" },
+      { "speakerId": "diego", "text": "Nem lembro. Hoje só quero me hidratar e dormir." },
+      { "speakerId": "vc", "text": "Faz sentido, é quarta-feira de cinzas, já pode descansar." },
+      { "speakerId": "diego", "text": "Valeu muito a pena, mas ano que vem eu me cuido mais." }
+    ],
+    "translation": [
+      { "speakerId": "vc", "text": "Diego, how are you feeling today?" },
+      { "speakerId": "diego", "text": "With a terrible Carnival hangover, man." },
+      { "speakerId": "vc", "text": "Did you drink water last night?" },
+      { "speakerId": "diego", "text": "I don't even remember. Today I just want to hydrate and sleep." },
+      { "speakerId": "vc", "text": "Makes sense, it's Ash Wednesday, you can rest now." },
+      { "speakerId": "diego", "text": "It was totally worth it, but next year I'll take better care of myself." }
+    ],
+    "keyVocabulary": ["cvvocab.ressaca-de-carnaval", "cvvocab.se-hidratar", "cvvocab.quarta-feira-de-cinzas"],
+    "grammarNotes": "'Valeu a pena' (it was worth it) is a very common everyday expression, from the verb 'valer' + 'pena' (effort/trouble)."
+  }
+]

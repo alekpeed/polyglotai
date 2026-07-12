@@ -1,0 +1,50 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "feculture.feira-as-institution",
+    "title": "The feira livre: a weekly neighborhood institution",
+    "bodyMd": "In almost every Brazilian city, a stretch of street closes to cars once or twice a week and fills with stalls selling produce, cheese, fish, flowers, and household goods — this is a **feira livre**. It isn't a special event; it's a fixture, tied to that specific street on that specific day, year-round.\n\nEach neighborhood has its own fixed schedule — 'a feira da Rua X é toda terça e sábado' is the kind of thing locals just know, the way you'd know a store's opening hours. Ask a neighbor or doorman (porteiro) which day and street your local feira happens on; it's rarely posted anywhere official, it's just common knowledge passed around.",
+    "tags": ["essentials", "brazil"],
+    "cefr": "A1"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "feculture.how-haggling-really-works",
+    "title": "How haggling actually works at a feira",
+    "bodyMd": "Forget the image of aggressive market bargaining — haggling at a Brazilian feira is mild, friendly, and mostly about **buying more, not paying less for the same thing**. Asking 'faz um precinho?' (can you give me a little discount?) on a normal-sized purchase is fine, but the bigger lever is volume: buy three kilos instead of one, or a full box instead of a handful, and the price per kilo naturally drops.\n\nA vendor who says no to a discount isn't being rude, and pushing hard after that is considered poor form. The whole exchange is meant to stay light and personable — a shared joke, not a standoff.",
+    "tags": ["haggling", "etiquette"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "feculture.building-a-relationship",
+    "title": "Becoming a freguês: the payoff of going back",
+    "bodyMd": "Brazilians tend to pick one or two feirantes per stall type — one for fruit, one for fish, one for cheese — and stick with them for years. Once you're a recognized **freguês/freguesa** (regular customer), you'll often get first pick of the best produce, a little extra thrown in for free ('vai de brinde'), or a better price without even asking.\n\nThis loyalty runs both ways: a good feirante remembers what you usually buy, sets aside something they think you'll like, and treats you a shade more informally than a first-time customer. It's built slowly, over weeks and months of showing up, not something you can shortcut on a single visit.",
+    "tags": ["etiquette", "relationships"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "feculture.cash-and-small-bills",
+    "title": "Cash norms: bring small bills, and don't count on cards everywhere",
+    "bodyMd": "While Pix has made huge inroads at feiras — most stalls now display a QR code — cash is still king, and having **small bills and coins (trocado)** matters more than at a supermarket. A feirante making change for a customer every few minutes can genuinely run short of small notes early in the morning.\n\nShowing up with a large bill for a small purchase can put a vendor in a bind, especially at the start of the day. If you can, break large notes at a padaria or lanchonete before heading to the feira, and keep some coins on hand for small buys.",
+    "tags": ["money", "etiquette"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "feculture.timing-morning-vs-closing",
+    "title": "Timing: go early for freshness, go late for a deal",
+    "bodyMd": "A feira livre usually runs from early morning until early-to-mid afternoon, and the two ends of that window serve very different goals. **Early morning** (right when stalls open) is when the produce is at its freshest and the selection is widest — this is when locals do their real weekly shopping.\n\n**Near closing time**, feirantes would rather sell out than pack unsold produce back into the truck, so prices on that day's remaining stock often drop — sometimes sharply on things like leafy greens and ripe fruit that won't keep until the next feira day. Neither time is 'wrong', but know which trade-off you're making: best quality and choice early, or the better bargain late.",
+    "tags": ["practical", "haggling"],
+    "cefr": "A1"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "feculture.what-to-say-and-when",
+    "title": "The small talk that comes before the transaction",
+    "bodyMd": "At a feira, even a quick purchase usually opens with a greeting and often a question — 'o que tá fresco hoje?' or a comment on the weather — before getting to the price. Jumping straight to 'quanto custa' with no greeting can come across as brusque, even if the interaction itself is fast.\n\nThis small talk isn't wasted time; it's part of how a feirante sizes you up as a potential freguês and decides how much to volunteer — a tip on ripeness, a recommendation, an extra piece tossed in. A friendly 'bom dia' costs nothing and tends to be repaid.",
+    "tags": ["etiquette", "essentials"],
+    "cefr": "A1"
+  }
+]
