@@ -44,6 +44,9 @@
      backgrounds, where the richer tone is load-bearing for legibility). */
   --gold-fill: #edd09c;
   --verde-fill: #78dca0;
+  /* Text paired with --verde-fill, mirroring --gold-ink — picked per-theme against that theme's
+     own --verde-fill (mint here needs dark ink; classic/dark's forest green needs light ink). */
+  --verde-ink: #0f4d28;
 
   /* severity / register "heat" ramp — deliberately distinct from the brand accent */
   --heat-1: #6b8f5e;
@@ -76,6 +79,7 @@
     --indigo-fill: #263a66;
     --gold-fill: #e9b34d;
     --verde-fill: #1e8a4a;
+    --verde-ink: #eafaf0;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
   }
 }
@@ -97,6 +101,7 @@
   --indigo-fill: #263a66;
   --gold-fill: #e9b34d;
   --verde-fill: #1e8a4a;
+  --verde-ink: #eafaf0;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
 }
 :root[data-theme="light"] {
@@ -113,6 +118,7 @@
   --indigo-fill: #7c93c9;
   --gold-fill: #edd09c;
   --verde-fill: #78dca0;
+  --verde-ink: #0f4d28;
   --shadow: 0 1px 2px rgba(20, 24, 27, 0.06), 0 8px 24px -12px rgba(20, 24, 27, 0.18);
 }
 /* Classic — today's original all-saturated look, kept as an opt-in alongside the new
@@ -132,6 +138,7 @@
   --indigo-fill: #263a66;
   --gold-fill: #e2a431;
   --verde-fill: #1e8a4a;
+  --verde-ink: #eafaf0;
   --shadow: 0 1px 2px rgba(20, 24, 27, 0.06), 0 8px 24px -12px rgba(20, 24, 27, 0.18);
 }
 
@@ -400,7 +407,9 @@ button.link:hover {
 .onboard-skyline .a3 {
   height: 42%;
   margin-left: -8%;
-  background: rgba(226, 164, 49, 0.12);
+  /* Green instead of a second gold hill — the skyline reads as all three brand colors instead
+     of just gold-on-blue, echoing the flag badge in the sidebar. */
+  background: rgba(30, 138, 74, 0.2);
 }
 
 .onboard-form-panel {
@@ -630,12 +639,29 @@ button.link:hover {
   flex-direction: column;
   gap: 0.6rem;
 }
+/* Cycles the three brand fills through each grid's cards (azul → amarelo → verde) so the
+   "this week" and "practice" grids read as a set rather than nine identical white boxes — each
+   tag becomes a small pill in its color instead of colored text, since (like --gold) neither
+   --gold-fill nor --verde-fill has enough contrast to read as text directly on paper. */
 .shelf-card .tag {
+  display: inline-flex;
+  align-self: flex-start;
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.66rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--indigo);
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: var(--indigo-fill);
+  color: #fff;
+}
+.shelf-card:nth-child(3n+2) .tag {
+  background: var(--gold-fill);
+  color: var(--gold-ink);
+}
+.shelf-card:nth-child(3n) .tag {
+  background: var(--verde-fill);
+  color: var(--verde-ink);
 }
 .shelf-card h4 {
   font-family: "Fraunces", serif;
@@ -844,6 +870,15 @@ button.link:hover {
   font-variation-settings: "opsz" 60;
   margin-bottom: 1rem;
   text-wrap: balance;
+}
+/* The reveal/check action ("Show answer" in Review, "Check" in Drill) is the one moment on
+   these cards that's plain-outlined today — giving it verde-fill puts green somewhere people
+   actually click, not just decorative trim. */
+.review-card > button,
+.review-card form button {
+  background: var(--verde-fill);
+  border-color: var(--verde-fill);
+  color: var(--verde-ink);
 }
 .review-card hr {
   border: none;
