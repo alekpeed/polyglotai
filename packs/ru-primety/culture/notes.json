@@ -1,0 +1,66 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "pmculture.prisest-na-dorozhku",
+    "title": "Присесть на дорожку: sitting down before you leave",
+    "bodyMd": "Before anyone sets out on a trip — a weekend visit, a long train ride, sometimes even a slightly longer-than-usual errand — everyone present, traveler and hosts alike, sits down together in silence for a few seconds. Then someone says something like «ну, с богом» ('well, godspeed') or simply gets up, and the trip officially begins.\n\nThe most common explanation is folkloric: sitting quietly lets the *domovoi* (house spirit) get used to the idea that you're leaving, so it doesn't send bad luck after you, and it gives you a last moment to mentally check you haven't forgotten anything. A more practical reading is that it's simply a built-in pause against rushing out the door in a scramble.\n\nThis is one of the most durably observed primety in the entire set. Even Russians who roll their eyes at most superstitions will often still do this one automatically, and a host who notices a guest heading for the door without sitting first may genuinely ask them to sit down for a moment — it can read as slightly rude to refuse.",
+    "tags": ["ritual", "travel", "essentials"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pmculture.svist-v-dome",
+    "title": "Whistling indoors: whistling your money away",
+    "bodyMd": "«Не свисти — денег не будет» ('don't whistle — there won't be any money') is one of the first primety most Russian children hear, usually shouted by a parent the instant a whistle starts up indoors. The belief is that whistling inside a house literally whistles away the household's money or luck.\n\nNobody agrees on where exactly it comes from — theories range from old sailors' superstitions about whistling summoning wind (and storms) at sea, carried inland, to a simpler folk association between an idle, noisy habit and wasted resources. Whatever the origin, the reaction to indoor whistling today is often closer to reflex etiquette than genuine belief: many adults will still say something the moment they hear whistling indoors, even while admitting they don't actually think it affects their bank balance.\n\nIt's specifically indoor whistling that's taboo — whistling outside, at a concert, or to call a taxi carries no such baggage.",
+    "tags": ["ritual", "money", "essentials"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pmculture.cherez-porog",
+    "title": "Never greet across the threshold",
+    "bodyMd": "«Через порог не здороваются» — you don't shake hands, hug, kiss, or pass an object across a doorway threshold. If someone offers a hand while one of you is still standing on the порог, the polite move (and what a host will usually insist on) is to step fully through the doorway first, then greet them.\n\nThe belief traces back to old peasant house-building customs: the space under the threshold was traditionally where a household's ancestors or protective spirits were believed to reside, making the порог itself a boundary between the safety of the home and the outside world. Interrupting a greeting there was thought to invite bad luck by disrespecting that boundary, or to literally let misfortune slip in through the gap.\n\nOf the superstitions in this pack, this is one of the ones still followed almost universally and without irony — it barely registers as a 'superstition' to most Russians so much as a basic rule of politeness, on the same shelf as not shaking hands with gloves on. Visitors who don't know it are usually corrected gently but firmly, exactly as in the dialogue where Dmitry stops John at the door.",
+    "tags": ["ritual", "etiquette", "essentials"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pmculture.chyotnoye-nechyotnoye-tsvety",
+    "title": "Flowers: always an odd number, never even",
+    "bodyMd": "Even-numbered bouquets — 2, 4, 6, 8 stems — are for funerals in Russian custom. Flowers given to a living person, for any occasion, should always be an odd number: 1, 3, 5, 7, and so on. A florist will generally assume a customer asking for an even number has made a mistake and correct them before finishing the sale, exactly as in the dialogue in this pack.\n\nThe association is old and specifically funerary — even numbers were laid at graves and memorial services, and that pairing has stuck hard enough that giving six roses to a birthday host can land as a genuinely unsettling gesture rather than a harmless numerical slip, even to Russians who consider themselves not superstitious at all.\n\nThis is arguably the single most seriously observed superstition in this entire pack. Where sitting before a trip or not whistling indoors are often followed half-jokingly or from habit, the odd/even flower rule is treated as close to a hard social rule — the kind of thing that will draw a genuinely worried correction, not a shrug, if you get it wrong. Large, elaborate arrangements sold as single bouquets are the one common exception, since they aren't counted stem by stem the same way.",
+    "tags": ["gifts", "etiquette", "essentials"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pmculture.chernaya-koshka",
+    "title": "A black cat crossing your path",
+    "bodyMd": "A black cat running across your path — specifically in front of you, blocking the direction you're walking — is a bad omen, shared with many other European folk traditions. The common reflex response is to take a different route if possible, or otherwise perform one of the standard countermeasures: knocking on wood, spitting (or saying) тьфу-тьфу-тьфу, or simply waiting for someone else to cross the same spot first so that they 'take' the bad luck instead.\n\nThe belief likely arrived in Russia via general European folklore about black cats and witchcraft rather than a uniquely Russian source, but it has fully integrated into the everyday set of primety alongside more distinctly Russian ones like the threshold rule.\n\nIn practice this is one of the more lightly held superstitions today — reacting to a black cat is often played for a laugh among friends (as in this pack's dialogue) rather than treated as a real cause for concern, though the reflexive comment or gesture still reliably happens.",
+    "tags": ["omen", "animals"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pmculture.rassypannaya-sol",
+    "title": "Spilled salt and the toss over the shoulder",
+    "bodyMd": "Spilling salt is a bad omen said to bring a quarrel or falling-out — some say specifically between the person who spilled it and whoever spoke to them last. The fix, just as in many other European traditions, is to take a pinch of the spilled salt and throw it over your left shoulder.\n\nThe superstition's staying power in Russia is often tied back to salt's historical value: for centuries salt was expensive and heavily taxed, so wasting it was already a small domestic disaster worth reacting to, quite apart from any folklore. That real economic sting seems to have calcified into the superstition long after salt itself became cheap and unremarkable.\n\nToday it survives mostly as a half-joking reflex at the dinner table — someone spills the salt, someone else calls out the fix, salt gets tossed, and the meal continues, more ritual comedy than genuine dread.",
+    "tags": ["ritual", "omen"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pmculture.zashitnye-zhesty",
+    "title": "Knocking on wood, тьфу-тьфу-тьфу, and the evil eye",
+    "bodyMd": "Three small protective gestures cover most situations where good fortune has just been mentioned out loud: постучать по дереву (knock on wood, usually three times), spit — or more commonly today, just say — тьфу-тьфу-тьфу over the left shoulder, and generally avoid praising something too directly. All three exist to guard against сглаз, the evil eye: the belief that openly admiring or announcing good luck, health, or a new possession draws envious attention that can spoil it.\n\nThis is why Russian parents are often noticeably reluctant to hear a baby called 'beautiful' or 'healthy' by a stranger without a quick countermeasure, and why announcing good news (a new job, a clean bill of health) is frequently followed immediately by a knock on the nearest table and a muttered тьфу-тьфу-тьфу. Saying the sound aloud has become far more common in everyday conversation than literally spitting, which is treated as slightly old-fashioned or overly countryside outside of clearly joking contexts.\n\nAs with several primety in this set, the actual belief in сглаз ranges from sincere — especially among older generations, particularly around newborns — to purely reflexive, where the gesture is performed automatically as a kind of verbal tic with no real anxiety behind it.",
+    "tags": ["ritual", "omen"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pmculture.vera-segodnya",
+    "title": "Sincere belief versus habit today",
+    "bodyMd": "Almost no primeta in this pack is followed by every Russian with equal conviction, and belief varies sharply by generation and by household. Many older Russians, especially those raised in more rural or traditional families, follow these customs with real sincerity — sitting before a trip or reacting to spilled salt isn't performance for them, it's simply how things are done, the same way you'd wash your hands before eating.\n\nMany younger, urban Russians will tell you outright that they don't believe in any of it — and then knock on wood in the very next sentence, sit down before a trip out of pure habit, or wince slightly if handed six flowers. This isn't hypocrisy so much as how folk custom usually survives past the point of literal belief: the gesture keeps its social meaning (it signals care, caution, or respect for tradition) long after the supernatural mechanism behind it stops being taken at face value.\n\nA useful rule of thumb for a learner: treat all of these as customs worth knowing and following regardless of your own belief, exactly as most Russians do. Getting the flower count wrong or shaking hands over a threshold won't usually be treated as a moral failing, but it will be noticed — and correcting a foreigner on it is generally done warmly, as in-group folklore being shared rather than a rebuke.",
+    "tags": ["essentials"],
+    "cefr": "A2"
+  }
+]

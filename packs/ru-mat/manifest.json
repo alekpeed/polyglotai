@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "ru-mat",
+  "name": "Mat (Russian Profanity System)",
+  "languageCode": "ru-RU",
+  "packVersion": "0.1.0",
+  "basePack": "ru",
+  "authors": ["PolyglotAI"],
+  "license": "proprietary",
+  "dialects": [{ "id": "ru-RU-standard", "name": "Standard (Moscow)" }],
+  "defaultDialect": "ru-RU-standard",
+  "cefrRange": ["B1", "B2"],
+  "featureFlags": { "slang": true, "profanity": true },
+  "contents": {
+    "vocabulary": ["vocabulary/mat-core.json"],
+    "grammar": ["grammar/mat-word-formation.json"],
+    "profanity": ["profanity/mat-items.json"],
+    "culture": ["culture/notes.json"]
+  }
+}

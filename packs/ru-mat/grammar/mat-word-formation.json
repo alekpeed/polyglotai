@@ -1,0 +1,144 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "matgram.mat-intro",
+    "title": "Мат (mat): a real, studied grammatical subsystem — not just 'swear words'",
+    "cefr": "B1",
+    "explanationMd": "**Мат** (mat) is the standard Russian term for the country's obscenity/profanity system — and it is a genuine, well-documented object of linguistic study, not just an unstructured pile of rude words. Soviet-American linguist Victor Raskin, and later Frank Dreizin & Tom Priestly in their 1982 paper 'A Systematic Approach to Russian Obscenity' (*Russian Linguistics*), both describe mat the way a grammarian describes any other productive word-formation system: a very small set of root morphemes that combine with regular, rule-governed prefixes and suffixes to generate an enormous family of derived words across every part of speech — nouns, verbs, adjectives, adverbs, and interjections.\n\nThis pack teaches that system the way a linguist would: descriptively, so you can **recognize** the structure when you encounter it (in film, music, overheard conversation, or online) and understand *why* a word you've never seen before is instantly parseable to a native speaker. It is explicitly not a pack for producing this vocabulary yourself — see the profanity items and the closing culture note for why that matters in practice.",
+    "examples": [],
+    "commonErrors": [],
+    "drills": [
+      { "prompt": "Name one linguist associated with the academic study of mat's word-formation system.", "answer": "Victor Raskin (or Frank Dreizin & Tom Priestly, authors of 'A Systematic Approach to Russian Obscenity', 1982)." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "matgram.closed-root-set",
+    "title": "A small, closed set of root morphemes underlies almost everything",
+    "cefr": "B1",
+    "explanationMd": "Nearly the entire mat system traces back to a handful of root morphemes — commonly discussed in the linguistic literature as 'the four roots', covering a vulgar term for the male member, one for the female member, a vulgar verb for the sex act, and a vulgar term for a promiscuous woman/prostitute — plus a closely related fifth item (a vulgar term for 'bitch') that behaves the same way grammatically even though it isn't always grouped with the core four. What makes this linguistically interesting isn't the individual roots themselves, which are just words, but that this genuinely tiny inventory generates hundreds of distinct, productively-formed derivatives via completely regular prefixation and suffixation — comparable to how a handful of Latin roots generate huge families of English words via *-tion*, *-able*, *re-*, *dis-*, except mat's productivity is denser and more systematic than almost anything else in the standard language.",
+    "examples": [],
+    "commonErrors": [
+      { "wrong": "Treating mat as an unstructured list of individually-memorized 'bad words'", "right": "Recognize it as a small closed root set plus a regular derivational engine — once you know the engine, unfamiliar derived forms become guessable", "note": "This is the single most useful mental model for this whole topic." }
+    ],
+    "drills": [
+      { "prompt": "Roughly how many core root morphemes does most of the mat system derive from?", "answer": "About four core roots (plus one closely-related fifth item), per the standard linguistic description." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "matgram.verb-prefixation",
+    "title": "Verb prefixation: за-, по-, на-, у-, вы- + root → distinct verbs",
+    "cefr": "B2",
+    "explanationMd": "Russian verbal prefixes ordinarily add aspect and direction to any verb (compare the standard-language pattern идти → зайти 'go in', пойти 'set off', уйти 'leave', выйти 'go out'). Mat's core verbal root follows the exact same productive machinery: attaching за-, по-, на-, у-, вы-, or other standard prefixes to it yields dozens of distinct verbs, each with its own aspectual/directional shade of meaning, from 'to deceive/con someone' to 'to tire someone out' to 'to become very drunk/exhausted' to 'to show off arrogantly' — the prefix does exactly the grammatical work it would on any ordinary verb, the root just happens to be taboo. A learner who already knows how Russian verbal prefixes work from the base pack has, in effect, already learned most of the mechanism here.",
+    "examples": [],
+    "commonErrors": [
+      { "wrong": "Assuming each prefixed mat verb is an unrelated word to memorize separately", "right": "Recognize the shared root plus a standard directional/aspectual prefix, the same way you'd parse зайти/уйти/выйти", "note": "The prefix system here is not special to mat — it's the same prefix inventory as the rest of the language." }
+    ],
+    "drills": [
+      { "prompt": "What grammatical categories do prefixes like за-/по-/на-/у-/вы- normally add to a Russian verb, in both standard and mat vocabulary?", "answer": "Aspect (perfective vs. imperfective) and direction/manner of the action." }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.root-verb-prefixes",
+        "title": "One root verb, five prefixes, five distinct meanings",
+        "pattern": "{prefix} + root verb → distinct derived verb",
+        "steps": [
+          { "prompt": "на- + root verb →", "answer": "наебать (nayebát') — 'to con/cheat someone'", "note": "на- here adds a completive, 'do it fully onto someone' sense, as it does in standard на-verbs like написать." },
+          { "prompt": "вы- + root verb (reflexive) →", "answer": "выёбываться (vyyóbyvat'sya) — 'to show off / act arrogant'", "note": "вы- contributes an 'outward/showy' sense, similar to выделяться ('to stand out') in the standard language." },
+          { "prompt": "за- + root verb →", "answer": "заебать (zayebát') — 'to wear someone out, exhaust their patience'", "note": "за- adds an inceptive/'reach a limit' sense, as in standard заболеть ('to fall ill')." },
+          { "prompt": "у- + root verb (reflexive) →", "answer": "уёбываться (uyóbyvat'sya) — colloquially 'to bail/take off in a hurry'", "note": "у- contributes a 'move away/depart' sense, as in standard уйти ('to leave')." }
+        ]
+      }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "matgram.cross-category-suffixes",
+    "title": "One root, four parts of speech: noun, adjective, adverb, interjection",
+    "cefr": "B2",
+    "explanationMd": "Beyond verbs, the same small set of roots regularly derives a noun, an adjective, an adverb, and a standalone interjection via predictable suffix patterns — again, the same kind of derivational family the standard language builds around ordinary roots (compare добрый 'kind' [adj] → доброта 'kindness' [noun] → добро 'good' [adv/noun] → the same root showing up across a whole word family). A learner who can recognize -ня as a noun-forming suffix, -ов-/-ев- + adjectival endings as adjective-forming, and -о as the neuter-adjective-turned-adverb ending will find these mat derivatives just as parseable as any other Russian word family, because the suffix machinery is identical to the standard language's — only the root is taboo.",
+    "examples": [],
+    "commonErrors": [
+      { "wrong": "Treating a derived adjective and its related noun as two unrelated vocabulary items", "right": "Recognize the shared root plus a standard part-of-speech-changing suffix", "note": "Exactly the same logic as recognizing that доброта and добрый share a root." }
+    ],
+    "drills": [
+      { "prompt": "What part of speech does the ending -ня typically mark on a noun derived this way (e.g. a root + -ня)?", "answer": "An abstract/collective noun, often with a dismissive 'nonsense/junk' meaning — a productive noun-forming suffix, not unique to mat." }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.root-across-parts-of-speech",
+        "title": "The same root moving through noun → adjective → adverb → interjection",
+        "pattern": "root + suffix → {part of speech}",
+        "steps": [
+          { "prompt": "root + -ня (noun) →", "answer": "хуйня (khuynyá) — 'nonsense, junk, a mess' (noun)", "note": "-ня productively forms abstract/dismissive nouns from a root, the same suffix pattern seen elsewhere in colloquial Russian." },
+          { "prompt": "root + adjectival ending (adjective) →", "answer": "хуёвый (khuyóvyy) — 'lousy, terrible' (adjective)", "note": "Standard adjective-forming morphology, just like плохой from a different root." },
+          { "prompt": "adjective stem + -о (adverb/predicate) →", "answer": "хуёво (khuyóvo) — 'badly, terribly' (adverb / predicate of state)", "note": "The regular neuter-short-form-as-adverb pattern, exactly like плохо from плохой." },
+          { "prompt": "root + intensifying prefix о-/у- + -енн- (adjective/interjection) →", "answer": "охуенно (okhuyénno) — used as an intensifier meaning 'awesomely, incredibly' (often positive!)", "note": "A reminder that severity and negativity aren't the same axis — this form is frequently used approvingly, though it remains taboo register." }
+        ]
+      }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "matgram.all-purpose-intensifier",
+    "title": "The all-purpose intensifier/filler function",
+    "cefr": "B2",
+    "explanationMd": "Beyond their literal derivational meanings, mat words serve a purely grammatical intensifying function with almost no semantic content of their own — inserted into a sentence the way English speakers insert 'fucking' as an intensifier ('the fucking bus is late') rather than to communicate anything about the bus. Phrases built on the core roots (e.g. an intensifying phrase glossable as 'the hell' or 'to hell with it') can attach to almost any noun phrase or clause purely to raise emotional volume, without changing the literal proposition being expressed at all. For some speakers in very informal registers, these forms function almost like grammatical punctuation — filling pauses, marking clause boundaries, or adding emphasis with a frequency and grammatical bleaching that genuinely parallels how tags and filler words work in other languages' informal registers.",
+    "examples": [],
+    "commonErrors": [
+      { "wrong": "Assuming every occurrence of a mat word carries its full literal meaning", "right": "In filler/intensifier position, the word has been largely bleached of its literal meaning and mainly signals emphasis or emotional register", "note": "This is exactly how English 'fucking' works as an intensifier — the literal meaning is not what's being communicated." }
+    ],
+    "drills": [
+      { "prompt": "What is 'semantic bleaching', as applied to a mat word used as a pure intensifier?", "answer": "The word's literal meaning fades into the background and it functions mainly as an emphasis marker, similar to English intensifier 'fucking'." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "matgram.blyad-discourse-particle",
+    "title": "A root as discourse particle: filler use independent of its literal meaning",
+    "cefr": "B2",
+    "explanationMd": "One core root (a vulgar term historically meaning 'promiscuous woman/prostitute') has, for many heavy mat-users, drifted almost entirely into a discourse particle — a verbal tic inserted between clauses or even mid-sentence with no connection to its literal meaning at all, comparable to how some English speakers insert 'like' or 'you know' reflexively. Sociolinguists studying mat specifically flag this as one of the clearest cases of a taboo root undergoing full grammaticalization into pure filler, which is part of why native speakers can use it dozens of times in a rant with only some of those uses carrying any real semantic weight — the rest are closer to hesitation sounds than to the literal word.",
+    "examples": [],
+    "commonErrors": [
+      { "wrong": "Translating every instance of this root literally", "right": "Recognize that filler/discourse-particle uses carry no literal meaning at all — they're closer to 'um' than to their dictionary definition", "note": "Overtranslating filler uses badly misrepresents what's actually being communicated." }
+    ],
+    "drills": [
+      { "prompt": "What linguistic process turns a taboo root into a near-meaningless discourse filler?", "answer": "Grammaticalization (here specifically 'semantic bleaching' feeding into a discourse-particle function)." }
+    ],
+    "relatedVocabulary": ["matvocab.blin", "matvocab.zhest"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "matgram.aspect-pairs",
+    "title": "Aspect inside the derived verb family: perfective/imperfective pairs",
+    "cefr": "B2",
+    "explanationMd": "Because mat verbs are built with the same suffix/prefix machinery as any other Russian verb, they form regular perfective/imperfective pairs exactly like standard verbs do — an unprefixed or -ыва-/-ива-suffixed form for ongoing/habitual action, and a prefixed form for a completed, bounded action. This matters practically: a learner encountering an unfamiliar mat verb in the imperfective (say, ending in -ывать) versus its perfective partner (a prefixed, non-suffixed form) is looking at the exact same aspectual contrast taught in the base pack's core verb-aspect grammar, just applied to a taboo root instead of a neutral one.",
+    "examples": [],
+    "commonErrors": [
+      { "wrong": "Assuming mat verbs are aspectually irregular or exceptional", "right": "Mat verbs follow the standard perfective/imperfective system taught elsewhere in this language pack", "note": "Nothing about mat's grammar breaks the ordinary aspect system — it reuses it." }
+    ],
+    "drills": [
+      { "prompt": "Which typically marks the imperfective member of a Russian verb pair: a suffix like -ыва-/-ива-, or a prefix?", "answer": "A suffix like -ыва-/-ива- typically marks imperfective; a prefix without that suffix typically marks perfective." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "matgram.euphemism-bridge",
+    "title": "Why 'soft mat' euphemisms exist: same prosodic slot, no taboo root",
+    "cefr": "B1",
+    "explanationMd": "Precisely because mat words fill such a well-defined functional slot (exclamation, intensifier, filler), Russian has developed a large, genuinely separate family of euphemisms — sound-alike substitutes such as блин, ёлки-палки, and чёрт возьми (all covered in this pack's vocabulary file) — that occupy the exact same rhythmic and emotional position in a sentence without invoking a taboo root at all. This is the same substitution strategy as English 'darn', 'shoot', or 'freakin'' standing in for their stronger counterparts: the emotional/grammatical function is preserved, the taboo content is removed. For a learner, these safe substitutes are far more practically useful to actually produce than the mat roots themselves.",
+    "examples": [],
+    "commonErrors": [],
+    "drills": [
+      { "prompt": "What do euphemisms like блин and ёлки-палки preserve from the mat words they replace, and what do they strip out?", "answer": "They preserve the rhythm/intonation and emotional-intensifier function, while stripping out the taboo root entirely." }
+    ],
+    "relatedVocabulary": ["matvocab.blin", "matvocab.yolki-palki", "matvocab.chyort-vozmi"]
+  }
+]

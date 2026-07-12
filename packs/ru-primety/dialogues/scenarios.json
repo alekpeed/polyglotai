@@ -1,0 +1,192 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "pmdlg.sidet-pered-dorogoy",
+    "scenario": "A host insists everyone sit down silently before a friend leaves on a trip",
+    "speakers": [
+      { "id": "olya", "name": "Оля", "role": "host" },
+      { "id": "maks", "name": "Макс", "role": "guest leaving on a trip" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "olya", "text": "Макс, подожди, не уходи! Давай присядем на дорожку.", "romaji": "Maks, padazhdí, nye ukhadí! Davay prisyádem na darózhku." },
+      { "speakerId": "maks", "text": "Зачем? Я тороплюсь, у меня поезд через час.", "romaji": "Zachém? Ya tarapl'yús', u menyá póyezd chérez chas." },
+      { "speakerId": "olya", "text": "Это примета: перед дальней дорогой нужно немного посидеть молча. Говорят, это к добру.", "romaji": "Éta priméta: péred dál'ney darógoy núzhno nemnógo pasidét' mólcha. Gavaryát, éta k dabrú." },
+      { "speakerId": "maks", "text": "Хорошо, хорошо. Одна минута — и я побежал.", "romaji": "Kharashó, kharashó. Adná minúta — i ya pabezhál." },
+      { "speakerId": "olya", "text": "Вот и всё. Теперь можно идти. Счастливого пути!", "romaji": "Vot i vsyo. Tepér' mózhna idtí. Schastlívava putí!" }
+    ],
+    "translation": [
+      { "speakerId": "olya", "text": "Max, wait, don't leave yet! Let's sit down for the road." },
+      { "speakerId": "maks", "text": "Why? I'm in a hurry, my train is in an hour." },
+      { "speakerId": "olya", "text": "It's a superstition: before a long trip you have to sit quietly for a bit. They say it's a good omen." },
+      { "speakerId": "maks", "text": "Okay, okay. One minute — and I'm off." },
+      { "speakerId": "olya", "text": "That's it. Now you can go. Have a safe trip!" }
+    ],
+    "keyVocabulary": ["pmvocab.prisest-na-dorozhku", "pmvocab.primeta", "pmvocab.k-dobru", "pmvocab.dorozhka"],
+    "grammarNotes": "«Это к + [dative noun]» is the standard mold for labeling any omen: это к добру (a good sign), это к худу (a bad sign) — literally 'this is toward good/bad.'"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pmdlg.ne-svisti",
+    "scenario": "A mother scolds her son for whistling indoors",
+    "speakers": [
+      { "id": "mama", "name": "Мама", "role": "mother" },
+      { "id": "vanya", "name": "Ваня", "role": "son" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "mama", "text": "Ваня, не свисти в доме!", "romaji": "Ványa, nye svistí v dóme!" },
+      { "speakerId": "vanya", "text": "А что такого? Мне просто скучно.", "romaji": "A shto takóva? Mnye prósta skúchna." },
+      { "speakerId": "mama", "text": "Есть такая примета: если свистеть в доме, денег не будет.", "romaji": "Yest' takáya priméta: yésli svistét' v dóme, dének nye búdet." },
+      { "speakerId": "vanya", "text": "Это правда работает?", "romaji": "Éta právda rabótayet?" },
+      { "speakerId": "mama", "text": "Не знаю, но на всякий случай не свисти, ладно?", "romaji": "Nye znáyu, no na fsyákiy slúchay nye svistí, ládna?" }
+    ],
+    "translation": [
+      { "speakerId": "mama", "text": "Vanya, don't whistle in the house!" },
+      { "speakerId": "vanya", "text": "What's wrong with that? I'm just bored." },
+      { "speakerId": "mama", "text": "There's a superstition: if you whistle in the house, there won't be any money." },
+      { "speakerId": "vanya", "text": "Does that actually work?" },
+      { "speakerId": "mama", "text": "I don't know, but just in case, don't whistle, okay?" }
+    ],
+    "keyVocabulary": ["pmvocab.svistet", "pmvocab.ne-svisti-v-dome", "pmvocab.deneg-ne-budet", "pmvocab.primeta", "pmvocab.na-vsyakiy-sluchay"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pmdlg.cherez-porog",
+    "scenario": "A foreign guest is stopped from shaking hands across the doorway threshold",
+    "speakers": [
+      { "id": "dmitriy", "name": "Дмитрий", "role": "host" },
+      { "id": "john", "name": "Джон", "role": "foreign guest" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "john", "text": "Здравствуйте, Дмитрий! Рад вас видеть.", "romaji": "Zdrávstvuyte, Dmítriy! Rat vas vídyet'." },
+      { "speakerId": "dmitriy", "text": "Подождите, не здоровайтесь через порог! Заходите сначала.", "romaji": "Padazhdíte, nye zdaróvaytyes' chérez parók! Zakhadíte snachála." },
+      { "speakerId": "john", "text": "Ой, извините, я не знал. Почему нельзя?", "romaji": "Oy, izviníte, ya nye znal. Pachemú nel'zyá?" },
+      { "speakerId": "dmitriy", "text": "Это старая примета: порог — это граница. Здороваться через него — к худу.", "romaji": "Éta stáraya priméta: parók — éta granítsa. Zdaróvat'sya chérez nyevó — k khúdu." },
+      { "speakerId": "john", "text": "Хорошо, теперь я внутри. Здравствуйте ещё раз!", "romaji": "Kharashó, tepér' ya vnutrí. Zdrávstvuyte yeshchyó ras!" }
+    ],
+    "translation": [
+      { "speakerId": "john", "text": "Hello, Dmitry! Glad to see you." },
+      { "speakerId": "dmitriy", "text": "Wait, don't shake hands across the threshold! Come in first." },
+      { "speakerId": "john", "text": "Oh, sorry, I didn't know. Why not?" },
+      { "speakerId": "dmitriy", "text": "It's an old superstition: the threshold is a boundary. Greeting someone across it is a bad omen." },
+      { "speakerId": "john", "text": "Okay, now I'm inside. Hello again!" }
+    ],
+    "keyVocabulary": ["pmvocab.zdorovatsya", "pmvocab.porog", "pmvocab.cherez-porog", "pmvocab.primeta", "pmvocab.k-khudu"],
+    "grammarNotes": "Через + accusative is the general preposition for 'across/through' — через порог, через дорогу, через плечо all reuse this same pattern."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pmdlg.rassypannaya-sol",
+    "scenario": "A friend spills salt at the table and throws a pinch over their shoulder",
+    "speakers": [
+      { "id": "anya", "name": "Аня", "role": "guest" },
+      { "id": "kira", "name": "Кира", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "anya", "text": "Ой! Я рассыпала соль!", "romaji": "Oy! Ya rassýpala sol'!" },
+      { "speakerId": "kira", "text": "Не переживай, но на всякий случай брось щепотку через левое плечо.", "romaji": "Nye perezhivay, no na fsyákiy slúchay bros' shchepótku chérez lévaye plechó." },
+      { "speakerId": "anya", "text": "Вот так?", "romaji": "Vot tak?" },
+      { "speakerId": "kira", "text": "Да, именно. Рассыпанная соль — это к худу, а через плечо снимает примету.", "romaji": "Da, ímenna. Rassýpannaya sol' — éta k khúdu, a chérez plechó snimáyet primétu." },
+      { "speakerId": "anya", "text": "Странно, но ладно.", "romaji": "Stránna, no ládna." }
+    ],
+    "translation": [
+      { "speakerId": "anya", "text": "Oh! I spilled the salt!" },
+      { "speakerId": "kira", "text": "Don't worry, but just in case, throw a pinch over your left shoulder." },
+      { "speakerId": "anya", "text": "Like this?" },
+      { "speakerId": "kira", "text": "Yes, exactly. Spilled salt is a bad omen, but tossing it over the shoulder undoes it." },
+      { "speakerId": "anya", "text": "Weird, but okay." }
+    ],
+    "keyVocabulary": ["pmvocab.rassypat-sol", "pmvocab.sol", "pmvocab.cherez-levoye-plecho", "pmvocab.plecho", "pmvocab.k-khudu"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pmdlg.chyotnoye-chislo-tsvetov",
+    "scenario": "A foreigner buying flowers for a host is corrected on the odd-number rule",
+    "speakers": [
+      { "id": "prodavshchitsa", "name": "Продавщица", "role": "florist" },
+      { "id": "tom", "name": "Том", "role": "customer" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "tom", "text": "Здравствуйте! Мне нужны цветы для подруги. Дайте, пожалуйста, шесть роз.", "romaji": "Zdrávstvuyte! Mnye núzhny tsvetý dlya padrúgi. Dáytye, pazhálusta, shest' roz." },
+      { "speakerId": "prodavshchitsa", "text": "Шесть? Это чётное число — так дарят только на похороны.", "romaji": "Shest'? Éta chyótnoye chisló — tak daryát tól'ka na pókharany." },
+      { "speakerId": "tom", "text": "Ой, я не знал! А сколько тогда нужно?", "romaji": "Oy, ya nye znal! A skól'ka tagdá núzhna?" },
+      { "speakerId": "prodavshchitsa", "text": "Нечётное число — пять или семь. Живым дарят только нечётное.", "romaji": "Nyechyótnoye chisló — pyat' íli syem'. Zhivým daryát tól'ka nyechyótnoye." },
+      { "speakerId": "tom", "text": "Тогда семь роз, пожалуйста.", "romaji": "Tagdá syem' roz, pazhálusta." }
+    ],
+    "translation": [
+      { "speakerId": "tom", "text": "Hello! I need flowers for a friend. Give me six roses, please." },
+      { "speakerId": "prodavshchitsa", "text": "Six? That's an even number — that's only given at funerals." },
+      { "speakerId": "tom", "text": "Oh, I didn't know! So how many do I need then?" },
+      { "speakerId": "prodavshchitsa", "text": "An odd number — five or seven. You only give odd numbers to the living." },
+      { "speakerId": "tom", "text": "Then seven roses, please." }
+    ],
+    "keyVocabulary": ["pmvocab.darit", "pmvocab.tsvety", "pmvocab.chyotnoye-chislo", "pmvocab.nechyotnoye-chislo", "pmvocab.chyotny", "pmvocab.nechyotny"],
+    "grammarNotes": "This is one of the few primety worth treating as a hard rule rather than a light suggestion — mixing it up reads as a genuine, upsetting mistake, not a quirky faux pas."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pmdlg.chernaya-koshka",
+    "scenario": "A black cat crosses the path and a friend reacts with the standard countermeasures",
+    "speakers": [
+      { "id": "ira", "name": "Ира", "role": "friend" },
+      { "id": "pasha", "name": "Паша", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "pasha", "text": "Смотри, чёрная кошка перебежала дорогу!", "romaji": "Smatrí, chyórnaya kóshka pyerebezhála darógu!" },
+      { "speakerId": "ira", "text": "Ой нет. Быстро, постучи по дереву!", "romaji": "Oy nyet. Býstra, pastuchí pa dérevu!" },
+      { "speakerId": "pasha", "text": "Три раза, да?", "romaji": "Tri ráza, da?" },
+      { "speakerId": "ira", "text": "Да, и ещё скажи «тьфу-тьфу-тьфу» через левое плечо, на всякий случай от сглаза.", "romaji": "Da, i yeshchyó skazhí «t'fu-t'fu-t'fu» chérez lévaye plechó, na fsyákiy slúchay ad sgláza." },
+      { "speakerId": "pasha", "text": "Тьфу-тьфу-тьфу! Теперь всё будет хорошо?", "romaji": "T'fu-t'fu-t'fu! Tepér' vsyo búdet kharashó?" },
+      { "speakerId": "ira", "text": "Я не суеверная, но лучше перестраховаться.", "romaji": "Ya nye suyevérnaya, no lúchshe pyerestrakhavát'sya." }
+    ],
+    "translation": [
+      { "speakerId": "pasha", "text": "Look, a black cat ran across the road!" },
+      { "speakerId": "ira", "text": "Oh no. Quick, knock on wood!" },
+      { "speakerId": "pasha", "text": "Three times, right?" },
+      { "speakerId": "ira", "text": "Yes, and also say 'tfu-tfu-tfu' over your left shoulder, just in case, against the evil eye." },
+      { "speakerId": "pasha", "text": "Tfu-tfu-tfu! Will everything be fine now?" },
+      { "speakerId": "ira", "text": "I'm not superstitious, but better safe than sorry." }
+    ],
+    "keyVocabulary": ["pmvocab.chernaya-koshka", "pmvocab.koshka", "pmvocab.perebezhat-dorogu", "pmvocab.doroga", "pmvocab.postuchat-po-derevu", "pmvocab.tri-raza", "pmvocab.sglaz", "pmvocab.tfu-tfu-tfu", "pmvocab.sueverny"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pmdlg.kto-eshcho-verit",
+    "scenario": "A lighthearted conversation about who still genuinely believes in these superstitions",
+    "speakers": [
+      { "id": "nastya", "name": "Настя", "role": "friend" },
+      { "id": "grisha", "name": "Гриша", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "nastya", "text": "Гриша, ты веришь в приметы?", "romaji": "Grísha, ty vérish' v priméty?" },
+      { "speakerId": "grisha", "text": "Не особо. Но всё равно стучу по дереву, если говорю о чём-то хорошем.", "romaji": "Nye osóba. No fsyo ravnó stuchú pa dérevu, yésli gavaryú a chyom-ta kharóshem." },
+      { "speakerId": "nastya", "text": "А моя бабушка настоящая суеверная — верит в каждую примету.", "romaji": "A mayá bábushka nastayáshchaya suyevérnaya — vérit v kázhduyu primétu." },
+      { "speakerId": "grisha", "text": "Это, наверное, к удаче — иметь такую бабушку!", "romaji": "Éta, navérnaye, k udáche — imét' takúyu bábushku!" },
+      { "speakerId": "nastya", "text": "Ха-ха, может быть. В любом случае, суеверие — это часть нашей культуры.", "romaji": "Kha-kha, mózhet byt'. V lyubóm slúchaye, suyevériye — éta chast' náshey kul'túry." },
+      { "speakerId": "grisha", "text": "Согласен. Тьфу-тьфу-тьфу, пусть всё будет хорошо!", "romaji": "Saglásyen. T'fu-t'fu-t'fu, pust' vsyo búdet kharashó!" }
+    ],
+    "translation": [
+      { "speakerId": "nastya", "text": "Grisha, do you believe in superstitions?" },
+      { "speakerId": "grisha", "text": "Not really. But I still knock on wood if I mention something good." },
+      { "speakerId": "nastya", "text": "But my grandmother is truly superstitious — she believes in every omen." },
+      { "speakerId": "grisha", "text": "That's probably good luck — having a grandmother like that!" },
+      { "speakerId": "nastya", "text": "Ha-ha, maybe. Either way, superstition is part of our culture." },
+      { "speakerId": "grisha", "text": "Agreed. Tfu-tfu-tfu, may everything be well!" }
+    ],
+    "keyVocabulary": ["pmvocab.primeta", "pmvocab.sueveriye", "pmvocab.sueverny", "pmvocab.verit", "pmvocab.udacha", "pmvocab.tfu-tfu-tfu"],
+    "grammarNotes": "Compare суеверие (the noun, 'superstition' as a general belief) with суеверный/суеверная (the adjective, 'superstitious', agreeing in gender with the person it describes) — two related words that are easy to mix up at this level."
+  }
+]
