@@ -65,12 +65,21 @@ export interface RecordReviewInput {
   confidence?: number;
 }
 
+/** Public shape of ReviewRepo — split out so a non-SQL backend (e.g. a cloud-account
+ * implementation over Supabase Postgres) can satisfy the same Repos["reviews"] type. */
+export interface IReviewRepo {
+  generateForPack(profileId: string, packId: string, itemTypes?: ReviewItemType[]): Promise<number>;
+  listDue(profileId: string, limit?: number, itemTypes?: ReviewItemType[]): Promise<ReviewItem[]>;
+  countDue(profileId: string): Promise<number>;
+  recordReview(reviewItemId: string, input: RecordReviewInput): Promise<ReviewItem>;
+}
+
 /**
  * Owns review_items and review_results (plan §4). Bridges the pure Scheduler
  * (spaced-repetition) to the DB: generates review items from imported content, serves the due
  * queue, and records reviews by advancing scheduler state and logging the result.
  */
-export class ReviewRepo {
+export class ReviewRepo implements IReviewRepo {
   constructor(
     private readonly db: Database,
     private readonly scheduler: Scheduler,

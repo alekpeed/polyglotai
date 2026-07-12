@@ -1,21 +1,25 @@
 import { FsrsScheduler } from "@polyglotai/spaced-repetition";
-import { ConversationRepo } from "./conversation/conversationRepo.js";
-import { PronunciationRepo } from "./pronunciation/pronunciationRepo.js";
+import { ConversationRepo, type IConversationRepo } from "./conversation/conversationRepo.js";
+import { PronunciationRepo, type IPronunciationRepo } from "./pronunciation/pronunciationRepo.js";
 import type { Database } from "./db/database.js";
-import { FeatureFlagRegistry } from "./featureflags/registry.js";
+import { FeatureFlagRegistry, type IFeatureFlagRegistry } from "./featureflags/registry.js";
 import { PackRegistry } from "./packs/registry.js";
-import { ProfileRepo } from "./profile/profile.js";
-import { ReviewRepo } from "./review/reviewRepo.js";
+import { ProfileRepo, type IProfileRepo } from "./profile/profile.js";
+import { ReviewRepo, type IReviewRepo } from "./review/reviewRepo.js";
 
-/** The bundle of repositories/services the app composes over one Database connection. */
+/** The bundle of repositories/services the app composes over one Database connection. Typed by
+ * interface (not the concrete SQL-backed classes) for profiles/flags/reviews/conversations/
+ * pronunciation, so a non-SQL backend (e.g. a cloud-account implementation over Supabase
+ * Postgres, see apps/desktop-tauri/src/cloud/) can satisfy this same shape. `db` and `packs`
+ * stay concrete — every backend still reads pack content from the local bundled database. */
 export interface Repos {
   db: Database;
-  profiles: ProfileRepo;
-  flags: FeatureFlagRegistry;
+  profiles: IProfileRepo;
+  flags: IFeatureFlagRegistry;
   packs: PackRegistry;
-  reviews: ReviewRepo;
-  conversations: ConversationRepo;
-  pronunciation: PronunciationRepo;
+  reviews: IReviewRepo;
+  conversations: IConversationRepo;
+  pronunciation: IPronunciationRepo;
 }
 
 /**

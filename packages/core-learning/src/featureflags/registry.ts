@@ -17,11 +17,19 @@ interface FlagRow extends Record<string, SqlValue> {
   enabled: number;
 }
 
+/** Public shape of FeatureFlagRegistry — split out so a non-SQL backend (e.g. a cloud-account
+ * implementation over Supabase Postgres) can satisfy the same Repos["flags"] type. */
+export interface IFeatureFlagRegistry {
+  isEnabled(key: FeatureFlagKey): Promise<boolean>;
+  all(): Promise<Record<string, boolean>>;
+  setEnabled(key: FeatureFlagKey, enabled: boolean): Promise<void>;
+}
+
 /**
  * Reads/writes the feature_flags table (seeded with MVP defaults by migration 0002).
  * Runtime-toggleable from Settings; unknown/unseeded keys read as disabled.
  */
-export class FeatureFlagRegistry {
+export class FeatureFlagRegistry implements IFeatureFlagRegistry {
   constructor(
     private readonly db: Database,
     private readonly now: () => string = () => new Date().toISOString(),

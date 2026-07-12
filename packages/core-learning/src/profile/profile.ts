@@ -65,11 +65,21 @@ function rowToProfile(row: ProfileRow): LearnerProfile {
   };
 }
 
+/** Public shape of ProfileRepo — split out so a non-SQL backend (e.g. a cloud-account
+ * implementation over Supabase Postgres) can satisfy the same Repos["profiles"] type; TS
+ * classes with private fields aren't structurally assignable otherwise. */
+export interface IProfileRepo {
+  create(input: ProfileCreateInput): Promise<LearnerProfile>;
+  get(id: string): Promise<LearnerProfile | null>;
+  getFirst(): Promise<LearnerProfile | null>;
+  update(id: string, patch: ProfileUpdate): Promise<LearnerProfile>;
+}
+
 /**
  * The single local learner profile (spec §5.1, §6). Multi-profile is a later phase; the
  * schema already carries profile_id FKs so it stays additive (plan risk 8).
  */
-export class ProfileRepo {
+export class ProfileRepo implements IProfileRepo {
   constructor(
     private readonly db: Database,
     private readonly now: () => string = () => new Date().toISOString(),

@@ -18,12 +18,26 @@ export interface StoredMessage {
   createdAt: string;
 }
 
+/** Public shape of ConversationRepo — split out so a non-SQL backend (e.g. a cloud-account
+ * implementation over Supabase Postgres) can satisfy the same Repos["conversations"] type. */
+export interface IConversationRepo {
+  create(profileId: string, mode: string, scenario?: string, title?: string): Promise<ConversationRecord>;
+  appendMessage(
+    conversationId: string,
+    role: StoredMessage["role"],
+    content: string,
+    options?: { correctionJson?: string; tokens?: number },
+  ): Promise<void>;
+  listMessages(conversationId: string): Promise<StoredMessage[]>;
+  listConversations(profileId: string): Promise<ConversationRecord[]>;
+}
+
 /**
  * Persists conversations + ai_messages (plan §4). Whether anything is persisted at all is the
  * CALLER's decision via the `conversation_logging` feature flag (off by default — owner
  * decision, plan risk 7); this repo just does the writing when asked.
  */
-export class ConversationRepo {
+export class ConversationRepo implements IConversationRepo {
   constructor(
     private readonly db: Database,
     private readonly now: () => string = () => new Date().toISOString(),

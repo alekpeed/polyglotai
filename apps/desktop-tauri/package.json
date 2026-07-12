@@ -20,6 +20,7 @@
     "@polyglotai/pronunciation": "workspace:*",
     "@polyglotai/shared-types": "workspace:*",
     "@polyglotai/spaced-repetition": "workspace:*",
+    "@supabase/supabase-js": "^2",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-opener": "^2",
     "@tauri-apps/plugin-sql": "^2",

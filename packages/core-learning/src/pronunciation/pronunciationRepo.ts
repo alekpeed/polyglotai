@@ -9,12 +9,22 @@ export interface PronunciationAttempt {
   createdAt: string;
 }
 
+/** Public shape of PronunciationRepo — split out so a non-SQL backend (e.g. a cloud-account
+ * implementation over Supabase Postgres) can satisfy the same Repos["pronunciation"] type. */
+export interface IPronunciationRepo {
+  record(
+    profileId: string,
+    input: { targetText: string; transcript?: string; score?: number; audioPath?: string },
+  ): Promise<PronunciationAttempt>;
+  listRecent(profileId: string, limit?: number): Promise<PronunciationAttempt[]>;
+}
+
 /**
  * Persists pronunciation attempts (spec §17 Phase 1; plan §4 pronunciation_attempts).
  * Audio bytes stay out of the DB — `audioPath` records where the app put the file, and the
  * MVP screen keeps audio in memory only (nothing written unless the learner opts in later).
  */
-export class PronunciationRepo {
+export class PronunciationRepo implements IPronunciationRepo {
   constructor(
     private readonly db: Database,
     private readonly now: () => string = () => new Date().toISOString(),
