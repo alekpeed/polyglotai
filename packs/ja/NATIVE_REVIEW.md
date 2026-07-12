@@ -82,22 +82,62 @@ completes the pack's volume buildout. Worth a native check on:
   one valid model answer, not the only correct one; worth confirming none of the model answers
   contain unnatural phrasing at the volume this was authored.
 
+## Slang/profanity added — reverses an earlier documented decision (0 → 27)
+
+**This section is a direct reversal of a call this same file used to document.** The original
+"Scope decisions" note below (kept for the historical record, now struck through in spirit if
+not in markdown) argued that Japanese's real register axis is politeness/keigo rather than a
+slang→profanity severity ramp, and that reusing pt-br's model as-is would be the wrong move.
+That reasoning wasn't wrong on its own terms — the later web research done for this very
+addition turned up the same observation independently (Japanese genuinely has fewer,
+less-systematized insult words than English/Portuguese, precisely because social weight that
+other languages carry in profanity gets carried by politeness-register violations instead). But
+the owner explicitly and repeatedly requested slang and profanity content for Japanese anyway,
+so `featureFlags.slang`/`featureFlags.profanity` are now `true` and:
+
+- `slang/general.json` — 15 current net-slang / wakamono-kotoba items (草, やばい, ガチ, エモい,
+  ぴえん, 無理, 推し, 尊い, チルい, 陽キャ/陰キャ, 詰んだ, 神, それな, シャバい,
+  あざまる水産), researched the same way as the pt-br slang refresh (web search, not training
+  knowledge alone) and carrying the same staleness risk that entails.
+- `profanity/general.json` — 12 items spanning the real severity range: mild (バカ, アホ,
+  ダサい), moderate (クソ, うざい, キモい, ちくしょう), and severe (てめえ, ふざけるな, くたばれ,
+  死ね, ぶっ殺す). Severity 6-7 items are explicitly `learnerShouldUse: "avoid"` with warning
+  notes — recognize-in-media vocabulary, not usable output, mirroring how pt-br treats its own
+  most severe items.
+- **This unlocked a schema gap**: `RealSpeechItem` never had `reading`/`romaji` fields (pt-br
+  never needed them, being Latin-script) — added them to `packages/shared-types`, a new DB
+  migration (`0006_real_speech_reading.sql`), and threaded them through the importer/query
+  layer/Library UI, matching the exact pattern `vocabulary_items` got in migration 0005.
+
+Highest native-review priorities on this addition specifically:
+- **アホ's regional register flip** (Kansai vs. elsewhere) is asserted from research, not
+  personal knowledge — exactly the kind of nuance that needs a Kansai speaker's confirmation.
+- **Severity calibration generally** — Japanese insult severity is far more context/tone-driven
+  than a fixed 1-7 scale can really capture (バカ said fondly vs. said cruelly is the same word);
+  the scale here is a best-effort approximation, flagged as such.
+- **死ね and ぶっ殺す's `avoid` framing** — worth confirming this reads as appropriately serious
+  rather than either overstated or understated.
+- Same staleness caveat as pt-br's 2026 slang batch: several terms are tied to specific recent
+  cultural moments and may need periodic re-verification, not a one-time addition.
+
 ## Still deliberately not built
 
 Nothing remains against the §10.1 Tier-1 targets. Everything below this point is genuinely
 future/roadmap work, not a Tier-1 gap:
 - Kanji stroke order / handwriting practice.
-- Keigo (formal/humble speech) as its own modeled register axis.
+- Keigo (formal/humble speech) as its own modeled register axis (a dedicated `ja-keigo`
+  micro-pack now covers this separately — see that pack's own docs).
 - Regional dialects (Kansai-ben, etc.).
 - Audio generation for dialogues/listening exercises.
 - JLPT-aligned tagging alongside CEFR (see scope decision below).
 
 ## Scope decisions (need an explicit owner call)
 
-- **No formality/register axis yet.** pt-br models slang→profanity as a severity ramp;
-  Japanese's real equivalent is politeness (tameguchi/casual → teineigo → keigo), a completely
-  different axis. This pack deliberately ships plain teineigo (です/ます) only. Building the
-  real formality model is future work, not something reused from pt-br's severity scale.
+- ~~**No formality/register axis yet.**~~ **Superseded — see "Slang/profanity added" above.**
+  This bullet originally argued Japanese's real register axis is politeness/keigo rather than a
+  slang→profanity severity ramp, and recommended not reusing pt-br's model. The owner overrode
+  this and requested slang/profanity content anyway; kept here, struck through, so the reversal
+  and its original reasoning are both on the record rather than silently overwritten.
 - **CEFR labels, not JLPT.** Every item is tagged "A1" for consistency with the rest of the
   app's UI (severity gauges, level badges), even though Japanese learners more commonly think
   in JLPT terms (N5-N1). Worth an explicit decision on whether to add JLPT tags alongside CEFR.
