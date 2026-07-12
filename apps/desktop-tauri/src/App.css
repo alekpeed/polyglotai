@@ -142,19 +142,19 @@
   --shadow: 0 1px 2px rgba(20, 24, 27, 0.06), 0 8px 24px -12px rgba(20, 24, 27, 0.18);
 }
 
-/* ---- Pack theme: Japanese — ai-iro (indigo), kin (gold), shu-iro (vermillion), replacing
-   the pt-br pack's Brazil-flag palette in the same three token slots. Surfaces (paper/ink/
-   line/shadow) are shared across every pack; only the brand accent tokens change, set by
-   App.tsx via document.documentElement.dataset.pack. No Classic variant — there's no prior
-   look to preserve here, so [data-theme="classic"] just falls through to this block's default
-   (light) values, same as an unset theme would. ---- */
+/* ---- Pack theme: Japanese — ai-iro (indigo) + kin (gold), replacing the pt-br pack's
+   Brazil-flag palette in the shared accent-token slots. Surfaces (paper/ink/line/shadow) are
+   still shared across every pack here; the full Japanese design overhaul (own typography,
+   vertical tategaki, background-image layer, reshaped components) is built separately as
+   [data-pack="ja"] structural overrides below. Vermilion (shu-iro) is deliberately OFF for now
+   — the third accent slot points at indigo so nothing orange shows; it may return later. ---- */
 :root[data-pack="ja"] {
   --indigo: #1b4b73;
   --indigo-fill: #6fa8d7;
   --gold: #c99a2e;
   --gold-fill: #e3cc98;
-  --verde-fill: #ef9c78;
-  --verde-ink: #4a1508;
+  --verde-fill: #6fa8d7;
+  --verde-ink: #0f2a3f;
 }
 @media (prefers-color-scheme: dark) {
   :root[data-pack="ja"] {
@@ -162,8 +162,8 @@
     --indigo-fill: #1b4b73;
     --gold: #e3cc98;
     --gold-fill: #c99a2e;
-    --verde-fill: #c1440e;
-    --verde-ink: #fdeee8;
+    --verde-fill: #1b4b73;
+    --verde-ink: #eaf2f8;
   }
 }
 :root[data-pack="ja"][data-theme="dark"] {
@@ -171,8 +171,8 @@
   --indigo-fill: #1b4b73;
   --gold: #e3cc98;
   --gold-fill: #c99a2e;
-  --verde-fill: #c1440e;
-  --verde-ink: #fdeee8;
+  --verde-fill: #1b4b73;
+  --verde-ink: #eaf2f8;
 }
 
 * {
