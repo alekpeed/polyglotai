@@ -16,6 +16,6 @@
     "phrases": ["phrases/core.json"],
     "grammar": ["grammar/core.json", "grammar/a2.json"],
     "pronunciation": ["pronunciation/rules.json", "pronunciation/extended.json"],
-    "dialogues": ["dialogues/general.json"]
+    "dialogues": ["dialogues/general.json", "dialogues/everyday.json"]
   }
 }

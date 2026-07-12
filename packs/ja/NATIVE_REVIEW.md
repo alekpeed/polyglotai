@@ -31,9 +31,25 @@ prior surface area. Specific things worth a careful native check:
 - **CEFR labels on the A2 set** — items were tagged A1 vs A2 by feel, not against a formal
   syllabus; the boundary is approximate and worth a sanity pass.
 
+## Dialogue expansion (3 → 27)
+
+Added `dialogues/everyday.json` with 24 new scenarios (target was 25; total is now 27) —
+restaurant/konbini/hotel/train/bank/post-office/doctor visits, small talk (hobbies, family,
+weather, work), social situations (declining an invitation, apologizing for lateness, borrowing
+something, asking a teacher for help), and a phone reservation. All `keyVocabulary` references
+resolve against the expanded vocab/phrase set. Worth a native check on:
+
+- **Service-register phrases** (かしこまりました, ご利用ですか, お待ちしております, etc.) —
+  these lean into keigo-adjacent staff speech without the pack modeling keigo formally yet; a
+  native speaker should confirm the register reads as natural, situational staff speech rather
+  than something that needs to be "taught" as a rule.
+- **Dialogue-specific grammar notes** — several introduce a pattern not covered by a dedicated
+  grammar item (見に行く/食べに行く, 動詞＋てみる, もらえますか, されています, ので vs から) —
+  worth confirming the one-line explanations hold up and whether any deserve their own
+  full grammar entry in a future pass.
+
 ## Still deliberately not built (scope for a follow-up session)
 
-- **Dialogues** remain at the pilot's 3 (target 25).
 - **slangRegister** (target 20) is intentionally empty for now; the agreed approach is to fill
   it via the schema's `idiom` kind (慣用句 / set expressions with register notes), honoring the
   "no crude slang / no keigo severity ramp" stance below — not yet authored.

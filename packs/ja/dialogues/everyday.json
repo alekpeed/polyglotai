@@ -1,0 +1,634 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "dlg.ramen-shop",
+    "scenario": "Ordering ramen at a small restaurant",
+    "speakers": [
+      { "id": "staff", "name": "Staff", "role": "restaurant staff" },
+      { "id": "customer", "name": "You" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "staff", "text": "いらっしゃいませ。何名様ですか。", "reading": "いらっしゃいませ。なんめいさまですか。", "romaji": "Irasshaimase. Nanmeisama desu ka." },
+      { "speakerId": "customer", "text": "一人です。", "reading": "ひとりです。", "romaji": "Hitori desu." },
+      { "speakerId": "staff", "text": "こちらへどうぞ。ご注文はお決まりですか。", "reading": "こちらへどうぞ。ごちゅうもんはおきまりですか。", "romaji": "Kochira e douzo. Gochuumon wa okimari desu ka." },
+      { "speakerId": "customer", "text": "ラーメンをお願いします。", "romaji": "Raamen o onegaishimasu." },
+      { "speakerId": "staff", "text": "かしこまりました。少々お待ちください。", "reading": "かしこまりました。しょうしょうおまちください。", "romaji": "Kashikomarimashita. Shoushou omachi kudasai." }
+    ],
+    "translation": [
+      { "speakerId": "staff", "text": "Welcome! How many people?" },
+      { "speakerId": "customer", "text": "Just one." },
+      { "speakerId": "staff", "text": "This way, please. Have you decided on your order?" },
+      { "speakerId": "customer", "text": "Ramen, please." },
+      { "speakerId": "staff", "text": "Certainly. Please wait a moment." }
+    ],
+    "keyVocabulary": ["vocab.ramen", "phrase.kashikomarimashita", "phrase.shoushou-omachi"],
+    "grammarNotes": "何名様 is the polite counter for 'how many people' used by staff — you'd never use 様 (sama) about yourself. お決まりですか ('have you decided?') is standard server phrasing when checking if you're ready to order."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.konbini-checkout",
+    "scenario": "Checking out at a convenience store",
+    "speakers": [
+      { "id": "staff", "name": "Staff", "role": "konbini staff" },
+      { "id": "customer", "name": "You" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "staff", "text": "いらっしゃいませ。以上でよろしいですか。", "reading": "いらっしゃいませ。いじょうでよろしいですか。", "romaji": "Irasshaimase. Ijou de yoroshii desu ka." },
+      { "speakerId": "customer", "text": "はい、それだけです。", "romaji": "Hai, sore dake desu." },
+      { "speakerId": "staff", "text": "袋はご利用ですか。", "reading": "ふくろはごりようですか。", "romaji": "Fukuro wa goriyou desu ka." },
+      { "speakerId": "customer", "text": "いいえ、大丈夫です。", "reading": "いいえ、だいじょうぶです。", "romaji": "Iie, daijoubu desu." },
+      { "speakerId": "staff", "text": "五百二十円です。カードで払えますか。", "reading": "ごひゃくにじゅうえんです。カードではらえますか。", "romaji": "Gohyaku nijuu en desu. Kaado de haraemasu ka." },
+      { "speakerId": "customer", "text": "はい、お願いします。", "romaji": "Hai, onegaishimasu." }
+    ],
+    "translation": [
+      { "speakerId": "staff", "text": "Welcome! Will that be all?" },
+      { "speakerId": "customer", "text": "Yes, that's all." },
+      { "speakerId": "staff", "text": "Would you like a bag?" },
+      { "speakerId": "customer", "text": "No, I'm fine." },
+      { "speakerId": "staff", "text": "That's 520 yen. Would that be card?" },
+      { "speakerId": "customer", "text": "Yes, please." }
+    ],
+    "keyVocabulary": ["vocab.en", "phrase.daijoubu-desuka", "phrase.card-de-haraemasu"],
+    "grammarNotes": "以上でよろしいですか ('will that be all?') is standard checkout phrasing. 大丈夫です here is a polite way to decline an offer — 'no thanks, I'm okay' — not literally 'it's okay'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.asking-park-directions",
+    "scenario": "Asking a passerby for directions to a park",
+    "speakers": [
+      { "id": "a", "name": "You" },
+      { "id": "b", "name": "Passerby" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "a", "text": "すみません、公園までどうやって行きますか。", "reading": "すみません、こうえんまでどうやっていきますか。", "romaji": "Sumimasen, kouen made dou yatte ikimasu ka." },
+      { "speakerId": "b", "text": "この道をまっすぐ行ってください。", "reading": "このみちをまっすぐいってください。", "romaji": "Kono michi o massugu itte kudasai." },
+      { "speakerId": "a", "text": "遠いですか。", "reading": "とおいですか。", "romaji": "Tooi desu ka." },
+      { "speakerId": "b", "text": "いいえ、歩いて五分ぐらいです。", "reading": "いいえ、あるいてごふんぐらいです。", "romaji": "Iie, aruite gofun gurai desu." },
+      { "speakerId": "a", "text": "わかりました。ありがとうございます。", "romaji": "Wakarimashita. Arigatou gozaimasu." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "Excuse me, how do I get to the park?" },
+      { "speakerId": "b", "text": "Please go straight down this road." },
+      { "speakerId": "a", "text": "Is it far?" },
+      { "speakerId": "b", "text": "No, it's about a five-minute walk." },
+      { "speakerId": "a", "text": "Got it. Thank you very much." }
+    ],
+    "keyVocabulary": ["phrase.eki-made-dou", "vocab.aruku", "vocab.kouen"],
+    "grammarNotes": "歩いて五分 ('a five-minute walk') uses the て-form of 歩く to mean 'by walking' — a common pattern for describing how long something takes by a method."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.taking-a-taxi",
+    "scenario": "Taking a taxi to a hotel",
+    "speakers": [
+      { "id": "driver", "name": "Driver", "role": "taxi driver" },
+      { "id": "passenger", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "driver", "text": "どちらまでですか。", "romaji": "Dochira made desu ka." },
+      { "speakerId": "passenger", "text": "さくらホテルまでお願いします。", "romaji": "Sakura hoteru made onegaishimasu." },
+      { "speakerId": "driver", "text": "かしこまりました。二十分ぐらいかかります。", "reading": "かしこまりました。にじゅっぷんぐらいかかります。", "romaji": "Kashikomarimashita. Nijuppun gurai kakarimasu." },
+      { "speakerId": "passenger", "text": "わかりました。お願いします。", "romaji": "Wakarimashita. Onegaishimasu." },
+      { "speakerId": "driver", "text": "ホテルに着きました。三千円です。", "reading": "ホテルにつきました。さんぜんえんです。", "romaji": "Hoteru ni tsukimashita. Sanzen en desu." }
+    ],
+    "translation": [
+      { "speakerId": "driver", "text": "Where to?" },
+      { "speakerId": "passenger", "text": "To the Sakura Hotel, please." },
+      { "speakerId": "driver", "text": "Certainly. It'll take about twenty minutes." },
+      { "speakerId": "passenger", "text": "Understood, thank you." },
+      { "speakerId": "driver", "text": "We've arrived at the hotel. That's 3,000 yen." }
+    ],
+    "keyVocabulary": ["vocab.hoteru", "vocab.takushii", "vocab.en"],
+    "grammarNotes": "どちらまでですか is a polite 'where to?' from a taxi driver — どちら is a more formal version of どこ. かかります ('it takes/costs') is used for both time and money."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.hotel-checkin",
+    "scenario": "Checking into a hotel",
+    "speakers": [
+      { "id": "staff", "name": "Staff", "role": "hotel front desk" },
+      { "id": "guest", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "staff", "text": "いらっしゃいませ。ご予約はございますか。", "reading": "いらっしゃいませ。ごよやくはございますか。", "romaji": "Irasshaimase. Goyoyaku wa gozaimasu ka." },
+      { "speakerId": "guest", "text": "はい、田中の名前で予約しました。", "reading": "はい、たなかのなまえでよやくしました。", "romaji": "Hai, Tanaka no namae de yoyaku shimashita." },
+      { "speakerId": "staff", "text": "少々お待ちください。……お待たせしました。パスポートをお願いします。", "reading": "しょうしょうおまちください。……おまたせしました。パスポートをおねがいします。", "romaji": "Shoushou omachi kudasai. …Omatase shimashita. Pasupooto o onegaishimasu." },
+      { "speakerId": "guest", "text": "はい、どうぞ。", "romaji": "Hai, douzo." },
+      { "speakerId": "staff", "text": "ありがとうございます。お部屋は三階です。", "reading": "ありがとうございます。おへやはさんがいです。", "romaji": "Arigatou gozaimasu. Oheya wa sangai desu." }
+    ],
+    "translation": [
+      { "speakerId": "staff", "text": "Welcome. Do you have a reservation?" },
+      { "speakerId": "guest", "text": "Yes, it's under the name Tanaka." },
+      { "speakerId": "staff", "text": "One moment please. …Sorry to keep you waiting. Your passport, please." },
+      { "speakerId": "guest", "text": "Yes, here you go." },
+      { "speakerId": "staff", "text": "Thank you. Your room is on the third floor." }
+    ],
+    "keyVocabulary": ["phrase.yoyaku-onegai", "vocab.heya", "vocab.hoteru"],
+    "grammarNotes": "ございます is the humble/formal equivalent of あります, used constantly by service staff. お待たせしました ('sorry to keep you waiting') is a standard courtesy after any pause, even a short one."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.train-ticket",
+    "scenario": "Buying a train ticket at the station",
+    "speakers": [
+      { "id": "a", "name": "You" },
+      { "id": "b", "name": "Station staff", "role": "station staff" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "a", "text": "すみません、東京駅までの切符をお願いします。", "reading": "すみません、とうきょうえきまでのきっぷをおねがいします。", "romaji": "Sumimasen, Toukyou-eki made no kippu o onegaishimasu." },
+      { "speakerId": "b", "text": "片道ですか、往復ですか。", "reading": "かたみちですか、おうふくですか。", "romaji": "Katamichi desu ka, oufuku desu ka." },
+      { "speakerId": "a", "text": "往復でお願いします。", "reading": "おうふくでおねがいします。", "romaji": "Oufuku de onegaishimasu." },
+      { "speakerId": "b", "text": "二千四百円です。", "reading": "にせんよんひゃくえんです。", "romaji": "Nisen yonhyaku en desu." },
+      { "speakerId": "a", "text": "カードで払えますか。", "romaji": "Kaado de haraemasu ka." },
+      { "speakerId": "b", "text": "はい、大丈夫です。", "reading": "はい、だいじょうぶです。", "romaji": "Hai, daijoubu desu." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "Excuse me, a ticket to Tokyo Station, please." },
+      { "speakerId": "b", "text": "One-way or round-trip?" },
+      { "speakerId": "a", "text": "Round-trip, please." },
+      { "speakerId": "b", "text": "That's 2,400 yen." },
+      { "speakerId": "a", "text": "Can I pay by card?" },
+      { "speakerId": "b", "text": "Yes, that's fine." }
+    ],
+    "keyVocabulary": ["vocab.kippu", "vocab.eki", "phrase.card-de-haraemasu"],
+    "grammarNotes": "片道 (one-way) and 往復 (round-trip) are the standard pair asked about at any Japanese ticket counter."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.at-the-bank",
+    "scenario": "Opening a bank account",
+    "speakers": [
+      { "id": "staff", "name": "Staff", "role": "bank staff" },
+      { "id": "customer", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "customer", "text": "口座を作りたいんですが。", "reading": "こうざをつくりたいんですが。", "romaji": "Kouza o tsukuritain desu ga." },
+      { "speakerId": "staff", "text": "かしこまりました。パスポートはお持ちですか。", "reading": "かしこまりました。パスポートはおもちですか。", "romaji": "Kashikomarimashita. Pasupooto wa omochi desu ka." },
+      { "speakerId": "customer", "text": "はい、あります。", "romaji": "Hai, arimasu." },
+      { "speakerId": "staff", "text": "こちらの紙に名前と住所を書いてください。", "reading": "こちらのかみになまえとじゅうしょをかいてください。", "romaji": "Kochira no kami ni namae to juusho o kaite kudasai." },
+      { "speakerId": "customer", "text": "わかりました。", "romaji": "Wakarimashita." }
+    ],
+    "translation": [
+      { "speakerId": "customer", "text": "I'd like to open an account." },
+      { "speakerId": "staff", "text": "Certainly. Do you have your passport with you?" },
+      { "speakerId": "customer", "text": "Yes, I have it." },
+      { "speakerId": "staff", "text": "Please write your name and address on this paper." },
+      { "speakerId": "customer", "text": "Understood." }
+    ],
+    "keyVocabulary": ["vocab.ginkou", "vocab.kaku", "vocab.namae"],
+    "grammarNotes": "～たいんですが softens a want-statement into a polite request, leaving room for the listener to respond — very common when asking for a service. お持ちですか is the polite way to ask 'do you have (with you)?'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.post-office",
+    "scenario": "Mailing a package at the post office",
+    "speakers": [
+      { "id": "customer", "name": "You" },
+      { "id": "staff", "name": "Staff", "role": "post office staff" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "customer", "text": "これをアメリカに送りたいです。", "reading": "これをアメリカにおくりたいです。", "romaji": "Kore o Amerika ni okuritai desu." },
+      { "speakerId": "staff", "text": "船便ですか、航空便ですか。", "reading": "ふなびんですか、こうくうびんですか。", "romaji": "Funabin desu ka, koukuubin desu ka." },
+      { "speakerId": "customer", "text": "航空便でお願いします。どのくらいかかりますか。", "reading": "こうくうびんでおねがいします。どのくらいかかりますか。", "romaji": "Koukuubin de onegaishimasu. Dono kurai kakarimasu ka." },
+      { "speakerId": "staff", "text": "一週間ぐらいです。", "reading": "いっしゅうかんぐらいです。", "romaji": "Isshuukan gurai desu." },
+      { "speakerId": "customer", "text": "わかりました。お願いします。", "romaji": "Wakarimashita. Onegaishimasu." }
+    ],
+    "translation": [
+      { "speakerId": "customer", "text": "I'd like to send this to America." },
+      { "speakerId": "staff", "text": "By sea or by air?" },
+      { "speakerId": "customer", "text": "By air, please. How long will it take?" },
+      { "speakerId": "staff", "text": "About a week." },
+      { "speakerId": "customer", "text": "Understood. Please go ahead." }
+    ],
+    "keyVocabulary": ["vocab.yuubinkyoku", "vocab.shuumatsu", "phrase.ikura-desuka"],
+    "grammarNotes": "どのくらいかかりますか ('how long/much does it take?') works for both duration and cost — かかる covers both."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.doctor-visit",
+    "scenario": "Describing symptoms at a doctor's office",
+    "speakers": [
+      { "id": "doctor", "name": "Doctor", "role": "doctor" },
+      { "id": "patient", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "doctor", "text": "どうしましたか。", "romaji": "Dou shimashita ka." },
+      { "speakerId": "patient", "text": "頭が痛いです。それに、少し熱があります。", "reading": "あたまがいたいです。それに、すこしねつがあります。", "romaji": "Atama ga itai desu. Sore ni, sukoshi netsu ga arimasu." },
+      { "speakerId": "doctor", "text": "いつからですか。", "romaji": "Itsu kara desu ka." },
+      { "speakerId": "patient", "text": "昨日の晩からです。", "reading": "きのうのばんからです。", "romaji": "Kinou no ban kara desu." },
+      { "speakerId": "doctor", "text": "わかりました。薬を出しますね。お大事に。", "reading": "わかりました。くすりをだしますね。おだいじに。", "romaji": "Wakarimashita. Kusuri o dashimasu ne. Odaiji ni." }
+    ],
+    "translation": [
+      { "speakerId": "doctor", "text": "What seems to be the trouble?" },
+      { "speakerId": "patient", "text": "I have a headache. Also, I have a slight fever." },
+      { "speakerId": "doctor", "text": "Since when?" },
+      { "speakerId": "patient", "text": "Since last night." },
+      { "speakerId": "doctor", "text": "I see. I'll prescribe some medicine. Take care." }
+    ],
+    "keyVocabulary": ["vocab.itai", "vocab.atama", "vocab.byouin", "phrase.odaijini"],
+    "grammarNotes": "頭が痛い follows the body-part+が+痛い pattern for describing pain. どうしましたか is the standard doctor's opener, roughly 'what's the matter?'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.weekend-plans",
+    "scenario": "Making weekend plans with a friend",
+    "speakers": [
+      { "id": "a", "name": "Yuki", "role": "friend" },
+      { "id": "b", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "a", "text": "週末、暇？", "reading": "しゅうまつ、ひま？", "romaji": "Shuumatsu, hima?" },
+      { "speakerId": "b", "text": "うん、暇だよ。どうして？", "reading": "うん、ひまだよ。どうして？", "romaji": "Un, hima da yo. Doushite?" },
+      { "speakerId": "a", "text": "一緒に映画を見に行かない？", "reading": "いっしょにえいがをみにいかない？", "romaji": "Issho ni eiga o mi ni ikanai?" },
+      { "speakerId": "b", "text": "いいね！何時がいい？", "reading": "いいね！なんじがいい？", "romaji": "Ii ne! Nanji ga ii?" },
+      { "speakerId": "a", "text": "土曜日の午後三時はどう？", "reading": "どようびのごごさんじはどう？", "romaji": "Doyoubi no gogo sanji wa dou?" },
+      { "speakerId": "b", "text": "大丈夫。楽しみ！", "reading": "だいじょうぶ。たのしみ！", "romaji": "Daijoubu. Tanoshimi!" }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "Free this weekend?" },
+      { "speakerId": "b", "text": "Yeah, I'm free. Why?" },
+      { "speakerId": "a", "text": "Want to go watch a movie together?" },
+      { "speakerId": "b", "text": "Sounds good! What time works?" },
+      { "speakerId": "a", "text": "How about 3 p.m. Saturday?" },
+      { "speakerId": "b", "text": "Works for me. Looking forward to it!" }
+    ],
+    "keyVocabulary": ["vocab.hima", "vocab.eiga", "vocab.shuumatsu", "vocab.doyoubi", "phrase.tanoshimi"],
+    "grammarNotes": "見に行く ('go to see') uses the verb stem + に + 行く pattern for 'go do X'. 行かない？ is a casual negative-question invitation, a very common way to suggest doing something together."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.talking-hobbies",
+    "scenario": "Small talk about hobbies",
+    "speakers": [
+      { "id": "a", "name": "You" },
+      { "id": "b", "name": "Tanaka", "role": "acquaintance" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "a", "text": "田中さんの趣味は何ですか。", "reading": "たなかさんのしゅみはなんですか。", "romaji": "Tanaka-san no shumi wa nan desu ka." },
+      { "speakerId": "b", "text": "写真を撮ることです。あなたは？", "reading": "しゃしんをとることです。あなたは？", "romaji": "Shashin o toru koto desu. Anata wa?" },
+      { "speakerId": "a", "text": "私は料理が好きです。よく日本料理を作ります。", "reading": "わたしはりょうりがすきです。よくにほんりょうりをつくります。", "romaji": "Watashi wa ryouri ga suki desu. Yoku nihon ryouri o tsukurimasu." },
+      { "speakerId": "b", "text": "すごいですね！今度、食べさせてください。", "reading": "すごいですね！こんど、たべさせてください。", "romaji": "Sugoi desu ne! Kondo, tabesasete kudasai." },
+      { "speakerId": "a", "text": "もちろん、いいですよ。", "romaji": "Mochiron, ii desu yo." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "What's your hobby, Tanaka?" },
+      { "speakerId": "b", "text": "Taking photos. What about you?" },
+      { "speakerId": "a", "text": "I like cooking. I often make Japanese food." },
+      { "speakerId": "b", "text": "That's amazing! Let me try it sometime." },
+      { "speakerId": "a", "text": "Of course, sounds good." }
+    ],
+    "keyVocabulary": ["vocab.shumi", "vocab.ryouri", "vocab.sugoi"],
+    "grammarNotes": "撮ること turns a verb into a noun with こと — 'the act of taking photos'. よく here means 'often' (frequency), a different sense from 'well'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.talking-family",
+    "scenario": "Talking about family",
+    "speakers": [
+      { "id": "a", "name": "You" },
+      { "id": "b", "name": "Sato", "role": "acquaintance" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "a", "text": "ご家族は何人ですか。", "reading": "ごかぞくはなんにんですか。", "romaji": "Gokazoku wa nannin desu ka." },
+      { "speakerId": "b", "text": "四人です。両親と妹がいます。", "reading": "よにんです。りょうしんといもうとがいます。", "romaji": "Yonin desu. Ryoushin to imouto ga imasu." },
+      { "speakerId": "a", "text": "妹さんはおいくつですか。", "reading": "いもうとさんはおいくつですか。", "romaji": "Imouto-san wa oikutsu desu ka." },
+      { "speakerId": "b", "text": "十八歳です。今、大学生です。", "reading": "じゅうはっさいです。いま、だいがくせいです。", "romaji": "Juuhassai desu. Ima, daigakusei desu." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "How many people are in your family?" },
+      { "speakerId": "b", "text": "Four. I have my parents and a younger sister." },
+      { "speakerId": "a", "text": "How old is your sister?" },
+      { "speakerId": "b", "text": "She's eighteen. She's a university student now." }
+    ],
+    "keyVocabulary": ["vocab.kazoku", "vocab.imouto", "vocab.ikutsu"],
+    "grammarNotes": "ご家族 adds the polite ご- when asking about someone else's family — never about your own. 妹さん adds さん to talk politely about someone else's younger sister."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.talking-weather",
+    "scenario": "Small talk about the weather",
+    "speakers": [
+      { "id": "a", "name": "Neighbor", "role": "neighbor" },
+      { "id": "b", "name": "You" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "a", "text": "今日はいい天気ですね。", "reading": "きょうはいいてんきですね。", "romaji": "Kyou wa ii tenki desu ne." },
+      { "speakerId": "b", "text": "そうですね。でも、明日は雨が降るそうです。", "reading": "そうですね。でも、あしたはあめがふるそうです。", "romaji": "Sou desu ne. Demo, ashita wa ame ga furu sou desu." },
+      { "speakerId": "a", "text": "本当ですか。傘を持って行きます。", "reading": "ほんとうですか。かさをもっていきます。", "romaji": "Hontou desu ka. Kasa o motte ikimasu." },
+      { "speakerId": "b", "text": "そのほうがいいですね。", "romaji": "Sono hou ga ii desu ne." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "Nice weather today, isn't it." },
+      { "speakerId": "b", "text": "It is. But apparently it'll rain tomorrow." },
+      { "speakerId": "a", "text": "Really? I'll bring an umbrella." },
+      { "speakerId": "b", "text": "That's probably a good idea." }
+    ],
+    "keyVocabulary": ["vocab.tenki", "vocab.ame", "vocab.kasa"],
+    "grammarNotes": "～そうです here reports something heard (hearsay 'apparently'), distinct from the appearance-based そう attached directly to an adjective stem."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.borrowing-something",
+    "scenario": "Asking to borrow a pen from a classmate",
+    "speakers": [
+      { "id": "a", "name": "You" },
+      { "id": "b", "name": "Classmate", "role": "classmate" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "a", "text": "ペンを忘れました。貸してもらえますか。", "reading": "ペンをわすれました。かしてもらえますか。", "romaji": "Pen o wasuremashita. Kashite moraemasu ka." },
+      { "speakerId": "b", "text": "いいですよ、どうぞ。", "romaji": "Ii desu yo, douzo." },
+      { "speakerId": "a", "text": "ありがとうございます。後で返します。", "reading": "ありがとうございます。あとでかえします。", "romaji": "Arigatou gozaimasu. Ato de kaeshimasu." },
+      { "speakerId": "b", "text": "急がなくていいですよ。", "reading": "いそがなくていいですよ。", "romaji": "Isoganakute ii desu yo." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "I forgot my pen. Could you lend me one?" },
+      { "speakerId": "b", "text": "Sure, here you go." },
+      { "speakerId": "a", "text": "Thank you. I'll give it back later." },
+      { "speakerId": "b", "text": "No rush." }
+    ],
+    "keyVocabulary": ["vocab.wasureru", "phrase.tetsudatte-kudasai", "vocab.isogashii"],
+    "grammarNotes": "～てもらえますか politely asks someone to do something for you — softer and more common than a plain command. 急がなくていい uses the negative て-form (急がなくて) plus いい, 'it's fine not to hurry'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.declining-invitation",
+    "scenario": "Politely declining an invitation",
+    "speakers": [
+      { "id": "a", "name": "Colleague", "role": "colleague" },
+      { "id": "b", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "a", "text": "今晩、飲みに行きませんか。", "reading": "こんばん、のみにいきませんか。", "romaji": "Konban, nomi ni ikimasen ka." },
+      { "speakerId": "b", "text": "行きたいんですが、今日はちょっと……", "reading": "いきたいんですが、きょうはちょっと……", "romaji": "Ikitain desu ga, kyou wa chotto..." },
+      { "speakerId": "a", "text": "そうですか。残念です。", "reading": "そうですか。ざんねんです。", "romaji": "Sou desu ka. Zannen desu." },
+      { "speakerId": "b", "text": "すみません。また今度誘ってください。", "reading": "すみません。またこんどさそってください。", "romaji": "Sumimasen. Mata kondo sasotte kudasai." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "Want to go for drinks tonight?" },
+      { "speakerId": "b", "text": "I'd like to, but today's a bit..." },
+      { "speakerId": "a", "text": "I see. That's a shame." },
+      { "speakerId": "b", "text": "Sorry. Please invite me again another time." }
+    ],
+    "keyVocabulary": ["phrase.zannen-desu-ne", "phrase.gomennasai", "vocab.kyou"],
+    "grammarNotes": "ちょっと… trailing off is the classic soft refusal — finishing the sentence explicitly would sound unnecessarily blunt. This dialogue's key grammar is the social skill of leaving a decline unfinished, not a new pattern."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.apologizing-late",
+    "scenario": "Apologizing for arriving late to a meeting",
+    "speakers": [
+      { "id": "a", "name": "You" },
+      { "id": "b", "name": "Colleague", "role": "colleague" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "a", "text": "遅れてすみません。電車が遅れました。", "reading": "おくれてすみません。でんしゃがおくれました。", "romaji": "Okurete sumimasen. Densha ga okuremashita." },
+      { "speakerId": "b", "text": "大丈夫ですよ。会議はまだ始まっていません。", "reading": "だいじょうぶですよ。かいぎはまだはじまっていません。", "romaji": "Daijoubu desu yo. Kaigi wa mada hajimatte imasen." },
+      { "speakerId": "a", "text": "よかったです。ありがとうございます。", "romaji": "Yokatta desu. Arigatou gozaimasu." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "Sorry I'm late. My train was delayed." },
+      { "speakerId": "b", "text": "It's fine. The meeting hasn't started yet." },
+      { "speakerId": "a", "text": "That's a relief. Thank you." }
+    ],
+    "keyVocabulary": ["phrase.okurete-sumimasen", "vocab.densha", "vocab.hajimaru"],
+    "grammarNotes": "まだ＋negative (まだ始まっていません) means 'not yet' — まだ pairs naturally with a negative verb here, unlike English's affirmative 'still'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.talking-to-teacher",
+    "scenario": "Asking a teacher a question after class",
+    "speakers": [
+      { "id": "student", "name": "You" },
+      { "id": "sensei", "name": "Sensei", "role": "teacher" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "student", "text": "先生、質問してもいいですか。", "reading": "せんせい、しつもんしてもいいですか。", "romaji": "Sensei, shitsumon shite mo ii desu ka." },
+      { "speakerId": "sensei", "text": "はい、どうぞ。", "romaji": "Hai, douzo." },
+      { "speakerId": "student", "text": "この文法がよくわかりません。もう一度説明してください。", "reading": "このぶんぽうがよくわかりません。もういちどせつめいしてください。", "romaji": "Kono bunpou ga yoku wakarimasen. Mou ichido setsumei shite kudasai." },
+      { "speakerId": "sensei", "text": "いいですよ。一緒に見てみましょう。", "reading": "いいですよ。いっしょにみてみましょう。", "romaji": "Ii desu yo. Issho ni mite mimashou." }
+    ],
+    "translation": [
+      { "speakerId": "student", "text": "Teacher, may I ask a question?" },
+      { "speakerId": "sensei", "text": "Yes, go ahead." },
+      { "speakerId": "student", "text": "I don't understand this grammar well. Could you explain it again?" },
+      { "speakerId": "sensei", "text": "Sure. Let's look at it together." }
+    ],
+    "keyVocabulary": ["vocab.sensei", "phrase.mou-ichido-onegai", "vocab.wakaru"],
+    "grammarNotes": "見てみましょう uses て-form + みる ('try doing') — 'let's try looking at it' rather than a flat command to look."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.asking-about-work",
+    "scenario": "Small talk asking about someone's job",
+    "speakers": [
+      { "id": "a", "name": "You" },
+      { "id": "b", "name": "Suzuki", "role": "acquaintance" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "a", "text": "お仕事は何をされていますか。", "reading": "おしごとはなにをされていますか。", "romaji": "Oshigoto wa nani o sarete imasu ka." },
+      { "speakerId": "b", "text": "会社員です。銀行で働いています。", "reading": "かいしゃいんです。ぎんこうではたらいています。", "romaji": "Kaishain desu. Ginkou de hataraite imasu." },
+      { "speakerId": "a", "text": "忙しいですか。", "reading": "いそがしいですか。", "romaji": "Isogashii desu ka." },
+      { "speakerId": "b", "text": "はい、少し大変ですが、面白い仕事です。", "reading": "はい、すこしたいへんですが、おもしろいしごとです。", "romaji": "Hai, sukoshi taihen desu ga, omoshiroi shigoto desu." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "What do you do for work?" },
+      { "speakerId": "b", "text": "I'm a company employee. I work at a bank." },
+      { "speakerId": "a", "text": "Are you busy?" },
+      { "speakerId": "b", "text": "Yes, it's a bit tough, but it's an interesting job." }
+    ],
+    "keyVocabulary": ["vocab.shigoto", "vocab.hataraku", "vocab.ginkou", "vocab.taihen"],
+    "grammarNotes": "されています is the respectful (keigo-adjacent) passive-form used to politely ask what someone does, gentler than a plain していますか about another person."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.clothes-shopping",
+    "scenario": "Shopping for clothes",
+    "speakers": [
+      { "id": "staff", "name": "Staff", "role": "shop staff" },
+      { "id": "customer", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "staff", "text": "いらっしゃいませ。何かお探しですか。", "reading": "いらっしゃいませ。なにかおさがしですか。", "romaji": "Irasshaimase. Nanika osagashi desu ka." },
+      { "speakerId": "customer", "text": "青いシャツを探しています。", "reading": "あおいシャツをさがしています。", "romaji": "Aoi shatsu o sagashite imasu." },
+      { "speakerId": "staff", "text": "こちらはいかがですか。", "romaji": "Kochira wa ikaga desu ka." },
+      { "speakerId": "customer", "text": "いいですね。試着してもいいですか。", "reading": "いいですね。しちゃくしてもいいですか。", "romaji": "Ii desu ne. Shichaku shite mo ii desu ka." },
+      { "speakerId": "staff", "text": "もちろんです。あちらへどうぞ。", "romaji": "Mochiron desu. Achira e douzo." }
+    ],
+    "translation": [
+      { "speakerId": "staff", "text": "Welcome! Looking for something in particular?" },
+      { "speakerId": "customer", "text": "I'm looking for a blue shirt." },
+      { "speakerId": "staff", "text": "How about this one?" },
+      { "speakerId": "customer", "text": "I like it. May I try it on?" },
+      { "speakerId": "staff", "text": "Of course. This way, please." }
+    ],
+    "keyVocabulary": ["vocab.ao", "vocab.iro", "phrase.shashin-ii"],
+    "grammarNotes": "お探しですか is a polite way staff ask 'are you looking for something?'. 試着する ('to try on') plus ～てもいいですか asks permission the same way as other てもいい requests."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.phone-reservation",
+    "scenario": "Making a restaurant reservation by phone",
+    "speakers": [
+      { "id": "customer", "name": "You" },
+      { "id": "staff", "name": "Staff", "role": "restaurant staff" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "customer", "text": "もしもし、今晩七時に二名で予約したいんですが。", "reading": "もしもし、こんばんしちじににめいでよやくしたいんですが。", "romaji": "Moshi moshi, konban shichiji ni nimei de yoyaku shitain desu ga." },
+      { "speakerId": "staff", "text": "はい、少々お待ちください。……七時ですね、大丈夫です。お名前をお願いします。", "reading": "はい、しょうしょうおまちください。……しちじですね、だいじょうぶです。おなまえをおねがいします。", "romaji": "Hai, shoushou omachi kudasai. …Shichiji desu ne, daijoubu desu. Onamae o onegaishimasu." },
+      { "speakerId": "customer", "text": "田中です。", "reading": "たなかです。", "romaji": "Tanaka desu." },
+      { "speakerId": "staff", "text": "田中様、ありがとうございます。お待ちしております。", "reading": "たなかさま、ありがとうございます。おまちしております。", "romaji": "Tanaka-sama, arigatou gozaimasu. Omachi shite orimasu." }
+    ],
+    "translation": [
+      { "speakerId": "customer", "text": "Hello, I'd like to reserve a table for two at 7 tonight." },
+      { "speakerId": "staff", "text": "Yes, one moment please. …7 o'clock, that works. May I have your name?" },
+      { "speakerId": "customer", "text": "Tanaka." },
+      { "speakerId": "staff", "text": "Mr./Ms. Tanaka, thank you. We look forward to your visit." }
+    ],
+    "keyVocabulary": ["phrase.yoyaku-onegai", "vocab.nanji", "vocab.ban"],
+    "grammarNotes": "もしもし is used only on the phone, never in person. お待ちしております is humble keigo for 'we'll be waiting' — a more polite register than everyday speech, typical of service phone calls."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.saying-goodbye-trip",
+    "scenario": "Saying goodbye at the end of a trip",
+    "speakers": [
+      { "id": "a", "name": "Host friend", "role": "friend" },
+      { "id": "b", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "a", "text": "日本での旅行はどうでしたか。", "reading": "にほんでのりょこうはどうでしたか。", "romaji": "Nihon de no ryokou wa dou deshita ka." },
+      { "speakerId": "b", "text": "すごく楽しかったです。日本料理も食べられたし、いい経験でした。", "reading": "すごくたのしかったです。にほんりょうりもたべられたし、いいけいけんでした。", "romaji": "Sugoku tanoshikatta desu. Nihon ryouri mo taberareta shi, ii keiken deshita." },
+      { "speakerId": "a", "text": "それはよかったです。また日本に来てくださいね。", "reading": "それはよかったです。またにほんにきてくださいね。", "romaji": "Sore wa yokatta desu. Mata Nihon ni kite kudasai ne." },
+      { "speakerId": "b", "text": "はい、絶対また来ます。お世話になりました。", "reading": "はい、ぜったいまたきます。おせわになりました。", "romaji": "Hai, zettai mata kimasu. Osewa ni narimashita." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "How was your trip in Japan?" },
+      { "speakerId": "b", "text": "It was really fun. I got to eat Japanese food too — it was a great experience." },
+      { "speakerId": "a", "text": "I'm glad to hear that. Please come back to Japan again." },
+      { "speakerId": "b", "text": "Yes, I'll definitely come back. Thank you for everything." }
+    ],
+    "keyVocabulary": ["vocab.ryokou", "phrase.tanoshikatta", "vocab.nihon"],
+    "grammarNotes": "お世話になりました ('thank you for taking care of me / for everything') is a set closing phrase acknowledging someone's help or hospitality — hard to translate literally but essential socially."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.recommend-restaurant",
+    "scenario": "Asking a friend to recommend a restaurant",
+    "speakers": [
+      { "id": "a", "name": "You" },
+      { "id": "b", "name": "Friend", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "a", "text": "この辺でおすすめのレストランはある？", "reading": "このへんでおすすめのレストランはある？", "romaji": "Kono hen de osusume no resutoran wa aru?" },
+      { "speakerId": "b", "text": "うん、駅の近くにおいしい店があるよ。", "reading": "うん、えきのちかくにおいしいみせがあるよ。", "romaji": "Un, eki no chikaku ni oishii mise ga aru yo." },
+      { "speakerId": "a", "text": "何料理？", "reading": "なにりょうり？", "romaji": "Nani ryouri?" },
+      { "speakerId": "b", "text": "ラーメン屋さん。安くておいしいよ。", "reading": "ラーメンやさん。やすくておいしいよ。", "romaji": "Raamen-yasan. Yasukute oishii yo." },
+      { "speakerId": "a", "text": "いいね、今度行ってみる。", "reading": "いいね、こんどいってみる。", "romaji": "Ii ne, kondo itte miru." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "Is there a restaurant you'd recommend around here?" },
+      { "speakerId": "b", "text": "Yeah, there's a good place near the station." },
+      { "speakerId": "a", "text": "What kind of food?" },
+      { "speakerId": "b", "text": "A ramen shop. Cheap and delicious." },
+      { "speakerId": "a", "text": "Nice, I'll try going sometime." }
+    ],
+    "keyVocabulary": ["phrase.osusume-wa-nan", "vocab.ramen", "vocab.yasui", "vocab.eki"],
+    "grammarNotes": "安くておいしい chains two い-adjectives with the て-form (安い→安くて) — the standard way to list multiple qualities in one sentence. 行ってみる ('try going') uses て-form + みる again, this time in plain/casual form."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.lost-item",
+    "scenario": "Reporting a lost item at a station office",
+    "speakers": [
+      { "id": "customer", "name": "You" },
+      { "id": "staff", "name": "Staff", "role": "station staff" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "customer", "text": "すみません、電車の中でかばんを忘れました。", "reading": "すみません、でんしゃのなかでかばんをわすれました。", "romaji": "Sumimasen, densha no naka de kaban o wasuremashita." },
+      { "speakerId": "staff", "text": "何時ごろの電車ですか。", "reading": "なんじごろのでんしゃですか。", "romaji": "Nanji goro no densha desu ka." },
+      { "speakerId": "customer", "text": "午後三時ごろです。黒いかばんです。", "reading": "ごごさんじごろです。くろいかばんです。", "romaji": "Gogo sanji goro desu. Kuroi kaban desu." },
+      { "speakerId": "staff", "text": "調べますので、少々お待ちください。", "reading": "しらべますので、しょうしょうおまちください。", "romaji": "Shirabemasu node, shoushou omachi kudasai." },
+      { "speakerId": "customer", "text": "ありがとうございます。お願いします。", "romaji": "Arigatou gozaimasu. Onegaishimasu." }
+    ],
+    "translation": [
+      { "speakerId": "customer", "text": "Excuse me, I left my bag on the train." },
+      { "speakerId": "staff", "text": "Around what time was the train?" },
+      { "speakerId": "customer", "text": "Around 3 p.m. It's a black bag." },
+      { "speakerId": "staff", "text": "I'll look into it, so please wait a moment." },
+      { "speakerId": "customer", "text": "Thank you. I appreciate it." }
+    ],
+    "keyVocabulary": ["vocab.kaban", "vocab.densha", "vocab.wasureru", "vocab.kuro"],
+    "grammarNotes": "ので works like から to give a reason, but sounds slightly softer/more polite — common in service contexts like this one."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dlg.inviting-to-dinner",
+    "scenario": "Inviting a coworker to dinner",
+    "speakers": [
+      { "id": "a", "name": "You" },
+      { "id": "b", "name": "Coworker", "role": "coworker" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "a", "text": "今度、一緒に晩ご飯を食べに行きませんか。", "reading": "こんど、いっしょにばんごはんをたべにいきませんか。", "romaji": "Kondo, issho ni bangohan o tabe ni ikimasen ka." },
+      { "speakerId": "b", "text": "いいですね！いつがいいですか。", "reading": "いいですね！いつがいいですか。", "romaji": "Ii desu ne! Itsu ga ii desu ka." },
+      { "speakerId": "a", "text": "来週の金曜日はどうですか。", "reading": "らいしゅうのきんようびはどうですか。", "romaji": "Raishuu no kinyoubi wa dou desu ka." },
+      { "speakerId": "b", "text": "大丈夫です。楽しみにしています。", "reading": "だいじょうぶです。たのしみにしています。", "romaji": "Daijoubu desu. Tanoshimi ni shite imasu." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "Would you like to get dinner together sometime?" },
+      { "speakerId": "b", "text": "Sounds great! When works?" },
+      { "speakerId": "a", "text": "How about next Friday?" },
+      { "speakerId": "b", "text": "That works. I'm looking forward to it." }
+    ],
+    "keyVocabulary": ["vocab.bangohan", "vocab.kinyoubi", "vocab.raishuu", "phrase.itsu-ga-ii"],
+    "grammarNotes": "食べに行く follows the same verb-stem+に+行く pattern as 見に行く earlier — 'go to eat'. 楽しみにしています is a fuller, warmer version of plain 楽しみです."
+  }
+]
