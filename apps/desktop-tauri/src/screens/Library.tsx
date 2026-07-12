@@ -10,15 +10,55 @@ import {
   type VocabularyEntry,
 } from "@polyglotai/core-learning";
 import type { LoadedPack } from "@polyglotai/language-pack-sdk";
+import type { Manifest } from "@polyglotai/shared-types";
 import type { LearnerProfile, Severity } from "@polyglotai/shared-types";
+import { listBundledPackIds, loadPackManifest } from "../app/bootstrap";
 
-type Tab = "vocabulary" | "grammar" | "slang" | "culture";
+type Tab = "vocabulary" | "grammar" | "slang" | "culture" | "microPacks";
 
 interface Props {
   repos: Repos;
   profile: LearnerProfile;
   pack: LoadedPack;
+  /** Every existing profile for this account — used to tell an already-started sibling
+   * micro-pack (show "Continue") from one the learner hasn't tried yet (show "Start"). */
+  allProfiles: LearnerProfile[];
+  /** Switches straight into an existing profile, same as the language picker's "Continue". */
+  onContinuePack: (profile: LearnerProfile) => void;
+  /** Begins onboarding into a brand-new profile for a not-yet-started sibling micro-pack. */
+  onStartPack: (packId: string) => void;
   onDone: () => void;
+}
+
+/** A micro-pack sharing this pack's language (same basePack, or this pack itself is the
+ * basePack) — the "More from <language>" section lives in Library precisely so these never
+ * show up as their own tile on the top-level language picker (a micro-pack isn't a language). */
+function useSiblingMicroPacks(pack: LoadedPack) {
+  const [state, setState] = useState<{ siblings: { id: string; manifest: Manifest }[]; languageName: string } | null>(
+    null,
+  );
+  const languageRootId = pack.manifest.basePack ?? pack.manifest.id;
+
+  useEffect(() => {
+    let active = true;
+    Promise.all(
+      listBundledPackIds()
+        .filter((id) => id !== pack.manifest.id)
+        .map((id) => loadPackManifest(id).then((manifest) => ({ id, manifest }))),
+    ).then((all) => {
+      if (!active) return;
+      const root = all.find((p) => p.id === languageRootId);
+      setState({
+        siblings: all.filter((p) => p.manifest.basePack === languageRootId),
+        languageName: root?.manifest.name ?? pack.manifest.name,
+      });
+    });
+    return () => {
+      active = false;
+    };
+  }, [languageRootId, pack.manifest.id, pack.manifest.name]);
+
+  return state;
 }
 
 interface Data {
@@ -43,10 +83,12 @@ function HeatBar({ severity }: { severity: Severity }) {
   );
 }
 
-export function Library({ repos, profile, pack, onDone }: Props) {
+export function Library({ repos, profile, pack, allProfiles, onContinuePack, onStartPack, onDone }: Props) {
   const [tab, setTab] = useState<Tab>("vocabulary");
   const [data, setData] = useState<Data | null>(null);
   const packId = profile.activePackId;
+  const microPacksState = useSiblingMicroPacks(pack);
+  const profileByPackId = new Map(allProfiles.map((p) => [p.activePackId, p]));
 
   useEffect(() => {
     if (!packId) return;
@@ -87,6 +129,11 @@ export function Library({ repos, profile, pack, onDone }: Props) {
         {pack.culture.length > 0 && (
           <button type="button" className={tab === "culture" ? "active" : ""} onClick={() => setTab("culture")}>
             Culture <span className="mono">{pack.culture.length}</span>
+          </button>
+        )}
+        {microPacksState && microPacksState.siblings.length > 0 && (
+          <button type="button" className={tab === "microPacks" ? "active" : ""} onClick={() => setTab("microPacks")}>
+            More from {microPacksState.languageName} <span className="mono">{microPacksState.siblings.length}</span>
           </button>
         )}
       </nav>
@@ -175,6 +222,30 @@ export function Library({ repos, profile, pack, onDone }: Props) {
               )}
             </article>
           ))}
+        </div>
+      )}
+
+      {tab === "microPacks" && microPacksState && (
+        <div className="lib-list">
+          {microPacksState.siblings.map(({ id, manifest }) => {
+            const existing = profileByPackId.get(id);
+            return (
+              <div key={id} className="lib-row">
+                <div className="word">
+                  <span className="p">{manifest.name}</span>
+                  <span className="m">Micro-pack · part of {microPacksState.languageName}</span>
+                </div>
+                <div />
+                <button
+                  type="button"
+                  className="btn-primary"
+                  onClick={() => (existing ? onContinuePack(existing) : onStartPack(id))}
+                >
+                  {existing ? "Continue" : "Start"}
+                </button>
+              </div>
+            );
+          })}
         </div>
       )}
 

@@ -106,6 +106,18 @@ function App() {
       .catch((e) => setError(String(e)));
   }
 
+  // Same shape as handleStartNew, but also clears activeProfile: this fires from inside an
+  // already-active session (Library's "More from <language>" section — see Library.tsx), so it
+  // has to drop back to the "!activeProfile && activePack" branch below to reach Onboarding for
+  // the new pack. Deliberately leaves the stored profile id alone (only handleOnboardingComplete
+  // updates it) so a reload mid-onboarding falls back to the profile the learner came from.
+  function handleStartMicroPack(packId: string) {
+    setActiveProfile(null);
+    loadPackForId(packId)
+      .then(setActivePack)
+      .catch((e) => setError(String(e)));
+  }
+
   function handleOnboardingComplete(profile: LearnerProfile) {
     setProfiles((prev) => [...(prev ?? []), profile]);
     setActiveProfile(profile);
@@ -179,7 +191,17 @@ function App() {
       screen = <Drill repos={repos} profile={profile} onDone={goHome} />;
       break;
     case "library":
-      screen = <Library repos={repos} profile={profile} pack={pack} onDone={goHome} />;
+      screen = (
+        <Library
+          repos={repos}
+          profile={profile}
+          pack={pack}
+          allProfiles={profiles}
+          onContinuePack={handleContinue}
+          onStartPack={handleStartMicroPack}
+          onDone={goHome}
+        />
+      );
       break;
     case "tutor":
       screen = <Tutor repos={repos} profile={profile} pack={pack} onDone={goHome} onOpenSettings={openSettings} />;

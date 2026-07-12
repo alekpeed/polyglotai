@@ -45,16 +45,15 @@ export function LanguagePicker({ existingProfiles, onContinue, onStartNew }: Pro
   }
 
   const startedPackIds = new Set(existingProfiles.map((p) => p.activePackId).filter((id): id is string => !!id));
-  // Full languages first, then their micro-packs grouped alongside (by basePack) rather than
-  // scattered — a goshuin-seeker card reads as "part of Japanese", not an unrelated tile.
+  // This screen is a language chooser, not a content browser — a micro-pack (basePack set) is
+  // not a language, so it never appears here even once started. It lives inside its parent
+  // language's own Library instead (see Library.tsx "More from <language>"), reachable only
+  // after you've already picked that language.
+  const isMicroPack = (id: string) => !!manifests[id]?.basePack;
+  const continuingProfiles = existingProfiles.filter((p) => !p.activePackId || !isMicroPack(p.activePackId));
   const newPackIds = listBundledPackIds()
-    .filter((id) => !startedPackIds.has(id))
-    .sort((a, b) => {
-      const baseA = manifests[a]?.basePack ?? a;
-      const baseB = manifests[b]?.basePack ?? b;
-      if (baseA !== baseB) return baseA.localeCompare(baseB);
-      return (manifests[a]?.basePack ? 1 : 0) - (manifests[b]?.basePack ? 1 : 0);
-    });
+    .filter((id) => !startedPackIds.has(id) && !isMicroPack(id))
+    .sort((a, b) => (manifests[a]?.name ?? a).localeCompare(manifests[b]?.name ?? b));
 
   return (
     <div className="onboard-shell">
@@ -74,11 +73,11 @@ export function LanguagePicker({ existingProfiles, onContinue, onStartNew }: Pro
 
       <main className="onboard-form-panel">
         <div className="onboarding onboard-form" style={{ maxWidth: 440 }}>
-          {existingProfiles.length > 0 && (
+          {continuingProfiles.length > 0 && (
             <>
               <h2 className="onboard-title">Continue learning</h2>
               <div className="lang-picker-list">
-                {existingProfiles.map((p) => {
+                {continuingProfiles.map((p) => {
                   const manifest = p.activePackId ? manifests[p.activePackId] : undefined;
                   return (
                     <button
@@ -98,21 +97,14 @@ export function LanguagePicker({ existingProfiles, onContinue, onStartNew }: Pro
 
           {newPackIds.length > 0 && (
             <>
-              <h2 className="onboard-title">{existingProfiles.length > 0 ? "Start a new language" : "Start learning"}</h2>
+              <h2 className="onboard-title">{continuingProfiles.length > 0 ? "Start a new language" : "Start learning"}</h2>
               <div className="lang-picker-list">
                 {newPackIds.map((id) => {
                   const manifest = manifests[id];
-                  const baseId = manifest?.basePack;
-                  const baseName = baseId ? (manifests[baseId]?.name ?? baseId) : null;
                   return (
-                    <button
-                      key={id}
-                      type="button"
-                      className={baseId ? "lang-picker-card new micro" : "lang-picker-card new"}
-                      onClick={() => onStartNew(id)}
-                    >
+                    <button key={id} type="button" className="lang-picker-card new" onClick={() => onStartNew(id)}>
                       <span className="name">{manifest?.name ?? id}</span>
-                      <span className="sub">{baseName ? `Micro-pack · part of ${baseName}` : manifest?.languageCode ?? ""}</span>
+                      <span className="sub">{manifest?.languageCode ?? ""}</span>
                     </button>
                   );
                 })}
