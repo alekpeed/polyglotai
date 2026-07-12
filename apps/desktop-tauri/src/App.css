@@ -37,6 +37,13 @@
      with light text, so unlike --indigo it doesn't need to lighten for contrast reasons.
      Periwinkle by default in light mode, navy by default in dark; redefined per theme below. */
   --indigo-fill: #7c93c9;
+  /* Same idea as --indigo-fill, for gold- and green-colored solid surfaces (buttons, badges,
+     chips, the flag badge) — these always pair with dark ink text, so lightening them is safe
+     and reads as a softer palette rather than a contrast problem. --gold itself is untouched
+     (used for the hero numeral, tab underline, and decorative glows against colored/paper
+     backgrounds, where the richer tone is load-bearing for legibility). */
+  --gold-fill: #edd09c;
+  --verde-fill: #78dca0;
 
   /* severity / register "heat" ramp — deliberately distinct from the brand accent */
   --heat-1: #6b8f5e;
@@ -67,6 +74,8 @@
     --indigo: #7c93c9;
     --indigo-soft: #202a3e;
     --indigo-fill: #263a66;
+    --gold-fill: #e9b34d;
+    --verde-fill: #1e8a4a;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
   }
 }
@@ -86,6 +95,8 @@
   --indigo: #7c93c9;
   --indigo-soft: #202a3e;
   --indigo-fill: #263a66;
+  --gold-fill: #e9b34d;
+  --verde-fill: #1e8a4a;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
 }
 :root[data-theme="light"] {
@@ -100,11 +111,13 @@
   --indigo: #263a66;
   --indigo-soft: #eaedf4;
   --indigo-fill: #7c93c9;
+  --gold-fill: #edd09c;
+  --verde-fill: #78dca0;
   --shadow: 0 1px 2px rgba(20, 24, 27, 0.06), 0 8px 24px -12px rgba(20, 24, 27, 0.18);
 }
-/* Classic — today's original look, kept as an opt-in alongside the new periwinkle-fill default
-   (see Settings → Appearance). Same light surface + adaptive-blue rules as "light", but pins
-   --indigo-fill to navy instead of periwinkle, matching every screenshot up to this point. */
+/* Classic — today's original all-saturated look, kept as an opt-in alongside the new
+   periwinkle/champagne/mint default (see Settings → Appearance). Same light surface + adaptive
+   rules as "light", but pins every -fill token to its original richer shade. */
 :root[data-theme="classic"] {
   --ink: #14181b;
   --ink-soft: #4b5259;
@@ -117,6 +130,8 @@
   --indigo: #263a66;
   --indigo-soft: #eaedf4;
   --indigo-fill: #263a66;
+  --gold-fill: #e2a431;
+  --verde-fill: #1e8a4a;
   --shadow: 0 1px 2px rgba(20, 24, 27, 0.06), 0 8px 24px -12px rgba(20, 24, 27, 0.18);
 }
 
@@ -142,7 +157,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 ::selection {
-  background: var(--gold);
+  background: var(--gold-fill);
   color: var(--gold-ink);
 }
 :focus-visible {
@@ -412,7 +427,7 @@ button.link:hover {
   font-family: "IBM Plex Mono", monospace;
   font-size: 0.76rem;
   color: var(--gold-ink);
-  background: var(--gold);
+  background: var(--gold-fill);
   border-radius: 999px;
   width: 26px;
   height: 26px;
@@ -436,7 +451,7 @@ button.link:hover {
 .auth-notice {
   font-size: 0.86rem;
   color: var(--gold-ink);
-  background: var(--gold);
+  background: var(--gold-fill);
   border-radius: 6px;
   padding: 0.6rem 0.8rem;
   line-height: 1.4;
@@ -509,7 +524,7 @@ button.link:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: var(--gold);
+  background: var(--gold-fill);
   color: var(--gold-ink);
   border: none;
   padding: 0.72rem 1.3rem;
@@ -558,7 +573,7 @@ button.link:hover {
   background: var(--surface);
 }
 .streak-days span.on {
-  background: var(--gold);
+  background: var(--gold-fill);
 }
 
 .stat-strip {
@@ -1131,7 +1146,7 @@ button.link:hover {
   font-size: 3.2rem;
   font-weight: 500;
   color: var(--gold-ink);
-  background: var(--gold);
+  background: var(--gold-fill);
   display: inline-block;
   padding: 0.3rem 1.1rem;
   border-radius: 999px 999px 999px 8px;
@@ -1169,7 +1184,7 @@ button.link:hover {
 .app-brand .mark {
   width: 30px;
   height: 30px;
-  background: var(--gold);
+  background: var(--gold-fill);
   color: var(--gold-ink);
   display: grid;
   place-items: center;
@@ -1199,10 +1214,10 @@ button.link:hover {
   border-radius: 50%;
   background: linear-gradient(
     135deg,
-    #1e8a4a 0%,
-    #1e8a4a 34%,
-    var(--gold) 34%,
-    var(--gold) 66%,
+    var(--verde-fill) 0%,
+    var(--verde-fill) 34%,
+    var(--gold-fill) 34%,
+    var(--gold-fill) 66%,
     var(--indigo-fill) 66%
   );
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -1260,7 +1275,7 @@ button.link:hover {
 }
 .nav-badge {
   font-size: 0.68rem;
-  background: var(--gold);
+  background: var(--gold-fill);
   color: var(--gold-ink);
   padding: 0.05rem 0.4rem;
   border-radius: 999px;
@@ -1285,7 +1300,7 @@ button.link:hover {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--gold);
+  background: var(--gold-fill);
   color: var(--gold-ink);
   display: grid;
   place-items: center;
