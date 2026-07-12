@@ -1,0 +1,181 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "tsdlg.tamada-calls-on-guest",
+    "scenario": "A tamada at a wedding calls on a guest to give a toast",
+    "speakers": [
+      { "id": "tamada", "name": "Тамада", "role": "toastmaster" },
+      { "id": "you", "name": "You", "role": "guest" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "tamada", "text": "Дорогие гости, а сейчас я даю слово другу жениха!", "romaji": "Darogíye gósti, a seychás ya dayú slóvo drúgu zhenikhá!" },
+      { "speakerId": "you", "text": "Спасибо! Можно я предложу тост?", "romaji": "Spasíba! Mózhna ya predlazhú tost?" },
+      { "speakerId": "tamada", "text": "Конечно, мы вас слушаем.", "romaji": "Kanyéshna, my vas slúshayem." },
+      { "speakerId": "you", "text": "Друзья, поднимите бокалы! За жениха и невесту!", "romaji": "Druz'yá, padnimíte bakály! Za zhenikhá i nevyéstu!" },
+      { "speakerId": "tamada", "text": "Прекрасный тост! Горько!", "romaji": "Prekrásnyy tost! Gór'ka!" }
+    ],
+    "translation": [
+      { "speakerId": "tamada", "text": "Dear guests, now I give the floor to the groom's friend!" },
+      { "speakerId": "you", "text": "Thank you! May I propose a toast?" },
+      { "speakerId": "tamada", "text": "Of course, we're listening." },
+      { "speakerId": "you", "text": "Friends, raise your glasses! To the bride and groom!" },
+      { "speakerId": "tamada", "text": "A wonderful toast! Bitter! (kiss!)" }
+    ],
+    "keyVocabulary": ["tsvocab.tamada", "tsvocab.dat-slovo", "tsvocab.predlozhit-tost", "tsvocab.podnyat-bokal", "tsvocab.zhenikh", "tsvocab.nevesta", "tsvocab.gorko"],
+    "grammarNotes": "Даю слово (I give the floor) uses the imperfective даю for an action happening right now, in progress — a common pattern for live narration of what's happening at the moment of speaking."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "tsdlg.toast-to-parents",
+    "scenario": "A guest gives a toast to the parents at a wedding",
+    "speakers": [
+      { "id": "you", "name": "You", "role": "guest" },
+      { "id": "guests", "name": "Гости", "role": "guests" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "Я хочу произнести тост от всего сердца.", "romaji": "Ya khachú proiznestí tost at fsyevó syértsa." },
+      { "speakerId": "you", "text": "Без родителей не было бы ни жениха, ни невесты, ни этого праздника.", "romaji": "Byez radítyeley nye býla by ni zhenikhá, ni nevyésty, ni étava prázdnika." },
+      { "speakerId": "you", "text": "Поэтому — за родителей!", "romaji": "Payétamu — za radítyeley!" },
+      { "speakerId": "guests", "text": "За родителей!", "romaji": "Za radítyeley!" }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "I want to give a toast from the bottom of my heart." },
+      { "speakerId": "you", "text": "Without the parents, there would be neither the groom, nor the bride, nor this celebration." },
+      { "speakerId": "you", "text": "So — to the parents!" },
+      { "speakerId": "guests", "text": "To the parents!" }
+    ],
+    "keyVocabulary": ["tsvocab.proiznesti-tost", "tsvocab.ot-vsego-serdtsa", "tsvocab.za-roditeley"],
+    "grammarNotes": "Не было бы (there would not have been) is the conditional/subjunctive construction with бы — used here for a warm, slightly sentimental rhetorical flourish typical of wedding toasts."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "tsdlg.toast-to-absent-friend",
+    "scenario": "Someone proposes a toast to an absent friend at a gathering",
+    "speakers": [
+      { "id": "you", "name": "You", "role": "guest" },
+      { "id": "friend", "name": "Друг", "role": "friend" }
+    ],
+    "targetLevel": "B1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Друзья, а теперь давайте вспомним тех, кого сегодня нет с нами.", "romaji": "Druz'yá, a tepyér' daváyte fspómnim tyekh, kavó sevódnya nyet s námi." },
+      { "speakerId": "friend", "text": "Ты про Максима?", "romaji": "Ty pra Maksíma?" },
+      { "speakerId": "you", "text": "Да. За отсутствующих друзей — пусть у них всё будет хорошо.", "romaji": "Da. Za atsútstvuyushchikh druzéy — pust' u nikh fsyo búdyet kharashó." },
+      { "speakerId": "friend", "text": "За отсутствующих друзей.", "romaji": "Za atsútstvuyushchikh druzéy." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Friends, now let's remember those who aren't with us today." },
+      { "speakerId": "friend", "text": "You mean Maksim?" },
+      { "speakerId": "you", "text": "Yes. To absent friends — may everything be well with them." },
+      { "speakerId": "friend", "text": "To absent friends." }
+    ],
+    "keyVocabulary": ["tsvocab.za-otsutstvuyushchikh-druzey", "tsvocab.pozhelanie"],
+    "grammarNotes": "Пусть у них всё будет хорошо (may everything be well with them) uses пусть + future tense — the standard way to phrase a wish or blessing in Russian, central to how toasts are actually built."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "tsdlg.toast-to-reunion",
+    "scenario": "A toast to a happy reunion between old friends",
+    "speakers": [
+      { "id": "you", "name": "You", "role": "guest" },
+      { "id": "friend", "name": "Старый друг", "role": "old friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Не могу поверить, что мы наконец опять все вместе!", "romaji": "Nye magú pavyérit', shto my nakanyéts apyát' fsye vmyéste!" },
+      { "speakerId": "friend", "text": "Десять лет прошло, да?", "romaji": "Dyésyat' lyet prashló, da?" },
+      { "speakerId": "you", "text": "Именно. Так что — за встречу!", "romaji": "Ímenna. Tak shto — za vstréchu!" },
+      { "speakerId": "friend", "text": "За встречу! И чтобы мы не теряли друг друга.", "romaji": "Za vstréchu! I shtóby my nye teryáli drug drúga." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "I can't believe we're finally all together again!" },
+      { "speakerId": "friend", "text": "Ten years have passed, right?" },
+      { "speakerId": "you", "text": "Exactly. So — to this reunion!" },
+      { "speakerId": "friend", "text": "To this reunion! And may we not lose touch with each other." }
+    ],
+    "keyVocabulary": ["tsvocab.za-vstrechu", "tsvocab.kompaniya"],
+    "grammarNotes": "Чтобы мы не теряли (may we not lose) — чтобы + past tense is another common wish construction in toasts, alongside пусть + future."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "tsdlg.eye-contact-superstition",
+    "scenario": "A host teaches a foreign guest the eye-contact-while-clinking superstition",
+    "speakers": [
+      { "id": "host", "name": "Хозяйка", "role": "host" },
+      { "id": "you", "name": "You", "role": "guest" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Ой, извините, я не посмотрел вам в глаза, когда мы чокнулись!", "romaji": "Oy, izviníte, ya nye pasmatryél vam v glazá, kagdá my chóknulis'!" },
+      { "speakerId": "host", "text": "Ничего страшного, но у нас есть примета: нужно смотреть в глаза, когда чокаешься.", "romaji": "Nichevó strashnóva, no u nas yest' primyéta: núzhna smatryét' v glazá, kagdá chókayeshsya." },
+      { "speakerId": "you", "text": "А что будет, если не посмотреть?", "romaji": "A shto búdyet, yésli nye pasmatryét'?" },
+      { "speakerId": "host", "text": "Говорят, это плохая примета — не повезёт в любви.", "romaji": "Gavaryát, éta plakháya primyéta — nye pavyezyót v lyubví." },
+      { "speakerId": "you", "text": "Понятно! Давайте ещё раз, теперь с глазами.", "romaji": "Panyátna! Daváyte yeshchó raz, tepyér' s glazámi." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Oh, sorry, I didn't look you in the eyes when we clinked glasses!" },
+      { "speakerId": "host", "text": "It's nothing terrible, but we have a superstition: you need to look in the eyes when you clink." },
+      { "speakerId": "you", "text": "And what happens if you don't look?" },
+      { "speakerId": "host", "text": "They say it's a bad omen — you'll have bad luck in love." },
+      { "speakerId": "you", "text": "Got it! Let's do it again, with eye contact this time." }
+    ],
+    "keyVocabulary": ["tsvocab.choknutsya", "tsvocab.smotret-v-glaza", "tsvocab.primeta", "tsvocab.plokhaya-primeta"],
+    "grammarNotes": "Не повезёт (won't be lucky) is an impersonal construction with no explicit subject — very common in Russian for fate/luck statements, matching the impersonal 'у меня нет' pattern for existence."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "tsdlg.whose-turn-disagreement",
+    "scenario": "A lighthearted disagreement about whose turn it is to give the next toast",
+    "speakers": [
+      { "id": "you", "name": "You", "role": "guest" },
+      { "id": "friend", "name": "Друг", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Так, чья теперь очередь?", "romaji": "Tak, ch'ya tepyér' óchered'?" },
+      { "speakerId": "friend", "text": "Кажется, твоя! Ты говорил тост час назад.", "romaji": "Kázhetsya, tvayá! Ty gavaríl tost chas nazát." },
+      { "speakerId": "you", "text": "Нет-нет, это была не моя очередь, а твоя!", "romaji": "Nyet-nyet, éta bylá nye mayá óchered', a tvayá!" },
+      { "speakerId": "friend", "text": "Ладно, ладно, я скажу тост. Но в следующий раз твоя очередь точно!", "romaji": "Ládna, ládna, ya skazhú tost. No f slyéduyushchiy ras tvayá óchered' tóchna!" }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Okay, whose turn is it now?" },
+      { "speakerId": "friend", "text": "I think it's yours! You gave a toast an hour ago." },
+      { "speakerId": "you", "text": "No, no, that wasn't my turn, it was yours!" },
+      { "speakerId": "friend", "text": "Fine, fine, I'll give the toast. But next time it's definitely your turn!" }
+    ],
+    "keyVocabulary": ["tsvocab.chya-ochered", "tsvocab.ochered"],
+    "grammarNotes": "Кажется (it seems) softens an assertion — a useful hedge word for a friendly disagreement instead of a flat, blunt claim."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "tsdlg.closing-toast",
+    "scenario": "A host gives the closing toast to end the evening",
+    "speakers": [
+      { "id": "host", "name": "Хозяин", "role": "host" },
+      { "id": "guests", "name": "Гости", "role": "guests" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "host", "text": "Друзья, вечер подходит к концу, и это будет последний тост.", "romaji": "Druz'yá, vyéchyer padkhódit k kantsú, i éta búdyet paslyédniy tost." },
+      { "speakerId": "host", "text": "Спасибо, что вы сегодня с нами. За мир и за нашу компанию!", "romaji": "Spasíba, shto vy sevódnya s námi. Za mir i za náshu kampániyu!" },
+      { "speakerId": "guests", "text": "За мир!", "romaji": "Za mir!" },
+      { "speakerId": "host", "text": "До дна!", "romaji": "Da dna!" }
+    ],
+    "translation": [
+      { "speakerId": "host", "text": "Friends, the evening is coming to an end, and this will be the last toast." },
+      { "speakerId": "host", "text": "Thank you for being with us today. To peace and to our company!" },
+      { "speakerId": "guests", "text": "To peace!" },
+      { "speakerId": "host", "text": "Bottoms up!" }
+    ],
+    "keyVocabulary": ["tsvocab.posledniy-tost", "tsvocab.za-mir", "tsvocab.kompaniya", "tsvocab.do-dna"],
+    "grammarNotes": "Подходит к концу (is coming to an end) — к концу is a fixed prepositional phrase (dative case after к) worth learning as a chunk rather than building from scratch each time."
+  }
+]

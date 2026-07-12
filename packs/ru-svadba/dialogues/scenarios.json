@@ -1,0 +1,209 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "sbdlg.vykup-nevesty",
+    "scenario": "The groom's party faces ransom challenges at the bride's door",
+    "speakers": [
+      { "id": "marina", "name": "Марина", "role": "bride's friend" },
+      { "id": "dima", "name": "Дима", "role": "groom" },
+      { "id": "oleg", "name": "Олег", "role": "best man (свидетель)" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "marina", "text": "Так, жених, чтобы попасть к невесте, реши эту загадку!", "romaji": "Tak, zheníkh, shtóby papást' k nevéste, reshí étu zagádku!" },
+      { "speakerId": "dima", "text": "Хорошо, я готов. Задавай.", "romaji": "Kharashó, ya gatóv. Zadaváy." },
+      { "speakerId": "marina", "text": "Как называется место, где вы распишетесь?", "romaji": "Kak nazyváyetsya myésta, gdye vy raspíshetes'?" },
+      { "speakerId": "dima", "text": "Загс! Это же просто.", "romaji": "Zaks! Éta zhe prósta." },
+      { "speakerId": "marina", "text": "Верно! Но это ещё не всё — нужно выкупить невесту.", "romaji": "Vérna! No éta yeshchyó nye fsyo — núzhna výkupit' nevéstu." },
+      { "speakerId": "oleg", "text": "Сколько стоит выкуп на этот раз?", "romaji": "Skól'ka stóit výkup na état ras?" },
+      { "speakerId": "marina", "text": "Договоримся. Идёмте торговаться!", "romaji": "Dagavarímsya. Idyómte targavátsya!" }
+    ],
+    "translation": [
+      { "speakerId": "marina", "text": "Okay groom, to get to the bride, solve this riddle!" },
+      { "speakerId": "dima", "text": "Alright, I'm ready. Ask away." },
+      { "speakerId": "marina", "text": "What's the place called where you two will sign the register?" },
+      { "speakerId": "dima", "text": "ZAGS! That's easy." },
+      { "speakerId": "marina", "text": "Correct! But that's not all — you still need to ransom the bride." },
+      { "speakerId": "oleg", "text": "How much does the ransom cost this time?" },
+      { "speakerId": "marina", "text": "We'll work something out. Let's go haggle!" }
+    ],
+    "keyVocabulary": ["sbvocab.zhenikh", "sbvocab.nevesta", "sbvocab.zagadka", "sbvocab.zags", "sbvocab.vykup-nevesty", "sbvocab.vykupat", "sbvocab.torgovatsya"],
+    "grammarNotes": "'чтобы + infinitive' expresses purpose ('in order to'). 'Реши' and 'задавай' are informal imperative forms, typical of the joking tone of выкуп невесты."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "sbdlg.v-zagse",
+    "scenario": "The official civil registration moment at the ZAGS",
+    "speakers": [
+      { "id": "registrator", "name": "Регистратор", "role": "registry official" },
+      { "id": "dima", "name": "Дмитрий", "role": "groom" },
+      { "id": "anya", "name": "Анна", "role": "bride" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "registrator", "text": "Пожалуйста, встаньте. Сейчас начнётся церемония.", "romaji": "Pazhálusta, fstán'tye. Seychás nachnyótsya tseremóniya." },
+      { "speakerId": "registrator", "text": "Дмитрий, согласны ли вы стать мужем Анны?", "romaji": "Dmítriy, saglásny li vy stat' múzhem Ánny?" },
+      { "speakerId": "dima", "text": "Да, согласен.", "romaji": "Da, saglásen." },
+      { "speakerId": "registrator", "text": "Анна, согласны ли вы стать женой Дмитрия?", "romaji": "Ánna, saglásny li vy stat' zhenóy Dmítriya?" },
+      { "speakerId": "anya", "text": "Да, согласна.", "romaji": "Da, saglásna." },
+      { "speakerId": "registrator", "text": "Обменяйтесь кольцами и распишитесь здесь.", "romaji": "Abmenyáytyes' kal'tsámi i raspishítyes' zdyes'." },
+      { "speakerId": "registrator", "text": "Поздравляю вас с законным браком!", "romaji": "Pazdravlyáyu vas s zakónnym brákam!" }
+    ],
+    "translation": [
+      { "speakerId": "registrator", "text": "Please stand. The ceremony is about to begin." },
+      { "speakerId": "registrator", "text": "Dmitry, do you agree to become Anna's husband?" },
+      { "speakerId": "dima", "text": "Yes, I agree." },
+      { "speakerId": "registrator", "text": "Anna, do you agree to become Dmitry's wife?" },
+      { "speakerId": "anya", "text": "Yes, I agree." },
+      { "speakerId": "registrator", "text": "Exchange rings and sign here." },
+      { "speakerId": "registrator", "text": "Congratulations on your legal marriage!" }
+    ],
+    "keyVocabulary": ["sbvocab.muzh", "sbvocab.zhena", "sbvocab.koltso", "sbvocab.rospis", "sbvocab.pozdravlyayu-s-zakonnym-brakom"],
+    "grammarNotes": "This is the actual legal moment of marriage in Russia — everything else (венчание, банкет) is optional and happens separately. See the culture notes on the загс system."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "sbdlg.gorko-na-bankete",
+    "scenario": "Guests shout \"Gorko!\" at the wedding reception",
+    "speakers": [
+      { "id": "tamada", "name": "Тамада", "role": "toastmaster" },
+      { "id": "gosti", "name": "Гости", "role": "guests (crowd)" },
+      { "id": "dima", "name": "Дима", "role": "groom" },
+      { "id": "anya", "name": "Аня", "role": "bride" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "tamada", "text": "Гости, скажем молодожёнам главное слово!", "romaji": "Gósti, skázhem maladazhyónam glávnaye slóva!" },
+      { "speakerId": "gosti", "text": "Горько! Горько! Горько!", "romaji": "Gór'ka! Gór'ka! Gór'ka!" },
+      { "speakerId": "dima", "text": "Ань, придётся целоваться.", "romaji": "An', pridyótsya tselavátsya." },
+      { "speakerId": "anya", "text": "Конечно, а как иначе!", "romaji": "Kanyéshna, a kak ináche!" },
+      { "speakerId": "tamada", "text": "Отлично! Теперь вино уже не горькое, а сладкое!", "romaji": "Atlíchna! Tepér' vinó uzhé nye gór'kaye, a slátkaye!" }
+    ],
+    "translation": [
+      { "speakerId": "tamada", "text": "Guests, let's say the newlyweds' favorite word!" },
+      { "speakerId": "gosti", "text": "Bitter! Bitter! Bitter!" },
+      { "speakerId": "dima", "text": "Anya, we'll have to kiss." },
+      { "speakerId": "anya", "text": "Of course, how else!" },
+      { "speakerId": "tamada", "text": "Excellent! Now the wine isn't bitter anymore, it's sweet!" }
+    ],
+    "keyVocabulary": ["sbvocab.gorko", "sbvocab.tselovatsya", "sbvocab.tamada", "sbvocab.molodozheny"],
+    "grammarNotes": "'Придётся' + infinitive expresses an obligation that arises from circumstances ('will have to'), not a personal choice."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "sbdlg.tost-tamady",
+    "scenario": "The tamada calls on a guest to give a toast",
+    "speakers": [
+      { "id": "tamada", "name": "Тамада", "role": "toastmaster" },
+      { "id": "viktor", "name": "Виктор", "role": "bride's uncle" },
+      { "id": "gosti", "name": "Гости", "role": "guests (crowd)" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "tamada", "text": "Дорогие гости! Слово для тоста я передаю дяде невесты, Виктору!", "romaji": "Darogíye gósti! Slóva dlya tósta ya peredayú dyáde nevésty, Víktaru!" },
+      { "speakerId": "viktor", "text": "Спасибо! Дорогие молодожёны, я поднимаю этот бокал за вашу любовь.", "romaji": "Spasíba! Darogíye maladazhyóny, ya padnimáyu état bakál za váshu lyubóf'." },
+      { "speakerId": "viktor", "text": "Совет да любовь вам на долгие годы!", "romaji": "Savét da lyubóv' vam na dólgiye gódy!" },
+      { "speakerId": "gosti", "text": "Горько!", "romaji": "Gór'ka!" },
+      { "speakerId": "tamada", "text": "За тост Виктора — все пьём до дна!", "romaji": "Za tost Víktara — fsye p'yom da dná!" }
+    ],
+    "translation": [
+      { "speakerId": "tamada", "text": "Dear guests! I'm passing the floor for a toast to the bride's uncle, Viktor!" },
+      { "speakerId": "viktor", "text": "Thank you! Dear newlyweds, I raise this glass to your love." },
+      { "speakerId": "viktor", "text": "Advice and love to you for many years!" },
+      { "speakerId": "gosti", "text": "Bitter!" },
+      { "speakerId": "tamada", "text": "To Viktor's toast — everyone drink to the bottom!" }
+    ],
+    "keyVocabulary": ["sbvocab.tamada", "sbvocab.tost", "sbvocab.bokal", "sbvocab.sovet-da-lyubov", "sbvocab.gorko"],
+    "grammarNotes": "'До дна' ('to the bottom') is the fixed toast-drinking instruction — finish the glass, don't just sip."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "sbdlg.pozdravlenie-molodozhenov",
+    "scenario": "A guest congratulates the newlyweds directly",
+    "speakers": [
+      { "id": "lena", "name": "Лена", "role": "guest" },
+      { "id": "anya", "name": "Аня", "role": "bride" },
+      { "id": "dima", "name": "Дима", "role": "groom" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "lena", "text": "Аня, Дима, поздравляю вас с законным браком!", "romaji": "Ánya, Díma, pazdravlyáyu vas s zakónnym brákam!" },
+      { "speakerId": "anya", "text": "Спасибо большое, Лена!", "romaji": "Spasíba bal'shóye, Lyéna!" },
+      { "speakerId": "lena", "text": "Желаю вам счастья и долгой любви.", "romaji": "Zheláyu vam schást'ya i dólgay lyubví." },
+      { "speakerId": "dima", "text": "Спасибо! Совет да любовь и вам тоже.", "romaji": "Spasíba! Savét da lyubóv' i vam tózhe." },
+      { "speakerId": "lena", "text": "Будьте счастливы, ребята!", "romaji": "Búd'tye schastlívy, rebyáta!" }
+    ],
+    "translation": [
+      { "speakerId": "lena", "text": "Anya, Dima, congratulations on your legal marriage!" },
+      { "speakerId": "anya", "text": "Thank you so much, Lena!" },
+      { "speakerId": "lena", "text": "I wish you happiness and lasting love." },
+      { "speakerId": "dima", "text": "Thank you! Advice and love to you too." },
+      { "speakerId": "lena", "text": "Be happy, guys!" }
+    ],
+    "keyVocabulary": ["sbvocab.pozdravlyayu-s-zakonnym-brakom", "sbvocab.zhelayu-schastya", "sbvocab.sovet-da-lyubov", "sbvocab.budte-schastlivy"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "sbdlg.inostranka-sprashivaet",
+    "scenario": "A foreign guest asks a local friend about Russian wedding customs",
+    "speakers": [
+      { "id": "keyt", "name": "Кейт", "role": "foreign guest" },
+      { "id": "natasha", "name": "Наташа", "role": "local friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "keyt", "text": "Наташа, объясни, пожалуйста, почему все кричат «горько»?", "romaji": "Natásha, abyasní, pazhálusta, pachemú fsye krichát «gór'ka»?" },
+      { "speakerId": "natasha", "text": "Это старая традиция — все просят молодожёнов поцеловаться.", "romaji": "Éta stáraya tradítsiya — fsye prósyat maladazhyónav patselavátsya." },
+      { "speakerId": "keyt", "text": "А слово «горько» правда значит «bitter»?", "romaji": "A slóva «gór'ka» právda znáchit «bitter»?" },
+      { "speakerId": "natasha", "text": "Да! Говорят, что вино горькое, пока молодожёны не поцелуются.", "romaji": "Da! Gavaryát, shto vinó gór'kaye, paká maladazhyóny nye patselúyutsya." },
+      { "speakerId": "keyt", "text": "Понятно! А тамада тоже часть традиции?", "romaji": "Panyátna! A tamadá tózhe chast' tradítsii?" },
+      { "speakerId": "natasha", "text": "Конечно, без тамады свадьба не свадьба!", "romaji": "Kanyéshna, byez tamadý svád'ba nye svád'ba!" }
+    ],
+    "translation": [
+      { "speakerId": "keyt", "text": "Natasha, please explain, why is everyone shouting \"gorko\"?" },
+      { "speakerId": "natasha", "text": "It's an old tradition — everyone is asking the newlyweds to kiss." },
+      { "speakerId": "keyt", "text": "And does the word \"gorko\" really mean \"bitter\"?" },
+      { "speakerId": "natasha", "text": "Yes! People say the wine is bitter until the newlyweds kiss." },
+      { "speakerId": "keyt", "text": "I see! Is the toastmaster also part of the tradition?" },
+      { "speakerId": "natasha", "text": "Of course, without a toastmaster it's not a wedding!" }
+    ],
+    "keyVocabulary": ["sbvocab.gorko", "sbvocab.tselovatsya", "sbvocab.molodozheny", "sbvocab.tamada", "sbvocab.svadba"],
+    "grammarNotes": "'Пока... не + perfective' means 'until' — 'пока молодожёны не поцелуются' literally 'while the newlyweds don't [yet] kiss'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "sbdlg.planirovanie-svadby",
+    "scenario": "Two friends plan wedding logistics together",
+    "speakers": [
+      { "id": "olya", "name": "Оля", "role": "bride-to-be" },
+      { "id": "nastya", "name": "Настя", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "nastya", "text": "Оля, ты уже отправила приглашения?", "romaji": "Ólya, ty uzhé atprávila priglashéniya?" },
+      { "speakerId": "olya", "text": "Да, все гости уже знают дату. А ты купила кольца?", "romaji": "Da, fsye gósti uzhé znáyut dátu. A ty kupíla kal'tsá?" },
+      { "speakerId": "nastya", "text": "Купила! А ещё нашла тамаду для банкета.", "romaji": "Kupíla! A yeshchyó nashlá tamadú dlya bankéta." },
+      { "speakerId": "olya", "text": "Отлично! А букет и торт?", "romaji": "Atlíchna! A bukét i tort?" },
+      { "speakerId": "nastya", "text": "Букет закажу на этой неделе. Торт уже заказан.", "romaji": "Bukét zakazhú na état nyedéle. Tort uzhé zakázan." },
+      { "speakerId": "olya", "text": "А лимузин?", "romaji": "A limuzín?" },
+      { "speakerId": "nastya", "text": "Лимузин будет ждать нас у загса в час дня.", "romaji": "Limuzín búdet zhdat' nas u zágsa f chas dnya." }
+    ],
+    "translation": [
+      { "speakerId": "nastya", "text": "Olya, have you already sent out the invitations?" },
+      { "speakerId": "olya", "text": "Yes, all the guests already know the date. Did you buy the rings?" },
+      { "speakerId": "nastya", "text": "I bought them! And I also found a toastmaster for the reception." },
+      { "speakerId": "olya", "text": "Great! And the bouquet and the cake?" },
+      { "speakerId": "nastya", "text": "I'll order the bouquet this week. The cake is already ordered." },
+      { "speakerId": "olya", "text": "And the limousine?" },
+      { "speakerId": "nastya", "text": "The limousine will be waiting for us at the ZAGS at one in the afternoon." }
+    ],
+    "keyVocabulary": ["sbvocab.priglashenie", "sbvocab.koltso", "sbvocab.tamada", "sbvocab.banket", "sbvocab.buket", "sbvocab.svadebnyi-tort", "sbvocab.limuzin", "sbvocab.zags"]
+  }
+]

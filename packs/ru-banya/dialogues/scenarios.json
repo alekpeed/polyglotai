@@ -1,0 +1,170 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "bndlg.buying-a-session",
+    "scenario": "Arriving at a public banya and buying a session",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "cashier", "name": "Кассир", "role": "banya cashier" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "Здравствуйте! Один билет в баню, пожалуйста.", "romaji": "Zdrávstvuyte! Odín bilyét v bányu, pazhálusta." },
+      { "speakerId": "cashier", "text": "Здравствуйте! На сколько часов?", "romaji": "Zdrávstvuyte! Na skól'ko chasóv?" },
+      { "speakerId": "you", "text": "На два часа. У вас есть шапка для бани?", "romaji": "Na dva chasá. U vas yest' shápka dlya báni?" },
+      { "speakerId": "cashier", "text": "Да, конечно. И веник тоже можно купить.", "romaji": "Da, kanyéshna. I vénik tózhe mózhna kupít'." },
+      { "speakerId": "you", "text": "Дайте, пожалуйста, берёзовый веник.", "romaji": "Dáyte, pazhálusta, beryózovyy vénik." },
+      { "speakerId": "cashier", "text": "Хорошо. Предбанник направо, приятного пара!", "romaji": "Kharashó. Predbánnik naprávo, priyátnava pára!" }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Hello! One ticket to the banya, please." },
+      { "speakerId": "cashier", "text": "Hello! For how many hours?" },
+      { "speakerId": "you", "text": "For two hours. Do you have a banya hat?" },
+      { "speakerId": "cashier", "text": "Yes, of course. And you can buy a venik too." },
+      { "speakerId": "you", "text": "Give me a birch venik, please." },
+      { "speakerId": "cashier", "text": "All right. The changing room is on the right, enjoy your steam!" }
+    ],
+    "keyVocabulary": ["bnvocab.banya", "bnvocab.shapka-dlya-bani", "bnvocab.venik", "bnvocab.beryozovy-venik", "bnvocab.predbannik"],
+    "grammarNotes": "Приятного пара is a small courtesy phrase built the same way as Приятного аппетита ('enjoy your meal') — a genitive-case wish said in passing, not a full sentence."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "bndlg.ask-friend-to-whisk",
+    "scenario": "Asking a friend to whisk you with the venik",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "igor", "name": "Игорь", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Игорь, попарь меня веником, пожалуйста!", "romaji": "Ígor', papár' menyá vénikom, pazhálusta!" },
+      { "speakerId": "igor", "text": "Хорошо, ложись на полок.", "romaji": "Kharashó, lazhís' na palók." },
+      { "speakerId": "you", "text": "Сначала повей, не бей сильно.", "romaji": "Snachála pavéy, nye bey síl'na." },
+      { "speakerId": "igor", "text": "Хорошо, буду веять веником, потом легонько попарю.", "romaji": "Kharashó, búdu véyat' vénikom, patóm lyagón'ka papáryu." },
+      { "speakerId": "you", "text": "Ой, жарко! Терпеть жар тяжело!", "romaji": "Oy, zhárka! Terpét' zhar tyazhyeló!" },
+      { "speakerId": "igor", "text": "Терпи, это полезно для здоровья!", "romaji": "Terpí, éta palyézna dlya zdaróv'ya!" }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Igor, whisk me with the venik, please!" },
+      { "speakerId": "igor", "text": "Okay, lie down on the bench." },
+      { "speakerId": "you", "text": "Start by fanning it, don't hit hard." },
+      { "speakerId": "igor", "text": "Okay, I'll fan you with the venik first, then whisk you gently." },
+      { "speakerId": "you", "text": "Ow, that's hot! Enduring the heat is hard!" },
+      { "speakerId": "igor", "text": "Bear with it, it's good for your health!" }
+    ],
+    "keyVocabulary": ["bnvocab.venik", "bnvocab.paritsya-venikom", "bnvocab.veyat-venikom", "bnvocab.polok", "bnvocab.zharko", "bnvocab.terpet-zhar"],
+    "grammarNotes": "Попарь and попарю are forms of попарить (perfective, 'to whisk someone else'), a transitive relative of the reflexive париться ('to steam oneself') — the two verbs share a root but aren't interchangeable."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "bndlg.steam-etiquette",
+    "scenario": "Being told the temperature and steam etiquette",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "banshchik", "name": "Банщик", "role": "banya attendant" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "Можно поддать пару?", "romaji": "Mózhna paddát' páru?" },
+      { "speakerId": "banshchik", "text": "Спросите сначала у других, не все любят сильный пар.", "romaji": "Sprasíte snachála u drugíkh, nye vsye lyúbyat síl'nyy par." },
+      { "speakerId": "you", "text": "Хорошо. А сколько воды лить на камни?", "romaji": "Kharashó. A skól'ka vadý lit' na kámni?" },
+      { "speakerId": "banshchik", "text": "Немного, один ковш за раз, и лучше с эфирным маслом.", "romaji": "Nyemnóga, odín kovsh za raz, i lúchshe s efírnym máslam." },
+      { "speakerId": "you", "text": "А на верхнем полке очень жарко?", "romaji": "A na vyérkhnyem pólkye óchen' zhárka?" },
+      { "speakerId": "banshchik", "text": "Да, там для опытных. Начните снизу.", "romaji": "Da, tam dlya ópytnykh. Nachníte snízu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "May I add some steam?" },
+      { "speakerId": "banshchik", "text": "Ask the others first, not everyone likes strong steam." },
+      { "speakerId": "you", "text": "All right. And how much water should I pour on the stones?" },
+      { "speakerId": "banshchik", "text": "A little, one ladle at a time, and it's better with essential oil." },
+      { "speakerId": "you", "text": "Is it very hot on the top bench?" },
+      { "speakerId": "banshchik", "text": "Yes, that's for experienced people. Start from the bottom." }
+    ],
+    "keyVocabulary": ["bnvocab.poddat-paru", "bnvocab.kamni", "bnvocab.kovsh", "bnvocab.efirnoye-maslo", "bnvocab.polok", "bnvocab.zharko"],
+    "grammarNotes": "Poddavat' paru is a shared-room activity with real etiquette attached — asking first is the social norm, since a sudden blast of steam affects everyone in the parnaya, not just the person pouring."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "bndlg.cold-plunge-dare",
+    "scenario": "The cold-plunge dare",
+    "speakers": [
+      { "id": "olya", "name": "Оля", "role": "friend" },
+      { "id": "you", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "olya", "text": "Пойдём к проруби, кто первый?", "romaji": "Poydyóm k prórubi, kto pyérvyy?" },
+      { "speakerId": "you", "text": "Я боюсь холодной воды!", "romaji": "Ya bayús' khalódnay vadý!" },
+      { "speakerId": "olya", "text": "Не бойся, окатись холодной водой — это полезно.", "romaji": "Nye bóysya, akatís' khalódnay vadóy — éta palyézna." },
+      { "speakerId": "you", "text": "Ладно, давай вместе!", "romaji": "Ládna, daváy vmyéste!" },
+      { "speakerId": "olya", "text": "Раз, два, три!", "romaji": "Raz, dva, tri!" },
+      { "speakerId": "you", "text": "А-а-а, холодно! Но приятно!", "romaji": "A-a-a, khólodna! No priyátna!" }
+    ],
+    "translation": [
+      { "speakerId": "olya", "text": "Let's go to the ice hole, who's first?" },
+      { "speakerId": "you", "text": "I'm scared of the cold water!" },
+      { "speakerId": "olya", "text": "Don't be afraid, douse yourself with cold water — it's good for you." },
+      { "speakerId": "you", "text": "Fine, let's do it together!" },
+      { "speakerId": "olya", "text": "One, two, three!" },
+      { "speakerId": "you", "text": "Aaah, it's cold! But it feels great!" }
+    ],
+    "keyVocabulary": ["bnvocab.prorub", "bnvocab.okatitsya-kholodnoy-vodoy"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "bndlg.s-lyokhkim-parom-wish",
+    "scenario": "Saying \"С лёгким паром!\" to a friend after their steam",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "dmitriy", "name": "Дмитрий", "role": "friend" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Дмитрий, ты закончил париться?", "romaji": "Dmítriy, ty zakónchil páritsya?" },
+      { "speakerId": "dmitriy", "text": "Да, вышел остыть.", "romaji": "Da, výshel astýt'." },
+      { "speakerId": "you", "text": "С лёгким паром!", "romaji": "S lyókhkim párom!" },
+      { "speakerId": "dmitriy", "text": "Спасибо! Теперь ты иди париться.", "romaji": "Spasíba! Tyepyér' ty idí páritsya." },
+      { "speakerId": "you", "text": "Хорошо, до встречи в предбаннике.", "romaji": "Kharashó, da fstryéchi f predbánnikye." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Dmitry, are you done steaming?" },
+      { "speakerId": "dmitriy", "text": "Yes, I stepped out to cool down." },
+      { "speakerId": "you", "text": "With a light steam!" },
+      { "speakerId": "dmitriy", "text": "Thanks! Now it's your turn to go steam." },
+      { "speakerId": "you", "text": "Okay, see you in the changing room." }
+    ],
+    "keyVocabulary": ["bnvocab.paritsya", "bnvocab.vykhodit-ostyt", "bnvocab.s-lyokhkim-parom", "bnvocab.predbannik"],
+    "grammarNotes": "С лёгким паром! is fixed and near-ceremonial — it isn't built productively from other grammar, so it's best learned whole rather than analyzed word by word."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "bndlg.tea-after-banya",
+    "scenario": "Tea and conversation after the banya",
+    "speakers": [
+      { "id": "dmitriy", "name": "Дмитрий", "role": "friend" },
+      { "id": "you", "name": "You" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "dmitriy", "text": "Пойдём пить чай после бани?", "romaji": "Poydyóm pit' chay pósle báni?" },
+      { "speakerId": "you", "text": "Да, с удовольствием. Есть квас?", "romaji": "Da, s udavól'stviyem. Yest' kvas?" },
+      { "speakerId": "dmitriy", "text": "Конечно, и мёд к чаю.", "romaji": "Kanyéshna, i myod k cháyu." },
+      { "speakerId": "you", "text": "Отлично, я сейчас отдохну.", "romaji": "Atlíchna, ya syeychás atdakhnú." },
+      { "speakerId": "dmitriy", "text": "Отдыхай, банный день только начался!", "romaji": "Atdykháy, bánnyy den' tól'ka nachálsya!" }
+    ],
+    "translation": [
+      { "speakerId": "dmitriy", "text": "Shall we go drink tea after the banya?" },
+      { "speakerId": "you", "text": "Yes, gladly. Is there any kvass?" },
+      { "speakerId": "dmitriy", "text": "Of course, and honey for the tea too." },
+      { "speakerId": "you", "text": "Great, I'll rest for a bit now." },
+      { "speakerId": "dmitriy", "text": "Rest up, banya day has only just begun!" }
+    ],
+    "keyVocabulary": ["bnvocab.chay-posle-bani", "bnvocab.kvas", "bnvocab.otdykhat", "bnvocab.bannyy-den"]
+  }
+]

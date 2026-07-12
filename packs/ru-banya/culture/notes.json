@@ -1,0 +1,50 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "bnculture.s-lyokhkim-parom-meaning",
+    "title": "\"С лёгким паром!\" — what it actually means",
+    "bodyMd": "Literally \"with a light steam,\" said the moment someone finishes their turn in the парная and steps out — to a friend, a stranger at a public banya, or even someone who's just had a shower at home. It wishes them a good, 'light' (easy, non-strenuous, healthy) steam, roughly the way English speakers say 'enjoy your bath,' but far more fixed and ritualized: it's one of the few Russian phrases said reflexively, almost on autopilot, the instant the moment calls for it.\n\nIt doesn't need a reply beyond спасибо (thanks), and saying it to someone is itself a small marker of banya culture — you only say it if you know the custom. It's also the title of the country's best-loved New Year's film, which has cemented the phrase even further into everyday use (see the separate note on *Ирония судьбы*).",
+    "tags": ["phrase", "social", "essentials"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "bnculture.venik-birch-vs-oak",
+    "title": "The venik ritual — and why oak vs. birch is a real debate",
+    "bodyMd": "The веник (a bound bundle of leafy branches) is soaked in hot water to soften before use, then wielded in two stages: first вея́ние — gently fanning it over the skin to push hot air down and warm the body up — and only then легкое похлопывание, a light rhythmic tapping/whisking that increases blood flow and intensifies the heat's effect. Done well it doesn't hurt; it's closer to a vigorous massage than a beating.\n\nBirch (берёзовый) is the default choice — soft, fragrant, gentle on skin, and easy to find. Oak (дубовый) has broader, tougher leaves that hold up to more rounds and are often preferred by people with oily skin or those who want a firmer whisking. Regulars also swear by eucalyptus, linden, or juniper venik for their scent or supposed therapeutic effects, but birch and oak remain the two everyone argues about first.",
+    "tags": ["ritual", "venik"],
+    "cefr": "B1"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "bnculture.banya-as-institution",
+    "title": "Banya as a health ritual, not a spa amenity",
+    "bodyMd": "Russians generally don't think of the banya as a relaxation extra the way a hotel sauna is treated abroad — it's closer to a genuine, centuries-old health practice, credited with everything from clearing colds to easing sore muscles to general circulation. The mechanism behind that belief is the deliberate alternation between extremes: intense dry heat in the парная (sometimes over 90°C near the ceiling), then a sharp cold shock — a bucket of cold water, a cold pool, or a прорубь in winter — and back again, several times in one session.\n\nThe whisking itself (парение) is considered part of the therapeutic effect, not just tradition for its own sake — increasing blood flow to the skin while the pores are open from the heat. A serious banya session is unhurried: short rounds in the heat, real rest in between in the предбанник, plenty of water, and often several hours total rather than a quick 15-minute sauna visit.",
+    "tags": ["health", "ritual", "essentials"],
+    "cefr": "B1"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "bnculture.public-vs-private-banya",
+    "title": "Public banya vs. the family dacha banya",
+    "bodyMd": "An общественная баня (public banya) is a paid, walk-in bathhouse, usually with separate men's and women's sections or scheduled hours, and sometimes a банщик on staff to whisk paying customers. City ones range from grand old Soviet-era establishments to modern spa-style venues, and going with friends is a common weekend social outing in its own right, not just a way to get clean.\n\nJust as central to the culture, though, is the частная баня — a small wooden bathhouse attached to a family's dacha (country house), often built and maintained across generations. This is where most of the real ritual lives: close friends and relatives only, no strangers, an evening that stretches from steam to cold plunge to tea to conversation around a table, sometimes running late into the night. If a Russian friend invites you 'to the banya,' it's far more often this intimate version than the public one.",
+    "tags": ["social", "essentials"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "bnculture.irony-of-fate",
+    "title": "\"Ирония судьбы\" — the banya scene everyone knows",
+    "bodyMd": "*Ирония судьбы, или С лёгким паром!* (\"The Irony of Fate, or Enjoy Your Bath!\", 1975) is arguably the single most-watched film in Russia — a New Year's Eve broadcast tradition on the scale of *It's a Wonderful Life*, rewatched by most of the country every December 31st. The plot kicks off with a group of friends' traditional banya trip on New Year's Eve that ends in the men getting comically drunk; one of them is accidentally put on a flight to another city and, still drunk, gives a taxi driver his own Moscow address — which happens to be an identical-looking street and building in the other city too, under the USSR's standardized apartment architecture.\n\nThe film's full title borrows the banya well-wish directly, and decades later Russians still drop the line \"С лёгким паром!\" with a knowing nod to the movie as much as to the literal bath. It's one of the most reliable shared cultural touchstones in the country — mentioning it is an easy way to signal you understand more than just the vocabulary.",
+    "tags": ["pop-culture", "history"],
+    "cefr": "B1"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "bnculture.banya-etiquette",
+    "title": "Banya etiquette: nudity, towels, and hydration",
+    "bodyMd": "Norms around nudity vary a lot by setting. In a same-gender public banya section, full nudity in the парная itself is common and unremarkable among Russians; a простыня (sheet) or towel wrapped around the body is standard in the предбанник and while walking between rooms, and is the safer default for a visitor unsure of local norms, especially in mixed company or a private banya with people you don't know well. When in doubt, keep the sheet on until you see what everyone else is doing.\n\nA few practical rules round out the etiquette: always sit on your own towel or sheet on the wooden полок rather than bare skin on the bench (both for hygiene and because the wood can be uncomfortably hot); drink plenty of water or tea between rounds, since it's easy to get dehydrated without noticing in the heat; ask before poddavat' paru (adding steam) since it affects the whole room; and don't overstay a single round — stepping out to cool down regularly is the point of the ritual, not a sign of weakness.",
+    "tags": ["etiquette", "essentials"],
+    "cefr": "A2"
+  }
+]

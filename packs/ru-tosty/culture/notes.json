@@ -1,0 +1,50 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "tsculture.tamada-role",
+    "title": "The тамада: a toastmaster who runs the whole evening",
+    "bodyMd": "At a Russian wedding or major celebration, it's common to hire or appoint a тамада (tamada) — a semi-formal master of ceremonies whose main job is to structure the entire evening around a planned sequence of toasts. The тамада calls on guests one by one, sometimes in a deliberate order (parents first, then close family, then friends, then more distant relations), introduces each speaker, and keeps the pacing of the whole event moving between toasts, games, and dancing.\n\nThe tradition is especially strong in the Caucasus (Georgia, Armenia, Azerbaijan, and neighboring regions), where the tamada's role can be genuinely elaborate — a respected, often witty figure who sets the tone for the entire table. Russian celebrations more broadly have widely adopted the practice, though a Russian tamada is often more lighthearted and game-show-host-like than the more solemn Georgian model. Either way, at a wedding with a tamada, you generally don't just stand up and toast whenever you feel like it — you wait to be given слово (the floor).",
+    "tags": ["wedding", "tamada", "essentials"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "tsculture.eye-contact-clinking",
+    "title": "Eye contact when you clink glasses — a real superstition",
+    "bodyMd": "When Russians чокаются (clink glasses) before drinking a toast, it's genuinely expected that you look each other in the eyes while doing it — not down at the glasses, not around the room. Breaking eye contact during the clink is a documented superstition: many people will tell you it brings seven years of bad luck, often specifically bad luck in love or in the bedroom.\n\nIt's a small thing, but noticeable if you skip it — Russians who take the superstition seriously (and plenty who claim not to, but still do it out of habit) will sometimes good-naturedly call it out or ask you to clink again 'properly.' It costs nothing to do, so it's an easy piece of etiquette to pick up early: raise the glass, meet the other person's eyes, then clink.",
+    "tags": ["superstition", "etiquette", "essentials"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "tsculture.toast-as-speech",
+    "title": "A тост is a small speech, not just \"cheers\"",
+    "bodyMd": "In English, \"a toast\" can be a single word — just \"cheers!\" and everyone drinks. In Russian settings, especially at a family застолье (a long sit-down gathering) or a wedding, a тост is expected to be more substantial: a few sentences at minimum, sometimes a genuine short speech with a story, a wish, and a clear theme, before the actual drinking line ('за...!') at the end.\n\nIt's completely normal for a toast to be warm, sentimental, even to bring people close to tears — this isn't considered excessive or awkward the way a long toast might feel at a casual Western dinner. Guests are often expected to prepare something, at least mentally, before a big occasion, rather than improvising a one-liner on the spot. If you're asked to give a toast and you just say \"будем здоровы\" (let's be healthy) and drink, it can come across as a bit thin for anything beyond the most casual gathering.",
+    "tags": ["toasting", "etiquette", "essentials"],
+    "cefr": "B1"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "tsculture.no-empty-glass-no-water",
+    "title": "Never toast with an empty glass — or with water",
+    "bodyMd": "Two closely related taboos are worth knowing before you sit down at a Russian table. First: don't raise an empty or near-empty glass for a toast — if your glass is low, it's normal (and expected) to ask for a refill before the toast happens, not to just go through the motions with a few drops left.\n\nSecond, and more serious: don't drink a toast with water instead of an alcoholic drink. This isn't a minor faux pas — it's tied to an old, still-observed superstition associating water with funeral rites, where water (not wine or vodka) was traditionally poured for the dead. Toasting someone's health with water is, by that same logic, associated with wishing them death. If you don't drink alcohol, the polite move is to have something else in your glass — juice, soda, kvass — rather than water, and often nobody will even ask why, since 'don't drink a toast with water' is common knowledge at the table.",
+    "tags": ["superstition", "etiquette", "essentials"],
+    "cefr": "B1"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "tsculture.escalating-toast-themes",
+    "title": "How toast themes escalate over the course of a long dinner",
+    "bodyMd": "A long Russian застолье doesn't fire off all its toasts in the same register. There's a rough, informally understood arc to how the themes progress over the course of the evening. The first toasts tend to be the most formal and general — за встречу (to this meeting/reunion), за здоровье (to health), often addressed to the whole table or to the guest of honor.\n\nAs the evening goes on and the mood warms up, toasts get progressively more personal and specific: toasts to individual people at the table, to parents, to children, to absent friends, to love, to old memories shared by smaller groups within the gathering. By the later toasts, it's common for people to speak more freely, tell longer stories, and get more emotional — and the very last toast of the night often circles back to something unifying, like за мир (to peace) or a toast to the host for having everyone over. Recognizing this arc helps you gauge what kind of toast is expected of you depending on when in the evening you're asked to speak.",
+    "tags": ["toasting", "essentials"],
+    "cefr": "B1"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "tsculture.gorko-wedding-chant",
+    "title": "\"Горько!\": the wedding chant that means \"kiss\"",
+    "bodyMd": "At some point during a Russian wedding reception, guests will start chanting Горько! (Gór'ka!) — literally \"[it's] bitter!\" — as a good-natured complaint that the wine everyone's drinking has gone bitter. The only fix, by tradition, is for the bride and groom to kiss for as long as the guests keep counting or chanting, which is meant to 'sweeten' the drink again.\n\nIt tends to happen repeatedly throughout the reception, often started by a slightly tipsy table rather than announced by the тамада, though a tamada may prompt it deliberately between courses. It's playful rather than solemn, and newlyweds are expected to indulge it good-humoredly rather than brush it off.",
+    "tags": ["wedding", "toasting"],
+    "cefr": "A2"
+  }
+]

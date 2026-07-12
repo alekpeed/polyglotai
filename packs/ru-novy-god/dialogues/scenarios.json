@@ -1,0 +1,205 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "nydlg.decorating-the-yolka",
+    "scenario": "Decorating the New Year tree together",
+    "speakers": [
+      { "id": "mom", "name": "Мама", "role": "mother" },
+      { "id": "child", "name": "Ребёнок", "role": "child" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "mom", "text": "Давай украсим ёлку!", "romaji": "Davay ukrásim yólku!" },
+      { "speakerId": "child", "text": "Ура! Где гирлянда и игрушки?", "romaji": "Urá! Gdye girlyánda i igrúshki?" },
+      { "speakerId": "mom", "text": "Вот мишура, а вот стеклянные игрушки.", "romaji": "Vot mishurá, a vot styeklyánnyye igrúshki." },
+      { "speakerId": "child", "text": "А куда повесить звезду?", "romaji": "A kudá pavyésit' zvyezdú?" },
+      { "speakerId": "mom", "text": "Звезда наверх, на самую макушку.", "romaji": "Zvyezdá navyérkh, na sámuyu makúshku." },
+      { "speakerId": "child", "text": "Красиво! Ёлка пахнет лесом.", "romaji": "Krasívo! Yólka pákhnyet lyésom." }
+    ],
+    "translation": [
+      { "speakerId": "mom", "text": "Let's decorate the tree!" },
+      { "speakerId": "child", "text": "Yay! Where's the garland and the ornaments?" },
+      { "speakerId": "mom", "text": "Here's the tinsel, and here are the glass ornaments." },
+      { "speakerId": "child", "text": "Where should I hang the star?" },
+      { "speakerId": "mom", "text": "The star goes on top, right at the very top." },
+      { "speakerId": "child", "text": "Beautiful! The tree smells like the forest." }
+    ],
+    "keyVocabulary": ["nyvocab.yolka", "nyvocab.girlyanda", "nyvocab.igrushka", "nyvocab.mishura", "nyvocab.zvezda", "nyvocab.naryazhat-yolku"],
+    "grammarNotes": "Давай + a first-person-plural verb (давай украсим, 'let's decorate') is the standard casual way to propose doing something together — much more common in speech than a formal construction."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "nydlg.planning-the-menu",
+    "scenario": "Planning the Olivier salad and New Year's Eve menu",
+    "speakers": [
+      { "id": "anna", "name": "Анна", "role": "roommate" },
+      { "id": "boris", "name": "Борис", "role": "roommate" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "anna", "text": "Что мы приготовим на новогодний стол?", "romaji": "Shto my prigatóvim na novogódniy stol?" },
+      { "speakerId": "boris", "text": "Конечно, салат Оливье! Это обязательно.", "romaji": "Kanyéshno, salát Ol'ivyé! Eto abyazátyel'no." },
+      { "speakerId": "anna", "text": "А ещё селёдку под шубой хочу.", "romaji": "A yeshchyó selyódku pad shúboy khachú." },
+      { "speakerId": "boris", "text": "Хорошо. И шампанское не забудь купить.", "romaji": "Kharashó. I shampánskoye nye zabúd' kupít'." },
+      { "speakerId": "anna", "text": "И мандарины! Без них не Новый год.", "romaji": "I mandaríny! Byez nikh nye Nóvy god." },
+      { "speakerId": "boris", "text": "Договорились. Накроем стол к десяти вечера.", "romaji": "Dagavarílis'. Nakróyem stol k dyesyatí vyechyerá." }
+    ],
+    "translation": [
+      { "speakerId": "anna", "text": "What should we make for the New Year's table?" },
+      { "speakerId": "boris", "text": "Of course, Olivier salad! That one's non-negotiable." },
+      { "speakerId": "anna", "text": "And I also want herring under a fur coat." },
+      { "speakerId": "boris", "text": "Okay. And don't forget to buy champagne." },
+      { "speakerId": "anna", "text": "And tangerines! It's not New Year without them." },
+      { "speakerId": "boris", "text": "Deal. We'll set the table by ten o'clock." }
+    ],
+    "keyVocabulary": ["nyvocab.salat-olivye", "nyvocab.selyodka-pod-shuboy", "nyvocab.shampanskoe", "nyvocab.mandariny", "nyvocab.nakryt-stol"],
+    "grammarNotes": "Без них не Новый год ('without them it's not New Year') drops the verb 'to be' entirely, as Russian present-tense 'to be' normally does — a good example of how central these foods are felt to be, grammatically stated as a simple fact."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "nydlg.midnight-countdown",
+    "scenario": "Watching the Kremlin clock and making a wish at midnight",
+    "speakers": [
+      { "id": "babushka", "name": "Бабушка", "role": "grandmother" },
+      { "id": "vnuk", "name": "Внук", "role": "grandson" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "babushka", "text": "Тихо, куранты бьют! Загадывай желание!", "romaji": "Tíkho, kuránty b'yut! Zagádyvay zhelániye!" },
+      { "speakerId": "vnuk", "text": "Уже загадал. А что писать на бумажке?", "romaji": "Uzhé zagadál. A shto pisát' na bumázhke?" },
+      { "speakerId": "babushka", "text": "Своё желание, потом сжигаем и бросаем пепел в бокал.", "romaji": "Svayó zhelániye, patóm szhigáyem i brasáyem pyépyel v bakál." },
+      { "speakerId": "vnuk", "text": "И выпить до последнего боя куранта?", "romaji": "I výpit' da paslyédnyego bóya kuránta?" },
+      { "speakerId": "babushka", "text": "Да, ровно за двенадцать секунд! С Новым годом!", "romaji": "Da, róvna za dvyenádtsat' sekúnd! S Nóvym gódom!" },
+      { "speakerId": "vnuk", "text": "С Новым годом, бабушка! Ура, фейерверк начался!", "romaji": "S Nóvym gódom, bábushka! Urá, feyervérk nachalsyá!" }
+    ],
+    "translation": [
+      { "speakerId": "babushka", "text": "Quiet, the chimes are striking! Make a wish!" },
+      { "speakerId": "vnuk", "text": "Already did. What do you write on the paper?" },
+      { "speakerId": "babushka", "text": "Your wish — then we burn it and drop the ashes into a glass." },
+      { "speakerId": "vnuk", "text": "And drink it before the last chime finishes?" },
+      { "speakerId": "babushka", "text": "Yes, in exactly twelve seconds! Happy New Year!" },
+      { "speakerId": "vnuk", "text": "Happy New Year, Grandma! Hooray, the fireworks have started!" }
+    ],
+    "keyVocabulary": ["nyvocab.kuranty", "nyvocab.zagadat-zhelanie", "nyvocab.bokal", "nyvocab.s-novym-godom", "nyvocab.feyerverk"],
+    "grammarNotes": "This dialogue describes the real, still-practiced paper-wish-and-ashes ritual — see the culture notes for the full custom and its timing against the twelve chimes."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "nydlg.exchanging-gifts",
+    "scenario": "Exchanging New Year gifts",
+    "speakers": [
+      { "id": "sestra", "name": "Сестра", "role": "sister" },
+      { "id": "me", "name": "You" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "sestra", "text": "С Новым годом! Вот твой подарок.", "romaji": "S Nóvym gódom! Vot tvoy padárok." },
+      { "speakerId": "me", "text": "Спасибо! Мне открыть сейчас?", "romaji": "Spasíbo! Mnye atkrýt' seychás?" },
+      { "speakerId": "sestra", "text": "Да, конечно! Дед Мороз положил его под ёлку.", "romaji": "Da, kanyéshno! Dyed Marós palazhíl yevó pad yólku." },
+      { "speakerId": "me", "text": "Какая красивая открытка тоже! Спасибо большое.", "romaji": "Kakáya krasívaya atkrýtka tózhe! Spasíbo bal'shóye." },
+      { "speakerId": "sestra", "text": "Мы всегда дарим подарки в новогоднюю ночь.", "romaji": "My vsyegdá dárim padárki v novogódnyuyu noch'." },
+      { "speakerId": "me", "text": "Мой подарок для тебя тоже под ёлкой!", "romaji": "Moy padárok dlya tebyá tózhe pad yólkoy!" }
+    ],
+    "translation": [
+      { "speakerId": "sestra", "text": "Happy New Year! Here's your present." },
+      { "speakerId": "me", "text": "Thank you! Should I open it now?" },
+      { "speakerId": "sestra", "text": "Yes, of course! Ded Moroz put it under the tree." },
+      { "speakerId": "me", "text": "What a beautiful card too! Thank you so much." },
+      { "speakerId": "sestra", "text": "We always give gifts on New Year's Eve." },
+      { "speakerId": "me", "text": "My present for you is under the tree too!" }
+    ],
+    "keyVocabulary": ["nyvocab.s-novym-godom", "nyvocab.podarok", "nyvocab.ded-moroz", "nyvocab.yolka", "nyvocab.otkrytka", "nyvocab.darit-podarki"],
+    "grammarNotes": "Note gifts are said to appear под ёлкой ('under the tree') rather than in stockings or under a chimney — the ёлка is where Ded Moroz is imagined to leave them."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "nydlg.child-asks-about-ded-moroz",
+    "scenario": "A child asking about Ded Moroz",
+    "speakers": [
+      { "id": "child", "name": "Ребёнок", "role": "child" },
+      { "id": "dad", "name": "Папа", "role": "father" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "child", "text": "Папа, а кто такой Дед Мороз?", "romaji": "Pápa, a kto takóy Dyed Marós?" },
+      { "speakerId": "dad", "text": "Это волшебник зимы. Он приходит с внучкой Снегурочкой.", "romaji": "Eto valshébnik zimý. On prikhódit s vnúchkoy Snegúrochkoy." },
+      { "speakerId": "child", "text": "А он влезает в дом через трубу, как Санта?", "romaji": "A on vlyezáyet v dom chyérez trubú, kak Sánta?" },
+      { "speakerId": "dad", "text": "Нет, у нас нет трубы! Дед Мороз просто входит в дверь с посохом.", "romaji": "Nyet, u nas nyet trubý! Dyed Marós prósto fkhódit v dvyer' s pósokhom." },
+      { "speakerId": "child", "text": "А во что он одет?", "romaji": "A va shto on adyét?" },
+      { "speakerId": "dad", "text": "В длинную синюю или красную шубу и валенки, а не в красный костюм.", "romaji": "V dlínnuyu sínyuyu íli krásnuyu shúbu i vályenki, a nye v krásny kastyúm." }
+    ],
+    "translation": [
+      { "speakerId": "child", "text": "Dad, who is Ded Moroz?" },
+      { "speakerId": "dad", "text": "He's the wizard of winter. He comes together with his granddaughter Snegurochka." },
+      { "speakerId": "child", "text": "Does he climb into the house through the chimney, like Santa?" },
+      { "speakerId": "dad", "text": "No, we don't even have a chimney! Ded Moroz just walks in through the door with his staff." },
+      { "speakerId": "child", "text": "And what does he wear?" },
+      { "speakerId": "dad", "text": "A long blue or red fur coat and felt boots, not a red suit." }
+    ],
+    "keyVocabulary": ["nyvocab.ded-moroz", "nyvocab.snegurochka", "nyvocab.posokh", "nyvocab.shuba", "nyvocab.valenki"],
+    "grammarNotes": "This exchange directly contrasts Ded Moroz with Santa Claus — no chimney, arrival with a granddaughter, and a staff instead of just a sack. See the culture notes for the full comparison."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "nydlg.calling-family",
+    "scenario": "Calling family to wish them a happy New Year",
+    "speakers": [
+      { "id": "me", "name": "You" },
+      { "id": "dedushka", "name": "Дедушка", "role": "grandfather" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "me", "text": "Алло, дедушка! С Новым годом!", "romaji": "Allo, dyédushka! S Nóvym gódom!" },
+      { "speakerId": "dedushka", "text": "С Новым годом, с новым счастьем, дорогой! Как ты встречаешь праздник?", "romaji": "S Nóvym gódom, s nóvym schást'yem, daragóy! Kak ty fstryecháyesh prázdnik?" },
+      { "speakerId": "me", "text": "Мы уже сделали салат Оливье и ждём боя курантов.", "romaji": "My uzhé sdyélali salát Ol'ivyé i zhdyom bóya kuránta." },
+      { "speakerId": "dedushka", "text": "Хорошо! Поздравляю всю семью с праздником.", "romaji": "Kharashó! Pazdravlyáyu fsyu sem'yú s prázdnikom." },
+      { "speakerId": "me", "text": "Спасибо! Счастья в новом году и тебе, дедушка.", "romaji": "Spasíbo! Schást'ya v nóvom gadú i tyebyé, dyédushka." },
+      { "speakerId": "dedushka", "text": "До встречи в гости на каникулах!", "romaji": "Da fstryéchi v gósti na kaníkulakh!" }
+    ],
+    "translation": [
+      { "speakerId": "me", "text": "Hello, Grandpa! Happy New Year!" },
+      { "speakerId": "dedushka", "text": "Happy New Year, happy new happiness, dear! How are you celebrating the holiday?" },
+      { "speakerId": "me", "text": "We've already made the Olivier salad and are waiting for the chimes." },
+      { "speakerId": "dedushka", "text": "Good! I wish the whole family a happy holiday." },
+      { "speakerId": "me", "text": "Thank you! Happiness in the new year to you too, Grandpa." },
+      { "speakerId": "dedushka", "text": "See you for a visit during the holidays!" }
+    ],
+    "keyVocabulary": ["nyvocab.s-novym-godom", "nyvocab.s-novym-godom-s-novym-schastyem", "nyvocab.salat-olivye", "nyvocab.boy-kurantov", "nyvocab.pozdravlyayu", "nyvocab.schastya-v-novom-godu", "nyvocab.kanikuly"],
+    "grammarNotes": "С Новым годом, с новым счастьем! is a fuller, more old-fashioned variant of the greeting that older relatives often use in place of the shorter С Новым годом!"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "nydlg.tv-traditions",
+    "scenario": "Discussing New Year's Eve TV traditions",
+    "speakers": [
+      { "id": "olya", "name": "Оля", "role": "friend" },
+      { "id": "petya", "name": "Петя", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "olya", "text": "В этом году будем смотреть обращение президента?", "romaji": "V étam gadú búdyem smatryét' abrashchéniye prezidyénta?" },
+      { "speakerId": "petya", "text": "Конечно, это же перед самым боем курантов.", "romaji": "Kanyéshno, eto zhe pyéryed sámym bóyem kuránтov." },
+      { "speakerId": "olya", "text": "А потом традиционно «Ирония судьбы»?", "romaji": "A patóm traditsiónno «Iróniya sud'bý»?" },
+      { "speakerId": "petya", "text": "Да, весь вечер первого января — только этот фильм по телевизору.", "romaji": "Da, vyes' vyéchyer pyérvava yanvaryá — tól'ka état fil'm pa tyelyevízoru." },
+      { "speakerId": "olya", "text": "Ещё люблю новогодний огонёк с песнями.", "romaji": "Yeshchyó lyublyú novogódniy aganyók s pyésnyami." },
+      { "speakerId": "petya", "text": "И я! А потом хоровод вокруг ёлки во дворе.", "romaji": "I ya! A patóm kharavód vakrúg yólki va dvaryé." }
+    ],
+    "translation": [
+      { "speakerId": "olya", "text": "Are we going to watch the president's address this year?" },
+      { "speakerId": "petya", "text": "Of course, it's right before the chimes strike." },
+      { "speakerId": "olya", "text": "And then, traditionally, 'The Irony of Fate'?" },
+      { "speakerId": "petya", "text": "Yes, all evening on January 1st — that film is the only thing on TV." },
+      { "speakerId": "olya", "text": "I also love the New Year concert special with songs." },
+      { "speakerId": "petya", "text": "Me too! And then a round dance around the tree in the yard." }
+    ],
+    "keyVocabulary": ["nyvocab.novogodneye-obrashchenie-prezidenta", "nyvocab.boy-kurantov", "nyvocab.ironiya-sudby", "nyvocab.novogodny-ogonyok", "nyvocab.khorovod", "nyvocab.yolka"],
+    "grammarNotes": "«Ирония судьбы» is referenced here by its short title, the way Russians normally say it in conversation, rather than the full «Ирония судьбы, или С лёгким паром!»"
+  }
+]
