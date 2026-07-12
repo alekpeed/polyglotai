@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "ru-produkty",
+  "name": "Produkty & Rynok",
+  "languageCode": "ru-RU",
+  "packVersion": "0.1.0",
+  "basePack": "ru",
+  "authors": ["PolyglotAI"],
+  "license": "proprietary",
+  "dialects": [{ "id": "ru-RU-standard", "name": "Standard (Moscow)" }],
+  "defaultDialect": "ru-RU-standard",
+  "cefrRange": ["A1", "A2"],
+  "featureFlags": { "slang": false, "profanity": false },
+  "contents": {
+    "vocabulary": ["vocabulary/produkty-core.json"],
+    "dialogues": ["dialogues/scenarios.json"],
+    "culture": ["culture/notes.json"]
+  }
+}

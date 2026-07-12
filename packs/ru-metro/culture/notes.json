@@ -1,0 +1,44 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "mtculture.stalin-era-palaces",
+    "title": "Palaces for the people: the Moscow metro's ornate stations",
+    "bodyMd": "Moscow's metro opened in 1935 under Stalin, and the earliest stations were deliberately built as showcases, not just infrastructure — the official line was that Soviet workers deserved to ride through \"palaces for the people\" on their daily commute. The result is a system where individual stations look like ballrooms: marble columns, bronze statues, chandeliers, and mosaic ceilings, each with its own theme.\n\nКомсомольская (Komsomolskaya), on the circle line, is probably the most famous — a soaring baroque hall with a ceiling of mosaics depicting military commanders and historic Russian victories, designed to evoke a triumphant national narrative. Маяковская (Mayakovskaya) takes an entirely different, Art Deco approach: slender steel arches and a ceiling of small mosaic panels depicting \"24 Hours in the Land of the Soviets\" — scenes of aviation, industry, and sky. Both stations, like much of the network, doubled as functional bomb shelters, so the grandeur and the practicality were never separate goals.",
+    "tags": ["architecture", "history", "stations"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "mtculture.announcement-voice-convention",
+    "title": "Why the announcer's voice changes with direction",
+    "bodyMd": "Ride the Moscow metro for a day and you'll notice the announcer's voice flips depending on which way the train is heading: a male voice announces stations on trains heading toward the center of the city, and a female voice announces stations on trains heading away from the center (or, on the circle line, clockwise vs. counterclockwise). This is a real, deliberate, and long-standing convention across the system, not a rumor or an urban legend.\n\nThe practical reason is accessibility — a rider who can't see the platform signage, or who boarded without checking, can tell which direction they're headed just by the announcer's voice, without needing to read anything. Regular commuters absorb this instinctively; even without understanding a word of Russian, listening for the voice is a genuinely useful trick for staying oriented.",
+    "tags": ["announcements", "accessibility", "navigation"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "mtculture.marshrutka-fare-etiquette",
+    "title": "Passing marshrutka fare hand to hand",
+    "bodyMd": "A маршрутка is a shared minibus that runs a fixed route, usually packed with more seats than a driver can reach from behind the wheel. Instead of a farebox or a card reader near the door, the custom is simple and entirely trust-based: state your fare out loud (\"за проезд\") and pass cash forward, hand to hand, through however many strangers sit between you and the driver. Whoever receives it just passes it along without comment — nobody counts it, questions it, or keeps it.\n\nChange comes back the exact same way, passed hand to hand down the aisle until it reaches the original passenger, who is expected to recognize it as theirs. It looks improbable to first-time riders that money can float across a crowded minibus and land back with the right person, but it's a completely ordinary, quietly reliable piece of daily etiquette across the former Soviet world.",
+    "tags": ["marshrutka", "etiquette", "payment"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "mtculture.escalator-rush-hour-etiquette",
+    "title": "Stand right, walk left — and brace for rush hour",
+    "bodyMd": "On Moscow's escalators, the rule is strict and unspoken but enforced socially rather than by signage: stand on the right, leave the left side clear for people walking down. Given how long and deep many of the escalators are, blocking the left side doesn't just annoy people — it can genuinely make someone late, so regular riders will say \"проходите\" (go ahead, pass) or simply squeeze by if you're in the way.\n\nRush hour intensifies everything: trains run as often as every 90 seconds on busy lines, platforms fill shoulder to shoulder, and boarding becomes a brisk, no-nonsense shuffle — riders wait for people to exit before stepping on, then move quickly to clear the doors. It isn't rude by local standards; it's simply how a system built to move millions of people a day keeps functioning.",
+    "tags": ["etiquette", "rush-hour", "escalator"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "mtculture.deep-stations-cold-war",
+    "title": "Built to survive a bomb: how deep the Moscow metro really runs",
+    "bodyMd": "Several Moscow metro stations rank among the deepest in the world — Парк Победы (Park Pobedy), for instance, sits roughly 84 meters underground, reached by escalator rides that can take several minutes. That depth isn't an engineering accident; it's a legacy of the era the system was expanded in.\n\nDuring the Second World War, unfinished and existing stations doubled as air-raid shelters for hundreds of thousands of Muscovites, and Stalin himself is reported to have addressed the nation from Маяковская station during a 1941 air raid. Later, Cold War-era construction deliberately built stations deep enough, and some tunnels with blast doors, to double as civil-defense shelters against a nuclear strike — a purpose the system is still officially rated for today, even though it has (fortunately) never been tested for real.",
+    "tags": ["history", "engineering", "cold-war"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "mtculture.metro-general-etiquette",
+    "title": "Quiet rides, no food, and giving up your seat",
+    "bodyMd": "Day-to-day metro etiquette in Moscow leans quiet and low-key: conversations tend to stay soft, phone calls are usually kept short or taken in a lowered voice, and eating or drinking on board is discouraged — not banned by a posted rule you'll usually see enforced, but frowned on as messy and inconsiderate in tight, crowded cars.\n\nSeats near the doors are often marked for elderly riders, pregnant women, people with small children, and passengers with disabilities, and giving one up without being asked is a normal, expected courtesy rather than a special kindness. Combined with the crowding of rush hour, the overall tone is efficient and a little formal with strangers — pleasant small talk isn't the norm, but a polite \"извините\" or \"спасибо\" always is.",
+    "tags": ["etiquette", "daily-life"]
+  }
+]

@@ -1,0 +1,189 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "prddlg.rynok-price-produce",
+    "scenario": "Asking the price of cucumbers at a rynok stall",
+    "speakers": [
+      { "id": "customer", "name": "Вы", "role": "customer" },
+      { "id": "marina", "name": "Марина", "role": "vendor" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "customer", "text": "Здравствуйте! Сколько стоит килограмм огурцов?", "romaji": "Zdrávstvuyte! Skól'ko stóit kilográmm agurtsóv?" },
+      { "speakerId": "marina", "text": "Здравствуйте! Сто рублей килограмм, свежие, сегодня привезли.", "romaji": "Zdrávstvuyte! Sto rublyéy kilográmm, svézhiye, sevódnya privyezlí." },
+      { "speakerId": "customer", "text": "А это домашние огурцы или магазинные?", "romaji": "A éto domáshniye agurtsý íli magazínnyye?" },
+      { "speakerId": "marina", "text": "Домашние, с дачи, не из супермаркета.", "romaji": "Domáshniye, s dáchi, nye iz supermárketa." },
+      { "speakerId": "customer", "text": "Отлично, дайте один килограмм, пожалуйста.", "romaji": "Atlíchna, dáytye odín kilográmm, pazhálusta." }
+    ],
+    "translation": [
+      { "speakerId": "customer", "text": "Hello! How much is a kilogram of cucumbers?" },
+      { "speakerId": "marina", "text": "Hello! A hundred rubles a kilogram, fresh, brought in today." },
+      { "speakerId": "customer", "text": "And are these home-grown cucumbers or store-bought ones?" },
+      { "speakerId": "marina", "text": "Home-grown, from a dacha, not from the supermarket." },
+      { "speakerId": "customer", "text": "Great, give me one kilogram, please." }
+    ],
+    "keyVocabulary": ["prdvocab.kilogramm", "prdvocab.ogurets", "prdvocab.domashniy", "prdvocab.svezhiy", "prdvocab.supermarket"],
+    "grammarNotes": "'Сколько стоит' takes the item in the genitive case after a measure word: килограмм огурцов ('a kilogram of cucumbers'), not the nominative огурцы."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prddlg.buying-by-weight",
+    "scenario": "Buying cheese and tvorog by weight at a dairy stall",
+    "speakers": [
+      { "id": "customer", "name": "Вы", "role": "customer" },
+      { "id": "sergey", "name": "Сергей", "role": "vendor" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "customer", "text": "Этот сыр продаётся на развес?", "romaji": "État syr pradayótsya na razvés?" },
+      { "speakerId": "sergey", "text": "Да, на развес. Сколько вам взвесить?", "romaji": "Da, na razvés. Skól'ko vam vzvésit'?" },
+      { "speakerId": "customer", "text": "Полкило, пожалуйста.", "romaji": "Polkiló, pazhálusta." },
+      { "speakerId": "sergey", "text": "Хорошо, сейчас взвешу. Ещё пачку творога возьмёте?", "romaji": "Kharashó, seychás vzvéshu. Yeshchó páchku tvarogá voz'myótye?" },
+      { "speakerId": "customer", "text": "Да, давайте одну пачку.", "romaji": "Da, daváytye adnú páchku." }
+    ],
+    "translation": [
+      { "speakerId": "customer", "text": "Is this cheese sold by weight?" },
+      { "speakerId": "sergey", "text": "Yes, by weight. How much shall I weigh out for you?" },
+      { "speakerId": "customer", "text": "Half a kilo, please." },
+      { "speakerId": "sergey", "text": "Alright, I'll weigh it now. Will you also take a pack of tvorog?" },
+      { "speakerId": "customer", "text": "Yes, give me one pack." }
+    ],
+    "keyVocabulary": ["prdvocab.syr", "prdvocab.na-razves", "prdvocab.vzvesit", "prdvocab.polkilo", "prdvocab.tvorog", "prdvocab.pachka"],
+    "grammarNotes": "After пачка, the thing inside goes in the genitive: пачку творога ('a pack of tvorog') — the same partitive-genitive pattern as килограмм огурцов."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prddlg.asking-fresh-local",
+    "scenario": "Asking whether the dill and berries are fresh and local",
+    "speakers": [
+      { "id": "customer", "name": "Вы", "role": "customer" },
+      { "id": "olga", "name": "Ольга", "role": "vendor" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "customer", "text": "Укроп свежий? Он у вас местный?", "romaji": "Ukróp svézhiy? On u vas myéstnyy?" },
+      { "speakerId": "olga", "text": "Свежий, срезали сегодня утром. И да, местный, не привозной.", "romaji": "Svézhiy, sryézali sevódnya útram. I da, myéstnyy, nye privaznóy." },
+      { "speakerId": "customer", "text": "А ягоды тоже местные?", "romaji": "A yágady tózhe myéstnyye?" },
+      { "speakerId": "olga", "text": "Ягоды из соседней деревни, очень сладкие.", "romaji": "Yágady iz sasyédnyey dyerévni, óchen' sládkiye." },
+      { "speakerId": "customer", "text": "Тогда возьму укроп и немного ягод.", "romaji": "Tagdá voz'mú ukróp i nyemnóga yágad." }
+    ],
+    "translation": [
+      { "speakerId": "customer", "text": "Is the dill fresh? Is it local?" },
+      { "speakerId": "olga", "text": "Fresh, cut this morning. And yes, local, not shipped in." },
+      { "speakerId": "customer", "text": "Are the berries local too?" },
+      { "speakerId": "olga", "text": "The berries are from the neighboring village, very sweet." },
+      { "speakerId": "customer", "text": "Then I'll take the dill and a few berries." }
+    ],
+    "keyVocabulary": ["prdvocab.ukrop", "prdvocab.svezhiy", "prdvocab.mestnyy", "prdvocab.yagody"],
+    "grammarNotes": "'Привозной' (shipped in from elsewhere) is the natural opposite of местный at a рынок — the two words together frame the question shoppers actually care about."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prddlg.supermarket-checkout",
+    "scenario": "Checking out at a supermarket and paying in cash",
+    "speakers": [
+      { "id": "customer", "name": "Вы", "role": "customer" },
+      { "id": "cashier", "name": "Кассир", "role": "cashier" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "customer", "text": "Простите, эта касса работает?", "romaji": "Prastítye, éta kássa rabótayet?" },
+      { "speakerId": "cashier", "text": "Да, пожалуйста, проходите. Это всё?", "romaji": "Da, pazhálusta, prakhadítye. Éto vsyo?" },
+      { "speakerId": "customer", "text": "Да, всё. Можно наличными?", "romaji": "Da, vsyo. Mózhno nalíchnymi?" },
+      { "speakerId": "cashier", "text": "Конечно. С вас триста рублей.", "romaji": "Kanyéshna. S vas trísta rublyéy." },
+      { "speakerId": "customer", "text": "Вот, возьмите пятьсот.", "romaji": "Vot, voz'mítye pyat'sót." },
+      { "speakerId": "cashier", "text": "Ваша сдача — двести рублей, и вот чек.", "romaji": "Vásha sdácha — dvyésti rublyéy, i vot chek." }
+    ],
+    "translation": [
+      { "speakerId": "customer", "text": "Excuse me, is this checkout open?" },
+      { "speakerId": "cashier", "text": "Yes, please, come on through. Is this everything?" },
+      { "speakerId": "customer", "text": "Yes, that's everything. Can I pay in cash?" },
+      { "speakerId": "cashier", "text": "Of course. That'll be three hundred rubles." },
+      { "speakerId": "customer", "text": "Here, take five hundred." },
+      { "speakerId": "cashier", "text": "Your change is two hundred rubles, and here's the receipt." }
+    ],
+    "keyVocabulary": ["prdvocab.kassa", "prdvocab.nalichnye", "prdvocab.sdacha", "prdvocab.chek"],
+    "grammarNotes": "'С вас [amount]' ('that'll be... / [amount] from you') is the standard way a cashier states the total, distinct from asking 'сколько это стоит'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prddlg.vendor-recommendation",
+    "scenario": "Asking a vendor for a recommendation on fish",
+    "speakers": [
+      { "id": "customer", "name": "Вы", "role": "customer" },
+      { "id": "viktor", "name": "Виктор", "role": "vendor" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "customer", "text": "Что вы посоветуете? Я не знаю, какую рыбу выбрать.", "romaji": "Shto vy pasavyétuyete? Ya nye znáyu, kakúyu rýbu výbrat'." },
+      { "speakerId": "viktor", "text": "Возьмите эту, она сегодня утром привезена, очень свежая.", "romaji": "Voz'mítye étu, aná sevódnya útram privyezyená, óchen' svyézhaya." },
+      { "speakerId": "customer", "text": "А можно попробовать?", "romaji": "A mózhno papróbovat'?" },
+      { "speakerId": "viktor", "text": "Рыбу — нет, а вот сыр рядом можно попробовать.", "romaji": "Rýbu — nyet, a vot syr ryádam mózhno papróbovat'." },
+      { "speakerId": "customer", "text": "Хорошо, тогда беру рыбу, вы меня убедили.", "romaji": "Kharashó, tagdá byerú rýbu, vy menyá ubyedíli." }
+    ],
+    "translation": [
+      { "speakerId": "customer", "text": "What would you recommend? I don't know which fish to choose." },
+      { "speakerId": "viktor", "text": "Take this one, it was brought in this morning, very fresh." },
+      { "speakerId": "customer", "text": "And can I try it?" },
+      { "speakerId": "viktor", "text": "The fish — no, but you can try the cheese right next to it." },
+      { "speakerId": "customer", "text": "Okay, then I'll take the fish, you've convinced me." }
+    ],
+    "keyVocabulary": ["prdvocab.chto-vy-posovetuyete", "prdvocab.ryba", "prdvocab.mozhno-poprobovat", "prdvocab.svezhiy", "prdvocab.syr"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prddlg.mild-haggling-bulk",
+    "scenario": "Mild haggling on a bulk purchase of potatoes",
+    "speakers": [
+      { "id": "customer", "name": "Вы", "role": "customer" },
+      { "id": "nikolay", "name": "Николай", "role": "vendor" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "customer", "text": "Я хочу купить сразу пять килограммов картошки. Скидка есть?", "romaji": "Ya khachú kupít' srázu pyat' kilagrámmav kartóshki. Skídka yest'?" },
+      { "speakerId": "nikolay", "text": "Если пять кило, могу отдать чуть дешевле, по сорок рублей.", "romaji": "Yésli pyat' kiló, magú atdát' chut' dyeshévlye, pa sórak rublyéy." },
+      { "speakerId": "customer", "text": "Отлично, спасибо! А укроп можно тоже добавить?", "romaji": "Atlíchna, spasíba! A ukróp mózhno tózhe dabávit'?" },
+      { "speakerId": "nikolay", "text": "Конечно, укроп в подарок, раз берёте так много.", "romaji": "Kanyéshna, ukróp v padárak, raz byeryótye tak mnóga." }
+    ],
+    "translation": [
+      { "speakerId": "customer", "text": "I want to buy five kilograms of potatoes all at once. Is there a discount?" },
+      { "speakerId": "nikolay", "text": "If it's five kilos, I can give it to you a bit cheaper, forty rubles a kilo." },
+      { "speakerId": "customer", "text": "Great, thanks! Can I also add some dill?" },
+      { "speakerId": "nikolay", "text": "Of course, the dill's on the house, since you're buying so much." }
+    ],
+    "keyVocabulary": ["prdvocab.kartoshka", "prdvocab.skidka-est", "prdvocab.kilogramm", "prdvocab.ukrop"],
+    "grammarNotes": "This is about as far as haggling normally goes at a rынок — a single polite ask, answered with either a small price break or a free extra, not a back-and-forth negotiation. See the culture notes."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prddlg.finding-item-in-store",
+    "scenario": "Asking a staff member where to find buckwheat and dairy",
+    "speakers": [
+      { "id": "customer", "name": "Вы", "role": "customer" },
+      { "id": "staff", "name": "Сотрудник", "role": "store staff" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "customer", "text": "Извините, где у вас гречка?", "romaji": "Izviníte, gdye u vas gréchka?" },
+      { "speakerId": "staff", "text": "Гречка в третьем ряду, рядом с рисом.", "romaji": "Gréchka v tryét'yem ryadú, ryádam s rísam." },
+      { "speakerId": "customer", "text": "А молочные продукты?", "romaji": "A malóchnyye pradúkty?" },
+      { "speakerId": "staff", "text": "Молочные продукты у холодильников, в конце зала.", "romaji": "Malóchnyye pradúkty u khaladíl'nikav, v kantsé zála." },
+      { "speakerId": "customer", "text": "Спасибо большое!", "romaji": "Spasíba bal'shóye!" }
+    ],
+    "translation": [
+      { "speakerId": "customer", "text": "Excuse me, where do you have buckwheat?" },
+      { "speakerId": "staff", "text": "Buckwheat is in the third aisle, next to the rice." },
+      { "speakerId": "customer", "text": "And dairy products?" },
+      { "speakerId": "staff", "text": "Dairy products are by the refrigerators, at the back of the store." },
+      { "speakerId": "customer", "text": "Thank you very much!" }
+    ],
+    "keyVocabulary": ["prdvocab.grechka", "prdvocab.gde-u-vas", "prdvocab.molochnye-produkty"]
+  }
+]

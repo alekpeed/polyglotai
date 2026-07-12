@@ -1,0 +1,193 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "mtdlg.buying-metro-pass",
+    "scenario": "Buying a monthly travel pass at the metro ticket kiosk",
+    "speakers": [
+      { "id": "clerk", "name": "Кассир", "role": "ticket clerk" },
+      { "id": "you", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "clerk", "text": "Здравствуйте! Что вам нужно?", "romaji": "Zdrávstvuyte! Shto vam núzhna?" },
+      { "speakerId": "you", "text": "Здравствуйте. Мне нужен проездной на месяц.", "romaji": "Zdrávstvuyte. Mnye núzhen prayezdnóy na myésyats." },
+      { "speakerId": "clerk", "text": "Хорошо. Это будет две тысячи рублей.", "romaji": "Kharashó. Éta búdyet dvye týsyachi rublyéy." },
+      { "speakerId": "you", "text": "А можно жетон, если у меня закончится проездной?", "romaji": "A mózhna zhetón, yésli u menyá zakónchitsya prayezdnóy?" },
+      { "speakerId": "clerk", "text": "Да, жетон стоит пятьдесят рублей.", "romaji": "Da, zhetón stóit pyat'desyát rublyéy." },
+      { "speakerId": "you", "text": "И пополните, пожалуйста, мою Тройку на пятьсот рублей.", "romaji": "I papólnite, pazhálusta, mayú Tróyku na pyat'sót rublyéy." },
+      { "speakerId": "clerk", "text": "Хорошо, приложите карту к терминалу.", "romaji": "Kharashó, prilazhýte kártu k terminálu." }
+    ],
+    "translation": [
+      { "speakerId": "clerk", "text": "Hello! What do you need?" },
+      { "speakerId": "you", "text": "Hello. I need a monthly travel pass." },
+      { "speakerId": "clerk", "text": "Okay. That'll be two thousand rubles." },
+      { "speakerId": "you", "text": "And can I get a token in case my pass runs out?" },
+      { "speakerId": "clerk", "text": "Yes, a token costs fifty rubles." },
+      { "speakerId": "you", "text": "And please top up my Troika card by five hundred rubles." },
+      { "speakerId": "clerk", "text": "Okay, tap your card on the terminal." }
+    ],
+    "keyVocabulary": ["mtvocab.proyezdnoy", "mtvocab.zheton", "mtvocab.popolnit", "mtvocab.troyka"],
+    "grammarNotes": "Мне нужен uses the dative-of-need construction (мне = 'to me', нужен agrees in gender with the noun needed — нужен for masculine проездной, нужна for feminine, нужно for neuter) rather than a verb 'to need'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "mtdlg.which-line-to-transfer",
+    "scenario": "Asking a passerby which line to transfer to",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "passerby", "name": "Прохожий", "role": "passerby" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "Извините, подскажите, пожалуйста, где пересадка на кольцевую линию?", "romaji": "Izviníte, patskazhýte, pazhálusta, gdye peresátka na kal'tsevúyu líniyu?" },
+      { "speakerId": "passerby", "text": "Пересадка на следующей станции, направо.", "romaji": "Peresátka na slyéduyushchey stántsii, naprávo." },
+      { "speakerId": "you", "text": "А какая следующая станция?", "romaji": "A kakáya slyéduyushchaya stántsiya?" },
+      { "speakerId": "passerby", "text": "Следующая станция — «Курская».", "romaji": "Slyéduyushchaya stántsiya — «Kúrskaya»." },
+      { "speakerId": "you", "text": "Спасибо большое!", "romaji": "Spasíba bal'shóye!" },
+      { "speakerId": "passerby", "text": "Пожалуйста!", "romaji": "Pazhálusta!" }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Excuse me, could you tell me, please, where's the transfer to the circle line?" },
+      { "speakerId": "passerby", "text": "The transfer is at the next station, to the right." },
+      { "speakerId": "you", "text": "And what's the next station?" },
+      { "speakerId": "passerby", "text": "The next station is — Kurskaya." },
+      { "speakerId": "you", "text": "Thank you very much!" },
+      { "speakerId": "passerby", "text": "You're welcome!" }
+    ],
+    "keyVocabulary": ["mtvocab.podskazhite-pozhaluysta", "mtvocab.peresadka", "mtvocab.koltsevaya-liniya", "mtvocab.kakaya-sleduyushchaya-stantsiya", "mtvocab.sleduyushchaya-stantsiya"],
+    "grammarNotes": "На следующей станции uses the prepositional case (станции) after на to show location — compare the nominative станция used when just naming the station in isolation."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "mtdlg.asking-passenger-next-stop",
+    "scenario": "Asking a fellow passenger which station is next",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "passenger", "name": "Попутчица", "role": "fellow passenger" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "Извините, какая следующая станция?", "romaji": "Izviníte, kakáya slyéduyushchaya stántsiya?" },
+      { "speakerId": "passenger", "text": "Следующая станция — «Маяковская».", "romaji": "Slyéduyushchaya stántsiya — «Mayakóvskaya»." },
+      { "speakerId": "you", "text": "А после неё?", "romaji": "A pósle nyeyó?" },
+      { "speakerId": "passenger", "text": "Точно не знаю, посмотрите на схему метро.", "romaji": "Tóchna nye znáyu, pasmatríte na skhému myetró." },
+      { "speakerId": "you", "text": "Хорошо, спасибо!", "romaji": "Kharashó, spasíba!" }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Excuse me, what's the next station?" },
+      { "speakerId": "passenger", "text": "The next station is — Mayakovskaya." },
+      { "speakerId": "you", "text": "And after that one?" },
+      { "speakerId": "passenger", "text": "I don't know for sure, take a look at the metro map." },
+      { "speakerId": "you", "text": "Okay, thanks!" }
+    ],
+    "keyVocabulary": ["mtvocab.kakaya-sleduyushchaya-stantsiya", "mtvocab.sleduyushchaya-stantsiya", "mtvocab.skhema-metro"],
+    "grammarNotes": "После неё ('after it') uses the genitive pronoun неё referring back to станция (feminine) — Russian pronouns must match the grammatical gender of the noun they replace, not any real-world gender."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "mtdlg.marshrutka-passing-fare",
+    "scenario": "Passing marshrutka fare forward hand-to-hand",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "passenger", "name": "Пассажир", "role": "fellow passenger" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "За проезд, передайте, пожалуйста.", "romaji": "Za prayézd, peredáyte, pazhálusta." },
+      { "speakerId": "passenger", "text": "Хорошо, передаю.", "romaji": "Kharashó, peredayú." },
+      { "speakerId": "passenger", "text": "Вот ваша сдача от водителя.", "romaji": "Vot vásha zdácha at vadítelya." },
+      { "speakerId": "you", "text": "Спасибо большое!", "romaji": "Spasíba bal'shóye!" }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "For the fare, please pass it along." },
+      { "speakerId": "passenger", "text": "Sure, passing it along." },
+      { "speakerId": "passenger", "text": "Here's your change from the driver." },
+      { "speakerId": "you", "text": "Thank you very much!" }
+    ],
+    "keyVocabulary": ["mtvocab.za-proyezd", "mtvocab.peredayte-pozhaluysta", "mtvocab.peredat", "mtvocab.sdacha", "mtvocab.voditel"],
+    "grammarNotes": "No one hands money to the driver directly in a crowded маршрутка — передайте, пожалуйста ('please pass this along') asks whoever's in front of you to relay it seat by seat, and change comes back the same trust-based way."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "mtdlg.marshrutka-stop-here",
+    "scenario": "Asking the marshrutka driver to stop at a specific spot",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "voditel", "name": "Водитель", "role": "marshrutka driver" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "Остановите, пожалуйста, у аптеки!", "romaji": "Astanavíte, pazhálusta, u aptyéki!" },
+      { "speakerId": "voditel", "text": "Эта остановка по требованию, скажите заранее в следующий раз.", "romaji": "Éta astanófka pa trébavaniyu, skazhýte zaranyéye v slyéduyushchiy raz." },
+      { "speakerId": "you", "text": "Хорошо, извините. Это моя остановка.", "romaji": "Kharashó, izviníte. Éta mayá astanófka." },
+      { "speakerId": "voditel", "text": "Ничего, сейчас остановлю.", "romaji": "Nichyevó, sychás astanavlyú." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Please stop by the pharmacy!" },
+      { "speakerId": "voditel", "text": "This is a stop-on-request, let me know ahead of time next time." },
+      { "speakerId": "you", "text": "Okay, sorry. This is my stop." },
+      { "speakerId": "voditel", "text": "No problem, I'll stop now." }
+    ],
+    "keyVocabulary": ["mtvocab.ostanovite-zdes", "mtvocab.po-trebovaniyu", "mtvocab.eto-moya-ostanovka", "mtvocab.voditel"],
+    "grammarNotes": "Marshrutka stops are frequently «по требованию» (on request) rather than fixed — announce where you want off a little in advance, since the driver may already be past the spot by the time you call out."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "mtdlg.directions-to-metro-entrance",
+    "scenario": "Asking for directions to the nearest metro entrance",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "passerby", "name": "Прохожий", "role": "passerby" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "Извините, подскажите, пожалуйста, где ближайший вход в метро?", "romaji": "Izviníte, patskazhýte, pazhálusta, gdye blizháyshiy fkhot v myetró?" },
+      { "speakerId": "passerby", "text": "Идите прямо, потом направо.", "romaji": "Idíte pryáma, patóm naprávo." },
+      { "speakerId": "you", "text": "А это далеко отсюда?", "romaji": "A éta dalyekó atsyúda?" },
+      { "speakerId": "passerby", "text": "Нет, пять минут пешком.", "romaji": "Nyet, pyat' minút pyeshkóm." },
+      { "speakerId": "you", "text": "Спасибо большое!", "romaji": "Spasíba bal'shóye!" }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Excuse me, could you tell me, please, where's the nearest metro entrance?" },
+      { "speakerId": "passerby", "text": "Go straight, then turn right." },
+      { "speakerId": "you", "text": "And is that far from here?" },
+      { "speakerId": "passerby", "text": "No, five minutes on foot." },
+      { "speakerId": "you", "text": "Thank you very much!" }
+    ],
+    "keyVocabulary": ["mtvocab.podskazhite-pozhaluysta", "mtvocab.vkhod"],
+    "grammarNotes": "Идите (go) is the imperative form of идти, addressed with the vы-implied polite form — requests to strangers default to this form rather than the informal singular иди."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "mtdlg.lost-on-platform",
+    "scenario": "A confused tourist getting help on the platform",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "employee", "name": "Сотрудник метро", "role": "metro station employee" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "Извините, я заблудился. Как пройти к выходу?", "romaji": "Izviníte, ya zabludílsya. Kak praytí k výkhadu?" },
+      { "speakerId": "employee", "text": "Выход там, за эскалатором.", "romaji": "Výkhat tam, za eskalátaram." },
+      { "speakerId": "you", "text": "А мне нужно на «Театральную». Это правильное направление?", "romaji": "A mnye núzhna na Teatrál'nuyu. Éta právil'naye napravlyéniye?" },
+      { "speakerId": "employee", "text": "Нет, вам нужна другая платформа, через переход.", "romaji": "Nyet, vam nuzhná drugáya platfórma, chyerez perekhót." },
+      { "speakerId": "you", "text": "Спасибо, вы мне очень помогли!", "romaji": "Spasíba, vy mnye óchen' pamaglí!" }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Excuse me, I'm lost. How do I get to the exit?" },
+      { "speakerId": "employee", "text": "The exit is over there, past the escalator." },
+      { "speakerId": "you", "text": "And I need to get to Teatralnaya. Is this the right direction?" },
+      { "speakerId": "employee", "text": "No, you need a different platform, through the passageway." },
+      { "speakerId": "you", "text": "Thank you, you've helped me a lot!" }
+    ],
+    "keyVocabulary": ["mtvocab.ya-zabludilsya", "mtvocab.kak-proyti-k-vykhodu", "mtvocab.vykhod", "mtvocab.eskalator", "mtvocab.mne-nuzhno-na", "mtvocab.napravleniye", "mtvocab.perekhod"],
+    "grammarNotes": "Заблудился marks the speaker as male (заблудилась would be used by a woman) — Russian past-tense verbs always agree with the subject's gender in the singular, unlike English 'I got lost,' which carries no such marking."
+  }
+]

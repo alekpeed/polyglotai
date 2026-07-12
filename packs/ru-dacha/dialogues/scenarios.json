@@ -1,0 +1,204 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "dcdlg.invite-to-dacha",
+    "scenario": "Inviting a friend to the dacha for the weekend",
+    "speakers": [
+      { "id": "ira", "name": "Ира", "role": "friend" },
+      { "id": "maksim", "name": "Максим", "role": "friend" }
+    ],
+    "targetLevel": "A1",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "ira", "text": "Максим, привет! Что делаешь в субботу?", "romaji": "Maksím, privét! Shto délayesh' v subótu?" },
+      { "speakerId": "maksim", "text": "Пока ничего. А что?", "romaji": "Paká nichevó. A shto?" },
+      { "speakerId": "ira", "text": "Поехали на дачу на выходные! Будет шашлык.", "romaji": "Payékhali na dáchu na vykhodnýye! Búdyet shashlýk." },
+      { "speakerId": "maksim", "text": "С удовольствием! На электричке поедем?", "romaji": "S udavól'stviyem! Na elektríchke payédyem?" },
+      { "speakerId": "ira", "text": "Да, электричка отходит в девять утра.", "romaji": "Da, elektríchka atkhódit v dyévyat' utrá." },
+      { "speakerId": "maksim", "text": "Отлично, я возьму гамак с собой.", "romaji": "Atlíchna, ya vaz'mú gamák s sabóy." }
+    ],
+    "translation": [
+      { "speakerId": "ira", "text": "Maksim, hi! What are you doing on Saturday?" },
+      { "speakerId": "maksim", "text": "Nothing yet. Why?" },
+      { "speakerId": "ira", "text": "Let's go to the dacha for the weekend! There'll be shashlik." },
+      { "speakerId": "maksim", "text": "Gladly! Are we taking the commuter train?" },
+      { "speakerId": "ira", "text": "Yes, the train leaves at nine in the morning." },
+      { "speakerId": "maksim", "text": "Great, I'll bring the hammock." }
+    ],
+    "keyVocabulary": ["dcvocab.poyekhat-na-dachu", "dcvocab.dacha", "dcvocab.shashlyk", "dcvocab.elektrichka", "dcvocab.gamak"],
+    "grammarNotes": "Поехали (literally 'we went/drove', past tense) is used colloquially as a cheerful, immediate 'let's go!' invitation — much more common in speech than the grammatically 'correct' давай поедем."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dcdlg.working-in-garden",
+    "scenario": "Working in the garden together",
+    "speakers": [
+      { "id": "mama", "name": "Мама", "role": "mother" },
+      { "id": "petya", "name": "Петя", "role": "son" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "mama", "text": "Петя, полей, пожалуйста, грядки с помидорами.", "romaji": "Pyétya, paléy, pazhálusta, gryádki s pamidórami." },
+      { "speakerId": "petya", "text": "Хорошо, а где лейка?", "romaji": "Kharashó, a gdye lyéyka?" },
+      { "speakerId": "mama", "text": "Возле теплицы. И не забудь про огурцы в огороде.", "romaji": "Vózlye teplítsy. I nye zabúd' pra agurtsý v agaróde." },
+      { "speakerId": "petya", "text": "Уже полил. В этом году будет хороший урожай!", "romaji": "Uzhé palíl. V étam gadú búdyet kharóshiy urazháy!" },
+      { "speakerId": "mama", "text": "Да, картошку тоже пора копать на следующей неделе.", "romaji": "Da, kartóshku tózhe pará kapát' na slyédushchyey nyedyéle." },
+      { "speakerId": "petya", "text": "Давай я помогу с лопатой.", "romaji": "Daváy ya pamagú s lapátay." }
+    ],
+    "translation": [
+      { "speakerId": "mama", "text": "Petya, please water the tomato beds." },
+      { "speakerId": "petya", "text": "Okay, where's the watering can?" },
+      { "speakerId": "mama", "text": "Near the greenhouse. And don't forget the cucumbers in the vegetable garden." },
+      { "speakerId": "petya", "text": "Already watered them. There'll be a good harvest this year!" },
+      { "speakerId": "mama", "text": "Yes, it'll be time to dig up the potatoes next week too." },
+      { "speakerId": "petya", "text": "Let me help with the shovel." }
+    ],
+    "keyVocabulary": ["dcvocab.gryadka", "dcvocab.pomidory", "dcvocab.leyka", "dcvocab.teplitsa", "dcvocab.ogurtsy", "dcvocab.ogorod", "dcvocab.urozhay", "dcvocab.kartoshka", "dcvocab.lopata"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dcdlg.mushroom-picking",
+    "scenario": "Going mushroom-picking and identifying a find",
+    "speakers": [
+      { "id": "dedushka", "name": "Дедушка", "role": "grandfather" },
+      { "id": "katya", "name": "Катя", "role": "granddaughter" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "dedushka", "text": "Катя, пойдём по грибы, пока не жарко.", "romaji": "Kátya, paydyóm pa gribý, paká nye zhárka." },
+      { "speakerId": "katya", "text": "Да! Я возьму корзину.", "romaji": "Da! Ya vaz'mú karzínu." },
+      { "speakerId": "dedushka", "text": "Хорошо. В лесу ищи под берёзами.", "romaji": "Kharashó. V lyesú ishchí pad byeryózami." },
+      { "speakerId": "katya", "text": "Дедушка, смотри, какой большой гриб!", "romaji": "Dyédushka, smatrí, kakóy bal'shóy grip!" },
+      { "speakerId": "dedushka", "text": "Дай посмотреть... Нет, этот несъедобный, может быть ядовитым. Не трогай его.", "romaji": "Day pasmatryét'... Nyet, état nyesyedóbnyy, mózhet byt' yadavítym. Nye trógay yevó." },
+      { "speakerId": "katya", "text": "Хорошо. А вот этот съедобный?", "romaji": "Kharashó. A vot état syedóbnyy?" },
+      { "speakerId": "dedushka", "text": "Да, этот можно брать, клади в корзину.", "romaji": "Da, état mózhna brat', kladí v karzínu." }
+    ],
+    "translation": [
+      { "speakerId": "dedushka", "text": "Katya, let's go mushroom hunting while it's not hot yet." },
+      { "speakerId": "katya", "text": "Yes! I'll take the basket." },
+      { "speakerId": "dedushka", "text": "Good. Look under the birch trees in the forest." },
+      { "speakerId": "katya", "text": "Grandpa, look, what a big mushroom!" },
+      { "speakerId": "dedushka", "text": "Let me see... No, this one isn't edible, it could be poisonous. Don't touch it." },
+      { "speakerId": "katya", "text": "Okay. What about this one, is it edible?" },
+      { "speakerId": "dedushka", "text": "Yes, this one's fine to take, put it in the basket." }
+    ],
+    "keyVocabulary": ["dcvocab.po-griby", "dcvocab.korzina", "dcvocab.les", "dcvocab.grib", "dcvocab.yadovityy", "dcvocab.syedobnyy"],
+    "grammarNotes": "несъедобный simply adds the negative prefix не- to съедобный ('edible') — a productive pattern worth noticing, since guessing the negative of an adjective this way works often in Russian."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dcdlg.making-shashlik",
+    "scenario": "Making shashlik together",
+    "speakers": [
+      { "id": "andrey", "name": "Андрей", "role": "friend" },
+      { "id": "olya", "name": "Оля", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "andrey", "text": "Оля, разжигай мангал, я нарежу мясо.", "romaji": "Ólya, razzhigáy mangál, ya naryézhu myása." },
+      { "speakerId": "olya", "text": "Уголь уже готов, скоро будут угли.", "romaji": "Úgal' uzhé gatóf, skóra búdut úgli." },
+      { "speakerId": "andrey", "text": "Отлично. Шашлык мариновался всю ночь.", "romaji": "Atlíchna. Shashlýk marinaválsya fsyu noch'." },
+      { "speakerId": "olya", "text": "Пахнет уже изумительно! Костёр тоже разведём вечером?", "romaji": "Pákhnyet uzhé izumítyel'na! Kastyór tózhe razvyedyóm véchyeram?" },
+      { "speakerId": "andrey", "text": "Конечно, посидим у костра после ужина.", "romaji": "Kanyéshna, pasidím u kastrá pósle úzhina." },
+      { "speakerId": "olya", "text": "Давай, шашлык почти готов, переворачивай шампуры.", "romaji": "Daváy, shashlýk pachtí gatóf, peryevaráchivay shampúry." }
+    ],
+    "translation": [
+      { "speakerId": "andrey", "text": "Olya, light the grill, I'll cut the meat." },
+      { "speakerId": "olya", "text": "The charcoal's ready, there'll be coals soon." },
+      { "speakerId": "andrey", "text": "Great. The shashlik has been marinating all night." },
+      { "speakerId": "olya", "text": "It already smells amazing! Should we light a campfire in the evening too?" },
+      { "speakerId": "andrey", "text": "Sure, we'll sit by the fire after dinner." },
+      { "speakerId": "olya", "text": "Come on, the shashlik's almost ready, turn the skewers." }
+    ],
+    "keyVocabulary": ["dcvocab.mangal", "dcvocab.shashlyk", "dcvocab.koster"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dcdlg.canning-preserves",
+    "scenario": "Canning and preserving produce for winter",
+    "speakers": [
+      { "id": "babushka", "name": "Бабушка", "role": "grandmother" },
+      { "id": "vanya", "name": "Ваня", "role": "grandson" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "babushka", "text": "Ваня, помоги мне с банками, будем закрывать варенье.", "romaji": "Ványa, pamagí mnye s bánkami, búdyem zakryvát' varyénye." },
+      { "speakerId": "vanya", "text": "Конечно! Из чего варенье сегодня?", "romaji": "Kanyéshna! Iz chevó varyénye syevódnya?" },
+      { "speakerId": "babushka", "text": "Из малины и смородины. А завтра займёмся соленьями.", "romaji": "Iz malíny i smaródiny. A závtra zaymyómsya salyén'yami." },
+      { "speakerId": "vanya", "text": "Огурцы уже собрали?", "romaji": "Agurtsý uzhé sabráli?" },
+      { "speakerId": "babushka", "text": "Да, целое ведро. Потом всё отнесём в погреб на зиму.", "romaji": "Da, tsélaye vyedró. Patóm fsyo atnyesyóm v pógryep na zímu." },
+      { "speakerId": "vanya", "text": "Здорово, зимой откроем баночку и вспомним лето.", "romaji": "Zdórava, zimóy atkróyem bánachku i fspómnim lyéta." }
+    ],
+    "translation": [
+      { "speakerId": "babushka", "text": "Vanya, help me with the jars, we're going to seal the jam." },
+      { "speakerId": "vanya", "text": "Sure! What's the jam made of today?" },
+      { "speakerId": "babushka", "text": "Raspberries and currants. Tomorrow we'll do the pickles." },
+      { "speakerId": "vanya", "text": "Have the cucumbers already been picked?" },
+      { "speakerId": "babushka", "text": "Yes, a whole bucket. Then we'll take it all down to the cellar for winter." },
+      { "speakerId": "vanya", "text": "Nice, in winter we'll open a jar and remember summer." }
+    ],
+    "keyVocabulary": ["dcvocab.banka", "dcvocab.varenye", "dcvocab.malina", "dcvocab.smorodina", "dcvocab.solenya", "dcvocab.ogurtsy", "dcvocab.pogreb"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dcdlg.elektrichka-ride",
+    "scenario": "Taking the elektrichka out from the city",
+    "speakers": [
+      { "id": "nastya", "name": "Настя", "role": "commuter" },
+      { "id": "igor", "name": "Игорь", "role": "commuter" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "nastya", "text": "Игорь, электричка на дачу с какой платформы?", "romaji": "Ígar', elektríchka na dáchu s kakóy platfórmy?" },
+      { "speakerId": "igor", "text": "С третьей, отправление через пять минут.", "romaji": "S tryét'yey, atpravlyéniye chyérez pyat' minút." },
+      { "speakerId": "nastya", "text": "Бежим быстрее! Билеты уже купил?", "romaji": "Byezhím bystryéye! Bilyéty uzhé kupíl?" },
+      { "speakerId": "igor", "text": "Да, вот они. Народу сегодня много, вся дача, наверное, едет.", "romaji": "Da, vot aní. Naróda syevódnya mnóga, fsya dácha, navyérnaye, yédyet." },
+      { "speakerId": "nastya", "text": "Обычно так каждые выходные летом.", "romaji": "Abýchna tak kázhdyye vykhodnýye lyétam." },
+      { "speakerId": "igor", "text": "Зато через час мы уже будем на участке.", "romaji": "Zató chyérez chas my uzhé búdyem na uchástke." }
+    ],
+    "translation": [
+      { "speakerId": "nastya", "text": "Igor, which platform is the dacha train from?" },
+      { "speakerId": "igor", "text": "Platform three, it leaves in five minutes." },
+      { "speakerId": "nastya", "text": "Let's run! Did you already buy the tickets?" },
+      { "speakerId": "igor", "text": "Yes, here they are. There are a lot of people today, probably everyone's heading to their dachas." },
+      { "speakerId": "nastya", "text": "It's usually like this every weekend in summer." },
+      { "speakerId": "igor", "text": "But in an hour we'll already be at the plot." }
+    ],
+    "keyVocabulary": ["dcvocab.elektrichka", "dcvocab.dacha", "dcvocab.uchastok"],
+    "grammarNotes": "\"Вся дача едет\" (literally 'the whole dacha is going/riding') uses дача metonymically for the whole community of dacha-goers — a common informal shorthand, not a claim that a building is moving."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dcdlg.hammock-relaxing",
+    "scenario": "Relaxing in a hammock and talking about dacha life",
+    "speakers": [
+      { "id": "lena", "name": "Лена", "role": "friend" },
+      { "id": "sasha", "name": "Саша", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "lena", "text": "Как хорошо лежать в гамаке после обеда!", "romaji": "Kak kharashó lyezhát' v gamaké pósle abyéda!" },
+      { "speakerId": "sasha", "text": "Да, тишина, только соседи по даче разговаривают за забором.", "romaji": "Da, tishiná, tól'ka sasyédi pa dáche razgavárivayut za zabóram." },
+      { "speakerId": "lena", "text": "Кстати, этот участок ведь от бабушки достался?", "romaji": "Kstáti, état uchástak vyed' at bábushki dastálsya?" },
+      { "speakerId": "sasha", "text": "Да, наша семья владеет им уже почти пятьдесят лет.", "romaji": "Da, násha syem'yá vladyéyet im uzhé pachtí pyat'desyát lyet." },
+      { "speakerId": "lena", "text": "Настоящая семейная история. Дачу передают из поколения в поколение.", "romaji": "Nastayáshchaya syemyéynaya istóriya. Dáchu peryedayút iz pakalyéniya v pakalyéniye." },
+      { "speakerId": "sasha", "text": "Именно. Надеюсь, дети моих детей тоже будут сюда приезжать.", "romaji": "Ímyenna. Nadyéyus', dyéti maíkh dyetéy tózhe búdut syudá priyezzhát'." }
+    ],
+    "translation": [
+      { "speakerId": "lena", "text": "How nice it is to lie in the hammock after lunch!" },
+      { "speakerId": "sasha", "text": "Yes, so quiet, only the dacha neighbors talking beyond the fence." },
+      { "speakerId": "lena", "text": "By the way, didn't this plot come from your grandmother?" },
+      { "speakerId": "sasha", "text": "Yes, our family has owned it for almost fifty years now." },
+      { "speakerId": "lena", "text": "A real family history. The dacha gets passed down from generation to generation." },
+      { "speakerId": "sasha", "text": "Exactly. I hope my children's children will keep coming here too." }
+    ],
+    "keyVocabulary": ["dcvocab.gamak", "dcvocab.sosed-po-dache", "dcvocab.uchastok", "dcvocab.dacha"],
+    "grammarNotes": "Из поколения в поколение ('from generation to generation') is a fixed phrase worth learning as a unit — see the culture notes on how common multi-generational dacha ownership really is."
+  }
+]

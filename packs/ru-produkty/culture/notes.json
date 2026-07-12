@@ -1,0 +1,50 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "prdculture.rynok-vs-supermarket",
+    "title": "Рынок or супермаркет: two different shopping habits",
+    "bodyMd": "Most Russians don't pick one store and stick to it — they split their shopping between a **рынок** (open-air market) and a **супермаркет** depending on what they're buying. Packaged, shelf-stable goods (cereal, canned food, cleaning supplies, most sauces) go on the supermarket run. Fresh produce, dairy, meat, and fish are a different story: many people still prefer the рынок for these, on the belief — often well-founded — that a market vendor's tomatoes, творог, or farm eggs are fresher and better than the supermarket's, and that you can actually ask the person selling them where they came from.\n\nThis isn't nostalgia or a rural habit; it holds in big cities too. A working assumption worth adopting as a learner: if it's fresh and perishable, consider the рынок first; if it's packaged and standardized, the супермаркет is fine and usually cheaper.",
+    "tags": ["essentials", "russia"],
+    "cefr": "A1"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prdculture.na-razves-unpackaged-norm",
+    "title": "На развес: buying unpackaged, weighed-to-order goods",
+    "bodyMd": "Unlike the shrink-wrapped, pre-weighed produce and deli counters common in many Western supermarkets, a lot of Russian shopping — especially at a рынок, but also at many supermarket deli and produce counters — still happens **на развес**: you point at or name what you want, the vendor weighs out exactly the amount you ask for, and prices are per kilogram rather than per package.\n\nThis means you're expected to specify a quantity (килограмм, полкило, триста грамм) rather than just grabbing a fixed-size package off a shelf, and it's completely normal to ask the vendor to weigh a specific amount or even adjust it slightly ('чуть побольше' / 'a little more'). It also means prices are easy to compare directly — everything is quoted per kilogram, so there's no unit-price math to do in your head.",
+    "tags": ["market", "practical"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prdculture.cash-vs-card",
+    "title": "Cash vs. card: supermarkets are cashless-friendly, small stalls less so",
+    "bodyMd": "Card payments (and phone-based contactless payment) are completely standard at supermarkets and most urban stores — carrying a card is not a problem in cities. At a рынок, though, expect more variation: many individual vendors, especially smaller or older ones, still prefer or only accept **наличные** (cash), particularly for small purchases.\n\nIt's worth carrying some cash specifically for market shopping, and having smaller bills helps — a vendor at the start of a busy morning may not yet have much **сдача** (change) for a large note. If you're not sure, it's completely normal and expected to just ask before ordering: 'Можно наличными?' or 'Вы принимаете карту?'.",
+    "tags": ["money", "practical"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prdculture.seasonal-regional-pride",
+    "title": "Seasonal and regional produce pride",
+    "bodyMd": "Russians take genuine pride in produce being **local** (местный) and **in season**, and will happily tell you where something came from unprompted — 'это с нашей дачи' (this is from our own dacha plot) or 'это из соседней области' (this is from the next region over) is a common, proud detail from a vendor, not just sales talk.\n\nBerries, tomatoes, and cucumbers in particular carry strong seasonal associations: a Russian summer is closely tied to fresh домашние (home-grown) produce from a dacha garden, and asking whether something is местный or привозной (shipped in from elsewhere) is a completely normal, expected question rather than an odd or suspicious one.",
+    "tags": ["produce", "russia"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prdculture.trusted-regular-vendor",
+    "title": "The value of a trusted regular vendor",
+    "bodyMd": "Just as at a Brazilian feira, becoming a recognized regular at a particular рынок stall pays off — a vendor who remembers you will often set aside better produce, give you a heads-up when something particularly good comes in, or throw in a small extra for free. This relationship is built slowly, by returning to the same продавец or продавщица over weeks and months, not by a single visit.\n\nBargaining here stays milder and friendlier than a hard negotiation — asking 'скидка есть?' on a bulk purchase is normal and easy for a vendor to decline gracefully, and a long-time regular is more likely to get a 'yes' than a first-time customer haggling hard on a small purchase.",
+    "tags": ["etiquette", "relationships"],
+    "cefr": "A2"
+  },
+  {
+    "schemaVersion": 1,
+    "key": "prdculture.everyday-staples",
+    "title": "Гречка, творог, укроп: the staples worth knowing by name",
+    "bodyMd": "A few ingredients show up so often in Russian home cooking that recognizing them by sight and name at a store makes daily shopping far easier. **Гречка** (buckwheat groats) is the default simple side dish, roughly as central to a Russian pantry as rice is elsewhere. **Творог** (a fresh curd cheese, not quite the same as Western cottage cheese) shows up at breakfast, in desserts, and baked into сырники and вареники. **Укроп** (dill) is sprinkled over soups, potatoes, and salads almost reflexively — buying a bunch is one of the cheapest, most routine purchases at any produce stall.\n\nKnowing these three words alone will make a surprising fraction of everyday Russian grocery shopping and menu-reading noticeably easier.",
+    "tags": ["food", "essentials"],
+    "cefr": "A1"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "dcculture.what-is-a-dacha",
+    "title": "A dacha isn't quite a 'summer house'",
+    "bodyMd": "The English 'summer house' or 'country cottage' undersells what a дача actually is for most Russian families. It's typically a modest, often self-built structure — sometimes barely winterized — attached to a working plot of land that the family actively gardens, forages around, and preserves food from all season. The building is frequently the least important part; the огород (vegetable plot), the теплица (greenhouse), and fruit trees are what the weekends actually revolve around.\n\nThis is also not a niche hobby: a very large share of Russian urban families have access to a dacha, whether their own, a relative's, or a friend's, and treat it as a near-default way to spend a summer weekend. Understanding this scale is the key to understanding everything else in this pack — the vocabulary and rituals here aren't exotic, they're mainstream.",
+    "tags": ["essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dcculture.soviet-roots",
+    "title": "Soviet allotments and the roots of dacha culture",
+    "bodyMd": "The modern dacha boom traces back to a very deliberate Soviet policy: from the 1950s–60s onward, factories, institutes, and other workplaces were allotted land which they subdivided into tiny six-sotka (шесть соток, about 600 square meters) plots and distributed to employees. These weren't leisure grants — they were partly a pressure release for chronic food shortages, letting ordinary urban families grow a meaningful share of their own vegetables, fruit, and preserves.\n\nThat history is why so many dacha communities are still legally organized as a садовое товарищество (gardening cooperative), why plots are famously small and densely packed with neighbors, and why growing your own картошка and огурцы has never fully lost its practical, food-security undertone even as dachas became more about leisure after the 1990s.",
+    "tags": ["history", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dcculture.mushroom-foraging-tradition",
+    "title": "The 'quiet hunt' — and why mushroom mistakes are taken seriously",
+    "bodyMd": "Going по грибы is a genuine seasonal ritual, not a novelty activity — families have go-to patches they return to for decades, often before dawn to beat other foragers, and the practice has its own affectionate nickname, тихая охота ('the quiet hunt'). Prized finds like белые грибы (porcini) are proudly displayed and compared among neighbors.\n\nThe caution around misidentification is not exaggerated etiquette — it reflects real, serious risk. Russia sees genuine poisoning cases and fatalities every year from foragers confusing toxic look-alikes (like the death cap, бледная поганка) for edible species, and the guidance every child hears — never eat anything you're not one hundred percent sure of, and check with an experienced forager before cooking anything you gathered yourself — is treated as basic safety, not paranoia.",
+    "tags": ["foraging", "safety"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dcculture.preservation-tradition",
+    "title": "Варенье and соленья: putting up summer for winter",
+    "bodyMd": "Late summer at a dacha is dominated by заготовки — the general term for the whole preserving effort — with two parallel tracks running at once: sweet варенье (jam, traditionally keeping fruit in whole pieces suspended in syrup rather than fully pureed) and savory соленья (pickled cucumbers, tomatoes, cabbage, and mushrooms). Both are boiled, jarred while hot, sealed, and carried down to the погреб or a cool pantry to last through winter.\n\nThis isn't a rustic affectation — it's a genuinely load-bearing part of many families' winter pantry, and a jar of a grandmother's own варенье or солёные огурцы is treated as noticeably better than anything bought in a store, carrying real sentimental and practical value at once.",
+    "tags": ["preservation", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dcculture.generational-inheritance",
+    "title": "One dacha, several generations",
+    "bodyMd": "Because so many plots were originally allotted decades ago and never formally sold, it's extremely common for a single dacha to have stayed in one family since the Soviet period, passed down from grandparents to parents to grandchildren rather than bought and sold on a market. It's normal to hear someone describe the раскладушка (folding cot) or a particular apple tree as something their grandmother planted or bought.\n\nThis also means сосед по даче (dacha neighbor) relationships can span generations too — the same families' children grow up together across decades of summers, in a way that's less common with, say, apartment-building neighbors in the city. Inheriting or continuing to maintain a family dacha is often felt as an obligation as much as a pleasure, especially once the grandparents who built or received it have passed away.",
+    "tags": ["history", "social"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dcculture.summer-exodus",
+    "title": "The weekend exodus: why the elektrichka gets packed",
+    "bodyMd": "From roughly May through September, a very large portion of city residents in and around major Russian cities leave for their dacha most weekends, and the effect on transport is visible: Friday evening electrichka (suburban commuter train) platforms and the highways out of town get genuinely congested, while the city itself noticeably empties out.\n\nThis rhythm shapes ordinary social planning — 'are you in town this weekend or at the dacha?' is a completely standard question among friends and coworkers all summer, and plans routinely get scheduled around it. It also means that a большой урожай (a big harvest) at the end of the season is often the result of small amounts of steady weekend labor accumulated over many trips, not a single dedicated growing effort.",
+    "tags": ["essentials", "social"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dcculture.shashlyk-as-ritual",
+    "title": "Shashlyk: a social ritual, not just a meal",
+    "bodyMd": "Making шашлык follows a fairly fixed sequence that's almost as important as eating it: the meat is marinated well ahead of time (often overnight, in onions, vinegar or kefir, and spices, with real debate over the 'correct' marinade), the мангал is set up and the coals burned down properly before any meat goes on, and the cooking itself is usually a shared, semi-competitive task with one or two people designated to watch and turn the skewers.\n\nIt's typically a group event rather than something one person cooks for others — friends and family gather around the mangal while it cooks, treating the wait itself as part of the socializing, and a dacha weekend without at least one shashlyk session is considered slightly incomplete by many. Bringing your own skewers or a favorite marinade recipe to someone else's dacha is a normal, welcome contribution.",
+    "tags": ["food", "social"]
+  }
+]
