@@ -198,7 +198,7 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
         </div>
       </div>
       <section className="chat">
-        {bubbles.length === 0 && !busy && <p className="subtitle">Reply in Portuguese if you can!</p>}
+        {bubbles.length === 0 && !busy && <p className="subtitle">Reply in {pack.manifest.name} if you can!</p>}
         {bubbles.map((b, i) => (
           <div key={i} className={`bubble ${b.role}`}>
             <span>{b.content}</span>
@@ -225,7 +225,7 @@ export function Conversation({ repos, profile, pack, onDone, onOpenSettings }: P
         <input
           value={input}
           onChange={(e) => setInput(e.currentTarget.value)}
-          placeholder="Escreva aqui…"
+          placeholder="Type here…"
           disabled={busy}
         />
         {speechProvider && (

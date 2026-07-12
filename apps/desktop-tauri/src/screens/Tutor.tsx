@@ -13,6 +13,15 @@ interface Props {
   onOpenSettings: () => void;
 }
 
+// Placeholder example sentence, in the target language — same idea as the onboarding hero copy
+// (App.css "Pack theme" / Onboarding.tsx PACK_HERO_THEMES), one per pack so this doesn't show
+// Portuguese to a learner writing in Japanese.
+const EXAMPLE_SENTENCE: Record<string, string> = {
+  "pt-br": "Eu sou cansado hoje…",
+  ja: "今日は疲れました…",
+};
+const DEFAULT_EXAMPLE_SENTENCE = "I went to the store yesterday…";
+
 const FIELD_LABELS: Array<[keyof AiCorrection, string]> = [
   ["corrected", "Corrected"],
   ["literal", "Literal meaning"],
@@ -79,7 +88,7 @@ export function Tutor({ repos, profile, pack, onDone, onOpenSettings }: Props) {
           value={text}
           onChange={(e) => setText(e.currentTarget.value)}
           rows={3}
-          placeholder="Eu sou cansado hoje…"
+          placeholder={EXAMPLE_SENTENCE[pack.manifest.id] ?? DEFAULT_EXAMPLE_SENTENCE}
         />
         <button type="submit" className="btn-primary" disabled={busy || !text.trim()}>
           {busy ? "Correcting…" : "Correct it"} <span className="arrow">→</span>
