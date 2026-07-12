@@ -22,6 +22,30 @@ sign-off. None block the app from running; they're quality/accuracy checkpoints.
 - `grammar.tem-ha`: "tem dois anos que moro aqui" (tem = ago) — confirm it belongs at A1.
 - `grammar.gostar-de`: the "dji" palatalization note — region-qualify?
 
+## New in slang/2026-internet.json (web-researched, highest review priority)
+
+Fourteen current internet/Gen Z slang terms (farmar aura, algoritmado, NPC, delulu, lacrou,
+surtou, mó, biscoiteiro/dar biscoito, lançou a braba, shippar, crush, calabreso, casca de bala,
+tankar/intankável), added via web research (search + cross-referencing multiple sources) rather
+than from training knowledge alone, at explicit owner request for "cutting edge street slang."
+This category carries more risk than any other content in this pack and deserves the most
+skeptical native read:
+
+- **Freshness has a shelf life.** Several of these are tied to specific 2024-2025 viral moments
+  (calabreso to a reality-TV argument, casca de bala to a song) — they may already read as
+  dated/last-year slang to some speakers, or may have moved on to new variants by the time this
+  is reviewed. Worth periodically re-checking rather than treating as a one-time addition.
+- **English loanwords vs. genuine Portuguese slang** — deliberately excluded pure English meme
+  terms with no Portuguese-specific adaptation (skibidi, rizz, brainrot) that came up in the same
+  research, since they don't teach anything about Portuguese; kept shippar/crush because they're
+  grammatically or usage-wise absorbed into Portuguese sentences. Worth a native check on whether
+  that line was drawn in the right place.
+- **Register/severity calibration** — all tagged `register: "internet"`, severity 1-2; a native
+  speaker may judge some of these (NPC, biscoiteiro) as landing sharper/more mocking than the
+  severity suggests.
+- Web sources for each term are not retained in the repo — if a term needs re-verification, a
+  fresh search is the right move rather than assuming the original research still holds.
+
 ## Slang / profanity / pronunciation
 
 - Severity calibration of `puta` at 6 (rated for the noun's worst use; the interjection alone is ~5).
