@@ -1,0 +1,115 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "kggram.yakuwarigo-intro",
+    "title": "役割語 (yakuwarigo) — 'role language': why this speech isn't real speech",
+    "cefr": "B1",
+    "explanationMd": "Everything in this pack is **役割語** (yakuwarigo, 'role language') — a real linguistics term for the stylized, exaggerated speech patterns Japanese fiction assigns to character types (the tough gangster, the elderly sage, the posh young lady) so an audience instantly reads the role, the way an old Western movie villain twirls a mustache. Real yakuza members, like anyone else, mostly speak ordinary Japanese day to day; this rough, aggressive register is a *media convention*, concentrated in movies, anime, manga, and video games (the *Ryū ga Gotoku / Yakuza* game series is a well-known example) rather than a documented real-world dialect. Learn it to **understand** fiction and pop culture — not as vocabulary to produce in real conversation, where it would read as bizarre or alarming rather than tough.",
+    "examples": [
+      { "text": "てめえ、いい度胸してるじゃねえか。", "reading": "てめえ、いいどきょうしてるじゃねえか。", "romaji": "Temee, ii dokyou shiteru ja nee ka.", "translation": "You've got some nerve, don't you. (classic movie-villain line)" }
+    ],
+    "commonErrors": [],
+    "drills": [
+      { "prompt": "What is the Japanese linguistics term for stylized fictional-character speech like this?", "answer": "役割語 (yakuwarigo, 'role language')" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.rough-pronouns",
+    "title": "Rough pronouns — おれ, きさま, てめえ",
+    "cefr": "B1",
+    "explanationMd": "Japanese pronouns carry heavy social weight, and this register pushes them to their roughest extreme. **おれ** (ore, 'I/me') is common casual-masculine speech generally, but combined with the rest of this register it reads as tough rather than merely casual. **きさま** (kisama) and **てめえ** (temee, covered in the main pack's profanity set) are both hostile ways to say 'you' — historically きさま was actually a *respectful* term centuries ago, and drifted over time into an insult, a reminder that pronoun politeness can flip entirely across generations.",
+    "examples": [
+      { "text": "おれの舎弟に手を出すな。", "reading": "おれのしゃていにてをだすな。", "romaji": "Ore no shatei ni te o dasu na.", "translation": "Don't lay a hand on my guy." },
+      { "text": "きさま、何様のつもりだ。", "reading": "きさま、なにさまのつもりだ。", "romaji": "Kisama, nanisama no tsumori da.", "translation": "Who do you think you are." }
+    ],
+    "commonErrors": [
+      { "wrong": "Using おれ/きさま/てめえ in ordinary polite conversation", "right": "Stick to 私/僕 and あなた/name+さん in real life", "note": "These readings are for recognizing fiction, not for producing in genuine conversation — they read as aggressive or bizarre outside a joking/performative context." }
+    ],
+    "drills": [
+      { "prompt": "Which of おれ/きさま/てめえ was historically a respectful term before it drifted into an insult?", "answer": "きさま (kisama)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.plain-da-instead-of-desu",
+    "title": "Dropping です/ます entirely for plain だ",
+    "cefr": "B1",
+    "explanationMd": "Where the main pack teaches です/ます as the safe default, this register drops politeness markers completely and leans on the plain copula **だ** (da) even in situations a real speaker would normally soften — 何のつもりだ (nan no tsumori da, 'what's the meaning of this') instead of 何のつもりですか. Dropping ですか/ますか for a blunt statement-form question, without even rising intonation softening it, is itself a marker of this register.",
+    "examples": [
+      { "text": "お前が犯人だ。", "reading": "おまえがはんにんだ。", "romaji": "Omae ga hannin da.", "translation": "You're the culprit." }
+    ],
+    "commonErrors": [],
+    "drills": [
+      { "prompt": "Convert to this rough register: 犯人ですか (Is [he] the culprit?) → statement form", "answer": "犯人だ (hannin da) — dropped to a blunt declarative, no か needed for the confrontational reading." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.nee-contraction",
+    "title": "ない → ねえ — the rough negative contraction",
+    "cefr": "B1",
+    "explanationMd": "Standard negative ～ない regularly contracts to **～ねえ** (nee) in this and other rough-masculine registers: 知らない (shiranai) → 知らねえ (shiranee), できない → できねえ, じゃない → じゃねえ. This is a systematic sound shift (ai → ee), not random slurring — the same contraction shows up in other rough/working-class-coded fictional speech beyond just yakuza roles.",
+    "examples": [
+      { "text": "そんなの知らねえよ。", "reading": "そんなのしらねえよ。", "romaji": "Sonna no shiranee yo.", "translation": "I don't know anything about that." },
+      { "text": "冗談じゃねえ。", "reading": "じょうだんじゃねえ。", "romaji": "Joudan ja nee.", "translation": "This is no joke." }
+    ],
+    "commonErrors": [
+      { "wrong": "Applying ai→ee contraction to polite ません forms", "right": "The contraction only applies to plain-form ない, never to polite ません", "note": "This register drops politeness entirely rather than contracting polite endings — the two changes (dropping です/ます, contracting ない) happen together, not independently." }
+    ],
+    "drills": [
+      { "prompt": "Contract to rough register: わからない → ?", "answer": "わからねえ (wakaranee)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.zo-ze-endings",
+    "title": "ぞ and ぜ — aggressive masculine sentence-enders",
+    "cefr": "B2",
+    "explanationMd": "Sentence-final **ぞ** and **ぜ** add a forceful, assertive punch with no real single-word English equivalent — closer to stamping the sentence with 'and that's that' or 'you'd better believe it'. 行くぞ (ikuzo, roughly 'we're going, no arguments') is more forceful than plain 行く. ぜ carries a similar force with a slightly more inviting/rallying edge (行こうぜ, 'let's go [c'mon]'). Both are strongly gendered as masculine-coded speech in fiction, part of the same yakuwarigo toolkit as the rough pronouns.",
+    "examples": [
+      { "text": "覚えとけよ、次はねえぞ。", "reading": "おぼえとけよ、つぎはねえぞ。", "romaji": "Oboetoke yo, tsugi wa nee zo.", "translation": "Remember this — there won't be a next time." }
+    ],
+    "commonErrors": [],
+    "drills": [
+      { "prompt": "Which ending, ぞ or ぜ, has a more inviting/rallying feel ('let's go')?", "answer": "ぜ (as in 行こうぜ, 'let's go')" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.yagaru-contempt",
+    "title": "～やがる — the contempt suffix",
+    "cefr": "B2",
+    "explanationMd": "Attaching **～やがる** (yagaru) to a verb stem injects open contempt or disgust at someone else's action — roughly 'has the nerve to ___' or 'dares to ___'. 何やってやがる (nani yatte yagaru, 'what the hell does he think he's doing') is a stock line for reacting to someone's infuriating behavior. It's always about a third party's action, never your own, and always negative/looking-down — there's no neutral or polite use.",
+    "examples": [
+      { "text": "また遅刻しやがって。", "reading": "またちこくしやがって。", "romaji": "Mata chikoku shiyagatte.", "translation": "He's late again, the nerve." }
+    ],
+    "commonErrors": [
+      { "wrong": "Using やがる about your own actions", "right": "やがる is exclusively about someone else's action you look down on", "note": "There's no first-person use — it only makes sense directed at another person's behavior." }
+    ],
+    "drills": [
+      { "prompt": "What does 何やってやがる roughly convey?", "answer": "'What the hell does he think he's doing' — contemptuous disbelief at someone else's action." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kggram.kure-yokose-imperatives",
+    "title": "くれ and よこせ — blunt demand imperatives",
+    "cefr": "B2",
+    "explanationMd": "Where polite speech softens requests with ～てください, this register uses the bare imperative **くれ** (kure, 'give [it to me]') or the even blunter **よこせ** (yokose, roughly 'hand it over') — no cushioning at all. 金をよこせ (kane o yokose, 'hand over the money') is a stock demand line; くれ alone (だしてくれ, 'give it here') is slightly less harsh but still a world away from ください.",
+    "examples": [
+      { "text": "金を全部よこせ。", "reading": "かねをぜんぶよこせ。", "romaji": "Kane o zenbu yokose.", "translation": "Hand over all the money." }
+    ],
+    "commonErrors": [],
+    "drills": [
+      { "prompt": "Which is blunter: くれ or よこせ?", "answer": "よこせ — closer to 'hand it over' as a demand, while くれ is a bare (but less confrontational) 'give me'." }
+    ],
+    "relatedVocabulary": []
+  }
+]

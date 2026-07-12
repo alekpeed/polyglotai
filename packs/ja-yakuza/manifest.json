@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "ja-yakuza",
+  "name": "Yakuza Style (Media Japanese)",
+  "languageCode": "ja-JP",
+  "packVersion": "0.1.0",
+  "basePack": "ja",
+  "authors": ["PolyglotAI"],
+  "license": "proprietary",
+  "dialects": [{ "id": "ja-JP-standard", "name": "Standard (Tokyo)" }],
+  "defaultDialect": "ja-JP-standard",
+  "cefrRange": ["B1", "B2"],
+  "featureFlags": { "slang": true, "profanity": true },
+  "contents": {
+    "vocabulary": ["vocabulary/yakuza-core.json"],
+    "grammar": ["grammar/rough-speech.json"],
+    "idioms": ["idioms/stock-phrases.json"],
+    "dialogues": ["dialogues/scenarios.json"],
+    "culture": ["culture/notes.json"]
+  }
+}

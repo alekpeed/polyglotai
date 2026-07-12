@@ -1,0 +1,155 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "kgdlg.turf-confrontation",
+    "scenario": "Confronting a rival on contested turf (media/fiction scene)",
+    "speakers": [
+      { "id": "a", "name": "Ishikawa", "role": "rival gang member" },
+      { "id": "b", "name": "You", "role": "gumi member" }
+    ],
+    "targetLevel": "B2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "a", "text": "ここはうちのシマだ。何の用だ。", "reading": "ここはうちのシマだ。なんのようだ。", "romaji": "Koko wa uchi no shima da. Nan no you da." },
+      { "speakerId": "b", "text": "てめえらこそ、いつまでここにいるつもりだ。", "romaji": "Temeera koso, itsu made koko ni iru tsumori da." },
+      { "speakerId": "a", "text": "舐めてんじゃねえぞ、コラ。", "reading": "なめてんじゃねえぞ、コラ。", "romaji": "Namete njanee zo, kora." },
+      { "speakerId": "b", "text": "うちの若い衆に手を出したら、ただで済むと思うなよ。", "reading": "うちのわかいしゅにてをだしたら、ただですむとおもうなよ。", "romaji": "Uchi no wakaishuu ni te o dashitara, tada de sumu to omou na yo." },
+      { "speakerId": "a", "text": "……今日のところは引くとするか。", "romaji": "……Kyou no tokoro wa hiku to suru ka." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "This is our turf. What do you want?" },
+      { "speakerId": "b", "text": "That's what I should be asking you — how long do you plan on staying here?" },
+      { "speakerId": "a", "text": "Don't you dare underestimate us." },
+      { "speakerId": "b", "text": "If you lay a hand on my men, this won't end well for you." },
+      { "speakerId": "a", "text": "...I suppose we'll back off for today." }
+    ],
+    "keyVocabulary": ["kgvocab.namameru", "kgvocab.kono-yarou"],
+    "grammarNotes": "Note てめえら (temeera) — てめえ pluralized with ら, and the rough contracted question 何の用だ instead of 何の用ですか. Entirely 役割語 (yakuwarigo) — recognize the register, don't reproduce it."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgdlg.oyabun-orders",
+    "scenario": "An oyabun giving instructions to subordinates (media/fiction scene)",
+    "speakers": [
+      { "id": "oyabun", "name": "Oyabun", "role": "boss" },
+      { "id": "shatei", "name": "You", "role": "shatei" }
+    ],
+    "targetLevel": "B2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "oyabun", "text": "おい、例のシノギの件はどうなってる。", "reading": "おい、れいのシノギのけんはどうなってる。", "romaji": "Oi, rei no shinogi no ken wa dou natteru." },
+      { "speakerId": "shatei", "text": "順調です、兄貴。今週中にケリをつけます。", "reading": "じゅんちょうです、あにき。こんしゅうじゅうにケリをつけます。", "romaji": "Junchou desu, aniki. Konshuu-juu ni keri o tsukemasu." },
+      { "speakerId": "oyabun", "text": "抜かるなよ。相手はカタギじゃねえ。", "reading": "ぬかるなよ。あいてはカタギじゃねえ。", "romaji": "Nukaru na yo. Aite wa katagi janee." },
+      { "speakerId": "shatei", "text": "承知しました。命に代えても、必ず。", "reading": "しょうちしました。いのちにかえても、かならず。", "romaji": "Shouchi shimashita. Inochi ni kaete mo, kanarazu." }
+    ],
+    "translation": [
+      { "speakerId": "oyabun", "text": "Hey, how's that business matter going?" },
+      { "speakerId": "shatei", "text": "It's going smoothly, aniki. I'll settle it by the end of the week." },
+      { "speakerId": "oyabun", "text": "Don't slip up. The other side isn't civilians." },
+      { "speakerId": "shatei", "text": "Understood. I'll see it through, whatever it takes." }
+    ],
+    "keyVocabulary": ["kgvocab.shinogi", "kgvocab.aniki", "kgvocab.katagi", "kgvocab.oyabun"],
+    "grammarNotes": "Notice the shatei's speech is actually more polite (です/ます) than the oyabun's — hierarchy shapes politeness direction even within this rough register; the boss can drop politeness downward, the subordinate generally can't drop it upward."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgdlg.sakazuki-ceremony",
+    "scenario": "A sworn-sibling sakazuki ceremony (media/fiction scene)",
+    "speakers": [
+      { "id": "elder", "name": "Nakadachinin", "role": "ceremony officiant" },
+      { "id": "a", "name": "You" },
+      { "id": "b", "name": "New sworn brother" }
+    ],
+    "targetLevel": "B2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "elder", "text": "これより、両名の兄弟盃の儀を執り行う。", "reading": "これより、りょうめいのきょうだいさかずきのぎをとりおこなう。", "romaji": "Kore yori, ryoumei no kyoudai sakazuki no gi o toriokonau." },
+      { "speakerId": "a", "text": "以後、兄貴と呼ばせていただきます。", "reading": "いご、あにきとよばせていただきます。", "romaji": "Igo, aniki to yobasete itadakimasu." },
+      { "speakerId": "b", "text": "こちらこそ、よろしく頼む。", "romaji": "Kochira koso, yoroshiku tanomu." },
+      { "speakerId": "elder", "text": "この盃、決して裏切ることは許されぬ。", "reading": "このさかずき、けっしてうらぎることはゆるされぬ。", "romaji": "Kono sakazuki, kesshite uragiru koto wa yurusarenu." }
+    ],
+    "translation": [
+      { "speakerId": "elder", "text": "We now perform the sworn-sibling sakazuki ceremony for these two." },
+      { "speakerId": "a", "text": "From now on, I'll call you aniki." },
+      { "speakerId": "b", "text": "Likewise — I look forward to it." },
+      { "speakerId": "elder", "text": "This bond may never be betrayed." }
+    ],
+    "keyVocabulary": ["kgvocab.sakazuki", "kgvocab.aniki", "kgvocab.jingi"],
+    "grammarNotes": "Deliberately archaic, formal-sounding language (執り行う, 許されぬ using the classical negative ぬ instead of ない) for ceremonial gravity — a different flavor of stylization than the rough confrontation dialogues, showing yakuwarigo isn't only about being blunt/aggressive."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgdlg.apology-kejime",
+    "scenario": "A subordinate apologizing for a serious mistake (media/fiction scene)",
+    "speakers": [
+      { "id": "shatei", "name": "You", "role": "shatei" },
+      { "id": "aniki", "name": "Aniki", "role": "senior member" }
+    ],
+    "targetLevel": "B2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "shatei", "text": "申し訳ございません！私の落ち度です！", "reading": "もうしわけございません！わたしのおちどです！", "romaji": "Moushiwake gozaimasen! Watashi no ochido desu!" },
+      { "speakerId": "aniki", "text": "……ケジメはつけられるんだろうな。", "romaji": "……Kejime wa tsukerareru ndarou na." },
+      { "speakerId": "shatei", "text": "はい。土下座でも何でもいたします。", "reading": "はい。どげざでもなんでもいたします。", "romaji": "Hai. Dogeza demo nan demo itashimasu." },
+      { "speakerId": "aniki", "text": "今回だけだぞ。次はねえ。", "romaji": "Konkai dake da zo. Tsugi wa nee." }
+    ],
+    "translation": [
+      { "speakerId": "shatei", "text": "I'm deeply sorry! This is my failure!" },
+      { "speakerId": "aniki", "text": "...You're going to make this right, I assume." },
+      { "speakerId": "shatei", "text": "Yes. I'll do a full apology bow, whatever it takes." },
+      { "speakerId": "aniki", "text": "Only this once. There won't be a next time." }
+    ],
+    "keyVocabulary": ["kgvocab.kejime", "kgvocab.degeza"],
+    "grammarNotes": "The shatei stays fully polite (申し訳ございません, いたします) even in a tense scene — apologizing upward never drops politeness, unlike the aniki's own rough ねえ-contracted closing line."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgdlg.protecting-a-civilian",
+    "scenario": "Warning a rival away from an uninvolved civilian (media/fiction scene)",
+    "speakers": [
+      { "id": "a", "name": "You" },
+      { "id": "b", "name": "Rival" }
+    ],
+    "targetLevel": "B2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "b", "text": "あの女、お前の弱みになりそうだな。", "reading": "あのおんな、おまえのよわみになりそうだな。", "romaji": "Ano onna, omae no yowami ni narisou da na." },
+      { "speakerId": "a", "text": "その人はカタギだ。手を出すな。", "reading": "そのひとはカタギだ。てをだすな。", "romaji": "Sono hito wa katagi da. Te o dasu na." },
+      { "speakerId": "b", "text": "きさま、この俺に指図するつもりか。", "reading": "きさま、このおれにさしずするつもりか。", "romaji": "Kisama, kono ore ni sashizu suru tsumori ka." },
+      { "speakerId": "a", "text": "覚悟しろよ、これ以上近づいたら。", "reading": "かくごしろよ、これいじょうちかづいたら。", "romaji": "Kakugo shiro yo, kore ijou chikazuitara." }
+    ],
+    "translation": [
+      { "speakerId": "b", "text": "That woman could be a weakness of yours." },
+      { "speakerId": "a", "text": "She's a civilian. Don't touch her." },
+      { "speakerId": "b", "text": "You've got nerve, giving orders to me." },
+      { "speakerId": "a", "text": "You'd better be ready for what happens if you get any closer." }
+    ],
+    "keyVocabulary": ["kgvocab.katagi", "kgvocab.kisama", "kgvocab.kakugo"],
+    "grammarNotes": "きさま used exactly as the grammar note describes — a hostile 'you' aimed at asserting dominance in response to being told what to do."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgdlg.gumi-negotiation",
+    "scenario": "A tense negotiation between two organizations (media/fiction scene)",
+    "speakers": [
+      { "id": "a", "name": "Wakagashira A" },
+      { "id": "b", "name": "You", "role": "wakagashira" }
+    ],
+    "targetLevel": "B2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "a", "text": "うちのシノギに手を出したのはそっちだろう。", "reading": "うちのシノギにてをだしたのはそっちだろう。", "romaji": "Uchi no shinogi ni te o dashita no wa socchi darou." },
+      { "speakerId": "b", "text": "先に仕掛けてきたのはどっちだ。よく考えろ。", "reading": "さきにしかけてきたのはどっちだ。よくかんがえろ。", "romaji": "Saki ni shikakete kita no wa dochi da. Yoku kangaero." },
+      { "speakerId": "a", "text": "……このまま抗争になれば、双方無事じゃ済まねえぞ。", "reading": "……このままこうそうになれば、そうほうぶじじゃすまねえぞ。", "romaji": "……Kono mama kousou ni nareba, souhou buji ja sumanee zo." },
+      { "speakerId": "b", "text": "だったら手打ちにするか。", "reading": "だったらてうちにするか。", "romaji": "Dattara teuchi ni suru ka." }
+    ],
+    "translation": [
+      { "speakerId": "a", "text": "You're the ones who touched our business first." },
+      { "speakerId": "b", "text": "Who actually started this? Think carefully." },
+      { "speakerId": "a", "text": "...If this turns into a full conflict, neither side comes out unscathed." },
+      { "speakerId": "b", "text": "Then shall we call a truce?" }
+    ],
+    "keyVocabulary": ["kgvocab.shinogi", "kgvocab.kousou"],
+    "grammarNotes": "手打ち (teuchi, literally 'hand-clap') is standard vocabulary for 'reconciliation/truce' — worth noting alongside the rougher vocabulary since not every word in a tense scene is itself confrontational."
+  }
+]

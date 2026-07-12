@@ -1,0 +1,51 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "kgculture.yakuwarigo-explained",
+    "title": "役割語 (yakuwarigo): the linguistics of 'sounding like' a character type",
+    "bodyMd": "Japanese fiction has a well-documented phenomenon linguists call 役割語 (yakuwarigo, literally 'role language') — speech patterns that exist almost entirely to signal *what kind of character* someone is, independent of anywhere real people actually talk that way. The elderly scholar who ends sentences in ～じゃ, the wealthy young lady who says おほほ and uses わ, and the gruff yakuza member who drops all politeness and rolls his r's are all yakuwarigo — instantly legible archetypes to a Japanese audience, the same way a Hollywood film might use a specific accent to signal 'aristocrat' or 'outlaw' without that accent reflecting how real aristocrats or outlaws actually speak.\n\nEverything in this pack sits squarely inside that tradition. Real yakuza members are, linguistically, just people — they use ordinary Japanese, code-switching into rougher register the way anyone might among close, tough-talking peers, not as a constant, systematic dialect. Learning this pack teaches you to *read* a huge swath of Japanese pop culture (yakuza films, the Ryū ga Gotoku/Yakuza game series, countless anime and manga) accurately — not vocabulary to use in a real conversation.",
+    "tags": ["linguistics", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgculture.sakazuki-and-fictive-family",
+    "title": "The sakazuki ritual: family bonds by ceremony, not blood",
+    "bodyMd": "The entire hierarchy vocabulary in this pack — 親分/oyabun ('boss', literally 'parent-role'), 兄貴/aniki ('big brother'), 舎弟/shatei ('sworn younger brother') — sits on top of one founding ritual: 盃 (sakazuki), the ceremonial exchange of sake cups that formally creates a parent-child or sibling bond between two people who share no blood relation. Once exchanged, that bond carries the same social weight (and the same expectation of loyalty) as an actual family tie, and is not something either party can casually walk away from.\n\nThis fictive-kinship structure is genuinely central to how these organizations are portrayed as functioning — obligations flow through it the way they would through blood family in more ordinary contexts, which is why breaking a sakazuki bond (see 手切れ, tegire) needs its own formal, ceremonial procedure rather than just quietly not speaking to someone anymore.",
+    "tags": ["ritual", "hierarchy"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgculture.katagi-distinction",
+    "title": "カタギ (katagi): the line between this world and everyone else",
+    "bodyMd": "カタギ is the constant reference point in yakuza fiction for 'an ordinary, uninvolved civilian' — and a huge amount of genre storytelling turns on protecting or violating that line. A recurring, almost sacred narrative beat is a member insisting a rival leave a katagi bystander alone ('この人はカタギだ、手を出すな' — 'this person is a civilian, don't touch them'), treating harm to an uninvolved person as a deeper violation than conflict between members themselves.\n\nWorth noting for realism: real organized crime, unlike its fictional portrayal, does not reliably respect this line — the katagi/non-katagi distinction as an honor code is itself partly a fictional convention, part of the same idealized code-of-honor storytelling that produces 仁義 (jingi) as a concept in the first place.",
+    "tags": ["values", "hierarchy"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgculture.jingi-honor-code",
+    "title": "仁義 (jingi): a borrowed philosophical term repurposed as underworld code",
+    "bodyMd": "仁義 originally comes straight out of Confucian ethical vocabulary — 仁 (benevolence) and 義 (righteousness), core virtues in classical Chinese and Japanese philosophy. Yakuza fiction repurposes the term wholesale as the underworld's own honor code: loyalty, duty, keeping your word, respecting hierarchy. It also names a specific, almost theatrically formal ritual greeting members use when meeting for the first time — a scripted self-introduction stating your name, affiliation, and region, delivered in a stylized cadence.\n\nThe gap between a genuinely lofty philosophical term and its use to dignify organized crime is itself part of the genre's appeal — these stories often explicitly frame their protagonists as living by a code that 'straight' society has abandoned, whether or not that's how real criminal organizations actually operate.",
+    "tags": ["values", "ritual"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgculture.shinogi-economics",
+    "title": "シノギ (shinogi): the unglamorous economic engine behind the ritual",
+    "bodyMd": "Underneath all the ceremony and honor-code language, シノギ is the plain business-and-money layer — whatever income-generating activity, legal or not, keeps an organization funded. Stories will often deliberately juxtapose a shinogi negotiation scene (blunt, transactional, about money and territory) against a sakazuki or jingi scene (formal, ceremonial, about honor) to show both faces of how these organizations are portrayed — equal parts theatrical code of honor and ordinary, sometimes petty, business dealing.\n\nReal Japanese organized crime (typically referred to in news media as 暴力団, bouryokudan, rather than the more colloquial ヤクザ) has historically drawn real income from construction, real estate, entertainment, and (increasingly, per recent reporting as legal restrictions have tightened) less overtly 'gang'-coded fronts — worth remembering that the ritual/honor vocabulary in this pack is the fictionalized, dramatized layer, while シノギ points at something closer to a real, if sanitized, economic reality.",
+    "tags": ["business", "reality-check"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgculture.irezumi-and-public-life",
+    "title": "Tattoos, public baths, and why this matters if you're ever actually in Japan",
+    "bodyMd": "The strong association between 刺青 (irezumi, traditional tattooing) and yakuza membership in the popular imagination has a real, practical consequence for any visitor: many Japanese public baths (onsen/sentō) and some gyms still refuse entry to anyone with visible tattoos, tattoo-associated or not, precisely because of this cultural link — a policy increasingly criticized as outdated (and inconsistently applied to foreign tourists) but still very much in effect at many establishments as of this writing.\n\nThis is one of the few places where this micro-pack's fictional vocabulary connects directly to genuinely practical travel knowledge — see the pack's own `ja-onsen` micro-pack for the fuller etiquette picture, which covers exactly this policy from the traveler's side.",
+    "tags": ["etiquette", "practical", "reality-check"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "kgculture.dont-actually-talk-like-this",
+    "title": "A direct note on actually using any of this",
+    "bodyMd": "To be completely explicit about something implied throughout this pack: none of this vocabulary, grammar, or these stock phrases are meant to be produced in real conversation. Using てめえ, きさま, ねえ-contracted rough speech, or ぞ/ぜ endings with a real person in Japan would not read as tough or confident — it would read as bizarre at best, since you'd be speaking in a register real people associate exclusively with movies and games, not real life. It could also, in the wrong context, read as a genuine and unwelcome provocation.\n\nThe entire value of this pack is *comprehension* — being able to follow a Yakuza-series cutscene, a gangster film, or a manga panel without every other line going over your head. Treat it exactly like you'd treat learning to recognize movie-pirate dialogue ('arr, shiver me timbers') in English: fun and useful to understand, actively strange to produce.",
+    "tags": ["essentials", "safety"]
+  }
+]
