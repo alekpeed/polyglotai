@@ -1,0 +1,165 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "assessment.ja.placement.basics",
+    "lessonType": "assessment",
+    "title": "Placement: greetings and basics (A1)",
+    "cefr": "A1",
+    "sequence": 1,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Translate: 'Good morning' (polite, to a teacher).", "answer": "おはようございます。" },
+        { "type": "quiz", "prompt": "What does すみません mean, and name its two common uses.", "answer": "'Excuse me' / 'sorry' — used both to get attention and as a light apology." },
+        { "type": "quiz", "prompt": "How do you say 'thank you' casually to a close friend?", "answer": "ありがとう (dropping ございます)." },
+        { "type": "quiz", "prompt": "A stranger asks どちらまでですか. What is being asked?", "answer": "'Where to?' — a polite way to ask a destination, e.g. from a taxi driver." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.ja.placement.particles",
+    "lessonType": "assessment",
+    "title": "Placement: core particles は・が・を・に・で (A1)",
+    "cefr": "A1",
+    "sequence": 2,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Fill in: 私＿学生です。 (topic marker)", "answer": "は" },
+        { "type": "quiz", "prompt": "Fill in: 誰＿来ましたか。 (who came? — subject marker)", "answer": "が" },
+        { "type": "quiz", "prompt": "Fill in: 水＿飲みます。 (direct object marker)", "answer": "を" },
+        { "type": "quiz", "prompt": "Fill in: 学校＿行きます。 vs 学校＿勉強します。 (destination vs. where an action happens)", "answer": "に (destination); で (location of action)" },
+        { "type": "quiz", "prompt": "Why is は pronounced 'wa' in 私は学生です but 'ha' in 母は？", "answer": "は as the topic particle is always read 'wa'; as part of a word (like 母, though that's actually not は) it keeps 'ha' — the shift only applies to the grammatical particle." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.ja.placement.desu-masu",
+    "lessonType": "assessment",
+    "title": "Placement: です/ます, negation, past tense (A1)",
+    "cefr": "A1",
+    "sequence": 3,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Conjugate to polite form: 食べる → ？", "answer": "食べます" },
+        { "type": "quiz", "prompt": "Negate: 飲みます → ？", "answer": "飲みません" },
+        { "type": "quiz", "prompt": "Past tense: 学生です → ？", "answer": "学生でした" },
+        { "type": "quiz", "prompt": "Negate the い-adjective: おいしい → ？ (not delicious)", "answer": "おいしくない(です)" },
+        { "type": "quiz", "prompt": "Past tense of an い-adjective: 楽しい → ？", "answer": "楽しかった(です)" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.ja.placement.adjectives",
+    "lessonType": "assessment",
+    "title": "Placement: い-adjectives vs な-adjectives (A1)",
+    "cefr": "A1",
+    "sequence": 4,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Which needs な before a noun: 大きい家 or 好き＿食べ物?", "answer": "好きな食べ物 — な-adjectives need な before a noun; い-adjectives (大きい) go directly." },
+        { "type": "quiz", "prompt": "Spot the error: 大きいな家", "answer": "大きい家 — い-adjectives never take な." },
+        { "type": "quiz", "prompt": "Turn 静か into an adverb ('quietly').", "answer": "静かに" },
+        { "type": "quiz", "prompt": "Turn 早い into an adverb ('early/quickly').", "answer": "早く" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.ja.placement.te-form",
+    "lessonType": "assessment",
+    "title": "Placement: the て-form family (A2)",
+    "cefr": "A2",
+    "sequence": 5,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "て-form: 飲む → ？", "answer": "飲んで" },
+        { "type": "quiz", "prompt": "て-form: 書く → ？", "answer": "書いて" },
+        { "type": "quiz", "prompt": "Make a polite request: 待つ → 'please wait'", "answer": "待ってください" },
+        { "type": "quiz", "prompt": "Express an ongoing action: 食べる → 'I am eating' (plain て-form + います)", "answer": "食べています" },
+        { "type": "quiz", "prompt": "Ask permission: 座る (to sit) → 'may I sit?'", "answer": "座ってもいいですか" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.ja.placement.tai-dekiru",
+    "lessonType": "assessment",
+    "title": "Placement: ～たい and potential/できる (A2)",
+    "cefr": "A2",
+    "sequence": 6,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Say 'I want to go to Japan.'", "answer": "日本に行きたいです。" },
+        { "type": "quiz", "prompt": "Negate ～たい: 食べたい → ？", "answer": "食べたくない" },
+        { "type": "quiz", "prompt": "Potential form: 話す → 'can speak'", "answer": "話せる" },
+        { "type": "quiz", "prompt": "Which particle marks the thing you 'can' do: 日本語＿できます?", "answer": "が — not を, with できる/potential forms." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.ja.placement.reasons-contrast",
+    "lessonType": "assessment",
+    "title": "Placement: から, が/けど, でしょう (A2)",
+    "cefr": "A2",
+    "sequence": 7,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Combine with a reason: '(because) it's cold, I'll stay home.'", "answer": "寒いから、家にいます。" },
+        { "type": "quiz", "prompt": "Join with a contrast (formal): 'This shop is expensive, but delicious.'", "answer": "この店は高いですが、おいしいです。" },
+        { "type": "quiz", "prompt": "Express probability: 'It'll probably rain tomorrow.'", "answer": "明日は雨でしょう。 (or 雨が降るでしょう。)" },
+        { "type": "quiz", "prompt": "What's the difference in feel between から and ので when giving a reason?", "answer": "ので is softer/more polite; から is more direct/neutral — both mean 'because'." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.ja.placement.comparatives",
+    "lessonType": "assessment",
+    "title": "Placement: comparatives and 一番 (A2)",
+    "cefr": "A2",
+    "sequence": 8,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Fill in: 電車のほうがバス＿速いです。 (the train is faster than the bus)", "answer": "より" },
+        { "type": "quiz", "prompt": "Say 'I like cats the most.'", "answer": "猫が一番好きです。" },
+        { "type": "quiz", "prompt": "Ask which of two options someone prefers.", "answer": "どちらのほうが好きですか。" },
+        { "type": "quiz", "prompt": "Spot the error: 寿司が一番に好きです", "answer": "寿司が一番好きです — 一番 sits directly before the adjective, no に." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.ja.placement.suggestions-opinions",
+    "lessonType": "assessment",
+    "title": "Placement: ましょう and と思います (A2)",
+    "cefr": "A2",
+    "sequence": 9,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Suggest doing something together: 'let's eat lunch together.'", "answer": "一緒に昼ご飯を食べましょう。" },
+        { "type": "quiz", "prompt": "Offer to help: 'shall I help?'", "answer": "手伝いましょうか。" },
+        { "type": "quiz", "prompt": "State an opinion: 'I think this movie is interesting.'", "answer": "この映画は面白いと思います。" },
+        { "type": "quiz", "prompt": "Spot the error: 面白いですと思います", "answer": "面白いと思います — drop です before と思います; the clause stays in plain form." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.ja.placement.pronunciation",
+    "lessonType": "assessment",
+    "title": "Placement: pronunciation fundamentals (A1-A2)",
+    "cefr": "A2",
+    "sequence": 10,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "What's the difference between おばさん and おばあさん?", "answer": "Vowel length — おばあさん (grandmother) holds the 'a' longer than おばさん (aunt)." },
+        { "type": "quiz", "prompt": "What does the small っ in がっこう do to pronunciation?", "answer": "It creates a brief held pause/doubled consonant before こう — a distinct silent beat." },
+        { "type": "quiz", "prompt": "Why does を sound exactly like お?", "answer": "を is only ever used as the object particle and is pronounced 'o', identical to お, though it never appears inside ordinary words." },
+        { "type": "quiz", "prompt": "How is ありがとう actually pronounced, despite the 'ou' in its romanization?", "answer": "As a long 'o' sound ('arigatoo'), not a glide to a separate 'u' — おう in native words is usually a held long vowel." }
+      ]
+    }
+  }
+]

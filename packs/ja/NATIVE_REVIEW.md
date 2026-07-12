@@ -1,10 +1,11 @@
 # ja pack — native-speaker review notes
 
-This pack was authored by Claude as a pilot (per the same "Claude authors, owner reviews"
-pattern used for pt-br). It passes the automated validator (schema + cross-references), but
-nothing here has had a native Japanese speaker's sign-off yet. None of the notes below block
-the app from running — they're accuracy/naturalness checkpoints before treating this as more
-than a pilot.
+This pack was authored by Claude (per the same "Claude authors, owner reviews" pattern used for
+pt-br), growing from a 60-vocab pilot to a full §10.1 Tier-1 pack across several sessions. It
+passes the automated validator (schema + cross-references) and now meets or exceeds every
+Tier-1 volume target. Nothing here has had a native Japanese speaker's sign-off yet — none of
+the notes below block the app from running, they're accuracy/naturalness checkpoints before
+treating this pack as production-ready rather than "complete but unreviewed."
 
 ## A1–A2 backbone expansion (volume upgrade)
 
@@ -60,10 +61,36 @@ might sound unnatural or overly bookish coming from a non-native speaker) — th
 is itself worth a native sanity check, since it's more subjective than the schema/grammar
 content.
 
-## Still deliberately not built (scope for a follow-up session)
+## Lesson-based categories (0 → full target on all four)
 
-- **Lesson-based categories** — listening exercises, writing prompts, assessments, and roleplay
-  scenarios (all target >0) are not yet built.
+Added `lessons/a1.json` (10 listening exercises + 10 writing prompts + 5 roleplay scenarios,
+25 total) and `assessments/placement.json` (10 assessments), following the same pattern as
+pt-br's `lessons/a1.json` / `assessments/placement.json`. Listening and roleplay lessons use
+`dialogueRef` against the existing dialogue set; writing prompts and assessments are
+self-contained. All ten §10.1 content categories now meet or exceed their Tier-1 target — this
+completes the pack's volume buildout. Worth a native check on:
+
+- **Assessment answer keys** — several assessments (te-form, potential, comparatives,
+  suggestions/opinions) have a single "correct" answer given, but Japanese often allows more
+  than one valid phrasing; worth confirming the given answers aren't presented as more rigid
+  than they should be.
+- **Listening-exercise comprehension questions** — written from the dialogue transcripts
+  directly rather than by actually listening to audio (no audio exists yet), so they test
+  reading comprehension of the transcript, not real listening skill; that's a known and
+  accepted limitation of this content type until audio generation exists.
+- **Writing-prompt example answers** — marked with "e.g." throughout since these are meant as
+  one valid model answer, not the only correct one; worth confirming none of the model answers
+  contain unnatural phrasing at the volume this was authored.
+
+## Still deliberately not built
+
+Nothing remains against the §10.1 Tier-1 targets. Everything below this point is genuinely
+future/roadmap work, not a Tier-1 gap:
+- Kanji stroke order / handwriting practice.
+- Keigo (formal/humble speech) as its own modeled register axis.
+- Regional dialects (Kansai-ben, etc.).
+- Audio generation for dialogues/listening exercises.
+- JLPT-aligned tagging alongside CEFR (see scope decision below).
 
 ## Scope decisions (need an explicit owner call)
 
@@ -88,10 +115,3 @@ content.
 - Example sentence naturalness generally: everything was written directly rather than
   translated from English, but a native pass would catch anything that reads as slightly
   textbook-stiff (e.g. dialogue register consistency, particle choices in edge cases).
-
-## Not included by design
-
-- Kanji stroke order / handwriting practice — out of scope for this pilot.
-- Keigo (formal/humble speech) — see scope decision above.
-- Regional dialects (Kansai-ben, etc.) — pt-br modeled SP vs. RJ; a Japanese equivalent would
-  be a deliberate follow-up, not an oversight.

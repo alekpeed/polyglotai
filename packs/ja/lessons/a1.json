@@ -1,0 +1,388 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.self-intro-listening",
+    "lessonType": "listening_exercise",
+    "title": "Meeting someone for the first time (listening)",
+    "cefr": "A1",
+    "sequence": 1,
+    "dialogueRef": "dlg.self-introduction",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "What does Tanaka say right after はじめまして?", "answer": "田中です — he gives his name." },
+        { "type": "quiz", "prompt": "What phrase does 'You' use that's almost always paired with はじめまして?", "answer": "よろしくお願いします — the standard first-meeting set phrase." },
+        { "type": "quiz", "prompt": "How does Tanaka address Ana after learning her name?", "answer": "アナさん — attaching さん as a neutral title, never used on your own name." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.cafe-order-listening",
+    "lessonType": "listening_exercise",
+    "title": "Ordering tea at a café (listening)",
+    "cefr": "A1",
+    "sequence": 2,
+    "dialogueRef": "dlg.cafe-order",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "What does the customer order?", "answer": "お茶 (ocha, tea)." },
+        { "type": "quiz", "prompt": "How does the customer say 'that's all'?", "answer": "それだけです。" },
+        { "type": "quiz", "prompt": "What does the staff say when the customer enters, and do you need to reply to it?", "answer": "いらっしゃいませ — staff say this to every customer; no reply is expected." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.directions-listening",
+    "lessonType": "listening_exercise",
+    "title": "Asking for the station (listening)",
+    "cefr": "A1",
+    "sequence": 3,
+    "dialogueRef": "dlg.asking-directions",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "What word opens the request to a stranger?", "answer": "すみません — polite attention-getter, here functioning as 'excuse me'." },
+        { "type": "quiz", "prompt": "Where is the station, according to the passerby?", "answer": "あそこです (over there)." },
+        { "type": "quiz", "prompt": "How does the passerby respond to being thanked?", "answer": "いいえ、どういたしまして (no, you're welcome)." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.ramen-listening",
+    "lessonType": "listening_exercise",
+    "title": "Ordering ramen (listening)",
+    "cefr": "A1",
+    "sequence": 4,
+    "dialogueRef": "dlg.ramen-shop",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "How many people is the customer's party?", "answer": "一人 (hitori, one person)." },
+        { "type": "quiz", "prompt": "What does 何名様ですか mean, and would you ever say 様 about yourself?", "answer": "'How many people (polite)?' — 様 is a respectful suffix used about others, never about yourself." },
+        { "type": "quiz", "prompt": "What phrase tells the customer to wait?", "answer": "少々お待ちください (please wait a moment)." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.konbini-listening",
+    "lessonType": "listening_exercise",
+    "title": "Checking out at a konbini (listening)",
+    "cefr": "A1",
+    "sequence": 5,
+    "dialogueRef": "dlg.konbini-checkout",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "What does the staff ask about before the total?", "answer": "袋 (fukuro) — whether the customer wants a bag." },
+        { "type": "quiz", "prompt": "How does the customer decline the bag?", "answer": "いいえ、大丈夫です (no, I'm fine)." },
+        { "type": "quiz", "prompt": "How does the customer ask to pay by card?", "answer": "カードで払えますか。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.taxi-listening",
+    "lessonType": "listening_exercise",
+    "title": "Taking a taxi to a hotel (listening)",
+    "cefr": "A2",
+    "sequence": 6,
+    "dialogueRef": "dlg.taking-a-taxi",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "How does the driver ask 'where to'?", "answer": "どちらまでですか。" },
+        { "type": "quiz", "prompt": "How long does the driver say the ride will take?", "answer": "二十分ぐらい (about twenty minutes)." },
+        { "type": "quiz", "prompt": "What does かかります mean here, and what else can it describe besides time?", "answer": "'It takes' — かかる is used for both time and cost (e.g. money it costs)." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.hotel-listening",
+    "lessonType": "listening_exercise",
+    "title": "Checking into a hotel (listening)",
+    "cefr": "A2",
+    "sequence": 7,
+    "dialogueRef": "dlg.hotel-checkin",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "What does the staff ask for besides the reservation name?", "answer": "パスポート (passport)." },
+        { "type": "quiz", "prompt": "What floor is the guest's room on?", "answer": "三階 (the third floor)." },
+        { "type": "quiz", "prompt": "What phrase does staff use for 'sorry to keep you waiting'?", "answer": "お待たせしました。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.bank-listening",
+    "lessonType": "listening_exercise",
+    "title": "Opening a bank account (listening)",
+    "cefr": "A2",
+    "sequence": 8,
+    "dialogueRef": "dlg.at-the-bank",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "What does the customer say they want to do?", "answer": "口座を作りたいんですが (I'd like to open an account)." },
+        { "type": "quiz", "prompt": "What two things does the customer need to write on the paper?", "answer": "名前と住所 (name and address)." },
+        { "type": "quiz", "prompt": "What softens 口座を作りたい into a polite request rather than a flat statement?", "answer": "んですが at the end — leaves room for the listener to respond, rather than a blunt want-statement." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.doctor-listening",
+    "lessonType": "listening_exercise",
+    "title": "Describing symptoms at the doctor (listening)",
+    "cefr": "A2",
+    "sequence": 9,
+    "dialogueRef": "dlg.doctor-visit",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "What two symptoms does the patient describe?", "answer": "頭が痛い (headache) and 少し熱がある (a slight fever)." },
+        { "type": "quiz", "prompt": "Since when has the patient had these symptoms?", "answer": "昨日の晩から (since last night)." },
+        { "type": "quiz", "prompt": "What does the doctor say as a parting phrase, and when else would you hear it?", "answer": "お大事に — said to someone sick or hurt; not used as a general 'take care'." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.weather-listening",
+    "lessonType": "listening_exercise",
+    "title": "Small talk about the weather (listening)",
+    "cefr": "A1",
+    "sequence": 10,
+    "dialogueRef": "dlg.talking-weather",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "What's the weather forecast for tomorrow, according to the speaker?", "answer": "雨が降るそうです (apparently it'll rain)." },
+        { "type": "quiz", "prompt": "What grammar point does そうです represent here?", "answer": "Hearsay そう — reporting something heard, not the appearance-based そう attached directly to an adjective stem." },
+        { "type": "quiz", "prompt": "What will the neighbor bring because of the forecast?", "answer": "傘 (an umbrella)." }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.self-intro-writing",
+    "lessonType": "writing_prompt",
+    "title": "Introduce yourself in writing",
+    "cefr": "A1",
+    "sequence": 11,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Write two sentences: give your name and say you're a student (or your job).", "answer": "e.g. はじめまして。アレックスです。学生です。" },
+        { "type": "quiz", "prompt": "Add a sentence saying you're studying Japanese, using 勉強しています.", "answer": "e.g. 日本語を勉強しています。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.family-writing",
+    "lessonType": "writing_prompt",
+    "title": "Describe your family",
+    "cefr": "A1",
+    "sequence": 12,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Write how many people are in your family, then name who they are (using 両親, 兄, 妹, etc. as needed).", "answer": "e.g. 家族は四人です。両親と兄がいます。" },
+        { "type": "quiz", "prompt": "Add a sentence about one family member's age or job.", "answer": "e.g. 兄は二十五歳です。会社員です。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.weekend-plans-writing",
+    "lessonType": "writing_prompt",
+    "title": "Text a friend: weekend plans",
+    "cefr": "A2",
+    "sequence": 13,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Text a friend suggesting an activity for Saturday and propose a time, using ～ませんか or ～ましょう.", "answer": "e.g. 土曜日に映画を見ませんか。午後三時はどうですか。" },
+        { "type": "quiz", "prompt": "Your friend agrees. Write a short reply showing you're looking forward to it.", "answer": "e.g. いいですね！楽しみにしています。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.daily-routine-writing",
+    "lessonType": "writing_prompt",
+    "title": "Describe your daily routine",
+    "cefr": "A1",
+    "sequence": 14,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Write 3-4 sentences about your day: what time you wake up, what you eat for breakfast, and what time you go to work/school.", "answer": "e.g. 毎朝七時に起きます。朝ご飯を食べます。八時に学校に行きます。" },
+        { "type": "quiz", "prompt": "Add a sentence about what time you go to bed, using 寝ます.", "answer": "e.g. 夜十一時に寝ます。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.favorite-food-writing",
+    "lessonType": "writing_prompt",
+    "title": "Describe your favorite food",
+    "cefr": "A2",
+    "sequence": 15,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Write which food you like the most, using 一番好き, and say why in one sentence.", "answer": "e.g. 食べ物の中で、寿司が一番好きです。おいしいからです。" },
+        { "type": "quiz", "prompt": "Compare it to something you like less, using より or のほうが.", "answer": "e.g. 寿司のほうがラーメンより好きです。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.reservation-email-writing",
+    "lessonType": "writing_prompt",
+    "title": "Write a polite reservation request",
+    "cefr": "A2",
+    "sequence": 16,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Write a polite request to reserve a table for two people at 7pm, using ～たいんですが.", "answer": "e.g. 今晩七時に二名で予約したいんですが。" },
+        { "type": "quiz", "prompt": "Add your name to close the request politely.", "answer": "e.g. 田中です。よろしくお願いします。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.hobbies-writing",
+    "lessonType": "writing_prompt",
+    "title": "Write about your hobbies",
+    "cefr": "A2",
+    "sequence": 17,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Write your hobby using 趣味は～です, and add one sentence about how often you do it (時々 or 毎週 etc.).", "answer": "e.g. 趣味は料理です。時々日本料理を作ります。" },
+        { "type": "quiz", "prompt": "Say you want to try a new hobby, using ～たいです.", "answer": "e.g. 写真を撮りたいです。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.apology-note-writing",
+    "lessonType": "writing_prompt",
+    "title": "Write a short note apologizing for lateness",
+    "cefr": "A2",
+    "sequence": 18,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Write a short apology for being late to a meeting, explaining the train was delayed.", "answer": "e.g. 遅れてすみません。電車が遅れました。" },
+        { "type": "quiz", "prompt": "Add a closing line reassuring them it won't happen again.", "answer": "e.g. 次は気をつけます。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.neighborhood-writing",
+    "lessonType": "writing_prompt",
+    "title": "Describe your neighborhood",
+    "cefr": "A1",
+    "sequence": 19,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Write 3 sentences describing your neighborhood: what's nearby (コンビニ, 公園, etc.) and whether it's quiet or lively.", "answer": "e.g. 私の家の近くにコンビニと公園があります。静かな町です。" },
+        { "type": "quiz", "prompt": "Add one sentence saying what you like about it, using 好きです or いいですね.", "answer": "e.g. 静かだから、この町が好きです。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.trip-writing",
+    "lessonType": "writing_prompt",
+    "title": "Write about a memorable trip",
+    "cefr": "A2",
+    "sequence": 20,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Write 3-4 sentences about a past trip using past tense verbs: where you went, what you ate, and whether it was fun.", "answer": "e.g. 去年、日本に行きました。おいしい寿司を食べました。とても楽しかったです。" },
+        { "type": "quiz", "prompt": "Add a sentence saying you want to go again, using ～たいです.", "answer": "e.g. また日本に行きたいです。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.recommend-restaurant-roleplay",
+    "lessonType": "roleplay",
+    "title": "Asking a friend for a restaurant recommendation",
+    "cefr": "A2",
+    "sequence": 21,
+    "dialogueRef": "dlg.recommend-restaurant",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Ask a friend if there's a restaurant they'd recommend nearby.", "answer": "この辺でおすすめのレストランはある？" },
+        { "type": "quiz", "prompt": "They mention a ramen shop. Ask if it's cheap.", "answer": "安い？" },
+        { "type": "quiz", "prompt": "Respond that you'll try going there sometime.", "answer": "いいね、今度行ってみる。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.decline-invite-roleplay",
+    "lessonType": "roleplay",
+    "title": "Politely declining a coworker's invitation",
+    "cefr": "A2",
+    "sequence": 22,
+    "dialogueRef": "dlg.declining-invitation",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "A coworker asks if you want to go for drinks tonight. Say you'd like to but today's a bit difficult, trailing off politely.", "answer": "行きたいんですが、今日はちょっと……" },
+        { "type": "quiz", "prompt": "They say that's a shame. Apologize and ask them to invite you again another time.", "answer": "すみません。また今度誘ってください。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.borrowing-roleplay",
+    "lessonType": "roleplay",
+    "title": "Borrowing a pen from a classmate",
+    "cefr": "A2",
+    "sequence": 23,
+    "dialogueRef": "dlg.borrowing-something",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Say you forgot your pen and ask if you could borrow one.", "answer": "ペンを忘れました。貸してもらえますか。" },
+        { "type": "quiz", "prompt": "They lend it to you. Thank them and say you'll return it later.", "answer": "ありがとうございます。後で返します。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.phone-reservation-roleplay",
+    "lessonType": "roleplay",
+    "title": "Making a restaurant reservation by phone",
+    "cefr": "A2",
+    "sequence": 24,
+    "dialogueRef": "dlg.phone-reservation",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Open the call and request a table for two at 7 tonight.", "answer": "もしもし、今晩七時に二名で予約したいんですが。" },
+        { "type": "quiz", "prompt": "The staff asks for your name. Give it.", "answer": "田中です。" }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.ja.teacher-question-roleplay",
+    "lessonType": "roleplay",
+    "title": "Asking a teacher for help after class",
+    "cefr": "A2",
+    "sequence": 25,
+    "dialogueRef": "dlg.talking-to-teacher",
+    "body": {
+      "steps": [
+        { "type": "quiz", "prompt": "Politely ask your teacher if you may ask a question.", "answer": "先生、質問してもいいですか。" },
+        { "type": "quiz", "prompt": "Say you don't understand the grammar well and ask them to explain it again.", "answer": "この文法がよくわかりません。もう一度説明してください。" }
+      ]
+    }
+  }
+]
