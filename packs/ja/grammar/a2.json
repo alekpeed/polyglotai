@@ -1,0 +1,314 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "gram.kosoado",
+    "title": "これ・それ・あれ — the こそあ demonstratives",
+    "cefr": "A1",
+    "explanationMd": "Japanese demonstratives come in a tidy こ/そ/あ set keyed to distance. **これ** (this) is near the speaker, **それ** (that) is near the listener, **あれ** (that over there) is away from both. Each has a partner that goes *before* a noun — **この/その/あの** — so これ ('this one') becomes この本 ('this book'). The question member is **どれ** ('which one?') / **どの** ('which + noun?'). Keep the two rows straight: これ/それ/あれ/どれ stand alone; この/その/あの/どの need a noun after them.",
+    "examples": [
+      { "text": "これは私のかばんです。", "reading": "これはわたしのかばんです。", "romaji": "Kore wa watashi no kaban desu.", "translation": "This is my bag." },
+      { "text": "その本は面白いですか。", "reading": "そのほんはおもしろいですか。", "romaji": "Sono hon wa omoshiroi desu ka.", "translation": "Is that book (near you) interesting?" }
+    ],
+    "commonErrors": [
+      { "wrong": "これ本", "right": "この本", "note": "これ can't sit directly in front of a noun — switch to この when a noun follows." }
+    ],
+    "drills": [
+      { "prompt": "＿＿は何ですか。 (What is this thing near me?)", "answer": "これ" },
+      { "prompt": "＿＿人は誰ですか。 (Who is that person over there?)", "answer": "あの" }
+    ],
+    "relatedVocabulary": ["vocab.kore", "vocab.sore", "vocab.are", "vocab.kono", "vocab.dore"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.arimasu-imasu",
+    "title": "あります and います — existence and location",
+    "cefr": "A1",
+    "explanationMd": "'There is / to have' splits by animacy. **あります** (from ある) is for inanimate, non-moving things — objects, plants, events. **います** (from いる) is for living, self-moving things — people and animals. Location is marked with **に**, and the thing that exists takes **が**: 机の上に本があります ('there's a book on the desk'), 部屋に猫がいます ('there's a cat in the room'). Pick the verb by asking: could it walk away on its own? If yes, います.",
+    "examples": [
+      { "text": "ここにコンビニがあります。", "romaji": "Koko ni konbini ga arimasu.", "translation": "There's a convenience store here." },
+      { "text": "あそこに犬がいます。", "romaji": "Asoko ni inu ga imasu.", "translation": "There's a dog over there." }
+    ],
+    "commonErrors": [
+      { "wrong": "部屋に猫があります", "right": "部屋に猫がいます", "note": "A cat is animate, so it takes います, never あります." }
+    ],
+    "drills": [
+      { "prompt": "テーブルの上に水が＿＿＿。 (There is water on the table.)", "answer": "あります" },
+      { "prompt": "公園に子供が＿＿＿。 (There are children in the park.)", "answer": "います" }
+    ],
+    "relatedVocabulary": ["vocab.aru", "vocab.iru", "vocab.koko", "vocab.asoko", "vocab.inu", "vocab.neko"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.te-form",
+    "title": "The て-form — the connector form",
+    "cefr": "A2",
+    "explanationMd": "The **て-form** is the single most useful conjugation to master — it's the gateway to requests, progressives, permission, and linking actions. It's built from the verb group: ichidan verbs drop る and add て (食べる→食べて, 見る→見て); godan verbs follow sound-based rules (飲む→飲んで, 書く→書いて, 話す→話して, 待つ→待って, 行く→行って is a special case). On its own the て-form chains actions in sequence — 起きて、朝ご飯を食べて、学校に行きます ('I get up, eat breakfast, and go to school'). Learn it now because every pattern below is built on it.",
+    "examples": [
+      { "text": "朝起きて、コーヒーを飲みます。", "reading": "あさおきて、コーヒーをのみます。", "romaji": "Asa okite, koohii o nomimasu.", "translation": "I get up in the morning and drink coffee." },
+      { "text": "本を読んで、寝ます。", "reading": "ほんをよんで、ねます。", "romaji": "Hon o yonde, nemasu.", "translation": "I read a book and go to sleep." }
+    ],
+    "commonErrors": [
+      { "wrong": "飲みて", "right": "飲んで", "note": "飲む is godan ending in む, which becomes んで — not just the ます-stem plus て." }
+    ],
+    "drills": [
+      { "prompt": "食べる → ＿＿＿ (て-form)", "answer": "食べて" },
+      { "prompt": "書く → ＿＿＿ (て-form)", "answer": "書いて" }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.te-form",
+        "title": "て-form across verb types",
+        "pattern": "{slot}",
+        "steps": [
+          { "prompt": "見る → ＿＿＿", "answer": "見て", "note": "ichidan: drop る, add て" },
+          { "prompt": "食べる → ＿＿＿", "answer": "食べて", "note": "ichidan: drop る, add て" },
+          { "prompt": "飲む → ＿＿＿", "answer": "飲んで", "note": "godan む/ぶ/ぬ → んで" },
+          { "prompt": "書く → ＿＿＿", "answer": "書いて", "note": "godan く → いて" },
+          { "prompt": "話す → ＿＿＿", "answer": "話して", "note": "godan す → して" },
+          { "prompt": "待つ → ＿＿＿", "answer": "待って", "note": "godan う/つ/る → って" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["vocab.taberu", "vocab.nomu", "vocab.yomu", "vocab.kaku", "vocab.okiru", "vocab.neru"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.te-imasu",
+    "title": "～ています — ongoing actions and states",
+    "cefr": "A2",
+    "explanationMd": "Attach **います** to the て-form for an action in progress or a continuing state: 食べています ('am eating'), 待っています ('am waiting'). It also expresses settled states from a change — 知っています ('I know', literally 'have come to know'), 住んでいます ('am living'), 結婚しています ('am married'). In casual speech the い often drops: 食べてる, 待ってる. Note the asymmetry with 知る: 'I know' is 知っています but 'I don't know' is the plain 知りません.",
+    "examples": [
+      { "text": "今、昼ご飯を食べています。", "reading": "いま、ひるごはんをたべています。", "romaji": "Ima, hirugohan o tabete imasu.", "translation": "I'm eating lunch right now." },
+      { "text": "東京に住んでいます。", "reading": "とうきょうにすんでいます。", "romaji": "Toukyou ni sunde imasu.", "translation": "I live in Tokyo." }
+    ],
+    "commonErrors": [
+      { "wrong": "私は田中さんを知ります", "right": "私は田中さんを知っています", "note": "'I know someone' is a continuing state, so it needs 知っています, not the plain 知ります." }
+    ],
+    "drills": [
+      { "prompt": "待つ → 今 ＿＿＿ (am waiting now)", "answer": "待っています" },
+      { "prompt": "する → 何を ＿＿＿か (what are you doing?)", "answer": "しています" }
+    ],
+    "relatedVocabulary": ["vocab.taberu", "vocab.matsu", "vocab.shiru", "vocab.suru", "vocab.hataraku"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.te-kudasai",
+    "title": "～てください — polite requests",
+    "cefr": "A2",
+    "explanationMd": "The て-form plus **ください** makes a polite request or instruction: 待ってください ('please wait'), 見てください ('please look'), 書いてください ('please write it'). It's the everyday 'please do X' — softer than a bare command, standard with strangers and in service situations. To ask someone *not* to do something you use the ない-form instead: 心配しないでください ('please don't worry').",
+    "examples": [
+      { "text": "ゆっくり話してください。", "reading": "ゆっくりはなしてください。", "romaji": "Yukkuri hanashite kudasai.", "translation": "Please speak slowly." },
+      { "text": "ここに名前を書いてください。", "reading": "ここになまえをかいてください。", "romaji": "Koko ni namae o kaite kudasai.", "translation": "Please write your name here." }
+    ],
+    "commonErrors": [
+      { "wrong": "待つください", "right": "待ってください", "note": "ください attaches to the て-form, not the dictionary form — 待つ must become 待って first." }
+    ],
+    "drills": [
+      { "prompt": "見る → ＿＿＿ (please look)", "answer": "見てください" },
+      { "prompt": "来る → ＿＿＿ (please come)", "answer": "来てください" }
+    ],
+    "relatedVocabulary": ["vocab.matsu", "vocab.kaku", "vocab.miru", "vocab.hanasu", "vocab.kuru"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.tai-form",
+    "title": "～たい — expressing what you want to do",
+    "cefr": "A2",
+    "explanationMd": "Swap ます for **たい** on a verb stem to say you want to do something: 食べます → 食べたい ('want to eat'), 行きます → 行きたい ('want to go'). The result behaves like an い-adjective — negative 食べたくない, past 食べたかった. The object can take either を or が (水が飲みたい / 水を飲みたい both occur). One cultural note: stating someone *else's* たい directly (彼は行きたいです) sounds presumptuous — for others you'd hedge with 行きたがっている or ～たいそうです.",
+    "examples": [
+      { "text": "日本に行きたいです。", "reading": "にほんにいきたいです。", "romaji": "Nihon ni ikitai desu.", "translation": "I want to go to Japan." },
+      { "text": "今日は何も食べたくないです。", "reading": "きょうはなにもたべたくないです。", "romaji": "Kyou wa nani mo tabetakunai desu.", "translation": "I don't want to eat anything today." }
+    ],
+    "commonErrors": [
+      { "wrong": "行きたいじゃない", "right": "行きたくない", "note": "たい inflects like an い-adjective, so its negative is たくない, not たいじゃない." }
+    ],
+    "drills": [
+      { "prompt": "飲む → ＿＿＿ (want to drink)", "answer": "飲みたい" },
+      { "prompt": "見る → ＿＿＿ (want to see)", "answer": "見たい" }
+    ],
+    "relatedVocabulary": ["vocab.taberu", "vocab.iku", "vocab.nomu", "vocab.miru"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.potential-dekiru",
+    "title": "できる and the potential — expressing 'can'",
+    "cefr": "A2",
+    "explanationMd": "**できる** means 'can do / is possible', and pairs with が for the thing you're able to do: 日本語ができます ('I can (do) Japanese'). With する-verbs it simply replaces する — 料理できます ('I can cook'). Full verbs also have a **potential form** ('be able to V'): 話す → 話せる ('can speak'), 食べる → 食べられる ('can eat'), 行く → 行ける ('can go'). Whatever you 'can' do takes が, not を: 漢字が読めます ('I can read kanji').",
+    "examples": [
+      { "text": "少し日本語ができます。", "reading": "すこしにほんごができます。", "romaji": "Sukoshi nihongo ga dekimasu.", "translation": "I can speak a little Japanese." },
+      { "text": "刺身が食べられますか。", "reading": "さしみがたべられますか。", "romaji": "Sashimi ga taberaremasu ka.", "translation": "Can you eat sashimi?" }
+    ],
+    "commonErrors": [
+      { "wrong": "日本語を できます", "right": "日本語が できます", "note": "The ability's target takes が with できる and potential forms, not を." }
+    ],
+    "drills": [
+      { "prompt": "話す → ＿＿＿ (can speak)", "answer": "話せる" },
+      { "prompt": "料理 ＿＿ できます (I can cook)", "answer": "が" }
+    ],
+    "relatedVocabulary": ["vocab.nihongo", "vocab.suru", "vocab.hanasu", "vocab.taberu", "vocab.ryouri"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.kara-because",
+    "title": "～から — giving a reason (because)",
+    "cefr": "A2",
+    "explanationMd": "**から** after a clause means 'because / so' — the reason comes first, then から, then the result: 忙しいから、行きません ('because I'm busy, I won't go'). It attaches to a full predicate (plain or polite form both work: 忙しいですから is more formal). A close cousin, **ので**, is softer and more polite, often preferred when giving excuses. Unlike English 'because', the reason clause always precedes the main point.",
+    "examples": [
+      { "text": "今日は忙しいから、また明日話しましょう。", "reading": "きょうはいそがしいから、またあしたはなしましょう。", "romaji": "Kyou wa isogashii kara, mata ashita hanashimashou.", "translation": "I'm busy today, so let's talk again tomorrow." },
+      { "text": "おいしいから、この店が好きです。", "reading": "おいしいから、このみせがすきです。", "romaji": "Oishii kara, kono mise ga suki desu.", "translation": "I like this shop because it's delicious." }
+    ],
+    "commonErrors": [
+      { "wrong": "行きません、忙しいから (reason after, as an afterthought)", "right": "忙しいから、行きません", "note": "In neutral Japanese the から-reason normally comes before the result clause." }
+    ],
+    "drills": [
+      { "prompt": "寒い＿＿、家にいます。 (Because it's cold, I'll stay home.)", "answer": "から" }
+    ],
+    "relatedVocabulary": ["vocab.isogashii", "vocab.iku", "vocab.oishii", "vocab.suki", "vocab.samui"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.ga-kedo-but",
+    "title": "～が and ～けど — 'but' within a sentence",
+    "cefr": "A2",
+    "explanationMd": "To join two clauses with a contrast, attach **が** (more formal) or **けど** (more casual) to the end of the first clause: このケーキは高いですが、おいしいです ('this cake is expensive, but it's delicious'). けど and its variants (けれど, けれども) mean the same with different politeness. Both can also just soften an opener rather than mark a hard contrast — すみませんが… ('excuse me, but…') eases into a request. Sentence-initial でも does the same job when starting a fresh sentence.",
+    "examples": [
+      { "text": "この店は高いですが、おいしいです。", "reading": "このみせはたかいですが、おいしいです。", "romaji": "Kono mise wa takai desu ga, oishii desu.", "translation": "This shop is expensive, but the food is good." },
+      { "text": "日本語は難しいけど、楽しいです。", "reading": "にほんごはむずかしいけど、たのしいです。", "romaji": "Nihongo wa muzukashii kedo, tanoshii desu.", "translation": "Japanese is hard, but it's fun." }
+    ],
+    "commonErrors": [
+      { "wrong": "高いです。でも、が、おいしいです。", "right": "高いですが、おいしいです。", "note": "が/けど attach to the end of the first clause; でも starts a new sentence. Don't stack them." }
+    ],
+    "drills": [
+      { "prompt": "高いです＿＿、買います。 (It's expensive, but I'll buy it.) — formal", "answer": "が" }
+    ],
+    "relatedVocabulary": ["vocab.takai", "vocab.oishii", "vocab.muzukashii", "vocab.tanoshii"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.comparatives",
+    "title": "より and のほうが — comparisons",
+    "cefr": "A2",
+    "explanationMd": "To compare two things, mark the 'lesser' one with **より** ('than') and the preferred/greater one with **のほうが** ('the ~ side is more'): 電車のほうがバスより速いです ('the train is faster than the bus'). Order is flexible since the particles do the work. To ask which of two, use **どちらのほうが**: コーヒーとお茶と、どちらのほうが好きですか ('between coffee and tea, which do you like more?').",
+    "examples": [
+      { "text": "電車のほうがバスより速いです。", "reading": "でんしゃのほうがバスよりはやいです。", "romaji": "Densha no hou ga basu yori hayai desu.", "translation": "The train is faster than the bus." },
+      { "text": "今日は昨日より寒いです。", "reading": "きょうはきのうよりさむいです。", "romaji": "Kyou wa kinou yori samui desu.", "translation": "Today is colder than yesterday." }
+    ],
+    "commonErrors": [
+      { "wrong": "バスは電車より速いですか、はい (mixing up which side より marks)", "right": "電車のほうが速いです", "note": "より marks the thing exceeded (the slower one); のほうが marks the winner. Swapping them reverses your meaning." }
+    ],
+    "drills": [
+      { "prompt": "犬＿＿猫のほうが好きです。 (I like cats more than dogs.)", "answer": "より" }
+    ],
+    "relatedVocabulary": ["vocab.densha", "vocab.basu", "vocab.hayai", "vocab.samui", "vocab.suki"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.ichiban-superlative",
+    "title": "一番 — the superlative (the most)",
+    "cefr": "A2",
+    "explanationMd": "Put **一番** ('number one / most') right before an adjective or 好き to make a superlative: 一番好きな食べ物 ('my most favorite food'), 一番高いです ('it's the most expensive'). To name the group you're choosing from, use **の中で** ('among'): 果物の中で、りんごが一番好きです ('among fruits, I like apples best'). No special adjective ending is needed — 一番 does all the work.",
+    "examples": [
+      { "text": "日本料理の中で、寿司が一番好きです。", "reading": "にほんりょうりのなかで、すしがいちばんすきです。", "romaji": "Nihon ryouri no naka de, sushi ga ichiban suki desu.", "translation": "Among Japanese dishes, I like sushi best." },
+      { "text": "この店が一番安いです。", "reading": "このみせがいちばんやすいです。", "romaji": "Kono mise ga ichiban yasui desu.", "translation": "This shop is the cheapest." }
+    ],
+    "commonErrors": [
+      { "wrong": "寿司が一番に好きです", "right": "寿司が一番好きです", "note": "一番 sits directly before the adjective/好き with no に — 一番好き, not 一番に好き." }
+    ],
+    "drills": [
+      { "prompt": "＿＿＿好きな色は青です。 (My most-liked color is blue.)", "answer": "一番" }
+    ],
+    "relatedVocabulary": ["vocab.ichiban", "vocab.suki", "vocab.tabemono", "vocab.sushi", "vocab.yasui"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.mashou",
+    "title": "～ましょう and ～ましょうか — 'let's' and 'shall I?'",
+    "cefr": "A2",
+    "explanationMd": "Swap ます for **ましょう** to suggest doing something together: 行きましょう ('let's go'), 一緒に食べましょう ('let's eat together'). Add **か** — **ましょうか** — to offer or check: 手伝いましょうか ('shall I help?'), 窓を開けましょうか ('shall I open the window?'). It's warm and inclusive, the standard way to propose a shared action or offer a hand.",
+    "examples": [
+      { "text": "一緒に昼ご飯を食べましょう。", "reading": "いっしょにひるごはんをたべましょう。", "romaji": "Issho ni hirugohan o tabemashou.", "translation": "Let's eat lunch together." },
+      { "text": "荷物を持ちましょうか。", "reading": "にもつをもちましょうか。", "romaji": "Nimotsu o mochimashou ka.", "translation": "Shall I carry your bags?" }
+    ],
+    "commonErrors": [
+      { "wrong": "行くましょう", "right": "行きましょう", "note": "ましょう replaces ます on the verb stem (行き-), so it's 行きましょう, not the dictionary form plus ましょう." }
+    ],
+    "drills": [
+      { "prompt": "飲む → 一緒に ＿＿＿ (let's drink together)", "answer": "飲みましょう" },
+      { "prompt": "手伝う → ＿＿＿か (shall I help?)", "answer": "手伝いましょう" }
+    ],
+    "relatedVocabulary": ["vocab.iku", "vocab.taberu", "vocab.issho-ni", "vocab.tetsudau"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.temo-ii",
+    "title": "～てもいいです — giving and asking permission",
+    "cefr": "A2",
+    "explanationMd": "The て-form plus **もいいです** means 'it's okay to ~ / you may ~': 写真を撮ってもいいです ('you may take photos'). As a question it politely asks permission: 入ってもいいですか ('may I come in?'), 見てもいいですか ('may I look?'). The natural refusal is **～てはいけません** ('you must not ~') or a softer ちょっと… trailing off. This pattern is everywhere in daily life — shops, temples, someone's home.",
+    "examples": [
+      { "text": "ここに座ってもいいですか。", "reading": "ここにすわってもいいですか。", "romaji": "Koko ni suwatte mo ii desu ka.", "translation": "May I sit here?" },
+      { "text": "この部屋に入ってもいいです。", "reading": "このへやにはいってもいいです。", "romaji": "Kono heya ni haitte mo ii desu.", "translation": "You may enter this room." }
+    ],
+    "commonErrors": [
+      { "wrong": "見るもいいですか", "right": "見てもいいですか", "note": "もいい attaches to the て-form (見て), not the dictionary form." }
+    ],
+    "drills": [
+      { "prompt": "入る → ＿＿＿もいいですか (may I enter?)", "answer": "入って" }
+    ],
+    "relatedVocabulary": ["vocab.miru", "vocab.hairu", "vocab.heya"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.to-omoimasu",
+    "title": "～と思います — stating opinions and thoughts",
+    "cefr": "A2",
+    "explanationMd": "To say 'I think (that)…', put the thought in **plain form**, add **と**, then **思います**: いいと思います ('I think it's good'), 明日は雨が降ると思います ('I think it'll rain tomorrow'). The と quotes the thought; note the clause before と stays plain, not polite (降る, not 降ります). This is the standard way to soften a statement into an opinion rather than a flat assertion — very common and very polite.",
+    "examples": [
+      { "text": "この映画は面白いと思います。", "reading": "このえいがはおもしろいとおもいます。", "romaji": "Kono eiga wa omoshiroi to omoimasu.", "translation": "I think this movie is interesting." },
+      { "text": "田中さんは来ないと思います。", "reading": "たなかさんはこないとおもいます。", "romaji": "Tanaka-san wa konai to omoimasu.", "translation": "I don't think Tanaka is coming." }
+    ],
+    "commonErrors": [
+      { "wrong": "面白いですと思います", "right": "面白いと思います", "note": "The clause before と goes in plain form — drop the です before と思います." }
+    ],
+    "drills": [
+      { "prompt": "いい → ＿＿＿と思います (I think it's good)", "answer": "いい" }
+    ],
+    "relatedVocabulary": ["vocab.omou", "vocab.ii", "vocab.omoshiroi", "vocab.eiga", "vocab.kuru"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.deshou",
+    "title": "～でしょう — probability and seeking agreement",
+    "cefr": "A2",
+    "explanationMd": "**でしょう** softens です into 'probably / likely': 明日は雨でしょう ('it'll probably rain tomorrow') — the standard register of weather forecasts. Often paired with たぶん for emphasis. Said with rising intonation, でしょう? instead invites agreement — 'right?': おいしいでしょう？ ('it's delicious, right?'). The casual equivalent is だろう. It attaches to plain forms and to nouns/adjectives directly (雨でしょう, 高いでしょう).",
+    "examples": [
+      { "text": "明日はたぶん晴れるでしょう。", "reading": "あしたはたぶんはれるでしょう。", "romaji": "Ashita wa tabun hareru deshou.", "translation": "It'll probably be sunny tomorrow." },
+      { "text": "この店、有名でしょう？", "reading": "このみせ、ゆうめいでしょう？", "romaji": "Kono mise, yuumei deshou?", "translation": "This shop is famous, right?" }
+    ],
+    "commonErrors": [
+      { "wrong": "雨ですでしょう", "right": "雨でしょう", "note": "でしょう already replaces です — don't stack them." }
+    ],
+    "drills": [
+      { "prompt": "明日は寒い＿＿＿。 (It'll probably be cold tomorrow.)", "answer": "でしょう" }
+    ],
+    "relatedVocabulary": ["vocab.ame", "vocab.tabun", "vocab.yuumei", "vocab.samui"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gram.adjective-adverbs",
+    "title": "Making adverbs — い→く and な→に",
+    "cefr": "A2",
+    "explanationMd": "Adjectives become adverbs (describing *how* an action is done) by a simple swap. **い-adjectives**: drop い, add **く** — 早い → 早く ('early/quickly'), 楽しい → 楽しく ('enjoyably'). **な-adjectives**: add **に** — 静か → 静かに ('quietly'), きれい → きれいに ('cleanly/neatly'). So 早く起きます is 'I get up early' and 静かに話します is 'I speak quietly'. The same 早く / 高く forms also appear in negatives (早くない) — it's one pattern doing double duty.",
+    "examples": [
+      { "text": "毎朝早く起きます。", "reading": "まいあさはやくおきます。", "romaji": "Maiasa hayaku okimasu.", "translation": "I get up early every morning." },
+      { "text": "きれいに書いてください。", "reading": "きれいにかいてください。", "romaji": "Kirei ni kaite kudasai.", "translation": "Please write it neatly." }
+    ],
+    "commonErrors": [
+      { "wrong": "早いに起きます", "right": "早く起きます", "note": "い-adjectives take く, not に — に is only for な-adjectives." }
+    ],
+    "drills": [
+      { "prompt": "早い → ＿＿＿ (adverb)", "answer": "早く" },
+      { "prompt": "静か → ＿＿＿ (adverb)", "answer": "静かに" }
+    ],
+    "relatedVocabulary": ["vocab.hayai", "vocab.kirei", "vocab.shizuka", "vocab.okiru", "vocab.kaku"]
+  }
+]

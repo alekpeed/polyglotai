@@ -1,0 +1,141 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "pron.yoon",
+    "grapheme": "きゃ・しゃ・ちゃ (small ゃ・ゅ・ょ)",
+    "ipa": "Cʲa / Cʲu / Cʲo",
+    "description": "A full-size kana from the い-row (き, し, ち, に, ひ, み, り, ぎ, じ, び, ぴ) followed by a small ゃ/ゅ/ょ fuses into a single one-mora sound: きゃ (kya), しゅ (shu), ちょ (cho). Crucially it counts as one beat, not two — 東京 (Tokyo) is とう-きょう, four morae, not five. The small kana is written noticeably smaller; a full-size や would make や its own separate mora.",
+    "minimalPairs": [
+      { "a": "びょういん", "b": "びよういん", "note": "byouin (hospital, びょ = one mora) vs. biyouin (beauty salon, びよ = two morae)." },
+      { "a": "きゃく", "b": "きやく", "note": "kyaku (guest, one initial mora) vs. kiyaku (rules, two morae) — the small ゃ collapses the beat." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.dakuten",
+    "grapheme": "゛ (dakuten voicing mark)",
+    "ipa": "voicing: k→g, s→z, t→d, h→b",
+    "description": "Two small strokes at a kana's top-right voice the consonant: か (ka) → が (ga), さ (sa) → ざ (za), た (ta) → だ (da), は (ha) → ば (ba). The vowel is unchanged; only the consonant switches from voiceless to voiced. This same mark is what turns しvoiced into じ and つ into づ. In compounds an initial sound often gains dakuten (rendaku): 手 (te) + 紙 (kami) → 手紙 (tegami).",
+    "minimalPairs": [
+      { "a": "かき", "b": "かぎ", "note": "kaki (persimmon) vs. kagi (key) — dakuten on the second kana." },
+      { "a": "てんき", "b": "でんき", "note": "tenki (weather) vs. denki (electricity) — voicing the first mora changes the word." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.handakuten",
+    "grapheme": "゜ (handakuten circle, は-row only)",
+    "ipa": "h → p",
+    "description": "A small circle at the top-right of a は-row kana turns h into p: は (ha) → ぱ (pa), ひ (hi) → ぴ (pi), ふ (fu) → ぷ (pu). It applies only to the は row — no other row takes it. You'll see it in loanwords (ペン pen, ピザ pizza) and after a small っ or ん, where p sounds are common (いっぱい ippai, 'full').",
+    "minimalPairs": [
+      { "a": "はん", "b": "ぱん", "note": "han (half) vs. pan (bread) — handakuten flips h to p." },
+      { "a": "びょう", "b": "ぴょう", "note": "byou vs. pyou — dakuten (voiced b) vs. handakuten (p) on the same base kana." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.moraic-n",
+    "grapheme": "ん (syllabic n)",
+    "ipa": "ɴ / m / ŋ / n",
+    "description": "ん is a full mora by itself — held for one beat — and its exact sound quietly assimilates to whatever follows. Before b/p/m it's an 'm' (しんぶん shinbun sounds like 'shimbun', こんばんは 'kombanwa'); before k/g it's 'ng' (げんき 'geng-ki'); before t/d/n it's a clean 'n'; at a word's end or before a vowel it's a nasal held in the back. You don't have to force these — they happen naturally if you give ん its full beat.",
+    "minimalPairs": [
+      { "a": "きんえん", "b": "きねん", "note": "kin'en (no smoking, ん + えん = 4 morae) vs. kinen (commemoration, 3 morae) — ん holds its own beat." },
+      { "a": "あんない", "b": "あない", "note": "annai (guidance) vs. anai — the ん adds a full mora of length." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.wa-particle",
+    "grapheme": "は read as 'wa' (topic particle)",
+    "ipa": "wa",
+    "description": "The kana は is normally 'ha', but when it's the topic-marking particle it's pronounced **wa**: 私は学生です is 'watashi WA gakusei desu', not 'ha'. This is a spelling relic — the sound shifted historically but the kana stayed. It only applies to the grammatical particle; は inside a word (はな, はし) keeps its 'ha' sound.",
+    "minimalPairs": [
+      { "a": "はは は (as in 母は…)", "b": "はは (母, the word)", "note": "In 母は (haha wa, 'as for mother'), the first two は are 'ha' (the word 母) and the third は is the particle 'wa'." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.e-particle",
+    "grapheme": "へ read as 'e' (direction particle)",
+    "ipa": "e",
+    "description": "The kana へ is normally 'he', but as the direction particle ('to/toward') it's pronounced **e**: 東京へ行きます is 'Toukyou E ikimasu'. Same historical spelling quirk as は→wa. Inside ordinary words (へや heya, 'room') it stays 'he' — only the particle shifts.",
+    "minimalPairs": [
+      { "a": "へや", "b": "うちへ", "note": "heya ('room', へ = 'he') vs. uchi e ('to home', へ = particle 'e')." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.o-particle",
+    "grapheme": "を read as 'o' (object particle)",
+    "ipa": "o",
+    "description": "を is used only as the direct-object particle and is pronounced exactly like お ('o'): 水を飲みます is 'mizu O nomimasu'. It never appears inside words — spotting を instantly tells you the preceding noun is the object. Some speakers give it a faint 'wo' in careful singing or emphasis, but in normal speech it's a plain 'o'.",
+    "minimalPairs": [
+      { "a": "お茶", "b": "を (particle)", "note": "Both sound 'o'; お is a word-building kana (お茶 ocha), を is exclusively the object particle." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.shi-chi-tsu",
+    "grapheme": "し・ち・つ",
+    "ipa": "ɕi / t͡ɕi / t͡sɯ",
+    "description": "Three kana that trip up learners who read romaji mechanically. し is 'shi' (never 'si'), ち is 'chi' (never 'ti'), and つ is 'tsu' — a t and s pronounced together, like the end of English 'cats', but at the start of a syllable. つ has no close English onset equivalent, so it needs practice: aim for 'ts' as one crisp sound, not 'tu' and not 'su'.",
+    "minimalPairs": [
+      { "a": "つ", "b": "す", "note": "tsu (with the t-onset) vs. su (plain s) — keep the initial t of つ audible." },
+      { "a": "ちず", "b": "しず", "note": "chizu (map) vs. shizu- (as in 静か) — ち 'chi' vs. し 'shi'." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.u-vowel",
+    "grapheme": "う (the Japanese u)",
+    "ipa": "ɯ",
+    "description": "Japanese う is not the rounded English 'oo' of 'food'. The lips stay relaxed and unrounded — closer to the 'u' in a flat, quick 'put' with no pucker. Rounding it hard is one of the most recognizable foreign-accent tells. Combined with vowel devoicing (す often near-silent in です, 好き), a natural う is lighter and shorter than English instinct suggests.",
+    "minimalPairs": [
+      { "a": "すき", "b": "スキー", "note": "suki ('like', short unrounded u, often devoiced to 'ski') vs. sukii ('skiing', long)." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.ou-long",
+    "grapheme": "おう・えい as long vowels",
+    "ipa": "oː / eː",
+    "description": "In most native words, おう is pronounced as a long 'oo' (ō), not 'o-u': ありがとう is 'arigatoː', 東京 'Tōkyō'. Likewise えい is often a long 'ee' (ē): 先生 sounds like 'sensē', 英語 'ēgo'. The romaji spellings 'ou'/'ei' preserve the kana, but the mouth doesn't glide to a separate u or i — it just holds the first vowel longer.",
+    "minimalPairs": [
+      { "a": "こうこう", "b": "ここ", "note": "koukou (high school, long vowels) vs. koko (here, short) — length is the whole contrast." },
+      { "a": "せんせい", "b": "せんせ", "note": "sensei held as 'sensē' vs. a clipped short version — the えい lengthens the final vowel." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.mora-timing",
+    "grapheme": "mora = one even beat",
+    "ipa": "isochronous morae",
+    "description": "Japanese is mora-timed, not stress-timed like English: every kana gets roughly equal length, like an even drumbeat. っ (small tsu), ん, and the second half of a long vowel each count as a full beat too. So 学校 (がっこう) is four even beats が-っ-こ-う, and りんご is three り-ん-ご. English speakers tend to crush unstressed syllables — resisting that and giving each mora equal time is what makes rhythm sound Japanese.",
+    "minimalPairs": [
+      { "a": "おばさん", "b": "おばあさん", "note": "obasan (3 morae, aunt) vs. obaasan (4 morae, grandmother) — the extra beat is a whole mora." },
+      { "a": "がっこう", "b": "がこう", "note": "gakkou (4 beats, with っ held) vs. gakou (3 beats) — the small っ is its own silent mora." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.katakana-choon",
+    "grapheme": "ー (katakana long-vowel dash)",
+    "ipa": "Vː",
+    "description": "In katakana, a long vowel is written with a simple horizontal bar ー rather than by doubling the kana: コーヒー (koohii, coffee), ラーメン (raamen), ビール (biiru). Each ー adds one full mora of length to the preceding vowel. Since most katakana words are loanwords, the ー often marks exactly where English had a long or stressed vowel — but Japanese realizes it as length, not stress.",
+    "minimalPairs": [
+      { "a": "ビル", "b": "ビール", "note": "biru (building) vs. biiru (beer) — the ー is the only difference and it changes the word." },
+      { "a": "カード", "b": "カド", "note": "kaado (card, long a) vs. kado (corner) — length via ー distinguishes them." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.katakana-foreign",
+    "grapheme": "ファ・ティ・ウィ (small-vowel katakana combos)",
+    "ipa": "fa / ti / wi",
+    "description": "To spell foreign sounds Japanese doesn't natively have, katakana pairs a base kana with a small vowel: フ + ァ → ファ (fa), テ + ィ → ティ (ti), ウ + ィ → ウィ (wi), ヴ for v-sounds. So ファミリー is 'famirii' (family) and パーティー is 'paatii' (party). These only appear in katakana loanwords — hiragana never uses them. Recognizing the small trailing vowel tells you to blend, not read two separate morae.",
+    "minimalPairs": [
+      { "a": "ファン", "b": "ハン", "note": "fan (ファ blends f+a) vs. han — the small ァ creates an 'fa' Japanese hiragana can't write." },
+      { "a": "ティー", "b": "チー", "note": "tii (tea, テ+small ィ = a true 'ti') vs. chii (チ is 'chi') — the combo avoids the default ち." }
+    ]
+  }
+]
