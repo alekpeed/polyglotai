@@ -38,7 +38,17 @@ function vocab(key: string, lemma: string): VocabularyItem {
 }
 
 function emptyPack(m: Manifest): LoadedPack {
-  return { manifest: m, vocabulary: [], grammar: [], realSpeech: [], dialogues: [], pronunciation: [], lessons: [], aiPrompts: [] };
+  return {
+    manifest: m,
+    vocabulary: [],
+    grammar: [],
+    realSpeech: [],
+    dialogues: [],
+    pronunciation: [],
+    lessons: [],
+    aiPrompts: [],
+    culture: [],
+  };
 }
 
 describe("importPack", () => {

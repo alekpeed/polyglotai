@@ -1,0 +1,184 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "gdlg.requesting-goshuin",
+    "scenario": "Requesting a goshuin at the amulet office",
+    "speakers": [
+      { "id": "miko", "name": "巫女", "role": "shrine staff" },
+      { "id": "you", "name": "You" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "すみません、御朱印をお願いします。", "reading": "すみません、ごしゅいんをおねがいします。", "romaji": "Sumimasen, goshuin o onegaishimasu." },
+      { "speakerId": "miko", "text": "御朱印帳をお預かりします。", "reading": "ごしゅいんちょうをおあずかりします。", "romaji": "Goshuinchō o oazukari shimasu." },
+      { "speakerId": "you", "text": "はい、お願いします。", "reading": "はい、おねがいします。", "romaji": "Hai, onegaishimasu." },
+      { "speakerId": "miko", "text": "初穂料は五百円です。", "reading": "はつほりょうはごひゃくえんです。", "romaji": "Hatsuhoryō wa gohyaku-en desu." },
+      { "speakerId": "you", "text": "はい、どうぞ。", "romaji": "Hai, dōzo." },
+      { "speakerId": "miko", "text": "お待たせしました。こちらです。", "reading": "おまたせしました。こちらです。", "romaji": "Omatase shimashita. Kochira desu." },
+      { "speakerId": "you", "text": "ありがとうございます。", "romaji": "Arigatō gozaimasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Excuse me, a goshuin, please." },
+      { "speakerId": "miko", "text": "I'll take your goshuin book." },
+      { "speakerId": "you", "text": "Yes, please." },
+      { "speakerId": "miko", "text": "The offering is 500 yen." },
+      { "speakerId": "you", "text": "Here you go." },
+      { "speakerId": "miko", "text": "Thank you for waiting. Here it is." },
+      { "speakerId": "you", "text": "Thank you very much." }
+    ],
+    "keyVocabulary": ["gvocab.goshuin-onegaishimasu", "gvocab.goshuincho", "gvocab.hatsuhoryou", "gvocab.juyosho"],
+    "grammarNotes": "お預かりします (\"I'll hold onto this for you\") is the standard humble phrase staff use when taking something from a customer temporarily — you'll hear it at shrines, temples, and shops alike."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gdlg.asking-price",
+    "scenario": "Asking the price before committing",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "priest", "name": "神主", "role": "shrine staff" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "この御朱印はいくらですか。", "reading": "このごしゅいんはいくらですか。", "romaji": "Kono goshuin wa ikura desu ka." },
+      { "speakerId": "priest", "text": "見開きで千円です。", "reading": "みひらきでせんえんです。", "romaji": "Mihiraki de sen-en desu." },
+      { "speakerId": "you", "text": "書き置きもありますか。", "reading": "かきおきもありますか。", "romaji": "Kakioki mo arimasu ka." },
+      { "speakerId": "priest", "text": "はい、書き置きは五百円です。", "reading": "はい、かきおきはごひゃくえんです。", "romaji": "Hai, kakioki wa gohyaku-en desu." },
+      { "speakerId": "you", "text": "では、直書きでお願いします。", "reading": "では、じかがきでおねがいします。", "romaji": "Dewa, jikagaki de onegaishimasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "How much is this goshuin?" },
+      { "speakerId": "priest", "text": "It's 1000 yen for the two-page one." },
+      { "speakerId": "you", "text": "Do you also have a pre-written one?" },
+      { "speakerId": "priest", "text": "Yes, the pre-written one is 500 yen." },
+      { "speakerId": "you", "text": "Then, written directly in my book, please." }
+    ],
+    "keyVocabulary": ["gvocab.ikura-desu-ka", "gvocab.mihiraki", "gvocab.kakioki", "gvocab.jikagaki"]
+  },
+  {
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "friend", "name": "友達", "role": "friend" }
+    ],
+    "schemaVersion": 1,
+    "key": "gdlg.purification-steps",
+    "scenario": "A friend walking you through the purification ritual",
+    "targetLevel": "A2",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "you", "text": "手水舎で何をしますか。", "reading": "てみずやでなにをしますか。", "romaji": "Temizuya de nani o shimasu ka." },
+      { "speakerId": "friend", "text": "まず、右手で柄杓を持って左手を洗う。", "reading": "まず、みぎてでひしゃくをもってひだりてをあらう。", "romaji": "Mazu, migite de hishaku o motte hidarite o arau." },
+      { "speakerId": "friend", "text": "次に、左手に持ち替えて右手を洗う。", "reading": "つぎに、ひだりてにもちかえてみぎてをあらう。", "romaji": "Tsugi ni, hidarite ni mochikaete migite o arau." },
+      { "speakerId": "friend", "text": "それから、右手に戻して口をすすぐ。", "reading": "それから、みぎてにもどしてくちをすすぐ。", "romaji": "Sorekara, migite ni modoshite kuchi o susugu." },
+      { "speakerId": "you", "text": "柄杓に直接口をつけてもいいですか。", "reading": "ひしゃくにちょくせつくちをつけてもいいですか。", "romaji": "Hishaku ni chokusetsu kuchi o tsuketemo ii desu ka." },
+      { "speakerId": "friend", "text": "だめです。手に水を受けてすすいでください。", "reading": "だめです。てにみずをうけてすすいでください。", "romaji": "Dame desu. Te ni mizu o ukete susuide kudasai." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "What do you do at the purification font?" },
+      { "speakerId": "friend", "text": "First, hold the ladle with your right hand and wash your left hand." },
+      { "speakerId": "friend", "text": "Next, switch it to your left hand and wash your right hand." },
+      { "speakerId": "friend", "text": "Then, switch it back to your right hand and rinse your mouth." },
+      { "speakerId": "you", "text": "Can I put the ladle directly to my mouth?" },
+      { "speakerId": "friend", "text": "No. Catch water in your hand and rinse with that instead." }
+    ],
+    "keyVocabulary": ["gvocab.temizuya", "gvocab.hishaku", "gvocab.te-o-arau", "gvocab.kuchi-o-susugu"],
+    "grammarNotes": "だめです is a blunt, friend-to-friend \"no, don't\" — fine here between friends, but you'd soften it (やめたほうがいいです, etc.) speaking to a stranger or elder."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gdlg.seasonal-design",
+    "scenario": "Asking about a limited-time goshuin design",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "miko", "name": "巫女", "role": "shrine staff" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "期間限定の御朱印はありますか。", "reading": "きかんげんていのごしゅいんはありますか。", "romaji": "Kikangentei no goshuin wa arimasu ka." },
+      { "speakerId": "miko", "text": "はい、今月は紅葉の御朱印があります。", "reading": "はい、こんげつはもみじのごしゅいんがあります。", "romaji": "Hai, kongetsu wa momiji no goshuin ga arimasu." },
+      { "speakerId": "you", "text": "きれいですね。それをお願いします。", "reading": "きれいですね。それをおねがいします。", "romaji": "Kirei desu ne. Sore o onegaishimasu." },
+      { "speakerId": "miko", "text": "こちらは書き置きのみになります。", "reading": "こちらはかきおきのみになります。", "romaji": "Kochira wa kakioki nomi ni narimasu." },
+      { "speakerId": "you", "text": "大丈夫です。", "reading": "だいじょうぶです。", "romaji": "Daijōbu desu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Do you have a limited-time goshuin?" },
+      { "speakerId": "miko", "text": "Yes, this month there's an autumn-leaves design." },
+      { "speakerId": "you", "text": "That's beautiful. I'll take that one, please." },
+      { "speakerId": "miko", "text": "This one is pre-written paper only." },
+      { "speakerId": "you", "text": "That's fine." }
+    ],
+    "keyVocabulary": ["gvocab.kikangentei", "gvocab.kakioki"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gdlg.asking-hours",
+    "scenario": "Asking about visiting hours before closing",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "staff", "name": "係員", "role": "staff" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "参拝時間は何時までですか。", "reading": "さんぱいじかんはなんじまでですか。", "romaji": "Sanpai jikan wa nanji made desu ka." },
+      { "speakerId": "staff", "text": "午後五時までです。", "reading": "ごごごじまでです。", "romaji": "Gogo goji made desu." },
+      { "speakerId": "you", "text": "授与所も同じ時間ですか。", "reading": "じゅよしょもおなじじかんですか。", "romaji": "Juyosho mo onaji jikan desu ka." },
+      { "speakerId": "staff", "text": "いいえ、授与所は四時半までです。", "reading": "いいえ、じゅよしょはよじはんまでです。", "romaji": "Iie, juyosho wa yoji-han made desu." },
+      { "speakerId": "you", "text": "分かりました。急ぎます。", "reading": "わかりました。いそぎます。", "romaji": "Wakarimashita. Isogimasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Until what time are visiting hours?" },
+      { "speakerId": "staff", "text": "Until 5 pm." },
+      { "speakerId": "you", "text": "Is the amulet office the same hours?" },
+      { "speakerId": "staff", "text": "No, the amulet office is until 4:30." },
+      { "speakerId": "you", "text": "Understood. I'll hurry." }
+    ],
+    "keyVocabulary": ["gvocab.sanpai-jikan", "gvocab.nanji-made-desu-ka", "gvocab.juyosho"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gdlg.photography-question",
+    "scenario": "Checking whether photography is allowed",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "priest", "name": "住職", "role": "temple staff" }
+    ],
+    "targetLevel": "A1",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "ここで写真を撮ってもいいですか。", "reading": "ここでしゃしんをとってもいいですか。", "romaji": "Koko de shashin o tottemo ii desu ka." },
+      { "speakerId": "priest", "text": "外は大丈夫ですが、本堂の中は写真撮影禁止です。", "reading": "そとはだいじょうぶですが、ほんどうのなかはしゃしんさつえいきんしです。", "romaji": "Soto wa daijōbu desu ga, hondō no naka wa shashin satsuei kinshi desu." },
+      { "speakerId": "you", "text": "分かりました。気をつけます。", "reading": "わかりました。きをつけます。", "romaji": "Wakarimashita. Ki o tsukemasu." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Can I take photos here?" },
+      { "speakerId": "priest", "text": "Outside is fine, but photography is prohibited inside the main hall." },
+      { "speakerId": "you", "text": "Understood. I'll be careful." }
+    ],
+    "keyVocabulary": ["gvocab.shashin-satsuei-kinshi"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gdlg.enmusubi-blessing",
+    "scenario": "Asking for a specific blessing at the amulet office",
+    "speakers": [
+      { "id": "you", "name": "You" },
+      { "id": "miko", "name": "巫女", "role": "shrine staff" }
+    ],
+    "targetLevel": "A2",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "you", "text": "縁結びのお守りはありますか。", "reading": "えんむすびのおまもりはありますか。", "romaji": "Enmusubi no omamori wa arimasu ka." },
+      { "speakerId": "miko", "text": "はい、こちらの御祭神は縁結びで有名です。", "reading": "はい、こちらのごさいじんはえんむすびでゆうめいです。", "romaji": "Hai, kochira no gosaijin wa enmusubi de yūmei desu." },
+      { "speakerId": "you", "text": "御利益がありますように。", "reading": "ごりやくがありますように。", "romaji": "Goriyaku ga arimasu yō ni." }
+    ],
+    "translation": [
+      { "speakerId": "you", "text": "Do you have a relationship-luck charm?" },
+      { "speakerId": "miko", "text": "Yes, the deity enshrined here is known for that." },
+      { "speakerId": "you", "text": "I hope it brings a blessing." }
+    ],
+    "keyVocabulary": ["gvocab.enmusubi", "gvocab.gosaijin", "gvocab.goriyaku"]
+  }
+]

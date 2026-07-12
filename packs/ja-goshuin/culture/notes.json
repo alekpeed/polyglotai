@@ -1,0 +1,51 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "gculture.what-is-goshuin",
+    "title": "What is a goshuin, actually?",
+    "bodyMd": "A goshuin (御朱印) is proof that you visited a shrine or temple and paid your respects — but calling it a \"stamp\" undersells it. Each one is hand-lettered in ink by a priest or shrine maiden on the spot, then stamped with the site's red seal, so no two are quite identical even at the same location.\n\nThey started centuries ago as receipts for hand-copying sutras and leaving them as offerings. Today most visitors skip the sutra-copying and simply pay a small fee (初穂料 at shrines, 拝観料 at some temples) for the goshuin itself — but it's still treated as a small act of devotion, not a purchase.",
+    "tags": ["history", "essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gculture.purification-steps",
+    "title": "The purification ritual, step by step",
+    "bodyMd": "Before approaching the main hall, stop at the 手水舎 (temizuya) and purify yourself with water:\n\n1. Take the ladle in your right hand, fill it, and pour water over your left hand.\n2. Switch the ladle to your left hand and pour water over your right hand.\n3. Switch back to your right hand, pour a little water into your cupped left palm, and rinse your mouth with it — never drink directly from the ladle.\n4. Rinse your left hand once more, then tip the ladle upright so the remaining water runs down the handle to rinse it for the next person.\n\nIt looks intimidating written out, but it takes about ten seconds once you've done it once. Nobody expects a visitor to get it perfect — going through the motions respectfully is what matters.",
+    "tags": ["ritual", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gculture.goshuincho-etiquette",
+    "title": "Treat your goshuinchō like a keepsake, not a notebook",
+    "bodyMd": "A 御朱印帳 is sold specifically for this purpose — accordion-folded, often with a cloth or wood cover, and usually available for purchase at the very first shrine or temple you visit. Bringing a regular notebook and asking for a goshuin inside it will usually be politely declined.\n\nSome goshuinchō are sold pre-dedicated to one shrine (their crest is on the cover) and are considered impolite to fill with goshuin from other shrines — ask if you're unsure, or buy a plain one to be safe. It's also common, though not universal, for shrines and temples to keep separate books: a Shinto shrine may be reluctant to write in a book that already has Buddhist temple stamps in it, and vice versa.",
+    "tags": ["etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gculture.how-much-to-offer",
+    "title": "How much to offer — and why 5 yen",
+    "bodyMd": "There's no fixed price for the 賽銭 (offering) you drop in the box before praying — any coin is acceptable. But the 5-yen coin (五円, go-en) is a popular choice for a simple reason: it's a homophone for 御縁 (go-en), meaning \"a good connection\" or \"fated bond.\" Dropping one in is a small pun-wish for good relationships or good fortune ahead.\n\nThe goshuin itself is a separate, fixed fee — typically 300–500 yen, occasionally more for a special two-page or full-color design — and isn't usually up for negotiation.",
+    "tags": ["money", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gculture.torii-etiquette",
+    "title": "Walking through a torii gate",
+    "bodyMd": "The torii marks the border between the ordinary world and the shrine grounds. Convention holds that the center of the path just beyond it — the 正中 (seichū) — is reserved for the kami to pass, so visitors walk slightly to one side rather than straight down the middle.\n\nA small bow before passing under the torii is common but not obligatory for a casual visit; it's more often seen at quieter, less touristy shrines. Nobody will stop you if you skip it, but doing it is a small, appreciated gesture.",
+    "tags": ["ritual", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gculture.shrine-vs-temple",
+    "title": "Shrine or temple — how to tell, and why it matters",
+    "bodyMd": "神社 (shrines) are Shinto, dedicated to kami — spirits tied to nature, ancestors, or specific concepts like good harvests. 寺 (temples) are Buddhist, dedicated to Buddhas and bodhisattvas. Japan blended the two for most of its history, so many sites still sit close together or share a compound, but they're prayed at differently.\n\nA quick tell: a torii gate almost always means a shrine. A temple usually has a more elaborate wooden gate (山門) with guardian statues, and often a pagoda or incense burner out front — you'll see people wafting the incense smoke over themselves, a Buddhist custom with no shrine equivalent. The two-bow-two-clap-one-bow sequence is Shinto only; at a temple, you simply bring your palms together silently.",
+    "tags": ["essentials"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gculture.photography-rules",
+    "title": "When to put the camera away",
+    "bodyMd": "Grounds and gardens are almost always fair game for photos. The main hall's interior, treasure rooms, and any 御開帳 (special unveiling of a normally hidden statue) are the most common places photography is banned outright — look for 写真撮影禁止 signage, or simply ask before you shoot if nothing is posted.\n\nDuring an active prayer or ritual, even where photos are technically allowed, it's considered poor form to point a camera at someone mid-prayer. Waiting a few seconds for them to finish costs nothing and is always appreciated.",
+    "tags": ["etiquette", "practical"]
+  }
+]

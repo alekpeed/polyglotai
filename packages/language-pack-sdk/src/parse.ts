@@ -1,5 +1,6 @@
 import {
   AiPromptTemplateSchema,
+  CultureNoteSchema,
   DialogueSchema,
   GrammarItemSchema,
   LessonSchema,
@@ -8,6 +9,7 @@ import {
   RealSpeechItemSchema,
   VocabularyItemSchema,
   type AiPromptTemplate,
+  type CultureNote,
   type Dialogue,
   type GrammarItem,
   type Lesson,
@@ -35,6 +37,9 @@ export interface ParsedPackData {
   /** Pack-authored AI prompt templates (spec §11). Kept in memory, not imported into the DB —
    * the orchestrator reads them straight off the loaded pack. */
   aiPrompts: AiPromptTemplate[];
+  /** Freeform cultural/etiquette notes. Reference reading, not SRS content — kept in memory and
+   * rendered straight off the loaded pack, same as aiPrompts, never imported into the DB. */
+  culture: CultureNote[];
 }
 
 export interface ParseResult {
@@ -77,6 +82,7 @@ export async function parsePack(reader: PackFileReader): Promise<ParseResult> {
     pronunciation: [],
     lessons: [],
     aiPrompts: [],
+    culture: [],
   };
 
   const loadCategory = async <T>(
@@ -114,6 +120,7 @@ export async function parsePack(reader: PackFileReader): Promise<ParseResult> {
   await loadCategory(contents.lessons, LessonSchema, data.lessons);
   await loadCategory(contents.assessments, LessonSchema, data.lessons);
   await loadCategory(contents.aiPrompts, AiPromptTemplateSchema, data.aiPrompts);
+  await loadCategory(contents.culture, CultureNoteSchema, data.culture);
 
   return { data, errors };
 }
@@ -136,6 +143,7 @@ export function semanticErrors(data: ParsedPackData): string[] {
   checkDuplicates(data.pronunciation, "pronunciation");
   checkDuplicates(data.lessons, "lesson");
   checkDuplicates(data.aiPrompts, "ai-prompt");
+  checkDuplicates(data.culture, "culture");
 
   const vocabKeys = new Set(data.vocabulary.map((v) => v.key));
   const dialogueKeys = new Set(data.dialogues.map((d) => d.key));

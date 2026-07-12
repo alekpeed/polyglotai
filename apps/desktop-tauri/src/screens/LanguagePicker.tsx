@@ -45,7 +45,16 @@ export function LanguagePicker({ existingProfiles, onContinue, onStartNew }: Pro
   }
 
   const startedPackIds = new Set(existingProfiles.map((p) => p.activePackId).filter((id): id is string => !!id));
-  const newPackIds = listBundledPackIds().filter((id) => !startedPackIds.has(id));
+  // Full languages first, then their micro-packs grouped alongside (by basePack) rather than
+  // scattered — a goshuin-seeker card reads as "part of Japanese", not an unrelated tile.
+  const newPackIds = listBundledPackIds()
+    .filter((id) => !startedPackIds.has(id))
+    .sort((a, b) => {
+      const baseA = manifests[a]?.basePack ?? a;
+      const baseB = manifests[b]?.basePack ?? b;
+      if (baseA !== baseB) return baseA.localeCompare(baseB);
+      return (manifests[a]?.basePack ? 1 : 0) - (manifests[b]?.basePack ? 1 : 0);
+    });
 
   return (
     <div className="onboard-shell">
@@ -93,10 +102,17 @@ export function LanguagePicker({ existingProfiles, onContinue, onStartNew }: Pro
               <div className="lang-picker-list">
                 {newPackIds.map((id) => {
                   const manifest = manifests[id];
+                  const baseId = manifest?.basePack;
+                  const baseName = baseId ? (manifests[baseId]?.name ?? baseId) : null;
                   return (
-                    <button key={id} type="button" className="lang-picker-card new" onClick={() => onStartNew(id)}>
+                    <button
+                      key={id}
+                      type="button"
+                      className={baseId ? "lang-picker-card new micro" : "lang-picker-card new"}
+                      onClick={() => onStartNew(id)}
+                    >
                       <span className="name">{manifest?.name ?? id}</span>
-                      <span className="sub">{manifest?.languageCode ?? ""}</span>
+                      <span className="sub">{baseName ? `Micro-pack · part of ${baseName}` : manifest?.languageCode ?? ""}</span>
                     </button>
                   );
                 })}

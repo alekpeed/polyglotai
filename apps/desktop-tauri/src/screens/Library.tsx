@@ -9,13 +9,15 @@ import {
   type Repos,
   type VocabularyEntry,
 } from "@polyglotai/core-learning";
+import type { LoadedPack } from "@polyglotai/language-pack-sdk";
 import type { LearnerProfile, Severity } from "@polyglotai/shared-types";
 
-type Tab = "vocabulary" | "grammar" | "slang";
+type Tab = "vocabulary" | "grammar" | "slang" | "culture";
 
 interface Props {
   repos: Repos;
   profile: LearnerProfile;
+  pack: LoadedPack;
   onDone: () => void;
 }
 
@@ -41,7 +43,7 @@ function HeatBar({ severity }: { severity: Severity }) {
   );
 }
 
-export function Library({ repos, profile, onDone }: Props) {
+export function Library({ repos, profile, pack, onDone }: Props) {
   const [tab, setTab] = useState<Tab>("vocabulary");
   const [data, setData] = useState<Data | null>(null);
   const packId = profile.activePackId;
@@ -80,6 +82,11 @@ export function Library({ repos, profile, onDone }: Props) {
         {data.slangEnabled && (
           <button type="button" className={tab === "slang" ? "active" : ""} onClick={() => setTab("slang")}>
             Slang & Register <span className="mono">{data.realSpeech.length}</span>
+          </button>
+        )}
+        {pack.culture.length > 0 && (
+          <button type="button" className={tab === "culture" ? "active" : ""} onClick={() => setTab("culture")}>
+            Culture <span className="mono">{pack.culture.length}</span>
           </button>
         )}
       </nav>
@@ -147,6 +154,28 @@ export function Library({ repos, profile, onDone }: Props) {
             ))}
           </div>
         </>
+      )}
+
+      {tab === "culture" && (
+        <div className="culture-list">
+          {pack.culture.map((note) => (
+            <article key={note.key} className="culture-note">
+              <h3>{note.title}</h3>
+              {note.bodyMd.split(/\n\n+/).map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+              {note.tags.length > 0 && (
+                <div className="culture-tags">
+                  {note.tags.map((t) => (
+                    <span key={t} className="register-chip">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </article>
+          ))}
+        </div>
       )}
 
       <button type="button" className="link" onClick={onDone}>

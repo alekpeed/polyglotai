@@ -62,6 +62,7 @@ function pack(): LoadedPack {
     pronunciation: [],
     lessons: [],
     aiPrompts: [],
+    culture: [],
   };
 }
 

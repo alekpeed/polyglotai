@@ -30,7 +30,17 @@ function seedPack(): LoadedPack {
     tags: [],
     examples: [],
   }));
-  return { manifest, vocabulary: vocab, grammar: [], realSpeech: [], dialogues: [], pronunciation: [], lessons: [], aiPrompts: [] };
+  return {
+    manifest,
+    vocabulary: vocab,
+    grammar: [],
+    realSpeech: [],
+    dialogues: [],
+    pronunciation: [],
+    lessons: [],
+    aiPrompts: [],
+    culture: [],
+  };
 }
 
 describe("runOnboarding", () => {

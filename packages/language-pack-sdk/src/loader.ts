@@ -25,10 +25,12 @@ export async function loadPack(reader: PackFileReader): Promise<LoadedPack> {
 }
 
 /**
- * Resolves pack inheritance (spec §9 regional variants): child items override base items by
- * `key`, new child keys extend. The merged pack carries the child's manifest. Base-pack file
- * resolution (reading a sibling pack directory) is wired later; this pure merge is what the
- * loader will call once a base pack is itself loaded.
+ * Resolves pack inheritance (spec §9 regional variants; also how a "micro-pack" — e.g. a
+ * situational/cultural add-on scoped to one interest area — inherits its base language's
+ * grammar/pronunciation without redefining them): child items override base items by `key`,
+ * new child keys extend. The merged pack carries the child's manifest. Base and child are each
+ * independently loaded (and independently valid) before this pure merge runs — the app-side
+ * caller (bootstrap.ts's loadPackForId) resolves `manifest.basePack` and calls this.
  */
 export function mergePacks(base: LoadedPack, child: LoadedPack): LoadedPack {
   const mergeByKey = <T extends { key: string }>(baseItems: T[], childItems: T[]): T[] => {
@@ -47,5 +49,6 @@ export function mergePacks(base: LoadedPack, child: LoadedPack): LoadedPack {
     pronunciation: mergeByKey(base.pronunciation, child.pronunciation),
     lessons: mergeByKey(base.lessons, child.lessons),
     aiPrompts: mergeByKey(base.aiPrompts, child.aiPrompts),
+    culture: mergeByKey(base.culture, child.culture),
   };
 }

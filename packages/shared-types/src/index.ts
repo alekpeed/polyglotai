@@ -8,5 +8,6 @@ export * from "./content/realSpeech.js";
 export * from "./content/dialogue.js";
 export * from "./content/pronunciation.js";
 export * from "./content/lesson.js";
+export * from "./content/culture.js";
 export * from "./content/aiPrompt.js";
 export * from "./pack/manifest.js";

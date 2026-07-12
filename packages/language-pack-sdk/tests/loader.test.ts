@@ -47,6 +47,7 @@ describe("mergePacks", () => {
       pronunciation: [],
       lessons: [],
       aiPrompts: [],
+      culture: [],
     };
     const base: LoadedPack = {
       ...empty,

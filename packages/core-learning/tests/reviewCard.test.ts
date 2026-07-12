@@ -39,7 +39,17 @@ function pack(): LoadedPack {
       examples: [],
     },
   ];
-  return { manifest, vocabulary: vocab, grammar: [], realSpeech, dialogues: [], pronunciation: [], lessons: [], aiPrompts: [] };
+  return {
+    manifest,
+    vocabulary: vocab,
+    grammar: [],
+    realSpeech,
+    dialogues: [],
+    pronunciation: [],
+    lessons: [],
+    aiPrompts: [],
+    culture: [],
+  };
 }
 
 describe("loadReviewCard", () => {

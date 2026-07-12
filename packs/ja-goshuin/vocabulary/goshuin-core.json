@@ -1,0 +1,520 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.jinja",
+    "entryType": "word",
+    "lemma": "神社",
+    "reading": "じんじゃ",
+    "romaji": "jinja",
+    "translation": "Shinto shrine",
+    "tags": ["shrine"],
+    "examples": [
+      { "text": "近くに神社があります。", "reading": "ちかくにじんじゃがあります。", "romaji": "Chikaku ni jinja ga arimasu.", "translation": "There's a shrine nearby." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.tera",
+    "entryType": "word",
+    "lemma": "寺",
+    "reading": "てら",
+    "romaji": "tera",
+    "translation": "Buddhist temple",
+    "naturalMeaning": "Often お寺 (o-tera) in conversation — shrines (神社) and temples (寺) are visited and treated differently, see the culture notes.",
+    "tags": ["temple"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.goshuin",
+    "entryType": "word",
+    "lemma": "御朱印",
+    "reading": "ごしゅいん",
+    "romaji": "goshuin",
+    "translation": "shrine/temple stamp",
+    "naturalMeaning": "A hand-stamped, hand-lettered seal proving a visit — not a souvenir stamp, closer to a small piece of calligraphy done just for you.",
+    "tags": ["shrine", "temple", "core"],
+    "examples": [
+      { "text": "御朱印をいただきました。", "reading": "ごしゅいんをいただきました。", "romaji": "Goshuin o itadakimashita.", "translation": "I received a goshuin." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.goshuincho",
+    "entryType": "word",
+    "lemma": "御朱印帳",
+    "reading": "ごしゅいんちょう",
+    "romaji": "goshuinchō",
+    "translation": "goshuin stamp book",
+    "naturalMeaning": "An accordion-fold book made specifically for goshuin — using an ordinary notebook is considered disrespectful.",
+    "tags": ["shrine", "temple", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.torii",
+    "entryType": "word",
+    "lemma": "鳥居",
+    "reading": "とりい",
+    "romaji": "torii",
+    "translation": "shrine gate",
+    "naturalMeaning": "Marks the boundary into sacred ground — the center of the path just past it is said to be for the kami, not visitors.",
+    "tags": ["shrine"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.sandou",
+    "entryType": "word",
+    "lemma": "参道",
+    "reading": "さんどう",
+    "romaji": "sandō",
+    "translation": "approach path (to a shrine/temple)",
+    "tags": ["shrine", "temple"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.temizuya",
+    "entryType": "word",
+    "lemma": "手水舎",
+    "reading": "てみずや",
+    "romaji": "temizuya",
+    "translation": "purification font",
+    "naturalMeaning": "The water basin near the entrance where you rinse your hands and mouth before approaching — see the culture notes for the exact steps.",
+    "tags": ["shrine", "temple", "ritual"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.hishaku",
+    "entryType": "word",
+    "lemma": "柄杓",
+    "reading": "ひしゃく",
+    "romaji": "hishaku",
+    "translation": "ladle (for purification water)",
+    "tags": ["ritual"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.omamori",
+    "entryType": "word",
+    "lemma": "お守り",
+    "reading": "おまもり",
+    "romaji": "omamori",
+    "translation": "protective charm",
+    "naturalMeaning": "A small cloth pouch sold to protect against a specific thing — traffic safety, exams, health. Opening one is considered bad luck.",
+    "tags": ["shrine", "temple"],
+    "examples": [
+      { "text": "交通安全のお守りをください。", "reading": "こうつうあんぜんのおまもりをください。", "romaji": "Kōtsū anzen no omamori o kudasai.", "translation": "A traffic-safety charm, please." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.ema",
+    "entryType": "word",
+    "lemma": "絵馬",
+    "reading": "えま",
+    "romaji": "ema",
+    "translation": "wooden wish plaque",
+    "naturalMeaning": "You write a wish on the back and hang it on a rack for the kami to see — named for the horse (馬) originally painted on them.",
+    "tags": ["shrine"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.omikuji",
+    "entryType": "word",
+    "lemma": "おみくじ",
+    "romaji": "omikuji",
+    "translation": "paper fortune slip",
+    "naturalMeaning": "A bad fortune (凶) is traditionally tied to a rack or tree branch on-site rather than taken home, to leave the bad luck behind.",
+    "tags": ["shrine", "temple"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.saisen",
+    "entryType": "word",
+    "lemma": "賽銭",
+    "reading": "さいせん",
+    "romaji": "saisen",
+    "translation": "offering money",
+    "tags": ["ritual"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.saisenbako",
+    "entryType": "word",
+    "lemma": "賽銭箱",
+    "reading": "さいせんばこ",
+    "romaji": "saisenbako",
+    "translation": "offering box",
+    "tags": ["ritual"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.haiden",
+    "entryType": "word",
+    "lemma": "拝殿",
+    "reading": "はいでん",
+    "romaji": "haiden",
+    "translation": "worship hall (where you pray)",
+    "tags": ["shrine"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.honden",
+    "entryType": "word",
+    "lemma": "本殿",
+    "reading": "ほんでん",
+    "romaji": "honden",
+    "translation": "main sanctuary (where the kami resides)",
+    "naturalMeaning": "Usually off-limits to visitors — you pray at the 拝殿 in front of it, not inside it.",
+    "tags": ["shrine"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.kannushi",
+    "entryType": "word",
+    "lemma": "神主",
+    "reading": "かんぬし",
+    "romaji": "kannushi",
+    "translation": "Shinto priest",
+    "tags": ["people"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.miko",
+    "entryType": "word",
+    "lemma": "巫女",
+    "reading": "みこ",
+    "romaji": "miko",
+    "translation": "shrine maiden",
+    "naturalMeaning": "Often the one who hands you your goshuin at the 授与所 — recognizable by the red hakama and white robe.",
+    "tags": ["people"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.juushoku",
+    "entryType": "word",
+    "lemma": "住職",
+    "reading": "じゅうしょく",
+    "romaji": "jūshoku",
+    "translation": "head priest (of a temple)",
+    "tags": ["people"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.omairi",
+    "entryType": "word",
+    "lemma": "お参り",
+    "reading": "おまいり",
+    "romaji": "omairi",
+    "translation": "a visit to worship",
+    "tags": ["ritual", "core"],
+    "examples": [
+      { "text": "毎年お正月にお参りします。", "reading": "まいとしおしょうがつにおまいりします。", "romaji": "Maitoshi oshōgatsu ni omairi shimasu.", "translation": "I visit to worship every New Year." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.sanpai",
+    "entryType": "word",
+    "lemma": "参拝",
+    "reading": "さんぱい",
+    "romaji": "sanpai",
+    "translation": "worship visit",
+    "naturalMeaning": "More formal-sounding than お参り; you'll see 参拝時間 (visiting hours) on signage.",
+    "tags": ["ritual"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.nirei-nihakushu-ichirei",
+    "entryType": "phrase",
+    "lemma": "二礼二拍手一礼",
+    "reading": "にれいにはくしゅいちれい",
+    "romaji": "nirei-nihakushu-ichirei",
+    "translation": "two bows, two claps, one bow",
+    "naturalMeaning": "The standard Shinto prayer sequence at most shrines — bow twice, clap twice, make your wish silently, bow once more.",
+    "tags": ["ritual", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.te-o-arau",
+    "entryType": "phrase",
+    "lemma": "手を洗う",
+    "reading": "てをあらう",
+    "romaji": "te o arau",
+    "translation": "to wash one's hands",
+    "tags": ["ritual"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.kuchi-o-susugu",
+    "entryType": "phrase",
+    "lemma": "口をすすぐ",
+    "reading": "くちをすすぐ",
+    "romaji": "kuchi o susugu",
+    "translation": "to rinse one's mouth",
+    "tags": ["ritual"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.hatsuhoryou",
+    "entryType": "word",
+    "lemma": "初穂料",
+    "reading": "はつほりょう",
+    "romaji": "hatsuhoryō",
+    "translation": "shrine offering fee (for a blessing, charm, or goshuin)",
+    "tags": ["money"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.haikanryou",
+    "entryType": "word",
+    "lemma": "拝観料",
+    "reading": "はいかんりょう",
+    "romaji": "haikanryō",
+    "translation": "temple admission fee",
+    "tags": ["money"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.gohonzon",
+    "entryType": "word",
+    "lemma": "御本尊",
+    "reading": "ごほんぞん",
+    "romaji": "gohonzon",
+    "translation": "principal image (a temple's central Buddha/bodhisattva statue)",
+    "tags": ["temple"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.gosaijin",
+    "entryType": "word",
+    "lemma": "御祭神",
+    "reading": "ごさいじん",
+    "romaji": "gosaijin",
+    "translation": "the enshrined deity (of a shrine)",
+    "tags": ["shrine"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.juyosho",
+    "entryType": "word",
+    "lemma": "授与所",
+    "reading": "じゅよしょ",
+    "romaji": "juyosho",
+    "translation": "amulet office",
+    "naturalMeaning": "The counter or window where goshuin, omamori, and ema are handed out — usually near the entrance or main hall.",
+    "tags": ["shrine", "temple", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.kakioki",
+    "entryType": "word",
+    "lemma": "書き置き",
+    "reading": "かきおき",
+    "romaji": "kakioki",
+    "translation": "pre-written goshuin paper",
+    "naturalMeaning": "A goshuin written in advance on loose paper for you to glue into your book yourself — common when a shrine is busy or unstaffed.",
+    "tags": ["shrine", "temple"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.jikagaki",
+    "entryType": "word",
+    "lemma": "直書き",
+    "reading": "じかがき",
+    "romaji": "jikagaki",
+    "translation": "written directly in your book",
+    "naturalMeaning": "The traditional way — handed your open goshuinchō, the priest or miko writes and stamps it on the spot.",
+    "tags": ["shrine", "temple"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.kikangentei",
+    "entryType": "word",
+    "lemma": "期間限定",
+    "reading": "きかんげんてい",
+    "romaji": "kikangentei",
+    "translation": "limited-time (e.g. a seasonal goshuin design)",
+    "tags": ["shrine", "temple"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.mihiraki",
+    "entryType": "word",
+    "lemma": "見開き",
+    "reading": "みひらき",
+    "romaji": "mihiraki",
+    "translation": "two-page spread (a goshuin drawn across both facing pages)",
+    "tags": ["shrine", "temple"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.retsu-ni-narabu",
+    "entryType": "phrase",
+    "lemma": "列に並ぶ",
+    "reading": "れつにならぶ",
+    "romaji": "retsu ni narabu",
+    "translation": "to line up / queue",
+    "tags": ["practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.sanpai-jikan",
+    "entryType": "word",
+    "lemma": "参拝時間",
+    "reading": "さんぱいじかん",
+    "romaji": "sanpai jikan",
+    "translation": "visiting hours",
+    "tags": ["practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.goshuin-onegaishimasu",
+    "entryType": "phrase",
+    "lemma": "御朱印をお願いします",
+    "reading": "ごしゅいんをおねがいします",
+    "romaji": "Goshuin o onegaishimasu.",
+    "translation": "A goshuin, please.",
+    "naturalMeaning": "The standard line for requesting one at the 授与所 — said while handing over your open goshuinchō.",
+    "tags": ["core", "phrase"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.ikura-desu-ka",
+    "entryType": "phrase",
+    "lemma": "いくらですか",
+    "romaji": "Ikura desu ka.",
+    "translation": "How much is it?",
+    "tags": ["phrase", "money"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.nanji-made-desu-ka",
+    "entryType": "phrase",
+    "lemma": "何時までですか",
+    "reading": "なんじまでですか",
+    "romaji": "Nanji made desu ka.",
+    "translation": "Until what time (is it open)?",
+    "tags": ["phrase", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.doko-desu-ka",
+    "entryType": "phrase",
+    "lemma": "どこですか",
+    "romaji": "Doko desu ka.",
+    "translation": "Where is it?",
+    "tags": ["phrase", "practical"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.shashin-satsuei-kinshi",
+    "entryType": "phrase",
+    "lemma": "写真撮影禁止",
+    "reading": "しゃしんさつえいきんし",
+    "romaji": "shashin satsuei kinshi",
+    "translation": "photography prohibited",
+    "naturalMeaning": "Common signage inside main halls and treasure rooms — always check for this before raising a camera or phone.",
+    "tags": ["practical", "etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.seishuku-ni",
+    "entryType": "phrase",
+    "lemma": "静粛に",
+    "reading": "せいしゅくに",
+    "romaji": "seishuku ni",
+    "translation": "please be quiet",
+    "tags": ["etiquette"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.gokaichou",
+    "entryType": "word",
+    "lemma": "御開帳",
+    "reading": "ごかいちょう",
+    "romaji": "gokaichō",
+    "translation": "special unveiling (of a normally hidden Buddha statue)",
+    "tags": ["temple"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.enmusubi",
+    "entryType": "word",
+    "lemma": "縁結び",
+    "reading": "えんむすび",
+    "romaji": "enmusubi",
+    "translation": "matchmaking / relationship-luck blessing",
+    "tags": ["blessing"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.yakuyoke",
+    "entryType": "word",
+    "lemma": "厄除け",
+    "reading": "やくよけ",
+    "romaji": "yakuyoke",
+    "translation": "warding off bad luck",
+    "tags": ["blessing"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.shoubai-hanjou",
+    "entryType": "word",
+    "lemma": "商売繁盛",
+    "reading": "しょうばいはんじょう",
+    "romaji": "shōbai hanjō",
+    "translation": "business prosperity blessing",
+    "tags": ["blessing"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.kanai-anzen",
+    "entryType": "word",
+    "lemma": "家内安全",
+    "reading": "かないあんぜん",
+    "romaji": "kanai anzen",
+    "translation": "family safety blessing",
+    "tags": ["blessing"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.goriyaku",
+    "entryType": "word",
+    "lemma": "御利益",
+    "reading": "ごりやく",
+    "romaji": "goriyaku",
+    "translation": "a divine benefit or blessing",
+    "tags": ["blessing", "core"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.junrei",
+    "entryType": "word",
+    "lemma": "巡礼",
+    "reading": "じゅんれい",
+    "romaji": "junrei",
+    "translation": "pilgrimage",
+    "tags": ["pilgrimage"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.fudasho",
+    "entryType": "word",
+    "lemma": "札所",
+    "reading": "ふだしょ",
+    "romaji": "fudasho",
+    "translation": "pilgrimage temple / stamp station",
+    "naturalMeaning": "Used on numbered pilgrimage routes like the Shikoku 88 — each 札所 is a stop where you collect a stamp.",
+    "tags": ["pilgrimage"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "gvocab.gosekku",
+    "entryType": "word",
+    "lemma": "御縁",
+    "reading": "ごえん",
+    "romaji": "go-en",
+    "translation": "a fated connection / good bond",
+    "naturalMeaning": "Why the 5-yen coin (五円 go-en) is the traditional offering — it's a pun on this word. See the culture notes.",
+    "tags": ["core", "money"]
+  }
+]

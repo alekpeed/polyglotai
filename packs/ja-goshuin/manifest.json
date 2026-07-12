@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "ja-goshuin",
+  "name": "Goshuin Seeker",
+  "languageCode": "ja-JP",
+  "packVersion": "0.1.0",
+  "basePack": "ja",
+  "authors": ["PolyglotAI"],
+  "license": "proprietary",
+  "dialects": [{ "id": "ja-JP-standard", "name": "Standard (Tokyo)" }],
+  "defaultDialect": "ja-JP-standard",
+  "cefrRange": ["A1", "A2"],
+  "featureFlags": { "slang": false, "profanity": false },
+  "contents": {
+    "vocabulary": ["vocabulary/goshuin-core.json"],
+    "dialogues": ["dialogues/shrine-visits.json"],
+    "culture": ["culture/notes.json"]
+  }
+}

@@ -88,8 +88,10 @@ function App() {
 
   // The pack theme (palette/hero treatment) is derived state, not a persisted preference —
   // recomputed every session from whichever pack is actually active (see App.css "Pack theme").
+  // A micro-pack (manifest.basePack set — see bootstrap.ts loadPackForId) has no CSS of its own;
+  // it inherits its parent language's visual identity by falling back to basePack here.
   useEffect(() => {
-    if (activePack) document.documentElement.dataset.pack = activePack.manifest.id;
+    if (activePack) document.documentElement.dataset.pack = activePack.manifest.basePack ?? activePack.manifest.id;
     else delete document.documentElement.dataset.pack;
   }, [activePack]);
 
@@ -177,7 +179,7 @@ function App() {
       screen = <Drill repos={repos} profile={profile} onDone={goHome} />;
       break;
     case "library":
-      screen = <Library repos={repos} profile={profile} onDone={goHome} />;
+      screen = <Library repos={repos} profile={profile} pack={pack} onDone={goHome} />;
       break;
     case "tutor":
       screen = <Tutor repos={repos} profile={profile} pack={pack} onDone={goHome} onOpenSettings={openSettings} />;
