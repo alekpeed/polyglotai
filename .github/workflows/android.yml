@@ -35,9 +35,23 @@ jobs:
         # which treats it as already up-to-date), which is undocumented and easy to get wrong.
         run: pnpm --filter @polyglotai/desktop-tauri build
       - name: Init Android project
+        # Still needed even though gen/android is committed (see android-bootstrap.yml) — this is
+        # what actually copies the built frontend into the Android project. It's file-creating,
+        # not file-clobbering: pre-existing customized files (MainActivity.kt, AndroidManifest.xml
+        # permissions) are left alone, verified by the compiled-in permission check below.
         run: pnpm --filter @polyglotai/desktop-tauri tauri android init
         env:
           NDK_HOME: ${{ env.ANDROID_HOME }}/ndk/27.0.11902837
+      - name: Verify native customizations survived init
+        run: |
+          if ! grep -q "RECORD_AUDIO" apps/desktop-tauri/src-tauri/gen/android/app/src/main/AndroidManifest.xml; then
+            echo "::error::tauri android init clobbered AndroidManifest.xml — mic permission is gone."
+            exit 1
+          fi
+          if ! grep -q "onWebViewCreate" apps/desktop-tauri/src-tauri/gen/android/app/src/main/java/com/polyglotai/desktop/MainActivity.kt; then
+            echo "::error::tauri android init clobbered MainActivity.kt — permission-bridging code is gone."
+            exit 1
+          fi
       - name: Build Android debug APK
         run: pnpm --filter @polyglotai/desktop-tauri tauri android build --debug -v
         env:
