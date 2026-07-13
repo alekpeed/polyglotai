@@ -37,6 +37,9 @@ jobs:
         run: pnpm --filter @polyglotai/desktop-tauri tauri android build --debug -v
         env:
           NDK_HOME: ${{ env.ANDROID_HOME }}/ndk/27.0.11902837
+          # Public by necessity (baked into a client-side bundle) — the proxy itself holds the
+          # real OpenAI key server-side, so this URL alone grants no access to anything.
+          VITE_AI_PROXY_URL: https://qddglfcuipmazrjoxpin.supabase.co/functions/v1/openai-proxy
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
