@@ -9,8 +9,19 @@ dist-preview/
 target/
 apps/desktop-tauri/src-tauri/target/
 
-# Tauri build output
-apps/desktop-tauri/src-tauri/gen/
+# Tauri desktop build output (regenerated fresh; nothing to customize there)
+apps/desktop-tauri/src-tauri/gen/ios/
+
+# gen/android IS committed (it holds the native permission-bridging Kotlin code Android's
+# WebView needs — see MainActivity.kt — which `tauri android init` can't regenerate for us).
+# Only its build outputs/machine-specific files are ignored.
+apps/desktop-tauri/src-tauri/gen/android/app/build/
+apps/desktop-tauri/src-tauri/gen/android/app/.cxx/
+apps/desktop-tauri/src-tauri/gen/android/app/src/main/jniLibs/
+apps/desktop-tauri/src-tauri/gen/android/.gradle/
+apps/desktop-tauri/src-tauri/gen/android/.idea/
+apps/desktop-tauri/src-tauri/gen/android/local.properties
+apps/desktop-tauri/src-tauri/gen/android/buildSrc/.gradle/
 
 # Local env / secrets
 .env

@@ -1,0 +1,60 @@
+name: Bootstrap Android project
+
+# One-off (re-runnable) workflow: generates src-tauri/gen/android via `tauri android init` and
+# commits it, so native Android customizations (permission-bridging Kotlin code, manifest
+# entries) have somewhere to live that survives CI runs. Normal android.yml builds no longer
+# regenerate this directory from scratch — see its comments.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bootstrap:
+    name: Generate and commit gen/android
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: zulu
+          java-version: '17'
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+      - name: Install Android NDK
+        run: sdkmanager "ndk;27.0.11902837"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-linux-android,armv7-linux-androideabi,i686-linux-android,x86_64-linux-android
+      - run: pnpm install --frozen-lockfile
+      - name: Remove any stale gen/android
+        run: rm -rf apps/desktop-tauri/src-tauri/gen/android
+      - name: Init Android project
+        run: pnpm --filter @polyglotai/desktop-tauri tauri android init
+        env:
+          NDK_HOME: ${{ env.ANDROID_HOME }}/ndk/27.0.11902837
+      - name: Prune build outputs / machine-specific files
+        run: |
+          cd apps/desktop-tauri/src-tauri/gen/android
+          rm -rf app/build app/.cxx app/src/main/jniLibs .gradle .idea local.properties buildSrc/.gradle
+      - name: Commit gen/android
+        run: |
+          git config user.email "noreply@anthropic.com"
+          git config user.name "Claude"
+          git add -f apps/desktop-tauri/src-tauri/gen/android
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Bootstrap: commit generated Android project (gen/android)"
+          git push origin HEAD:main
