@@ -1,0 +1,38 @@
+name: Publish Android APK to Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: 'Run ID of a completed "Android APK" workflow run to publish'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    name: Republish debug APK as a release asset
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p apk-out
+          gh run download "${{ inputs.run_id }}" \
+            --repo "${{ github.repository }}" \
+            --name polyglotai-android-debug-apk \
+            --dir apk-out
+          ls -la apk-out
+      - name: Create release with APK asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="android-debug-${{ inputs.run_id }}"
+          mapfile -t apks < <(find apk-out -name '*.apk')
+          gh release create "$tag" "${apks[@]}" \
+            --repo "${{ github.repository }}" \
+            --title "Android debug APK (run ${{ inputs.run_id }})" \
+            --notes "Debug-signed APK for sideloading, built from run ${{ inputs.run_id }}." \
+            --prerelease
