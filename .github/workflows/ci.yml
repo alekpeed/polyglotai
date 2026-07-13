@@ -76,10 +76,6 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - name: Build Tauri app
         run: pnpm --filter @polyglotai/desktop-tauri tauri build
-        env:
-          # Public by necessity (baked into a client-side bundle) — the proxy itself holds the
-          # real OpenAI key server-side, so this URL alone grants no access to anything.
-          VITE_AI_PROXY_URL: https://qddglfcuipmazrjoxpin.supabase.co/functions/v1/openai-proxy
       - name: Verify AI proxy URL was baked into the build
         shell: bash
         run: |

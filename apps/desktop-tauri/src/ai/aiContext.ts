@@ -14,9 +14,14 @@ import type { LearnerProfile } from "@polyglotai/shared-types";
 
 /** The deployed supabase/functions/openai-proxy URL (e.g.
  * "https://xxxx.supabase.co/functions/v1/openai-proxy") — the app never holds an OpenAI key
- * directly; see supabase/README.md. Set at build time; unset just means AI features are
- * unavailable in that build. */
-const PROXY_BASE_URL = (import.meta.env.VITE_AI_PROXY_URL as string | undefined)?.replace(/\/$/, "");
+ * directly; see supabase/README.md. Defaults to the shared production proxy (already public via
+ * the GitHub Pages web build; actual access control is the proxy's own ACCESS_PASSCODE secret,
+ * not URL secrecy) — override VITE_AI_PROXY_URL to point a build at a different Supabase project. */
+const DEFAULT_PROXY_BASE_URL = "https://qddglfcuipmazrjoxpin.supabase.co/functions/v1/openai-proxy";
+const PROXY_BASE_URL = ((import.meta.env.VITE_AI_PROXY_URL as string | undefined) || DEFAULT_PROXY_BASE_URL).replace(
+  /\/$/,
+  "",
+);
 
 /** Profile settings keys the AI layer reads. `openaiModel` is user-chosen (Settings screen);
  * `deviceToken` is provisioned automatically against the proxy and never shown to the user. */
@@ -57,8 +62,6 @@ function ensureDeviceToken(repos: Repos, profile: LearnerProfile): Promise<strin
   const existing = readAiSettings(profile).deviceToken;
   if (existing) return Promise.resolve(existing);
 
-  if (!PROXY_BASE_URL) return Promise.resolve(null);
-
   if (!deviceTokenPromise) {
     deviceTokenPromise = (async () => {
       try {
@@ -82,10 +85,9 @@ function ensureDeviceToken(repos: Repos, profile: LearnerProfile): Promise<strin
   return deviceTokenPromise;
 }
 
-/** Builds the chat provider via the backend proxy, or null when the proxy isn't configured
- * for this build or registration failed (e.g. offline). No OpenAI key ever reaches the client. */
+/** Builds the chat provider via the backend proxy, or null when device registration failed
+ * (e.g. offline). No OpenAI key ever reaches the client. */
 export async function makeProvider(repos: Repos, profile: LearnerProfile): Promise<AIProvider | null> {
-  if (!PROXY_BASE_URL) return null;
   const token = await ensureDeviceToken(repos, profile);
   if (!token) return null;
   const { openaiModel } = readAiSettings(profile);
@@ -99,7 +101,6 @@ export async function makeSpeechProvider(
   profile: LearnerProfile,
   language?: string,
 ): Promise<SpeechProvider | null> {
-  if (!PROXY_BASE_URL) return null;
   const token = await ensureDeviceToken(repos, profile);
   if (!token) return null;
   return new WhisperProvider({ apiKey: token, baseUrl: PROXY_BASE_URL, ...(language ? { language } : {}) });
@@ -107,7 +108,6 @@ export async function makeSpeechProvider(
 
 /** Same proxy, TTS endpoint — used to speak AI turns aloud in Conversation/Live Interpreter. */
 export async function makeTtsProvider(repos: Repos, profile: LearnerProfile): Promise<TTSProvider | null> {
-  if (!PROXY_BASE_URL) return null;
   const token = await ensureDeviceToken(repos, profile);
   if (!token) return null;
   return new OpenAiTtsProvider({ apiKey: token, baseUrl: PROXY_BASE_URL });
