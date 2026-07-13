@@ -29,6 +29,11 @@ jobs:
         with:
           targets: aarch64-linux-android,armv7-linux-androideabi,i686-linux-android,x86_64-linux-android
       - run: pnpm install --frozen-lockfile
+      - name: Build frontend
+        # Explicit, rather than relying on Tauri's beforeBuildCommand hook — `tauri android init`
+        # turned out to be what actually compiles+copies the frontend (not `tauri android build`,
+        # which treats it as already up-to-date), which is undocumented and easy to get wrong.
+        run: pnpm --filter @polyglotai/desktop-tauri build
       - name: Init Android project
         run: pnpm --filter @polyglotai/desktop-tauri tauri android init
         env:
