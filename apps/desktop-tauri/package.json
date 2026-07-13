@@ -10,7 +10,7 @@
     "preview:build": "vite build --config vite.preview.config.ts",
     "tauri": "tauri",
     "typecheck": "tsc --noEmit",
-    "test": "echo \"no tests yet\"",
+    "test": "vitest run",
     "lint": "eslint src"
   },
   "dependencies": {
@@ -37,5 +37,6 @@
     "typescript": "~5.8.3",
     "vite": "^7.0.4",
     "vite-plugin-singlefile": "^2.3.3"
+    ,"vitest": "^2.1.0"
   }
 }

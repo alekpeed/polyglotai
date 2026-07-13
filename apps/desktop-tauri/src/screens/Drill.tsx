@@ -1,6 +1,7 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { loadReviewCard, type ReviewCard, type ReviewItem, type Repos } from "@polyglotai/core-learning";
 import type { LearnerProfile } from "@polyglotai/shared-types";
+import { createSubmissionGuard } from "../reviewSubmissionGuard";
 
 interface Props {
   repos: Repos;
@@ -28,6 +29,9 @@ export function Drill({ repos, profile, onDone }: Props) {
   const [checked, setChecked] = useState<{ correct: boolean } | null>(null);
   const [loading, setLoading] = useState(true);
   const [reviewed, setReviewed] = useState(0);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const submitGuard = useRef(createSubmissionGuard());
 
   const showNext = useCallback(
     async (items: ReviewItem[]) => {
@@ -67,11 +71,21 @@ export function Drill({ repos, profile, onDone }: Props) {
   async function next(rating: 1 | 2 | 3) {
     const current = queue[0];
     if (!current) return;
-    await repos.reviews.recordReview(current.id, { rating });
-    const rest = queue.slice(1);
-    setQueue(rest);
-    setReviewed((n) => n + 1);
-    await showNext(rest);
+    await submitGuard.current.run(async () => {
+      setSaving(true);
+      setError(null);
+      try {
+        await repos.reviews.recordReview(current.id, { rating });
+        const rest = queue.slice(1);
+        setQueue(rest);
+        setReviewed((n) => n + 1);
+        await showNext(rest);
+      } catch (err) {
+        setError(`Could not save this drill: ${String(err)}`);
+      } finally {
+        setSaving(false);
+      }
+    });
   }
 
   if (loading) return <p>Loading ladder drills…</p>;
@@ -124,15 +138,15 @@ export function Drill({ repos, profile, onDone }: Props) {
             </div>
             <div className="grades">
               {checked.correct ? (
-                <button type="button" onClick={() => next(3)}>
+                <button type="button" onClick={() => next(3)} disabled={saving}>
                   Next
                 </button>
               ) : (
                 <>
-                  <button type="button" onClick={() => next(1)}>
+                  <button type="button" onClick={() => next(1)} disabled={saving}>
                     Next (missed it)
                   </button>
-                  <button type="button" onClick={() => next(2)}>
+                  <button type="button" onClick={() => next(2)} disabled={saving}>
                     Next (knew it, typo)
                   </button>
                 </>
@@ -141,6 +155,8 @@ export function Drill({ repos, profile, onDone }: Props) {
           </>
         )}
       </section>
+
+      {error && <p className="error">{error}</p>}
 
       <button type="button" className="link" onClick={onDone}>
         Stop for now

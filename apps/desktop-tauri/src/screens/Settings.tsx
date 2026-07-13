@@ -34,9 +34,13 @@ const THEMES: { value: ThemePreference; label: string; hint: string }[] = [
   { value: "classic", label: "Classic", hint: "The original navy-blue look, before the periwinkle update." },
 ];
 
+const AI_MODELS = ["gpt-4o-mini"] as const;
+
 export function Settings({ repos, profile, onSaved, onDone, onSwitchLanguage }: Props) {
   const initial = readAiSettings(profile);
-  const [model, setModel] = useState(initial.openaiModel ?? "gpt-5.6-luna");
+  const [model, setModel] = useState(
+    AI_MODELS.includes(initial.openaiModel as (typeof AI_MODELS)[number]) ? initial.openaiModel! : "gpt-4o-mini",
+  );
   const [level, setLevel] = useState<RealSpeechLevel>(profile.realSpeechLevel);
   const [strictness, setStrictness] = useState(profile.correctionStrictness);
   const [logging, setLogging] = useState(false);
@@ -120,7 +124,11 @@ export function Settings({ repos, profile, onSaved, onDone, onSwitchLanguage }: 
               <h3>AI model</h3>
               <p>AI features run through PolyglotAI's shared backend — no API key needed here.</p>
             </div>
-            <input type="text" value={model} onChange={(e) => setModel(e.currentTarget.value)} />
+            <select value={model} onChange={(e) => setModel(e.currentTarget.value)}>
+              {AI_MODELS.map((value) => (
+                <option key={value} value={value}>{value}</option>
+              ))}
+            </select>
           </section>
 
           <section className="settings-card">

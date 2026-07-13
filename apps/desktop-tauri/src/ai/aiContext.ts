@@ -33,7 +33,7 @@ export interface AiSettings {
 export function readAiSettings(profile: LearnerProfile): AiSettings {
   const s = profile.settings as Record<string, unknown>;
   return {
-    ...(typeof s.openaiModel === "string" && s.openaiModel ? { openaiModel: s.openaiModel } : {}),
+    ...(s.openaiModel === "gpt-4o-mini" ? { openaiModel: s.openaiModel } : {}),
     ...(typeof s.deviceToken === "string" && s.deviceToken ? { deviceToken: s.deviceToken } : {}),
   };
 }

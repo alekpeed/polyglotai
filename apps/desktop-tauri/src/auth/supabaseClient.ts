@@ -9,7 +9,3 @@ const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY as string | und
  * another's, not keeping this key secret. */
 export const supabase: SupabaseClient | null =
   SUPABASE_URL && SUPABASE_ANON_KEY ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
-
-/** The auth-helper edge function lives in the same Supabase project as the AI proxy, so its URL
- * is derived from the same project URL rather than needing its own env var. */
-export const AUTH_HELPER_URL = SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/auth-helper` : undefined;

@@ -1,108 +1,50 @@
 # AI backend proxy
 
-The desktop app never holds your OpenAI key. It talks to this Supabase Edge Function, which
-holds the key as a server secret and forwards requests to OpenAI. Each app install registers
-once for an opaque device token (stored locally, not an OpenAI credential) — nothing for a
-user to type in.
+The app never ships an OpenAI key. It registers an opaque, per-install device token with this
+Supabase Edge Function, which holds the real key as a server secret.
 
-- `migrations/0001_device_proxy.sql` — `devices` (hashed tokens) and `usage_log` (per-request
-  logging; no cap is enforced yet, by design — see the code comments if you want to add one).
-- `functions/openai-proxy/index.ts` — the proxy itself: `POST /register`, `POST
-  /chat/completions`, `POST /audio/transcriptions`, `POST /audio/speech`.
+The proxy now requires a registration passcode and enforces server-side limits by default:
 
-## One-time setup
+- 10 registrations per hour globally.
+- 20 requests per device per minute.
+- 200 requests per device per day.
+- 32 KiB chat bodies, 8 KiB TTS bodies, and 25 MiB audio uploads.
+- Explicit model allow-lists (`gpt-4o-mini`, `gpt-4o-mini-tts`, and `whisper-1` by default).
 
-You'll need a Supabase account/project and the Supabase CLI
-(`npm install -g supabase` or see supabase.com/docs/guides/cli).
+Adjust any of these with `PROXY_*` Supabase secrets; do not move them into client code.
+
+## Setup
 
 ```sh
-# From the repo root:
 supabase login
-supabase link --project-ref YOUR-PROJECT-REF   # find this in your Supabase project's URL/settings
-
-# Apply the schema:
+supabase link --project-ref YOUR-PROJECT-REF
 supabase db push
-
-# Set your real OpenAI key as a server-only secret — never committed, never shipped in the app:
 supabase secrets set OPENAI_API_KEY=sk-...
-
-# Deploy the function:
+supabase secrets set ACCESS_PASSCODE=use-a-strong-secret
 supabase functions deploy openai-proxy --no-verify-jwt
 ```
 
-`--no-verify-jwt` disables Supabase's own auth layer for this function — we're doing our own
-lightweight auth (the device token) instead, since there's no user-login system here.
+`ACCESS_PASSCODE` is required. New devices cannot register until it is configured. Existing
+device tokens can be revoked by deleting their row from `devices` in the Supabase dashboard.
 
-## Point the app at it
+## Point the app at the proxy
 
-In `apps/desktop-tauri/`, copy `.env.example` to `.env.local` and set:
+Set this in `apps/desktop-tauri/.env.local`:
 
-```
+```text
 VITE_AI_PROXY_URL=https://YOUR-PROJECT-REF.supabase.co/functions/v1/openai-proxy
 ```
 
-Then build/run the app as usual (`pnpm dev` / `pnpm build`). Without this set, AI screens
-(Tutor, Conversation, Live Interpreter, Pronunciation) show "AI features aren't available right
-now" — everything else works normally.
+The app will prompt for the registration passcode only when a device has not already received a
+token. The token is not an OpenAI credential, but it should still be treated like a session
+token.
 
-Conversation and Live Interpreter also speak AI turns aloud (`gpt-4o-mini-tts`, ~$0.015/min)
-and accept a spoken reply via the mic button (Whisper, same as Pronunciation) — both ride the
-same device token, no separate setup.
-
-## Verify it's working
+## Verify
 
 ```sh
-# Should return {"token":"..."}
-curl -X POST https://YOUR-PROJECT-REF.supabase.co/functions/v1/openai-proxy/register
-
-# Should return a normal OpenAI chat-completion response (swap in the token from above):
-curl -X POST https://YOUR-PROJECT-REF.supabase.co/functions/v1/openai-proxy/chat/completions \
-  -H "authorization: Bearer YOUR-DEVICE-TOKEN" \
+curl -X POST https://YOUR-PROJECT-REF.supabase.co/functions/v1/openai-proxy/register \
   -H "content-type: application/json" \
-  -d '{"model":"gpt-4o-mini","messages":[{"role":"user","content":"say hi in one word"}]}'
+  -d '{"passcode":"YOUR-ACCESS-PASSCODE"}'
 ```
 
-## Redeploying after changes
-
-Automatic: `.github/workflows/deploy-supabase.yml` runs `supabase db push` +
-`supabase functions deploy` on every push to `main` that touches `supabase/**`, using the
-`SUPABASE_ACCESS_TOKEN` repo secret. Just push — nothing to run by hand.
-
-Manual (if you need to redeploy without a code change, e.g. after rotating a secret): open the
-repo's Actions tab → "Deploy Supabase" → "Run workflow." Or from the CLI:
-
-```sh
-supabase functions deploy openai-proxy --no-verify-jwt   # function only
-supabase db push                                         # schema only
-```
-
-## What this does and doesn't protect against
-
-- **Does:** keep the real OpenAI key off every user's machine — it only ever exists as a
-  Supabase secret and in OpenAI's own systems.
-- **Does not (yet):** cap usage per device. Per your choice, `usage_log` currently just
-  records every request (device, endpoint, model, tokens) without rejecting anything over a
-  threshold. If this ever needs a real budget cap, add a `SELECT sum(tokens_used) ... WHERE
-  device_id = ? AND created_at > now() - interval '1 day'` check in `index.ts` before
-  forwarding to OpenAI, and reject with a 429 over the limit.
-- A device token is exactly as sensitive as a login session token for this proxy — if the app
-  is ever handed to genuinely untrusted parties at scale, revisit this.
-
-## Access passcode (optional, for sharing a link)
-
-Set the `ACCESS_PASSCODE` repo secret (same place as `SUPABASE_ACCESS_TOKEN`) and the deploy
-workflow pushes it to Supabase automatically; `/register` then requires it. The client (both
-the desktop app and the browser build) tries with no passcode first — a no-op for your own
-already-registered devices — and only prompts if the proxy actually rejects it, so this never
-disrupts your own use.
-
-- **To let someone in:** set the secret, push (or re-run the workflow), and tell them the
-  passcode out of band (not in the link itself).
-- **To stop new people from getting in:** rotate or delete the `ACCESS_PASSCODE` secret and
-  re-run the workflow. This only blocks *new* registrations — anyone already registered keeps
-  their existing device token (registration is a one-time handshake; the passcode isn't
-  re-checked on every request).
-- **To cut off someone who already registered:** open the Supabase dashboard → Table Editor →
-  `devices`, find their row (newest `created_at`/`last_seen_at` that isn't you), and delete it.
-  Their cached token stops authenticating on their very next request — immediate, no redeploy
-  needed.
+The response should contain a device token. Use it only to test the documented proxy routes.

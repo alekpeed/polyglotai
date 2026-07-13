@@ -31,5 +31,3 @@ jobs:
         run: supabase secrets set ACCESS_PASSCODE="$ACCESS_PASSCODE"
       - name: Deploy openai-proxy edge function
         run: supabase functions deploy openai-proxy --no-verify-jwt
-      - name: Deploy auth-helper edge function
-        run: supabase functions deploy auth-helper --no-verify-jwt

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { SpeechProvider } from "@polyglotai/pronunciation";
 
 export type RecordPhase = "idle" | "recording" | "transcribing";
@@ -12,6 +12,11 @@ export function useVoiceRecorder(speechProvider: SpeechProvider | null) {
   const [error, setError] = useState<string | null>(null);
   const recorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<Blob[]>([]);
+
+  useEffect(() => () => {
+    recorderRef.current?.stream.getTracks().forEach((track) => track.stop());
+    recorderRef.current = null;
+  }, []);
 
   async function start(): Promise<void> {
     setError(null);
@@ -37,6 +42,7 @@ export function useVoiceRecorder(speechProvider: SpeechProvider | null) {
       }
       recorder.onstop = async () => {
         recorder.stream.getTracks().forEach((t) => t.stop());
+        recorderRef.current = null;
         const blob = new Blob(chunksRef.current, { type: recorder.mimeType || "audio/webm" });
         if (!speechProvider) {
           setPhase("idle");

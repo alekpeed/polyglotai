@@ -1,10 +1,11 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   loadReviewCard,
   type ReviewCard,
   type ReviewItem,
   type Repos,
 } from "@polyglotai/core-learning";
+import { createSubmissionGuard } from "../reviewSubmissionGuard";
 import type { LearnerProfile } from "@polyglotai/shared-types";
 
 interface Props {
@@ -26,6 +27,9 @@ export function Review({ repos, profile, onDone }: Props) {
   const [revealed, setRevealed] = useState(false);
   const [loading, setLoading] = useState(true);
   const [reviewed, setReviewed] = useState(0);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const submitGuard = useRef(createSubmissionGuard());
 
   const showFront = useCallback(
     async (items: ReviewItem[]) => {
@@ -56,11 +60,21 @@ export function Review({ repos, profile, onDone }: Props) {
   async function grade(rating: 1 | 2 | 3 | 4) {
     const current = queue[0];
     if (!current) return;
-    await repos.reviews.recordReview(current.id, { rating });
-    const rest = queue.slice(1);
-    setQueue(rest);
-    setReviewed((n) => n + 1);
-    await showFront(rest);
+    await submitGuard.current.run(async () => {
+      setSaving(true);
+      setError(null);
+      try {
+        await repos.reviews.recordReview(current.id, { rating });
+        const rest = queue.slice(1);
+        setQueue(rest);
+        setReviewed((n) => n + 1);
+        await showFront(rest);
+      } catch (err) {
+        setError(`Could not save this review: ${String(err)}`);
+      } finally {
+        setSaving(false);
+      }
+    });
   }
 
   if (loading) return <p>Loading review…</p>;
@@ -98,12 +112,14 @@ export function Review({ repos, profile, onDone }: Props) {
       {revealed && (
         <div className="grades">
           {GRADES.map((g) => (
-            <button key={g.rating} type="button" data-g={g.g} onClick={() => grade(g.rating)}>
+            <button key={g.rating} type="button" data-g={g.g} onClick={() => grade(g.rating)} disabled={saving}>
               {g.label}
             </button>
           ))}
         </div>
       )}
+
+      {error && <p className="error">{error}</p>}
 
       <button type="button" className="link" onClick={onDone}>
         Stop for now

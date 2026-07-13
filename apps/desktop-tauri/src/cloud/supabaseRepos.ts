@@ -382,32 +382,22 @@ class SupabaseReviewRepo implements IReviewRepo {
     const current = rowToReviewItem(existing, "");
     const next = this.scheduler.schedule(current.state, { rating: input.rating }, now);
 
-    const { error: updateErr } = await this.client
-      .from("review_items")
-      .update({
-        difficulty: next.difficulty,
-        stability: next.stability,
-        retrievability: next.retrievability,
-        state: next.state,
-        due_at: next.dueAt,
-        last_reviewed_at: next.lastReviewedAt,
-        lapses: next.lapses,
-        reps: next.reps,
-        updated_at: ts,
-      })
-      .eq("id", reviewItemId)
-      .eq("user_id", this.userId);
-    if (updateErr) throw new Error(`review update failed: ${updateErr.message}`);
-
-    const { error: resultErr } = await this.client.from("review_results").insert({
-      user_id: this.userId,
-      review_item_id: reviewItemId,
-      rating: input.rating,
-      response_ms: input.responseMs ?? null,
-      confidence: input.confidence ?? null,
-      reviewed_at: ts,
+    const { error } = await this.client.rpc("record_review_and_result", {
+      p_review_item_id: reviewItemId,
+      p_difficulty: next.difficulty,
+      p_stability: next.stability,
+      p_retrievability: next.retrievability,
+      p_state: next.state,
+      p_due_at: next.dueAt,
+      p_last_reviewed_at: next.lastReviewedAt,
+      p_lapses: next.lapses,
+      p_reps: next.reps,
+      p_rating: input.rating,
+      p_response_ms: input.responseMs ?? null,
+      p_confidence: input.confidence ?? null,
+      p_reviewed_at: ts,
     });
-    if (resultErr) throw new Error(`review result insert failed: ${resultErr.message}`);
+    if (error) throw new Error(`review record failed: ${error.message}`);
 
     return { ...current, state: next };
   }

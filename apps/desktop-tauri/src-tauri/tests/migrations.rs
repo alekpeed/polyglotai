@@ -8,6 +8,9 @@ use sqlx::Row;
 const MIGRATION_0001: &str = include_str!("../migrations/0001_initial.sql");
 const MIGRATION_0002: &str = include_str!("../migrations/0002_seed_feature_flags.sql");
 const MIGRATION_0003: &str = include_str!("../migrations/0003_pronunciation_rules.sql");
+const MIGRATION_0004: &str = include_str!("../migrations/0004_grammar_ladders.sql");
+const MIGRATION_0005: &str = include_str!("../migrations/0005_vocab_reading.sql");
+const MIGRATION_0006: &str = include_str!("../migrations/0006_real_speech_reading.sql");
 
 const EXPECTED_TABLES: &[&str] = &[
     "schema_meta",
@@ -19,6 +22,7 @@ const EXPECTED_TABLES: &[&str] = &[
     "dialogues",
     "lessons",
     "pronunciation_rules",
+    "grammar_ladder_steps",
     "review_items",
     "review_results",
     "conversations",
@@ -47,6 +51,18 @@ async fn fresh_database_migrates_to_head() {
         .execute(&pool)
         .await
         .expect("migration 0003 should apply cleanly after 0002");
+    sqlx::raw_sql(MIGRATION_0004)
+        .execute(&pool)
+        .await
+        .expect("migration 0004 should apply cleanly after 0003");
+    sqlx::raw_sql(MIGRATION_0005)
+        .execute(&pool)
+        .await
+        .expect("migration 0005 should apply cleanly after 0004");
+    sqlx::raw_sql(MIGRATION_0006)
+        .execute(&pool)
+        .await
+        .expect("migration 0006 should apply cleanly after 0005");
 
     for table in EXPECTED_TABLES {
         let row = sqlx::query("SELECT name FROM sqlite_master WHERE type = 'table' AND name = ?")
@@ -62,7 +78,7 @@ async fn fresh_database_migrates_to_head() {
         .await
         .expect("schema_meta should have a db_version row")
         .get(0);
-    assert_eq!(db_version, "2", "0003 bumps db_version to 2");
+    assert_eq!(db_version, "6", "all local migrations bump db_version to 6");
 
     let flag_count: i64 = sqlx::query("SELECT COUNT(*) FROM feature_flags")
         .fetch_one(&pool)
