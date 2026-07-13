@@ -49,7 +49,7 @@ multiple per-language profiles, each with its own FSRS spaced-repetition queue, 
     field — generically named from its Japanese origin, not Japanese-specific). Pronunciation
     content is deliberately alphabet-literacy-first (false-friend Latin-lookalike letters like
     В/Н/Р/С/У/Х, hard/soft signs, akanye vowel reduction, unmarked word stress).
-- **19 micro-packs** (all `basePack` set to a full-language pack's id, so they inherit
+- **21 micro-packs** (all `basePack` set to a full-language pack's id, so they inherit
   grammar/pronunciation and only author what's new to their theme; all group under their parent
   language in the picker, never as their own tile — see UI section below):
   - Japanese (7): `ja-goshuin` (shrine stamps, the original pilot), `ja-onsen`, `ja-izakaya`,
