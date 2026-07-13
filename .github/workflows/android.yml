@@ -29,6 +29,10 @@ jobs:
         with:
           targets: aarch64-linux-android,armv7-linux-androideabi,i686-linux-android,x86_64-linux-android
       - run: pnpm install --frozen-lockfile
+      - name: Init Android project
+        run: pnpm --filter @polyglotai/desktop-tauri tauri android init
+        env:
+          NDK_HOME: ${{ env.ANDROID_HOME }}/ndk/27.0.11902837
       - name: Build Android debug APK
         run: pnpm --filter @polyglotai/desktop-tauri tauri android build --debug -v
         env:
