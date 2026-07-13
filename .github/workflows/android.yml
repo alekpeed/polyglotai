@@ -40,6 +40,12 @@ jobs:
           # Public by necessity (baked into a client-side bundle) — the proxy itself holds the
           # real OpenAI key server-side, so this URL alone grants no access to anything.
           VITE_AI_PROXY_URL: https://qddglfcuipmazrjoxpin.supabase.co/functions/v1/openai-proxy
+      - name: Verify AI proxy URL was baked into the build
+        run: |
+          if ! grep -rq "qddglfcuipmazrjoxpin.supabase.co" apps/desktop-tauri/dist; then
+            echo "::error::VITE_AI_PROXY_URL didn't make it into the built bundle — AI Tutor/Conversation/Pronunciation would ship silently disabled."
+            exit 1
+          fi
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
