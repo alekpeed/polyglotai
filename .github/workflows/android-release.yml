@@ -1,10 +1,10 @@
 name: Android Release APK
 
-# Builds a small, signed, arm64-only release APK for sideloading — the "polished" counterpart to
-# android.yml (which builds a fat all-ABI debug APK for quick iteration). Signed with an
-# EPHEMERAL keystore generated fresh each run: zero secret setup, but each build has a different
-# signing identity, so you must uninstall a previous install before sideloading a new one (no
-# in-place upgrade). Switch to a persistent keystore (repo secrets) if that ever matters.
+# Builds a small, arm64-only release APK for sideloading — the "polished" counterpart to
+# android.yml (which builds a fat all-ABI debug APK for quick iteration). The build is GATED
+# behind Supabase Auth (individual accounts) and self-signs: it uses the persistent keystore
+# from repo secrets when present (consistent identity → in-place updates), else a throwaway
+# ephemeral key (uninstall-first updates). See the job env and the signing step below.
 
 on:
   workflow_dispatch:
@@ -13,6 +13,12 @@ jobs:
   build-android-release:
     name: Build signed arm64 release APK
     runs-on: ubuntu-latest
+    # Job-level so every frontend build sees them — the explicit "Build frontend" step AND the
+    # implicit rebuilds that `tauri android init`/`build` run via Tauri's beforeBuildCommand.
+    # (Putting them on one step only let the later rebuilds clobber the bundle without the key.)
+    env:
+      VITE_SUPABASE_URL: https://qddglfcuipmazrjoxpin.supabase.co
+      VITE_SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFkZGdsZmN1aXBtYXpyam94cGluIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM3ODQyODcsImV4cCI6MjA5OTM2MDI4N30.ilOwQxx80JX06KWOcWzf5m7kyigC_TsA452knC6XG00
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -43,9 +49,6 @@ jobs:
         # what protects each account's data. Keep public signups DISABLED in the Supabase
         # dashboard to make it invite-only.
         run: pnpm --filter @polyglotai/desktop-tauri build
-        env:
-          VITE_SUPABASE_URL: https://qddglfcuipmazrjoxpin.supabase.co
-          VITE_SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFkZGdsZmN1aXBtYXpyam94cGluIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM3ODQyODcsImV4cCI6MjA5OTM2MDI4N30.ilOwQxx80JX06KWOcWzf5m7kyigC_TsA452knC6XG00
       - name: Init Android project
         # gen/android is committed (native mic-permission code lives there); init only copies the
         # freshly built frontend in, leaving the customized files alone — verified below.
