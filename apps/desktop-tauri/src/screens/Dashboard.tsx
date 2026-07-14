@@ -130,6 +130,25 @@ export function Dashboard({
         </section>
       </div>
 
+      <section className="daily-goal">
+        <div className="dg-head">
+          <span className="eyebrow">Today's goal</span>
+          <span className="dg-count mono">
+            {data.reviewsToday} / {data.dailyGoal}
+          </span>
+        </div>
+        <div className="dg-bar">
+          <span
+            style={{
+              width: `${data.dailyGoal ? Math.min(100, Math.round((data.reviewsToday / data.dailyGoal) * 100)) : 0}%`,
+            }}
+          />
+        </div>
+        {data.dailyGoal > 0 && data.reviewsToday >= data.dailyGoal && (
+          <span className="dg-done">Goal met — nice work ✓</span>
+        )}
+      </section>
+
       <div className="stat-strip">
         <div className="stat-cell">
           <div className="v mono">{data.totals.vocabulary}</div>

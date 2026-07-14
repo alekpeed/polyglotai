@@ -1,5 +1,5 @@
 import { useEffect, useState, type FormEvent } from "react";
-import type { Repos } from "@polyglotai/core-learning";
+import { dailyGoalOf, type Repos } from "@polyglotai/core-learning";
 import type { LearnerProfile, RealSpeechLevel } from "@polyglotai/shared-types";
 import { readAiSettings } from "../ai/aiContext";
 import { signOut } from "../auth/authContext";
@@ -36,6 +36,8 @@ const THEMES: { value: ThemePreference; label: string; hint: string }[] = [
 
 const AI_MODELS = ["gpt-4o-mini"] as const;
 
+const DAILY_GOALS = [10, 20, 30, 50] as const;
+
 export function Settings({ repos, profile, onSaved, onDone, onSwitchLanguage }: Props) {
   const initial = readAiSettings(profile);
   const [model, setModel] = useState(
@@ -43,6 +45,7 @@ export function Settings({ repos, profile, onSaved, onDone, onSwitchLanguage }: 
   );
   const [level, setLevel] = useState<RealSpeechLevel>(profile.realSpeechLevel);
   const [strictness, setStrictness] = useState(profile.correctionStrictness);
+  const [dailyGoal, setDailyGoal] = useState<number>(dailyGoalOf(profile));
   const [logging, setLogging] = useState(false);
   const [saved, setSaved] = useState(false);
   const [themePref, setThemePref] = useState<ThemePreference>(getStoredTheme());
@@ -61,7 +64,7 @@ export function Settings({ repos, profile, onSaved, onDone, onSwitchLanguage }: 
     const updated = await repos.profiles.update(profile.id, {
       realSpeechLevel: level,
       correctionStrictness: strictness,
-      settings: { ...profile.settings, openaiModel: model.trim() },
+      settings: { ...profile.settings, openaiModel: model.trim(), dailyGoal },
     });
     await repos.flags.setEnabled("conversation_logging", logging);
     onSaved(updated);
@@ -149,6 +152,26 @@ export function Settings({ repos, profile, onSaved, onDone, onSwitchLanguage }: 
                 </button>
               ))}
               <span className="hint">{LEVELS.find((l) => l.value === level)?.hint}</span>
+            </div>
+          </section>
+
+          <section className="settings-card">
+            <div className="settings-card-head">
+              <h3>Daily goal</h3>
+              <p>How many reviews you're aiming for each day — shown as a progress bar on the dashboard.</p>
+            </div>
+            <div className="pill-select">
+              {DAILY_GOALS.map((g) => (
+                <button
+                  key={g}
+                  type="button"
+                  className={`neutral ${dailyGoal === g ? "active" : ""}`}
+                  onClick={() => setDailyGoal(g)}
+                >
+                  {g}
+                </button>
+              ))}
+              <span className="hint">{dailyGoal} reviews per day</span>
             </div>
           </section>
 

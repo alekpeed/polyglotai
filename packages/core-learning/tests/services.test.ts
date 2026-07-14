@@ -124,5 +124,11 @@ describe("loadDashboard", () => {
     const data = await loadDashboard(repos, profile.id, () => T0);
     expect(data.lifetimeReviews).toBe(4);
     expect(data.recallRate).toBe(75);
+    expect(data.reviewsToday).toBe(4); // all four timestamps fall on T0's calendar day
+    expect(data.dailyGoal).toBe(20); // default when the profile hasn't set one
+
+    await repos.profiles.update(profile.id, { settings: { ...profile.settings, dailyGoal: 30 } });
+    const custom = await loadDashboard(repos, profile.id, () => T0);
+    expect(custom.dailyGoal).toBe(30);
   });
 });

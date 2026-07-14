@@ -743,6 +743,44 @@ button.link:hover {
   grid-template-columns: repeat(2, 1fr);
   margin-top: -1.8rem;
 }
+
+/* Daily review goal progress (dashboard) */
+.daily-goal {
+  border: 1px solid var(--line);
+  background: var(--surface-raised);
+  padding: 1.1rem 1.3rem;
+  margin-bottom: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.daily-goal .dg-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.daily-goal .dg-count {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.daily-goal .dg-bar {
+  height: 8px;
+  background: var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.daily-goal .dg-bar span {
+  display: block;
+  height: 100%;
+  background: var(--indigo-fill, var(--indigo));
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+.daily-goal .dg-done {
+  font-size: 0.78rem;
+  color: var(--heat-1);
+  font-weight: 500;
+}
 .stat-cell {
   background: var(--surface-raised);
   padding: 1.1rem 1.3rem;

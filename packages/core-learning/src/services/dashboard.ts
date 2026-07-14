@@ -22,6 +22,19 @@ export interface DashboardData {
   /** Share of those reviews recalled well (rated Good/Easy, i.e. rating ≥ 3), as a 0–100
    * percentage — null until there's at least one review to divide by. */
   recallRate: number | null;
+  /** The learner's daily review target (profile setting `dailyGoal`, defaulting to 20). */
+  dailyGoal: number;
+  /** Reviews completed today (local calendar day of `now`), counted toward the daily goal. */
+  reviewsToday: number;
+}
+
+/** Default daily review target when a profile hasn't set its own. */
+export const DEFAULT_DAILY_GOAL = 20;
+
+/** Reads the profile's chosen daily review goal from settings, falling back to the default. */
+export function dailyGoalOf(profile: LearnerProfile): number {
+  const g = (profile.settings as Record<string, unknown>).dailyGoal;
+  return typeof g === "number" && g > 0 ? Math.round(g) : DEFAULT_DAILY_GOAL;
 }
 
 async function count(repos: Repos, table: string, packId: string): Promise<number> {
@@ -59,6 +72,18 @@ async function reviewStats(repos: Repos, profileId: string): Promise<{ total: nu
     [profileId as SqlValue],
   );
   return { total: Number(rows[0]?.total ?? 0), recalled: Number(rows[0]?.recalled ?? 0) };
+}
+
+/** Count of reviews this profile completed on a given local calendar day (ISO yyyy-mm-dd). */
+async function reviewsOnDay(repos: Repos, profileId: string, isoDay: string): Promise<number> {
+  const rows = await repos.db.all<{ n: number }>(
+    `SELECT COUNT(*) AS n
+       FROM review_results rr
+       JOIN review_items ri ON ri.id = rr.review_item_id
+      WHERE ri.profile_id = ? AND date(rr.reviewed_at) = ?`,
+    [profileId as SqlValue, isoDay as SqlValue],
+  );
+  return Number(rows[0]?.n ?? 0);
 }
 
 function streakFrom(days: Set<string>, today: Date): number {
@@ -119,5 +144,7 @@ export async function loadDashboard(
     streakLast7: last7From(days, today),
     lifetimeReviews: stats.total,
     recallRate: stats.total ? Math.round((stats.recalled / stats.total) * 100) : null,
+    dailyGoal: dailyGoalOf(profile),
+    reviewsToday: await reviewsOnDay(repos, profileId, toIsoDate(today)),
   };
 }
