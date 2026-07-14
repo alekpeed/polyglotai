@@ -37,7 +37,15 @@ jobs:
           targets: aarch64-linux-android
       - run: pnpm install --frozen-lockfile
       - name: Build frontend
+        # Bake Supabase Auth creds into the bundle so this build boots GATED behind individual
+        # accounts (App.tsx: `if (supabase && !user) return <Auth />` — only the login screen
+        # shows until a user signs in). The anon key is public by design; row-level security is
+        # what protects each account's data. Keep public signups DISABLED in the Supabase
+        # dashboard to make it invite-only.
         run: pnpm --filter @polyglotai/desktop-tauri build
+        env:
+          VITE_SUPABASE_URL: https://qddglfcuipmazrjoxpin.supabase.co
+          VITE_SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFkZGdsZmN1aXBtYXpyam94cGluIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM3ODQyODcsImV4cCI6MjA5OTM2MDI4N30.ilOwQxx80JX06KWOcWzf5m7kyigC_TsA452knC6XG00
       - name: Init Android project
         # gen/android is committed (native mic-permission code lives there); init only copies the
         # freshly built frontend in, leaving the customized files alone — verified below.
@@ -62,6 +70,14 @@ jobs:
         run: |
           if ! grep -rq "qddglfcuipmazrjoxpin.supabase.co" apps/desktop-tauri/dist; then
             echo "::error::VITE_AI_PROXY_URL didn't make it into the built bundle — AI features would ship silently disabled."
+            exit 1
+          fi
+      - name: Verify account-gating creds were baked into the build
+        run: |
+          # A distinctive slice of the anon key — if it's not in the bundle, the app won't gate
+          # behind login and would silently ship ungated.
+          if ! grep -rq "ilOwQxx80JX06KWOcWzf5m7kyigC" apps/desktop-tauri/dist; then
+            echo "::error::Supabase anon key didn't make it into the bundle — the app would not be login-gated."
             exit 1
           fi
       - name: Sign the release APK with an ephemeral key
