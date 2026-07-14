@@ -1,0 +1,95 @@
+name: Android Release APK
+
+# Builds a small, signed, arm64-only release APK for sideloading — the "polished" counterpart to
+# android.yml (which builds a fat all-ABI debug APK for quick iteration). Signed with an
+# EPHEMERAL keystore generated fresh each run: zero secret setup, but each build has a different
+# signing identity, so you must uninstall a previous install before sideloading a new one (no
+# in-place upgrade). Switch to a persistent keystore (repo secrets) if that ever matters.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-android-release:
+    name: Build signed arm64 release APK
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: zulu
+          java-version: '17'
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+      - name: Install Android NDK
+        run: sdkmanager "ndk;27.0.11902837"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          # arm64 only — covers essentially every real Android phone; keeps the build small.
+          targets: aarch64-linux-android
+      - run: pnpm install --frozen-lockfile
+      - name: Build frontend
+        run: pnpm --filter @polyglotai/desktop-tauri build
+      - name: Init Android project
+        # gen/android is committed (native mic-permission code lives there); init only copies the
+        # freshly built frontend in, leaving the customized files alone — verified below.
+        run: pnpm --filter @polyglotai/desktop-tauri tauri android init
+        env:
+          NDK_HOME: ${{ env.ANDROID_HOME }}/ndk/27.0.11902837
+      - name: Verify native customizations survived init
+        run: |
+          if ! grep -q "RECORD_AUDIO" apps/desktop-tauri/src-tauri/gen/android/app/src/main/AndroidManifest.xml; then
+            echo "::error::tauri android init clobbered AndroidManifest.xml — mic permission is gone."
+            exit 1
+          fi
+          if ! grep -q "onWebViewCreate" apps/desktop-tauri/src-tauri/gen/android/app/src/main/java/com/polyglotai/desktop/MainActivity.kt; then
+            echo "::error::tauri android init clobbered MainActivity.kt — permission-bridging code is gone."
+            exit 1
+          fi
+      - name: Build arm64 release APK (unsigned)
+        run: pnpm --filter @polyglotai/desktop-tauri tauri android build --target aarch64 --apk
+        env:
+          NDK_HOME: ${{ env.ANDROID_HOME }}/ndk/27.0.11902837
+      - name: Verify AI proxy URL was baked into the build
+        run: |
+          if ! grep -rq "qddglfcuipmazrjoxpin.supabase.co" apps/desktop-tauri/dist; then
+            echo "::error::VITE_AI_PROXY_URL didn't make it into the built bundle — AI features would ship silently disabled."
+            exit 1
+          fi
+      - name: Sign the release APK with an ephemeral key
+        run: |
+          set -euo pipefail
+          BUILD_TOOLS="$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)"
+          echo "Using build-tools: $BUILD_TOOLS"
+          # Throwaway keystore, regenerated every run — the password has no security value (a
+          # signing key establishes identity continuity, not secrecy), and nothing persists it.
+          keytool -genkeypair -v -keystore release.jks -keyalg RSA -keysize 2048 -validity 10000 \
+            -alias polyglotai -storepass polyglotai -keypass polyglotai \
+            -dname "CN=PolyglotAI, OU=Dev, O=PolyglotAI, C=US"
+          APK_DIR="apps/desktop-tauri/src-tauri/gen/android/app/build/outputs/apk"
+          UNSIGNED="$(find "$APK_DIR" -name '*-release-unsigned.apk' | head -1)"
+          if [ -z "$UNSIGNED" ]; then
+            echo "::error::no unsigned release APK found under $APK_DIR"
+            find "$APK_DIR" -name '*.apk' || true
+            exit 1
+          fi
+          echo "Unsigned APK: $UNSIGNED"
+          "$BUILD_TOOLS/zipalign" -v -p 4 "$UNSIGNED" aligned.apk
+          "$BUILD_TOOLS/apksigner" sign --ks release.jks --ks-pass pass:polyglotai \
+            --ks-key-alias polyglotai --key-pass pass:polyglotai \
+            --out polyglotai-arm64-release.apk aligned.apk
+          "$BUILD_TOOLS/apksigner" verify --verbose polyglotai-arm64-release.apk
+          ls -lh polyglotai-arm64-release.apk
+      - name: Upload signed APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: polyglotai-android-arm64-release-apk
+          path: polyglotai-arm64-release.apk
