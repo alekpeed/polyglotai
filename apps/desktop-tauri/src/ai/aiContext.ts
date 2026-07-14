@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import {
   CorrectionEngine,
   DEFAULT_CONVERSATION_TEMPLATE,
+  ExamplesEngine,
   OpenAIProvider,
   renderTemplate,
   type AIProvider,
@@ -180,6 +181,13 @@ function packTemplate(pack: LoadedPack, key: string): string | undefined {
 export function makeCorrectionEngine(provider: AIProvider, pack: LoadedPack): CorrectionEngine {
   const template = packTemplate(pack, "prompt.tutor.correction");
   return new CorrectionEngine(provider, template ? { template } : {});
+}
+
+/** Examples engine for the Library's per-word "show me real sentences" action; honors a pack's
+ * own `prompt.tutor.examples` template when it ships one, else the built-in default. */
+export function makeExamplesEngine(provider: AIProvider, pack: LoadedPack): ExamplesEngine {
+  const template = packTemplate(pack, "prompt.tutor.examples");
+  return new ExamplesEngine(provider, template ? { template } : {});
 }
 
 /** Conversation task prompt: pack template if present, built-in default otherwise. */

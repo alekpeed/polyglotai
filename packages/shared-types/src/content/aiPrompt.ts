@@ -45,3 +45,21 @@ export const AiCorrectionSchema = z.object({
   futureReviewItemKeys: z.array(z.string()).default([]),
 });
 export type AiCorrection = z.infer<typeof AiCorrectionSchema>;
+
+/**
+ * On-demand example sentences for a single vocabulary item — the "show me this word in real
+ * sentences" affordance in the Library. Each example is the sentence in the target language, its
+ * English translation, and an optional short usage note (register/nuance). Kept deliberately
+ * small and strict so a malformed model reply is caught rather than half-rendered.
+ */
+export const AiExampleSentenceSchema = z.object({
+  target: z.string(),
+  translation: z.string(),
+  note: z.string().optional(),
+});
+export type AiExampleSentence = z.infer<typeof AiExampleSentenceSchema>;
+
+export const AiExamplesSchema = z.object({
+  examples: z.array(AiExampleSentenceSchema).default([]),
+});
+export type AiExamples = z.infer<typeof AiExamplesSchema>;

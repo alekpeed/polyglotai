@@ -9,10 +9,12 @@ import {
   type Repos,
   type VocabularyEntry,
 } from "@polyglotai/core-learning";
+import type { AIProvider } from "@polyglotai/ai-orchestration";
 import type { LoadedPack } from "@polyglotai/language-pack-sdk";
-import type { Manifest } from "@polyglotai/shared-types";
+import type { AiExampleSentence, Manifest } from "@polyglotai/shared-types";
 import type { LearnerProfile, Severity } from "@polyglotai/shared-types";
 import { listBundledPackIds, loadPackManifest } from "../app/bootstrap";
+import { makeExamplesEngine, makeLearnerContext, useAiProvider } from "../ai/aiContext";
 
 type Tab = "vocabulary" | "grammar" | "slang" | "culture" | "microPacks";
 
@@ -103,8 +105,93 @@ function HeatBar({ severity }: { severity: Severity }) {
   );
 }
 
+type ExamplesPhase = "idle" | "loading" | "done" | "error";
+
+/** One vocabulary row plus its on-demand AI example sentences. The "✨" action asks the AI for a
+ * few natural, level-appropriate sentences using this word (see makeExamplesEngine); results
+ * render full-width below the row. The action only appears when AI is available for this build. */
+function VocabRow({
+  v,
+  provider,
+  pack,
+  profile,
+}: {
+  v: VocabularyEntry;
+  provider: AIProvider | null;
+  pack: LoadedPack;
+  profile: LearnerProfile;
+}) {
+  const [phase, setPhase] = useState<ExamplesPhase>("idle");
+  const [examples, setExamples] = useState<AiExampleSentence[]>([]);
+  const [error, setError] = useState<string | null>(null);
+
+  async function load() {
+    if (!provider) return;
+    setPhase("loading");
+    setError(null);
+    try {
+      const engine = makeExamplesEngine(provider, pack);
+      const res = await engine.examplesFor(v.lemma, v.translation, makeLearnerContext(profile, pack), 3);
+      setExamples(res.examples);
+      setPhase("done");
+    } catch (e) {
+      setError(String(e));
+      setPhase("error");
+    }
+  }
+
+  return (
+    <div className="lib-row-wrap">
+      <div className="lib-row">
+        <div className="word">
+          <span className="p">{v.lemma}</span>
+          {(v.reading || v.romaji) && (
+            <span className="r">{[v.reading, v.romaji].filter(Boolean).join(" · ")}</span>
+          )}
+          <span className="m">{v.translation}</span>
+        </div>
+        <span className="register-chip">{v.register ?? v.entryType}</span>
+        {provider ? (
+          phase === "loading" ? (
+            <span className="vocab-ex-btn muted" aria-hidden="true">
+              …
+            </span>
+          ) : (
+            <button type="button" className="vocab-ex-btn link" onClick={load} title="AI example sentences">
+              {phase === "done" ? "↻ examples" : "✨ examples"}
+            </button>
+          )
+        ) : (
+          <div />
+        )}
+      </div>
+      {phase === "error" && (
+        <p className="vocab-ex-panel error">
+          Couldn't generate examples: {error}{" "}
+          <button type="button" className="link" onClick={load}>
+            Retry
+          </button>
+        </p>
+      )}
+      {phase === "done" && (
+        <ul className="vocab-ex-panel">
+          {examples.length === 0 && <li className="muted">No examples came back — try again.</li>}
+          {examples.map((ex, i) => (
+            <li key={i}>
+              <span className="ex-target">{ex.target}</span>
+              <span className="ex-trans">{ex.translation}</span>
+              {ex.note && <span className="ex-note">{ex.note}</span>}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
 export function Library({ repos, profile, pack, allProfiles, onContinuePack, onStartPack, onDone }: Props) {
   const [tab, setTab] = useState<Tab>("vocabulary");
+  const { value: aiProvider } = useAiProvider(repos, profile);
   const [data, setData] = useState<Data | null>(null);
   const packId = profile.activePackId;
   const microPacksState = useSiblingMicroPacks(pack);
@@ -183,17 +270,7 @@ export function Library({ repos, profile, pack, allProfiles, onContinuePack, onS
               {!collapsed && (
                 <div className="lib-list">
                   {items.map((v) => (
-                    <div key={v.key} className="lib-row">
-                      <div className="word">
-                        <span className="p">{v.lemma}</span>
-                        {(v.reading || v.romaji) && (
-                          <span className="r">{[v.reading, v.romaji].filter(Boolean).join(" · ")}</span>
-                        )}
-                        <span className="m">{v.translation}</span>
-                      </div>
-                      <span className="register-chip">{v.register ?? v.entryType}</span>
-                      <div />
-                    </div>
+                    <VocabRow key={v.key} v={v} provider={aiProvider} pack={pack} profile={profile} />
                   ))}
                 </div>
               )}

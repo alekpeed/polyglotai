@@ -978,6 +978,56 @@ button.link:hover {
   color: var(--ink-soft);
 }
 
+/* On-demand AI example sentences per vocab row (Library) */
+.lib-row-wrap {
+  background: var(--surface-raised);
+}
+.vocab-ex-btn {
+  justify-self: end;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+.vocab-ex-btn.muted {
+  color: var(--ink-soft);
+}
+.vocab-ex-panel {
+  margin: 0;
+  padding: 0.5rem 1.3rem 1rem;
+  border-top: 1px dashed var(--line);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.vocab-ex-panel.error {
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+}
+.vocab-ex-panel li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.vocab-ex-panel .ex-target {
+  font-family: "Fraunces", serif;
+  font-size: 1rem;
+}
+.vocab-ex-panel .ex-trans {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+.vocab-ex-panel .ex-note {
+  font-size: 0.74rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.vocab-ex-panel .muted {
+  color: var(--ink-soft);
+}
+
 .lib-row.locked .word .p {
   filter: blur(5px);
   user-select: none;

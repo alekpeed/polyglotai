@@ -4,6 +4,7 @@ import {
   CONTENT_POLICY_CLAUSE,
   ConversationSession,
   CorrectionEngine,
+  ExamplesEngine,
   InterpreterSession,
   MalformedModelOutput,
   OpenAIProvider,
@@ -235,3 +236,42 @@ describe("InterpreterSession", () => {
     await expect(session.gradeTurn(first!, "again")).rejects.toBeInstanceOf(TokenCeilingExceeded);
   });
 });
+
+describe("ExamplesEngine", () => {
+  const examplesJson = JSON.stringify({
+    examples: [
+      { target: "Vou pegar um busão pro centro.", translation: "I'm gonna catch a bus downtown.", note: "busão = slangy for ônibus" },
+      { target: "O busão tá atrasado de novo.", translation: "The bus is late again." },
+    ],
+  });
+
+  it("parses valid example JSON and carries the learner context + content policy", async () => {
+    const { provider, requests } = stubProvider([{ text: examplesJson }]);
+    const engine = new ExamplesEngine(provider);
+    const result = await engine.examplesFor("busão", "bus (slang)", CTX, 2);
+
+    expect(result.examples).toHaveLength(2);
+    expect(result.examples[0]!.target).toContain("busão");
+    expect(result.examples[1]!.note).toBeUndefined();
+
+    const req = requests[0]!;
+    expect(req.messages[0]!.content).toContain(CONTENT_POLICY_CLAUSE);
+    expect(req.messages[1]!.content).toContain("busão");
+    expect(req.messages[1]!.content).toContain("bus (slang)");
+  });
+
+  it("tolerates a model that wraps its JSON in code fences", async () => {
+    const { provider } = stubProvider([{ text: "```json\n" + examplesJson + "\n```" }]);
+    const engine = new ExamplesEngine(provider);
+    const result = await engine.examplesFor("busão", "bus", CTX);
+    expect(result.examples).toHaveLength(2);
+  });
+
+  it("throws MalformedModelOutput on non-JSON and on schema mismatch", async () => {
+    const bad = new ExamplesEngine(stubProvider([{ text: "here you go!" }]).provider);
+    await expect(bad.examplesFor("x", "y", CTX)).rejects.toBeInstanceOf(MalformedModelOutput);
+
+    const wrongShape = new ExamplesEngine(stubProvider([{ text: JSON.stringify({ examples: [{ target: 1 }] }) }]).provider);
+    await expect(wrongShape.examplesFor("x", "y", CTX)).rejects.toBeInstanceOf(MalformedModelOutput);
+  });
+})
