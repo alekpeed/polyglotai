@@ -27,6 +27,7 @@ export function Review({ repos, profile, onDone }: Props) {
   const [revealed, setRevealed] = useState(false);
   const [loading, setLoading] = useState(true);
   const [reviewed, setReviewed] = useState(0);
+  const [tally, setTally] = useState<Record<1 | 2 | 3 | 4, number>>({ 1: 0, 2: 0, 3: 0, 4: 0 });
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const submitGuard = useRef(createSubmissionGuard());
@@ -68,6 +69,7 @@ export function Review({ repos, profile, onDone }: Props) {
         const rest = queue.slice(1);
         setQueue(rest);
         setReviewed((n) => n + 1);
+        setTally((t) => ({ ...t, [rating]: t[rating] + 1 }));
         await showFront(rest);
       } catch (err) {
         setError(`Could not save this review: ${String(err)}`);
@@ -80,12 +82,30 @@ export function Review({ repos, profile, onDone }: Props) {
   if (loading) return <p>Loading review…</p>;
 
   if (!card) {
+    const recalled = tally[3] + tally[4];
+    const recallPct = reviewed ? Math.round((recalled / reviewed) * 100) : 0;
     return (
-      <div>
-        <h1>Review complete</h1>
-        <p className="subtitle">You reviewed {reviewed} item(s).</p>
-        <button type="button" onClick={onDone}>
-          Back to dashboard
+      <div className="session-recap">
+        <span className="eyebrow">Session complete</span>
+        <h1>{reviewed === 0 ? "Nothing was due" : `${reviewed} reviewed`}</h1>
+        {reviewed > 0 && (
+          <>
+            <div className="recap-rate">
+              <span className="recap-num mono">{recallPct}%</span>
+              <span className="recap-sub">recalled well</span>
+            </div>
+            <ul className="recap-breakdown">
+              {GRADES.map((g) => (
+                <li key={g.rating} data-g={g.g}>
+                  <span className="recap-count mono">{tally[g.rating]}</span>
+                  <span className="recap-glabel">{g.label}</span>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+        <button type="button" className="btn-primary" onClick={onDone}>
+          Back to dashboard <span className="arrow">→</span>
         </button>
       </div>
     );

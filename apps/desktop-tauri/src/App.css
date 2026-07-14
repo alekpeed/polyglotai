@@ -739,6 +739,10 @@ button.link:hover {
   border: 1px solid var(--line);
   margin-bottom: 2.4rem;
 }
+.stat-strip.lifetime {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: -1.8rem;
+}
 .stat-cell {
   background: var(--surface-raised);
   padding: 1.1rem 1.3rem;
@@ -1204,6 +1208,61 @@ button.link:hover {
   background: var(--indigo-fill);
   border-color: var(--indigo-fill);
   color: #fff;
+}
+
+/* End-of-session recap (Review / Drill) */
+.session-recap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.recap-rate {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.recap-rate .recap-num {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.recap-rate .recap-sub {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+.recap-breakdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.4rem;
+}
+.recap-breakdown li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.recap-breakdown .recap-count {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.recap-breakdown .recap-glabel {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.recap-breakdown li[data-g="again"] .recap-count {
+  color: var(--heat-6);
+}
+.recap-breakdown li[data-g="hard"] .recap-count {
+  color: var(--heat-3);
+}
+.recap-breakdown li[data-g="good"] .recap-count {
+  color: var(--heat-1);
+}
+.recap-breakdown li[data-g="easy"] .recap-count {
+  color: var(--indigo);
 }
 .review-card form {
   display: flex;

@@ -99,4 +99,30 @@ describe("loadDashboard", () => {
     expect(withStreak.streakLast7.slice(-3)).toEqual([true, true, true]);
     expect(withStreak.streakLast7.slice(0, 4)).toEqual([false, false, false, false]);
   });
+
+  it("reports lifetime review count and recall rate (rating >= 3 counts as recalled well)", async () => {
+    const repos = createRepos(createMigratedDb().database, () => T0);
+    const profile = await runOnboarding(repos, { displayName: "Alek", pack: seedPack() });
+
+    const zero = await loadDashboard(repos, profile.id, () => T0);
+    expect(zero.lifetimeReviews).toBe(0);
+    expect(zero.recallRate).toBeNull();
+
+    const [item] = await repos.reviews.listDue(profile.id);
+    const iso = (n: number) => new Date(T0.getTime() + n * 1000).toISOString();
+    const ratings = [4, 3, 3, 1]; // 3 of 4 recalled well → 75%
+    let i = 0;
+    for (const rating of ratings) {
+      await repos.db.run(
+        `INSERT INTO review_results (id, review_item_id, rating, reviewed_at, schema_version, created_at)
+         VALUES (?, ?, ?, ?, ?, ?)`,
+        [`s-${i}`, item!.id, rating, iso(i), 1, iso(i)],
+      );
+      i += 1;
+    }
+
+    const data = await loadDashboard(repos, profile.id, () => T0);
+    expect(data.lifetimeReviews).toBe(4);
+    expect(data.recallRate).toBe(75);
+  });
 });

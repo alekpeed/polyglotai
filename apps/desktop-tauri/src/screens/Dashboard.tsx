@@ -149,6 +149,17 @@ export function Dashboard({
         </div>
       </div>
 
+      <div className="stat-strip lifetime">
+        <div className="stat-cell">
+          <div className="v mono">{data.lifetimeReviews}</div>
+          <div className="l">reviews done</div>
+        </div>
+        <div className="stat-cell">
+          <div className="v mono">{data.recallRate === null ? "—" : `${data.recallRate}%`}</div>
+          <div className="l">recalled well</div>
+        </div>
+      </div>
+
       {shelf.length > 0 && (
         <>
           <div className="shelf-head">

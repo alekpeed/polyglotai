@@ -29,6 +29,7 @@ export function Drill({ repos, profile, onDone }: Props) {
   const [checked, setChecked] = useState<{ correct: boolean } | null>(null);
   const [loading, setLoading] = useState(true);
   const [reviewed, setReviewed] = useState(0);
+  const [tally, setTally] = useState<Record<1 | 2 | 3, number>>({ 1: 0, 2: 0, 3: 0 });
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const submitGuard = useRef(createSubmissionGuard());
@@ -79,6 +80,7 @@ export function Drill({ repos, profile, onDone }: Props) {
         const rest = queue.slice(1);
         setQueue(rest);
         setReviewed((n) => n + 1);
+        setTally((t) => ({ ...t, [rating]: t[rating] + 1 }));
         await showNext(rest);
       } catch (err) {
         setError(`Could not save this drill: ${String(err)}`);
@@ -91,15 +93,35 @@ export function Drill({ repos, profile, onDone }: Props) {
   if (loading) return <p>Loading ladder drills…</p>;
 
   if (!card) {
+    const clean = reviewed - tally[1];
+    const cleanPct = reviewed ? Math.round((clean / reviewed) * 100) : 0;
+    const breakdown = [
+      { rating: 3 as const, label: "Correct", g: "good" },
+      { rating: 2 as const, label: "Typo", g: "hard" },
+      { rating: 1 as const, label: "Missed", g: "again" },
+    ];
     return (
-      <div>
+      <div className="session-recap">
         <span className="eyebrow">Substitution Drills</span>
-        <h1>Ladder drill complete</h1>
-        <p className="subtitle">
-          {reviewed > 0 ? `You drilled ${reviewed} step(s).` : "No substitution ladders are due right now."}
-        </p>
-        <button type="button" onClick={onDone}>
-          Back to dashboard
+        <h1>{reviewed === 0 ? "No ladders due" : `${reviewed} drilled`}</h1>
+        {reviewed > 0 && (
+          <>
+            <div className="recap-rate">
+              <span className="recap-num mono">{cleanPct}%</span>
+              <span className="recap-sub">clean</span>
+            </div>
+            <ul className="recap-breakdown">
+              {breakdown.map((b) => (
+                <li key={b.rating} data-g={b.g}>
+                  <span className="recap-count mono">{tally[b.rating]}</span>
+                  <span className="recap-glabel">{b.label}</span>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+        <button type="button" className="btn-primary" onClick={onDone}>
+          Back to dashboard <span className="arrow">→</span>
         </button>
       </div>
     );

@@ -17,6 +17,11 @@ export interface DashboardData {
   streakDays: number;
   /** Whether each of the last 7 calendar days (oldest first, today last) had a review. */
   streakLast7: boolean[];
+  /** Total graded reviews this profile has ever done (review_results rows). */
+  lifetimeReviews: number;
+  /** Share of those reviews recalled well (rated Good/Easy, i.e. rating ≥ 3), as a 0–100
+   * percentage — null until there's at least one review to divide by. */
+  recallRate: number | null;
 }
 
 async function count(repos: Repos, table: string, packId: string): Promise<number> {
@@ -40,6 +45,20 @@ async function reviewedDays(repos: Repos, profileId: string): Promise<Set<string
     [profileId as SqlValue],
   );
   return new Set(rows.map((r) => r.d));
+}
+
+/** Lifetime review count + how many were recalled well (rating ≥ 3 = Good/Easy). One aggregate
+ * pass over this profile's review_results. */
+async function reviewStats(repos: Repos, profileId: string): Promise<{ total: number; recalled: number }> {
+  const rows = await repos.db.all<{ total: number; recalled: number }>(
+    `SELECT COUNT(*) AS total,
+            SUM(CASE WHEN rr.rating >= 3 THEN 1 ELSE 0 END) AS recalled
+       FROM review_results rr
+       JOIN review_items ri ON ri.id = rr.review_item_id
+      WHERE ri.profile_id = ?`,
+    [profileId as SqlValue],
+  );
+  return { total: Number(rows[0]?.total ?? 0), recalled: Number(rows[0]?.recalled ?? 0) };
 }
 
 function streakFrom(days: Set<string>, today: Date): number {
@@ -89,6 +108,7 @@ export async function loadDashboard(
 
   const days = await reviewedDays(repos, profileId);
   const today = now();
+  const stats = await reviewStats(repos, profileId);
 
   return {
     profile,
@@ -97,5 +117,7 @@ export async function loadDashboard(
     totals,
     streakDays: streakFrom(days, today),
     streakLast7: last7From(days, today),
+    lifetimeReviews: stats.total,
+    recallRate: stats.total ? Math.round((stats.recalled / stats.total) * 100) : null,
   };
 }
