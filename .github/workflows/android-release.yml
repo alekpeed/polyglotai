@@ -80,16 +80,31 @@ jobs:
             echo "::error::Supabase anon key didn't make it into the bundle — the app would not be login-gated."
             exit 1
           fi
-      - name: Sign the release APK with an ephemeral key
+      - name: Sign the release APK
+        # Self-configuring: signs with the PERSISTENT keystore when the repo secrets exist
+        # (consistent identity → in-place updates, no uninstall), and falls back to a throwaway
+        # EPHEMERAL key when they don't (updates then need uninstall-first). Absent secrets arrive
+        # as empty env strings, so this never breaks the build either way.
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: |
           set -euo pipefail
           BUILD_TOOLS="$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)"
           echo "Using build-tools: $BUILD_TOOLS"
-          # Throwaway keystore, regenerated every run — the password has no security value (a
-          # signing key establishes identity continuity, not secrecy), and nothing persists it.
-          keytool -genkeypair -v -keystore release.jks -keyalg RSA -keysize 2048 -validity 10000 \
-            -alias polyglotai -storepass polyglotai -keypass polyglotai \
-            -dname "CN=PolyglotAI, OU=Dev, O=PolyglotAI, C=US"
+          if [ -n "${ANDROID_KEYSTORE_BASE64:-}" ]; then
+            echo "Signing with the PERSISTENT keystore from repo secrets (in-place updates)."
+            echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > release.jks
+            STOREPASS="$ANDROID_KEYSTORE_PASSWORD"; KEYPASS="$ANDROID_KEY_PASSWORD"; ALIAS="$ANDROID_KEY_ALIAS"
+          else
+            echo "No keystore secret set — using a throwaway EPHEMERAL key (uninstall-first updates)."
+            STOREPASS=polyglotai; KEYPASS=polyglotai; ALIAS=polyglotai
+            keytool -genkeypair -v -keystore release.jks -keyalg RSA -keysize 2048 -validity 10000 \
+              -alias "$ALIAS" -storepass "$STOREPASS" -keypass "$KEYPASS" \
+              -dname "CN=PolyglotAI, OU=Dev, O=PolyglotAI, C=US"
+          fi
           APK_DIR="apps/desktop-tauri/src-tauri/gen/android/app/build/outputs/apk"
           UNSIGNED="$(find "$APK_DIR" -name '*-release-unsigned.apk' | head -1)"
           if [ -z "$UNSIGNED" ]; then
@@ -99,8 +114,8 @@ jobs:
           fi
           echo "Unsigned APK: $UNSIGNED"
           "$BUILD_TOOLS/zipalign" -v -p 4 "$UNSIGNED" aligned.apk
-          "$BUILD_TOOLS/apksigner" sign --ks release.jks --ks-pass pass:polyglotai \
-            --ks-key-alias polyglotai --key-pass pass:polyglotai \
+          "$BUILD_TOOLS/apksigner" sign --ks release.jks --ks-pass "pass:$STOREPASS" \
+            --ks-key-alias "$ALIAS" --key-pass "pass:$KEYPASS" \
             --out polyglotai-arm64-release.apk aligned.apk
           "$BUILD_TOOLS/apksigner" verify --verbose polyglotai-arm64-release.apk
           ls -lh polyglotai-arm64-release.apk
