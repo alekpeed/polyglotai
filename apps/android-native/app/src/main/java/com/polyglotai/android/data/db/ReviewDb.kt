@@ -58,6 +58,11 @@ interface ReviewDao {
     @Query("SELECT * FROM review_items")
     suspend fun listAll(): List<ReviewItem>
 
+    /** Every review timestamp for a pack — bucketed by calendar day in Kotlin to drive the streak
+     *  tracker (day-of-week dots, consecutive-day count). */
+    @Query("SELECT lastReviewedAtMillis FROM review_items WHERE packId = :packId AND lastReviewedAtMillis IS NOT NULL")
+    suspend fun listReviewedMillis(packId: String): List<Long>
+
     /** Replace local rows with cloud winners (used by the pull side of sync). */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun upsertAll(items: List<ReviewItem>)

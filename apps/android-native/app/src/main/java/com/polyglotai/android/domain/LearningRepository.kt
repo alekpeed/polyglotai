@@ -11,6 +11,10 @@ data class DashboardStats(
     val dailyGoal: Int,
 )
 
+/** Consecutive-day review streak. [last7] is oldest-to-newest, today last — the seven dots on the
+ *  dashboard's streak card. */
+data class Streak(val days: Int, val last7: List<Boolean>)
+
 /**
  * Ties bundled content to persisted review state. Seeds a pack's vocabulary into the review
  * table the first time it's opened, exposes the due queue, and records grades through SM-2.
@@ -68,6 +72,32 @@ class LearningRepository(
 
     suspend fun listDue(packId: String): List<ReviewItem> =
         dao.listDue(packId, now())
+
+    /** Computed straight from review timestamps — no separate activity log needed. A day "counts"
+     *  if any card in the pack was reviewed during it. */
+    suspend fun streak(packId: String): Streak {
+        val cal = java.util.Calendar.getInstance()
+        cal.timeInMillis = now()
+        cal.set(java.util.Calendar.HOUR_OF_DAY, 0)
+        cal.set(java.util.Calendar.MINUTE, 0)
+        cal.set(java.util.Calendar.SECOND, 0)
+        cal.set(java.util.Calendar.MILLISECOND, 0)
+        val todayStart = cal.timeInMillis
+        val dayMs = 24L * 60 * 60 * 1000
+
+        val reviewedDays = dao.listReviewedMillis(packId)
+            .map { Math.floorDiv(it - todayStart, dayMs) }
+            .toSet()
+
+        // Count backward from today; if today hasn't happened yet, start from yesterday so the
+        // streak still reflects "as of your last active day" rather than snapping to zero at 12am.
+        val start = if (reviewedDays.contains(0L)) 0 else 1
+        var days = 0
+        while (reviewedDays.contains(-(start + days).toLong())) days++
+
+        val last7 = (6 downTo 0).map { offset -> reviewedDays.contains(-offset.toLong()) }
+        return Streak(days, last7)
+    }
 
     suspend fun grade(item: ReviewItem, rating: Int) {
         val nowMs = now()

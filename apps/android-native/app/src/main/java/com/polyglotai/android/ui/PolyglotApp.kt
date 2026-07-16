@@ -3,6 +3,8 @@ package com.polyglotai.android.ui
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -13,9 +15,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -49,15 +53,27 @@ import com.polyglotai.android.data.LanguageOption
 import com.polyglotai.android.data.SlangItem
 import com.polyglotai.android.data.VocabularyItem
 import com.polyglotai.android.ui.theme.AppTheme
+import com.polyglotai.android.ui.theme.Eyebrow
+import com.polyglotai.android.ui.theme.FlatRow
 import com.polyglotai.android.ui.theme.HeroBox
 import com.polyglotai.android.ui.theme.LocalDisplayFamily
 import com.polyglotai.android.ui.theme.LocalPolyColors
 import com.polyglotai.android.ui.theme.Pack
+import com.polyglotai.android.ui.theme.PlexMono
+import com.polyglotai.android.ui.theme.PlexSans
+import com.polyglotai.android.ui.theme.PolyTextField
 import com.polyglotai.android.ui.theme.PrimaryButton
+import com.polyglotai.android.ui.theme.SecondaryButton
+import com.polyglotai.android.ui.theme.SectionHead
+import com.polyglotai.android.ui.theme.TagCard
+import com.polyglotai.android.ui.theme.TextureHero
+import com.polyglotai.android.ui.theme.TextureWord
 import com.polyglotai.android.ui.theme.packForId
+import com.polyglotai.android.ui.theme.seigaiha
 import com.polyglotai.android.data.ai.ChatMessage
 import com.polyglotai.android.data.db.ReviewItem
 import com.polyglotai.android.domain.DashboardStats
+import com.polyglotai.android.domain.Streak
 import com.polyglotai.android.domain.ai.AiCorrection
 import com.polyglotai.android.domain.ai.AiExample
 import com.polyglotai.android.domain.ai.AiTranslation
@@ -67,7 +83,8 @@ import kotlinx.coroutines.launch
 private sealed interface Screen {
     data object Picker : Screen
     data object Account : Screen
-    data object Settings : Screen
+    /** [returnTo] lets Settings come back to wherever it was opened from (Picker or Dashboard). */
+    data class Settings(val returnTo: Screen = Picker) : Screen
     data class Dashboard(val packId: String, val packName: String) : Screen
     data class Review(val packId: String, val packName: String) : Screen
     data class Library(val packId: String, val packName: String) : Screen
@@ -102,7 +119,8 @@ fun PolyglotApp(
     BackHandler(enabled = screen != Screen.Picker) {
         screen = when (val s = screen) {
             is Screen.Picker -> Screen.Picker
-            is Screen.Account, is Screen.Settings -> Screen.Picker
+            is Screen.Account -> Screen.Picker
+            is Screen.Settings -> s.returnTo
             is Screen.Dashboard -> {
                 onPackChange(Pack.DEFAULT)
                 Screen.Picker
@@ -126,7 +144,7 @@ fun PolyglotApp(
                 screen = Screen.Dashboard(opt.id, opt.name)
             },
             onAccount = { screen = Screen.Account },
-            onSettings = { screen = Screen.Settings },
+            onSettings = { screen = Screen.Settings() },
         )
         is Screen.Account -> AccountScreen(
             container, modifier,
@@ -134,7 +152,7 @@ fun PolyglotApp(
         )
         is Screen.Settings -> SettingsScreen(
             container, modifier, appTheme, onThemeChange,
-            onBack = { screen = Screen.Picker },
+            onBack = { screen = s.returnTo },
         )
         is Screen.Dashboard -> DashboardScreen(
             container, modifier, s.packId, s.packName,
@@ -145,6 +163,7 @@ fun PolyglotApp(
             onPronunciation = { screen = Screen.Pronunciation(s.packId, s.packName) },
             onInterpreter = { screen = Screen.Interpreter(s.packId, s.packName) },
             onDrill = { screen = Screen.Drill(s.packId, s.packName) },
+            onSettings = { screen = Screen.Settings(returnTo = s) },
             onBack = {
                 onPackChange(Pack.DEFAULT)
                 screen = Screen.Picker
@@ -195,35 +214,60 @@ private fun PickerScreen(
         langs = runCatching { container.packs.fullLanguages() }.getOrDefault(emptyList())
     }
 
-    Column(modifier.fillMaxSize().padding(24.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-        Row(
-            Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically,
-        ) {
-            Text("Choose a language", style = MaterialTheme.typography.headlineMedium)
-            Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-                TextButton(onClick = onSettings) { Text("Settings") }
-                TextButton(onClick = onAccount) {
-                    Text(if (container.account.isSignedIn) "Account" else "Sign in")
+    val poly = LocalPolyColors.current
+    Column(modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
+        // .onboard-hero — full-bleed, no rounding, running straight into the paper section below.
+        TextureHero(
+            eyebrow = "PolyglotAI",
+            headline = "Which\nlanguage?",
+            body = "Every language gets its own progress, review queue, and pace — pick up where you left off, or start something new.",
+            modifier = Modifier.fillMaxWidth(),
+        )
+        Column(Modifier.fillMaxWidth().padding(horizontal = 24.dp, vertical = 22.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
+            Row(
+                Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.End,
+            ) {
+                Row(horizontalArrangement = Arrangement.spacedBy(14.dp)) {
+                    LinkLabel("Settings", onSettings)
+                    LinkLabel(if (container.account.isSignedIn) "Account" else "Sign in", onAccount)
                 }
             }
-        }
-        val list = langs
-        when {
-            list == null -> Text("Loading…", style = MaterialTheme.typography.bodyMedium)
-            list.isEmpty() -> Text("No language packs found.", style = MaterialTheme.typography.bodyMedium)
-            else -> list.forEach { opt ->
-                Card(Modifier.fillMaxWidth()) {
-                    Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                        Text(opt.name, style = MaterialTheme.typography.titleMedium)
-                        Button(onClick = { onPick(opt) }) { Text("Start") }
+            SectionHead("Start learning")
+            val list = langs
+            when {
+                list == null -> Text("Loading…", style = MaterialTheme.typography.bodyMedium, color = poly.inkSoft)
+                list.isEmpty() -> Text("No language packs found.", style = MaterialTheme.typography.bodyMedium, color = poly.inkSoft)
+                else -> Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    list.forEach { opt ->
+                        FlatRow(
+                            onClick = { onPick(opt) },
+                            name = opt.name,
+                            sub = opt.id,
+                            isNew = true,
+                        )
                     }
                 }
             }
         }
     }
 }
+
+/** A small IBM Plex Mono link — .shelf-head button / button.link styling for inline text actions. */
+@Composable
+private fun LinkLabel(text: String, onClick: () -> Unit) {
+    val poly = LocalPolyColors.current
+    Text(
+        text,
+        fontFamily = PlexMono,
+        fontSize = 12.sp,
+        letterSpacing = 0.5.sp,
+        color = poly.indigo,
+        modifier = Modifier.clickable(onClick = onClick),
+    )
+}
+
+private data class ShelfItem(val tag: String, val title: String, val body: String)
 
 @Composable
 private fun DashboardScreen(
@@ -238,33 +282,45 @@ private fun DashboardScreen(
     onPronunciation: () -> Unit,
     onInterpreter: () -> Unit,
     onDrill: () -> Unit,
+    onSettings: () -> Unit,
     onBack: () -> Unit,
 ) {
     val scope = rememberCoroutineScope()
     var stats by remember { mutableStateOf<DashboardStats?>(null) }
+    var streak by remember { mutableStateOf<Streak?>(null) }
+    var counts by remember { mutableStateOf<Triple<Int, Int, Int>?>(null) }
+    var shelf by remember { mutableStateOf<List<ShelfItem>>(emptyList()) }
     var syncing by remember { mutableStateOf(false) }
     var syncMsg by remember { mutableStateOf<String?>(null) }
     LaunchedEffect(packId) {
         container.learning.seedPack(packId)
         stats = container.learning.dashboard(packId, container.settings.dailyGoal)
+        streak = container.learning.streak(packId)
+        val vocab = runCatching { container.packs.vocabulary(packId) }.getOrDefault(emptyList())
+        val grammar = runCatching { container.packs.grammar(packId) }.getOrDefault(emptyList())
+        val slang = runCatching { container.packs.slang(packId) }.getOrDefault(emptyList())
+        counts = Triple(vocab.size, grammar.size, slang.size)
+        shelf = buildList {
+            grammar.firstOrNull()?.let { add(ShelfItem(it.cefr?.let { c -> "Grammar · $c" } ?: "Grammar", it.title, stripMd(it.explanationMd).take(120))) }
+            vocab.firstOrNull()?.let { add(ShelfItem("Vocabulary", it.lemma, it.translation)) }
+            slang.firstOrNull()?.let { add(ShelfItem(it.register?.let { r -> "Slang · $r" } ?: "Slang", it.phrase, it.natural ?: it.literal ?: "")) }
+        }
     }
 
     val poly = LocalPolyColors.current
-    Column(modifier.fillMaxSize().padding(24.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-        Text(packName, style = MaterialTheme.typography.headlineMedium)
+    Column(modifier.fillMaxSize().seigaiha(poly.seigaiha).verticalScroll(rememberScrollState()).padding(horizontal = 22.dp, vertical = 20.dp)) {
+        Eyebrow("Welcome back")
+        Text(packName, fontFamily = LocalDisplayFamily.current, fontSize = 28.sp, color = poly.ink, modifier = Modifier.padding(top = 2.dp, bottom = 16.dp))
+
         val d = stats
         if (d == null) {
-            Text("Loading…", style = MaterialTheme.typography.bodyMedium)
+            Text("Loading…", style = MaterialTheme.typography.bodyMedium, color = poly.inkSoft)
         } else {
             // The signature hero: periwinkle fill (navy in dark), a gold Fraunces-style serif
             // numeral, and the asymmetric top-start curve — flat in the ja washi world.
             HeroBox(Modifier.fillMaxWidth()) {
                 Column(Modifier.padding(24.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                    Text(
-                        "DUE NOW",
-                        style = MaterialTheme.typography.labelMedium,
-                        color = poly.onFill.copy(alpha = 0.6f),
-                    )
+                    Text("DUE NOW", fontFamily = PlexMono, fontSize = 11.sp, letterSpacing = 1.5.sp, color = poly.onFill.copy(alpha = 0.65f))
                     Text(
                         "${d.dueCount}",
                         fontFamily = LocalDisplayFamily.current,
@@ -273,38 +329,127 @@ private fun DashboardScreen(
                         color = poly.gold,
                     )
                     Text(
-                        "${d.totalCards} cards total",
-                        style = MaterialTheme.typography.bodySmall,
+                        if (d.dueCount == 0) "All caught up — check back later or explore the library."
+                        else "Vocabulary, grammar, and register — ready whenever you are.",
+                        fontFamily = PlexSans,
+                        fontSize = 13.sp,
                         color = poly.onFill.copy(alpha = 0.78f),
                     )
-                    Spacer(Modifier.height(6.dp))
+                    Spacer(Modifier.height(4.dp))
                     PrimaryButton(onClick = onReview, enabled = d.dueCount > 0) {
-                        Text(if (d.dueCount > 0) "Start review" else "Nothing due")
+                        Text(if (d.dueCount > 0) "Start review →" else "Nothing due")
                     }
                 }
             }
-            Card(Modifier.fillMaxWidth()) {
-                Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    val goalMet = d.reviewsToday >= d.dailyGoal
-                    Text("Daily goal", style = MaterialTheme.typography.labelLarge)
+
+            Spacer(Modifier.height(14.dp))
+
+            // .streak-card — a smaller asymmetric blob corner, day-of-week dots.
+            val s = streak
+            val streakShape = RoundedCornerShape(topStart = 8.dp, topEnd = 8.dp, bottomEnd = 8.dp, bottomStart = if (poly.flat) 8.dp else 44.dp)
+            Column(
+                Modifier
+                    .fillMaxWidth()
+                    .clip(streakShape)
+                    .background(poly.surfaceRaised)
+                    .border(1.dp, poly.line, streakShape)
+                    .padding(20.dp),
+                verticalArrangement = Arrangement.spacedBy(10.dp),
+            ) {
+                Eyebrow("Streak")
+                Row(verticalAlignment = Alignment.Bottom) {
+                    Text("${s?.days ?: 0}", fontFamily = LocalDisplayFamily.current, fontSize = 30.sp, color = poly.ink)
                     Text(
-                        if (goalMet) "Goal reached — ${d.reviewsToday} today ✓" else "${d.reviewsToday} / ${d.dailyGoal} today",
-                        style = MaterialTheme.typography.titleMedium,
-                    )
-                    LinearProgressIndicator(
-                        progress = { if (d.dailyGoal == 0) 0f else (d.reviewsToday.toFloat() / d.dailyGoal).coerceIn(0f, 1f) },
-                        modifier = Modifier.fillMaxWidth(),
+                        " day${if ((s?.days ?: 0) == 1) "" else "s"}",
+                        fontFamily = PlexSans,
+                        fontSize = 15.sp,
+                        color = poly.inkSoft,
+                        modifier = Modifier.padding(bottom = 3.dp),
                     )
                 }
+                Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                    (s?.last7 ?: List(7) { false }).forEach { on ->
+                        Box(
+                            Modifier
+                                .size(16.dp)
+                                .clip(RoundedCornerShape(3.dp))
+                                .background(if (on) poly.goldFill else poly.surface),
+                        )
+                    }
+                }
             }
-            OutlinedButton(onClick = onDrill, modifier = Modifier.fillMaxWidth()) { Text("Quick drill") }
-            OutlinedButton(onClick = onLibrary, modifier = Modifier.fillMaxWidth()) { Text("Browse library") }
-            OutlinedButton(onClick = onTutor, modifier = Modifier.fillMaxWidth()) { Text("AI Tutor") }
-            OutlinedButton(onClick = onConversation, modifier = Modifier.fillMaxWidth()) { Text("Conversation") }
-            OutlinedButton(onClick = onPronunciation, modifier = Modifier.fillMaxWidth()) { Text("Pronunciation") }
-            OutlinedButton(onClick = onInterpreter, modifier = Modifier.fillMaxWidth()) { Text("Interpreter") }
+
+            Spacer(Modifier.height(14.dp))
+
+            // .daily-goal — flat bordered strip, thin progress bar.
+            val goalMet = d.reviewsToday >= d.dailyGoal
+            val goalShape = RoundedCornerShape(if (poly.flat) 0.dp else 6.dp)
+            Column(
+                Modifier
+                    .fillMaxWidth()
+                    .clip(goalShape)
+                    .background(poly.surfaceRaised)
+                    .border(1.dp, poly.line, goalShape)
+                    .padding(horizontal = 18.dp, vertical = 16.dp),
+                verticalArrangement = Arrangement.spacedBy(8.dp),
+            ) {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.Bottom) {
+                    Eyebrow("Today's goal")
+                    Text("${d.reviewsToday} / ${d.dailyGoal}", fontFamily = PlexMono, fontSize = 15.sp, color = poly.ink)
+                }
+                LinearProgressIndicator(
+                    progress = { if (d.dailyGoal == 0) 0f else (d.reviewsToday.toFloat() / d.dailyGoal).coerceIn(0f, 1f) },
+                    modifier = Modifier.fillMaxWidth().height(8.dp).clip(RoundedCornerShape(99.dp)),
+                    color = poly.indigoFill,
+                    trackColor = poly.line,
+                )
+                if (goalMet) {
+                    Text("Goal met — nice work ✓", fontFamily = PlexSans, fontSize = 12.sp, fontWeight = FontWeight.Medium, color = poly.heat[0])
+                }
+            }
+
+            Spacer(Modifier.height(18.dp))
+
+            // .stat-strip — a hairline grid of counts pulled straight from the pack's own content.
+            val cnt = counts
+            if (cnt != null) {
+                val (vocab, grammar, slang) = cnt
+                Row(
+                    Modifier.fillMaxWidth().background(poly.line).border(1.dp, poly.line),
+                    horizontalArrangement = Arrangement.spacedBy(1.dp),
+                ) {
+                    StatCell("$vocab", "vocabulary", Modifier.weight(1f))
+                    StatCell("$grammar", "grammar", Modifier.weight(1f))
+                    StatCell("$slang", "slang & register", Modifier.weight(1f))
+                }
+                Spacer(Modifier.height(24.dp))
+            }
+
+            if (shelf.isNotEmpty()) {
+                SectionHead("This week", linkText = "See library →", onLinkClick = onLibrary)
+                Spacer(Modifier.height(10.dp))
+                Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    shelf.forEachIndexed { i, item ->
+                        TagCard(tag = item.tag, title = item.title, body = item.body, tagIndex = i)
+                    }
+                }
+                Spacer(Modifier.height(24.dp))
+            }
+
+            SectionHead("Practice")
+            Spacer(Modifier.height(10.dp))
+            Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                TagCard("AI Tutor", "Get a full correction", "Write a sentence, get corrected/formal/casual/slang versions.", 0, onClick = onTutor)
+                TagCard("Conversation", "Roleplay a scenario", "Café, job interview, first date — pick a scenario and go.", 1, onClick = onConversation)
+                TagCard("Live Interpreter", "Interpret on the spot", "Two-way translation, either direction, with a register note.", 2, onClick = onInterpreter)
+                TagCard("Quick Drill", "Fast multiple choice", "Vocabulary rounds with distractors — a faster loop than review.", 0, onClick = onDrill)
+                TagCard("Pronunciation", "Record & score", "Say it back, get scored against the target.", 1, onClick = onPronunciation)
+                TagCard("Settings", "Daily goal & appearance", "Review pace, theme, and account.", 2, onClick = onSettings)
+            }
+
+            Spacer(Modifier.height(20.dp))
             if (container.account.isSignedIn) {
-                OutlinedButton(
+                SecondaryButton(
                     onClick = {
                         syncing = true; syncMsg = null
                         scope.launch {
@@ -322,10 +467,24 @@ private fun DashboardScreen(
                     enabled = !syncing,
                     modifier = Modifier.fillMaxWidth(),
                 ) { Text(if (syncing) "Syncing…" else "Sync now") }
-                syncMsg?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
+                syncMsg?.let { Text(it, style = MaterialTheme.typography.bodySmall, color = poly.inkSoft, modifier = Modifier.padding(top = 6.dp)) }
+                Spacer(Modifier.height(10.dp))
             }
-            TextButton(onClick = onBack) { Text("Switch language") }
+            LinkLabel("Switch language", onBack)
+            Spacer(Modifier.height(24.dp))
         }
+    }
+}
+
+@Composable
+private fun StatCell(value: String, label: String, modifier: Modifier = Modifier) {
+    val poly = LocalPolyColors.current
+    Column(
+        modifier.background(poly.surfaceRaised).padding(horizontal = 12.dp, vertical = 14.dp),
+        verticalArrangement = Arrangement.spacedBy(2.dp),
+    ) {
+        Text(value, fontFamily = PlexMono, fontSize = 19.sp, fontWeight = FontWeight.Medium, color = poly.ink)
+        Text(label, fontFamily = PlexSans, fontSize = 11.sp, color = poly.inkSoft)
     }
 }
 
