@@ -49,11 +49,11 @@ import com.polyglotai.android.data.LanguageOption
 import com.polyglotai.android.data.SlangItem
 import com.polyglotai.android.data.VocabularyItem
 import com.polyglotai.android.ui.theme.AppTheme
+import com.polyglotai.android.ui.theme.HeroBox
 import com.polyglotai.android.ui.theme.LocalDisplayFamily
 import com.polyglotai.android.ui.theme.LocalPolyColors
 import com.polyglotai.android.ui.theme.Pack
 import com.polyglotai.android.ui.theme.PrimaryButton
-import com.polyglotai.android.ui.theme.heroShape
 import com.polyglotai.android.ui.theme.packForId
 import com.polyglotai.android.data.ai.ChatMessage
 import com.polyglotai.android.data.db.ReviewItem
@@ -258,10 +258,8 @@ private fun DashboardScreen(
         } else {
             // The signature hero: periwinkle fill (navy in dark), a gold Fraunces-style serif
             // numeral, and the asymmetric top-start curve — flat in the ja washi world.
-            Box(
-                Modifier.fillMaxWidth().clip(heroShape(poly)).background(poly.indigoFill).padding(24.dp),
-            ) {
-                Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+            HeroBox(Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(24.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
                     Text(
                         "DUE NOW",
                         style = MaterialTheme.typography.labelMedium,
@@ -865,10 +863,8 @@ private fun AccountScreen(container: AppContainer, modifier: Modifier, onBack: (
         verticalArrangement = Arrangement.spacedBy(14.dp),
     ) {
         val poly = LocalPolyColors.current
-        Box(
-            Modifier.fillMaxWidth().clip(heroShape(poly)).background(poly.indigoFill).padding(22.dp),
-        ) {
-            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        HeroBox(Modifier.fillMaxWidth(), skyline = true) {
+            Column(Modifier.padding(22.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 Text(
                     "POLYGLOTAI · BRASIL",
                     style = MaterialTheme.typography.labelSmall,

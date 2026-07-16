@@ -13,8 +13,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import com.polyglotai.android.ui.PolyglotApp
+import com.polyglotai.android.ui.theme.LocalPolyColors
 import com.polyglotai.android.ui.theme.Pack
 import com.polyglotai.android.ui.theme.PolyglotTheme
+import com.polyglotai.android.ui.theme.seigaiha
 
 class MainActivity : ComponentActivity() {
     private lateinit var container: AppContainer
@@ -30,10 +32,11 @@ class MainActivity : ComponentActivity() {
             var appTheme by remember { mutableStateOf(container.settings.appTheme) }
             var pack by remember { mutableStateOf(Pack.DEFAULT) }
             PolyglotTheme(theme = appTheme, pack = pack) {
+                val seigaihaColor = LocalPolyColors.current.seigaiha
                 Scaffold(modifier = Modifier.fillMaxSize()) { padding ->
                     PolyglotApp(
                         container,
-                        Modifier.padding(padding),
+                        Modifier.padding(padding).seigaiha(seigaihaColor),
                         appTheme = appTheme,
                         onThemeChange = {
                             container.settings.appTheme = it

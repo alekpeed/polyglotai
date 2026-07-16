@@ -37,6 +37,14 @@ data class PolyColors(
     val hasShadow: Boolean,
     /** big asymmetric top-start corner on hero surfaces (radius-curve). 0 for the flat ja world. */
     val heroTopStart: Dp,
+    /** primary call-to-action fill + ink. Champagne gold in the default world; in ja the CTA moves
+     *  to the ai indigo (kin gold is reserved for hairlines and the seal). */
+    val ctaFill: Color,
+    val ctaInk: Color,
+    /** the flat washi world (ja): no shadow/curve, cards get a gold top rule, seigaiha behind. */
+    val flat: Boolean,
+    /** faint 青海波 wave tint for the ja background; transparent elsewhere. */
+    val seigaiha: Color,
 ) {
     /** On the periwinkle/navy fill (sidebar, hero) text is always this near-white. */
     val onFill: Color get() = Color(0xFFF2F4F9)
@@ -55,6 +63,7 @@ private val DefaultLight = PolyColors(
     indigo = Color(0xFF263A66), indigoSoft = Color(0xFFEAEDF4), indigoFill = Color(0xFF7C93C9),
     goldFill = Color(0xFFEDD09C), verdeFill = Color(0xFF78DCA0), verdeInk = Color(0xFF0F4D28),
     heat = Heat, hasShadow = true, heroTopStart = 56.dp,
+    ctaFill = Color(0xFFEDD09C), ctaInk = Color(0xFF5A3E0C), flat = false, seigaiha = Color.Transparent,
 )
 
 private val DefaultDark = PolyColors(
@@ -64,12 +73,14 @@ private val DefaultDark = PolyColors(
     indigo = Color(0xFF7C93C9), indigoSoft = Color(0xFF202A3E), indigoFill = Color(0xFF263A66),
     goldFill = Color(0xFFE9B34D), verdeFill = Color(0xFF1E8A4A), verdeInk = Color(0xFFEAFAF0),
     heat = Heat, hasShadow = true, heroTopStart = 56.dp,
+    ctaFill = Color(0xFFE9B34D), ctaInk = Color(0xFF2A1D06), flat = false, seigaiha = Color.Transparent,
 )
 
 // Classic — light surfaces, but every -fill token pinned to its original richer shade.
 private val Classic = DefaultLight.copy(
     indigoFill = Color(0xFF263A66), goldFill = Color(0xFFE2A431),
     verdeFill = Color(0xFF1E8A4A), verdeInk = Color(0xFFEAFAF0),
+    ctaFill = Color(0xFFE2A431), ctaInk = Color(0xFF5A3E0C),
 )
 
 private val JaLight = PolyColors(
@@ -79,6 +90,7 @@ private val JaLight = PolyColors(
     indigo = Color(0xFF22384C), indigoSoft = Color(0xFFDFE6EA), indigoFill = Color(0xFF22384C),
     goldFill = Color(0xFFCDBB92), verdeFill = Color(0xFF22384C), verdeInk = Color(0xFFF2ECDD),
     heat = Heat, hasShadow = false, heroTopStart = 0.dp,
+    ctaFill = Color(0xFF22384C), ctaInk = Color(0xFFF2ECDD), flat = true, seigaiha = Color(0x0D22384C),
 )
 
 private val JaDark = PolyColors(
@@ -88,6 +100,7 @@ private val JaDark = PolyColors(
     indigo = Color(0xFF8BB6D6), indigoSoft = Color(0xFF1C2830), indigoFill = Color(0xFF22384C),
     goldFill = Color(0xFF4A3F2C), verdeFill = Color(0xFF22384C), verdeInk = Color(0xFFF2ECDD),
     heat = Heat, hasShadow = false, heroTopStart = 0.dp,
+    ctaFill = Color(0xFF22384C), ctaInk = Color(0xFFF2ECDD), flat = true, seigaiha = Color(0x0F8BB6D6),
 )
 
 /** Resolve the active token set from the appearance override, the language pack, and (for SYSTEM)
