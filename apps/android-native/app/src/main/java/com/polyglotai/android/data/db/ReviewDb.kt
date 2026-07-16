@@ -49,6 +49,14 @@ interface ReviewDao {
 
     @Query("SELECT COUNT(*) FROM review_items WHERE packId = :packId AND lastReviewedAtMillis IS NOT NULL")
     suspend fun countReviewed(packId: String): Int
+
+    /** Every tracked card, across all packs — the push side of cloud sync. */
+    @Query("SELECT * FROM review_items")
+    suspend fun listAll(): List<ReviewItem>
+
+    /** Replace local rows with cloud winners (used by the pull side of sync). */
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun upsertAll(items: List<ReviewItem>)
 }
 
 @Database(entities = [ReviewItem::class], version = 1, exportSchema = false)

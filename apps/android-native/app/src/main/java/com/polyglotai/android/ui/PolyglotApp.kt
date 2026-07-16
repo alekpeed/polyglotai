@@ -29,6 +29,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.polyglotai.android.AppContainer
@@ -46,6 +47,7 @@ import kotlinx.coroutines.launch
 
 private sealed interface Screen {
     data object Picker : Screen
+    data object Account : Screen
     data class Dashboard(val packId: String, val packName: String) : Screen
     data class Review(val packId: String, val packName: String) : Screen
     data class Library(val packId: String, val packName: String) : Screen
@@ -59,9 +61,15 @@ fun PolyglotApp(container: AppContainer, modifier: Modifier = Modifier) {
     var screen by remember { mutableStateOf<Screen>(Screen.Picker) }
 
     when (val s = screen) {
-        is Screen.Picker -> PickerScreen(container, modifier) { opt ->
-            screen = Screen.Dashboard(opt.id, opt.name)
-        }
+        is Screen.Picker -> PickerScreen(
+            container, modifier,
+            onPick = { opt -> screen = Screen.Dashboard(opt.id, opt.name) },
+            onAccount = { screen = Screen.Account },
+        )
+        is Screen.Account -> AccountScreen(
+            container, modifier,
+            onBack = { screen = Screen.Picker },
+        )
         is Screen.Dashboard -> DashboardScreen(
             container, modifier, s.packId, s.packName,
             onReview = { screen = Screen.Review(s.packId, s.packName) },
@@ -95,14 +103,28 @@ fun PolyglotApp(container: AppContainer, modifier: Modifier = Modifier) {
 }
 
 @Composable
-private fun PickerScreen(container: AppContainer, modifier: Modifier, onPick: (LanguageOption) -> Unit) {
+private fun PickerScreen(
+    container: AppContainer,
+    modifier: Modifier,
+    onPick: (LanguageOption) -> Unit,
+    onAccount: () -> Unit,
+) {
     var langs by remember { mutableStateOf<List<LanguageOption>?>(null) }
     LaunchedEffect(Unit) {
         langs = runCatching { container.packs.fullLanguages() }.getOrDefault(emptyList())
     }
 
     Column(modifier.fillMaxSize().padding(24.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-        Text("Choose a language", style = MaterialTheme.typography.headlineMedium)
+        Row(
+            Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text("Choose a language", style = MaterialTheme.typography.headlineMedium)
+            TextButton(onClick = onAccount) {
+                Text(if (container.account.isSignedIn) "Account" else "Sign in")
+            }
+        }
         val list = langs
         when {
             list == null -> Text("Loading…", style = MaterialTheme.typography.bodyMedium)
@@ -132,7 +154,10 @@ private fun DashboardScreen(
     onPronunciation: () -> Unit,
     onBack: () -> Unit,
 ) {
+    val scope = rememberCoroutineScope()
     var stats by remember { mutableStateOf<DashboardStats?>(null) }
+    var syncing by remember { mutableStateOf(false) }
+    var syncMsg by remember { mutableStateOf<String?>(null) }
     LaunchedEffect(packId) {
         container.learning.seedPack(packId)
         stats = container.learning.dashboard(packId)
@@ -158,6 +183,27 @@ private fun DashboardScreen(
             OutlinedButton(onClick = onTutor, modifier = Modifier.fillMaxWidth()) { Text("AI Tutor") }
             OutlinedButton(onClick = onConversation, modifier = Modifier.fillMaxWidth()) { Text("Conversation") }
             OutlinedButton(onClick = onPronunciation, modifier = Modifier.fillMaxWidth()) { Text("Pronunciation") }
+            if (container.account.isSignedIn) {
+                OutlinedButton(
+                    onClick = {
+                        syncing = true; syncMsg = null
+                        scope.launch {
+                            try {
+                                val r = container.account.sync()
+                                stats = container.learning.dashboard(packId)
+                                syncMsg = "Synced · ${r.pushed} up, ${r.pulled} down"
+                            } catch (e: Exception) {
+                                syncMsg = e.message ?: "Sync failed."
+                            } finally {
+                                syncing = false
+                            }
+                        }
+                    },
+                    enabled = !syncing,
+                    modifier = Modifier.fillMaxWidth(),
+                ) { Text(if (syncing) "Syncing…" else "Sync now") }
+                syncMsg?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
+            }
             TextButton(onClick = onBack) { Text("Switch language") }
         }
     }
@@ -420,6 +466,102 @@ private fun ConversationScreen(container: AppContainer, modifier: Modifier, pack
         TextButton(onClick = onBack) { Text("Back") }
     }
 }
+
+@Composable
+private fun AccountScreen(container: AppContainer, modifier: Modifier, onBack: () -> Unit) {
+    val scope = rememberCoroutineScope()
+    var signedIn by remember { mutableStateOf(container.account.isSignedIn) }
+    var email by remember { mutableStateOf(container.account.email ?: "") }
+    var password by remember { mutableStateOf("") }
+    var mode by remember { mutableStateOf(AuthMode.SIGN_IN) }
+    var busy by remember { mutableStateOf(false) }
+    var error by remember { mutableStateOf<String?>(null) }
+    var notice by remember { mutableStateOf<String?>(null) }
+
+    Column(
+        modifier.fillMaxSize().padding(24.dp).verticalScroll(rememberScrollState()),
+        verticalArrangement = Arrangement.spacedBy(14.dp),
+    ) {
+        Text("Account", style = MaterialTheme.typography.headlineMedium)
+        if (signedIn) {
+            Text("Signed in as ${container.account.email ?: "your account"}.", style = MaterialTheme.typography.bodyMedium)
+            Text(
+                "Your review progress syncs to this account. Sign in on another device to pick up where you left off.",
+                style = MaterialTheme.typography.bodySmall,
+            )
+            OutlinedButton(
+                onClick = {
+                    container.account.signOut()
+                    signedIn = false
+                    password = ""
+                    notice = "Signed out. Your progress stays on this device."
+                },
+                modifier = Modifier.fillMaxWidth(),
+            ) { Text("Sign out") }
+            notice?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
+        } else {
+            Text(
+                "Sign in to sync your review progress across devices. Without an account the app works fully on this device alone.",
+                style = MaterialTheme.typography.bodyMedium,
+            )
+            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                AuthMode.entries.forEach { m ->
+                    if (m == mode) {
+                        Button(onClick = { mode = m; error = null }, modifier = Modifier.weight(1f)) { Text(m.label) }
+                    } else {
+                        OutlinedButton(onClick = { mode = m; error = null }, modifier = Modifier.weight(1f)) { Text(m.label) }
+                    }
+                }
+            }
+            OutlinedTextField(
+                value = email,
+                onValueChange = { email = it },
+                label = { Text("Email") },
+                singleLine = true,
+                modifier = Modifier.fillMaxWidth(),
+            )
+            OutlinedTextField(
+                value = password,
+                onValueChange = { password = it },
+                label = { Text("Password") },
+                singleLine = true,
+                visualTransformation = PasswordVisualTransformation(),
+                modifier = Modifier.fillMaxWidth(),
+            )
+            error?.let { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall) }
+            notice?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
+            Button(
+                enabled = !busy && email.isNotBlank() && password.isNotBlank(),
+                onClick = {
+                    busy = true; error = null; notice = null
+                    scope.launch {
+                        try {
+                            if (mode == AuthMode.SIGN_UP) {
+                                container.account.signUp(email, password)
+                            } else {
+                                container.account.signIn(email, password)
+                            }
+                            signedIn = container.account.isSignedIn
+                            if (signedIn) {
+                                // First sync right away so the account and device converge.
+                                val r = runCatching { container.account.sync() }.getOrNull()
+                                notice = r?.let { "Synced · ${it.pushed} up, ${it.pulled} down" }
+                            }
+                        } catch (e: Exception) {
+                            error = e.message ?: "Couldn't sign in."
+                        } finally {
+                            busy = false
+                        }
+                    }
+                },
+                modifier = Modifier.fillMaxWidth(),
+            ) { Text(if (busy) "Working…" else mode.label) }
+        }
+        TextButton(onClick = onBack) { Text("Back") }
+    }
+}
+
+private enum class AuthMode(val label: String) { SIGN_IN("Sign in"), SIGN_UP("Create account") }
 
 @Composable
 private fun CorrectionField(label: String, value: String) {
