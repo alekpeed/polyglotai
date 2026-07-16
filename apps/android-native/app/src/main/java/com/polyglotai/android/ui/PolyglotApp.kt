@@ -51,6 +51,7 @@ private sealed interface Screen {
     data class Library(val packId: String, val packName: String) : Screen
     data class Tutor(val packId: String, val packName: String) : Screen
     data class Conversation(val packId: String, val packName: String) : Screen
+    data class Pronunciation(val packId: String, val packName: String) : Screen
 }
 
 @Composable
@@ -67,6 +68,7 @@ fun PolyglotApp(container: AppContainer, modifier: Modifier = Modifier) {
             onLibrary = { screen = Screen.Library(s.packId, s.packName) },
             onTutor = { screen = Screen.Tutor(s.packId, s.packName) },
             onConversation = { screen = Screen.Conversation(s.packId, s.packName) },
+            onPronunciation = { screen = Screen.Pronunciation(s.packId, s.packName) },
             onBack = { screen = Screen.Picker },
         )
         is Screen.Review -> ReviewScreen(
@@ -83,6 +85,10 @@ fun PolyglotApp(container: AppContainer, modifier: Modifier = Modifier) {
         )
         is Screen.Conversation -> ConversationScreen(
             container, modifier, s.packName,
+            onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
+        )
+        is Screen.Pronunciation -> PronunciationScreen(
+            container, modifier, s.packId, s.packName,
             onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
         )
     }
@@ -123,6 +129,7 @@ private fun DashboardScreen(
     onLibrary: () -> Unit,
     onTutor: () -> Unit,
     onConversation: () -> Unit,
+    onPronunciation: () -> Unit,
     onBack: () -> Unit,
 ) {
     var stats by remember { mutableStateOf<DashboardStats?>(null) }
@@ -150,6 +157,7 @@ private fun DashboardScreen(
             OutlinedButton(onClick = onLibrary, modifier = Modifier.fillMaxWidth()) { Text("Browse library") }
             OutlinedButton(onClick = onTutor, modifier = Modifier.fillMaxWidth()) { Text("AI Tutor") }
             OutlinedButton(onClick = onConversation, modifier = Modifier.fillMaxWidth()) { Text("Conversation") }
+            OutlinedButton(onClick = onPronunciation, modifier = Modifier.fillMaxWidth()) { Text("Pronunciation") }
             TextButton(onClick = onBack) { Text("Switch language") }
         }
     }

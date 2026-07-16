@@ -80,6 +80,10 @@ class AiRepository(
         return proxy.chat(token, messages, temperature = 0.8).trim()
     }
 
+    /** Transcribe a recorded audio file via Whisper. `language` is an ISO-639-1 hint. */
+    suspend fun transcribe(audio: java.io.File, language: String?): String =
+        proxy.transcribe(requireToken(), audio, language = language)
+
     suspend fun examples(targetLanguage: String, word: String, meaning: String, count: Int = 3): List<AiExample> {
         val token = requireToken()
         val messages = listOf(
