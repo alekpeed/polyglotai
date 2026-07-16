@@ -49,6 +49,7 @@ import com.polyglotai.android.data.LanguageOption
 import com.polyglotai.android.data.SlangItem
 import com.polyglotai.android.data.VocabularyItem
 import com.polyglotai.android.ui.theme.AppTheme
+import com.polyglotai.android.ui.theme.LocalDisplayFamily
 import com.polyglotai.android.ui.theme.LocalPolyColors
 import com.polyglotai.android.ui.theme.Pack
 import com.polyglotai.android.ui.theme.PrimaryButton
@@ -250,10 +251,7 @@ private fun DashboardScreen(
 
     val poly = LocalPolyColors.current
     Column(modifier.fillMaxSize().padding(24.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-        Text(
-            packName,
-            style = MaterialTheme.typography.headlineMedium.copy(fontFamily = FontFamily.Serif),
-        )
+        Text(packName, style = MaterialTheme.typography.headlineMedium)
         val d = stats
         if (d == null) {
             Text("Loading…", style = MaterialTheme.typography.bodyMedium)
@@ -271,7 +269,7 @@ private fun DashboardScreen(
                     )
                     Text(
                         "${d.dueCount}",
-                        fontFamily = FontFamily.Serif,
+                        fontFamily = LocalDisplayFamily.current,
                         fontWeight = FontWeight.Normal,
                         fontSize = 64.sp,
                         color = poly.gold,
@@ -878,7 +876,7 @@ private fun AccountScreen(container: AppContainer, modifier: Modifier, onBack: (
                 )
                 Text(
                     "Fala aí.",
-                    fontFamily = FontFamily.Serif,
+                    fontFamily = LocalDisplayFamily.current,
                     fontWeight = FontWeight.Normal,
                     fontSize = 34.sp,
                     color = poly.onFill,

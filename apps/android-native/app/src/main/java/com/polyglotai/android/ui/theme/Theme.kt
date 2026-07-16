@@ -62,7 +62,11 @@ fun PolyglotTheme(
         onErrorContainer = c.heat[5],
     )
 
-    CompositionLocalProvider(LocalPolyColors provides c) {
-        MaterialTheme(colorScheme = scheme, content = content)
+    val display = if (pack == Pack.JA) NotoSerifJp else Fraunces
+    CompositionLocalProvider(
+        LocalPolyColors provides c,
+        LocalDisplayFamily provides display,
+    ) {
+        MaterialTheme(colorScheme = scheme, typography = polyTypography(display), content = content)
     }
 }
