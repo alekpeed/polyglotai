@@ -20,7 +20,6 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
-import androidx.compose.material3.OutlinedButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
@@ -87,7 +86,7 @@ fun SecondaryButton(
         modifier = modifier,
         shape = RoundedCornerShape(if (c.flat) 0.dp else 3.dp),
         border = BorderStroke(1.dp, c.line),
-        colors = OutlinedButtonDefaults.outlinedButtonColors(
+        colors = ButtonDefaults.outlinedButtonColors(
             containerColor = c.surfaceRaised,
             contentColor = c.ink,
             disabledContentColor = c.inkSoft,
