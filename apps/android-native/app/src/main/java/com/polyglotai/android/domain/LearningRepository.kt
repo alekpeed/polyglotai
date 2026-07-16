@@ -4,9 +4,6 @@ import com.polyglotai.android.data.PackRepository
 import com.polyglotai.android.data.db.ReviewDao
 import com.polyglotai.android.data.db.ReviewItem
 
-/** A card to show in the review session: its stored state plus front/back. */
-data class DueCard(val item: ReviewItem)
-
 data class DashboardStats(
     val dueCount: Int,
     val totalCards: Int,
@@ -57,8 +54,8 @@ class LearningRepository(
         )
     }
 
-    suspend fun listDue(packId: String): List<DueCard> =
-        dao.listDue(packId, now()).map { DueCard(it) }
+    suspend fun listDue(packId: String): List<ReviewItem> =
+        dao.listDue(packId, now())
 
     suspend fun grade(item: ReviewItem, rating: Int) {
         val nowMs = now()
