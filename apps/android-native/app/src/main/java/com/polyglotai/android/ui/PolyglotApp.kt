@@ -1,5 +1,7 @@
 package com.polyglotai.android.ui
 
+import androidx.activity.compose.BackHandler
+import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -81,7 +83,25 @@ fun PolyglotApp(
         return
     }
 
-    when (val s = screen) {
+    // System back navigates within the app instead of closing it: sub-screens fall back to the
+    // dashboard, top-level screens to the picker. Disabled on the picker so back exits normally.
+    BackHandler(enabled = screen != Screen.Picker) {
+        screen = when (val s = screen) {
+            is Screen.Picker -> Screen.Picker
+            is Screen.Account, is Screen.Settings -> Screen.Picker
+            is Screen.Dashboard -> Screen.Picker
+            is Screen.Review -> Screen.Dashboard(s.packId, s.packName)
+            is Screen.Library -> Screen.Dashboard(s.packId, s.packName)
+            is Screen.Tutor -> Screen.Dashboard(s.packId, s.packName)
+            is Screen.Conversation -> Screen.Dashboard(s.packId, s.packName)
+            is Screen.Pronunciation -> Screen.Dashboard(s.packId, s.packName)
+            is Screen.Interpreter -> Screen.Dashboard(s.packId, s.packName)
+            is Screen.Drill -> Screen.Dashboard(s.packId, s.packName)
+        }
+    }
+
+    Crossfade(targetState = screen, label = "screen") { s ->
+      when (s) {
         is Screen.Picker -> PickerScreen(
             container, modifier,
             onPick = { opt -> screen = Screen.Dashboard(opt.id, opt.name) },
@@ -135,6 +155,7 @@ fun PolyglotApp(
             container, modifier, s.packId, s.packName,
             onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
         )
+      }
     }
 }
 
@@ -293,6 +314,10 @@ private fun ReviewScreen(container: AppContainer, modifier: Modifier, packId: St
             }
             else -> {
                 val card = q[index]
+                LinearProgressIndicator(
+                    progress = { if (q.isEmpty()) 0f else index.toFloat() / q.size },
+                    modifier = Modifier.fillMaxWidth(),
+                )
                 Text("${q.size - index} left", style = MaterialTheme.typography.labelMedium)
                 Card(Modifier.fillMaxWidth()) {
                     Column(
@@ -385,7 +410,21 @@ private fun LibraryScreen(
             singleLine = true,
             modifier = Modifier.fillMaxWidth(),
         )
+        val shownCount = when (tab) {
+            LibTab.VOCAB -> vocabShown.size
+            LibTab.GRAMMAR -> grammarShown.size
+            LibTab.SLANG -> slangShown.size
+        }
         LazyColumn(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(1.dp)) {
+            if (shownCount == 0) {
+                item {
+                    Text(
+                        if (q.isBlank()) "Nothing here yet." else "No matches for \"$q\".",
+                        style = MaterialTheme.typography.bodyMedium,
+                        modifier = Modifier.padding(vertical = 12.dp),
+                    )
+                }
+            }
             when (tab) {
                 LibTab.VOCAB -> items(vocabShown) { v ->
                     VocabLibraryRow(container, packName, v)
