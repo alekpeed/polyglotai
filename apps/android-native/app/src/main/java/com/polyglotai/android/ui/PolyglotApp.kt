@@ -347,11 +347,24 @@ private fun LibraryScreen(
     var grammar by remember { mutableStateOf<List<GrammarItem>?>(null) }
     var slang by remember { mutableStateOf<List<SlangItem>?>(null) }
     var tab by remember { mutableStateOf(LibTab.VOCAB) }
+    var query by remember { mutableStateOf("") }
 
     LaunchedEffect(packId) {
         vocab = runCatching { container.packs.vocabulary(packId) }.getOrDefault(emptyList())
         grammar = runCatching { container.packs.grammar(packId) }.getOrDefault(emptyList())
         slang = runCatching { container.packs.slang(packId) }.getOrDefault(emptyList())
+    }
+
+    val q = query.trim()
+    val vocabShown = vocab.orEmpty().filter {
+        q.isBlank() || it.lemma.contains(q, true) || it.translation.contains(q, true) ||
+            it.reading?.contains(q, true) == true || it.romaji?.contains(q, true) == true
+    }
+    val grammarShown = grammar.orEmpty().filter {
+        q.isBlank() || it.title.contains(q, true) || it.explanationMd.contains(q, true)
+    }
+    val slangShown = slang.orEmpty().filter {
+        q.isBlank() || it.phrase.contains(q, true) || it.natural?.contains(q, true) == true
     }
 
     Column(modifier.fillMaxSize().padding(horizontal = 20.dp, vertical = 16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -365,12 +378,19 @@ private fun LibraryScreen(
                 }
             }
         }
+        OutlinedTextField(
+            value = query,
+            onValueChange = { query = it },
+            label = { Text("Search") },
+            singleLine = true,
+            modifier = Modifier.fillMaxWidth(),
+        )
         LazyColumn(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(1.dp)) {
             when (tab) {
-                LibTab.VOCAB -> items(vocab.orEmpty()) { v ->
+                LibTab.VOCAB -> items(vocabShown) { v ->
                     VocabLibraryRow(container, packName, v)
                 }
-                LibTab.GRAMMAR -> items(grammar.orEmpty()) { g ->
+                LibTab.GRAMMAR -> items(grammarShown) { g ->
                     Card(Modifier.fillMaxWidth()) {
                         Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                             Text(g.title, style = MaterialTheme.typography.titleMedium)
@@ -378,7 +398,7 @@ private fun LibraryScreen(
                         }
                     }
                 }
-                LibTab.SLANG -> items(slang.orEmpty()) { s ->
+                LibTab.SLANG -> items(slangShown) { s ->
                     Card(Modifier.fillMaxWidth()) {
                         Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                             Text(s.phrase, style = MaterialTheme.typography.titleMedium)
