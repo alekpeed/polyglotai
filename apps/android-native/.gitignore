@@ -1,0 +1,9 @@
+# Gradle / build output
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+
+# Content packs are copied from repo-root /packs at build time (syncPacks task), not committed here.
+app/src/main/assets/packs/

@@ -1,0 +1,185 @@
+package com.polyglotai.android.ui
+
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.Button
+import androidx.compose.material3.Card
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
+import com.polyglotai.android.AppContainer
+import com.polyglotai.android.data.LanguageOption
+import com.polyglotai.android.data.db.ReviewItem
+import com.polyglotai.android.domain.DashboardStats
+import kotlinx.coroutines.launch
+
+private sealed interface Screen {
+    data object Picker : Screen
+    data class Dashboard(val packId: String, val packName: String) : Screen
+    data class Review(val packId: String, val packName: String) : Screen
+}
+
+@Composable
+fun PolyglotApp(container: AppContainer, modifier: Modifier = Modifier) {
+    var screen by remember { mutableStateOf<Screen>(Screen.Picker) }
+
+    when (val s = screen) {
+        is Screen.Picker -> PickerScreen(container, modifier) { opt ->
+            screen = Screen.Dashboard(opt.id, opt.name)
+        }
+        is Screen.Dashboard -> DashboardScreen(
+            container, modifier, s.packId, s.packName,
+            onReview = { screen = Screen.Review(s.packId, s.packName) },
+            onBack = { screen = Screen.Picker },
+        )
+        is Screen.Review -> ReviewScreen(
+            container, modifier, s.packId,
+            onDone = { screen = Screen.Dashboard(s.packId, s.packName) },
+        )
+    }
+}
+
+@Composable
+private fun PickerScreen(container: AppContainer, modifier: Modifier, onPick: (LanguageOption) -> Unit) {
+    var langs by remember { mutableStateOf<List<LanguageOption>?>(null) }
+    LaunchedEffect(Unit) {
+        langs = runCatching { container.packs.fullLanguages() }.getOrDefault(emptyList())
+    }
+
+    Column(modifier.fillMaxSize().padding(24.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+        Text("Choose a language", style = MaterialTheme.typography.headlineMedium)
+        val list = langs
+        when {
+            list == null -> Text("Loading…", style = MaterialTheme.typography.bodyMedium)
+            list.isEmpty() -> Text("No language packs found.", style = MaterialTheme.typography.bodyMedium)
+            else -> list.forEach { opt ->
+                Card(Modifier.fillMaxWidth()) {
+                    Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Text(opt.name, style = MaterialTheme.typography.titleMedium)
+                        Button(onClick = { onPick(opt) }) { Text("Start") }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun DashboardScreen(
+    container: AppContainer,
+    modifier: Modifier,
+    packId: String,
+    packName: String,
+    onReview: () -> Unit,
+    onBack: () -> Unit,
+) {
+    var stats by remember { mutableStateOf<DashboardStats?>(null) }
+    LaunchedEffect(packId) {
+        container.learning.seedPack(packId)
+        stats = container.learning.dashboard(packId)
+    }
+
+    Column(modifier.fillMaxSize().padding(24.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
+        Text(packName, style = MaterialTheme.typography.headlineMedium)
+        val d = stats
+        if (d == null) {
+            Text("Loading…", style = MaterialTheme.typography.bodyMedium)
+        } else {
+            Card(Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Text("Due now", style = MaterialTheme.typography.labelLarge)
+                    Text("${d.dueCount}", style = MaterialTheme.typography.displaySmall)
+                    Text("${d.totalCards} cards total", style = MaterialTheme.typography.bodySmall)
+                    Button(onClick = onReview, enabled = d.dueCount > 0) {
+                        Text(if (d.dueCount > 0) "Start review" else "Nothing due")
+                    }
+                }
+            }
+            TextButton(onClick = onBack) { Text("Switch language") }
+        }
+    }
+}
+
+@Composable
+private fun ReviewScreen(container: AppContainer, modifier: Modifier, packId: String, onDone: () -> Unit) {
+    val scope = rememberCoroutineScope()
+    var queue by remember { mutableStateOf<List<ReviewItem>?>(null) }
+    var index by remember { mutableStateOf(0) }
+    var revealed by remember { mutableStateOf(false) }
+    var reviewed by remember { mutableStateOf(0) }
+
+    LaunchedEffect(packId) {
+        queue = container.learning.listDue(packId)
+    }
+
+    val q = queue
+    Column(
+        modifier.fillMaxSize().padding(24.dp).verticalScroll(rememberScrollState()),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
+    ) {
+        when {
+            q == null -> Text("Loading review…", style = MaterialTheme.typography.bodyMedium)
+            index >= q.size -> {
+                Text("Session complete", style = MaterialTheme.typography.headlineMedium)
+                Text("$reviewed reviewed", style = MaterialTheme.typography.bodyMedium)
+                Button(onClick = onDone) { Text("Back to dashboard") }
+            }
+            else -> {
+                val card = q[index]
+                Text("${q.size - index} left", style = MaterialTheme.typography.labelMedium)
+                Card(Modifier.fillMaxWidth()) {
+                    Column(
+                        Modifier.fillMaxWidth().padding(28.dp),
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.spacedBy(12.dp),
+                    ) {
+                        Text(card.front, style = MaterialTheme.typography.headlineSmall, textAlign = TextAlign.Center)
+                        card.reading?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
+                        if (revealed) {
+                            Spacer(Modifier.height(4.dp))
+                            Text(card.back, style = MaterialTheme.typography.titleMedium, textAlign = TextAlign.Center)
+                        }
+                    }
+                }
+                if (!revealed) {
+                    Button(onClick = { revealed = true }, modifier = Modifier.fillMaxWidth()) { Text("Show answer") }
+                } else {
+                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        listOf(1 to "Again", 2 to "Hard", 3 to "Good", 4 to "Easy").forEach { (rating, label) ->
+                            OutlinedButton(
+                                onClick = {
+                                    scope.launch { container.learning.grade(card, rating) }
+                                    reviewed += 1
+                                    index += 1
+                                    revealed = false
+                                },
+                                modifier = Modifier.weight(1f),
+                            ) { Text(label) }
+                        }
+                    }
+                }
+                TextButton(onClick = onDone) { Text("Stop for now") }
+            }
+        }
+    }
+}
