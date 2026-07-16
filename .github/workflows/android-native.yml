@@ -1,0 +1,33 @@
+name: Android Native APK
+
+# Ground-up native Android app (Kotlin + Jetpack Compose), separate from the Tauri hybrid.
+# Builds a debug APK. No Rust/NDK — pure Android/Gradle.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-native:
+    name: Build native debug APK
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: zulu
+          java-version: '17'
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+      - name: Build debug APK
+        working-directory: apps/android-native
+        run: gradle assembleDebug --no-daemon --stacktrace
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: polyglotai-native-debug-apk
+          path: apps/android-native/app/build/outputs/apk/debug/*.apk

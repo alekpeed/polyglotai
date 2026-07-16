@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base window theme; Compose's MaterialTheme drives the actual UI colors/typography.
+         Material.Light.NoActionBar exists from API 21+, so no AppCompat dependency is needed. -->
+    <style name="Theme.PolyglotAI" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
