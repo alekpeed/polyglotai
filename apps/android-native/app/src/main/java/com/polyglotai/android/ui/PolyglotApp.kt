@@ -44,6 +44,7 @@ import com.polyglotai.android.data.db.ReviewItem
 import com.polyglotai.android.domain.DashboardStats
 import com.polyglotai.android.domain.ai.AiCorrection
 import com.polyglotai.android.domain.ai.AiExample
+import com.polyglotai.android.domain.ai.AiTranslation
 import com.polyglotai.android.domain.ai.NeedsAccessCode
 import kotlinx.coroutines.launch
 
@@ -57,6 +58,7 @@ private sealed interface Screen {
     data class Tutor(val packId: String, val packName: String) : Screen
     data class Conversation(val packId: String, val packName: String) : Screen
     data class Pronunciation(val packId: String, val packName: String) : Screen
+    data class Interpreter(val packId: String, val packName: String) : Screen
 }
 
 @Composable
@@ -90,6 +92,7 @@ fun PolyglotApp(
             onTutor = { screen = Screen.Tutor(s.packId, s.packName) },
             onConversation = { screen = Screen.Conversation(s.packId, s.packName) },
             onPronunciation = { screen = Screen.Pronunciation(s.packId, s.packName) },
+            onInterpreter = { screen = Screen.Interpreter(s.packId, s.packName) },
             onBack = { screen = Screen.Picker },
         )
         is Screen.Review -> ReviewScreen(
@@ -110,6 +113,10 @@ fun PolyglotApp(
         )
         is Screen.Pronunciation -> PronunciationScreen(
             container, modifier, s.packId, s.packName,
+            onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
+        )
+        is Screen.Interpreter -> InterpreterScreen(
+            container, modifier, s.packName,
             onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
         )
     }
@@ -169,6 +176,7 @@ private fun DashboardScreen(
     onTutor: () -> Unit,
     onConversation: () -> Unit,
     onPronunciation: () -> Unit,
+    onInterpreter: () -> Unit,
     onBack: () -> Unit,
 ) {
     val scope = rememberCoroutineScope()
@@ -214,6 +222,7 @@ private fun DashboardScreen(
             OutlinedButton(onClick = onTutor, modifier = Modifier.fillMaxWidth()) { Text("AI Tutor") }
             OutlinedButton(onClick = onConversation, modifier = Modifier.fillMaxWidth()) { Text("Conversation") }
             OutlinedButton(onClick = onPronunciation, modifier = Modifier.fillMaxWidth()) { Text("Pronunciation") }
+            OutlinedButton(onClick = onInterpreter, modifier = Modifier.fillMaxWidth()) { Text("Interpreter") }
             if (container.account.isSignedIn) {
                 OutlinedButton(
                     onClick = {
@@ -492,6 +501,96 @@ private fun ConversationScreen(container: AppContainer, modifier: Modifier, pack
                         }
                     },
                 ) { Text(if (busy) "…" else "Send") }
+            }
+        }
+        TextButton(onClick = onBack) { Text("Back") }
+    }
+}
+
+@Composable
+private fun InterpreterScreen(container: AppContainer, modifier: Modifier, packName: String, onBack: () -> Unit) {
+    val scope = rememberCoroutineScope()
+    var connected by remember { mutableStateOf(container.ai.isConnected) }
+    var accessCode by remember { mutableStateOf("") }
+    var text by remember { mutableStateOf("") }
+    var toTarget by remember { mutableStateOf(true) }
+    var busy by remember { mutableStateOf(false) }
+    var error by remember { mutableStateOf<String?>(null) }
+    var result by remember { mutableStateOf<AiTranslation?>(null) }
+
+    Column(
+        modifier.fillMaxSize().padding(24.dp).verticalScroll(rememberScrollState()),
+        verticalArrangement = Arrangement.spacedBy(14.dp),
+    ) {
+        Text("Interpreter · $packName", style = MaterialTheme.typography.headlineSmall)
+        if (!connected) {
+            Text("Enter the access code to enable AI features.", style = MaterialTheme.typography.bodyMedium)
+            OutlinedTextField(
+                value = accessCode,
+                onValueChange = { accessCode = it },
+                label = { Text("Access code") },
+                modifier = Modifier.fillMaxWidth(),
+            )
+            error?.let { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall) }
+            Button(
+                enabled = !busy && accessCode.isNotBlank(),
+                onClick = {
+                    busy = true; error = null
+                    scope.launch {
+                        val ok = runCatching { container.ai.connect(accessCode.trim()) }.getOrDefault(false)
+                        busy = false
+                        if (ok) connected = true else error = "That code didn't work."
+                    }
+                },
+            ) { Text(if (busy) "Connecting…" else "Connect") }
+        } else {
+            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                val toEnglish = !toTarget
+                if (toTarget) {
+                    Button(onClick = { toTarget = true; result = null }, modifier = Modifier.weight(1f)) { Text("English → $packName") }
+                } else {
+                    OutlinedButton(onClick = { toTarget = true; result = null }, modifier = Modifier.weight(1f)) { Text("English → $packName") }
+                }
+                if (toEnglish) {
+                    Button(onClick = { toTarget = false; result = null }, modifier = Modifier.weight(1f)) { Text("$packName → English") }
+                } else {
+                    OutlinedButton(onClick = { toTarget = false; result = null }, modifier = Modifier.weight(1f)) { Text("$packName → English") }
+                }
+            }
+            OutlinedTextField(
+                value = text,
+                onValueChange = { text = it },
+                label = { Text(if (toTarget) "English" else packName) },
+                minLines = 3,
+                modifier = Modifier.fillMaxWidth(),
+            )
+            error?.let { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall) }
+            Button(
+                enabled = !busy && text.isNotBlank(),
+                onClick = {
+                    busy = true; error = null; result = null
+                    scope.launch {
+                        try {
+                            result = container.ai.interpret(packName, text.trim(), toTarget)
+                        } catch (e: NeedsAccessCode) {
+                            connected = false
+                        } catch (e: Exception) {
+                            error = e.message ?: "Couldn't interpret that."
+                        } finally {
+                            busy = false
+                        }
+                    }
+                },
+                modifier = Modifier.fillMaxWidth(),
+            ) { Text(if (busy) "Interpreting…" else "Interpret") }
+            result?.let { r ->
+                Card(Modifier.fillMaxWidth()) {
+                    Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                        Text(if (toTarget) packName else "English", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+                        Text(r.translation, style = MaterialTheme.typography.titleMedium)
+                        r.note?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
+                    }
+                }
             }
         }
         TextButton(onClick = onBack) { Text("Back") }
