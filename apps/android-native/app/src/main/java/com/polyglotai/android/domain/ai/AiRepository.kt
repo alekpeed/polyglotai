@@ -63,6 +63,23 @@ class AiRepository(
         return json.decodeFromString(AiCorrection.serializer(), extractJson(raw))
     }
 
+    /** One conversation turn: the running [history] (user/assistant messages) plus the new user
+     *  line, returning the partner's reply in the target language. */
+    suspend fun converse(
+        targetLanguage: String,
+        scenario: String,
+        history: List<ChatMessage>,
+        userText: String,
+    ): String {
+        val token = requireToken()
+        val messages = buildList {
+            add(ChatMessage("system", Prompts.conversationSystem(targetLanguage, scenario)))
+            addAll(history)
+            add(ChatMessage("user", userText))
+        }
+        return proxy.chat(token, messages, temperature = 0.8).trim()
+    }
+
     suspend fun examples(targetLanguage: String, word: String, meaning: String, count: Int = 3): List<AiExample> {
         val token = requireToken()
         val messages = listOf(

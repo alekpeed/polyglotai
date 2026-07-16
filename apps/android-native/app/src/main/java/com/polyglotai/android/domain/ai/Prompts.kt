@@ -39,6 +39,15 @@ object Prompts {
         - "registerExplanation": when each version is appropriate
     """.trimIndent()
 
+    fun conversationSystem(targetLanguage: String, scenario: String): String = system(
+        targetLanguage,
+        """
+        You are a warm, patient $targetLanguage conversation partner for an adult learner.
+        Stay in $targetLanguage. Keep each reply short (1–2 sentences) and natural, and gently
+        keep the conversation moving with a question. Scenario: $scenario.
+        """.trimIndent(),
+    )
+
     fun examplesTask(targetLanguage: String, word: String, meaning: String, count: Int): String = """
         Give an adult $targetLanguage learner $count natural example sentences that use the word
         or phrase "$word" (meaning: $meaning). Vary the situations.

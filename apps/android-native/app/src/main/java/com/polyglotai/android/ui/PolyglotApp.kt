@@ -22,6 +22,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
@@ -35,9 +36,11 @@ import com.polyglotai.android.data.GrammarItem
 import com.polyglotai.android.data.LanguageOption
 import com.polyglotai.android.data.SlangItem
 import com.polyglotai.android.data.VocabularyItem
+import com.polyglotai.android.data.ai.ChatMessage
 import com.polyglotai.android.data.db.ReviewItem
 import com.polyglotai.android.domain.DashboardStats
 import com.polyglotai.android.domain.ai.AiCorrection
+import com.polyglotai.android.domain.ai.AiExample
 import com.polyglotai.android.domain.ai.NeedsAccessCode
 import kotlinx.coroutines.launch
 
@@ -47,6 +50,7 @@ private sealed interface Screen {
     data class Review(val packId: String, val packName: String) : Screen
     data class Library(val packId: String, val packName: String) : Screen
     data class Tutor(val packId: String, val packName: String) : Screen
+    data class Conversation(val packId: String, val packName: String) : Screen
 }
 
 @Composable
@@ -62,6 +66,7 @@ fun PolyglotApp(container: AppContainer, modifier: Modifier = Modifier) {
             onReview = { screen = Screen.Review(s.packId, s.packName) },
             onLibrary = { screen = Screen.Library(s.packId, s.packName) },
             onTutor = { screen = Screen.Tutor(s.packId, s.packName) },
+            onConversation = { screen = Screen.Conversation(s.packId, s.packName) },
             onBack = { screen = Screen.Picker },
         )
         is Screen.Review -> ReviewScreen(
@@ -73,6 +78,10 @@ fun PolyglotApp(container: AppContainer, modifier: Modifier = Modifier) {
             onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
         )
         is Screen.Tutor -> TutorScreen(
+            container, modifier, s.packName,
+            onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
+        )
+        is Screen.Conversation -> ConversationScreen(
             container, modifier, s.packName,
             onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
         )
@@ -113,6 +122,7 @@ private fun DashboardScreen(
     onReview: () -> Unit,
     onLibrary: () -> Unit,
     onTutor: () -> Unit,
+    onConversation: () -> Unit,
     onBack: () -> Unit,
 ) {
     var stats by remember { mutableStateOf<DashboardStats?>(null) }
@@ -139,6 +149,7 @@ private fun DashboardScreen(
             }
             OutlinedButton(onClick = onLibrary, modifier = Modifier.fillMaxWidth()) { Text("Browse library") }
             OutlinedButton(onClick = onTutor, modifier = Modifier.fillMaxWidth()) { Text("AI Tutor") }
+            OutlinedButton(onClick = onConversation, modifier = Modifier.fillMaxWidth()) { Text("Conversation") }
             TextButton(onClick = onBack) { Text("Switch language") }
         }
     }
@@ -245,15 +256,7 @@ private fun LibraryScreen(
         LazyColumn(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(1.dp)) {
             when (tab) {
                 LibTab.VOCAB -> items(vocab.orEmpty()) { v ->
-                    Card(Modifier.fillMaxWidth()) {
-                        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                            Text(v.lemma, style = MaterialTheme.typography.titleMedium)
-                            listOfNotNull(v.reading, v.romaji).joinToString(" · ").ifBlank { null }?.let {
-                                Text(it, style = MaterialTheme.typography.bodySmall)
-                            }
-                            Text(v.translation, style = MaterialTheme.typography.bodyMedium)
-                        }
-                    }
+                    VocabLibraryRow(container, packName, v)
                 }
                 LibTab.GRAMMAR -> items(grammar.orEmpty()) { g ->
                     Card(Modifier.fillMaxWidth()) {
@@ -274,6 +277,136 @@ private fun LibraryScreen(
                         }
                     }
                 }
+            }
+        }
+        TextButton(onClick = onBack) { Text("Back") }
+    }
+}
+
+@Composable
+private fun VocabLibraryRow(container: AppContainer, packName: String, v: VocabularyItem) {
+    val scope = rememberCoroutineScope()
+    var examples by remember { mutableStateOf<List<AiExample>?>(null) }
+    var busy by remember { mutableStateOf(false) }
+    var error by remember { mutableStateOf<String?>(null) }
+
+    Card(Modifier.fillMaxWidth()) {
+        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+            Text(v.lemma, style = MaterialTheme.typography.titleMedium)
+            listOfNotNull(v.reading, v.romaji).joinToString(" · ").ifBlank { null }?.let {
+                Text(it, style = MaterialTheme.typography.bodySmall)
+            }
+            Text(v.translation, style = MaterialTheme.typography.bodyMedium)
+            TextButton(
+                onClick = {
+                    busy = true; error = null
+                    scope.launch {
+                        try {
+                            examples = container.ai.examples(packName, v.lemma, v.translation)
+                        } catch (e: NeedsAccessCode) {
+                            error = "Open AI Tutor once to enter the access code."
+                        } catch (e: Exception) {
+                            error = e.message ?: "Couldn't generate examples."
+                        } finally {
+                            busy = false
+                        }
+                    }
+                },
+                enabled = !busy,
+            ) { Text(if (busy) "Generating…" else if (examples == null) "✨ Examples" else "↻ Examples") }
+            error?.let { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall) }
+            examples?.forEach { ex ->
+                Column(verticalArrangement = Arrangement.spacedBy(1.dp)) {
+                    Text(ex.target, style = MaterialTheme.typography.bodyMedium)
+                    Text(ex.translation, style = MaterialTheme.typography.bodySmall)
+                    ex.note?.let { Text(it, style = MaterialTheme.typography.labelSmall) }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun ConversationScreen(container: AppContainer, modifier: Modifier, packName: String, onBack: () -> Unit) {
+    val scope = rememberCoroutineScope()
+    var connected by remember { mutableStateOf(container.ai.isConnected) }
+    var accessCode by remember { mutableStateOf("") }
+    var input by remember { mutableStateOf("") }
+    var busy by remember { mutableStateOf(false) }
+    var error by remember { mutableStateOf<String?>(null) }
+    val messages = remember { mutableStateListOf<ChatMessage>() }
+
+    Column(modifier.fillMaxSize().padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+        Text("Conversation · $packName", style = MaterialTheme.typography.headlineSmall)
+        if (!connected) {
+            Text("Enter the access code to enable AI features.", style = MaterialTheme.typography.bodyMedium)
+            OutlinedTextField(
+                value = accessCode,
+                onValueChange = { accessCode = it },
+                label = { Text("Access code") },
+                modifier = Modifier.fillMaxWidth(),
+            )
+            error?.let { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall) }
+            Button(
+                enabled = !busy && accessCode.isNotBlank(),
+                onClick = {
+                    busy = true; error = null
+                    scope.launch {
+                        val ok = runCatching { container.ai.connect(accessCode.trim()) }.getOrDefault(false)
+                        busy = false
+                        if (ok) connected = true else error = "That code didn't work."
+                    }
+                },
+            ) { Text(if (busy) "Connecting…" else "Connect") }
+        } else {
+            LazyColumn(Modifier.weight(1f).fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                items(messages) { m ->
+                    Card(Modifier.fillMaxWidth()) {
+                        Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                            Text(
+                                if (m.role == "user") "You" else packName,
+                                style = MaterialTheme.typography.labelSmall,
+                                color = MaterialTheme.colorScheme.primary,
+                            )
+                            Text(m.content, style = MaterialTheme.typography.bodyMedium)
+                        }
+                    }
+                }
+            }
+            error?.let { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall) }
+            Row(
+                Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                OutlinedTextField(
+                    value = input,
+                    onValueChange = { input = it },
+                    label = { Text("Say something…") },
+                    modifier = Modifier.weight(1f),
+                )
+                Button(
+                    enabled = !busy && input.isNotBlank(),
+                    onClick = {
+                        val userText = input.trim()
+                        input = ""
+                        val history = messages.toList()
+                        messages.add(ChatMessage("user", userText))
+                        busy = true; error = null
+                        scope.launch {
+                            try {
+                                val reply = container.ai.converse(packName, "casual everyday chat", history, userText)
+                                messages.add(ChatMessage("assistant", reply))
+                            } catch (e: NeedsAccessCode) {
+                                connected = false
+                            } catch (e: Exception) {
+                                error = e.message ?: "Something went wrong."
+                            } finally {
+                                busy = false
+                            }
+                        }
+                    },
+                ) { Text(if (busy) "…" else "Send") }
             }
         }
         TextButton(onClick = onBack) { Text("Back") }
