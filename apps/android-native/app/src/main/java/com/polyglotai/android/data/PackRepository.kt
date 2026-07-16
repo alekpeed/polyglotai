@@ -31,10 +31,17 @@ class PackRepository(private val context: Context) {
             .map { LanguageOption(it.id, it.name) }
             .sortedBy { it.name }
 
-    fun vocabulary(packId: String): List<VocabularyItem> {
-        val manifest = manifest(packId)
-        return manifest.contents.vocabulary.flatMap { rel ->
-            json.decodeFromString<List<VocabularyItem>>(readAsset("packs/$packId/$rel"))
+    fun vocabulary(packId: String): List<VocabularyItem> =
+        loadList(packId, manifest(packId).contents.vocabulary)
+
+    fun grammar(packId: String): List<GrammarItem> =
+        loadList(packId, manifest(packId).contents.grammar)
+
+    fun slang(packId: String): List<SlangItem> =
+        loadList(packId, manifest(packId).contents.slang)
+
+    private inline fun <reified T> loadList(packId: String, files: List<String>): List<T> =
+        files.flatMap { rel ->
+            runCatching { json.decodeFromString<List<T>>(readAsset("packs/$packId/$rel")) }.getOrDefault(emptyList())
         }
-    }
 }

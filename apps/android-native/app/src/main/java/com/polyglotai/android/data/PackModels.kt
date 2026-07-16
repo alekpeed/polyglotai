@@ -38,3 +38,21 @@ data class VocabularyItem(
     val cefr: String? = null,
     val tags: List<String> = emptyList(),
 )
+
+@Serializable
+data class GrammarItem(
+    val key: String,
+    val title: String,
+    val cefr: String? = null,
+    val explanationMd: String = "",
+)
+
+@Serializable
+data class SlangItem(
+    val key: String,
+    val phrase: String,
+    val natural: String? = null,
+    val literal: String? = null,
+    val register: String? = null,
+    val severity: Int? = null,
+)

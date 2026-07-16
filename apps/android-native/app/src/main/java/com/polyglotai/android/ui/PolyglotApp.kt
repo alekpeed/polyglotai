@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
@@ -28,7 +30,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.polyglotai.android.AppContainer
+import com.polyglotai.android.data.GrammarItem
 import com.polyglotai.android.data.LanguageOption
+import com.polyglotai.android.data.SlangItem
+import com.polyglotai.android.data.VocabularyItem
 import com.polyglotai.android.data.db.ReviewItem
 import com.polyglotai.android.domain.DashboardStats
 import kotlinx.coroutines.launch
@@ -37,6 +42,7 @@ private sealed interface Screen {
     data object Picker : Screen
     data class Dashboard(val packId: String, val packName: String) : Screen
     data class Review(val packId: String, val packName: String) : Screen
+    data class Library(val packId: String, val packName: String) : Screen
 }
 
 @Composable
@@ -50,11 +56,16 @@ fun PolyglotApp(container: AppContainer, modifier: Modifier = Modifier) {
         is Screen.Dashboard -> DashboardScreen(
             container, modifier, s.packId, s.packName,
             onReview = { screen = Screen.Review(s.packId, s.packName) },
+            onLibrary = { screen = Screen.Library(s.packId, s.packName) },
             onBack = { screen = Screen.Picker },
         )
         is Screen.Review -> ReviewScreen(
             container, modifier, s.packId,
             onDone = { screen = Screen.Dashboard(s.packId, s.packName) },
+        )
+        is Screen.Library -> LibraryScreen(
+            container, modifier, s.packId, s.packName,
+            onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
         )
     }
 }
@@ -91,6 +102,7 @@ private fun DashboardScreen(
     packId: String,
     packName: String,
     onReview: () -> Unit,
+    onLibrary: () -> Unit,
     onBack: () -> Unit,
 ) {
     var stats by remember { mutableStateOf<DashboardStats?>(null) }
@@ -115,6 +127,7 @@ private fun DashboardScreen(
                     }
                 }
             }
+            OutlinedButton(onClick = onLibrary, modifier = Modifier.fillMaxWidth()) { Text("Browse library") }
             TextButton(onClick = onBack) { Text("Switch language") }
         }
     }
@@ -181,5 +194,77 @@ private fun ReviewScreen(container: AppContainer, modifier: Modifier, packId: St
                 TextButton(onClick = onDone) { Text("Stop for now") }
             }
         }
+    }
+}
+
+private enum class LibTab(val label: String) { VOCAB("Vocabulary"), GRAMMAR("Grammar"), SLANG("Slang") }
+
+private fun stripMd(s: String): String = s.replace("**", "").replace("*", "").replace("`", "")
+
+@Composable
+private fun LibraryScreen(
+    container: AppContainer,
+    modifier: Modifier,
+    packId: String,
+    packName: String,
+    onBack: () -> Unit,
+) {
+    var vocab by remember { mutableStateOf<List<VocabularyItem>?>(null) }
+    var grammar by remember { mutableStateOf<List<GrammarItem>?>(null) }
+    var slang by remember { mutableStateOf<List<SlangItem>?>(null) }
+    var tab by remember { mutableStateOf(LibTab.VOCAB) }
+
+    LaunchedEffect(packId) {
+        vocab = runCatching { container.packs.vocabulary(packId) }.getOrDefault(emptyList())
+        grammar = runCatching { container.packs.grammar(packId) }.getOrDefault(emptyList())
+        slang = runCatching { container.packs.slang(packId) }.getOrDefault(emptyList())
+    }
+
+    Column(modifier.fillMaxSize().padding(horizontal = 20.dp, vertical = 16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+        Text("$packName · Library", style = MaterialTheme.typography.headlineSmall)
+        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            LibTab.entries.forEach { t ->
+                if (t == tab) {
+                    Button(onClick = { tab = t }, modifier = Modifier.weight(1f)) { Text(t.label) }
+                } else {
+                    OutlinedButton(onClick = { tab = t }, modifier = Modifier.weight(1f)) { Text(t.label) }
+                }
+            }
+        }
+        LazyColumn(Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(1.dp)) {
+            when (tab) {
+                LibTab.VOCAB -> items(vocab.orEmpty()) { v ->
+                    Card(Modifier.fillMaxWidth()) {
+                        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                            Text(v.lemma, style = MaterialTheme.typography.titleMedium)
+                            listOfNotNull(v.reading, v.romaji).joinToString(" · ").ifBlank { null }?.let {
+                                Text(it, style = MaterialTheme.typography.bodySmall)
+                            }
+                            Text(v.translation, style = MaterialTheme.typography.bodyMedium)
+                        }
+                    }
+                }
+                LibTab.GRAMMAR -> items(grammar.orEmpty()) { g ->
+                    Card(Modifier.fillMaxWidth()) {
+                        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                            Text(g.title, style = MaterialTheme.typography.titleMedium)
+                            Text(stripMd(g.explanationMd), style = MaterialTheme.typography.bodyMedium)
+                        }
+                    }
+                }
+                LibTab.SLANG -> items(slang.orEmpty()) { s ->
+                    Card(Modifier.fillMaxWidth()) {
+                        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                            Text(s.phrase, style = MaterialTheme.typography.titleMedium)
+                            s.natural?.let { Text(it, style = MaterialTheme.typography.bodyMedium) }
+                            listOfNotNull(s.register, s.severity?.let { "severity $it" }).joinToString(" · ").ifBlank { null }?.let {
+                                Text(it, style = MaterialTheme.typography.labelSmall)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        TextButton(onClick = onBack) { Text("Back") }
     }
 }
