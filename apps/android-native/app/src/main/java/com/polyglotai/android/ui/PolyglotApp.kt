@@ -14,6 +14,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
+import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
@@ -36,6 +37,7 @@ import com.polyglotai.android.AppContainer
 import com.polyglotai.android.data.GrammarItem
 import com.polyglotai.android.data.LanguageOption
 import com.polyglotai.android.data.SlangItem
+import com.polyglotai.android.data.ThemeMode
 import com.polyglotai.android.data.VocabularyItem
 import com.polyglotai.android.data.ai.ChatMessage
 import com.polyglotai.android.data.db.ReviewItem
@@ -48,6 +50,7 @@ import kotlinx.coroutines.launch
 private sealed interface Screen {
     data object Picker : Screen
     data object Account : Screen
+    data object Settings : Screen
     data class Dashboard(val packId: String, val packName: String) : Screen
     data class Review(val packId: String, val packName: String) : Screen
     data class Library(val packId: String, val packName: String) : Screen
@@ -57,7 +60,12 @@ private sealed interface Screen {
 }
 
 @Composable
-fun PolyglotApp(container: AppContainer, modifier: Modifier = Modifier) {
+fun PolyglotApp(
+    container: AppContainer,
+    modifier: Modifier = Modifier,
+    themeMode: ThemeMode = ThemeMode.SYSTEM,
+    onThemeChange: (ThemeMode) -> Unit = {},
+) {
     var screen by remember { mutableStateOf<Screen>(Screen.Picker) }
 
     when (val s = screen) {
@@ -65,9 +73,14 @@ fun PolyglotApp(container: AppContainer, modifier: Modifier = Modifier) {
             container, modifier,
             onPick = { opt -> screen = Screen.Dashboard(opt.id, opt.name) },
             onAccount = { screen = Screen.Account },
+            onSettings = { screen = Screen.Settings },
         )
         is Screen.Account -> AccountScreen(
             container, modifier,
+            onBack = { screen = Screen.Picker },
+        )
+        is Screen.Settings -> SettingsScreen(
+            container, modifier, themeMode, onThemeChange,
             onBack = { screen = Screen.Picker },
         )
         is Screen.Dashboard -> DashboardScreen(
@@ -108,6 +121,7 @@ private fun PickerScreen(
     modifier: Modifier,
     onPick: (LanguageOption) -> Unit,
     onAccount: () -> Unit,
+    onSettings: () -> Unit,
 ) {
     var langs by remember { mutableStateOf<List<LanguageOption>?>(null) }
     LaunchedEffect(Unit) {
@@ -121,8 +135,11 @@ private fun PickerScreen(
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Text("Choose a language", style = MaterialTheme.typography.headlineMedium)
-            TextButton(onClick = onAccount) {
-                Text(if (container.account.isSignedIn) "Account" else "Sign in")
+            Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                TextButton(onClick = onSettings) { Text("Settings") }
+                TextButton(onClick = onAccount) {
+                    Text(if (container.account.isSignedIn) "Account" else "Sign in")
+                }
             }
         }
         val list = langs
@@ -160,7 +177,7 @@ private fun DashboardScreen(
     var syncMsg by remember { mutableStateOf<String?>(null) }
     LaunchedEffect(packId) {
         container.learning.seedPack(packId)
-        stats = container.learning.dashboard(packId)
+        stats = container.learning.dashboard(packId, container.settings.dailyGoal)
     }
 
     Column(modifier.fillMaxSize().padding(24.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
@@ -177,6 +194,20 @@ private fun DashboardScreen(
                     Button(onClick = onReview, enabled = d.dueCount > 0) {
                         Text(if (d.dueCount > 0) "Start review" else "Nothing due")
                     }
+                }
+            }
+            Card(Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    val goalMet = d.reviewsToday >= d.dailyGoal
+                    Text("Daily goal", style = MaterialTheme.typography.labelLarge)
+                    Text(
+                        if (goalMet) "Goal reached — ${d.reviewsToday} today ✓" else "${d.reviewsToday} / ${d.dailyGoal} today",
+                        style = MaterialTheme.typography.titleMedium,
+                    )
+                    LinearProgressIndicator(
+                        progress = { if (d.dailyGoal == 0) 0f else (d.reviewsToday.toFloat() / d.dailyGoal).coerceIn(0f, 1f) },
+                        modifier = Modifier.fillMaxWidth(),
+                    )
                 }
             }
             OutlinedButton(onClick = onLibrary, modifier = Modifier.fillMaxWidth()) { Text("Browse library") }
@@ -562,6 +593,64 @@ private fun AccountScreen(container: AppContainer, modifier: Modifier, onBack: (
 }
 
 private enum class AuthMode(val label: String) { SIGN_IN("Sign in"), SIGN_UP("Create account") }
+
+@Composable
+private fun SettingsScreen(
+    container: AppContainer,
+    modifier: Modifier,
+    themeMode: ThemeMode,
+    onThemeChange: (ThemeMode) -> Unit,
+    onBack: () -> Unit,
+) {
+    var goal by remember { mutableStateOf(container.settings.dailyGoal) }
+
+    Column(
+        modifier.fillMaxSize().padding(24.dp).verticalScroll(rememberScrollState()),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
+    ) {
+        Text("Settings", style = MaterialTheme.typography.headlineMedium)
+
+        Card(Modifier.fillMaxWidth()) {
+            Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                Text("Daily goal", style = MaterialTheme.typography.labelLarge)
+                Text("$goal cards a day", style = MaterialTheme.typography.titleMedium)
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    OutlinedButton(
+                        onClick = { goal = (goal - 5).coerceAtLeast(5); container.settings.dailyGoal = goal },
+                        modifier = Modifier.weight(1f),
+                        enabled = goal > 5,
+                    ) { Text("– 5") }
+                    OutlinedButton(
+                        onClick = { goal = (goal + 5).coerceAtMost(100); container.settings.dailyGoal = goal },
+                        modifier = Modifier.weight(1f),
+                        enabled = goal < 100,
+                    ) { Text("+ 5") }
+                }
+            }
+        }
+
+        Card(Modifier.fillMaxWidth()) {
+            Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                Text("Theme", style = MaterialTheme.typography.labelLarge)
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    ThemeMode.entries.forEach { m ->
+                        if (m == themeMode) {
+                            Button(onClick = { onThemeChange(m) }, modifier = Modifier.weight(1f)) { Text(m.label) }
+                        } else {
+                            OutlinedButton(onClick = { onThemeChange(m) }, modifier = Modifier.weight(1f)) { Text(m.label) }
+                        }
+                    }
+                }
+            }
+        }
+
+        Text(
+            "PolyglotAI · native Android build. Content packs are bundled; AI features and cloud sync are optional.",
+            style = MaterialTheme.typography.bodySmall,
+        )
+        TextButton(onClick = onBack) { Text("Back") }
+    }
+}
 
 @Composable
 private fun CorrectionField(label: String, value: String) {

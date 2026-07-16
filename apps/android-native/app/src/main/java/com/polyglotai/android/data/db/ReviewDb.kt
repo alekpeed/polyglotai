@@ -50,6 +50,10 @@ interface ReviewDao {
     @Query("SELECT COUNT(*) FROM review_items WHERE packId = :packId AND lastReviewedAtMillis IS NOT NULL")
     suspend fun countReviewed(packId: String): Int
 
+    /** Cards whose most recent review landed at/after [since] — drives the "reviewed today" goal. */
+    @Query("SELECT COUNT(*) FROM review_items WHERE packId = :packId AND lastReviewedAtMillis >= :since")
+    suspend fun countReviewedSince(packId: String, since: Long): Int
+
     /** Every tracked card, across all packs — the push side of cloud sync. */
     @Query("SELECT * FROM review_items")
     suspend fun listAll(): List<ReviewItem>

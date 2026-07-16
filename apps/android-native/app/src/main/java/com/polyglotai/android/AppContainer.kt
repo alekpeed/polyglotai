@@ -3,6 +3,7 @@ package com.polyglotai.android
 import android.content.Context
 import androidx.room.Room
 import com.polyglotai.android.data.PackRepository
+import com.polyglotai.android.data.SettingsStore
 import com.polyglotai.android.data.account.AccountStore
 import com.polyglotai.android.data.account.SupabaseAuth
 import com.polyglotai.android.data.account.SyncClient
@@ -24,6 +25,7 @@ class AppContainer(context: Context) {
     ).build()
 
     val packs = PackRepository(app)
+    val settings = SettingsStore(app)
     val learning = LearningRepository(packs, db.reviewDao())
     val ai = AiRepository(ProxyClient(), DeviceTokenStore(app))
     val account = AccountRepository(SupabaseAuth(), AccountStore(app), SyncClient(), db.reviewDao())

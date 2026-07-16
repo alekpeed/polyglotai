@@ -49,9 +49,21 @@ class LearningRepository(
         return DashboardStats(
             dueCount = dao.countDue(packId, nowMs),
             totalCards = dao.countForPack(packId),
-            reviewsToday = 0, // wired to a per-day count in a later pass
+            reviewsToday = dao.countReviewedSince(packId, startOfDayMillis(nowMs)),
             dailyGoal = dailyGoal,
         )
+    }
+
+    /** Local-midnight for the day containing [nowMs]. Uses Calendar so it works on minSdk 24
+     *  without java.time desugaring. */
+    private fun startOfDayMillis(nowMs: Long): Long {
+        val cal = java.util.Calendar.getInstance()
+        cal.timeInMillis = nowMs
+        cal.set(java.util.Calendar.HOUR_OF_DAY, 0)
+        cal.set(java.util.Calendar.MINUTE, 0)
+        cal.set(java.util.Calendar.SECOND, 0)
+        cal.set(java.util.Calendar.MILLISECOND, 0)
+        return cal.timeInMillis
     }
 
     suspend fun listDue(packId: String): List<ReviewItem> =
