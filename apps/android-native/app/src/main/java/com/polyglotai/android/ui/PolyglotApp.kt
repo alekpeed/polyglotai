@@ -2,8 +2,11 @@ package com.polyglotai.android.ui
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.Crossfade
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -33,15 +36,24 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.polyglotai.android.AppContainer
 import com.polyglotai.android.data.GrammarItem
 import com.polyglotai.android.data.LanguageOption
 import com.polyglotai.android.data.SlangItem
-import com.polyglotai.android.data.ThemeMode
 import com.polyglotai.android.data.VocabularyItem
+import com.polyglotai.android.ui.theme.AppTheme
+import com.polyglotai.android.ui.theme.LocalPolyColors
+import com.polyglotai.android.ui.theme.Pack
+import com.polyglotai.android.ui.theme.PrimaryButton
+import com.polyglotai.android.ui.theme.heroShape
+import com.polyglotai.android.ui.theme.packForId
 import com.polyglotai.android.data.ai.ChatMessage
 import com.polyglotai.android.data.db.ReviewItem
 import com.polyglotai.android.domain.DashboardStats
@@ -69,8 +81,9 @@ private sealed interface Screen {
 fun PolyglotApp(
     container: AppContainer,
     modifier: Modifier = Modifier,
-    themeMode: ThemeMode = ThemeMode.SYSTEM,
-    onThemeChange: (ThemeMode) -> Unit = {},
+    appTheme: AppTheme = AppTheme.SYSTEM,
+    onThemeChange: (AppTheme) -> Unit = {},
+    onPackChange: (Pack) -> Unit = {},
 ) {
     var screen by remember { mutableStateOf<Screen>(Screen.Picker) }
     var onboarded by remember { mutableStateOf(container.settings.onboarded) }
@@ -89,7 +102,10 @@ fun PolyglotApp(
         screen = when (val s = screen) {
             is Screen.Picker -> Screen.Picker
             is Screen.Account, is Screen.Settings -> Screen.Picker
-            is Screen.Dashboard -> Screen.Picker
+            is Screen.Dashboard -> {
+                onPackChange(Pack.DEFAULT)
+                Screen.Picker
+            }
             is Screen.Review -> Screen.Dashboard(s.packId, s.packName)
             is Screen.Library -> Screen.Dashboard(s.packId, s.packName)
             is Screen.Tutor -> Screen.Dashboard(s.packId, s.packName)
@@ -104,7 +120,10 @@ fun PolyglotApp(
       when (s) {
         is Screen.Picker -> PickerScreen(
             container, modifier,
-            onPick = { opt -> screen = Screen.Dashboard(opt.id, opt.name) },
+            onPick = { opt ->
+                onPackChange(packForId(opt.id))
+                screen = Screen.Dashboard(opt.id, opt.name)
+            },
             onAccount = { screen = Screen.Account },
             onSettings = { screen = Screen.Settings },
         )
@@ -113,7 +132,7 @@ fun PolyglotApp(
             onBack = { screen = Screen.Picker },
         )
         is Screen.Settings -> SettingsScreen(
-            container, modifier, themeMode, onThemeChange,
+            container, modifier, appTheme, onThemeChange,
             onBack = { screen = Screen.Picker },
         )
         is Screen.Dashboard -> DashboardScreen(
@@ -125,7 +144,10 @@ fun PolyglotApp(
             onPronunciation = { screen = Screen.Pronunciation(s.packId, s.packName) },
             onInterpreter = { screen = Screen.Interpreter(s.packId, s.packName) },
             onDrill = { screen = Screen.Drill(s.packId, s.packName) },
-            onBack = { screen = Screen.Picker },
+            onBack = {
+                onPackChange(Pack.DEFAULT)
+                screen = Screen.Picker
+            },
         )
         is Screen.Review -> ReviewScreen(
             container, modifier, s.packId,
@@ -226,18 +248,41 @@ private fun DashboardScreen(
         stats = container.learning.dashboard(packId, container.settings.dailyGoal)
     }
 
+    val poly = LocalPolyColors.current
     Column(modifier.fillMaxSize().padding(24.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-        Text(packName, style = MaterialTheme.typography.headlineMedium)
+        Text(
+            packName,
+            style = MaterialTheme.typography.headlineMedium.copy(fontFamily = FontFamily.Serif),
+        )
         val d = stats
         if (d == null) {
             Text("Loading…", style = MaterialTheme.typography.bodyMedium)
         } else {
-            Card(Modifier.fillMaxWidth()) {
-                Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Text("Due now", style = MaterialTheme.typography.labelLarge)
-                    Text("${d.dueCount}", style = MaterialTheme.typography.displaySmall)
-                    Text("${d.totalCards} cards total", style = MaterialTheme.typography.bodySmall)
-                    Button(onClick = onReview, enabled = d.dueCount > 0) {
+            // The signature hero: periwinkle fill (navy in dark), a gold Fraunces-style serif
+            // numeral, and the asymmetric top-start curve — flat in the ja washi world.
+            Box(
+                Modifier.fillMaxWidth().clip(heroShape(poly)).background(poly.indigoFill).padding(24.dp),
+            ) {
+                Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    Text(
+                        "DUE NOW",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = poly.onFill.copy(alpha = 0.6f),
+                    )
+                    Text(
+                        "${d.dueCount}",
+                        fontFamily = FontFamily.Serif,
+                        fontWeight = FontWeight.Normal,
+                        fontSize = 64.sp,
+                        color = poly.gold,
+                    )
+                    Text(
+                        "${d.totalCards} cards total",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = poly.onFill.copy(alpha = 0.78f),
+                    )
+                    Spacer(Modifier.height(6.dp))
+                    PrimaryButton(onClick = onReview, enabled = d.dueCount > 0) {
                         Text(if (d.dueCount > 0) "Start review" else "Nothing due")
                     }
                 }
@@ -609,7 +654,7 @@ private fun OnboardingScreen(modifier: Modifier, onDone: () -> Unit) {
                 }
             }
         }
-        Button(onClick = onDone, modifier = Modifier.fillMaxWidth()) { Text("Get started") }
+        PrimaryButton(onClick = onDone, modifier = Modifier.fillMaxWidth()) { Text("Get started") }
     }
 }
 
@@ -821,7 +866,30 @@ private fun AccountScreen(container: AppContainer, modifier: Modifier, onBack: (
         modifier.fillMaxSize().padding(24.dp).verticalScroll(rememberScrollState()),
         verticalArrangement = Arrangement.spacedBy(14.dp),
     ) {
-        Text("Account", style = MaterialTheme.typography.headlineMedium)
+        val poly = LocalPolyColors.current
+        Box(
+            Modifier.fillMaxWidth().clip(heroShape(poly)).background(poly.indigoFill).padding(22.dp),
+        ) {
+            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                Text(
+                    "POLYGLOTAI · BRASIL",
+                    style = MaterialTheme.typography.labelSmall,
+                    color = poly.onFill.copy(alpha = 0.6f),
+                )
+                Text(
+                    "Fala aí.",
+                    fontFamily = FontFamily.Serif,
+                    fontWeight = FontWeight.Normal,
+                    fontSize = 34.sp,
+                    color = poly.onFill,
+                )
+                Text(
+                    "Your account, your progress — synced wherever you sign in.",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = poly.onFill.copy(alpha = 0.82f),
+                )
+            }
+        }
         if (signedIn) {
             Text("Signed in as ${container.account.email ?: "your account"}.", style = MaterialTheme.typography.bodyMedium)
             Text(
@@ -869,7 +937,7 @@ private fun AccountScreen(container: AppContainer, modifier: Modifier, onBack: (
             )
             error?.let { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall) }
             notice?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
-            Button(
+            PrimaryButton(
                 enabled = !busy && email.isNotBlank() && password.isNotBlank(),
                 onClick = {
                     busy = true; error = null; notice = null
@@ -894,7 +962,7 @@ private fun AccountScreen(container: AppContainer, modifier: Modifier, onBack: (
                     }
                 },
                 modifier = Modifier.fillMaxWidth(),
-            ) { Text(if (busy) "Working…" else mode.label) }
+            ) { Text(if (busy) "Working…" else "${mode.label} →") }
         }
         TextButton(onClick = onBack) { Text("Back") }
     }
@@ -906,8 +974,8 @@ private enum class AuthMode(val label: String) { SIGN_IN("Sign in"), SIGN_UP("Cr
 private fun SettingsScreen(
     container: AppContainer,
     modifier: Modifier,
-    themeMode: ThemeMode,
-    onThemeChange: (ThemeMode) -> Unit,
+    appTheme: AppTheme,
+    onThemeChange: (AppTheme) -> Unit,
     onBack: () -> Unit,
 ) {
     var goal by remember { mutableStateOf(container.settings.dailyGoal) }
@@ -939,13 +1007,21 @@ private fun SettingsScreen(
 
         Card(Modifier.fillMaxWidth()) {
             Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                Text("Theme", style = MaterialTheme.typography.labelLarge)
-                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    ThemeMode.entries.forEach { m ->
-                        if (m == themeMode) {
-                            Button(onClick = { onThemeChange(m) }, modifier = Modifier.weight(1f)) { Text(m.label) }
+                Text("Appearance", style = MaterialTheme.typography.labelLarge)
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                    AppTheme.entries.forEach { m ->
+                        if (m == appTheme) {
+                            Button(
+                                onClick = { onThemeChange(m) },
+                                modifier = Modifier.weight(1f),
+                                contentPadding = PaddingValues(horizontal = 4.dp),
+                            ) { Text(m.label, style = MaterialTheme.typography.labelMedium) }
                         } else {
-                            OutlinedButton(onClick = { onThemeChange(m) }, modifier = Modifier.weight(1f)) { Text(m.label) }
+                            OutlinedButton(
+                                onClick = { onThemeChange(m) },
+                                modifier = Modifier.weight(1f),
+                                contentPadding = PaddingValues(horizontal = 4.dp),
+                            ) { Text(m.label, style = MaterialTheme.typography.labelMedium) }
                         }
                     }
                 }

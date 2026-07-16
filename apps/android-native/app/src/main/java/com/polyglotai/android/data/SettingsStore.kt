@@ -1,15 +1,9 @@
 package com.polyglotai.android.data
 
 import android.content.Context
+import com.polyglotai.android.ui.theme.AppTheme
 
-/** How the app picks light vs dark. SYSTEM follows the device setting. */
-enum class ThemeMode(val label: String) {
-    SYSTEM("System"),
-    LIGHT("Light"),
-    DARK("Dark"),
-}
-
-/** Local, device-scoped preferences: the daily review goal and the theme choice. */
+/** Local, device-scoped preferences: the daily review goal and the appearance choice. */
 class SettingsStore(context: Context) {
     private val prefs = context.applicationContext.getSharedPreferences("polyglotai_settings", Context.MODE_PRIVATE)
 
@@ -17,9 +11,9 @@ class SettingsStore(context: Context) {
         get() = prefs.getInt(KEY_GOAL, DEFAULT_GOAL).coerceIn(MIN_GOAL, MAX_GOAL)
         set(value) = prefs.edit().putInt(KEY_GOAL, value.coerceIn(MIN_GOAL, MAX_GOAL)).apply()
 
-    var themeMode: ThemeMode
-        get() = runCatching { ThemeMode.valueOf(prefs.getString(KEY_THEME, ThemeMode.SYSTEM.name)!!) }
-            .getOrDefault(ThemeMode.SYSTEM)
+    var appTheme: AppTheme
+        get() = runCatching { AppTheme.valueOf(prefs.getString(KEY_THEME, AppTheme.SYSTEM.name)!!) }
+            .getOrDefault(AppTheme.SYSTEM)
         set(value) = prefs.edit().putString(KEY_THEME, value.name).apply()
 
     /** False until the learner has seen the one-time welcome. */
