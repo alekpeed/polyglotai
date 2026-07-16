@@ -13,6 +13,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.LinearProgressIndicator
 import androidx.compose.material3.MaterialTheme
@@ -59,6 +60,7 @@ private sealed interface Screen {
     data class Conversation(val packId: String, val packName: String) : Screen
     data class Pronunciation(val packId: String, val packName: String) : Screen
     data class Interpreter(val packId: String, val packName: String) : Screen
+    data class Drill(val packId: String, val packName: String) : Screen
 }
 
 @Composable
@@ -69,6 +71,15 @@ fun PolyglotApp(
     onThemeChange: (ThemeMode) -> Unit = {},
 ) {
     var screen by remember { mutableStateOf<Screen>(Screen.Picker) }
+    var onboarded by remember { mutableStateOf(container.settings.onboarded) }
+
+    if (!onboarded) {
+        OnboardingScreen(modifier, onDone = {
+            container.settings.onboarded = true
+            onboarded = true
+        })
+        return
+    }
 
     when (val s = screen) {
         is Screen.Picker -> PickerScreen(
@@ -93,6 +104,7 @@ fun PolyglotApp(
             onConversation = { screen = Screen.Conversation(s.packId, s.packName) },
             onPronunciation = { screen = Screen.Pronunciation(s.packId, s.packName) },
             onInterpreter = { screen = Screen.Interpreter(s.packId, s.packName) },
+            onDrill = { screen = Screen.Drill(s.packId, s.packName) },
             onBack = { screen = Screen.Picker },
         )
         is Screen.Review -> ReviewScreen(
@@ -117,6 +129,10 @@ fun PolyglotApp(
         )
         is Screen.Interpreter -> InterpreterScreen(
             container, modifier, s.packName,
+            onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
+        )
+        is Screen.Drill -> DrillScreen(
+            container, modifier, s.packId, s.packName,
             onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
         )
     }
@@ -177,6 +193,7 @@ private fun DashboardScreen(
     onConversation: () -> Unit,
     onPronunciation: () -> Unit,
     onInterpreter: () -> Unit,
+    onDrill: () -> Unit,
     onBack: () -> Unit,
 ) {
     val scope = rememberCoroutineScope()
@@ -218,6 +235,7 @@ private fun DashboardScreen(
                     )
                 }
             }
+            OutlinedButton(onClick = onDrill, modifier = Modifier.fillMaxWidth()) { Text("Quick drill") }
             OutlinedButton(onClick = onLibrary, modifier = Modifier.fillMaxWidth()) { Text("Browse library") }
             OutlinedButton(onClick = onTutor, modifier = Modifier.fillMaxWidth()) { Text("AI Tutor") }
             OutlinedButton(onClick = onConversation, modifier = Modifier.fillMaxWidth()) { Text("Conversation") }
@@ -501,6 +519,138 @@ private fun ConversationScreen(container: AppContainer, modifier: Modifier, pack
                         }
                     },
                 ) { Text(if (busy) "…" else "Send") }
+            }
+        }
+        TextButton(onClick = onBack) { Text("Back") }
+    }
+}
+
+@Composable
+private fun OnboardingScreen(modifier: Modifier, onDone: () -> Unit) {
+    Column(
+        modifier.fillMaxSize().padding(28.dp).verticalScroll(rememberScrollState()),
+        verticalArrangement = Arrangement.spacedBy(18.dp),
+    ) {
+        Spacer(Modifier.height(12.dp))
+        Text("Welcome to PolyglotAI", style = MaterialTheme.typography.headlineMedium)
+        Text(
+            "Learn a language the way people actually speak it — slang and register included.",
+            style = MaterialTheme.typography.bodyLarge,
+        )
+        listOf(
+            "Spaced-repetition review" to "Cards come back right before you'd forget them.",
+            "Quick drills" to "Fast multiple-choice rounds when you want a change of pace.",
+            "AI tutor & conversation" to "Get corrections, chat, practice pronunciation, and interpret text.",
+            "Sync across devices" to "Create an account to carry your progress anywhere.",
+        ).forEach { (title, body) ->
+            Card(Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Text(title, style = MaterialTheme.typography.titleMedium)
+                    Text(body, style = MaterialTheme.typography.bodyMedium)
+                }
+            }
+        }
+        Button(onClick = onDone, modifier = Modifier.fillMaxWidth()) { Text("Get started") }
+    }
+}
+
+private data class DrillQuestion(
+    val prompt: String,
+    val reading: String?,
+    val options: List<String>,
+    val correct: Int,
+)
+
+@Composable
+private fun DrillScreen(
+    container: AppContainer,
+    modifier: Modifier,
+    packId: String,
+    packName: String,
+    onBack: () -> Unit,
+) {
+    var questions by remember { mutableStateOf<List<DrillQuestion>?>(null) }
+    var index by remember { mutableStateOf(0) }
+    var selected by remember { mutableStateOf<Int?>(null) }
+    var score by remember { mutableStateOf(0) }
+
+    LaunchedEffect(packId) {
+        val vocab = runCatching { container.packs.vocabulary(packId) }.getOrDefault(emptyList())
+            .filter { it.lemma.isNotBlank() && it.translation.isNotBlank() }
+        val translations = vocab.map { it.translation }.distinct()
+        questions = if (translations.size < 4) {
+            emptyList()
+        } else {
+            vocab.shuffled().take(10).map { v ->
+                val distractors = translations.filter { it != v.translation }.shuffled().take(3)
+                val opts = (distractors + v.translation).shuffled()
+                DrillQuestion(
+                    prompt = v.lemma,
+                    reading = listOfNotNull(v.reading, v.romaji).joinToString(" · ").ifBlank { null },
+                    options = opts,
+                    correct = opts.indexOf(v.translation),
+                )
+            }
+        }
+    }
+
+    val qs = questions
+    Column(
+        modifier.fillMaxSize().padding(24.dp).verticalScroll(rememberScrollState()),
+        verticalArrangement = Arrangement.spacedBy(16.dp),
+    ) {
+        Text("Quick drill · $packName", style = MaterialTheme.typography.headlineSmall)
+        when {
+            qs == null -> Text("Building drill…", style = MaterialTheme.typography.bodyMedium)
+            qs.isEmpty() -> Text("Not enough vocabulary for a drill yet.", style = MaterialTheme.typography.bodyMedium)
+            index >= qs.size -> {
+                Text("Drill complete", style = MaterialTheme.typography.headlineMedium)
+                Text("$score / ${qs.size} correct", style = MaterialTheme.typography.titleMedium)
+                Button(
+                    onClick = { index = 0; selected = null; score = 0; questions = null },
+                    modifier = Modifier.fillMaxWidth(),
+                ) { Text("Drill again") }
+            }
+            else -> {
+                val q = qs[index]
+                Text("${index + 1} of ${qs.size}", style = MaterialTheme.typography.labelMedium)
+                Card(Modifier.fillMaxWidth()) {
+                    Column(
+                        Modifier.fillMaxWidth().padding(24.dp),
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.spacedBy(6.dp),
+                    ) {
+                        Text(q.prompt, style = MaterialTheme.typography.headlineSmall, textAlign = TextAlign.Center)
+                        q.reading?.let { Text(it, style = MaterialTheme.typography.bodySmall) }
+                    }
+                }
+                q.options.forEachIndexed { i, opt ->
+                    val answered = selected != null
+                    val isCorrect = i == q.correct
+                    val colors = when {
+                        !answered -> ButtonDefaults.outlinedButtonColors()
+                        isCorrect -> ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
+                        i == selected -> ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
+                        else -> ButtonDefaults.outlinedButtonColors()
+                    }
+                    OutlinedButton(
+                        onClick = {
+                            if (selected == null) {
+                                selected = i
+                                if (isCorrect) score += 1
+                            }
+                        },
+                        enabled = !answered || isCorrect || i == selected,
+                        colors = colors,
+                        modifier = Modifier.fillMaxWidth(),
+                    ) { Text(opt) }
+                }
+                if (selected != null) {
+                    Button(
+                        onClick = { index += 1; selected = null },
+                        modifier = Modifier.fillMaxWidth(),
+                    ) { Text(if (index + 1 >= qs.size) "See results" else "Next") }
+                }
             }
         }
         TextButton(onClick = onBack) { Text("Back") }
