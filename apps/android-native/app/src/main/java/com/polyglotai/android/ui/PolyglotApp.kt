@@ -16,6 +16,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
@@ -36,6 +37,8 @@ import com.polyglotai.android.data.SlangItem
 import com.polyglotai.android.data.VocabularyItem
 import com.polyglotai.android.data.db.ReviewItem
 import com.polyglotai.android.domain.DashboardStats
+import com.polyglotai.android.domain.ai.AiCorrection
+import com.polyglotai.android.domain.ai.NeedsAccessCode
 import kotlinx.coroutines.launch
 
 private sealed interface Screen {
@@ -43,6 +46,7 @@ private sealed interface Screen {
     data class Dashboard(val packId: String, val packName: String) : Screen
     data class Review(val packId: String, val packName: String) : Screen
     data class Library(val packId: String, val packName: String) : Screen
+    data class Tutor(val packId: String, val packName: String) : Screen
 }
 
 @Composable
@@ -57,6 +61,7 @@ fun PolyglotApp(container: AppContainer, modifier: Modifier = Modifier) {
             container, modifier, s.packId, s.packName,
             onReview = { screen = Screen.Review(s.packId, s.packName) },
             onLibrary = { screen = Screen.Library(s.packId, s.packName) },
+            onTutor = { screen = Screen.Tutor(s.packId, s.packName) },
             onBack = { screen = Screen.Picker },
         )
         is Screen.Review -> ReviewScreen(
@@ -65,6 +70,10 @@ fun PolyglotApp(container: AppContainer, modifier: Modifier = Modifier) {
         )
         is Screen.Library -> LibraryScreen(
             container, modifier, s.packId, s.packName,
+            onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
+        )
+        is Screen.Tutor -> TutorScreen(
+            container, modifier, s.packName,
             onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
         )
     }
@@ -103,6 +112,7 @@ private fun DashboardScreen(
     packName: String,
     onReview: () -> Unit,
     onLibrary: () -> Unit,
+    onTutor: () -> Unit,
     onBack: () -> Unit,
 ) {
     var stats by remember { mutableStateOf<DashboardStats?>(null) }
@@ -128,6 +138,7 @@ private fun DashboardScreen(
                 }
             }
             OutlinedButton(onClick = onLibrary, modifier = Modifier.fillMaxWidth()) { Text("Browse library") }
+            OutlinedButton(onClick = onTutor, modifier = Modifier.fillMaxWidth()) { Text("AI Tutor") }
             TextButton(onClick = onBack) { Text("Switch language") }
         }
     }
@@ -261,6 +272,95 @@ private fun LibraryScreen(
                                 Text(it, style = MaterialTheme.typography.labelSmall)
                             }
                         }
+                    }
+                }
+            }
+        }
+        TextButton(onClick = onBack) { Text("Back") }
+    }
+}
+
+@Composable
+private fun CorrectionField(label: String, value: String) {
+    Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+        Text(label.uppercase(), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.primary)
+        Text(value, style = MaterialTheme.typography.bodyMedium)
+    }
+}
+
+@Composable
+private fun TutorScreen(container: AppContainer, modifier: Modifier, packName: String, onBack: () -> Unit) {
+    val scope = rememberCoroutineScope()
+    var connected by remember { mutableStateOf(container.ai.isConnected) }
+    var accessCode by remember { mutableStateOf("") }
+    var text by remember { mutableStateOf("") }
+    var busy by remember { mutableStateOf(false) }
+    var error by remember { mutableStateOf<String?>(null) }
+    var result by remember { mutableStateOf<AiCorrection?>(null) }
+
+    Column(
+        modifier.fillMaxSize().padding(24.dp).verticalScroll(rememberScrollState()),
+        verticalArrangement = Arrangement.spacedBy(14.dp),
+    ) {
+        Text("AI Tutor", style = MaterialTheme.typography.headlineMedium)
+        if (!connected) {
+            Text("Enter the access code to enable AI features.", style = MaterialTheme.typography.bodyMedium)
+            OutlinedTextField(
+                value = accessCode,
+                onValueChange = { accessCode = it },
+                label = { Text("Access code") },
+                modifier = Modifier.fillMaxWidth(),
+            )
+            error?.let { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall) }
+            Button(
+                enabled = !busy && accessCode.isNotBlank(),
+                onClick = {
+                    busy = true; error = null
+                    scope.launch {
+                        val ok = runCatching { container.ai.connect(accessCode.trim()) }.getOrDefault(false)
+                        busy = false
+                        if (ok) connected = true else error = "That code didn't work."
+                    }
+                },
+            ) { Text(if (busy) "Connecting…" else "Connect") }
+        } else {
+            Text("Write a sentence in $packName; get it corrected.", style = MaterialTheme.typography.bodyMedium)
+            OutlinedTextField(
+                value = text,
+                onValueChange = { text = it },
+                label = { Text(packName) },
+                minLines = 3,
+                modifier = Modifier.fillMaxWidth(),
+            )
+            error?.let { Text(it, color = MaterialTheme.colorScheme.error, style = MaterialTheme.typography.bodySmall) }
+            Button(
+                enabled = !busy && text.isNotBlank(),
+                onClick = {
+                    busy = true; error = null; result = null
+                    scope.launch {
+                        try {
+                            result = container.ai.correct(packName, text.trim())
+                        } catch (e: NeedsAccessCode) {
+                            connected = false
+                        } catch (e: Exception) {
+                            error = e.message ?: "Something went wrong."
+                        } finally {
+                            busy = false
+                        }
+                    }
+                },
+                modifier = Modifier.fillMaxWidth(),
+            ) { Text(if (busy) "Correcting…" else "Correct it") }
+
+            result?.let { c ->
+                Card(Modifier.fillMaxWidth()) {
+                    Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                        CorrectionField("Corrected", c.corrected)
+                        c.natural?.let { CorrectionField("Natural", it) }
+                        c.formal?.let { CorrectionField("Formal", it) }
+                        c.casual?.let { CorrectionField("Casual", it) }
+                        c.grammarExplanation?.let { CorrectionField("Grammar", it) }
+                        c.registerExplanation?.let { CorrectionField("Register", it) }
                     }
                 }
             }
