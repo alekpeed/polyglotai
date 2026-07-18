@@ -16,7 +16,7 @@ enum class AppTheme(val label: String) { SYSTEM("System"), LIGHT("Light"), DARK(
  *    DEFAULT — Brasil · Concreto & Ipê (warm paper, periwinkle-indigo, champagne gold, mint)
  *    JA      — 藍と墨 ai to sumi (washi + sumi ink, one ai-indigo accent, kin-gold hairlines, flat)
  *    FR      — Café de Paris (cream paper, near-black ink, bright terrace red, absinthe green)
- *    ES_MX   — Cal y Rosa (limewash paper, rosa mexicano magenta, jade; sunlit, generous rounding)
+ *    ES_MX   — Barragán (warm stucco paper, rosa mexicano primary, lilac secondary, marigold CTA)
  *    RU      — two palette variants (see [PackVariant]): Gzhel (cobalt-on-porcelain, default) and
  *              Hermitage (salon green + gilt on warm marble) */
 enum class Pack { DEFAULT, JA, FR, ES_MX, RU }
@@ -157,27 +157,28 @@ private val FrDark = PolyColors(
     ctaFill = Color(0xFFE42618), ctaInk = Color(0xFFFCF0EC), flat = false, seigaiha = Color.Transparent,
 )
 
-// ---- ES_MX · Cal y Rosa (limewash & rose). Warm lime-washed sand paper + warm near-black ink, a
-//      rosa mexicano magenta primary and a jade secondary. Sunlit and friendly: soft shadow,
-//      generous corner. Two-hue system (magenta + jade/green) kept clean against the calm paper.
+// ---- ES_MX · Barragán (rosa, lilac & marigold). Warm stucco paper + deep plum ink, a saturated
+//      rosa mexicano primary (--indigo* slot), a lilac secondary (--gold* slot) and a bright marigold
+//      call-to-action. Bold flat planes, crisp right angles, hard sunlit shadows — Luis Barragán's
+//      pink-lilac-yellow triad. --verde stays a Mexican avocado green for "correct". Light leads.
 private val EsMxLight = PolyColors(
-    ink = Color(0xFF2A1E1C), inkSoft = Color(0xFF6C5C55),
-    paper = Color(0xFFF8F1E7), surface = Color(0xFFEFE6D5), surfaceRaised = Color(0xFFFFFDF7),
-    line = Color(0xFFE5D9C5), gold = Color(0xFF0E8A7A), goldInk = Color(0xFF0A4A42),
-    indigo = Color(0xFFC11B6B), indigoSoft = Color(0xFFFBE1EE), indigoFill = Color(0xFFA5165C),
-    goldFill = Color(0xFFBFE3DC), verdeFill = Color(0xFFA9D89B), verdeInk = Color(0xFF1F5A2A),
-    heat = Heat, hasShadow = true, heroTopStart = 40.dp,
-    ctaFill = Color(0xFFA5165C), ctaInk = Color(0xFFFFF3F8), flat = false, seigaiha = Color.Transparent,
+    ink = Color(0xFF2A1720), inkSoft = Color(0xFF7A6169),
+    paper = Color(0xFFF4ECE4), surface = Color(0xFFEFE4D9), surfaceRaised = Color(0xFFFFFDFA),
+    line = Color(0xFFE6D8CD), gold = Color(0xFF6A44C8), goldInk = Color(0xFF2E1C6E),
+    indigo = Color(0xFFBD1659), indigoSoft = Color(0xFFFBDCE8), indigoFill = Color(0xFFE0246E),
+    goldFill = Color(0xFFE7DEF9), verdeFill = Color(0xFFB9D18F), verdeInk = Color(0xFF33501F),
+    heat = Heat, hasShadow = true, heroTopStart = 6.dp,
+    ctaFill = Color(0xFFF4A410), ctaInk = Color(0xFF3A2408), flat = false, seigaiha = Color.Transparent,
 )
 
 private val EsMxDark = PolyColors(
-    ink = Color(0xFFF6EBE4), inkSoft = Color(0xFFC3AEA5),
-    paper = Color(0xFF1A1210), surface = Color(0xFF221715), surfaceRaised = Color(0xFF271A17),
-    line = Color(0xFF3A2A25), gold = Color(0xFF3FB5A2), goldInk = Color(0xFFF6EBE4),
-    indigo = Color(0xFFE86BA3), indigoSoft = Color(0xFF331520), indigoFill = Color(0xFFA5165C),
-    goldFill = Color(0xFF12463F), verdeFill = Color(0xFF4E9B57), verdeInk = Color(0xFFEAF7EA),
-    heat = Heat, hasShadow = true, heroTopStart = 40.dp,
-    ctaFill = Color(0xFFA5165C), ctaInk = Color(0xFFFFF3F8), flat = false, seigaiha = Color.Transparent,
+    ink = Color(0xFFF6E9EC), inkSoft = Color(0xFFC2A9B1),
+    paper = Color(0xFF1C1216), surface = Color(0xFF241A1E), surfaceRaised = Color(0xFF2A1F23),
+    line = Color(0xFF3A2C30), gold = Color(0xFFA98CF0), goldInk = Color(0xFFF6E9EC),
+    indigo = Color(0xFFF2609A), indigoSoft = Color(0xFF35141F), indigoFill = Color(0xFFE0246E),
+    goldFill = Color(0xFF2B2050), verdeFill = Color(0xFF5F8F4A), verdeInk = Color(0xFFEEF4E2),
+    heat = Heat, hasShadow = true, heroTopStart = 6.dp,
+    ctaFill = Color(0xFFF4A410), ctaInk = Color(0xFF3A2408), flat = false, seigaiha = Color.Transparent,
 )
 
 // ---- RU · Gzhel (cobalt on porcelain) — the DEFAULT Russian world. Cool porcelain paper + deep

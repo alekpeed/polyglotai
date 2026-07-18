@@ -314,64 +314,71 @@
   color: #fcf0ec;
 }
 
-/* ---- Pack theme: Mexican Spanish — "Cal y Rosa" (limewash & rose). Warm lime-washed sand paper +
-   warm near-black ink, a rosa mexicano magenta primary (--indigo* slot) and a jade secondary
-   (--gold* slot). Sunlit and friendly: soft shadow, a generous top-start corner. A clean two-hue
-   folk-modern system, unlike anything else in the set. Light leads; dark is derived. ---- */
+/* ---- Pack theme: Mexican Spanish — "Barragán" (rosa, lilac & marigold). Warm stucco paper + deep
+   plum ink, a saturated rosa mexicano primary (--indigo* slot), a lilac secondary (--gold* slot) and
+   a bright marigold call-to-action (see the CTA override below). Bold flat planes, crisp right
+   angles, hard sunlit shadows — Luis Barragán's pink-lilac-yellow triad. --verde stays a Mexican
+   avocado green for "correct". Light leads; dark is derived. ---- */
 :root[data-pack="es-mx"],
 :root[data-pack="es-mx"][data-theme="light"] {
-  --paper: #f8f1e7;
-  --surface: #efe6d5;
-  --surface-raised: #fffdf7;
-  --ink: #2a1e1c;
-  --ink-soft: #6c5c55;
-  --line: #e5d9c5;
-  --indigo: #c11b6b;
-  --indigo-soft: #fbe1ee;
-  --indigo-fill: #a5165c;
-  --gold: #0e8a7a;
-  --gold-ink: #0a4a42;
-  --gold-fill: #bfe3dc;
-  --verde-fill: #a9d89b;
-  --verde-ink: #1f5a2a;
-  --shadow: 0 1px 2px rgba(42, 30, 28, 0.07), 0 8px 24px -12px rgba(42, 30, 28, 0.2);
-  --radius-curve: 40px 6px 6px 6px;
+  --paper: #f4ece4;
+  --surface: #efe4d9;
+  --surface-raised: #fffdfa;
+  --ink: #2a1720;
+  --ink-soft: #7a6169;
+  --line: #e6d8cd;
+  --indigo: #bd1659;
+  --indigo-soft: #fbdce8;
+  --indigo-fill: #e0246e;
+  --gold: #6a44c8;
+  --gold-ink: #2e1c6e;
+  --gold-fill: #e7def9;
+  --verde-fill: #b9d18f;
+  --verde-ink: #33501f;
+  --shadow: 0 1px 2px rgba(42, 23, 32, 0.08), 0 10px 26px -12px rgba(42, 23, 32, 0.22);
+  --radius-curve: 4px;
 }
 @media (prefers-color-scheme: dark) {
   :root[data-pack="es-mx"] {
-    --paper: #1a1210;
-    --surface: #221715;
-    --surface-raised: #271a17;
-    --ink: #f6ebe4;
-    --ink-soft: #c3aea5;
-    --line: #3a2a25;
-    --indigo: #e86ba3;
-    --indigo-soft: #331520;
-    --indigo-fill: #a5165c;
-    --gold: #3fb5a2;
-    --gold-ink: #f6ebe4;
-    --gold-fill: #12463f;
-    --verde-fill: #4e9b57;
-    --verde-ink: #eaf7ea;
+    --paper: #1c1216;
+    --surface: #241a1e;
+    --surface-raised: #2a1f23;
+    --ink: #f6e9ec;
+    --ink-soft: #c2a9b1;
+    --line: #3a2c30;
+    --indigo: #f2609a;
+    --indigo-soft: #35141f;
+    --indigo-fill: #e0246e;
+    --gold: #a98cf0;
+    --gold-ink: #f6e9ec;
+    --gold-fill: #2b2050;
+    --verde-fill: #5f8f4a;
+    --verde-ink: #eef4e2;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
   }
 }
 :root[data-pack="es-mx"][data-theme="dark"] {
-  --paper: #1a1210;
-  --surface: #221715;
-  --surface-raised: #271a17;
-  --ink: #f6ebe4;
-  --ink-soft: #c3aea5;
-  --line: #3a2a25;
-  --indigo: #e86ba3;
-  --indigo-soft: #331520;
-  --indigo-fill: #a5165c;
-  --gold: #3fb5a2;
-  --gold-ink: #f6ebe4;
-  --gold-fill: #12463f;
-  --verde-fill: #4e9b57;
-  --verde-ink: #eaf7ea;
+  --paper: #1c1216;
+  --surface: #241a1e;
+  --surface-raised: #2a1f23;
+  --ink: #f6e9ec;
+  --ink-soft: #c2a9b1;
+  --line: #3a2c30;
+  --indigo: #f2609a;
+  --indigo-soft: #35141f;
+  --indigo-fill: #e0246e;
+  --gold: #a98cf0;
+  --gold-ink: #f6e9ec;
+  --gold-fill: #2b2050;
+  --verde-fill: #5f8f4a;
+  --verde-ink: #eef4e2;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
+}
+/* Barragán CTA: the primary button is bright marigold with dark ink — the pink-yellow pop, off the
+   champagne-gold default (the secondary slot here is lilac, not a CTA color). */
+[data-pack="es-mx"] .btn-primary {
+  background: #f4a410;
+  color: #3a2408;
 }
 
 /* ---- Pack theme: Russian. Two palette variants the learner switches in Settings (see
