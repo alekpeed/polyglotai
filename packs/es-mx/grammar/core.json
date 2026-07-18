@@ -1,0 +1,647 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "grammar.ser-estar",
+    "title": "ser vs estar (to be)",
+    "cefr": "A1",
+    "explanationMd": "Spanish splits 'to be' into two verbs. **ser** is for identity and permanent traits: who/what something is — origin, profession, personality, time, possession. **estar** is for states and location: how/where something is right now — feelings, conditions, position. The intuition: ser answers *what it is*, estar answers *how/where it is*. Both are wildly irregular and must be memorized: **ser** → soy, eres, es, somos, son; **estar** → estoy, estás, está, estamos, están. Some adjectives flip meaning: *es aburrido* (he's boring) vs *está aburrido* (he's bored); *es rico* (he's rich) vs *está rico* (it's tasty). Location of things/people is ALWAYS estar (*el baño está allá*) — but a scheduled event uses ser (*la fiesta es en mi casa*).",
+    "examples": [
+      { "text": "Soy de Estados Unidos.", "translation": "I'm from the US. (origin → ser)" },
+      { "text": "Estoy cansado.", "translation": "I'm tired. (state → estar)" },
+      { "text": "¿Dónde está el baño?", "translation": "Where's the restroom? (location → estar)" },
+      { "text": "Ella es maestra.", "translation": "She's a teacher. (profession → ser)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Soy cansado.", "right": "Estoy cansado.", "note": "Tiredness is a state → estar." },
+      { "wrong": "El baño es a la derecha.", "right": "El baño está a la derecha.", "note": "Location always takes estar." }
+    ],
+    "drills": [
+      { "prompt": "___ (ser/estar) las tres de la tarde.", "answer": "Son (time → ser)" },
+      { "prompt": "'I'm happy today':", "answer": "Estoy contento/a hoy." },
+      { "prompt": "'She is a doctor' — ser or estar?", "answer": "ser: Ella es doctora." }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.estar-pronouns",
+        "title": "estar (to be, states) across subjects",
+        "pattern": "{subject} ___ cansado/a.",
+        "steps": [
+          { "prompt": "Yo ___ cansado.", "answer": "estoy" },
+          { "prompt": "Tú ___ cansado.", "answer": "estás" },
+          { "prompt": "Él ___ cansado.", "answer": "está" },
+          { "prompt": "Nosotros ___ cansados.", "answer": "estamos" },
+          { "prompt": "Ustedes ___ cansados.", "answer": "están" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["vocab.ser", "vocab.estar", "vocab.cansado", "vocab.bano"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.gender-articles",
+    "title": "Gender and articles: el/la/los/las, un/una",
+    "cefr": "A1",
+    "explanationMd": "Every noun is masculine or feminine. Articles carry it: **el/un** (m.), **la/una** (f.), plural **los/unos**, **las/unas**. Rough rule: -o → masculine, -a → feminine — but learn each noun WITH its article, because the exceptions are common and load-bearing: *el día, el problema, el mapa, el agua, la mano, la foto*. Words from Greek ending -ma are usually masculine (el problema, el tema, el clima). A feminine noun starting with a stressed *a* takes 'el' in the singular for sound but stays feminine: *el agua fría*. Unlike English, articles rarely drop: 'I like coffee' = *me gusta **el** café*.",
+    "examples": [
+      { "text": "El café está caliente.", "translation": "The coffee is hot." },
+      { "text": "La cuenta, por favor.", "translation": "The check, please." },
+      { "text": "Un problema grande.", "translation": "A big problem. (el problema — masculine)" },
+      { "text": "Me gustan los tacos.", "translation": "I like tacos. (article required)" }
+    ],
+    "commonErrors": [
+      { "wrong": "la problema", "right": "el problema", "note": "-ma Greek words are masculine: el problema, el tema, el clima." },
+      { "wrong": "la mano derecho", "right": "la mano derecha", "note": "mano is feminine despite -o; the adjective agrees feminine." }
+    ],
+    "drills": [
+      { "prompt": "Article for 'día':", "answer": "el día" },
+      { "prompt": "'a house': ___ casa.", "answer": "una" },
+      { "prompt": "'the hands': ___ manos.", "answer": "las" }
+    ],
+    "relatedVocabulary": ["vocab.cafe", "vocab.cuenta", "vocab.problema", "vocab.dia", "vocab.mano", "vocab.taco", "vocab.casa"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.present-regular",
+    "title": "Present tense: regular -ar, -er, -ir verbs",
+    "cefr": "A1",
+    "explanationMd": "Three verb families, three ending sets. Drop the ending, add: **-ar** (hablar) → o, as, a, amos, an; **-er** (comer) → o, es, e, emos, en; **-ir** (vivir) → o, es, e, imos, en. Note -er and -ir differ only in the nosotros form (comemos vs vivimos). Because the ending already shows the subject, Spanish usually **drops the subject pronoun**: *hablo español* (not 'yo hablo español') unless you're emphasizing or contrasting. The present also covers English's 'am ___ing': *como* = I eat OR I'm eating.",
+    "examples": [
+      { "text": "Hablo un poco de español.", "translation": "I speak a little Spanish." },
+      { "text": "¿Dónde vives?", "translation": "Where do you live?" },
+      { "text": "Comemos a las tres.", "translation": "We eat at three." },
+      { "text": "Trabaja en una oficina.", "translation": "He/she works in an office." }
+    ],
+    "commonErrors": [
+      { "wrong": "Yo soy hablo español.", "right": "Hablo español.", "note": "Don't add 'soy' — the verb ending already means 'I'; drop the pronoun too." },
+      { "wrong": "Nosotros habla.", "right": "Nosotros hablamos.", "note": "nosotros always takes -amos/-emos/-imos." }
+    ],
+    "drills": [
+      { "prompt": "Tú ___ (comer) mucho.", "answer": "comes" },
+      { "prompt": "Nosotros ___ (vivir) en México.", "answer": "vivimos" },
+      { "prompt": "Ella ___ (trabajar) los sábados.", "answer": "trabaja" }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.hablar-present",
+        "title": "hablar across subjects",
+        "pattern": "{subject} ___ español.",
+        "steps": [
+          { "prompt": "Yo ___ español.", "answer": "hablo" },
+          { "prompt": "Tú ___ español.", "answer": "hablas" },
+          { "prompt": "Él ___ español.", "answer": "habla" },
+          { "prompt": "Nosotros ___ español.", "answer": "hablamos" },
+          { "prompt": "Ustedes ___ español.", "answer": "hablan" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["vocab.hablar", "vocab.comer", "vocab.vivir", "vocab.trabajar"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.irregular-verbs",
+    "title": "Key irregular & stem-changing verbs: tener, ir, hacer, poder, querer",
+    "cefr": "A1",
+    "explanationMd": "A handful of high-frequency verbs break the rules and carry daily conversation. **tener** (have): tengo, tienes, tiene, tenemos, tienen — also for age/hunger/cold (see next point). **ir** (go): voy, vas, va, vamos, van — and the everyday future (ir a + inf). **hacer** (do/make): hago, haces, hace… — also weather. **poder** (can): puedo, puedes… and **querer** (want): quiero, quieres… are 'stem-changers' — the e/o in the stem becomes ie/ue in all forms except nosotros (podemos, queremos). This 'boot' pattern (nosotros stays regular) repeats across dozens of verbs: dormir→duermo, pensar→pienso, pedir→pido.",
+    "examples": [
+      { "text": "Tengo dos hermanos.", "translation": "I have two brothers." },
+      { "text": "Voy al mercado.", "translation": "I'm going to the market." },
+      { "text": "¿Puedes ayudarme?", "translation": "Can you help me?" },
+      { "text": "Quiero un café.", "translation": "I want a coffee." }
+    ],
+    "commonErrors": [
+      { "wrong": "Yo teno hambre.", "right": "Tengo hambre.", "note": "tener's yo form is irregular: tengo." },
+      { "wrong": "Nosotros puedemos.", "right": "Podemos.", "note": "Stem-changers DON'T change in nosotros — it stays podemos, queremos." }
+    ],
+    "drills": [
+      { "prompt": "Yo ___ (hacer) la comida.", "answer": "hago" },
+      { "prompt": "¿___ (poder) tú venir?", "answer": "Puedes" },
+      { "prompt": "Nosotros ___ (querer) ir.", "answer": "queremos" }
+    ],
+    "relatedVocabulary": ["vocab.tener", "vocab.ir", "vocab.hacer", "vocab.poder", "vocab.querer", "vocab.mercado"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.tener-expressions",
+    "title": "tener: where Spanish 'has' instead of 'is'",
+    "cefr": "A1",
+    "explanationMd": "A whole family of states that English does with 'to be', Spanish does with **tener** (to have): **tener hambre** (be hungry), **tener sed** (be thirsty), **tener frío/calor** (be cold/hot), **tener sueño** (be sleepy), **tener miedo** (be afraid), **tener prisa** (be in a hurry), **tener razón** (be right), and crucially **tener … años** (be … years old). Translating these with 'ser/estar' — *soy hambre*, *soy 25 años* — is the most recognizable beginner error in Spanish. Intensify with 'mucho/mucha' (a noun!), not 'muy': *tengo **mucha** hambre*, never 'muy hambre'.",
+    "examples": [
+      { "text": "Tengo hambre, ¿comemos?", "translation": "I'm hungry, shall we eat?" },
+      { "text": "Tengo veintiocho años.", "translation": "I'm twenty-eight." },
+      { "text": "Tienes razón.", "translation": "You're right." },
+      { "text": "Tengo mucho frío.", "translation": "I'm very cold." }
+    ],
+    "commonErrors": [
+      { "wrong": "Soy 25 años.", "right": "Tengo 25 años.", "note": "Age always uses tener." },
+      { "wrong": "Tengo muy hambre.", "right": "Tengo mucha hambre.", "note": "Hunger is a noun here, so it takes mucha, not muy." }
+    ],
+    "drills": [
+      { "prompt": "'I'm thirsty':", "answer": "Tengo sed." },
+      { "prompt": "'How old are you?' (tú):", "answer": "¿Cuántos años tienes?" },
+      { "prompt": "'We're in a hurry':", "answer": "Tenemos prisa." }
+    ],
+    "relatedVocabulary": ["vocab.tener", "vocab.frio", "vocab.calor"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.gustar",
+    "title": "gustar: liking things backwards",
+    "cefr": "A1",
+    "explanationMd": "**gustar** doesn't mean 'to like' — it means 'to be pleasing'. So the grammar runs backwards from English: *me gusta el café* literally = 'coffee is pleasing to me'. The thing liked is the SUBJECT, and it decides the verb: singular thing → **gusta**, plural things → **gustan**. *Me gusta el café* / *me gustan los tacos*. The person is an indirect pronoun up front: **me, te, le, nos, les** gusta(n). For emphasis or clarity, add 'a + person': *a mí me gusta, a Juan le gusta*. Whole family works this way: **encantar** (love), **doler** (hurt — *me duele la cabeza*), **faltar** (be missing), **importar** (matter), and Mexican **antojarse** (crave — *se me antoja*).",
+    "examples": [
+      { "text": "Me gusta el café.", "translation": "I like coffee. (coffee is pleasing to me)" },
+      { "text": "Me gustan los tacos.", "translation": "I like tacos. (plural → gustan)" },
+      { "text": "¿Te gusta la música mexicana?", "translation": "Do you like Mexican music?" },
+      { "text": "A ella le encanta bailar.", "translation": "She loves to dance." }
+    ],
+    "commonErrors": [
+      { "wrong": "Yo gusto el café.", "right": "Me gusta el café.", "note": "You don't 'do' the liking — the coffee is pleasing TO you: me gusta." },
+      { "wrong": "Me gusta los tacos.", "right": "Me gustan los tacos.", "note": "The verb agrees with the plural thing liked: gustan." }
+    ],
+    "drills": [
+      { "prompt": "'I like the beach': Me ___ la playa.", "answer": "gusta" },
+      { "prompt": "'Do you like books?': ¿Te ___ los libros?", "answer": "gustan" },
+      { "prompt": "'We love Mexican food':", "answer": "Nos encanta la comida mexicana." }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.gustar-pronouns",
+        "title": "gustar across people",
+        "pattern": "{person} ___ gusta el café.",
+        "steps": [
+          { "prompt": "A mí ___ gusta el café.", "answer": "me" },
+          { "prompt": "A ti ___ gusta el café.", "answer": "te" },
+          { "prompt": "A él ___ gusta el café.", "answer": "le" },
+          { "prompt": "A nosotros ___ gusta el café.", "answer": "nos" },
+          { "prompt": "A ellos ___ gusta el café.", "answer": "les" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["vocab.gustar", "vocab.gustar-note", "vocab.cafe", "vocab.taco", "vocab.musica", "vocab.antojo"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.negation",
+    "title": "Negation: no, and the double negative",
+    "cefr": "A1",
+    "explanationMd": "Basic negation is simple: put **no** right before the verb — *no hablo español*, *no me gusta*. Object pronouns stay glued to the verb, so 'no' goes before them too: *no lo sé*, *no me gusta*. Spanish then does something English forbids: the **double negative** is correct and required. With words like **nunca** (never), **nada** (nothing), **nadie** (nobody), **ninguno** (none), **tampoco** (neither), you keep 'no' before the verb AND the negative word after: *no veo **nada*** (I don't see anything, lit. 'I don't see nothing'), *no viene **nadie***. You can drop the 'no' only if the negative word comes first: *nunca como carne* = *no como carne nunca*.",
+    "examples": [
+      { "text": "No entiendo.", "translation": "I don't understand." },
+      { "text": "No me gusta el picante.", "translation": "I don't like spicy food." },
+      { "text": "No hay nadie aquí.", "translation": "There's nobody here. (double negative — correct)" },
+      { "text": "Nunca voy a fiestas.", "translation": "I never go to parties." }
+    ],
+    "commonErrors": [
+      { "wrong": "No veo algo.", "right": "No veo nada.", "note": "After 'no', use the negative 'nada', not 'algo'. Double negatives are correct in Spanish." },
+      { "wrong": "Yo no gusta.", "right": "No me gusta.", "note": "'no' goes before the pronoun+verb unit: no me gusta." }
+    ],
+    "drills": [
+      { "prompt": "Negate: 'Hablo francés.'", "answer": "No hablo francés." },
+      { "prompt": "'I don't want anything':", "answer": "No quiero nada." },
+      { "prompt": "'Nobody came':", "answer": "No vino nadie. / Nadie vino." }
+    ],
+    "relatedVocabulary": ["vocab.no", "vocab.nunca", "vocab.entender", "vocab.gustar"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.questions",
+    "title": "Asking questions and the accented question words",
+    "cefr": "A1",
+    "explanationMd": "The easiest news in Spanish grammar: to make a yes/no question, **just change your intonation** (and add the opening ¿). *Hablas español* → *¿Hablas español?* No word reordering, no auxiliary 'do'. You can also flip the subject after the verb: *¿Habla usted inglés?* Question words all carry a written accent to distinguish them from their plain twins: **qué** (what), **quién** (who), **dónde** (where), **cuándo** (when), **cómo** (how), **cuánto** (how much), **por qué** (why), **cuál** (which). The opening ¿ warns the reader a question is coming — always paired with the closing ?. In speech, '¿Cómo?' or the Mexican '¿Mande?' is the polite 'what?/pardon?'.",
+    "examples": [
+      { "text": "¿Hablas inglés?", "translation": "Do you speak English? (intonation only)" },
+      { "text": "¿Dónde está el metro?", "translation": "Where's the metro?" },
+      { "text": "¿Cuánto cuesta?", "translation": "How much is it?" },
+      { "text": "¿Por qué no vienes?", "translation": "Why aren't you coming?" }
+    ],
+    "commonErrors": [
+      { "wrong": "¿Tú hablas español? (written without opening ¿)", "right": "¿Tú hablas español?", "note": "Spanish requires the opening ¿ — it's not optional in writing." },
+      { "wrong": "¿Que quieres?", "right": "¿Qué quieres?", "note": "Question words take an accent: qué, dónde, cómo…" }
+    ],
+    "drills": [
+      { "prompt": "Ask 'where do you live?' (tú):", "answer": "¿Dónde vives?" },
+      { "prompt": "Ask 'what's your name?' (tú):", "answer": "¿Cómo te llamas?" },
+      { "prompt": "Ask 'how much does it cost?':", "answer": "¿Cuánto cuesta?" }
+    ],
+    "relatedVocabulary": ["vocab.donde", "vocab.que", "vocab.cuanto", "vocab.como", "vocab.por-que"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.tu-usted",
+    "title": "tú vs usted — and ustedes for everyone",
+    "cefr": "A1",
+    "explanationMd": "Spanish has two singular 'you'. **tú** is familiar (friends, family, peers, kids); **usted** is polite/respectful (strangers, elders, service, professional settings). Usted takes **third-person** verb forms — *usted habla*, *¿cómo está usted?* — the same as él/ella. In Mexico, usted is used more readily than in Spain: with older people, in shops, and as a sign of respect you can't go wrong defaulting to it with anyone you don't know. Two big Mexican notes: (1) there is **no vosotros** — the plural 'you' is always **ustedes** (with -an/-en verb endings), for both formal and casual groups. (2) Mexican voseo doesn't exist; that 'vos' is Argentine/Central American. So the system you actually use is: tú / usted / ustedes.",
+    "examples": [
+      { "text": "¿Cómo estás? (a un amigo)", "translation": "How are you? (to a friend — tú)" },
+      { "text": "¿Cómo está usted? (a un señor mayor)", "translation": "How are you? (to an older man — usted)" },
+      { "text": "¿Ustedes quieren algo de tomar?", "translation": "Do you (all) want something to drink? (plural = ustedes)" },
+      { "text": "¿De dónde son ustedes?", "translation": "Where are you (all) from?" }
+    ],
+    "commonErrors": [
+      { "wrong": "¿Vosotros queréis tacos? (in Mexico)", "right": "¿Ustedes quieren tacos?", "note": "Mexico uses ustedes for all plural 'you' — vosotros isn't used." },
+      { "wrong": "Usted hablas muy bien.", "right": "Usted habla muy bien.", "note": "usted takes third-person verb forms (habla), not tú forms (hablas)." }
+    ],
+    "drills": [
+      { "prompt": "Ask an older stranger their name (usted):", "answer": "¿Cómo se llama usted?" },
+      { "prompt": "Ask a group where they're from:", "answer": "¿De dónde son ustedes?" },
+      { "prompt": "Turn 'tú tienes' into the usted form:", "answer": "usted tiene" }
+    ],
+    "relatedVocabulary": ["vocab.senor", "vocab.senora", "vocab.mande"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.adjective-agreement",
+    "title": "Adjective agreement and placement",
+    "cefr": "A1",
+    "explanationMd": "Adjectives agree in gender and number: *un coche rojo, una casa roja, unos coches rojos, unas casas rojas*. Adjectives ending in -e or a consonant don't change for gender (grande, azul, fácil) — only add -s/-es for plural. **Placement: adjectives normally FOLLOW the noun** — *comida mexicana*, *un café caliente* — the reverse of English. A few short common ones can go before (bueno→buen, malo→mal, grande→gran drop endings before the noun), and placement can shift meaning: *un amigo viejo* (an elderly friend) vs *un viejo amigo* (a longtime friend). Nationality and color always follow.",
+    "examples": [
+      { "text": "Una casa blanca y grande.", "translation": "A big white house. (adjectives follow)" },
+      { "text": "Me gusta la comida mexicana.", "translation": "I like Mexican food." },
+      { "text": "Es un buen restaurante.", "translation": "It's a good restaurant. (bueno → buen before noun)" },
+      { "text": "Unos zapatos negros.", "translation": "Some black shoes. (masc. plural agreement)" }
+    ],
+    "commonErrors": [
+      { "wrong": "una roja casa", "right": "una casa roja", "note": "Colors follow the noun in Spanish." },
+      { "wrong": "comida mexicano", "right": "comida mexicana", "note": "The adjective agrees with feminine 'comida'." }
+    ],
+    "drills": [
+      { "prompt": "Make agree: 'las tortillas (caliente)'.", "answer": "las tortillas calientes" },
+      { "prompt": "Place it: 'a good place' → un ___ lugar.", "answer": "buen" },
+      { "prompt": "'a big city':", "answer": "una ciudad grande (or 'una gran ciudad' = a great city)" }
+    ],
+    "relatedVocabulary": ["vocab.bueno", "vocab.grande", "vocab.rojo", "vocab.blanco", "vocab.casa", "vocab.comida", "vocab.caliente"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.possessives",
+    "title": "Possessives: mi/tu/su and agreement",
+    "cefr": "A1",
+    "explanationMd": "Possessives agree with the **thing owned**, not the owner, and mostly just add -s for plural: **mi/mis** (my), **tu/tus** (your, tú), **su/sus** (his/her/its/your-usted/their), **nuestro/a/os/as** (our — the only one that also changes for gender). So *su casa* can mean his, her, your (usted), or their house — context decides, and Spanish rarely disambiguates. Note *tu* (your) has no accent; *tú* (you) does. For extra clarity or emphasis, Spanish often uses 'de + person' instead: *la casa de Juan*, *el celular de ella*.",
+    "examples": [
+      { "text": "Mi mamá y mi papá.", "translation": "My mom and my dad." },
+      { "text": "¿Dónde están mis llaves?", "translation": "Where are my keys?" },
+      { "text": "Su casa es muy bonita.", "translation": "His/her/your/their house is very pretty." },
+      { "text": "Es el coche de mi hermano.", "translation": "It's my brother's car." }
+    ],
+    "commonErrors": [
+      { "wrong": "mis casa", "right": "mi casa", "note": "Possessives agree with the thing owned: one house → mi casa." },
+      { "wrong": "tú mamá", "right": "tu mamá", "note": "'tu' (your) has no accent; 'tú' (you) does." }
+    ],
+    "drills": [
+      { "prompt": "'my brothers': ___ hermanos.", "answer": "mis" },
+      { "prompt": "'our house': ___ casa.", "answer": "nuestra" },
+      { "prompt": "Clarify 'su libro' as 'her book':", "answer": "el libro de ella" }
+    ],
+    "relatedVocabulary": ["vocab.mama", "vocab.papa", "vocab.hermano", "vocab.casa", "vocab.coche"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.ir-a-future",
+    "title": "The everyday future: ir a + infinitive",
+    "cefr": "A1",
+    "explanationMd": "Just like English 'going to': conjugate **ir** (voy, vas, va, vamos, van) + **a** + infinitive. *Voy a comer* = I'm going to eat. This handles nearly all future talk in conversation; the one-word future (*comeré*) can wait until B1. Note **vamos a + infinitive** does double duty: 'we're going to ___' AND 'let's ___' — *vamos a comer* = we're going to eat / let's eat. Negation wraps the 'ir': *no voy a ir*. The 'a' is required and never contracts here (unlike a + el = al elsewhere).",
+    "examples": [
+      { "text": "Voy a estudiar esta noche.", "translation": "I'm going to study tonight." },
+      { "text": "¿Qué vas a hacer mañana?", "translation": "What are you going to do tomorrow?" },
+      { "text": "Vamos a comer tacos.", "translation": "We're going to eat tacos. / Let's eat tacos." },
+      { "text": "No va a llover hoy.", "translation": "It's not going to rain today." }
+    ],
+    "commonErrors": [
+      { "wrong": "Voy comer.", "right": "Voy a comer.", "note": "The 'a' is required: ir A + infinitive." },
+      { "wrong": "Voy a como.", "right": "Voy a comer.", "note": "The second verb stays in the infinitive: comer, not como." }
+    ],
+    "drills": [
+      { "prompt": "'She's going to travel':", "answer": "Va a viajar." },
+      { "prompt": "'We're going to see a movie':", "answer": "Vamos a ver una película." },
+      { "prompt": "Negate: 'Voy a salir.'", "answer": "No voy a salir." }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.ir-a-future",
+        "title": "ir a + infinitive across subjects",
+        "pattern": "{subject} ___ a comer.",
+        "steps": [
+          { "prompt": "Yo ___ a comer.", "answer": "voy" },
+          { "prompt": "Tú ___ a comer.", "answer": "vas" },
+          { "prompt": "Él ___ a comer.", "answer": "va" },
+          { "prompt": "Nosotros ___ a comer.", "answer": "vamos" },
+          { "prompt": "Ustedes ___ a comer.", "answer": "van" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["vocab.ir", "vocab.comer", "vocab.pelicula", "vocab.viajar"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.preterite",
+    "title": "The preterite: the everyday past",
+    "cefr": "A2",
+    "explanationMd": "For completed past events, Mexican Spanish leans heavily on the **preterite** (where Spain often uses the present perfect). Regular endings: **-ar** → é, aste, ó, amos, aron (hablé, hablaste, habló…); **-er/-ir** → í, iste, ió, imos, ieron (comí, comiste, comió…). The accented endings matter: *hablo* (I speak) vs *habló* (he spoke). A cluster of irregulars must be learned as vocabulary — they share a special unaccented pattern: **ir/ser** → fui, fuiste, fue (identical for both!); **hacer** → hice, hiciste, hizo; **tener** → tuve; **estar** → estuve; **poder** → pude; **decir** → dije. In Mexico, '¿ya comiste?' and 'fui al mercado' are how the recent past is normally said.",
+    "examples": [
+      { "text": "Ayer comí en un restaurante.", "translation": "Yesterday I ate at a restaurant." },
+      { "text": "¿Ya comiste?", "translation": "Have you eaten? (lit. did you already eat)" },
+      { "text": "Fui al mercado en la mañana.", "translation": "I went to the market in the morning." },
+      { "text": "¿Qué hiciste el fin de semana?", "translation": "What did you do this weekend?" }
+    ],
+    "commonErrors": [
+      { "wrong": "Ayer yo hablo con él.", "right": "Ayer hablé con él.", "note": "A finished past event needs the preterite: hablé, with the accent." },
+      { "wrong": "Yo fui al doctor → 'ir' or 'ser'?", "right": "Both look identical: fui.", "note": "ir and ser share the exact same preterite (fui, fuiste, fue); context tells them apart." }
+    ],
+    "drills": [
+      { "prompt": "'I ate tacos yesterday':", "answer": "Ayer comí tacos." },
+      { "prompt": "'Did you (tú) go to the party?':", "answer": "¿Fuiste a la fiesta?" },
+      { "prompt": "'We bought bread':", "answer": "Compramos pan." }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.preterite-comer",
+        "title": "comer in the preterite",
+        "pattern": "{subject} ___ tacos ayer.",
+        "steps": [
+          { "prompt": "Yo ___ tacos ayer.", "answer": "comí" },
+          { "prompt": "Tú ___ tacos ayer.", "answer": "comiste" },
+          { "prompt": "Él ___ tacos ayer.", "answer": "comió" },
+          { "prompt": "Nosotros ___ tacos ayer.", "answer": "comimos" },
+          { "prompt": "Ustedes ___ tacos ayer.", "answer": "comieron" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["vocab.comer", "vocab.ir", "vocab.hacer", "vocab.comprar", "vocab.ayer", "vocab.mercado"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.imperfect-intro",
+    "title": "The imperfect: the background past (introduction)",
+    "cefr": "A2",
+    "explanationMd": "Spanish has two everyday past tenses with different jobs. **Preterite** = what happened, a completed event: *comí* (I ate). **Imperfect** = the background — how things used to be, ongoing states, repeated habits, descriptions, and telling time/age in the past. Endings are refreshingly regular: **-ar** → aba, abas, aba, ábamos, aban (hablaba); **-er/-ir** → ía, ías, ía, íamos, ían (comía, vivía). Only three verbs are irregular: **ser** → era, **ir** → iba, **ver** → veía. At A2, produce the workhorses — *era* (it was), *había* (there was/were), *estaba* (was, state), *hacía* (weather was) — and recognize the rest. *Cuando era niño…* (when I was a kid…) is the classic imperfect opener.",
+    "examples": [
+      { "text": "Cuando era niño, vivía en Guadalajara.", "translation": "When I was a kid, I lived in Guadalajara." },
+      { "text": "Había mucha gente en la fiesta.", "translation": "There were a lot of people at the party." },
+      { "text": "Hacía mucho calor.", "translation": "It was very hot out." },
+      { "text": "Estaba cansado, así que me quedé en casa.", "translation": "I was tired, so I stayed home. (imperfect state + preterite event)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Cuando era niño, fui a la playa todos los veranos.", "right": "Cuando era niño, iba a la playa todos los veranos.", "note": "A repeated past habit takes the imperfect (iba), not the preterite." },
+      { "wrong": "Ayer hacía calor y comía tacos. (for the meal event)", "right": "Ayer hacía calor y comí tacos.", "note": "The single event 'ate' is preterite (comí); the background weather is imperfect (hacía)." }
+    ],
+    "drills": [
+      { "prompt": "'There was a problem':", "answer": "Había un problema." },
+      { "prompt": "'It was late':", "answer": "Era tarde." },
+      { "prompt": "'When I was young…':", "answer": "Cuando era joven…" }
+    ],
+    "relatedVocabulary": ["vocab.ser", "vocab.ir", "vocab.ver", "vocab.nino", "vocab.calor"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.object-pronouns",
+    "title": "Object pronouns: direct (lo/la) and indirect (le)",
+    "cefr": "A2",
+    "explanationMd": "Object pronouns go BEFORE the conjugated verb: *lo veo* (I see it/him), *te llamo* (I'll call you). **Direct** (the thing acted on): me, te, **lo/la**, nos, **los/las** — *¿la cuenta? — ya la pedí*. **Indirect** ('to/for' someone): me, te, **le**, nos, **les** — *le hablo a Juan* (I talk to Juan). With an infinitive or gerund you can attach the pronoun to the end instead: *voy a llamarte = te voy a llamar*; *estoy haciéndolo = lo estoy haciendo*. When both pronouns appear, indirect comes first, and le/les becomes **se** before lo/la: *se lo doy* (I give it to him). A very Mexican habit: 'redundant' le — *¿le echamos ganas?*, *ándale*.",
+    "examples": [
+      { "text": "¿Ves el metro? — Sí, lo veo.", "translation": "Do you see the metro? — Yes, I see it." },
+      { "text": "Te llamo más tarde.", "translation": "I'll call you later." },
+      { "text": "Le di el dinero a mi hermano.", "translation": "I gave the money to my brother." },
+      { "text": "Voy a comprarlo. / Lo voy a comprar.", "translation": "I'm going to buy it. (attached or before)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Veo lo.", "right": "Lo veo.", "note": "Object pronouns go before the conjugated verb (or attached to an infinitive: verlo)." },
+      { "wrong": "Le doy lo a Juan.", "right": "Se lo doy a Juan.", "note": "le becomes 'se' before lo/la: se lo doy." }
+    ],
+    "drills": [
+      { "prompt": "Replace: 'Compro el pan' → ___ compro.", "answer": "Lo compro." },
+      { "prompt": "'I'll call you (tú) tonight':", "answer": "Te llamo en la noche." },
+      { "prompt": "'I gave it (el libro) to her':", "answer": "Se lo di." }
+    ],
+    "relatedVocabulary": ["vocab.ver", "vocab.llamar", "vocab.comprar", "vocab.metro", "vocab.dinero"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.reflexive-verbs",
+    "title": "Reflexive verbs: llamarse, levantarse, sentirse",
+    "cefr": "A2",
+    "explanationMd": "Daily routine runs on reflexive verbs, marked by -se on the infinitive. The pronoun changes with the subject: **me, te, se, nos, se** + verb — *me levanto, te levantas, se levanta, nos levantamos, se levantan*. The most-used of all is **llamarse** (to be called): *me llamo Ana*. Reflexives cover getting-ready verbs (levantarse, bañarse, vestirse), feelings (sentirse, preocuparse, enojarse), and many where English uses no pronoun (irse = to leave, quedarse = to stay). Some verbs change meaning with se: *ir* (go) → *irse* (leave, go away); *dormir* (sleep) → *dormirse* (fall asleep). The pronoun sits before the conjugated verb or attaches to an infinitive: *me voy a levantar = voy a levantarme*.",
+    "examples": [
+      { "text": "Me llamo Diego.", "translation": "My name is Diego. (lit. I call myself)" },
+      { "text": "Me levanto a las siete.", "translation": "I get up at seven." },
+      { "text": "¿Cómo te sientes?", "translation": "How do you feel?" },
+      { "text": "Ya me voy.", "translation": "I'm leaving now." }
+    ],
+    "commonErrors": [
+      { "wrong": "Llamo Ana.", "right": "Me llamo Ana.", "note": "It's reflexive: me llamo (I call myself). Without 'me' it means 'I call (someone)'." },
+      { "wrong": "Yo levanto a las siete.", "right": "Me levanto a las siete.", "note": "Without 'me', levantar means to lift something else." }
+    ],
+    "drills": [
+      { "prompt": "'We get up early':", "answer": "Nos levantamos temprano." },
+      { "prompt": "'What's her name?':", "answer": "¿Cómo se llama?" },
+      { "prompt": "'I'm leaving' (irse):", "answer": "Me voy." }
+    ],
+    "relatedVocabulary": ["vocab.llamar", "vocab.levantarse", "vocab.banarse", "vocab.sentirse"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.por-para",
+    "title": "por vs para — the two 'for's",
+    "cefr": "A2",
+    "explanationMd": "Both translate as 'for', but they split the work. **para** points forward — purpose, destination, recipient, deadline: *para ti* (for you), *para comer* (in order to eat), *para el lunes* (by Monday), *voy para el centro* (heading downtown). **por** points to cause, exchange, duration, and movement-through: *gracias por todo* (thanks for everything), *por el tráfico* (because of traffic), *por la mañana* (during the morning), *dos por cien pesos* (two for a hundred pesos), *paso por ti* (I'll come by/through for you). Rough test: **para** = goal/destination, **por** = reason/means/exchange. This pair takes time; learn it through fixed phrases first (por favor, por fin, por eso, para siempre) and the logic settles in.",
+    "examples": [
+      { "text": "Este regalo es para ti.", "translation": "This gift is for you. (recipient → para)" },
+      { "text": "Gracias por venir.", "translation": "Thanks for coming. (cause → por)" },
+      { "text": "Estudio para el examen.", "translation": "I'm studying for the exam. (goal → para)" },
+      { "text": "Llegué tarde por el tráfico.", "translation": "I was late because of traffic. (reason → por)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Gracias para venir.", "right": "Gracias por venir.", "note": "Thanks for a cause/reason uses por." },
+      { "wrong": "Estudio por el examen. (meaning 'in order to pass it')", "right": "Estudio para el examen.", "note": "Purpose/goal uses para." }
+    ],
+    "drills": [
+      { "prompt": "'It's for my mom':", "answer": "Es para mi mamá." },
+      { "prompt": "'Thanks for the help':", "answer": "Gracias por la ayuda." },
+      { "prompt": "'in the morning':", "answer": "por la mañana" }
+    ],
+    "relatedVocabulary": ["vocab.para", "vocab.por", "vocab.regalo", "vocab.examen", "vocab.trafico"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.saber-conocer",
+    "title": "saber vs conocer — two ways to know",
+    "cefr": "A2",
+    "explanationMd": "Spanish splits 'to know'. **saber** = know facts, information, or how to do something (a skill): *sé la respuesta*, *no sé*, *¿sabes nadar?* (do you know how to swim?). **conocer** = be familiar/acquainted with people, places, and works: *conozco a María*, *conozco un buen restaurante*. Both have an irregular yo form: **sé** (saber), **conozco** (conocer). Two tells: if 'know' is followed by a fact, a clause ('know that…'), or 'know how to + verb' → saber; if it's followed by a person or place → conocer (and people take the personal 'a': *conozco **a** Juan*). In the preterite, *conocí* means 'I met (for the first time)' and *supe* means 'I found out'.",
+    "examples": [
+      { "text": "No sé dónde está.", "translation": "I don't know where it is. (fact → saber)" },
+      { "text": "¿Sabes cocinar?", "translation": "Do you know how to cook? (skill → saber)" },
+      { "text": "Conozco un buen lugar para comer.", "translation": "I know a good place to eat. (place → conocer)" },
+      { "text": "La conocí ayer.", "translation": "I met her yesterday. (preterite conocer = met)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Conozco la respuesta.", "right": "Sé la respuesta.", "note": "A fact/answer is known with saber." },
+      { "wrong": "Sé a María.", "right": "Conozco a María.", "note": "Knowing a person is conocer, with the personal 'a'." }
+    ],
+    "drills": [
+      { "prompt": "'Do you know how to drive?':", "answer": "¿Sabes manejar?" },
+      { "prompt": "'I know Mexico City well':", "answer": "Conozco bien la Ciudad de México." },
+      { "prompt": "saber or conocer: 'I don't know his name.'", "answer": "saber: No sé su nombre." }
+    ],
+    "relatedVocabulary": ["vocab.saber", "vocab.conocer", "vocab.manejar", "vocab.mexico"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.comparatives",
+    "title": "Comparatives and superlatives: más/menos … que",
+    "cefr": "A2",
+    "explanationMd": "Comparison is regular: **más … que** (more than), **menos … que** (less than), **tan … como** (as … as): *el metro es más rápido que el camión*. Superlative adds the article and uses 'de' where English says 'in': **el/la más …** — *el mejor restaurante **de** la ciudad*. Four irregulars replace 'más + adjective': **mejor** (better), **peor** (worse), **mayor** (older/bigger), **menor** (younger/smaller) — never 'más bueno/malo' for quality. Mexican Spanish also loves the **-ísimo** superlative suffix: *buenísimo* (super good), *carísimo* (crazy expensive), *padrísimo* (super cool) — an everyday way to say 'extremely'.",
+    "examples": [
+      { "text": "El metro es más rápido que el camión.", "translation": "The metro is faster than the bus." },
+      { "text": "Es el mejor taco de la ciudad.", "translation": "It's the best taco in the city." },
+      { "text": "Esta salsa es menos picante que la otra.", "translation": "This salsa is less spicy than the other one." },
+      { "text": "¡Está buenísimo!", "translation": "It's super good! (-ísimo intensifier)" }
+    ],
+    "commonErrors": [
+      { "wrong": "más bueno", "right": "mejor", "note": "'Better' is the irregular mejor, not 'más bueno'." },
+      { "wrong": "el mejor taco en la ciudad", "right": "el mejor taco de la ciudad", "note": "Spanish uses 'de', not 'en', in superlatives ('the best … in')." }
+    ],
+    "drills": [
+      { "prompt": "'Beer is cheaper than wine':", "answer": "La cerveza es más barata que el vino." },
+      { "prompt": "'This is the best place':", "answer": "Este es el mejor lugar." },
+      { "prompt": "Make it -ísimo: 'muy caro' →", "answer": "carísimo" }
+    ],
+    "relatedVocabulary": ["vocab.mas", "vocab.menos", "vocab.caro", "vocab.barato", "vocab.metro", "vocab.taco", "vocab.salsa"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.demonstratives",
+    "title": "este / ese / aquel — this, that, and that-over-there",
+    "cefr": "A2",
+    "explanationMd": "Spanish has a three-way distance system where English has two. **este/esta/estos/estas** = this/these (near me). **ese/esa/esos/esas** = that/those (near you). **aquel/aquella/aquellos/aquellas** = that/those over there (far from both). They agree with the noun: *este taco, esa salsa, aquellos edificios*. For an unnamed 'this'/'that' with no noun — pointing at a mystery object — use the neuter **esto/eso/aquello** (no accent, no gender): *¿qué es esto?*, *eso no me gusta*. (You may see accents on the pronoun forms — éste, ése — but modern spelling drops them; the neuter never takes one.)",
+    "examples": [
+      { "text": "Este taco está buenísimo.", "translation": "This taco is delicious. (near me)" },
+      { "text": "Esa camisa te queda bien.", "translation": "That shirt suits you. (near you)" },
+      { "text": "¿Qué es esto?", "translation": "What is this? (neuter — unnamed thing)" },
+      { "text": "Aquel edificio es muy viejo.", "translation": "That building over there is very old." }
+    ],
+    "commonErrors": [
+      { "wrong": "esta taco", "right": "este taco", "note": "taco is masculine → este; agreement is mandatory." },
+      { "wrong": "¿Qué es este? (pointing at a mystery object)", "right": "¿Qué es esto?", "note": "For an unidentified thing, use the neuter esto." }
+    ],
+    "drills": [
+      { "prompt": "'this house': ___ casa.", "answer": "esta" },
+      { "prompt": "'those shoes (near you)': ___ zapatos.", "answer": "esos" },
+      { "prompt": "'What's that?' (unnamed thing):", "answer": "¿Qué es eso?" }
+    ],
+    "relatedVocabulary": ["vocab.taco", "vocab.salsa", "vocab.camisa", "vocab.edificio", "vocab.casa"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.time-hace-desde",
+    "title": "Talking about time: hace, desde hace, and telling the clock",
+    "cefr": "A2",
+    "explanationMd": "**Duration up to now**: *hace + time + que + present*, or *present + desde hace + time* — both = 'have been ___ing for': *estudio español desde hace seis meses* / *hace seis meses que estudio español* (I've been studying Spanish for six months — note the PRESENT tense). **'Ago'**: *hace + time* with a past verb: *llegué hace diez minutos* (I arrived ten minutes ago). **Telling time** uses ser + the feminine article, agreeing with the hour: *es la una* (only 1 o'clock is singular), *son las tres*, *son las diez y media* (10:30), *son las cinco menos cuarto* (4:45). Mexico mixes 12- and 24-hour formats; adding 'de la mañana/tarde/noche' clarifies.",
+    "examples": [
+      { "text": "Estudio español desde hace seis meses.", "translation": "I've been studying Spanish for six months. (present tense)" },
+      { "text": "Llegué hace diez minutos.", "translation": "I arrived ten minutes ago." },
+      { "text": "Son las tres y media.", "translation": "It's three thirty." },
+      { "text": "Es la una de la tarde.", "translation": "It's one in the afternoon." }
+    ],
+    "commonErrors": [
+      { "wrong": "He estudiado español desde hace seis meses. (for an ongoing state)", "right": "Estudio español desde hace seis meses.", "note": "Ongoing duration takes the present tense in Spanish." },
+      { "wrong": "Es las tres.", "right": "Son las tres.", "note": "Plural hours take 'son'; only 'la una' takes 'es'." }
+    ],
+    "drills": [
+      { "prompt": "'I've lived here for two years':", "answer": "Vivo aquí desde hace dos años." },
+      { "prompt": "'We arrived an hour ago':", "answer": "Llegamos hace una hora." },
+      { "prompt": "Say '2:15':", "answer": "Son las dos y cuarto." }
+    ],
+    "relatedVocabulary": ["vocab.hora", "vocab.desde", "vocab.hablar", "vocab.vivir", "vocab.llegar"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.diminutives",
+    "title": "Diminutives: the -ito/-ita reflex (and ahorita)",
+    "cefr": "A2",
+    "explanationMd": "Mexican Spanish runs on diminutives — the suffix **-ito/-ita** (or -cito/-cita after n, r, e) attached to nouns, adjectives, even adverbs. They rarely mean literally 'small'; they add warmth, politeness, softening, or affection. *Un cafecito* (a nice little coffee), *ahí en la esquinita* (right there on the corner), *¿me esperas un ratito?* (a little bit), *gracias, muy amable, que le vaya bonito*. Crucially, they soften requests and time: **ahorita** (from ahora) is the famous elastic one — it can mean 'right now', 'in a minute', or 'sometime, maybe never', all depending on tone. **Ahí/al ratito**, **poquito**, **rapidito** work the same way. Overusing them as a learner is charming, not wrong; under-using them can sound blunt.",
+    "examples": [
+      { "text": "¿Me das un cafecito, por favor?", "translation": "Could I get a little coffee, please? (softened)" },
+      { "text": "Ahorita vengo.", "translation": "I'll be right back. (…ish)" },
+      { "text": "Espérame un ratito.", "translation": "Wait for me a little bit." },
+      { "text": "Está aquí cerquita.", "translation": "It's right nearby. (cerca → cerquita)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Reading 'ahorita' as strictly 'right now'.", "right": "'Ahorita' is elastic — often 'in a bit' or 'eventually'.", "note": "Tone and context set the real timeframe; don't take it literally." },
+      { "wrong": "un poco-ito", "right": "un poquito", "note": "The stem adjusts: poco → poquito (c→qu to keep the [k] sound)." }
+    ],
+    "drills": [
+      { "prompt": "Soften 'un momento' with a diminutive:", "answer": "un momentito" },
+      { "prompt": "What can 'ahorita' mean besides 'right now'?", "answer": "'in a minute' or 'eventually / maybe never' — it's elastic." },
+      { "prompt": "Diminutive of 'ahora':", "answer": "ahorita" }
+    ],
+    "relatedVocabulary": ["vocab.ahora", "vocab.cafe", "vocab.poco", "vocab.aqui"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.present-progressive",
+    "title": "estar + gerund — what's happening right now",
+    "cefr": "A2",
+    "explanationMd": "To stress that something is happening at this moment, use **estar + gerund** (the -ndo form): **-ar** → -ando (hablando), **-er/-ir** → -iendo (comiendo, viviendo). *Estoy comiendo* = I'm eating (right now). Note Spanish uses this LESS than English: for habits and near-future it prefers the plain present — *trabajo en un banco* (I work at a bank), *mañana voy al doctor* (I'm going to the doctor tomorrow). Reserve the progressive for genuinely in-progress action. A few irregular gerunds: leer→leyendo, dormir→durmiendo, pedir→pidiendo, decir→diciendo. Object/reflexive pronouns attach to the gerund (accent added) or sit before estar: *estoy haciéndolo = lo estoy haciendo*.",
+    "examples": [
+      { "text": "Estoy comiendo, te llamo al rato.", "translation": "I'm eating, I'll call you later." },
+      { "text": "¿Qué estás haciendo?", "translation": "What are you doing (right now)?" },
+      { "text": "Está lloviendo.", "translation": "It's raining." },
+      { "text": "Los niños están durmiendo.", "translation": "The kids are sleeping." }
+    ],
+    "commonErrors": [
+      { "wrong": "Estoy trabajando en un banco. (as your general job)", "right": "Trabajo en un banco.", "note": "For habitual facts, Spanish uses the plain present, not the progressive." },
+      { "wrong": "Estoy comiendo mañana.", "right": "Como mañana. / Voy a comer mañana.", "note": "Don't use the progressive for the future — use the present or ir a." }
+    ],
+    "drills": [
+      { "prompt": "'I'm studying right now':", "answer": "Estoy estudiando." },
+      { "prompt": "'It's raining':", "answer": "Está lloviendo." },
+      { "prompt": "Gerund of 'leer':", "answer": "leyendo" }
+    ],
+    "relatedVocabulary": ["vocab.estar", "vocab.comer", "vocab.hacer", "vocab.lluvia", "vocab.dormir"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.commands",
+    "title": "Commands: giving directions, requests, and advice",
+    "cefr": "A2",
+    "explanationMd": "**Informal (tú) affirmative** commands usually just = the él/ella present form: *habla* (speak), *come* (eat), *pásame la sal* (pass me the salt). A famous set of irregulars must be memorized: **di** (say), **haz** (do), **ve** (go), **pon** (put), **sal** (leave), **ten** (have), **ven** (come). **Formal (usted)** commands flip the vowel — -ar verbs take -e, -er/-ir take -a: *hable*, *coma*, *siga derecho* (go straight), *disculpe*. Plural is **-en/-an** (siganle, pásenle). **Negative** commands all use the flipped-vowel form, even for tú: *no hables*, *no te preocupes*. Pronouns attach to affirmative commands (*dígame*, *siéntate*) but go before negatives (*no me digas*). Mexican service is full of these: *pásele, dígame, tómelo, ándele*.",
+    "examples": [
+      { "text": "Pásame la sal, por favor.", "translation": "Pass me the salt, please. (tú command)" },
+      { "text": "Siga derecho dos cuadras.", "translation": "Go straight for two blocks. (usted command)" },
+      { "text": "No te preocupes.", "translation": "Don't worry. (negative tú)" },
+      { "text": "Ven aquí.", "translation": "Come here. (irregular tú command)" }
+    ],
+    "commonErrors": [
+      { "wrong": "No preocúpate.", "right": "No te preocupes.", "note": "Negative commands use the flipped form (preocupes) and the pronoun goes BEFORE: no te preocupes." },
+      { "wrong": "Hazte derecho (for 'go straight' to a stranger)", "right": "Siga derecho.", "note": "To a stranger use the usted command (siga), not tú (sigue/ve)." }
+    ],
+    "drills": [
+      { "prompt": "Tell a friend 'come here':", "answer": "Ven aquí." },
+      { "prompt": "Tell a stranger 'turn right' (usted):", "answer": "Dé vuelta a la derecha." },
+      { "prompt": "Tell a friend 'don't go':", "answer": "No te vayas." }
+    ],
+    "relatedVocabulary": ["vocab.hacer", "vocab.sal", "phrase.derecho", "phrase.a-la-derecha", "phrase.no-te-preocupes"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.hay-weather",
+    "title": "hay (there is/are) and impersonal weather with hacer",
+    "cefr": "A1",
+    "explanationMd": "**hay** (from haber) = 'there is' AND 'there are' — one invariable word, never changes for number: *hay un problema*, *hay muchos tacos*, *¿hay baño?* Negative: *no hay* (*no hay leche* = there's no milk). Don't confuse the existence 'hay' with 'está/están', which locate a KNOWN thing: *hay un banco por aquí* (there's a bank around here — existence) vs *el banco está en la esquina* (the bank is on the corner — location). **Weather** is mostly impersonal, built with **hacer**: *hace calor/frío/sol/viento* (it's hot/cold/sunny/windy), *hace buen tiempo* (the weather's nice). But some use other verbs: *está nublado* (it's cloudy — estar), *llueve / está lloviendo* (it's raining — llover), *hay neblina* (there's fog — hay). Personal cold/heat is tener: *tengo frío*, never 'hace frío' about yourself.",
+    "examples": [
+      { "text": "¿Hay una farmacia por aquí?", "translation": "Is there a pharmacy around here?" },
+      { "text": "No hay problema.", "translation": "No problem. (there isn't a problem)" },
+      { "text": "Hace mucho calor hoy.", "translation": "It's very hot today." },
+      { "text": "Está nublado y va a llover.", "translation": "It's cloudy and it's going to rain." }
+    ],
+    "commonErrors": [
+      { "wrong": "Hayn muchos tacos.", "right": "Hay muchos tacos.", "note": "hay never changes form — same for singular and plural." },
+      { "wrong": "Estoy frío. / Soy frío.", "right": "Tengo frío.", "note": "Personal cold uses tener; 'hace frío' is only the weather; 'está frío' is a cold object." }
+    ],
+    "drills": [
+      { "prompt": "'Is there wifi?':", "answer": "¿Hay wifi?" },
+      { "prompt": "'It's very sunny':", "answer": "Hace mucho sol." },
+      { "prompt": "'There are a lot of people':", "answer": "Hay mucha gente." }
+    ],
+    "relatedVocabulary": ["phrase.hay", "vocab.calor", "vocab.frio", "vocab.sol", "vocab.gente", "vocab.problema"]
+  }
+]

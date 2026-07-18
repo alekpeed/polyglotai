@@ -1,0 +1,2395 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.taqueria",
+    "scenario": "ordering at a taquería",
+    "speakers": [
+      {
+        "id": "taquero",
+        "name": "Don Beto",
+        "role": "taco vendor"
+      },
+      {
+        "id": "cliente",
+        "name": "Emma",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "taquero",
+        "text": "¿Qué le doy, güerita?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "¿Me da tres de pastor, por favor?"
+      },
+      {
+        "speakerId": "taquero",
+        "text": "¿Con todo? ¿Cilantro y cebolla?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Sí, con todo. ¿La salsa verde pica mucho?"
+      },
+      {
+        "speakerId": "taquero",
+        "text": "Poquito nomás. ¿Se los preparo?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Sí, por favor. Y un agua de horchata."
+      },
+      {
+        "speakerId": "taquero",
+        "text": "Va. Son cuarenta y cinco pesos."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "taquero",
+        "text": "What can I get you, miss?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Can I have three al pastor, please?"
+      },
+      {
+        "speakerId": "taquero",
+        "text": "With everything? Cilantro and onion?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Yes, with everything. Is the green salsa very spicy?"
+      },
+      {
+        "speakerId": "taquero",
+        "text": "Just a little. Shall I fix them up for you?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Yes, please. And a horchata."
+      },
+      {
+        "speakerId": "taquero",
+        "text": "You got it. That's forty-five pesos."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.taco",
+      "vocab.salsa",
+      "phrase.me-da",
+      "vocab.chile",
+      "vocab.agua"
+    ],
+    "grammarNotes": "'¿Qué le doy?' (usted) is the classic taquero greeting. '¿Con todo?' = with all the toppings. '¿Se los preparo?' stacks pronouns: se (to you) + los (them).",
+    "slangRegisterNotes": "'Güerita' (light-skinned/fair, diminutive) is a common friendly address from vendors, not necessarily literal. 'Nomás' = just/only. '¿Pica?' is the essential spice question."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.cafe",
+    "scenario": "ordering coffee at a café",
+    "speakers": [
+      {
+        "id": "mesero",
+        "name": "Luis",
+        "role": "barista"
+      },
+      {
+        "id": "cliente",
+        "name": "Marco",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "mesero",
+        "text": "Buenos días, ¿qué va a querer?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Buenos días. Un café con leche, por favor."
+      },
+      {
+        "speakerId": "mesero",
+        "text": "¿Grande o chico? ¿Para aquí o para llevar?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Grande, para aquí. ¿Tienen algo de comer?"
+      },
+      {
+        "speakerId": "mesero",
+        "text": "Sí, tenemos concha, cuernito y pan dulce."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Una concha, por favor. ¿Cuánto es?"
+      },
+      {
+        "speakerId": "mesero",
+        "text": "Sesenta y cinco pesos. ¿Efectivo o tarjeta?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Con tarjeta."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "mesero",
+        "text": "Good morning, what would you like?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Good morning. A latte, please."
+      },
+      {
+        "speakerId": "mesero",
+        "text": "Large or small? For here or to go?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Large, for here. Do you have anything to eat?"
+      },
+      {
+        "speakerId": "mesero",
+        "text": "Yes, we have concha, croissant, and sweet bread."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "A concha, please. How much is it?"
+      },
+      {
+        "speakerId": "mesero",
+        "text": "Sixty-five pesos. Cash or card?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "By card."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.cafe",
+      "vocab.leche",
+      "vocab.pan",
+      "phrase.para-aqui-o-para-llevar",
+      "vocab.tarjeta"
+    ],
+    "grammarNotes": "'¿Qué va a querer?' — polite ir a + infinitive. '¿Cuánto es?' asks a total (vs '¿cuánto cuesta?' for one item).",
+    "slangRegisterNotes": "'Concha' is the shell-shaped sweet bread; 'cuernito' = croissant. Pan dulce culture is central to Mexican mornings."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.presentaciones",
+    "scenario": "introductions at a friend's party",
+    "speakers": [
+      {
+        "id": "sofia",
+        "name": "Sofía",
+        "role": "host's friend"
+      },
+      {
+        "id": "tom",
+        "name": "Tom",
+        "role": "newcomer"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "sofia",
+        "text": "¡Hola! ¿Qué onda? Soy Sofía."
+      },
+      {
+        "speakerId": "tom",
+        "text": "Mucho gusto, soy Tom."
+      },
+      {
+        "speakerId": "sofia",
+        "text": "¿De dónde eres, Tom? Tienes un acento."
+      },
+      {
+        "speakerId": "tom",
+        "text": "De Estados Unidos. Vivo en la CDMX desde hace seis meses."
+      },
+      {
+        "speakerId": "sofia",
+        "text": "¡Órale! Y ya hablas bien español."
+      },
+      {
+        "speakerId": "tom",
+        "text": "Más o menos… todavía me equivoco mucho."
+      },
+      {
+        "speakerId": "sofia",
+        "text": "Nah, te entiendo perfecto. ¿Quieres algo de tomar?"
+      },
+      {
+        "speakerId": "tom",
+        "text": "Sí, una chela, porfa."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "sofia",
+        "text": "Hi! What's up? I'm Sofía."
+      },
+      {
+        "speakerId": "tom",
+        "text": "Nice to meet you, I'm Tom."
+      },
+      {
+        "speakerId": "sofia",
+        "text": "Where are you from, Tom? You have an accent."
+      },
+      {
+        "speakerId": "tom",
+        "text": "From the US. I've lived in Mexico City for six months."
+      },
+      {
+        "speakerId": "sofia",
+        "text": "Wow! And you already speak Spanish well."
+      },
+      {
+        "speakerId": "tom",
+        "text": "Sort of… I still make a lot of mistakes."
+      },
+      {
+        "speakerId": "sofia",
+        "text": "Nah, I understand you perfectly. Want something to drink?"
+      },
+      {
+        "speakerId": "tom",
+        "text": "Yeah, a beer, please."
+      }
+    ],
+    "keyVocabulary": [
+      "phrase.que-onda",
+      "phrase.mucho-gusto",
+      "phrase.de-donde-eres",
+      "phrase.hablo-poco",
+      "vocab.cerveza"
+    ],
+    "grammarNotes": "'Desde hace seis meses' + present tense = have lived for six months. 'Me equivoco' — reflexive equivocarse (to be mistaken).",
+    "slangRegisterNotes": "'¿Qué onda?', '¡órale!', 'chela' (beer), 'porfa' (please). Deflecting the language compliment ('más o menos') is expected. All tú — peers at a party."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.metro",
+    "scenario": "buying a metro card and asking directions",
+    "speakers": [
+      {
+        "id": "taquillera",
+        "name": "Sra. Rocha",
+        "role": "ticket clerk"
+      },
+      {
+        "id": "turista",
+        "name": "Ana",
+        "role": "tourist"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "es-MX-standard",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "turista",
+        "text": "Disculpe, ¿cómo llego a Coyoacán?"
+      },
+      {
+        "speakerId": "taquillera",
+        "text": "Toma la Línea 3 dirección Universidad y baja en Miguel Ángel de Quevedo."
+      },
+      {
+        "speakerId": "turista",
+        "text": "¿Necesito una tarjeta?"
+      },
+      {
+        "speakerId": "taquillera",
+        "text": "Sí, la tarjeta cuesta quince pesos y cada viaje son cinco."
+      },
+      {
+        "speakerId": "turista",
+        "text": "Deme una tarjeta con veinte pesos, por favor."
+      },
+      {
+        "speakerId": "taquillera",
+        "text": "Son treinta y cinco en total. ¿Algo más?"
+      },
+      {
+        "speakerId": "turista",
+        "text": "No, gracias. ¿Está lejos?"
+      },
+      {
+        "speakerId": "taquillera",
+        "text": "Como veinte minutos. Que le vaya bien."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "turista",
+        "text": "Excuse me, how do I get to Coyoacán?"
+      },
+      {
+        "speakerId": "taquillera",
+        "text": "Take Line 3 toward Universidad and get off at Miguel Ángel de Quevedo."
+      },
+      {
+        "speakerId": "turista",
+        "text": "Do I need a card?"
+      },
+      {
+        "speakerId": "taquillera",
+        "text": "Yes, the card costs fifteen pesos and each ride is five."
+      },
+      {
+        "speakerId": "turista",
+        "text": "Give me a card with twenty pesos, please."
+      },
+      {
+        "speakerId": "taquillera",
+        "text": "That's thirty-five total. Anything else?"
+      },
+      {
+        "speakerId": "turista",
+        "text": "No, thanks. Is it far?"
+      },
+      {
+        "speakerId": "taquillera",
+        "text": "About twenty minutes. Take care."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.metro",
+      "vocab.tarjeta",
+      "phrase.como-se-dice",
+      "phrase.esta-lejos",
+      "phrase.que-te-vaya-bien"
+    ],
+    "grammarNotes": "Metro directions are named by the terminal station: 'dirección X'. 'Deme' = usted command of dar (give me). '¿Está lejos?' with estar for location.",
+    "slangRegisterNotes": "'Que le vaya bien' — the warm formal goodbye. All usted, appropriate with an official."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.direcciones",
+    "scenario": "asking a stranger for directions",
+    "speakers": [
+      {
+        "id": "peaton",
+        "name": "Sr. Gómez",
+        "role": "passerby"
+      },
+      {
+        "id": "turista",
+        "name": "David",
+        "role": "lost tourist"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "es-MX-standard",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "turista",
+        "text": "Disculpe, señor, estoy buscando el Zócalo."
+      },
+      {
+        "speakerId": "peaton",
+        "text": "Ah, está cerca. Siga derecho dos cuadras."
+      },
+      {
+        "speakerId": "turista",
+        "text": "Derecho, dos cuadras…"
+      },
+      {
+        "speakerId": "peaton",
+        "text": "Luego dé vuelta a la derecha y ahí está la catedral."
+      },
+      {
+        "speakerId": "turista",
+        "text": "Entonces derecho y después a la derecha. ¿Verdad?"
+      },
+      {
+        "speakerId": "peaton",
+        "text": "Exacto. No tiene pierde."
+      },
+      {
+        "speakerId": "turista",
+        "text": "Muchas gracias, muy amable."
+      },
+      {
+        "speakerId": "peaton",
+        "text": "De nada, que le vaya bien."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "turista",
+        "text": "Excuse me, sir, I'm looking for the Zócalo."
+      },
+      {
+        "speakerId": "peaton",
+        "text": "Ah, it's nearby. Keep going straight for two blocks."
+      },
+      {
+        "speakerId": "turista",
+        "text": "Straight, two blocks…"
+      },
+      {
+        "speakerId": "peaton",
+        "text": "Then turn right and there's the cathedral."
+      },
+      {
+        "speakerId": "turista",
+        "text": "So straight and then right. Right?"
+      },
+      {
+        "speakerId": "peaton",
+        "text": "Exactly. You can't miss it."
+      },
+      {
+        "speakerId": "turista",
+        "text": "Thank you very much, very kind."
+      },
+      {
+        "speakerId": "peaton",
+        "text": "You're welcome, take care."
+      }
+    ],
+    "keyVocabulary": [
+      "phrase.derecho",
+      "phrase.a-la-derecha",
+      "vocab.buscar",
+      "phrase.cuadra",
+      "phrase.estoy-perdido"
+    ],
+    "grammarNotes": "'Siga' and 'dé vuelta' are usted commands. Repeating directions back ('¿verdad?') is the survival move. 'Cuadra' = block.",
+    "slangRegisterNotes": "'No tiene pierde' = you can't get lost/miss it (very Mexican). Strangers get usted."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.restaurante",
+    "scenario": "dinner at a restaurant",
+    "speakers": [
+      {
+        "id": "mesera",
+        "name": "Carmen",
+        "role": "waitress"
+      },
+      {
+        "id": "cliente",
+        "name": "Hugo",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "mesera",
+        "text": "Buenas noches. ¿Tienen reservación?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Sí, una mesa para dos a nombre de Ríos."
+      },
+      {
+        "speakerId": "mesera",
+        "text": "Por aquí, por favor. Aquí está el menú. ¿Algo de tomar?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Dos aguas de jamaica. ¿Qué nos recomienda?"
+      },
+      {
+        "speakerId": "mesera",
+        "text": "El mole poblano está buenísimo hoy, es de la casa."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Perfecto, dos moles entonces."
+      },
+      {
+        "speakerId": "mesera",
+        "text": "Excelente. ¿Con arroz y tortillas?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Sí, por favor. Y luego la cuenta, cuando pueda."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "mesera",
+        "text": "Good evening. Do you have a reservation?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Yes, a table for two under Ríos."
+      },
+      {
+        "speakerId": "mesera",
+        "text": "This way, please. Here's the menu. Something to drink?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Two jamaica waters. What do you recommend?"
+      },
+      {
+        "speakerId": "mesera",
+        "text": "The mole poblano is delicious today, it's a house specialty."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Perfect, two moles then."
+      },
+      {
+        "speakerId": "mesera",
+        "text": "Excellent. With rice and tortillas?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Yes, please. And then the check, whenever you can."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.reservacion",
+      "vocab.mesa",
+      "phrase.que-me-recomienda",
+      "vocab.arroz",
+      "phrase.la-cuenta"
+    ],
+    "grammarNotes": "'A nombre de' for reservations. '¿Qué nos recomienda?' (usted). 'Cuando pueda' — subjunctive after 'cuando' for a future 'whenever'.",
+    "slangRegisterNotes": "'Buenísimo' (-ísimo superlative). 'De la casa' = house specialty. Agua de jamaica/horchata/tamarindo are the classic aguas frescas."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.mercado",
+    "scenario": "shopping at the market / tianguis",
+    "speakers": [
+      {
+        "id": "marchante",
+        "name": "Doña Mari",
+        "role": "vendor"
+      },
+      {
+        "id": "cliente",
+        "name": "Sofía",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "marchante",
+        "text": "¡Pásele, marchanta! ¿Qué va a llevar?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "¿A cómo el kilo de jitomate?"
+      },
+      {
+        "speakerId": "marchante",
+        "text": "A veinticinco el kilo, bien rojos."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Deme un kilo. Y medio de cebolla."
+      },
+      {
+        "speakerId": "marchante",
+        "text": "¿Algo más? Traigo aguacate bien barato hoy."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Ándele, deme tres aguacates. ¿Cuánto le debo?"
+      },
+      {
+        "speakerId": "marchante",
+        "text": "Son cincuenta pesos. Le doy un limoncito de pilón."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "¡Gracias, muy amable!"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "marchante",
+        "text": "Come on over, dear! What'll you take?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "How much is a kilo of tomatoes?"
+      },
+      {
+        "speakerId": "marchante",
+        "text": "Twenty-five a kilo, nice and red."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Give me a kilo. And half of onion."
+      },
+      {
+        "speakerId": "marchante",
+        "text": "Anything else? I've got avocado real cheap today."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Alright, give me three avocados. How much do I owe you?"
+      },
+      {
+        "speakerId": "marchante",
+        "text": "That's fifty pesos. I'll throw in a little lime for free."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Thanks, that's very kind!"
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.mercado",
+      "vocab.fruta",
+      "vocab.verdura",
+      "phrase.cuanto-cuesta",
+      "phrase.pasele"
+    ],
+    "grammarNotes": "'¿A cómo…?' asks price per unit at markets. 'Deme' (usted command). '¿Cuánto le debo?' = how much do I owe you?",
+    "slangRegisterNotes": "'Pásele', 'marchant(a)' (vendor↔customer term), 'ándele' (go on/OK), 'de pilón' (thrown in free), 'jitomate' (the red tomato, Mexican word). Diminutive 'limoncito' softens."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.farmacia",
+    "scenario": "at the pharmacy with a cold",
+    "speakers": [
+      {
+        "id": "farmaceutico",
+        "name": "Sr. Luna",
+        "role": "pharmacist"
+      },
+      {
+        "id": "cliente",
+        "name": "James",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "cliente",
+        "text": "Buenas tardes. Me duele la garganta y tengo tos desde hace tres días."
+      },
+      {
+        "speakerId": "farmaceutico",
+        "text": "¿Tiene fiebre?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "No creo, pero estoy muy cansado."
+      },
+      {
+        "speakerId": "farmaceutico",
+        "text": "Le doy unas pastillas para la garganta y un jarabe. No necesita receta."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "¿Cada cuándo las tomo?"
+      },
+      {
+        "speakerId": "farmaceutico",
+        "text": "Tres veces al día, después de comer. Si no mejora en una semana, vaya al doctor."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Muchas gracias. ¿Cuánto le debo?"
+      },
+      {
+        "speakerId": "farmaceutico",
+        "text": "Ciento veinte pesos."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "cliente",
+        "text": "Good afternoon. My throat hurts and I've had a cough for three days."
+      },
+      {
+        "speakerId": "farmaceutico",
+        "text": "Do you have a fever?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "I don't think so, but I'm very tired."
+      },
+      {
+        "speakerId": "farmaceutico",
+        "text": "I'll give you some throat lozenges and a syrup. You don't need a prescription."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "How often do I take them?"
+      },
+      {
+        "speakerId": "farmaceutico",
+        "text": "Three times a day, after eating. If it doesn't improve in a week, go to the doctor."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Thank you very much. How much do I owe you?"
+      },
+      {
+        "speakerId": "farmaceutico",
+        "text": "One hundred twenty pesos."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.dolor",
+      "vocab.medicina",
+      "vocab.receta",
+      "vocab.doctor",
+      "vocab.cansado"
+    ],
+    "grammarNotes": "'Me duele la garganta' — doler works like gustar. 'Desde hace tres días' + present. 'Vaya' — usted command of ir.",
+    "slangRegisterNotes": "Mexican pharmacies (and adjacent 'consultorios') handle minor ailments first — describing symptoms to the pharmacist is normal."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.hotel",
+    "scenario": "hotel check-in",
+    "speakers": [
+      {
+        "id": "recepcion",
+        "name": "Paulina",
+        "role": "receptionist"
+      },
+      {
+        "id": "huesped",
+        "name": "Sra. Chen",
+        "role": "guest"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "es-MX-standard",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "huesped",
+        "text": "Buenas noches. Tengo una reservación a nombre de Chen."
+      },
+      {
+        "speakerId": "recepcion",
+        "text": "Buenas noches. Sí, una habitación doble por tres noches, ¿verdad?"
+      },
+      {
+        "speakerId": "huesped",
+        "text": "Así es. ¿El desayuno está incluido?"
+      },
+      {
+        "speakerId": "recepcion",
+        "text": "Sí, de siete a diez, en la planta baja."
+      },
+      {
+        "speakerId": "huesped",
+        "text": "Perfecto. ¿Hay wifi en el cuarto?"
+      },
+      {
+        "speakerId": "recepcion",
+        "text": "Claro, la clave está en su tarjeta. Habitación doscientos cinco, en el segundo piso."
+      },
+      {
+        "speakerId": "huesped",
+        "text": "Muchas gracias. Buenas noches."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "huesped",
+        "text": "Good evening. I have a reservation under Chen."
+      },
+      {
+        "speakerId": "recepcion",
+        "text": "Good evening. Yes, a double room for three nights, right?"
+      },
+      {
+        "speakerId": "huesped",
+        "text": "That's right. Is breakfast included?"
+      },
+      {
+        "speakerId": "recepcion",
+        "text": "Yes, from seven to ten, on the ground floor."
+      },
+      {
+        "speakerId": "huesped",
+        "text": "Perfect. Is there wifi in the room?"
+      },
+      {
+        "speakerId": "recepcion",
+        "text": "Of course, the password is on your key card. Room 205, on the second floor."
+      },
+      {
+        "speakerId": "huesped",
+        "text": "Thank you very much. Good night."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.reservacion",
+      "vocab.cuarto",
+      "vocab.desayuno",
+      "phrase.hay",
+      "vocab.piso"
+    ],
+    "grammarNotes": "'Así es' = that's right. '¿Hay wifi?' (existence). 'Planta baja' = ground floor; floors count up from there.",
+    "slangRegisterNotes": "'Habitación' and 'cuarto' both work for a hotel room. All usted."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.tienda-ropa",
+    "scenario": "trying on clothes",
+    "speakers": [
+      {
+        "id": "vendedora",
+        "name": "Karla",
+        "role": "salesperson"
+      },
+      {
+        "id": "cliente",
+        "name": "Laura",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "vendedora",
+        "text": "¡Hola! ¿Le puedo ayudar en algo?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Sí, busco una blusa blanca. Es para una entrevista."
+      },
+      {
+        "speakerId": "vendedora",
+        "text": "¿Qué talla usa?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Mediana, creo. ¿Me la puedo probar?"
+      },
+      {
+        "speakerId": "vendedora",
+        "text": "Claro, los probadores están al fondo. … ¿Cómo le quedó?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Me queda un poco grande. ¿La tiene en chica?"
+      },
+      {
+        "speakerId": "vendedora",
+        "text": "Déjeme ver… Sí. Y está en oferta, treinta por ciento de descuento."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "¡Qué padre! Me la llevo."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "vendedora",
+        "text": "Hi! Can I help you with anything?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Yes, I'm looking for a white blouse. It's for an interview."
+      },
+      {
+        "speakerId": "vendedora",
+        "text": "What size do you wear?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Medium, I think. Can I try it on?"
+      },
+      {
+        "speakerId": "vendedora",
+        "text": "Of course, the fitting rooms are at the back. … How did it fit?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "It fits a bit big. Do you have it in small?"
+      },
+      {
+        "speakerId": "vendedora",
+        "text": "Let me see… Yes. And it's on sale, thirty percent off."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Awesome! I'll take it."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.ropa",
+      "vocab.talla",
+      "vocab.probar",
+      "vocab.descuento",
+      "phrase.que-padre"
+    ],
+    "grammarNotes": "'¿Me la puedo probar?' stacks pronouns (me + la). '¿Cómo le quedó?' — quedar for fit. 'Me la llevo' = I'll take it.",
+    "slangRegisterNotes": "'¿Le puedo ayudar?' shop greeting (usted). 'Blusa' = blouse, 'playera' = t-shirt. '¡Qué padre!' = awesome."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.oxxo",
+    "scenario": "paying a bill and buying credit at the OXXO",
+    "speakers": [
+      {
+        "id": "cajero",
+        "name": "Miguel",
+        "role": "clerk"
+      },
+      {
+        "id": "cliente",
+        "name": "Kate",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "cliente",
+        "text": "Hola, buenas. ¿Puedo pagar la luz aquí?"
+      },
+      {
+        "speakerId": "cajero",
+        "text": "Claro. ¿Trae el recibo? Nada más lo escaneo."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Aquí está. Y también quiero recarga de cien para mi cel."
+      },
+      {
+        "speakerId": "cajero",
+        "text": "¿De qué compañía?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Telcel. ¿Cuánto es todo?"
+      },
+      {
+        "speakerId": "cajero",
+        "text": "El recibo son cuatrocientos treinta, más cien de recarga: quinientos treinta."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "¿Aceptan tarjeta?"
+      },
+      {
+        "speakerId": "cajero",
+        "text": "Sí, pásela por aquí. Su recarga llega en un momento."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "cliente",
+        "text": "Hi, good day. Can I pay the electricity bill here?"
+      },
+      {
+        "speakerId": "cajero",
+        "text": "Sure. Do you have the receipt? I'll just scan it."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Here it is. And I also want a hundred-peso top-up for my phone."
+      },
+      {
+        "speakerId": "cajero",
+        "text": "Which carrier?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Telcel. How much is everything?"
+      },
+      {
+        "speakerId": "cajero",
+        "text": "The bill is four hundred thirty, plus a hundred top-up: five hundred thirty."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Do you take cards?"
+      },
+      {
+        "speakerId": "cajero",
+        "text": "Yes, swipe it here. Your top-up arrives in a moment."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.tienda",
+      "vocab.celular",
+      "vocab.tarjeta",
+      "vocab.efectivo",
+      "phrase.cuanto-cuesta"
+    ],
+    "grammarNotes": "'Nada más lo escaneo' = I'll just scan it (nada más = just). 'Pásela' — usted command with attached pronoun (la = tarjeta).",
+    "slangRegisterNotes": "The OXXO is Mexico's do-everything convenience store: pay bills, phone top-ups ('recarga'), deposits. 'La luz' = the electricity bill. 'Buenas' clips buenas tardes/noches."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.telefono-planes",
+    "scenario": "phone call: making plans for tonight",
+    "speakers": [
+      {
+        "id": "max",
+        "name": "Max",
+        "role": "friend"
+      },
+      {
+        "id": "zoe",
+        "name": "Zoe",
+        "role": "friend"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "zoe",
+        "text": "¿Bueno? ¿Max?"
+      },
+      {
+        "speakerId": "max",
+        "text": "¡Qué onda, Zoe! ¿Todo bien?"
+      },
+      {
+        "speakerId": "zoe",
+        "text": "Todo bien. Oye, ¿qué haces hoy? ¿Vamos por unos tacos?"
+      },
+      {
+        "speakerId": "max",
+        "text": "¡Va! ¿A los de la esquina de tu casa?"
+      },
+      {
+        "speakerId": "zoe",
+        "text": "Sale. ¿A las ocho te late?"
+      },
+      {
+        "speakerId": "max",
+        "text": "Mejor ocho y media, salgo tarde del trabajo. Te alcanzo allá."
+      },
+      {
+        "speakerId": "zoe",
+        "text": "Órale, ahí nos vemos. ¡Bye!"
+      },
+      {
+        "speakerId": "max",
+        "text": "¡Sale, al rato!"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "zoe",
+        "text": "Hello? Max?"
+      },
+      {
+        "speakerId": "max",
+        "text": "What's up, Zoe! All good?"
+      },
+      {
+        "speakerId": "zoe",
+        "text": "All good. Hey, what are you doing today? Shall we grab some tacos?"
+      },
+      {
+        "speakerId": "max",
+        "text": "Let's do it! The ones on the corner by your place?"
+      },
+      {
+        "speakerId": "zoe",
+        "text": "Cool. Does eight work for you?"
+      },
+      {
+        "speakerId": "max",
+        "text": "Better eight-thirty, I get off work late. I'll meet you there."
+      },
+      {
+        "speakerId": "zoe",
+        "text": "Alright, see you there. Bye!"
+      },
+      {
+        "speakerId": "max",
+        "text": "Cool, see you later!"
+      }
+    ],
+    "keyVocabulary": [
+      "phrase.que-onda",
+      "phrase.va",
+      "phrase.sale",
+      "vocab.taco",
+      "phrase.nos-vemos"
+    ],
+    "grammarNotes": "'¿Bueno?' is how Mexicans answer the phone. '¿Te late?' = does it work for you / sound good? 'Te alcanzo' = I'll catch up to / meet you.",
+    "slangRegisterNotes": "Rapid-fire Mexican casual: '¿bueno?', '¿qué onda?', 'va', 'sale', '¿te late?', 'órale', 'al rato', and English 'bye'. All tú."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.clima",
+    "scenario": "small talk about the weather with a neighbor",
+    "speakers": [
+      {
+        "id": "vecina",
+        "name": "Doña Lupe",
+        "role": "neighbor"
+      },
+      {
+        "id": "vecino",
+        "name": "Andrés",
+        "role": "neighbor"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "vecina",
+        "text": "¡Buenos días, Andrés! Qué bonito día, ¿no?"
+      },
+      {
+        "speakerId": "vecino",
+        "text": "Buenos días, doña Lupe. Sí, hace un solazo. Ya era hora, después de tanta lluvia."
+      },
+      {
+        "speakerId": "vecina",
+        "text": "Uy, la semana pasada llovió todos los días."
+      },
+      {
+        "speakerId": "vecino",
+        "text": "Y dicen que el fin de semana va a estar despejado."
+      },
+      {
+        "speakerId": "vecina",
+        "text": "¡Qué bueno! Perfecto para el tianguis del domingo. Bueno, ya me voy. ¡Que le vaya bien!"
+      },
+      {
+        "speakerId": "vecino",
+        "text": "Igualmente, doña Lupe. ¡Que tenga bonito día!"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "vecina",
+        "text": "Good morning, Andrés! What a nice day, isn't it?"
+      },
+      {
+        "speakerId": "vecino",
+        "text": "Good morning, Doña Lupe. Yes, it's gloriously sunny. About time, after so much rain."
+      },
+      {
+        "speakerId": "vecina",
+        "text": "Oof, last week it rained every day."
+      },
+      {
+        "speakerId": "vecino",
+        "text": "And they say the weekend will be clear."
+      },
+      {
+        "speakerId": "vecina",
+        "text": "Great! Perfect for Sunday's tianguis. Well, I'm off. Take care!"
+      },
+      {
+        "speakerId": "vecino",
+        "text": "Same to you, Doña Lupe. Have a nice day!"
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.tiempo",
+      "vocab.lluvia",
+      "vocab.sol",
+      "phrase.que-te-vaya-bien",
+      "phrase.que-tengas-bonito-dia"
+    ],
+    "grammarNotes": "Weather with hacer: 'hace sol/solazo'. 'Llovió' (preterite) for last week's rain. 'Va a estar despejado' — ir a future.",
+    "slangRegisterNotes": "'Solazo' (-azo augmentative = intense sun). 'Doña + first name' is the respectful-but-warm middle register for a familiar older neighbor. 'Tianguis' = weekly street market (Nahuatl)."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.fin-de-semana",
+    "scenario": "Monday coffee — telling the weekend (preterite workout)",
+    "speakers": [
+      {
+        "id": "ana",
+        "name": "Ana",
+        "role": "coworker"
+      },
+      {
+        "id": "lucas",
+        "name": "Lucas",
+        "role": "coworker"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "ana",
+        "text": "¿Qué tal el fin? ¿Qué hiciste?"
+      },
+      {
+        "speakerId": "lucas",
+        "text": "El sábado fui al mercado con Sara y en la noche vimos una película."
+      },
+      {
+        "speakerId": "ana",
+        "text": "¿Estuvo buena?"
+      },
+      {
+        "speakerId": "lucas",
+        "text": "Rarísima, pero nos encantó. ¿Y tú?"
+      },
+      {
+        "speakerId": "ana",
+        "text": "Nada especial. Dormí, leí, descansé. El domingo llovió todo el día."
+      },
+      {
+        "speakerId": "lucas",
+        "text": "Uy, sí, hizo un clima horrible."
+      },
+      {
+        "speakerId": "ana",
+        "text": "Así que me puse a cocinar. Hice pozole."
+      },
+      {
+        "speakerId": "lucas",
+        "text": "¿Pozole? Ahora sí me diste envidia."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "ana",
+        "text": "How was the weekend? What did you do?"
+      },
+      {
+        "speakerId": "lucas",
+        "text": "Saturday I went to the market with Sara and at night we watched a movie."
+      },
+      {
+        "speakerId": "ana",
+        "text": "Was it good?"
+      },
+      {
+        "speakerId": "lucas",
+        "text": "Super weird, but we loved it. And you?"
+      },
+      {
+        "speakerId": "ana",
+        "text": "Nothing special. I slept, I read, I rested. Sunday it rained all day."
+      },
+      {
+        "speakerId": "lucas",
+        "text": "Oof, yeah, the weather was horrible."
+      },
+      {
+        "speakerId": "ana",
+        "text": "So I got to cooking. I made pozole."
+      },
+      {
+        "speakerId": "lucas",
+        "text": "Pozole? Now you've made me jealous."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.pelicula",
+      "vocab.mercado",
+      "vocab.dormir",
+      "vocab.leer",
+      "vocab.cocina"
+    ],
+    "grammarNotes": "A full preterite tour: fui, vimos, estuvo, hice, llovió, me puse. 'Me puse a + inf' = I got to / started doing.",
+    "slangRegisterNotes": "'¿Qué tal el fin?' (el fin = weekend). 'Rarísimo' (-ísimo). 'Me diste envidia' = you made me jealous. Pozole is a beloved weekend/holiday stew."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.rentar-depa",
+    "scenario": "viewing an apartment for rent",
+    "speakers": [
+      {
+        "id": "casero",
+        "name": "Sr. Herrera",
+        "role": "landlord"
+      },
+      {
+        "id": "interesada",
+        "name": "Alicia",
+        "role": "prospective tenant"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "casero",
+        "text": "Pásele, pásele. Es un depa de dos recámaras, muy iluminado."
+      },
+      {
+        "speakerId": "interesada",
+        "text": "Está bonito. ¿La recámara da a la calle?"
+      },
+      {
+        "speakerId": "casero",
+        "text": "No, al patio. Es muy tranquilo, casi no se oye el tráfico."
+      },
+      {
+        "speakerId": "interesada",
+        "text": "¿De cuánto es la renta, con todo incluido?"
+      },
+      {
+        "speakerId": "casero",
+        "text": "Diez mil al mes, más el mantenimiento. El agua está incluida."
+      },
+      {
+        "speakerId": "interesada",
+        "text": "¿Hay elevador? Es el cuarto piso, ¿no?"
+      },
+      {
+        "speakerId": "casero",
+        "text": "Sí hay. Y la colonia es muy céntrica, el mercado está a dos cuadras."
+      },
+      {
+        "speakerId": "interesada",
+        "text": "Me gusta mucho. ¿Qué papeles necesito?"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "casero",
+        "text": "Come in, come in. It's a two-bedroom apartment, very bright."
+      },
+      {
+        "speakerId": "interesada",
+        "text": "It's nice. Does the bedroom face the street?"
+      },
+      {
+        "speakerId": "casero",
+        "text": "No, the courtyard. It's very quiet, you barely hear the traffic."
+      },
+      {
+        "speakerId": "interesada",
+        "text": "How much is the rent, all included?"
+      },
+      {
+        "speakerId": "casero",
+        "text": "Ten thousand a month, plus the maintenance fee. Water's included."
+      },
+      {
+        "speakerId": "interesada",
+        "text": "Is there an elevator? It's the fourth floor, right?"
+      },
+      {
+        "speakerId": "casero",
+        "text": "Yes, there is. And the neighborhood is very central, the market is two blocks away."
+      },
+      {
+        "speakerId": "interesada",
+        "text": "I like it a lot. What papers do I need?"
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.departamento",
+      "vocab.renta",
+      "vocab.cuarto",
+      "vocab.colonia",
+      "vocab.trafico"
+    ],
+    "grammarNotes": "'Da a la calle' = faces the street. '¿De cuánto es la renta?' = how much is the rent. 'Casi no se oye' — impersonal se.",
+    "slangRegisterNotes": "'Depa' (departamento), 'recámara' (bedroom, Mexican), 'colonia' (neighborhood), 'céntrico' (central). 'Pásele' welcomes you in."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.doctor",
+    "scenario": "at the doctor's office",
+    "speakers": [
+      {
+        "id": "doctora",
+        "name": "Dra. Vega",
+        "role": "doctor"
+      },
+      {
+        "id": "paciente",
+        "name": "Nora",
+        "role": "patient"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "doctora",
+        "text": "Buenas tardes, siéntese. ¿Qué la trae por aquí?"
+      },
+      {
+        "speakerId": "paciente",
+        "text": "Buenas tardes, doctora. Me duele la cabeza y el estómago desde hace dos días."
+      },
+      {
+        "speakerId": "doctora",
+        "text": "¿Tiene fiebre? ¿Está durmiendo bien?"
+      },
+      {
+        "speakerId": "paciente",
+        "text": "Un poco de fiebre anoche. Y duermo mal, estoy estresada del trabajo."
+      },
+      {
+        "speakerId": "doctora",
+        "text": "La voy a revisar… Respire hondo… Bien. No es nada grave."
+      },
+      {
+        "speakerId": "paciente",
+        "text": "Uf, qué alivio."
+      },
+      {
+        "speakerId": "doctora",
+        "text": "Le voy a dar una receta. Descanse, tome mucha agua, y si no mejora, regrese."
+      },
+      {
+        "speakerId": "paciente",
+        "text": "Gracias, doctora. ¿Cuánto es la consulta?"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "doctora",
+        "text": "Good afternoon, have a seat. What brings you in?"
+      },
+      {
+        "speakerId": "paciente",
+        "text": "Good afternoon, doctor. My head and stomach have hurt for two days."
+      },
+      {
+        "speakerId": "doctora",
+        "text": "Do you have a fever? Are you sleeping well?"
+      },
+      {
+        "speakerId": "paciente",
+        "text": "A little fever last night. And I sleep badly, I'm stressed from work."
+      },
+      {
+        "speakerId": "doctora",
+        "text": "I'm going to examine you… Breathe deeply… Good. It's nothing serious."
+      },
+      {
+        "speakerId": "paciente",
+        "text": "Phew, what a relief."
+      },
+      {
+        "speakerId": "doctora",
+        "text": "I'll give you a prescription. Rest, drink lots of water, and if it doesn't improve, come back."
+      },
+      {
+        "speakerId": "paciente",
+        "text": "Thank you, doctor. How much is the visit?"
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.cabeza",
+      "vocab.estomago",
+      "vocab.dolor",
+      "vocab.receta",
+      "vocab.cita"
+    ],
+    "grammarNotes": "'¿Qué la trae por aquí?' — the doctor's opener. Usted commands: siéntese, respire, descanse, regrese. 'La voy a revisar' — pronoun + ir a.",
+    "slangRegisterNotes": "Address doctors as 'doctor(a)'. 'La consulta' = the visit/consult fee. 'Qué alivio' = what a relief."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.trabajo",
+    "scenario": "coworkers chatting about work over lunch",
+    "speakers": [
+      {
+        "id": "nadia",
+        "name": "Nadia",
+        "role": "coworker"
+      },
+      {
+        "id": "pedro",
+        "name": "Pedro",
+        "role": "coworker"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "pedro",
+        "text": "¿Viste el correo del jefe? Otra junta mañana temprano…"
+      },
+      {
+        "speakerId": "nadia",
+        "text": "Sí, a las nueve. Ojalá sea más corta que la pasada."
+      },
+      {
+        "speakerId": "pedro",
+        "text": "La pasada duró dos horas. ¡Dos horas para decidir el color del logo!"
+      },
+      {
+        "speakerId": "nadia",
+        "text": "Y al final escogieron el azul. Como al principio."
+      },
+      {
+        "speakerId": "pedro",
+        "text": "Ni modo. Oye, y tu proyecto, ¿cómo va?"
+      },
+      {
+        "speakerId": "nadia",
+        "text": "Ahí va. El cliente cambia de opinión cada semana. Pero el equipo es buena onda, así que se lleva."
+      },
+      {
+        "speakerId": "pedro",
+        "text": "Eso es lo importante. Bueno, ¿le seguimos? Ya casi son las dos."
+      },
+      {
+        "speakerId": "nadia",
+        "text": "Vámonos. Nada más me tomo un cafecito."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "pedro",
+        "text": "Did you see the boss's email? Another meeting early tomorrow…"
+      },
+      {
+        "speakerId": "nadia",
+        "text": "Yeah, at nine. Hopefully it's shorter than the last one."
+      },
+      {
+        "speakerId": "pedro",
+        "text": "The last one lasted two hours. Two hours to decide the logo color!"
+      },
+      {
+        "speakerId": "nadia",
+        "text": "And in the end they chose blue. Like at the start."
+      },
+      {
+        "speakerId": "pedro",
+        "text": "Oh well. Hey, and your project, how's it going?"
+      },
+      {
+        "speakerId": "nadia",
+        "text": "It's coming along. The client changes their mind every week. But the team is cool, so it's manageable."
+      },
+      {
+        "speakerId": "pedro",
+        "text": "That's what matters. OK, shall we keep at it? It's almost two."
+      },
+      {
+        "speakerId": "nadia",
+        "text": "Let's go. I'll just grab a little coffee."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.correo",
+      "vocab.jefe",
+      "vocab.junta",
+      "vocab.companero",
+      "vocab.cafe"
+    ],
+    "grammarNotes": "'Ojalá sea…' — subjunctive after ojalá (hopefully). 'Ahí va' = it's coming along. '¿Le seguimos?' — the Mexican redundant 'le'.",
+    "slangRegisterNotes": "'Ni modo' (oh well), 'buena onda' (cool/nice), 'se lleva' (it's manageable), 'cafecito' (diminutive). Coworkers of the same level use tú."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.planes-vacaciones",
+    "scenario": "friends planning a vacation (ir a + infinitive workout)",
+    "speakers": [
+      {
+        "id": "elisa",
+        "name": "Elisa",
+        "role": "friend"
+      },
+      {
+        "id": "teo",
+        "name": "Teo",
+        "role": "friend"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "elisa",
+        "text": "Oye, ¿a dónde van a ir en las vacaciones?"
+      },
+      {
+        "speakerId": "teo",
+        "text": "Vamos a Oaxaca. Primero la ciudad y luego tres días en la costa."
+      },
+      {
+        "speakerId": "elisa",
+        "text": "¡Qué envidia! ¿Van a ir en camión?"
+      },
+      {
+        "speakerId": "teo",
+        "text": "Sí, en autobús. Allá vamos a rentar una moto. ¿Y tú?"
+      },
+      {
+        "speakerId": "elisa",
+        "text": "Yo me voy a quedar en casa de mis papás en Puebla. Sin planes: comer, dormir, descansar."
+      },
+      {
+        "speakerId": "teo",
+        "text": "La neta, ese es el mejor plan."
+      },
+      {
+        "speakerId": "elisa",
+        "text": "¿Y en agosto? ¿Nos vamos todos juntos un fin?"
+      },
+      {
+        "speakerId": "teo",
+        "text": "¡Claro! Lo organizamos pronto, antes de que se llene todo."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "elisa",
+        "text": "Hey, where are you going for the holidays?"
+      },
+      {
+        "speakerId": "teo",
+        "text": "We're going to Oaxaca. First the city, then three days on the coast."
+      },
+      {
+        "speakerId": "elisa",
+        "text": "So jealous! Are you going by bus?"
+      },
+      {
+        "speakerId": "teo",
+        "text": "Yeah, by bus. There we're going to rent a motorbike. And you?"
+      },
+      {
+        "speakerId": "elisa",
+        "text": "I'm going to stay at my parents' place in Puebla. No plans: eat, sleep, rest."
+      },
+      {
+        "speakerId": "teo",
+        "text": "Honestly, that's the best plan."
+      },
+      {
+        "speakerId": "elisa",
+        "text": "And in August? Shall we all go away together for a weekend?"
+      },
+      {
+        "speakerId": "teo",
+        "text": "Of course! Let's organize it soon, before everything fills up."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.vacaciones",
+      "vocab.playa",
+      "vocab.camion",
+      "vocab.pueblo",
+      "vocab.dormir"
+    ],
+    "grammarNotes": "ir a + infinitive throughout: van a ir, vamos a rentar, me voy a quedar. 'Antes de que se llene' — subjunctive after 'antes de que'.",
+    "slangRegisterNotes": "'La neta' = honestly/the truth. 'Camión' = bus (Mexican). 'Un fin' = a weekend. 'Qué envidia' = so jealous."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.familia",
+    "scenario": "talking about family over coffee",
+    "speakers": [
+      {
+        "id": "marion",
+        "name": "Marion",
+        "role": "friend"
+      },
+      {
+        "id": "carlos",
+        "name": "Carlos",
+        "role": "friend"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "marion",
+        "text": "¿Tienes hermanos, Carlos?"
+      },
+      {
+        "speakerId": "carlos",
+        "text": "Sí, tengo un hermano y dos hermanas. Mi hermano vive en Monterrey con mis papás."
+      },
+      {
+        "speakerId": "marion",
+        "text": "¿Y tus hermanas?"
+      },
+      {
+        "speakerId": "carlos",
+        "text": "La mayor es doctora en Guadalajara. La chica todavía es estudiante. ¿Y tú?"
+      },
+      {
+        "speakerId": "marion",
+        "text": "Soy hija única. Pero tengo un montón de primos. Nos vemos en Navidad en casa de mi abuela."
+      },
+      {
+        "speakerId": "carlos",
+        "text": "Qué padre. A veces extraño a mi familia."
+      },
+      {
+        "speakerId": "marion",
+        "text": "Te entiendo. ¿Te vienen a visitar pronto?"
+      },
+      {
+        "speakerId": "carlos",
+        "text": "¡Sí! Mis papás llegan el próximo mes. Les voy a enseñar la ciudad."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "marion",
+        "text": "Do you have siblings, Carlos?"
+      },
+      {
+        "speakerId": "carlos",
+        "text": "Yes, I have a brother and two sisters. My brother lives in Monterrey with my parents."
+      },
+      {
+        "speakerId": "marion",
+        "text": "And your sisters?"
+      },
+      {
+        "speakerId": "carlos",
+        "text": "The older one is a doctor in Guadalajara. The younger is still a student. And you?"
+      },
+      {
+        "speakerId": "marion",
+        "text": "I'm an only child. But I have a ton of cousins. We see each other at Christmas at my grandma's."
+      },
+      {
+        "speakerId": "carlos",
+        "text": "That's nice. Sometimes I miss my family."
+      },
+      {
+        "speakerId": "marion",
+        "text": "I get it. Are they coming to visit you soon?"
+      },
+      {
+        "speakerId": "carlos",
+        "text": "Yes! My parents arrive next month. I'm going to show them the city."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.hermano",
+      "vocab.familia",
+      "vocab.mama",
+      "vocab.doctor",
+      "vocab.estudiante"
+    ],
+    "grammarNotes": "Possessives: mi hermano, mis papás, tus hermanas. 'La mayor / la chica' for older/younger sibling. 'Les voy a enseñar' = I'm going to show them.",
+    "slangRegisterNotes": "'Un montón de' = a ton of. 'Extrañar' = to miss (Mexican). 'Hija única' = only child. 'Papás' = parents."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.deportes",
+    "scenario": "talking about sports and hobbies",
+    "speakers": [
+      {
+        "id": "roman",
+        "name": "Román",
+        "role": "friend"
+      },
+      {
+        "id": "aisha",
+        "name": "Aisha",
+        "role": "friend"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "roman",
+        "text": "¿Haces algún deporte?"
+      },
+      {
+        "speakerId": "aisha",
+        "text": "Sí, corro dos veces por semana y los domingos hago yoga. ¿Y tú?"
+      },
+      {
+        "speakerId": "roman",
+        "text": "A mí me late el futbol. Jugamos los miércoles con unos cuates."
+      },
+      {
+        "speakerId": "aisha",
+        "text": "¿Dónde juegan?"
+      },
+      {
+        "speakerId": "roman",
+        "text": "En una cancha cerca del parque. Deberías venir a correr por ahí, está bien padre."
+      },
+      {
+        "speakerId": "aisha",
+        "text": "Ah, va, buena idea. ¿Y aparte del futbol?"
+      },
+      {
+        "speakerId": "roman",
+        "text": "Toco la guitarra. Bueno… lo intento. Empecé hace dos meses."
+      },
+      {
+        "speakerId": "aisha",
+        "text": "¡Ya es algo! Un día me tocas una rola."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "roman",
+        "text": "Do you play any sport?"
+      },
+      {
+        "speakerId": "aisha",
+        "text": "Yeah, I run twice a week and on Sundays I do yoga. And you?"
+      },
+      {
+        "speakerId": "roman",
+        "text": "I'm into soccer. We play on Wednesdays with some buddies."
+      },
+      {
+        "speakerId": "aisha",
+        "text": "Where do you play?"
+      },
+      {
+        "speakerId": "roman",
+        "text": "On a field near the park. You should come run over there, it's really nice."
+      },
+      {
+        "speakerId": "aisha",
+        "text": "Ah, sure, good idea. And besides soccer?"
+      },
+      {
+        "speakerId": "roman",
+        "text": "I play guitar. Well… I try. I started two months ago."
+      },
+      {
+        "speakerId": "aisha",
+        "text": "That's already something! One day you'll play me a song."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.futbol",
+      "vocab.jugar",
+      "vocab.musica",
+      "vocab.empezar",
+      "phrase.que-padre"
+    ],
+    "grammarNotes": "'Me late el futbol' = I'm into soccer (latir like gustar). 'Deberías' = you should (conditional). 'Empecé hace dos meses' = I started two months ago.",
+    "slangRegisterNotes": "'Cuates' = buddies (very Mexican). 'Cancha' = field/court. 'Rola' = song (slang). 'Está bien padre' = it's really cool."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.cumpleanos",
+    "scenario": "planning a birthday party (present + future)",
+    "speakers": [
+      {
+        "id": "vale",
+        "name": "Vale",
+        "role": "friend"
+      },
+      {
+        "id": "beto",
+        "name": "Beto",
+        "role": "friend"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "vale",
+        "text": "El sábado es el cumpleaños de Sofi. ¿Le organizamos algo?"
+      },
+      {
+        "speakerId": "beto",
+        "text": "¡Va! ¿Hacemos una carne asada en mi casa?"
+      },
+      {
+        "speakerId": "vale",
+        "text": "Perfecto. Yo llevo el pastel y las velas."
+      },
+      {
+        "speakerId": "beto",
+        "text": "Yo compro la carne y las chelas. ¿Invitamos a los del trabajo?"
+      },
+      {
+        "speakerId": "vale",
+        "text": "Sí, mándales mensaje. ¿A qué hora les decimos?"
+      },
+      {
+        "speakerId": "beto",
+        "text": "A las cuatro, para cantarle las mañanitas antes de que oscurezca."
+      },
+      {
+        "speakerId": "vale",
+        "text": "¡Sale! No le digas nada a Sofi, es sorpresa."
+      },
+      {
+        "speakerId": "beto",
+        "text": "Tranquila, de mi boca no sale nada."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "vale",
+        "text": "Saturday is Sofi's birthday. Shall we organize something for her?"
+      },
+      {
+        "speakerId": "beto",
+        "text": "Let's do it! Shall we have a carne asada at my place?"
+      },
+      {
+        "speakerId": "vale",
+        "text": "Perfect. I'll bring the cake and the candles."
+      },
+      {
+        "speakerId": "beto",
+        "text": "I'll buy the meat and the beers. Shall we invite the people from work?"
+      },
+      {
+        "speakerId": "vale",
+        "text": "Yes, text them. What time should we tell them?"
+      },
+      {
+        "speakerId": "beto",
+        "text": "Four, to sing her las mañanitas before it gets dark."
+      },
+      {
+        "speakerId": "vale",
+        "text": "Cool! Don't say anything to Sofi, it's a surprise."
+      },
+      {
+        "speakerId": "beto",
+        "text": "Relax, my lips are sealed."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.cumpleanos",
+      "vocab.fiesta",
+      "vocab.carne",
+      "vocab.pastel",
+      "vocab.regalo"
+    ],
+    "grammarNotes": "'¿Le organizamos algo?' — present for a proposal. 'Mándales mensaje' — command + indirect pronoun. 'Antes de que oscurezca' — subjunctive.",
+    "slangRegisterNotes": "'Carne asada' = the weekend cookout. 'Chelas' = beers. 'Las mañanitas' = the birthday song. 'De mi boca no sale nada' = my lips are sealed."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.pedir-comida",
+    "scenario": "ordering delivery / a torta at a fonda",
+    "speakers": [
+      {
+        "id": "empleado",
+        "name": "Chuy",
+        "role": "counter worker"
+      },
+      {
+        "id": "cliente",
+        "name": "Dana",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "empleado",
+        "text": "¿Qué va a pedir?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Una torta de milanesa, pero sin chile, porfa."
+      },
+      {
+        "speakerId": "empleado",
+        "text": "¿Con todo lo demás? ¿Aguacate, frijoles, quesillo?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Sí, con todo eso. ¿Tienen agua de horchata?"
+      },
+      {
+        "speakerId": "empleado",
+        "text": "Se nos acabó la horchata. Hay de jamaica o de tamarindo."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "De jamaica está bien. ¿Cuánto es?"
+      },
+      {
+        "speakerId": "empleado",
+        "text": "Setenta pesos. ¿Para comer aquí o para llevar?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Para llevar, por favor."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "empleado",
+        "text": "What are you going to order?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "A milanesa torta, but without chili, please."
+      },
+      {
+        "speakerId": "empleado",
+        "text": "With everything else? Avocado, beans, cheese?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Yes, with all that. Do you have horchata?"
+      },
+      {
+        "speakerId": "empleado",
+        "text": "We're out of horchata. There's jamaica or tamarind."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Jamaica's fine. How much is it?"
+      },
+      {
+        "speakerId": "empleado",
+        "text": "Seventy pesos. To eat here or to go?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "To go, please."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.pedir",
+      "vocab.chile",
+      "vocab.frijol",
+      "phrase.para-aqui-o-para-llevar",
+      "vocab.agua"
+    ],
+    "grammarNotes": "'Se nos acabó' = we ran out (se + indirect pronoun for unplanned events). 'Sin chile' = without chili — key for spice control.",
+    "slangRegisterNotes": "'Torta' = a Mexican sandwich (not a cake, unlike Spain/Argentina). 'Quesillo' = Oaxaca string cheese. Aguas frescas by flavor: jamaica, horchata, tamarindo."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.banco-cajero",
+    "scenario": "trouble at the ATM / bank",
+    "speakers": [
+      {
+        "id": "guardia",
+        "name": "Sr. Ortiz",
+        "role": "bank guard"
+      },
+      {
+        "id": "cliente",
+        "name": "Sam",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "cliente",
+        "text": "Disculpe, el cajero se tragó mi tarjeta."
+      },
+      {
+        "speakerId": "guardia",
+        "text": "¿En serio? ¿Salió algún mensaje en la pantalla?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Decía 'error', y luego se apagó. No me devolvió la tarjeta."
+      },
+      {
+        "speakerId": "guardia",
+        "text": "Ah, pasa a veces. Tiene que reportarlo adentro, en atención a clientes."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "¿Necesito mi identificación?"
+      },
+      {
+        "speakerId": "guardia",
+        "text": "Sí, su INE o pasaporte. Pásele, la señorita lo atiende."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Muchas gracias, muy amable."
+      },
+      {
+        "speakerId": "guardia",
+        "text": "Para servirle. Que le resuelvan pronto."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "cliente",
+        "text": "Excuse me, the ATM ate my card."
+      },
+      {
+        "speakerId": "guardia",
+        "text": "Really? Did any message come up on the screen?"
+      },
+      {
+        "speakerId": "cliente",
+        "text": "It said 'error', and then it turned off. It didn't give my card back."
+      },
+      {
+        "speakerId": "guardia",
+        "text": "Ah, it happens sometimes. You have to report it inside, at customer service."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Do I need my ID?"
+      },
+      {
+        "speakerId": "guardia",
+        "text": "Yes, your INE or passport. Go in, the young lady will help you."
+      },
+      {
+        "speakerId": "cliente",
+        "text": "Thank you very much, very kind."
+      },
+      {
+        "speakerId": "guardia",
+        "text": "At your service. Hope they sort it out quickly."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.tarjeta",
+      "vocab.dinero",
+      "vocab.pasaporte",
+      "vocab.problema",
+      "vocab.mensaje"
+    ],
+    "grammarNotes": "'Se tragó / se apagó' — reflexive for machine actions. 'Tiene que + infinitive' = you have to. 'Que le resuelvan' — subjunctive wish.",
+    "slangRegisterNotes": "'El cajero' = ATM. 'INE' = the Mexican voter ID, the default ID card. 'Para servirle' = at your service (formal courtesy). All usted."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.saludo-usted",
+    "scenario": "a respectful first meeting (usted register)",
+    "speakers": [
+      {
+        "id": "joven",
+        "name": "Emily",
+        "role": "newcomer"
+      },
+      {
+        "id": "senora",
+        "name": "Sra. Beatriz",
+        "role": "friend's mother"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "joven",
+        "text": "Buenas tardes, señora. Mucho gusto, soy Emily, amiga de Diego."
+      },
+      {
+        "speakerId": "senora",
+        "text": "¡Mucho gusto, Emily! Pásale, estás en tu casa. ¿De dónde eres?"
+      },
+      {
+        "speakerId": "joven",
+        "text": "Gracias. Soy de Canadá, pero ahora vivo aquí."
+      },
+      {
+        "speakerId": "senora",
+        "text": "¡Qué bien! ¿Y ya comiste? Hay tamales, siéntate."
+      },
+      {
+        "speakerId": "joven",
+        "text": "Muy amable, señora, pero no quiero molestar."
+      },
+      {
+        "speakerId": "senora",
+        "text": "¡Qué molestia ni qué nada! Aquí hay para todos. ¿Te sirvo?"
+      },
+      {
+        "speakerId": "joven",
+        "text": "Bueno, si insiste… con mucho gusto. Se ven riquísimos."
+      },
+      {
+        "speakerId": "senora",
+        "text": "¡Provecho, mija!"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "joven",
+        "text": "Good afternoon, ma'am. Nice to meet you, I'm Emily, Diego's friend."
+      },
+      {
+        "speakerId": "senora",
+        "text": "Nice to meet you, Emily! Come in, make yourself at home. Where are you from?"
+      },
+      {
+        "speakerId": "joven",
+        "text": "Thank you. I'm from Canada, but I live here now."
+      },
+      {
+        "speakerId": "senora",
+        "text": "How nice! And have you eaten? There are tamales, sit down."
+      },
+      {
+        "speakerId": "joven",
+        "text": "Very kind, ma'am, but I don't want to impose."
+      },
+      {
+        "speakerId": "senora",
+        "text": "Impose nothing! There's plenty for everyone. Shall I serve you?"
+      },
+      {
+        "speakerId": "joven",
+        "text": "Well, if you insist… gladly. They look delicious."
+      },
+      {
+        "speakerId": "senora",
+        "text": "Enjoy, dear!"
+      }
+    ],
+    "keyVocabulary": [
+      "phrase.mucho-gusto",
+      "phrase.pasele",
+      "vocab.comida",
+      "phrase.provecho",
+      "phrase.con-mucho-gusto"
+    ],
+    "grammarNotes": "Note the register mix: Emily opens with usted-appropriate courtesy, but the señora warmly switches her to tú (pásale, siéntate, ¿ya comiste?) — a common host move. 'Estás en tu casa' is the classic Mexican welcome.",
+    "slangRegisterNotes": "'Mija' (mi hija, affectionate). '¡Qué molestia ni qué nada!' = don't be silly about imposing. Feeding guests insistently is core Mexican hospitality — declining once then accepting is the dance."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.central-camionera",
+    "scenario": "buying a bus ticket at the terminal",
+    "speakers": [
+      {
+        "id": "taquillero",
+        "name": "Sr. Ruiz",
+        "role": "ticket agent"
+      },
+      {
+        "id": "viajero",
+        "name": "Fatou",
+        "role": "traveler"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "es-MX-standard",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "viajero",
+        "text": "Buenos días. Quisiera un boleto a Puebla, por favor."
+      },
+      {
+        "speakerId": "taquillero",
+        "text": "¿Sencillo o redondo?"
+      },
+      {
+        "speakerId": "viajero",
+        "text": "Redondo. Me voy hoy y regreso el domingo en la tarde."
+      },
+      {
+        "speakerId": "taquillero",
+        "text": "Hay un camión a la una y a las dos. ¿Cuál le acomoda?"
+      },
+      {
+        "speakerId": "viajero",
+        "text": "El de la una. ¿De qué andén sale?"
+      },
+      {
+        "speakerId": "taquillero",
+        "text": "Del andén siete. Llegue veinte minutos antes, por favor."
+      },
+      {
+        "speakerId": "viajero",
+        "text": "Claro. ¿Puedo pagar con tarjeta?"
+      },
+      {
+        "speakerId": "taquillero",
+        "text": "Sí. Son cuatrocientos ochenta, ida y vuelta. Buen viaje."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "viajero",
+        "text": "Good morning. I'd like a ticket to Puebla, please."
+      },
+      {
+        "speakerId": "taquillero",
+        "text": "One-way or round trip?"
+      },
+      {
+        "speakerId": "viajero",
+        "text": "Round trip. I leave today and come back Sunday afternoon."
+      },
+      {
+        "speakerId": "taquillero",
+        "text": "There's a bus at one and at two. Which suits you?"
+      },
+      {
+        "speakerId": "viajero",
+        "text": "The one o'clock. Which platform does it leave from?"
+      },
+      {
+        "speakerId": "taquillero",
+        "text": "Platform seven. Please arrive twenty minutes early."
+      },
+      {
+        "speakerId": "viajero",
+        "text": "Of course. Can I pay by card?"
+      },
+      {
+        "speakerId": "taquillero",
+        "text": "Yes. That's four hundred eighty, round trip. Have a good trip."
+      }
+    ],
+    "keyVocabulary": [
+      "vocab.regla",
+      "vocab.camion",
+      "vocab.viaje",
+      "vocab.tarjeta",
+      "vocab.pagar"
+    ],
+    "grammarNotes": "'Quisiera' — polite conditional for requests. '¿Cuál le acomoda?' = which suits you? 'Llegue' — usted command of llegar.",
+    "slangRegisterNotes": "'Boleto sencillo/redondo' = one-way/round-trip ticket (Mexican). 'Camión' = intercity bus here too. 'Andén' = platform. Terminals are 'la central camionera'."
+  }
+]

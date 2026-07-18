@@ -1,0 +1,62 @@
+[
+  { "schemaVersion": 1, "key": "assessment.placement.a1-basics", "lessonType": "assessment", "title": "Placement check 1 — survival basics (A1)", "cefr": "A1", "sequence": 1, "body": { "steps": [
+    { "type": "quiz", "prompt": "Translate: 'Hello, a coffee please.'", "answer": "Hola, un café por favor." },
+    { "type": "quiz", "prompt": "What does '¿Dónde está el baño?' mean?", "answer": "Where's the restroom?" },
+    { "type": "quiz", "prompt": "'I don't understand':", "answer": "No entiendo." },
+    { "type": "quiz", "prompt": "Someone says '¡muchas gracias!' — reply.", "answer": "De nada. / Por nada." }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a1-ser-estar", "lessonType": "assessment", "title": "Placement check 2 — ser/estar (A1)", "cefr": "A1", "sequence": 2, "body": { "steps": [
+    { "type": "quiz", "prompt": "Choose: 'Yo ___ de México.' (soy / estoy)", "answer": "soy" },
+    { "type": "quiz", "prompt": "Choose: 'Yo ___ cansado.' (soy / estoy)", "answer": "estoy" },
+    { "type": "quiz", "prompt": "'Where is the market?' — ser or estar?", "answer": "estar: ¿Dónde está el mercado?" },
+    { "type": "quiz", "prompt": "'They are teachers':", "answer": "Ellos son maestros." }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a1-tener", "lessonType": "assessment", "title": "Placement check 3 — tener expressions (A1)", "cefr": "A1", "sequence": 3, "body": { "steps": [
+    { "type": "quiz", "prompt": "'I'm 25 years old':", "answer": "Tengo veinticinco años." },
+    { "type": "quiz", "prompt": "'We're hungry':", "answer": "Tenemos hambre." },
+    { "type": "quiz", "prompt": "'I'm cold' — which verb?", "answer": "tener: Tengo frío." },
+    { "type": "quiz", "prompt": "'You're right' (tú):", "answer": "Tienes razón." }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a1-articles", "lessonType": "assessment", "title": "Placement check 4 — gender & articles (A1)", "cefr": "A1", "sequence": 4, "body": { "steps": [
+    { "type": "quiz", "prompt": "Article for 'problema':", "answer": "el problema (masculine despite -a)" },
+    { "type": "quiz", "prompt": "'a house': ___ casa.", "answer": "una" },
+    { "type": "quiz", "prompt": "'I like tacos' (with the required article):", "answer": "Me gustan los tacos." },
+    { "type": "quiz", "prompt": "'the hands': ___ manos.", "answer": "las (mano is feminine)" }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a1-gustar", "lessonType": "assessment", "title": "Placement check 5 — gustar & questions (A1)", "cefr": "A1", "sequence": 5, "body": { "steps": [
+    { "type": "quiz", "prompt": "'I like coffee': Me ___ el café.", "answer": "gusta" },
+    { "type": "quiz", "prompt": "'Do you like tacos?': ¿Te ___ los tacos?", "answer": "gustan" },
+    { "type": "quiz", "prompt": "Ask a friend 'what's your name?':", "answer": "¿Cómo te llamas?" },
+    { "type": "quiz", "prompt": "Ask 'how much does it cost?':", "answer": "¿Cuánto cuesta?" }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a2-tu-usted", "lessonType": "assessment", "title": "Placement check 6 — register & ustedes (A2)", "cefr": "A2", "sequence": 6, "body": { "steps": [
+    { "type": "quiz", "prompt": "To an older stranger: 'How are you?' — tú or usted?", "answer": "usted: ¿Cómo está usted?" },
+    { "type": "quiz", "prompt": "Ask a group 'where are you (all) from?' (Mexican plural)", "answer": "¿De dónde son ustedes?" },
+    { "type": "quiz", "prompt": "Why is 'vosotros' wrong here?", "answer": "Mexico uses ustedes for all plural 'you'; vosotros isn't used." },
+    { "type": "quiz", "prompt": "Turn 'tú tienes' into the usted form:", "answer": "usted tiene" }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a2-preterite", "lessonType": "assessment", "title": "Placement check 7 — preterite (A2)", "cefr": "A2", "sequence": 7, "body": { "steps": [
+    { "type": "quiz", "prompt": "'Yesterday I ate tacos':", "answer": "Ayer comí tacos." },
+    { "type": "quiz", "prompt": "'Did you (tú) go to the party?':", "answer": "¿Fuiste a la fiesta?" },
+    { "type": "quiz", "prompt": "'We bought bread':", "answer": "Compramos pan." },
+    { "type": "quiz", "prompt": "Preterite of 'hacer' (yo):", "answer": "hice" }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a2-future-pronouns", "lessonType": "assessment", "title": "Placement check 8 — future & object pronouns (A2)", "cefr": "A2", "sequence": 8, "body": { "steps": [
+    { "type": "quiz", "prompt": "'I'm going to call you tonight':", "answer": "Te voy a llamar en la noche. / Voy a llamarte…" },
+    { "type": "quiz", "prompt": "Replace with a pronoun: 'Compro el pan' →", "answer": "Lo compro." },
+    { "type": "quiz", "prompt": "'We're going to eat tacos':", "answer": "Vamos a comer tacos." },
+    { "type": "quiz", "prompt": "Fix: 'Veo lo.'", "answer": "Lo veo (pronoun before the verb)." }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a2-por-para", "lessonType": "assessment", "title": "Placement check 9 — por/para, saber/conocer (A2)", "cefr": "A2", "sequence": 9, "body": { "steps": [
+    { "type": "quiz", "prompt": "'This is for you':", "answer": "Esto es para ti." },
+    { "type": "quiz", "prompt": "'Thanks for coming':", "answer": "Gracias por venir." },
+    { "type": "quiz", "prompt": "saber or conocer: 'I don't know his name.'", "answer": "saber: No sé su nombre." },
+    { "type": "quiz", "prompt": "saber or conocer: 'I know Mexico City.'", "answer": "conocer: Conozco la Ciudad de México." }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a2-register", "lessonType": "assessment", "title": "Placement check 10 — real speech & register (A2)", "cefr": "A2", "sequence": 10, "body": { "steps": [
+    { "type": "quiz", "prompt": "Decode: 'Tengo mucha chamba, está bien chido pero me da hueva.'", "answer": "'I have a lot of work; it's really cool but I can't be bothered.' (chamba=work, chido=cool, me da hueva=can't be bothered)" },
+    { "type": "quiz", "prompt": "What can 'ahorita' mean besides 'right now'?", "answer": "'In a bit' or 'eventually / maybe never' — it's elastic." },
+    { "type": "quiz", "prompt": "A friend proposes a plan. Accept casually (Mexican).", "answer": "¡Va! / ¡Sale! / ¡Órale!" },
+    { "type": "quiz", "prompt": "Should a learner say '¡no mames!' or '¡no manches!' with new acquaintances?", "answer": "'¡No manches!' — the clean version; '¡no mames!' is vulgar (recognize-only)." }
+  ] } }
+]
