@@ -18,10 +18,11 @@ import androidx.compose.ui.graphics.Color
 fun PolyglotTheme(
     theme: AppTheme = AppTheme.SYSTEM,
     pack: Pack = Pack.DEFAULT,
+    variant: PackVariant = PackVariant.DEFAULT,
     content: @Composable () -> Unit,
 ) {
     val systemDark = isSystemInDarkTheme()
-    val c = resolvePolyColors(theme, pack, systemDark)
+    val c = resolvePolyColors(theme, pack, systemDark, variant)
     val dark = when (theme) {
         AppTheme.DARK -> true
         AppTheme.LIGHT, AppTheme.CLASSIC -> false

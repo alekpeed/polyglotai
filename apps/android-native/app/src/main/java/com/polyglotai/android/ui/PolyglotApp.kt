@@ -59,6 +59,8 @@ import com.polyglotai.android.ui.theme.HeroBox
 import com.polyglotai.android.ui.theme.LocalDisplayFamily
 import com.polyglotai.android.ui.theme.LocalPolyColors
 import com.polyglotai.android.ui.theme.Pack
+import com.polyglotai.android.ui.theme.PackVariant
+import com.polyglotai.android.ui.theme.variantsForPack
 import com.polyglotai.android.ui.theme.PlexMono
 import com.polyglotai.android.ui.theme.PlexSans
 import com.polyglotai.android.ui.theme.PolyTextField
@@ -103,6 +105,9 @@ fun PolyglotApp(
     appTheme: AppTheme = AppTheme.SYSTEM,
     onThemeChange: (AppTheme) -> Unit = {},
     onPackChange: (Pack) -> Unit = {},
+    pack: Pack = Pack.DEFAULT,
+    packVariant: PackVariant = PackVariant.DEFAULT,
+    onVariantChange: (PackVariant) -> Unit = {},
 ) {
     var screen by remember { mutableStateOf<Screen>(Screen.Picker) }
     var onboarded by remember { mutableStateOf(container.settings.onboarded) }
@@ -154,6 +159,7 @@ fun PolyglotApp(
         )
         is Screen.Settings -> SettingsScreen(
             container, modifier, appTheme, onThemeChange,
+            pack = pack, packVariant = packVariant, onVariantChange = onVariantChange,
             onBack = { screen = s.returnTo },
         )
         is Screen.Dashboard -> DashboardScreen(
@@ -1138,9 +1144,13 @@ private fun SettingsScreen(
     modifier: Modifier,
     appTheme: AppTheme,
     onThemeChange: (AppTheme) -> Unit,
+    pack: Pack,
+    packVariant: PackVariant,
+    onVariantChange: (PackVariant) -> Unit,
     onBack: () -> Unit,
 ) {
     var goal by remember { mutableStateOf(container.settings.dailyGoal) }
+    val variants = variantsForPack(pack)
 
     Column(
         modifier.fillMaxSize().padding(24.dp).verticalScroll(rememberScrollState()),
@@ -1184,6 +1194,33 @@ private fun SettingsScreen(
                                 modifier = Modifier.weight(1f),
                                 contentPadding = PaddingValues(horizontal = 4.dp),
                             ) { Text(m.label, style = MaterialTheme.typography.labelMedium) }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Palette variant — only shown for worlds that offer more than one look (currently RU:
+        // Gzhel / Hermitage). Applies immediately and is remembered per language.
+        if (variants.size > 1) {
+            Card(Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    Text("Theme variant", style = MaterialTheme.typography.labelLarge)
+                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                        variants.forEach { option ->
+                            if (option.variant == packVariant) {
+                                Button(
+                                    onClick = { onVariantChange(option.variant) },
+                                    modifier = Modifier.weight(1f),
+                                    contentPadding = PaddingValues(horizontal = 4.dp),
+                                ) { Text(option.label, style = MaterialTheme.typography.labelMedium) }
+                            } else {
+                                OutlinedButton(
+                                    onClick = { onVariantChange(option.variant) },
+                                    modifier = Modifier.weight(1f),
+                                    contentPadding = PaddingValues(horizontal = 4.dp),
+                                ) { Text(option.label, style = MaterialTheme.typography.labelMedium) }
+                            }
                         }
                     }
                 }

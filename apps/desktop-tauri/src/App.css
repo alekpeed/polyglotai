@@ -248,60 +248,70 @@
    ink, a bordeaux wine primary (--indigo* slot) and a muted bleu-de-travail as the quiet secondary
    (--gold* slot). Crisp and low-radius with a soft shadow — a Parisian editorial / Art Deco feel,
    distinct from the periwinkle default and the ai-indigo ja world. Light leads; dark is derived. ---- */
+/* ---- Pack theme: French — "Café de Paris" (black, red & cream). Warm cream paper + near-black
+   bistro ink, a bold bright terrace red as the primary accent (--indigo* slot) and the call-to-
+   action, and absinthe green as the quiet secondary / "correct" hue (--gold* slot). Crisp editorial,
+   soft shadow. The red is meant to be loud — the CTA override below pushes it brighter still. ---- */
 :root[data-pack="fr"],
 :root[data-pack="fr"][data-theme="light"] {
-  --paper: #f3f1ea;
-  --surface: #e8e4da;
-  --surface-raised: #fcfbf6;
-  --ink: #1e1a1b;
-  --ink-soft: #5b5457;
-  --line: #dad3c6;
-  --indigo: #7c1f2b;
-  --indigo-soft: #f5e4e3;
-  --indigo-fill: #5e1a24;
-  --gold: #46617f;
-  --gold-ink: #14283a;
-  --gold-fill: #cbd7e1;
-  --verde-fill: #bfd6c4;
-  --verde-ink: #26492f;
-  --shadow: 0 1px 2px rgba(20, 24, 27, 0.06), 0 8px 24px -12px rgba(20, 24, 27, 0.18);
-  --radius-curve: 14px 4px 4px 4px;
+  --paper: #f5f1e9;
+  --surface: #ece6d6;
+  --surface-raised: #fcf9f1;
+  --ink: #111112;
+  --ink-soft: #585858;
+  --line: #e7e0d1;
+  --indigo: #a81810;
+  --indigo-soft: #fbd9d3;
+  --indigo-fill: #cf2317;
+  --gold: #6f8a50;
+  --gold-ink: #33421f;
+  --gold-fill: #dbe4c8;
+  --verde-fill: #bcd39a;
+  --verde-ink: #33421f;
+  --shadow: 0 1px 2px rgba(17, 17, 18, 0.07), 0 8px 24px -12px rgba(17, 17, 18, 0.2);
+  --radius-curve: 8px 4px 4px 4px;
 }
 @media (prefers-color-scheme: dark) {
   :root[data-pack="fr"] {
-    --paper: #191517;
-    --surface: #201b1d;
-    --surface-raised: #241e20;
-    --ink: #f0eae6;
-    --ink-soft: #b3aaa6;
-    --line: #38302f;
-    --indigo: #c77a83;
-    --indigo-soft: #2a1b1e;
-    --indigo-fill: #7c1f2b;
-    --gold: #8aa4be;
-    --gold-ink: #f0eae6;
-    --gold-fill: #33475c;
-    --verde-fill: #3e7a57;
-    --verde-ink: #eaf6ee;
+    --paper: #17140f;
+    --surface: #1f1b15;
+    --surface-raised: #241f18;
+    --ink: #f1ece2;
+    --ink-soft: #b0aaa0;
+    --line: #34302a;
+    --indigo: #f06a5e;
+    --indigo-soft: #2a1614;
+    --indigo-fill: #cf2317;
+    --gold: #9fb579;
+    --gold-ink: #141308;
+    --gold-fill: #33421f;
+    --verde-fill: #5f8f4a;
+    --verde-ink: #eef4e2;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
   }
 }
 :root[data-pack="fr"][data-theme="dark"] {
-  --paper: #191517;
-  --surface: #201b1d;
-  --surface-raised: #241e20;
-  --ink: #f0eae6;
-  --ink-soft: #b3aaa6;
-  --line: #38302f;
-  --indigo: #c77a83;
-  --indigo-soft: #2a1b1e;
-  --indigo-fill: #7c1f2b;
-  --gold: #8aa4be;
-  --gold-ink: #f0eae6;
-  --gold-fill: #33475c;
-  --verde-fill: #3e7a57;
-  --verde-ink: #eaf6ee;
+  --paper: #17140f;
+  --surface: #1f1b15;
+  --surface-raised: #241f18;
+  --ink: #f1ece2;
+  --ink-soft: #b0aaa0;
+  --line: #34302a;
+  --indigo: #f06a5e;
+  --indigo-soft: #2a1614;
+  --indigo-fill: #cf2317;
+  --gold: #9fb579;
+  --gold-ink: #141308;
+  --gold-fill: #33421f;
+  --verde-fill: #5f8f4a;
+  --verde-ink: #eef4e2;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
+}
+/* Café CTA: the primary button jumps off the palette in bright terrace red (like ja, the bespoke
+   worlds move the CTA off the champagne-gold default). */
+[data-pack="fr"] .btn-primary {
+  background: #e42618;
+  color: #fcf0ec;
 }
 
 /* ---- Pack theme: Mexican Spanish — "Cal y Rosa" (limewash & rose). Warm lime-washed sand paper +
@@ -364,64 +374,132 @@
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
 }
 
-/* ---- Pack theme: Russian — "Malajit" (malachite & avant-garde). Cool porcelain paper + near-black
-   ink, a deep malachite-emerald primary (--indigo* slot) and a sharp imperial-vermilion secondary
-   (--gold* slot) used sparingly for hairlines, numerals and the hero rule. Flat, hard-edged and
-   shadowless — Constructivist. --verde folds into the emerald family. Light leads; dark is derived. ---- */
+/* ---- Pack theme: Russian. Two palette variants the learner switches in Settings (see
+   packVariant.ts). The DEFAULT is "Gzhel" (cobalt-on-porcelain); [data-variant="hermitage"] below
+   overrides it with the alternate "Hermitage" (salon green + gilt) look.
+
+   Gzhel — cool porcelain paper + deep cobalt-navy ink, a hand-painted cobalt-blue primary
+   (--indigo* slot) and a warm gilt secondary (--gold* slot). Soft, rounded, lightly shadowed —
+   glazed blue-and-white folk ceramic. --verde is a quiet teal. Light leads; dark is derived. ---- */
 :root[data-pack="ru"],
 :root[data-pack="ru"][data-theme="light"] {
-  --paper: #f1f2ed;
-  --surface: #e3e7df;
-  --surface-raised: #fbfcf9;
-  --ink: #16181a;
-  --ink-soft: #4d5358;
-  --line: #d5d9d1;
-  --indigo: #1e6b52;
-  --indigo-soft: #dcebe3;
-  --indigo-fill: #124a38;
-  --gold: #c1352b;
-  --gold-ink: #7a2019;
-  --gold-fill: #f0d3ce;
-  --verde-fill: #7fbfa0;
-  --verde-ink: #0e3a2a;
-  --shadow: none;
-  --radius-curve: 0;
+  --paper: #eaeff3;
+  --surface: #dde6f2;
+  --surface-raised: #f8fafb;
+  --ink: #1b2c4d;
+  --ink-soft: #5c6d8f;
+  --line: #cbd7ef;
+  --indigo: #2b4c9b;
+  --indigo-soft: #e6ecf7;
+  --indigo-fill: #182f61;
+  --gold: #b68a2e;
+  --gold-ink: #5b4519;
+  --gold-fill: #efe2c2;
+  --verde-fill: #a9d8cc;
+  --verde-ink: #12463f;
+  --shadow: 0 1px 2px rgba(24, 47, 97, 0.08), 0 8px 24px -12px rgba(24, 47, 97, 0.22);
+  --radius-curve: 26px 8px 8px 8px;
 }
 @media (prefers-color-scheme: dark) {
   :root[data-pack="ru"] {
-    --paper: #101311;
-    --surface: #161a17;
-    --surface-raised: #1b201c;
-    --ink: #ecefea;
-    --ink-soft: #a6ada6;
-    --line: #2a302b;
-    --indigo: #4fb08c;
-    --indigo-soft: #16241e;
-    --indigo-fill: #124a38;
-    --gold: #e06055;
-    --gold-ink: #ecefea;
-    --gold-fill: #43211e;
-    --verde-fill: #3e8f6e;
-    --verde-ink: #eaf6f0;
-    --shadow: none;
+    --paper: #0e1626;
+    --surface: #141f33;
+    --surface-raised: #17233b;
+    --ink: #e7edf6;
+    --ink-soft: #9fb0cc;
+    --line: #26324e;
+    --indigo: #7ea0e0;
+    --indigo-soft: #172239;
+    --indigo-fill: #2b4c9b;
+    --gold: #d8b768;
+    --gold-ink: #17233b;
+    --gold-fill: #3a3018;
+    --verde-fill: #3e8f7a;
+    --verde-ink: #e8f5f0;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
   }
 }
 :root[data-pack="ru"][data-theme="dark"] {
-  --paper: #101311;
-  --surface: #161a17;
-  --surface-raised: #1b201c;
-  --ink: #ecefea;
-  --ink-soft: #a6ada6;
-  --line: #2a302b;
-  --indigo: #4fb08c;
-  --indigo-soft: #16241e;
-  --indigo-fill: #124a38;
-  --gold: #e06055;
-  --gold-ink: #ecefea;
-  --gold-fill: #43211e;
+  --paper: #0e1626;
+  --surface: #141f33;
+  --surface-raised: #17233b;
+  --ink: #e7edf6;
+  --ink-soft: #9fb0cc;
+  --line: #26324e;
+  --indigo: #7ea0e0;
+  --indigo-soft: #172239;
+  --indigo-fill: #2b4c9b;
+  --gold: #d8b768;
+  --gold-ink: #17233b;
+  --gold-fill: #3a3018;
+  --verde-fill: #3e8f7a;
+  --verde-ink: #e8f5f0;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
+}
+
+/* Hermitage variant — warm marble paper + slate ink, an imperial salon-green primary (--indigo*
+   slot) and a rich gilt secondary (--gold* slot). Ornate, framed, softly shadowed. Each rule carries
+   the extra [data-variant] attribute so it outranks the Gzhel default above at equal theme depth. */
+:root[data-pack="ru"][data-variant="hermitage"],
+:root[data-pack="ru"][data-variant="hermitage"][data-theme="light"] {
+  --paper: #f5f3ea;
+  --surface: #ece7d6;
+  --surface-raised: #faf8f0;
+  --ink: #232830;
+  --ink-soft: #5c6168;
+  --line: #ddd6c1;
+  --indigo: #3f7a73;
+  --indigo-soft: #e3f0ed;
+  --indigo-fill: #2e6e67;
+  --gold: #b48a34;
+  --gold-ink: #5b4519;
+  --gold-fill: #ecdcae;
+  --verde-fill: #bcdcd6;
+  --verde-ink: #204a44;
+  --shadow: 0 1px 2px rgba(35, 40, 48, 0.08), 0 8px 24px -12px rgba(35, 40, 48, 0.22);
+  --radius-curve: 12px 4px 4px 4px;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-pack="ru"][data-variant="hermitage"] {
+    --paper: #10130f;
+    --surface: #171a15;
+    --surface-raised: #1c211a;
+    --ink: #ecefe8;
+    --ink-soft: #a7ad9f;
+    --line: #2c322a;
+    --indigo: #5aa79e;
+    --indigo-soft: #16241f;
+    --indigo-fill: #2e6e67;
+    --gold: #d8b768;
+    --gold-ink: #1c211a;
+    --gold-fill: #3a2f18;
+    --verde-fill: #3e8f6e;
+    --verde-ink: #eaf6f0;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
+  }
+}
+:root[data-pack="ru"][data-variant="hermitage"][data-theme="dark"] {
+  --paper: #10130f;
+  --surface: #171a15;
+  --surface-raised: #1c211a;
+  --ink: #ecefe8;
+  --ink-soft: #a7ad9f;
+  --line: #2c322a;
+  --indigo: #5aa79e;
+  --indigo-soft: #16241f;
+  --indigo-fill: #2e6e67;
+  --gold: #d8b768;
+  --gold-ink: #1c211a;
+  --gold-fill: #3a2f18;
   --verde-fill: #3e8f6e;
   --verde-ink: #eaf6f0;
-  --shadow: none;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
+}
+/* Russian CTA: the primary button rides the solid brand fill (cobalt for Gzhel, salon green for
+   Hermitage) with light paper text, rather than the champagne-gold default. */
+[data-pack="ru"] .btn-primary {
+  background: var(--indigo-fill);
+  color: var(--paper);
 }
 
 * {

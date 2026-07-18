@@ -15,10 +15,30 @@ enum class AppTheme(val label: String) { SYSTEM("System"), LIGHT("Light"), DARK(
  *  palette. The five worlds:
  *    DEFAULT — Brasil · Concreto & Ipê (warm paper, periwinkle-indigo, champagne gold, mint)
  *    JA      — 藍と墨 ai to sumi (washi + sumi ink, one ai-indigo accent, kin-gold hairlines, flat)
- *    FR      — Vin & Pierre (limestone paper, bordeaux wine, muted bleu-de-travail; crisp Deco)
+ *    FR      — Café de Paris (cream paper, near-black ink, bright terrace red, absinthe green)
  *    ES_MX   — Cal y Rosa (limewash paper, rosa mexicano magenta, jade; sunlit, generous rounding)
- *    RU      — Malajit (porcelain paper, malachite emerald, imperial vermilion; flat Constructivist) */
+ *    RU      — two palette variants (see [PackVariant]): Gzhel (cobalt-on-porcelain, default) and
+ *              Hermitage (salon green + gilt on warm marble) */
 enum class Pack { DEFAULT, JA, FR, ES_MX, RU }
+
+/** A named palette variant within a pack world. Most worlds expose a single look; RU offers two.
+ *  DEFAULT is each world's primary palette; the rest are alternates the learner can pick in Settings.
+ *  The chosen variant is a device preference (see SettingsStore) applied only to the world it belongs
+ *  to — an unrelated pack falls back to its own DEFAULT. */
+enum class PackVariant { DEFAULT, HERMITAGE }
+
+/** A selectable variant and the label shown in the Settings picker. */
+data class VariantOption(val variant: PackVariant, val label: String)
+
+/** The palette variants a world offers, most-preferred first (first = default). Empty for worlds
+ *  with a single look — Settings hides the picker in that case. */
+fun variantsForPack(pack: Pack): List<VariantOption> = when (pack) {
+    Pack.RU -> listOf(
+        VariantOption(PackVariant.DEFAULT, "Gzhel"),
+        VariantOption(PackVariant.HERMITAGE, "Hermitage"),
+    )
+    else -> emptyList()
+}
 
 /** True design tokens ported verbatim from apps/desktop-tauri/src/App.css. These are the single
  *  source of truth for color — not Material's stock scheme. Names match the CSS custom properties.
@@ -113,27 +133,28 @@ private val JaDark = PolyColors(
     ctaFill = Color(0xFF22384C), ctaInk = Color(0xFFF2ECDD), flat = true, seigaiha = Color(0x0F8BB6D6),
 )
 
-// ---- FR · Vin & Pierre (wine & limestone). Cool limestone paper + near-black ink, a bordeaux
-//      wine primary, and a muted bleu-de-travail as the quiet secondary. Crisp, low-radius,
-//      soft-shadowed — Parisian editorial / Art Deco. (Dark is a derived first pass; light leads.)
+// ---- FR · Café de Paris (black, red & cream). Warm cream paper + near-black bistro ink, a bold
+//      bright terrace red as the primary accent + call-to-action, and absinthe green as the quiet
+//      secondary / "correct" hue. Crisp editorial, soft-shadowed. (Dark is a derived first pass;
+//      light leads.) The red is the whole point — bold, not muted.
 private val FrLight = PolyColors(
-    ink = Color(0xFF1E1A1B), inkSoft = Color(0xFF5B5457),
-    paper = Color(0xFFF3F1EA), surface = Color(0xFFE8E4DA), surfaceRaised = Color(0xFFFCFBF6),
-    line = Color(0xFFDAD3C6), gold = Color(0xFF46617F), goldInk = Color(0xFF14283A),
-    indigo = Color(0xFF7C1F2B), indigoSoft = Color(0xFFF5E4E3), indigoFill = Color(0xFF5E1A24),
-    goldFill = Color(0xFFCBD7E1), verdeFill = Color(0xFFBFD6C4), verdeInk = Color(0xFF26492F),
-    heat = Heat, hasShadow = true, heroTopStart = 14.dp,
-    ctaFill = Color(0xFF5E1A24), ctaInk = Color(0xFFF6EFED), flat = false, seigaiha = Color.Transparent,
+    ink = Color(0xFF111112), inkSoft = Color(0xFF585858),
+    paper = Color(0xFFF5F1E9), surface = Color(0xFFECE6D6), surfaceRaised = Color(0xFFFCF9F1),
+    line = Color(0xFFE7E0D1), gold = Color(0xFF6F8A50), goldInk = Color(0xFF33421F),
+    indigo = Color(0xFFA81810), indigoSoft = Color(0xFFFBD9D3), indigoFill = Color(0xFFCF2317),
+    goldFill = Color(0xFFDBE4C8), verdeFill = Color(0xFFBCD39A), verdeInk = Color(0xFF33421F),
+    heat = Heat, hasShadow = true, heroTopStart = 10.dp,
+    ctaFill = Color(0xFFE42618), ctaInk = Color(0xFFFCF0EC), flat = false, seigaiha = Color.Transparent,
 )
 
 private val FrDark = PolyColors(
-    ink = Color(0xFFF0EAE6), inkSoft = Color(0xFFB3AAA6),
-    paper = Color(0xFF191517), surface = Color(0xFF201B1D), surfaceRaised = Color(0xFF241E20),
-    line = Color(0xFF38302F), gold = Color(0xFF8AA4BE), goldInk = Color(0xFFF0EAE6),
-    indigo = Color(0xFFC77A83), indigoSoft = Color(0xFF2A1B1E), indigoFill = Color(0xFF7C1F2B),
-    goldFill = Color(0xFF33475C), verdeFill = Color(0xFF3E7A57), verdeInk = Color(0xFFEAF6EE),
-    heat = Heat, hasShadow = true, heroTopStart = 14.dp,
-    ctaFill = Color(0xFF7C1F2B), ctaInk = Color(0xFFF6EFED), flat = false, seigaiha = Color.Transparent,
+    ink = Color(0xFFF1ECE2), inkSoft = Color(0xFFB0AAA0),
+    paper = Color(0xFF17140F), surface = Color(0xFF1F1B15), surfaceRaised = Color(0xFF241F18),
+    line = Color(0xFF34302A), gold = Color(0xFF9FB579), goldInk = Color(0xFF141308),
+    indigo = Color(0xFFF06A5E), indigoSoft = Color(0xFF2A1614), indigoFill = Color(0xFFCF2317),
+    goldFill = Color(0xFF33421F), verdeFill = Color(0xFF5F8F4A), verdeInk = Color(0xFFEEF4E2),
+    heat = Heat, hasShadow = true, heroTopStart = 10.dp,
+    ctaFill = Color(0xFFE42618), ctaInk = Color(0xFFFCF0EC), flat = false, seigaiha = Color.Transparent,
 )
 
 // ---- ES_MX · Cal y Rosa (limewash & rose). Warm lime-washed sand paper + warm near-black ink, a
@@ -159,34 +180,61 @@ private val EsMxDark = PolyColors(
     ctaFill = Color(0xFFA5165C), ctaInk = Color(0xFFFFF3F8), flat = false, seigaiha = Color.Transparent,
 )
 
-// ---- RU · Malajit (malachite & avant-garde). Cool porcelain paper + near-black ink, a deep
-//      malachite-emerald primary and a sharp imperial-vermilion secondary used sparingly (hairlines,
-//      numerals, the hero rule). Flat, hard-edged, shadowless — Constructivist. verde folds into the
-//      emerald family. Reuses the flat pathway (like ja) but reads nothing like it thanks to the hue.
-private val RuLight = PolyColors(
-    ink = Color(0xFF16181A), inkSoft = Color(0xFF4D5358),
-    paper = Color(0xFFF1F2ED), surface = Color(0xFFE3E7DF), surfaceRaised = Color(0xFFFBFCF9),
-    line = Color(0xFFD5D9D1), gold = Color(0xFFC1352B), goldInk = Color(0xFF7A2019),
-    indigo = Color(0xFF1E6B52), indigoSoft = Color(0xFFDCEBE3), indigoFill = Color(0xFF124A38),
-    goldFill = Color(0xFFF0D3CE), verdeFill = Color(0xFF7FBFA0), verdeInk = Color(0xFF0E3A2A),
-    heat = Heat, hasShadow = false, heroTopStart = 0.dp,
-    ctaFill = Color(0xFF124A38), ctaInk = Color(0xFFEFF2EC), flat = true, seigaiha = Color.Transparent,
+// ---- RU · Gzhel (cobalt on porcelain) — the DEFAULT Russian world. Cool porcelain paper + deep
+//      cobalt-navy ink, a hand-painted cobalt-blue primary and a warm gilt secondary. Soft, rounded,
+//      lightly shadowed — glazed blue-and-white folk ceramic. verde is a quiet teal. Light leads.
+private val RuGzhelLight = PolyColors(
+    ink = Color(0xFF1B2C4D), inkSoft = Color(0xFF5C6D8F),
+    paper = Color(0xFFEAEFF3), surface = Color(0xFFDDE6F2), surfaceRaised = Color(0xFFF8FAFB),
+    line = Color(0xFFCBD7EF), gold = Color(0xFFB68A2E), goldInk = Color(0xFF5B4519),
+    indigo = Color(0xFF2B4C9B), indigoSoft = Color(0xFFE6ECF7), indigoFill = Color(0xFF182F61),
+    goldFill = Color(0xFFEFE2C2), verdeFill = Color(0xFFA9D8CC), verdeInk = Color(0xFF12463F),
+    heat = Heat, hasShadow = true, heroTopStart = 26.dp,
+    ctaFill = Color(0xFF182F61), ctaInk = Color(0xFFF4F7FB), flat = false, seigaiha = Color.Transparent,
 )
 
-private val RuDark = PolyColors(
-    ink = Color(0xFFECEFEA), inkSoft = Color(0xFFA6ADA6),
-    paper = Color(0xFF101311), surface = Color(0xFF161A17), surfaceRaised = Color(0xFF1B201C),
-    line = Color(0xFF2A302B), gold = Color(0xFFE06055), goldInk = Color(0xFFECEFEA),
-    indigo = Color(0xFF4FB08C), indigoSoft = Color(0xFF16241E), indigoFill = Color(0xFF124A38),
-    goldFill = Color(0xFF43211E), verdeFill = Color(0xFF3E8F6E), verdeInk = Color(0xFFEAF6F0),
-    heat = Heat, hasShadow = false, heroTopStart = 0.dp,
-    ctaFill = Color(0xFF124A38), ctaInk = Color(0xFFEFF2EC), flat = true, seigaiha = Color.Transparent,
+private val RuGzhelDark = PolyColors(
+    ink = Color(0xFFE7EDF6), inkSoft = Color(0xFF9FB0CC),
+    paper = Color(0xFF0E1626), surface = Color(0xFF141F33), surfaceRaised = Color(0xFF17233B),
+    line = Color(0xFF26324E), gold = Color(0xFFD8B768), goldInk = Color(0xFF17233B),
+    indigo = Color(0xFF7EA0E0), indigoSoft = Color(0xFF172239), indigoFill = Color(0xFF2B4C9B),
+    goldFill = Color(0xFF3A3018), verdeFill = Color(0xFF3E8F7A), verdeInk = Color(0xFFE8F5F0),
+    heat = Heat, hasShadow = true, heroTopStart = 26.dp,
+    ctaFill = Color(0xFF2B4C9B), ctaInk = Color(0xFFEAF1FB), flat = false, seigaiha = Color.Transparent,
+)
+
+// ---- RU · Hermitage (salon green + gilt) — the alternate Russian world. Warm marble paper + slate
+//      ink, an imperial salon-green primary and a rich gilt secondary. Ornate and framed, softly
+//      shadowed — a gilded museum hall. verde folds into the green family. Light leads.
+private val RuHermitageLight = PolyColors(
+    ink = Color(0xFF232830), inkSoft = Color(0xFF5C6168),
+    paper = Color(0xFFF5F3EA), surface = Color(0xFFECE7D6), surfaceRaised = Color(0xFFFAF8F0),
+    line = Color(0xFFDDD6C1), gold = Color(0xFFB48A34), goldInk = Color(0xFF5B4519),
+    indigo = Color(0xFF3F7A73), indigoSoft = Color(0xFFE3F0ED), indigoFill = Color(0xFF2E6E67),
+    goldFill = Color(0xFFECDCAE), verdeFill = Color(0xFFBCDCD6), verdeInk = Color(0xFF204A44),
+    heat = Heat, hasShadow = true, heroTopStart = 12.dp,
+    ctaFill = Color(0xFF2E6E67), ctaInk = Color(0xFFF4F2E8), flat = false, seigaiha = Color.Transparent,
+)
+
+private val RuHermitageDark = PolyColors(
+    ink = Color(0xFFECEFE8), inkSoft = Color(0xFFA7AD9F),
+    paper = Color(0xFF10130F), surface = Color(0xFF171A15), surfaceRaised = Color(0xFF1C211A),
+    line = Color(0xFF2C322A), gold = Color(0xFFD8B768), goldInk = Color(0xFF1C211A),
+    indigo = Color(0xFF5AA79E), indigoSoft = Color(0xFF16241F), indigoFill = Color(0xFF2E6E67),
+    goldFill = Color(0xFF3A2F18), verdeFill = Color(0xFF3E8F6E), verdeInk = Color(0xFFEAF6F0),
+    heat = Heat, hasShadow = true, heroTopStart = 12.dp,
+    ctaFill = Color(0xFF2E6E67), ctaInk = Color(0xFFF4F2E8), flat = false, seigaiha = Color.Transparent,
 )
 
 /** Resolve the active token set from the appearance override, the language pack, and (for SYSTEM)
  *  the device's dark-mode flag — mirroring the CSS cascade of :root → theme → pack. CLASSIC is a
  *  default-world-only variant; the bespoke worlds treat it as their light palette. */
-fun resolvePolyColors(theme: AppTheme, pack: Pack, systemDark: Boolean): PolyColors {
+fun resolvePolyColors(
+    theme: AppTheme,
+    pack: Pack,
+    systemDark: Boolean,
+    variant: PackVariant = PackVariant.DEFAULT,
+): PolyColors {
     val dark = when (theme) {
         AppTheme.DARK -> true
         AppTheme.LIGHT, AppTheme.CLASSIC -> false
@@ -196,7 +244,10 @@ fun resolvePolyColors(theme: AppTheme, pack: Pack, systemDark: Boolean): PolyCol
         Pack.JA -> if (dark) JaDark else JaLight
         Pack.FR -> if (dark) FrDark else FrLight
         Pack.ES_MX -> if (dark) EsMxDark else EsMxLight
-        Pack.RU -> if (dark) RuDark else RuLight
+        Pack.RU -> when (variant) {
+            PackVariant.HERMITAGE -> if (dark) RuHermitageDark else RuHermitageLight
+            else -> if (dark) RuGzhelDark else RuGzhelLight
+        }
         Pack.DEFAULT -> when {
             dark -> DefaultDark
             theme == AppTheme.CLASSIC -> Classic

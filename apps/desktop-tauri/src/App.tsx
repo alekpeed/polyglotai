@@ -20,6 +20,7 @@ import { Pronunciation } from "./screens/Pronunciation";
 import { useAuthSession } from "./auth/authContext";
 import { supabase } from "./auth/supabaseClient";
 import { createSupabaseRepos } from "./cloud/supabaseRepos";
+import { applyVariant } from "./packVariant";
 import "./App.css";
 
 function App() {
@@ -91,8 +92,14 @@ function App() {
   // A micro-pack (manifest.basePack set — see bootstrap.ts loadPackForId) has no CSS of its own;
   // it inherits its parent language's visual identity by falling back to basePack here.
   useEffect(() => {
-    if (activePack) document.documentElement.dataset.pack = activePack.manifest.basePack ?? activePack.manifest.id;
-    else delete document.documentElement.dataset.pack;
+    if (activePack) {
+      const world = activePack.manifest.basePack ?? activePack.manifest.id;
+      document.documentElement.dataset.pack = world;
+      applyVariant(world);
+    } else {
+      delete document.documentElement.dataset.pack;
+      applyVariant(undefined);
+    }
   }, [activePack]);
 
   function handleContinue(profile: LearnerProfile) {
@@ -226,6 +233,7 @@ function App() {
         <Settings
           repos={repos}
           profile={profile}
+          pack={pack}
           onSaved={setActiveProfile}
           onDone={goHome}
           onSwitchLanguage={handleSwitchLanguage}

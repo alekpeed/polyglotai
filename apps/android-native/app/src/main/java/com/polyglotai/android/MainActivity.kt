@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import com.polyglotai.android.ui.PolyglotApp
 import com.polyglotai.android.ui.theme.LocalPolyColors
 import com.polyglotai.android.ui.theme.Pack
+import com.polyglotai.android.ui.theme.PackVariant
 import com.polyglotai.android.ui.theme.PolyglotTheme
 import com.polyglotai.android.ui.theme.seigaiha
 
@@ -31,7 +32,8 @@ class MainActivity : ComponentActivity() {
             // data-theme × data-pack, in Compose.
             var appTheme by remember { mutableStateOf(container.settings.appTheme) }
             var pack by remember { mutableStateOf(Pack.DEFAULT) }
-            PolyglotTheme(theme = appTheme, pack = pack) {
+            var packVariant by remember { mutableStateOf(PackVariant.DEFAULT) }
+            PolyglotTheme(theme = appTheme, pack = pack, variant = packVariant) {
                 val seigaihaColor = LocalPolyColors.current.seigaiha
                 Scaffold(modifier = Modifier.fillMaxSize()) { padding ->
                     PolyglotApp(
@@ -42,7 +44,18 @@ class MainActivity : ComponentActivity() {
                             container.settings.appTheme = it
                             appTheme = it
                         },
-                        onPackChange = { pack = it },
+                        // A pack change also restores that world's saved palette variant (Gzhel vs
+                        // Hermitage for RU); single-look worlds resolve to DEFAULT.
+                        onPackChange = {
+                            pack = it
+                            packVariant = container.settings.variantFor(it)
+                        },
+                        pack = pack,
+                        packVariant = packVariant,
+                        onVariantChange = {
+                            container.settings.setVariant(pack, it)
+                            packVariant = it
+                        },
                     )
                 }
             }
