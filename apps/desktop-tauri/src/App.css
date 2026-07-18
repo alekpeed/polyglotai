@@ -244,6 +244,186 @@
   --paper-veil: rgba(231, 223, 206, 0.82);
 }
 
+/* ---- Pack theme: French — "Vin & Pierre" (wine & limestone). Cool limestone paper + near-black
+   ink, a bordeaux wine primary (--indigo* slot) and a muted bleu-de-travail as the quiet secondary
+   (--gold* slot). Crisp and low-radius with a soft shadow — a Parisian editorial / Art Deco feel,
+   distinct from the periwinkle default and the ai-indigo ja world. Light leads; dark is derived. ---- */
+:root[data-pack="fr"],
+:root[data-pack="fr"][data-theme="light"] {
+  --paper: #f3f1ea;
+  --surface: #e8e4da;
+  --surface-raised: #fcfbf6;
+  --ink: #1e1a1b;
+  --ink-soft: #5b5457;
+  --line: #dad3c6;
+  --indigo: #7c1f2b;
+  --indigo-soft: #f5e4e3;
+  --indigo-fill: #5e1a24;
+  --gold: #46617f;
+  --gold-ink: #14283a;
+  --gold-fill: #cbd7e1;
+  --verde-fill: #bfd6c4;
+  --verde-ink: #26492f;
+  --shadow: 0 1px 2px rgba(20, 24, 27, 0.06), 0 8px 24px -12px rgba(20, 24, 27, 0.18);
+  --radius-curve: 14px 4px 4px 4px;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-pack="fr"] {
+    --paper: #191517;
+    --surface: #201b1d;
+    --surface-raised: #241e20;
+    --ink: #f0eae6;
+    --ink-soft: #b3aaa6;
+    --line: #38302f;
+    --indigo: #c77a83;
+    --indigo-soft: #2a1b1e;
+    --indigo-fill: #7c1f2b;
+    --gold: #8aa4be;
+    --gold-ink: #f0eae6;
+    --gold-fill: #33475c;
+    --verde-fill: #3e7a57;
+    --verde-ink: #eaf6ee;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
+  }
+}
+:root[data-pack="fr"][data-theme="dark"] {
+  --paper: #191517;
+  --surface: #201b1d;
+  --surface-raised: #241e20;
+  --ink: #f0eae6;
+  --ink-soft: #b3aaa6;
+  --line: #38302f;
+  --indigo: #c77a83;
+  --indigo-soft: #2a1b1e;
+  --indigo-fill: #7c1f2b;
+  --gold: #8aa4be;
+  --gold-ink: #f0eae6;
+  --gold-fill: #33475c;
+  --verde-fill: #3e7a57;
+  --verde-ink: #eaf6ee;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
+}
+
+/* ---- Pack theme: Mexican Spanish — "Cal y Rosa" (limewash & rose). Warm lime-washed sand paper +
+   warm near-black ink, a rosa mexicano magenta primary (--indigo* slot) and a jade secondary
+   (--gold* slot). Sunlit and friendly: soft shadow, a generous top-start corner. A clean two-hue
+   folk-modern system, unlike anything else in the set. Light leads; dark is derived. ---- */
+:root[data-pack="es-mx"],
+:root[data-pack="es-mx"][data-theme="light"] {
+  --paper: #f8f1e7;
+  --surface: #efe6d5;
+  --surface-raised: #fffdf7;
+  --ink: #2a1e1c;
+  --ink-soft: #6c5c55;
+  --line: #e5d9c5;
+  --indigo: #c11b6b;
+  --indigo-soft: #fbe1ee;
+  --indigo-fill: #a5165c;
+  --gold: #0e8a7a;
+  --gold-ink: #0a4a42;
+  --gold-fill: #bfe3dc;
+  --verde-fill: #a9d89b;
+  --verde-ink: #1f5a2a;
+  --shadow: 0 1px 2px rgba(42, 30, 28, 0.07), 0 8px 24px -12px rgba(42, 30, 28, 0.2);
+  --radius-curve: 40px 6px 6px 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-pack="es-mx"] {
+    --paper: #1a1210;
+    --surface: #221715;
+    --surface-raised: #271a17;
+    --ink: #f6ebe4;
+    --ink-soft: #c3aea5;
+    --line: #3a2a25;
+    --indigo: #e86ba3;
+    --indigo-soft: #331520;
+    --indigo-fill: #a5165c;
+    --gold: #3fb5a2;
+    --gold-ink: #f6ebe4;
+    --gold-fill: #12463f;
+    --verde-fill: #4e9b57;
+    --verde-ink: #eaf7ea;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
+  }
+}
+:root[data-pack="es-mx"][data-theme="dark"] {
+  --paper: #1a1210;
+  --surface: #221715;
+  --surface-raised: #271a17;
+  --ink: #f6ebe4;
+  --ink-soft: #c3aea5;
+  --line: #3a2a25;
+  --indigo: #e86ba3;
+  --indigo-soft: #331520;
+  --indigo-fill: #a5165c;
+  --gold: #3fb5a2;
+  --gold-ink: #f6ebe4;
+  --gold-fill: #12463f;
+  --verde-fill: #4e9b57;
+  --verde-ink: #eaf7ea;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 32px -14px rgba(0, 0, 0, 0.55);
+}
+
+/* ---- Pack theme: Russian — "Malajit" (malachite & avant-garde). Cool porcelain paper + near-black
+   ink, a deep malachite-emerald primary (--indigo* slot) and a sharp imperial-vermilion secondary
+   (--gold* slot) used sparingly for hairlines, numerals and the hero rule. Flat, hard-edged and
+   shadowless — Constructivist. --verde folds into the emerald family. Light leads; dark is derived. ---- */
+:root[data-pack="ru"],
+:root[data-pack="ru"][data-theme="light"] {
+  --paper: #f1f2ed;
+  --surface: #e3e7df;
+  --surface-raised: #fbfcf9;
+  --ink: #16181a;
+  --ink-soft: #4d5358;
+  --line: #d5d9d1;
+  --indigo: #1e6b52;
+  --indigo-soft: #dcebe3;
+  --indigo-fill: #124a38;
+  --gold: #c1352b;
+  --gold-ink: #7a2019;
+  --gold-fill: #f0d3ce;
+  --verde-fill: #7fbfa0;
+  --verde-ink: #0e3a2a;
+  --shadow: none;
+  --radius-curve: 0;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-pack="ru"] {
+    --paper: #101311;
+    --surface: #161a17;
+    --surface-raised: #1b201c;
+    --ink: #ecefea;
+    --ink-soft: #a6ada6;
+    --line: #2a302b;
+    --indigo: #4fb08c;
+    --indigo-soft: #16241e;
+    --indigo-fill: #124a38;
+    --gold: #e06055;
+    --gold-ink: #ecefea;
+    --gold-fill: #43211e;
+    --verde-fill: #3e8f6e;
+    --verde-ink: #eaf6f0;
+    --shadow: none;
+  }
+}
+:root[data-pack="ru"][data-theme="dark"] {
+  --paper: #101311;
+  --surface: #161a17;
+  --surface-raised: #1b201c;
+  --ink: #ecefea;
+  --ink-soft: #a6ada6;
+  --line: #2a302b;
+  --indigo: #4fb08c;
+  --indigo-soft: #16241e;
+  --indigo-fill: #124a38;
+  --gold: #e06055;
+  --gold-ink: #ecefea;
+  --gold-fill: #43211e;
+  --verde-fill: #3e8f6e;
+  --verde-ink: #eaf6f0;
+  --shadow: none;
+}
+
 * {
   box-sizing: border-box;
 }
