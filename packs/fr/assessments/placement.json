@@ -1,0 +1,62 @@
+[
+  { "schemaVersion": 1, "key": "assessment.placement.a1-basics", "lessonType": "assessment", "title": "Placement check 1 — survival basics (A1)", "cefr": "A1", "sequence": 1, "body": { "steps": [
+    { "type": "quiz", "prompt": "Translate: 'Hello, a coffee please.'", "answer": "Bonjour, un café s'il vous plaît." },
+    { "type": "quiz", "prompt": "What does 'Où sont les toilettes ?' mean?", "answer": "Where is the restroom?" },
+    { "type": "quiz", "prompt": "'I don't understand':", "answer": "Je ne comprends pas." },
+    { "type": "quiz", "prompt": "Someone says 'Merci beaucoup !' — reply.", "answer": "De rien. / Je vous en prie." }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a1-etre-avoir", "lessonType": "assessment", "title": "Placement check 2 — être/avoir (A1)", "cefr": "A1", "sequence": 2, "body": { "steps": [
+    { "type": "quiz", "prompt": "Choose: 'Je ___ américain.' (suis / ai)", "answer": "suis" },
+    { "type": "quiz", "prompt": "Choose: 'Elle ___ vingt ans.' (est / a)", "answer": "a" },
+    { "type": "quiz", "prompt": "'We are hungry' with on:", "answer": "On a faim." },
+    { "type": "quiz", "prompt": "'They are at home':", "answer": "Ils sont à la maison." }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a1-articles", "lessonType": "assessment", "title": "Placement check 3 — articles & gender (A1)", "cefr": "A1", "sequence": 3, "body": { "steps": [
+    { "type": "quiz", "prompt": "un or une? '___ baguette'", "answer": "une" },
+    { "type": "quiz", "prompt": "'I'm eating (some) bread':", "answer": "Je mange du pain." },
+    { "type": "quiz", "prompt": "'I don't have a car':", "answer": "Je n'ai pas de voiture." },
+    { "type": "quiz", "prompt": "'I'm going to the market' (contraction):", "answer": "Je vais au marché." }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a1-questions", "lessonType": "assessment", "title": "Placement check 4 — questions & negation (A1)", "cefr": "A1", "sequence": 4, "body": { "steps": [
+    { "type": "quiz", "prompt": "Ask a friend where they live, casually.", "answer": "Tu habites où ?" },
+    { "type": "quiz", "prompt": "Same question with est-ce que:", "answer": "Où est-ce que tu habites ?" },
+    { "type": "quiz", "prompt": "Negate: 'Je parle espagnol.'", "answer": "Je ne parle pas espagnol." },
+    { "type": "quiz", "prompt": "What does 'C'est combien ?' mean?", "answer": "How much is it?" }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a1-tu-vous", "lessonType": "assessment", "title": "Placement check 5 — register: tu or vous? (A1)", "cefr": "A1", "sequence": 5, "body": { "steps": [
+    { "type": "quiz", "prompt": "To a waiter: 'Can you bring the check?' — tu or vous?", "answer": "Vous : Vous pouvez apporter l'addition, s'il vous plaît ?" },
+    { "type": "quiz", "prompt": "To your friend's brother at a party: which register?", "answer": "tu — same age, casual setting." },
+    { "type": "quiz", "prompt": "What does 'On peut se tutoyer ?' propose?", "answer": "Switching from vous to tu." },
+    { "type": "quiz", "prompt": "When in doubt with a stranger, which do you pick?", "answer": "vous — always the safe default." }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a2-passe-compose", "lessonType": "assessment", "title": "Placement check 6 — passé composé (A2)", "cefr": "A2", "sequence": 6, "body": { "steps": [
+    { "type": "quiz", "prompt": "'I saw this movie':", "answer": "J'ai vu ce film." },
+    { "type": "quiz", "prompt": "'She went to Lyon' — watch the auxiliary:", "answer": "Elle est allée à Lyon." },
+    { "type": "quiz", "prompt": "'We got up late' (on, reflexive):", "answer": "On s'est levés tard." },
+    { "type": "quiz", "prompt": "Which takes être: manger, partir, voir?", "answer": "partir — je suis parti(e)." }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a2-futur-pronouns", "lessonType": "assessment", "title": "Placement check 7 — future & pronouns (A2)", "cefr": "A2", "sequence": 7, "body": { "steps": [
+    { "type": "quiz", "prompt": "'I'm going to call her tomorrow':", "answer": "Je vais l'appeler demain." },
+    { "type": "quiz", "prompt": "'Do you want some? (wine)' — answer yes with en:", "answer": "Oui, j'en veux bien." },
+    { "type": "quiz", "prompt": "'Are you going to Paris? — Yes, I'm going (there) Saturday.'", "answer": "Oui, j'y vais samedi." },
+    { "type": "quiz", "prompt": "'I just ate' (venir de):", "answer": "Je viens de manger." }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a2-time", "lessonType": "assessment", "title": "Placement check 8 — time expressions (A2)", "cefr": "A2", "sequence": 8, "body": { "steps": [
+    { "type": "quiz", "prompt": "'I've been living here for two years' — which tense?", "answer": "Present: J'habite ici depuis deux ans." },
+    { "type": "quiz", "prompt": "'two years ago':", "answer": "il y a deux ans" },
+    { "type": "quiz", "prompt": "'The train leaves in ten minutes':", "answer": "Le train part dans dix minutes." },
+    { "type": "quiz", "prompt": "'I worked there for three years (finished)':", "answer": "J'ai travaillé là-bas pendant trois ans." }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a2-comparatives", "lessonType": "assessment", "title": "Placement check 9 — comparison & description (A2)", "cefr": "A2", "sequence": 9, "body": { "steps": [
+    { "type": "quiz", "prompt": "'The metro is faster than the bus':", "answer": "Le métro est plus rapide que le bus." },
+    { "type": "quiz", "prompt": "'This wine is better' — the irregular:", "answer": "Ce vin est meilleur." },
+    { "type": "quiz", "prompt": "'It's the best bakery in the neighborhood':", "answer": "C'est la meilleure boulangerie du quartier." },
+    { "type": "quiz", "prompt": "Choose c'est or il est: '___ un ami. ___ très sympa.'", "answer": "C'est un ami. Il est très sympa." }
+  ] } },
+  { "schemaVersion": 1, "key": "assessment.placement.a2-register", "lessonType": "assessment", "title": "Placement check 10 — real speech & register (A2)", "cefr": "A2", "sequence": 10, "body": { "steps": [
+    { "type": "quiz", "prompt": "Decode: 'J'ai trop de boulot, c'est relou.'", "answer": "'I have too much work, it's a pain.' (boulot = work, relou = annoying)" },
+    { "type": "quiz", "prompt": "Convert to spoken register: 'Je ne sais pas.'", "answer": "Je sais pas / Chais pas." },
+    { "type": "quiz", "prompt": "A friend proposes a plan. Accept casually.", "answer": "Ça marche ! / Carrément !" },
+    { "type": "quiz", "prompt": "Is 'putain' as an exclamation aggressive toward the listener?", "answer": "No — it's a general-purpose exclamation; aimed AT someone it becomes a serious insult." }
+  ] } }
+]

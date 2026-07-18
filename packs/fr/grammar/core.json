@@ -1,0 +1,675 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "grammar.etre-present",
+    "title": "être (to be) — present tense",
+    "cefr": "A1",
+    "explanationMd": "**être** is the most irregular and most used verb in French: *je suis, tu es, il/elle est, nous sommes, vous êtes, ils/elles sont*. It covers identity, description, and location — French does not split 'to be' into two verbs the way Spanish or Portuguese do. What it does NOT cover: age, hunger, heat and cold, which all use **avoir**. In speech, 'je suis' compresses to something like *chuis* — you'll hear *chuis fatigué* constantly.",
+    "examples": [
+      { "text": "Je suis américain.", "translation": "I'm American." },
+      { "text": "C'est mon frère.", "translation": "That's my brother." },
+      { "text": "Nous sommes en retard.", "translation": "We're late." },
+      { "text": "Elles sont à Paris.", "translation": "They (f.) are in Paris." }
+    ],
+    "commonErrors": [
+      { "wrong": "Je suis vingt ans.", "right": "J'ai vingt ans.", "note": "Age takes avoir, not être." },
+      { "wrong": "Je es fatigué.", "right": "Je suis fatigué.", "note": "Each pronoun has its own irregular form — memorize all six." }
+    ],
+    "drills": [
+      { "prompt": "Nous ___ (être) au café.", "answer": "sommes" },
+      { "prompt": "Say 'they are French' (mixed group).", "answer": "Ils sont français." },
+      { "prompt": "Vous ___ (être) prêts ?", "answer": "êtes" }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.etre-pronouns",
+        "title": "être across pronouns",
+        "pattern": "{pronoun} ___ fatigué(e)(s).",
+        "steps": [
+          { "prompt": "Je ___ fatigué.", "answer": "suis" },
+          { "prompt": "Tu ___ fatigué.", "answer": "es" },
+          { "prompt": "Elle ___ fatiguée.", "answer": "est" },
+          { "prompt": "Nous ___ fatigués.", "answer": "sommes" },
+          { "prompt": "Vous ___ fatigués.", "answer": "êtes" },
+          { "prompt": "Ils ___ fatigués.", "answer": "sont" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["vocab.etre", "vocab.fatigue"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.avoir-expressions",
+    "title": "avoir (to have) — and where French 'has' instead of 'is'",
+    "cefr": "A1",
+    "explanationMd": "**avoir**: *j'ai, tu as, il/elle a, nous avons, vous avez, ils/elles ont*. Beyond possession, French uses avoir for a whole family of states where English uses 'to be': **avoir faim** (be hungry), **avoir soif** (be thirsty), **avoir froid/chaud** (be cold/hot), **avoir peur** (be afraid), **avoir raison/tort** (be right/wrong), **avoir … ans** (be … years old), **avoir besoin de** (to need), **avoir envie de** (to feel like). Translating these literally from English ('je suis faim') is the single most recognizable beginner error.",
+    "examples": [
+      { "text": "J'ai faim, on mange ?", "translation": "I'm hungry, shall we eat?" },
+      { "text": "Elle a vingt-cinq ans.", "translation": "She's twenty-five." },
+      { "text": "Tu as raison.", "translation": "You're right." },
+      { "text": "J'ai besoin d'un café.", "translation": "I need a coffee." }
+    ],
+    "commonErrors": [
+      { "wrong": "Je suis faim.", "right": "J'ai faim.", "note": "Hunger is something you HAVE in French." },
+      { "wrong": "Il est trente ans.", "right": "Il a trente ans.", "note": "Age always takes avoir." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I'm thirsty'.", "answer": "J'ai soif." },
+      { "prompt": "Vous ___ (avoir) des enfants ?", "answer": "avez" },
+      { "prompt": "Say 'we're cold'.", "answer": "On a froid. / Nous avons froid." }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.avoir-pronouns",
+        "title": "avoir across pronouns",
+        "pattern": "{pronoun} ___ faim.",
+        "steps": [
+          { "prompt": "J'___ faim.", "answer": "ai" },
+          { "prompt": "Tu ___ faim.", "answer": "as" },
+          { "prompt": "Il ___ faim.", "answer": "a" },
+          { "prompt": "Nous ___ faim.", "answer": "avons" },
+          { "prompt": "Vous ___ faim.", "answer": "avez" },
+          { "prompt": "Elles ___ faim.", "answer": "ont" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["vocab.avoir", "vocab.cafe"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.articles-gender",
+    "title": "Gender and articles: le/la/les, un/une/des",
+    "cefr": "A1",
+    "explanationMd": "Every French noun is masculine or feminine, and the article carries that information: **le/un** (m.), **la/une** (f.), **les/des** (plural). Before a vowel or silent h, le and la both become **l'** (l'eau, l'homme). Gender is largely arbitrary — *le problème* but *la solution* — so learn every noun WITH its article, never bare. Useful ending patterns (with exceptions): -tion/-sion/-té/-ette are usually feminine; -age/-ment/-eau are usually masculine. Unlike English, the plural article is mandatory: 'I like dogs' = *j'aime **les** chiens*.",
+    "examples": [
+      { "text": "Le café est chaud.", "translation": "The coffee is hot." },
+      { "text": "Une baguette et deux croissants, s'il vous plaît.", "translation": "A baguette and two croissants, please." },
+      { "text": "J'aime les chiens.", "translation": "I like dogs. (article required)" },
+      { "text": "L'eau est froide.", "translation": "The water is cold. (elision before vowel)" }
+    ],
+    "commonErrors": [
+      { "wrong": "J'aime chiens.", "right": "J'aime les chiens.", "note": "French never drops the article for general statements." },
+      { "wrong": "la problème", "right": "le problème", "note": "-ème words from Greek are masculine: le problème, le système." }
+    ],
+    "drills": [
+      { "prompt": "___ (article) ville est belle.", "answer": "La" },
+      { "prompt": "Je voudrais ___ (a) croissant.", "answer": "un" },
+      { "prompt": "'The man' with the correct article:", "answer": "l'homme" }
+    ],
+    "relatedVocabulary": ["vocab.cafe", "vocab.eau", "vocab.baguette", "vocab.croissant", "vocab.chien", "vocab.probleme", "vocab.ville", "vocab.homme"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.er-verbs",
+    "title": "Regular -er verbs — present tense",
+    "cefr": "A1",
+    "explanationMd": "About 90% of French verbs end in **-er** and share one pattern. Drop -er, add: **-e, -es, -e, -ons, -ez, -ent** → *parler*: je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent. The liberating secret of spoken French: **je/tu/il/ils forms all sound identical** — parle, parles, parlent are all [paʁl]. Only -ons and -ez sound different. So in conversation you really only juggle three sounds per verb. The endings matter mostly in writing.",
+    "examples": [
+      { "text": "Je parle français.", "translation": "I speak French." },
+      { "text": "Tu habites où ?", "translation": "Where do you live?" },
+      { "text": "Nous travaillons ensemble.", "translation": "We work together." },
+      { "text": "Ils écoutent de la musique.", "translation": "They're listening to music. (sounds like 'il écoute')" }
+    ],
+    "commonErrors": [
+      { "wrong": "Nous parle français.", "right": "Nous parlons français.", "note": "nous always takes -ons." },
+      { "wrong": "Vous parles anglais ?", "right": "Vous parlez anglais ?", "note": "vous always takes -ez." }
+    ],
+    "drills": [
+      { "prompt": "Tu ___ (aimer) le fromage ?", "answer": "aimes" },
+      { "prompt": "Elle ___ (travailler) à Lyon.", "answer": "travaille" },
+      { "prompt": "Vous ___ (habiter) ici ?", "answer": "habitez" }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.parler-pronouns",
+        "title": "parler across pronouns",
+        "pattern": "{pronoun} ___ français.",
+        "steps": [
+          { "prompt": "Je ___ français.", "answer": "parle" },
+          { "prompt": "Tu ___ français.", "answer": "parles" },
+          { "prompt": "Elle ___ français.", "answer": "parle" },
+          { "prompt": "Nous ___ français.", "answer": "parlons" },
+          { "prompt": "Vous ___ français.", "answer": "parlez" },
+          { "prompt": "Ils ___ français.", "answer": "parlent", "note": "Sounds exactly like 'il parle' — context tells you it's plural." }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["vocab.parler", "vocab.habiter", "vocab.travailler", "vocab.aimer", "vocab.ecouter", "vocab.fromage"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.irregular-verbs",
+    "title": "The big four irregulars: aller, faire, venir, prendre",
+    "cefr": "A1",
+    "explanationMd": "Four irregular verbs carry an outsized share of daily French. **aller** (go): vais, vas, va, allons, allez, vont — also builds the future (see futur proche). **faire** (do/make): fais, fais, fait, faisons, faites, font — covers weather (il fait beau), activities (faire du sport), shopping (faire les courses). **venir** (come): viens, viens, vient, venons, venez, viennent — and *venir de + infinitive* = 'to have just' (je viens de manger). **prendre** (take): prends, prends, prend, prenons, prenez, prennent — the ordering-and-transport verb. These four must simply be memorized; they repay it within a day.",
+    "examples": [
+      { "text": "Je vais au marché.", "translation": "I'm going to the market." },
+      { "text": "Qu'est-ce que tu fais ?", "translation": "What are you doing?" },
+      { "text": "Ils viennent ce soir.", "translation": "They're coming tonight." },
+      { "text": "On prend le métro ?", "translation": "Shall we take the metro?" }
+    ],
+    "commonErrors": [
+      { "wrong": "Je faisons du sport.", "right": "Je fais du sport.", "note": "-ons belongs only to nous." },
+      { "wrong": "Ils prendent un café.", "right": "Ils prennent un café.", "note": "prendre doubles the n in the ils form: prennent." }
+    ],
+    "drills": [
+      { "prompt": "Vous ___ (faire) quoi ce week-end ?", "answer": "faites" },
+      { "prompt": "Elle ___ (venir) avec nous.", "answer": "vient" },
+      { "prompt": "Nous ___ (prendre) le train.", "answer": "prenons" }
+    ],
+    "relatedVocabulary": ["vocab.aller", "vocab.faire", "vocab.venir", "vocab.prendre", "vocab.metro", "vocab.train"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.negation",
+    "title": "Negation: ne … pas (and how speech drops the ne)",
+    "cefr": "A1",
+    "explanationMd": "Textbook negation wraps the verb in two pieces: **ne + verb + pas** — *je ne comprends pas*. Before a vowel, ne becomes n': *je n'aime pas*. The family extends: **ne … jamais** (never), **ne … plus** (no more/anymore), **ne … rien** (nothing), **ne … personne** (nobody). Here is the crucial real-world fact: **spoken French drops the ne almost every time** — *je comprends pas, j'aime pas, c'est pas grave*. The 'pas' does the real work. Keep ne in writing and formal speech; drop it with friends and you'll sound natural rather than sloppy. After pas, un/une/des become **de**: j'ai une voiture → je n'ai pas **de** voiture.",
+    "examples": [
+      { "text": "Je ne sais pas.", "translation": "I don't know. (written/careful)" },
+      { "text": "Je sais pas. / Chais pas.", "translation": "Dunno. (how it's actually said)", "register": "informal" },
+      { "text": "Il n'y a plus de pain.", "translation": "There's no more bread." },
+      { "text": "Elle ne mange jamais de viande.", "translation": "She never eats meat." }
+    ],
+    "commonErrors": [
+      { "wrong": "Je ne pas comprends.", "right": "Je ne comprends pas.", "note": "The verb sits between ne and pas." },
+      { "wrong": "Je n'ai pas une voiture.", "right": "Je n'ai pas de voiture.", "note": "Indefinite articles become de after a negation." }
+    ],
+    "drills": [
+      { "prompt": "Negate: 'J'aime le café.'", "answer": "Je n'aime pas le café." },
+      { "prompt": "Say 'I never take the bus' the spoken way.", "answer": "Je prends jamais le bus." },
+      { "prompt": "'J'ai des enfants' → negative:", "answer": "Je n'ai pas d'enfants." }
+    ],
+    "relatedVocabulary": ["vocab.comprendre", "vocab.savoir", "vocab.pain", "vocab.jamais", "vocab.voiture"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.questions",
+    "title": "Asking questions: three levels of formality",
+    "cefr": "A1",
+    "explanationMd": "French has three ways to ask the same question, differing only in register. **1. Intonation** (spoken, most common): keep statement order, raise your pitch — *Tu viens ?* **2. Est-ce que** (neutral, always safe): bolt it onto the front — *Est-ce que tu viens ?* **3. Inversion** (formal/written): flip verb and pronoun — *Viens-tu ?* In everyday conversation, question words just sit where the answer would: *Tu habites **où** ?* *C'est **quoi** ?* *Tu pars **quand** ?* Inversion with question words (*Où habites-tu ?*) is correct but sounds formal aloud. Master intonation + est-ce que first; recognize inversion.",
+    "examples": [
+      { "text": "Tu veux un café ?", "translation": "Want a coffee? (intonation)", "register": "informal" },
+      { "text": "Est-ce que vous avez une table pour deux ?", "translation": "Do you have a table for two? (est-ce que)" },
+      { "text": "Parlez-vous anglais ?", "translation": "Do you speak English? (inversion, formal)", "register": "formal" },
+      { "text": "C'est combien ?", "translation": "How much is it? (question word in place)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Est-ce que vous parlez anglais ? (said to a close friend)", "right": "Tu parles anglais ?", "note": "Not wrong grammatically — wrong register. Friends get tu + intonation." },
+      { "wrong": "Où tu habites ? (in a formal email)", "right": "Où habitez-vous ?", "note": "Casual question order looks off in formal writing." }
+    ],
+    "drills": [
+      { "prompt": "Ask 'where do you live?' casually.", "answer": "Tu habites où ?" },
+      { "prompt": "Same question with est-ce que:", "answer": "Est-ce que tu habites ici ? / Où est-ce que tu habites ?" },
+      { "prompt": "Ask a stranger if they speak English (formal).", "answer": "Parlez-vous anglais ? / Est-ce que vous parlez anglais ?" }
+    ],
+    "relatedVocabulary": ["vocab.ou-question", "vocab.quand", "vocab.combien", "vocab.quoi", "vocab.habiter"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.tu-vous",
+    "title": "tu vs vous — the highest-stakes choice in French",
+    "cefr": "A1",
+    "explanationMd": "**vous** is both the plural 'you' and the singular polite 'you'; **tu** is singular and familiar. Getting this wrong isn't a grammar mistake, it's a social one. Default to **vous** with: strangers, anyone serving you, colleagues until invited otherwise, anyone older. Use **tu** with: children, family, friends, fellow students, and generally anyone your age in a casual setting (a party, a hobby group). The switch to tu is often made explicit — *On peut se tutoyer ?* ('Shall we use tu?') — and once made, going back to vous is nearly impossible without irony. The verbs: **tutoyer** (use tu), **vouvoyer** (use vous). When unsure, vous — nobody is ever offended by too much politeness, only amused.",
+    "examples": [
+      { "text": "Vous pouvez m'aider, madame ?", "translation": "Can you help me, ma'am? (stranger → vous)" },
+      { "text": "Tu fais quoi ce soir ?", "translation": "What are you up to tonight? (friend → tu)", "register": "informal" },
+      { "text": "On peut se tutoyer, non ?", "translation": "We can switch to 'tu', right?", "register": "informal" },
+      { "text": "Je vous en prie, asseyez-vous.", "translation": "Please, have a seat. (formal)", "register": "formal" }
+    ],
+    "commonErrors": [
+      { "wrong": "Tu peux m'aider ? (to an older shopkeeper you've never met)", "right": "Vous pouvez m'aider ?", "note": "Strangers get vous, even in casual settings." },
+      { "wrong": "Vous voulez une bière ? (to a friend at their own party)", "right": "Tu veux une bière ?", "note": "Vous with a friend creates comic distance — like calling them 'sir'." }
+    ],
+    "drills": [
+      { "prompt": "Ask your friend's name.", "answer": "Tu t'appelles comment ?" },
+      { "prompt": "Ask a waiter for the menu.", "answer": "Vous avez la carte, s'il vous plaît ?" },
+      { "prompt": "Propose switching to tu.", "answer": "On peut se tutoyer ?" }
+    ],
+    "relatedVocabulary": ["vocab.madame", "vocab.monsieur", "vocab.biere"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.adjective-agreement",
+    "title": "Adjective agreement and placement",
+    "cefr": "A1",
+    "explanationMd": "Adjectives agree in gender and number with their noun: add **-e** for feminine (petit → petite), **-s** for plural (petits, petites). The -e often changes the sound — the silent final consonant wakes up: *grand* [gʁɑ̃] → *grande* [gʁɑ̃d], *vert* → *verte*. Placement: most adjectives FOLLOW the noun (*un vin rouge, une ville magnifique*), but a small high-frequency set precedes it — the **BAGS** group: Beauty (beau, joli), Age (jeune, vieux, nouveau), Goodness (bon, mauvais), Size (grand, petit, gros). Three of these have special forms before a masculine vowel: *bel homme, nouvel ami, vieil immeuble*.",
+    "examples": [
+      { "text": "Une grande maison blanche.", "translation": "A big white house. (grand before, color after)" },
+      { "text": "C'est une bonne idée.", "translation": "It's a good idea." },
+      { "text": "Un vieil immeuble parisien.", "translation": "An old Parisian building. (vieil before vowel)" },
+      { "text": "Des chaussures noires.", "translation": "Black shoes. (feminine plural: -es)" }
+    ],
+    "commonErrors": [
+      { "wrong": "une rouge voiture", "right": "une voiture rouge", "note": "Colors always follow the noun." },
+      { "wrong": "un beau homme", "right": "un bel homme", "note": "beau → bel before a masculine noun starting with a vowel." }
+    ],
+    "drills": [
+      { "prompt": "Make it feminine: 'un petit café' → 'une ___ maison'.", "answer": "petite" },
+      { "prompt": "Place the adjective: 'un ___ vin ___' (rouge).", "answer": "un vin rouge" },
+      { "prompt": "Place the adjective: 'une ___ ville ___' (jolie).", "answer": "une jolie ville" }
+    ],
+    "relatedVocabulary": ["vocab.grand", "vocab.petit", "vocab.beau", "vocab.bon", "vocab.vieux", "vocab.rouge", "vocab.noir", "vocab.maison", "vocab.voiture"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.possessives",
+    "title": "Possessives: mon/ma/mes and friends",
+    "cefr": "A1",
+    "explanationMd": "Possessives agree with the **thing possessed**, not the owner: **mon/ma/mes** (my), **ton/ta/tes** (your, tu), **son/sa/ses** (his/her/its — same for both!), **notre/nos** (our), **votre/vos** (your, vous), **leur/leurs** (their). So *sa voiture* is 'his car' OR 'her car' — French doesn't say which; context does. One sound-driven exception: before a feminine noun starting with a vowel, use the masculine form — *mon amie* (my female friend), *son école*, because 'ma amie' won't flow.",
+    "examples": [
+      { "text": "C'est ma sœur et mon frère.", "translation": "This is my sister and my brother." },
+      { "text": "Elle cherche ses clés.", "translation": "She's looking for her keys." },
+      { "text": "Son mari est sympa.", "translation": "Her husband is nice. (son = her, because 'mari' is masculine)" },
+      { "text": "Mon amie Sophie arrive ce soir.", "translation": "My friend Sophie arrives tonight. (mon before vowel, even feminine)" }
+    ],
+    "commonErrors": [
+      { "wrong": "ma amie", "right": "mon amie", "note": "Before a vowel, feminine nouns take mon/ton/son for the sound." },
+      { "wrong": "Elle aime sa mari. (thinking sa = her)", "right": "Elle aime son mari.", "note": "Agreement follows 'mari' (masculine), not the owner's gender." }
+    ],
+    "drills": [
+      { "prompt": "'My keys': ___ clés.", "answer": "mes" },
+      { "prompt": "'His sister' or 'her sister':", "answer": "sa sœur (both — context decides)" },
+      { "prompt": "'My (female) friend':", "answer": "mon amie" }
+    ],
+    "relatedVocabulary": ["vocab.soeur", "vocab.frere", "vocab.clef", "vocab.ami"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.partitive",
+    "title": "The partitive: du, de la, des — 'some'",
+    "cefr": "A1",
+    "explanationMd": "For unmeasured quantities — 'some bread', 'some water' — French requires a partitive article: **du** (m.), **de la** (f.), **de l'** (before vowel), **des** (plural): *je mange du pain, elle boit de l'eau*. English can drop 'some'; French can't drop the partitive. Two rules collapse it to plain **de**: after a negation (*pas de pain*) and after quantity words (*beaucoup de, un peu de, trop de, un kilo de*). Whole-category preferences use le/la/les instead: *j'aime LE fromage* (cheese in general) vs *je mange DU fromage* (some cheese, now).",
+    "examples": [
+      { "text": "Tu veux du café ?", "translation": "Do you want (some) coffee?" },
+      { "text": "On achète de la bière et du fromage.", "translation": "We're buying beer and cheese." },
+      { "text": "Il n'y a plus de lait.", "translation": "There's no milk left. (de after negation)" },
+      { "text": "J'aime le vin, mais je bois peu de vin.", "translation": "I like wine, but I drink little wine. (category vs quantity)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Je mange pain.", "right": "Je mange du pain.", "note": "The partitive is mandatory where English just says 'bread'." },
+      { "wrong": "beaucoup du travail", "right": "beaucoup de travail", "note": "Quantity expressions take bare de." }
+    ],
+    "drills": [
+      { "prompt": "'She's drinking (some) water': Elle boit ___ eau.", "answer": "de l'" },
+      { "prompt": "'I don't eat meat': Je ne mange pas ___ viande.", "answer": "de" },
+      { "prompt": "'a lot of friends': beaucoup ___ amis.", "answer": "d'" }
+    ],
+    "relatedVocabulary": ["vocab.pain", "vocab.eau", "vocab.lait", "vocab.fromage", "vocab.vin", "vocab.biere", "vocab.viande", "vocab.beaucoup"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.contractions",
+    "title": "à and de + le/les: au, aux, du, des",
+    "cefr": "A1",
+    "explanationMd": "The prepositions **à** (to/at) and **de** (of/from) fuse with the definite articles: à + le = **au**, à + les = **aux**, de + le = **du**, de + les = **des**. With la and l' nothing fuses: à la gare, de l'hôtel. So: *je vais **au** marché* (to the market), *il revient **du** bureau* (from the office), *le menu **aux** champignons*. These contractions are mandatory — 'à le' or 'de les' is never correct. Note that this makes 'du' and 'des' do double duty (contraction here, partitive elsewhere) — context always disambiguates.",
+    "examples": [
+      { "text": "On va au restaurant ?", "translation": "Shall we go to the restaurant?" },
+      { "text": "Je rentre du travail à dix-huit heures.", "translation": "I get back from work at six." },
+      { "text": "Elle parle aux voisins.", "translation": "She's talking to the neighbors." },
+      { "text": "La carte des vins, s'il vous plaît.", "translation": "The wine list, please." }
+    ],
+    "commonErrors": [
+      { "wrong": "Je vais à le marché.", "right": "Je vais au marché.", "note": "à + le always contracts to au." },
+      { "wrong": "le prix de les billets", "right": "le prix des billets", "note": "de + les always contracts to des." }
+    ],
+    "drills": [
+      { "prompt": "'to the café': ___ café.", "answer": "au" },
+      { "prompt": "'to the toilets': ___ toilettes.", "answer": "aux" },
+      { "prompt": "'from the airport': ___ aéroport.", "answer": "de l'" }
+    ],
+    "relatedVocabulary": ["vocab.marche", "vocab.travail", "vocab.voisin", "vocab.aeroport", "vocab.vin"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.il-y-a",
+    "title": "il y a — there is, there are, and 'ago'",
+    "cefr": "A1",
+    "explanationMd": "**il y a** is invariable — same form for singular and plural: *il y a un problème*, *il y a des problèmes*. Negative: *il n'y a pas de…* Question: *est-ce qu'il y a…* or spoken *y a … ?* — because in fast speech the 'il' vanishes entirely: *y a du monde !* (it's crowded!). Bonus meaning: with a time expression it means 'ago' — *il y a deux ans* = two years ago. Three uses, one tiny phrase; it's everywhere.",
+    "examples": [
+      { "text": "Il y a un bon marché près d'ici.", "translation": "There's a good market near here." },
+      { "text": "Il n'y a pas de wifi ici ?", "translation": "There's no wifi here?" },
+      { "text": "Y a quelqu'un ?", "translation": "Anyone there? (spoken)", "register": "informal" },
+      { "text": "J'ai visité Paris il y a trois ans.", "translation": "I visited Paris three years ago." }
+    ],
+    "commonErrors": [
+      { "wrong": "Il y a beaucoup des gens.", "right": "Il y a beaucoup de gens.", "note": "beaucoup takes bare de." },
+      { "wrong": "Ils y ont des problèmes. (trying to make it plural)", "right": "Il y a des problèmes.", "note": "il y a never changes form." }
+    ],
+    "drills": [
+      { "prompt": "'There are two cafés on this street.'", "answer": "Il y a deux cafés dans cette rue." },
+      { "prompt": "'There's no more bread.'", "answer": "Il n'y a plus de pain." },
+      { "prompt": "'a week ago':", "answer": "il y a une semaine" }
+    ],
+    "relatedVocabulary": ["phrase.il-y-a", "vocab.marche", "vocab.wifi", "vocab.monde"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.futur-proche",
+    "title": "Futur proche: aller + infinitive",
+    "cefr": "A1",
+    "explanationMd": "The everyday future is built exactly like English 'going to': conjugated **aller** + infinitive — *je vais manger* (I'm going to eat), *on va voir* (we'll see). In conversation this covers nearly all future needs; the one-word futur simple (*je mangerai*) can wait until B1 for production. Negation wraps around aller only: *je ne vais pas venir*. This is the single highest-leverage structure at A1: two verbs learned, entire future unlocked.",
+    "examples": [
+      { "text": "Je vais prendre le plat du jour.", "translation": "I'm going to have the daily special." },
+      { "text": "Qu'est-ce que tu vas faire ce week-end ?", "translation": "What are you going to do this weekend?" },
+      { "text": "Il va pleuvoir.", "translation": "It's going to rain." },
+      { "text": "On ne va pas rester longtemps.", "translation": "We're not going to stay long." }
+    ],
+    "commonErrors": [
+      { "wrong": "Je vais mange.", "right": "Je vais manger.", "note": "The second verb stays in the infinitive." },
+      { "wrong": "Je vais ne pas venir.", "right": "Je ne vais pas venir.", "note": "ne…pas wraps the conjugated verb (aller), not the infinitive." }
+    ],
+    "drills": [
+      { "prompt": "'She's going to call tomorrow.'", "answer": "Elle va appeler demain." },
+      { "prompt": "'We're going to visit the Louvre.'", "answer": "On va visiter le Louvre. / Nous allons visiter le Louvre." },
+      { "prompt": "Negate: 'Je vais sortir ce soir.'", "answer": "Je ne vais pas sortir ce soir." }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.futur-proche",
+        "title": "aller + infinitive across pronouns",
+        "pattern": "{pronoun} ___ manger au restaurant.",
+        "steps": [
+          { "prompt": "Je ___ manger au restaurant.", "answer": "vais" },
+          { "prompt": "Tu ___ manger au restaurant.", "answer": "vas" },
+          { "prompt": "On ___ manger au restaurant.", "answer": "va" },
+          { "prompt": "Nous ___ manger au restaurant.", "answer": "allons" },
+          { "prompt": "Vous ___ manger au restaurant.", "answer": "allez" },
+          { "prompt": "Ils ___ manger au restaurant.", "answer": "vont" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["vocab.aller", "vocab.manger", "vocab.appeler", "vocab.visiter"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.on",
+    "title": "on — the pronoun French actually uses for 'we'",
+    "cefr": "A1",
+    "explanationMd": "In spoken French, **on** has almost completely replaced **nous** as the subject: *on va au ciné* (we're going to the movies), *on est arrivés* (we've arrived). Crucially, on conjugates like il/elle — third person singular — so 'we' gets the easiest verb form: *on parle*, not *nous parlons*. It also means 'people/one/they' in general statements: *en France, on dîne tard* (in France, people eat late). 'Nous' isn't wrong — it just sounds formal or written. Learn to produce 'on' and your spoken French instantly sounds less like a textbook.",
+    "examples": [
+      { "text": "On y va ?", "translation": "Shall we go?", "register": "informal" },
+      { "text": "On se retrouve où ?", "translation": "Where shall we meet?", "register": "informal" },
+      { "text": "En France, on mange beaucoup de fromage.", "translation": "In France, people eat a lot of cheese." },
+      { "text": "Nous vous remercions de votre visite.", "translation": "We thank you for your visit. (formal register — nous survives here)", "register": "formal" }
+    ],
+    "commonErrors": [
+      { "wrong": "On allons au restaurant.", "right": "On va au restaurant.", "note": "on takes third-person-singular forms, whatever it means." },
+      { "wrong": "Nous allons au ciné, tu viens ? (among friends — stilted)", "right": "On va au ciné, tu viens ?", "note": "Not an error, a register mismatch: spoken French says on." }
+    ],
+    "drills": [
+      { "prompt": "Say 'we're eating at eight' the natural spoken way.", "answer": "On mange à huit heures." },
+      { "prompt": "'People speak French here.'", "answer": "Ici, on parle français." },
+      { "prompt": "Convert to spoken register: 'Nous partons demain.'", "answer": "On part demain." }
+    ],
+    "relatedVocabulary": ["vocab.aller", "vocab.manger", "vocab.fromage", "vocab.partir"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.passe-compose-avoir",
+    "title": "Passé composé with avoir — the everyday past",
+    "cefr": "A2",
+    "explanationMd": "The conversational past tense: **avoir (present) + past participle** — *j'ai mangé* (I ate / I've eaten). Participles: -er → **-é** (mangé), -ir → **-i** (fini), -re → **-u** (attendu), plus irregulars worth learning as vocabulary: **eu** (avoir), **été** (être), **fait** (faire), **pris** (prendre), **vu** (voir), **bu** (boire), **dit** (dire), **mis** (mettre), **lu** (lire), **écrit** (écrire). Negation sandwiches the avoir: *je **n'ai pas** mangé*. One tense covers both English simple past and present perfect — French doesn't make that distinction.",
+    "examples": [
+      { "text": "J'ai mangé une crêpe ce midi.", "translation": "I ate a crêpe at lunch." },
+      { "text": "Tu as vu ce film ?", "translation": "Have you seen this movie?" },
+      { "text": "On a pris le train ensemble.", "translation": "We took the train together." },
+      { "text": "Elle n'a pas fini son café.", "translation": "She didn't finish her coffee." }
+    ],
+    "commonErrors": [
+      { "wrong": "J'ai mange.", "right": "J'ai mangé.", "note": "The participle carries the accent: -é. 'Mange' is present tense." },
+      { "wrong": "J'ai prendu le bus.", "right": "J'ai pris le bus.", "note": "prendre is irregular: pris." }
+    ],
+    "drills": [
+      { "prompt": "'I saw the Eiffel Tower.'", "answer": "J'ai vu la tour Eiffel." },
+      { "prompt": "'We drank a good wine.' (on)", "answer": "On a bu un bon vin." },
+      { "prompt": "Negate: 'Il a compris.'", "answer": "Il n'a pas compris." }
+    ],
+    "ladders": [
+      {
+        "key": "ladder.passe-compose",
+        "title": "passé composé across pronouns",
+        "pattern": "{pronoun} ___ mangé au restaurant.",
+        "steps": [
+          { "prompt": "J'___ mangé au restaurant.", "answer": "ai" },
+          { "prompt": "Tu ___ mangé au restaurant.", "answer": "as" },
+          { "prompt": "Elle ___ mangé au restaurant.", "answer": "a" },
+          { "prompt": "Nous ___ mangé au restaurant.", "answer": "avons" },
+          { "prompt": "Vous ___ mangé au restaurant.", "answer": "avez" },
+          { "prompt": "Ils ___ mangé au restaurant.", "answer": "ont" }
+        ]
+      }
+    ],
+    "relatedVocabulary": ["vocab.manger", "vocab.voir", "vocab.prendre", "vocab.boire", "vocab.finir", "vocab.comprendre"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.passe-compose-etre",
+    "title": "Passé composé with être — motion and reflexive verbs",
+    "cefr": "A2",
+    "explanationMd": "A closed set of verbs — mostly motion and life-change — takes **être** instead of avoir in the past: aller, venir, arriver, partir, entrer, sortir, monter, descendre, rester, tomber, naître, mourir, retourner, passer (+ their compounds), and **every reflexive verb**. With être, the participle **agrees like an adjective**: *elle est allée*, *ils sont partis*, *elles sont restées*. So a woman writes *je suis arrivée* — same sound, extra -e. Memory hook: they're the verbs you could act out moving through a doorway. Everything else takes avoir.",
+    "examples": [
+      { "text": "Je suis allé au marché ce matin.", "translation": "I went to the market this morning. (male speaker)" },
+      { "text": "Elle est partie à midi.", "translation": "She left at noon. (participle agrees: -e)" },
+      { "text": "On est restés deux heures.", "translation": "We stayed two hours." },
+      { "text": "Ils sont venus en train.", "translation": "They came by train." }
+    ],
+    "commonErrors": [
+      { "wrong": "J'ai allé à Paris.", "right": "Je suis allé(e) à Paris.", "note": "aller is an être verb." },
+      { "wrong": "Elle est parti.", "right": "Elle est partie.", "note": "With être, the participle agrees — feminine adds -e." }
+    ],
+    "drills": [
+      { "prompt": "'She arrived yesterday.'", "answer": "Elle est arrivée hier." },
+      { "prompt": "'We (mixed group) went out last night.' (on)", "answer": "On est sortis hier soir." },
+      { "prompt": "avoir or être? 'They took the metro.'", "answer": "avoir — Ils ont pris le métro." }
+    ],
+    "relatedVocabulary": ["vocab.aller", "vocab.partir", "vocab.arriver", "vocab.rester", "vocab.sortir", "vocab.venir"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.reflexive-verbs",
+    "title": "Reflexive verbs: se lever, s'appeler, se souvenir",
+    "cefr": "A2",
+    "explanationMd": "Daily routine runs on reflexive verbs — the pronoun changes with the subject: **je me lève, tu te lèves, il se lève, nous nous levons, vous vous levez, ils se lèvent**. Me/te/se elide before vowels: *je m'appelle, tu t'habilles*. In the past they ALL take être (with agreement): *elle s'est levée tôt*. Negation: *je ne me lève pas*. Many verbs change meaning with se: *trouver* (find) vs *se trouver* (be located), *demander* (ask) vs *se demander* (wonder). French also uses reflexives where English uses nothing: se reposer (rest), se dépêcher (hurry), se promener (stroll).",
+    "examples": [
+      { "text": "Je me lève à sept heures.", "translation": "I get up at seven." },
+      { "text": "Elle s'est couchée tard.", "translation": "She went to bed late." },
+      { "text": "Dépêche-toi !", "translation": "Hurry up! (imperative: pronoun after, te → toi)", "register": "informal" },
+      { "text": "On se retrouve devant le cinéma ?", "translation": "Shall we meet in front of the cinema?" }
+    ],
+    "commonErrors": [
+      { "wrong": "Je lève à sept heures.", "right": "Je me lève à sept heures.", "note": "Without 'me', lever means to lift something else." },
+      { "wrong": "Elle a se levée tôt.", "right": "Elle s'est levée tôt.", "note": "Reflexives take être; the pronoun comes before it." }
+    ],
+    "drills": [
+      { "prompt": "'We get up early.' (on)", "answer": "On se lève tôt." },
+      { "prompt": "'I went to bed at midnight.' (female speaker)", "answer": "Je me suis couchée à minuit." },
+      { "prompt": "'What's his name?' (casual)", "answer": "Il s'appelle comment ?" }
+    ],
+    "relatedVocabulary": ["vocab.se-lever", "vocab.se-coucher", "vocab.sappeler", "vocab.se-depecher", "vocab.se-souvenir"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.imparfait-intro",
+    "title": "Imparfait — the background past (introduction)",
+    "cefr": "A2",
+    "explanationMd": "French has two everyday past tenses with different jobs. **Passé composé** = events, things that happened once: *j'ai mangé*. **Imparfait** = background, description, habit — how things WERE: *il faisait beau* (the weather was nice), *quand j'étais petit* (when I was little), *on allait à la plage tous les étés* (we used to go every summer). Formation: take the nous form, drop -ons, add **-ais, -ais, -ait, -ions, -iez, -aient** — the four singular/third-plural endings all sound the same [ɛ]. At A2, produce three workhorses — **c'était** (it was), **il y avait** (there was), **il faisait** (the weather was) — and recognize the rest.",
+    "examples": [
+      { "text": "C'était super !", "translation": "It was great!" },
+      { "text": "Il y avait beaucoup de monde.", "translation": "There were a lot of people." },
+      { "text": "Quand j'étais étudiant, j'habitais à Lyon.", "translation": "When I was a student, I lived in Lyon." },
+      { "text": "Il faisait froid, donc on est restés chez nous.", "translation": "It was cold, so we stayed home. (background imparfait + event passé composé)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Hier, le concert a été super. (describing how it was)", "right": "Hier, le concert était super.", "note": "Descriptions of how something was use imparfait." },
+      { "wrong": "Quand j'étais petit, je suis allé à la plage tous les étés.", "right": "Quand j'étais petit, j'allais à la plage tous les étés.", "note": "Repeated habits in the past take imparfait." }
+    ],
+    "drills": [
+      { "prompt": "'The weather was nice.'", "answer": "Il faisait beau." },
+      { "prompt": "'There was a problem.'", "answer": "Il y avait un problème." },
+      { "prompt": "'It was really good!' (the party, describing)", "answer": "C'était vraiment bien !" }
+    ],
+    "relatedVocabulary": ["vocab.etre", "vocab.faire", "vocab.monde", "vocab.probleme"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.object-pronouns",
+    "title": "Object pronouns: le, la, les / lui, leur",
+    "cefr": "A2",
+    "explanationMd": "Object pronouns go BEFORE the verb: *je **le** vois* (I see him/it), *tu **la** connais ?* (do you know her?). Direct objects: **me, te, le, la, nous, vous, les** (le/la elide: je l'aime). Indirect ('to' someone): **lui** (to him/her — one form for both!) and **leur** (to them): *je **lui** parle* (I'm talking to him/her). Which one? Follow the verb's preposition: *voir quelqu'un* → direct (je le vois); *parler À quelqu'un* → indirect (je lui parle). In the passé composé the pronoun goes before avoir: *je l'ai vu*. With futur proche, before the infinitive: *je vais l'appeler*.",
+    "examples": [
+      { "text": "Tu vois le bus ? — Oui, je le vois.", "translation": "See the bus? — Yes, I see it." },
+      { "text": "Je t'appelle demain.", "translation": "I'll call you tomorrow." },
+      { "text": "Elle lui a donné son numéro.", "translation": "She gave him/her her number." },
+      { "text": "Je vais les inviter à la soirée.", "translation": "I'm going to invite them to the party." }
+    ],
+    "commonErrors": [
+      { "wrong": "Je vois le.", "right": "Je le vois.", "note": "Object pronouns precede the verb — post-verb position is English word order." },
+      { "wrong": "Je le parle. (talking to him)", "right": "Je lui parle.", "note": "parler à → indirect pronoun lui." }
+    ],
+    "drills": [
+      { "prompt": "Replace with a pronoun: 'Je regarde le film.'", "answer": "Je le regarde." },
+      { "prompt": "'I'm calling her tonight.'", "answer": "Je l'appelle ce soir." },
+      { "prompt": "'He answers them (his parents).'", "answer": "Il leur répond." }
+    ],
+    "relatedVocabulary": ["vocab.voir", "vocab.appeler", "vocab.parler", "vocab.regarder", "vocab.repondre", "vocab.donner"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.y-en",
+    "title": "y and en — the little pronouns that unlock native-sounding French",
+    "cefr": "A2",
+    "explanationMd": "**y** replaces a place (à + location): *Tu vas à Paris ? — J'**y** vais demain.* (I'm going THERE tomorrow.) **en** replaces de + noun — quantities and partitives: *Tu veux du café ? — Oui, j'**en** veux bien.* (I'd like SOME.) *Tu as des frères ? — J'**en** ai deux.* (I have two OF THEM.) Both sit before the verb. English lets you answer 'do you have kids?' with 'I have two'; French requires the en: *j'en ai deux* — dropping it sounds broken. These two also live inside fixed phrases you already know: *on **y** va*, *il **y** a*, *je m'**en** vais*, *ne t'**en** fais pas* (don't worry about it).",
+    "examples": [
+      { "text": "Tu vas souvent au marché ? — J'y vais le dimanche.", "translation": "Do you often go to the market? — I go (there) on Sundays." },
+      { "text": "Du fromage ? Oui, j'en prends un peu.", "translation": "Cheese? Yes, I'll have a little (of it)." },
+      { "text": "Des enfants ? On en a trois.", "translation": "Kids? We have three (of them)." },
+      { "text": "Tu viens de la gare ? — Oui, j'en viens.", "translation": "Coming from the station? — Yes, I've just come from there." }
+    ],
+    "commonErrors": [
+      { "wrong": "Tu as des frères ? — Oui, j'ai deux.", "right": "Oui, j'en ai deux.", "note": "A number without its noun needs en." },
+      { "wrong": "Je vais y. ", "right": "J'y vais.", "note": "y goes before the verb." }
+    ],
+    "drills": [
+      { "prompt": "Answer with y: 'Tu vas au bureau demain ?'", "answer": "Oui, j'y vais (demain)." },
+      { "prompt": "Answer with en: 'Vous voulez du vin ?'", "answer": "Oui, j'en veux bien. / Non merci, je n'en veux pas." },
+      { "prompt": "'I have two (cats).'", "answer": "J'en ai deux." }
+    ],
+    "relatedVocabulary": ["vocab.aller", "vocab.vouloir", "vocab.fromage", "vocab.vin", "phrase.on-y-va", "phrase.il-y-a"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.comparatives",
+    "title": "Comparatives and superlatives: plus, moins, aussi … que",
+    "cefr": "A2",
+    "explanationMd": "Comparison is refreshingly regular: **plus … que** (more than), **moins … que** (less than), **aussi … que** (as … as): *le train est plus rapide que le bus*. Superlative adds the article: **le/la/les plus …** — *le plus beau quartier de Paris* (note **de** where English says 'in'). Two irregulars matter: bon → **meilleur** (better) — never 'plus bon' — and bien → **mieux**: *ce café est meilleur* (this coffee is better), *ça va mieux* (I'm doing better). Quantity: *plus de temps* (more time), *moins d'argent* (less money).",
+    "examples": [
+      { "text": "Le métro est plus rapide que le bus.", "translation": "The metro is faster than the bus." },
+      { "text": "C'est la meilleure boulangerie du quartier.", "translation": "It's the best bakery in the neighborhood." },
+      { "text": "Il parle mieux que moi.", "translation": "He speaks better than me." },
+      { "text": "J'ai moins de temps cette semaine.", "translation": "I have less time this week." }
+    ],
+    "commonErrors": [
+      { "wrong": "plus bon", "right": "meilleur", "note": "bon has an irregular comparative, like English good → better." },
+      { "wrong": "le plus grand ville", "right": "la plus grande ville", "note": "Agreement survives inside the superlative." }
+    ],
+    "drills": [
+      { "prompt": "'Wine is more expensive than beer.'", "answer": "Le vin est plus cher que la bière." },
+      { "prompt": "'This croissant is better.'", "answer": "Ce croissant est meilleur." },
+      { "prompt": "'It's the prettiest street in the city.'", "answer": "C'est la plus jolie rue de la ville." }
+    ],
+    "relatedVocabulary": ["vocab.cher", "vocab.vin", "vocab.biere", "vocab.croissant", "vocab.joli", "vocab.rue", "vocab.ville", "vocab.boulangerie"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.demonstratives",
+    "title": "ce/cette/ces — and c'est vs il est",
+    "cefr": "A2",
+    "explanationMd": "Demonstratives: **ce** (m.), **cette** (f.), **cet** (m. before vowel: cet homme), **ces** (plural) — 'this/that' undistinguished; add -ci or -là only when contrasting (*ce café-ci ou ce café-là ?*). The harder half is **c'est vs il est**. Use **c'est + article/determiner + noun**: *c'est un ami, c'est ma sœur, c'est le patron*. Use **il/elle est + bare adjective or profession**: *il est sympa, elle est médecin* (no article with professions!). General judgments about things use c'est: *c'est bon, c'est cher, c'est génial*.",
+    "examples": [
+      { "text": "Cette rue est très jolie.", "translation": "This street is really pretty." },
+      { "text": "Cet immeuble est ancien.", "translation": "This building is old. (cet before vowel)" },
+      { "text": "C'est un collègue. Il est très sympa.", "translation": "He's a colleague. He's really nice. (c'est + noun, il est + adjective)" },
+      { "text": "Elle est médecin.", "translation": "She's a doctor. (no article)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Il est un ami.", "right": "C'est un ami.", "note": "Noun with article → c'est." },
+      { "wrong": "Elle est une professeure.", "right": "Elle est professeure.", "note": "Professions after il/elle est take no article." }
+    ],
+    "drills": [
+      { "prompt": "'this man': ___ homme.", "answer": "cet" },
+      { "prompt": "'These shoes are expensive.'", "answer": "Ces chaussures sont chères." },
+      { "prompt": "Choose: '___ mon frère.' (C'est / Il est)", "answer": "C'est mon frère." }
+    ],
+    "relatedVocabulary": ["vocab.rue", "vocab.immeuble", "vocab.collegue", "vocab.medecin", "vocab.chaussure", "vocab.homme"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.imperative",
+    "title": "The imperative: giving directions, advice, and orders",
+    "cefr": "A2",
+    "explanationMd": "Drop the subject pronoun, keep the verb: **Écoute !** (tu), **Écoutez !** (vous), **Allons-y !** (nous = let's). One spelling quirk: -er verbs lose the tu-form s — *tu parles* but *Parle !* (it returns before y/en: *Vas-y !* — go ahead). Negative: wrap as usual — *Ne t'inquiète pas* (don't worry). Reflexive verbs flip the pronoun after the verb and te → toi: *Assieds-toi* (sit down), *Dépêchez-vous*. Politeness note: bare imperatives are more acceptable in French service contexts than in English ('Donnez-moi un kilo de tomates' + s'il vous plaît is perfectly polite at a market), but softening with 'tu peux…/vous pouvez…' is always available.",
+    "examples": [
+      { "text": "Tournez à droite, puis continuez tout droit.", "translation": "Turn right, then keep going straight." },
+      { "text": "Attends-moi !", "translation": "Wait for me!", "register": "informal" },
+      { "text": "Vas-y, essaie !", "translation": "Go on, try it!", "register": "informal" },
+      { "text": "Ne t'inquiète pas, ça va aller.", "translation": "Don't worry, it'll be fine.", "register": "informal" }
+    ],
+    "commonErrors": [
+      { "wrong": "Parles plus fort !", "right": "Parle plus fort !", "note": "-er imperatives drop the tu-form s." },
+      { "wrong": "Te dépêche !", "right": "Dépêche-toi !", "note": "Positive imperative puts the pronoun after, as toi." }
+    ],
+    "drills": [
+      { "prompt": "Tell a friend: 'listen!'", "answer": "Écoute !" },
+      { "prompt": "Tell a group: 'take the first street on the left.'", "answer": "Prenez la première rue à gauche." },
+      { "prompt": "'Let's go to the market!'", "answer": "Allons au marché !" }
+    ],
+    "relatedVocabulary": ["vocab.ecouter", "vocab.prendre", "vocab.attendre", "vocab.se-depecher", "phrase.a-gauche", "phrase.tout-droit"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.time-depuis",
+    "title": "Talking about time: depuis, pendant, il y a, dans",
+    "cefr": "A2",
+    "explanationMd": "Four small words carve up time. **depuis** + PRESENT tense = ongoing state: *j'habite ici depuis deux ans* (I've lived here for two years — French uses present where English uses perfect!). **pendant** = a finished duration: *j'ai vécu là-bas pendant trois ans* (for three years, over). **il y a** + past = ago: *il y a deux ans* (two years ago). **dans** + future = in (from now): *dans dix minutes* (in ten minutes). The depuis+present pattern is the one worth drilling — the English-driven 'j'ai habité ici depuis 2020' is wrong unless the living is over.",
+    "examples": [
+      { "text": "J'apprends le français depuis six mois.", "translation": "I've been learning French for six months. (present tense!)" },
+      { "text": "On a marché pendant deux heures.", "translation": "We walked for two hours." },
+      { "text": "Elle est partie il y a dix minutes.", "translation": "She left ten minutes ago." },
+      { "text": "Le train part dans cinq minutes.", "translation": "The train leaves in five minutes." }
+    ],
+    "commonErrors": [
+      { "wrong": "J'ai habité ici depuis deux ans. (still living there)", "right": "J'habite ici depuis deux ans.", "note": "Ongoing states take the present with depuis." },
+      { "wrong": "Je pars en cinq minutes.", "right": "Je pars dans cinq minutes.", "note": "'In X time from now' is dans, not en." }
+    ],
+    "drills": [
+      { "prompt": "'I've been working here for a year.'", "answer": "Je travaille ici depuis un an." },
+      { "prompt": "'We visited Paris two years ago.'", "answer": "On a visité Paris il y a deux ans." },
+      { "prompt": "'The shop closes in ten minutes.'", "answer": "Le magasin ferme dans dix minutes." }
+    ],
+    "relatedVocabulary": ["vocab.depuis", "vocab.pendant", "vocab.habiter", "vocab.travailler", "vocab.partir", "vocab.magasin"]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.venir-de",
+    "title": "venir de + infinitive — 'to have just'",
+    "cefr": "A2",
+    "explanationMd": "The mirror image of futur proche: conjugated **venir + de + infinitive** = to have JUST done something — *je viens de manger* (I just ate), *le train vient de partir* (the train just left). Together with aller + infinitive you get a complete near-past/near-future system with only present-tense conjugation: *je viens de finir, je vais commencer* — I just finished, I'm about to start. This construction is constant in real speech and has no one-word English equivalent, which is why learners underuse it.",
+    "examples": [
+      { "text": "Je viens d'arriver.", "translation": "I just arrived." },
+      { "text": "On vient de finir le dîner.", "translation": "We just finished dinner." },
+      { "text": "Elle vient de m'appeler.", "translation": "She just called me." },
+      { "text": "Tu viens de rater le bus.", "translation": "You just missed the bus.", "register": "informal" }
+    ],
+    "commonErrors": [
+      { "wrong": "Je juste ai mangé.", "right": "Je viens de manger.", "note": "'Just' as recency is venir de, not an adverb." },
+      { "wrong": "Je viens manger. (meaning 'I just ate')", "right": "Je viens de manger.", "note": "Without de it means 'I'm coming to eat'." }
+    ],
+    "drills": [
+      { "prompt": "'The movie just started.'", "answer": "Le film vient de commencer." },
+      { "prompt": "'I just got up.'", "answer": "Je viens de me lever." },
+      { "prompt": "'We just got back.' (on, rentrer)", "answer": "On vient de rentrer." }
+    ],
+    "relatedVocabulary": ["vocab.venir", "vocab.arriver", "vocab.finir", "vocab.commencer", "vocab.rater", "vocab.se-lever"]
+  }
+]

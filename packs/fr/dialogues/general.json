@@ -1,0 +1,927 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.boulangerie",
+    "scenario": "buying bread at the bakery",
+    "speakers": [
+      { "id": "client", "name": "Emma", "role": "customer" },
+      { "id": "boulangere", "name": "Mme Petit", "role": "baker" }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "boulangere", "text": "Bonjour madame !" },
+      { "speakerId": "client", "text": "Bonjour ! Une tradition, s'il vous plaît. Bien cuite." },
+      { "speakerId": "boulangere", "text": "Et avec ceci ?" },
+      { "speakerId": "client", "text": "Deux croissants au beurre. C'est tout, merci." },
+      { "speakerId": "boulangere", "text": "Ça fait trois euros soixante." },
+      { "speakerId": "client", "text": "Voilà. Merci, bonne journée !" },
+      { "speakerId": "boulangere", "text": "Merci à vous, bonne journée !" }
+    ],
+    "translation": [
+      { "speakerId": "boulangere", "text": "Good morning, ma'am!" },
+      { "speakerId": "client", "text": "Good morning! One 'tradition' baguette, please. Well-baked." },
+      { "speakerId": "boulangere", "text": "Anything else?" },
+      { "speakerId": "client", "text": "Two butter croissants. That's all, thanks." },
+      { "speakerId": "boulangere", "text": "That's three euros sixty." },
+      { "speakerId": "client", "text": "Here you go. Thanks, have a good day!" },
+      { "speakerId": "boulangere", "text": "Thank you, have a good day!" }
+    ],
+    "keyVocabulary": ["vocab.baguette", "vocab.croissant", "vocab.beurre", "phrase.cest-tout", "phrase.bonne-journee"],
+    "grammarNotes": "'Et avec ceci ?' is the fixed bakery question for 'anything else?'. 'Ça fait…' announces a total.",
+    "slangRegisterNotes": "Everything here is vous — shop interactions stay formal even when friendly. The opening 'bonjour' is not optional."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.cafe-terrasse",
+    "scenario": "ordering at a café terrace",
+    "speakers": [
+      { "id": "client", "name": "Marc", "role": "customer" },
+      { "id": "serveur", "name": "Julien", "role": "waiter" }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "serveur", "text": "Bonjour monsieur, vous avez choisi ?" },
+      { "speakerId": "client", "text": "Bonjour. Un café crème et un verre d'eau, s'il vous plaît." },
+      { "speakerId": "serveur", "text": "Un crème, très bien. Autre chose ?" },
+      { "speakerId": "client", "text": "Non, c'est tout pour l'instant, merci." },
+      { "speakerId": "serveur", "text": "Je vous apporte ça tout de suite." },
+      { "speakerId": "client", "text": "Excusez-moi, l'addition, s'il vous plaît !" },
+      { "speakerId": "serveur", "text": "Bien sûr. Quatre euros cinquante, monsieur." }
+    ],
+    "translation": [
+      { "speakerId": "serveur", "text": "Good morning sir, have you decided?" },
+      { "speakerId": "client", "text": "Good morning. A coffee with milk and a glass of water, please." },
+      { "speakerId": "serveur", "text": "One crème, very good. Anything else?" },
+      { "speakerId": "client", "text": "No, that's all for now, thanks." },
+      { "speakerId": "serveur", "text": "I'll bring that right away." },
+      { "speakerId": "client", "text": "Excuse me, the check please!" },
+      { "speakerId": "serveur", "text": "Of course. Four euros fifty, sir." }
+    ],
+    "keyVocabulary": ["vocab.cafe", "vocab.eau", "vocab.verre", "phrase.laddition-svp", "phrase.excusez-moi"],
+    "grammarNotes": "'Vous avez choisi ?' is passé composé — the standard waiter opener. 'Je vous apporte ça' puts the object pronoun before the verb.",
+    "slangRegisterNotes": "Call the waiter with 'excusez-moi' or 's'il vous plaît' — never 'garçon', which died decades ago."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.presentations",
+    "scenario": "introductions at a friend's dinner",
+    "speakers": [
+      { "id": "lea", "name": "Léa", "role": "host's friend" },
+      { "id": "tom", "name": "Tom", "role": "newcomer" }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "fr-FR-standard",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "lea", "text": "Salut ! Moi c'est Léa. Et toi ?" },
+      { "speakerId": "tom", "text": "Tom. Enchanté !" },
+      { "speakerId": "lea", "text": "Tu viens d'où, Tom ? T'as un petit accent…" },
+      { "speakerId": "tom", "text": "Des États-Unis. J'habite à Paris depuis six mois." },
+      { "speakerId": "lea", "text": "Ah ouais ? Et tu parles déjà super bien !" },
+      { "speakerId": "tom", "text": "Merci, mais non… je fais beaucoup d'erreurs." },
+      { "speakerId": "lea", "text": "Mais non, ça va ! Tu veux boire quelque chose ?" },
+      { "speakerId": "tom", "text": "Volontiers, un verre de rouge." }
+    ],
+    "translation": [
+      { "speakerId": "lea", "text": "Hi! I'm Léa. And you?" },
+      { "speakerId": "tom", "text": "Tom. Nice to meet you!" },
+      { "speakerId": "lea", "text": "Where are you from, Tom? You have a little accent…" },
+      { "speakerId": "tom", "text": "From the US. I've been living in Paris for six months." },
+      { "speakerId": "lea", "text": "Oh yeah? And you already speak really well!" },
+      { "speakerId": "tom", "text": "Thanks, but no… I make a lot of mistakes." },
+      { "speakerId": "lea", "text": "Not at all, you're fine! Want something to drink?" },
+      { "speakerId": "tom", "text": "Gladly — a glass of red." }
+    ],
+    "keyVocabulary": ["phrase.enchante", "phrase.je-viens-de", "phrase.jhabite-a", "vocab.boire", "phrase.volontiers"],
+    "grammarNotes": "'Moi c'est Léa' is the casual self-intro — no 'je m'appelle' needed among young people. 'Depuis six mois' + present tense.",
+    "slangRegisterNotes": "'T'as' = tu as; 'ouais' = yeah. Deflecting a compliment ('mais non…') is culturally expected — accepting it flatly sounds odd."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.metro-tickets",
+    "scenario": "buying metro tickets",
+    "speakers": [
+      { "id": "touriste", "name": "Anna", "role": "tourist" },
+      { "id": "agent", "name": "M. Diallo", "role": "station agent" }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "touriste", "text": "Bonjour, je voudrais des tickets de métro, s'il vous plaît." },
+      { "speakerId": "agent", "text": "Un carnet de dix ? C'est plus intéressant." },
+      { "speakerId": "touriste", "text": "Oui, un carnet. Ça coûte combien ?" },
+      { "speakerId": "agent", "text": "Dix-sept euros trente-cinq. Vous payez par carte ?" },
+      { "speakerId": "touriste", "text": "Oui. Et pour aller à Montmartre, c'est quelle ligne ?" },
+      { "speakerId": "agent", "text": "La ligne douze, direction Mairie d'Aubervilliers. Descendez à Abbesses." },
+      { "speakerId": "touriste", "text": "Merci beaucoup !" }
+    ],
+    "translation": [
+      { "speakerId": "touriste", "text": "Hello, I'd like some metro tickets, please." },
+      { "speakerId": "agent", "text": "A pack of ten? It's a better deal." },
+      { "speakerId": "touriste", "text": "Yes, a carnet. How much is it?" },
+      { "speakerId": "agent", "text": "Seventeen euros thirty-five. Paying by card?" },
+      { "speakerId": "touriste", "text": "Yes. And to get to Montmartre, which line is it?" },
+      { "speakerId": "agent", "text": "Line twelve, direction Mairie d'Aubervilliers. Get off at Abbesses." },
+      { "speakerId": "touriste", "text": "Thank you very much!" }
+    ],
+    "keyVocabulary": ["vocab.ticket", "vocab.metro", "phrase.je-voudrais", "vocab.coute", "vocab.carte"],
+    "grammarNotes": "Metro directions are named by the end-of-line station: 'direction X'. 'Descendez à…' — imperative for instructions.",
+    "slangRegisterNotes": "'C'est plus intéressant' in a price context means 'it's a better deal', not 'more interesting'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.demander-chemin",
+    "scenario": "asking for directions on the street",
+    "speakers": [
+      { "id": "passant", "name": "Chloé", "role": "passerby" },
+      { "id": "touriste", "name": "David", "role": "lost tourist" }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "touriste", "text": "Excusez-moi, madame… je cherche la gare de Lyon." },
+      { "speakerId": "passant", "text": "La gare de Lyon ? Ce n'est pas loin. Vous continuez tout droit." },
+      { "speakerId": "touriste", "text": "Tout droit, d'accord…" },
+      { "speakerId": "passant", "text": "Ensuite, au feu, vous tournez à gauche. C'est à cinq minutes à pied." },
+      { "speakerId": "touriste", "text": "Donc tout droit, puis à gauche au feu. C'est ça ?" },
+      { "speakerId": "passant", "text": "C'est ça. Vous allez voir la gare juste en face." },
+      { "speakerId": "touriste", "text": "Merci beaucoup, bonne journée !" }
+    ],
+    "translation": [
+      { "speakerId": "touriste", "text": "Excuse me, ma'am… I'm looking for the Gare de Lyon." },
+      { "speakerId": "passant", "text": "Gare de Lyon? It's not far. Keep going straight." },
+      { "speakerId": "touriste", "text": "Straight ahead, OK…" },
+      { "speakerId": "passant", "text": "Then at the light, turn left. It's five minutes on foot." },
+      { "speakerId": "touriste", "text": "So straight, then left at the light. Is that right?" },
+      { "speakerId": "passant", "text": "That's right. You'll see the station right across." },
+      { "speakerId": "touriste", "text": "Thank you very much, have a good day!" }
+    ],
+    "keyVocabulary": ["phrase.tout-droit", "phrase.a-gauche", "vocab.chercher", "vocab.gare", "phrase.cest-loin"],
+    "grammarNotes": "Repeating directions back ('Donc tout droit, puis…') is the survival move — do it every time. 'C'est ça' confirms.",
+    "slangRegisterNotes": "Strangers on the street are always vous. Open with 'excusez-moi' before the question."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.restaurant",
+    "scenario": "dinner at a restaurant",
+    "speakers": [
+      { "id": "serveuse", "name": "Camille", "role": "waitress" },
+      { "id": "client", "name": "Hugo", "role": "customer" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "serveuse", "text": "Bonsoir ! Vous avez réservé ?" },
+      { "speakerId": "client", "text": "Oui, une table pour deux au nom de Moreau." },
+      { "speakerId": "serveuse", "text": "Parfait, suivez-moi… Voici la carte. Vous voulez un apéritif ?" },
+      { "speakerId": "client", "text": "Deux kirs, s'il vous plaît. Et qu'est-ce que vous me conseillez comme plat ?" },
+      { "speakerId": "serveuse", "text": "Le magret de canard est excellent ce soir." },
+      { "speakerId": "client", "text": "Alors deux magrets. Et une bouteille de bordeaux." },
+      { "speakerId": "serveuse", "text": "Très bon choix. Et comme cuisson, le magret ?" },
+      { "speakerId": "client", "text": "À point, s'il vous plaît." }
+    ],
+    "translation": [
+      { "speakerId": "serveuse", "text": "Good evening! Do you have a reservation?" },
+      { "speakerId": "client", "text": "Yes, a table for two under Moreau." },
+      { "speakerId": "serveuse", "text": "Perfect, follow me… Here's the menu. Would you like an aperitif?" },
+      { "speakerId": "client", "text": "Two kirs, please. And what do you recommend for a main?" },
+      { "speakerId": "serveuse", "text": "The duck breast is excellent tonight." },
+      { "speakerId": "client", "text": "Two duck breasts then. And a bottle of Bordeaux." },
+      { "speakerId": "serveuse", "text": "Very good choice. And how would you like the duck cooked?" },
+      { "speakerId": "client", "text": "Medium-rare, please." }
+    ],
+    "keyVocabulary": ["vocab.reservation", "vocab.table", "vocab.carte", "phrase.quest-ce-que-vous-conseillez", "vocab.vin"],
+    "grammarNotes": "'Au nom de…' for reservations. 'Comme plat / comme cuisson' — 'comme + noun' asks 'as/for the …'.",
+    "slangRegisterNotes": "Asking the waiter's advice and taking it is good form. French 'à point' is closer to medium-rare than American medium."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.marche",
+    "scenario": "shopping at the open-air market",
+    "speakers": [
+      { "id": "marchand", "name": "M. Bernard", "role": "vendor" },
+      { "id": "cliente", "name": "Sophie", "role": "customer" }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "marchand", "text": "Allez, goûtez-moi ces fraises ! Elles sont sucrées, c'est la saison !" },
+      { "speakerId": "cliente", "text": "Mmm, elles sont bonnes. Une barquette, s'il vous plaît. Et un kilo de tomates." },
+      { "speakerId": "marchand", "text": "Des tomates pour la salade ou pour cuire ?" },
+      { "speakerId": "cliente", "text": "Pour la salade. Et vous avez du basilic ?" },
+      { "speakerId": "marchand", "text": "Bien sûr. Tenez, je vous mets une botte. Ce sera tout ?" },
+      { "speakerId": "cliente", "text": "C'est tout. Ça fait combien ?" },
+      { "speakerId": "marchand", "text": "Huit euros vingt, ma petite dame." }
+    ],
+    "translation": [
+      { "speakerId": "marchand", "text": "Come on, taste these strawberries! They're sweet, it's the season!" },
+      { "speakerId": "cliente", "text": "Mmm, they're good. One basket, please. And a kilo of tomatoes." },
+      { "speakerId": "marchand", "text": "Tomatoes for salad or for cooking?" },
+      { "speakerId": "cliente", "text": "For salad. And do you have basil?" },
+      { "speakerId": "marchand", "text": "Of course. Here, I'll throw in a bunch. Will that be all?" },
+      { "speakerId": "cliente", "text": "That's all. How much does that come to?" },
+      { "speakerId": "marchand", "text": "Eight euros twenty, dear." }
+    ],
+    "keyVocabulary": ["vocab.marche", "vocab.fruit", "vocab.legume", "phrase.cest-combien", "phrase.cest-tout"],
+    "grammarNotes": "Market quantities: un kilo de, une barquette de, une botte de — all bare 'de'. 'Goûtez-moi ça' adds a friendly ethical dative.",
+    "slangRegisterNotes": "Market vendors perform — banter and 'ma petite dame' are part of the theater. Vous still applies both ways."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.pharmacie",
+    "scenario": "at the pharmacy with a cold",
+    "speakers": [
+      { "id": "pharmacien", "name": "Mme Leroy", "role": "pharmacist" },
+      { "id": "client", "name": "James", "role": "customer" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "client", "text": "Bonjour. J'ai mal à la gorge et je tousse depuis trois jours." },
+      { "speakerId": "pharmacien", "text": "Vous avez de la fièvre ?" },
+      { "speakerId": "client", "text": "Non, je ne crois pas. Mais je suis très fatigué." },
+      { "speakerId": "pharmacien", "text": "Bon. Je vous donne des pastilles pour la gorge et un sirop. Ce sont des médicaments sans ordonnance." },
+      { "speakerId": "client", "text": "D'accord. Je les prends combien de fois par jour ?" },
+      { "speakerId": "pharmacien", "text": "Trois fois par jour, après les repas. Si ça ne va pas mieux dans une semaine, allez voir un médecin." },
+      { "speakerId": "client", "text": "Merci beaucoup. Je vous dois combien ?" },
+      { "speakerId": "pharmacien", "text": "Onze euros quarante." }
+    ],
+    "translation": [
+      { "speakerId": "client", "text": "Hello. I have a sore throat and I've been coughing for three days." },
+      { "speakerId": "pharmacien", "text": "Do you have a fever?" },
+      { "speakerId": "client", "text": "No, I don't think so. But I'm very tired." },
+      { "speakerId": "pharmacien", "text": "OK. I'll give you throat lozenges and a syrup. They're over-the-counter medicines." },
+      { "speakerId": "client", "text": "OK. How many times a day do I take them?" },
+      { "speakerId": "pharmacien", "text": "Three times a day, after meals. If it's not better in a week, go see a doctor." },
+      { "speakerId": "client", "text": "Thank you very much. How much do I owe you?" },
+      { "speakerId": "pharmacien", "text": "Eleven euros forty." }
+    ],
+    "keyVocabulary": ["vocab.gorge", "vocab.fievre", "vocab.medicament", "vocab.ordonnance", "vocab.medecin"],
+    "grammarNotes": "'J'ai mal à la gorge' — avoir mal à + body part. 'Depuis trois jours' + present. 'Je les prends' — object pronoun before verb.",
+    "slangRegisterNotes": "French pharmacists triage minor ailments — describing symptoms to them first is the normal route."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.hotel-checkin",
+    "scenario": "hotel check-in",
+    "speakers": [
+      { "id": "receptionniste", "name": "Paul", "role": "receptionist" },
+      { "id": "cliente", "name": "Mme Chen", "role": "guest" }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "cliente", "text": "Bonsoir. J'ai une réservation au nom de Chen." },
+      { "speakerId": "receptionniste", "text": "Bonsoir madame. Oui, une chambre double pour trois nuits ?" },
+      { "speakerId": "cliente", "text": "C'est ça. Le petit-déjeuner est inclus ?" },
+      { "speakerId": "receptionniste", "text": "Oui, de sept heures à dix heures, au rez-de-chaussée." },
+      { "speakerId": "cliente", "text": "Parfait. Et il y a le wifi dans la chambre ?" },
+      { "speakerId": "receptionniste", "text": "Bien sûr, le code est sur votre carte. Chambre trois cent deux, au troisième étage. L'ascenseur est à droite." },
+      { "speakerId": "cliente", "text": "Merci beaucoup. Bonne soirée !" }
+    ],
+    "translation": [
+      { "speakerId": "cliente", "text": "Good evening. I have a reservation under Chen." },
+      { "speakerId": "receptionniste", "text": "Good evening, ma'am. Yes, a double room for three nights?" },
+      { "speakerId": "cliente", "text": "That's right. Is breakfast included?" },
+      { "speakerId": "receptionniste", "text": "Yes, from seven to ten, on the ground floor." },
+      { "speakerId": "cliente", "text": "Perfect. And is there wifi in the room?" },
+      { "speakerId": "receptionniste", "text": "Of course, the code is on your key card. Room 302, on the third floor. The elevator is on the right." },
+      { "speakerId": "cliente", "text": "Thank you very much. Have a good evening!" }
+    ],
+    "keyVocabulary": ["vocab.reservation", "vocab.chambre", "vocab.petit-dejeuner", "vocab.wifi", "vocab.etage", "vocab.ascenseur"],
+    "grammarNotes": "Floors count from zero: rez-de-chaussée, premier, deuxième… Room 302 is on the troisième étage (fourth floor US).",
+    "slangRegisterNotes": "'C'est ça' is the neutral 'that's right' — works in every register."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.magasin-vetements",
+    "scenario": "trying on clothes in a shop",
+    "speakers": [
+      { "id": "vendeuse", "name": "Inès", "role": "salesperson" },
+      { "id": "cliente", "name": "Laura", "role": "customer" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "vendeuse", "text": "Bonjour ! Je peux vous aider ?" },
+      { "speakerId": "cliente", "text": "Oui, je cherche une chemise blanche. C'est pour un entretien." },
+      { "speakerId": "vendeuse", "text": "Vous faites quelle taille ?" },
+      { "speakerId": "cliente", "text": "Du trente-huit, je crois. Je peux l'essayer ?" },
+      { "speakerId": "vendeuse", "text": "Bien sûr, les cabines sont au fond. … Alors, ça va ?" },
+      { "speakerId": "cliente", "text": "C'est un peu grand. Vous l'avez en trente-six ?" },
+      { "speakerId": "vendeuse", "text": "Je regarde… Oui ! Tenez. Et elle est en soldes, moins trente pour cent." },
+      { "speakerId": "cliente", "text": "Ah, parfait ! Je la prends." }
+    ],
+    "translation": [
+      { "speakerId": "vendeuse", "text": "Hello! Can I help you?" },
+      { "speakerId": "cliente", "text": "Yes, I'm looking for a white shirt. It's for an interview." },
+      { "speakerId": "vendeuse", "text": "What size are you?" },
+      { "speakerId": "cliente", "text": "A 38, I think. Can I try it on?" },
+      { "speakerId": "vendeuse", "text": "Of course, the fitting rooms are at the back. … So, how is it?" },
+      { "speakerId": "cliente", "text": "It's a bit big. Do you have it in a 36?" },
+      { "speakerId": "vendeuse", "text": "Let me check… Yes! Here you go. And it's on sale, thirty percent off." },
+      { "speakerId": "cliente", "text": "Oh, perfect! I'll take it." }
+    ],
+    "keyVocabulary": ["vocab.chemise", "vocab.taille", "vocab.essayer", "vocab.soldes", "vocab.chercher"],
+    "grammarNotes": "'Je peux l'essayer ?' and 'Vous l'avez en 36 ?' — the object pronoun l' stands for the shirt. 'Je la prends' closes the deal.",
+    "slangRegisterNotes": "'Je peux vous aider ?' is the standard shop greeting; 'Non merci, je regarde' (just looking) is the standard deflection."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.sncf",
+    "scenario": "buying a train ticket at the station",
+    "speakers": [
+      { "id": "agent", "name": "Mme Roux", "role": "ticket agent" },
+      { "id": "voyageur", "name": "Sam", "role": "traveler" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "voyageur", "text": "Bonjour, je voudrais un billet pour Marseille, s'il vous plaît." },
+      { "speakerId": "agent", "text": "Aller simple ou aller-retour ?" },
+      { "speakerId": "voyageur", "text": "Aller-retour. Départ demain matin, retour dimanche soir." },
+      { "speakerId": "agent", "text": "Il y a un TGV à huit heures dix, arrivée à onze heures trente. Ça vous va ?" },
+      { "speakerId": "voyageur", "text": "C'est parfait. C'est quelle voie ?" },
+      { "speakerId": "agent", "text": "La voie est affichée vingt minutes avant le départ. N'oubliez pas de composter si c'est un billet papier." },
+      { "speakerId": "voyageur", "text": "D'accord, merci. Je paie par carte." }
+    ],
+    "translation": [
+      { "speakerId": "voyageur", "text": "Hello, I'd like a ticket to Marseille, please." },
+      { "speakerId": "agent", "text": "One-way or round trip?" },
+      { "speakerId": "voyageur", "text": "Round trip. Leaving tomorrow morning, back Sunday evening." },
+      { "speakerId": "agent", "text": "There's a TGV at 8:10, arriving at 11:30. Does that work for you?" },
+      { "speakerId": "voyageur", "text": "That's perfect. Which platform is it?" },
+      { "speakerId": "agent", "text": "The platform is posted twenty minutes before departure. Don't forget to validate if it's a paper ticket." },
+      { "speakerId": "voyageur", "text": "OK, thanks. I'll pay by card." }
+    ],
+    "keyVocabulary": ["vocab.billet", "vocab.train", "vocab.gare", "phrase.a-quelle-heure", "vocab.payer"],
+    "grammarNotes": "'Ça vous va ?' = does that suit you? — va + indirect pronoun. Times use the 24-hour clock throughout.",
+    "slangRegisterNotes": "'Composter' (validate your ticket in the yellow machine) is uniquely French railway vocabulary — forgetting can mean a fine."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.chez-le-medecin",
+    "scenario": "at the doctor's office",
+    "speakers": [
+      { "id": "medecin", "name": "Dr Fabre", "role": "doctor" },
+      { "id": "patiente", "name": "Nora", "role": "patient" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "medecin", "text": "Bonjour, asseyez-vous. Qu'est-ce qui vous amène ?" },
+      { "speakerId": "patiente", "text": "Bonjour docteur. J'ai mal à la tête et au ventre depuis deux jours." },
+      { "speakerId": "medecin", "text": "Vous avez de la fièvre ? Vous dormez bien ?" },
+      { "speakerId": "patiente", "text": "Un peu de fièvre hier soir. Et je dors mal, je suis stressée au travail." },
+      { "speakerId": "medecin", "text": "Je vais vous examiner… Respirez fort… Bien. Ce n'est rien de grave." },
+      { "speakerId": "patiente", "text": "Ouf, tant mieux." },
+      { "speakerId": "medecin", "text": "Je vous fais une ordonnance. Du repos, beaucoup d'eau, et revenez me voir si ça ne va pas mieux." },
+      { "speakerId": "patiente", "text": "Merci docteur. Je vous dois combien ?" }
+    ],
+    "translation": [
+      { "speakerId": "medecin", "text": "Hello, have a seat. What brings you in?" },
+      { "speakerId": "patiente", "text": "Hello doctor. My head and stomach have been hurting for two days." },
+      { "speakerId": "medecin", "text": "Do you have a fever? Are you sleeping well?" },
+      { "speakerId": "patiente", "text": "A little fever last night. And I sleep badly — I'm stressed at work." },
+      { "speakerId": "medecin", "text": "I'm going to examine you… Breathe deeply… Good. It's nothing serious." },
+      { "speakerId": "patiente", "text": "Phew, that's a relief." },
+      { "speakerId": "medecin", "text": "I'll write you a prescription. Rest, lots of water, and come back if it doesn't improve." },
+      { "speakerId": "patiente", "text": "Thank you, doctor. How much do I owe you?" }
+    ],
+    "keyVocabulary": ["vocab.tete", "vocab.ventre", "vocab.fievre", "vocab.ordonnance", "vocab.mal"],
+    "grammarNotes": "'Qu'est-ce qui vous amène ?' — the doctor's standard opener. 'Avoir mal à' + article + body part throughout.",
+    "slangRegisterNotes": "Address doctors as 'docteur'. 'Ouf' is the relief interjection — the reverse of English 'oof'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.soiree-rencontre",
+    "scenario": "making a friend at a house party",
+    "speakers": [
+      { "id": "karim", "name": "Karim", "role": "guest" },
+      { "id": "julie", "name": "Julie", "role": "guest" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "karim", "text": "Salut ! Tu connais du monde ici ?" },
+      { "speakerId": "julie", "text": "Pas trop, je suis une copine de Léa. Et toi ?" },
+      { "speakerId": "karim", "text": "Moi c'est Karim, je bosse avec Léa. Tu fais quoi dans la vie ?" },
+      { "speakerId": "julie", "text": "Je suis graphiste. Enfin, je viens de commencer, c'est mon premier boulot." },
+      { "speakerId": "karim", "text": "Ah ouais, génial ! Et ça te plaît ?" },
+      { "speakerId": "julie", "text": "Grave, l'équipe est super sympa. Tu veux un autre verre ?" },
+      { "speakerId": "karim", "text": "Carrément. On va voir ce qu'il reste en cuisine ?" },
+      { "speakerId": "julie", "text": "Allez, on y va." }
+    ],
+    "translation": [
+      { "speakerId": "karim", "text": "Hi! Do you know people here?" },
+      { "speakerId": "julie", "text": "Not really, I'm a friend of Léa's. You?" },
+      { "speakerId": "karim", "text": "I'm Karim, I work with Léa. What do you do?" },
+      { "speakerId": "julie", "text": "I'm a graphic designer. Well, I just started — it's my first job." },
+      { "speakerId": "karim", "text": "Oh nice! And do you like it?" },
+      { "speakerId": "julie", "text": "Totally — the team is really nice. Want another drink?" },
+      { "speakerId": "karim", "text": "Absolutely. Shall we see what's left in the kitchen?" },
+      { "speakerId": "julie", "text": "Come on, let's go." }
+    ],
+    "keyVocabulary": ["vocab.copain", "vocab.verre", "vocab.sympa", "phrase.on-y-va", "vocab.travailler"],
+    "grammarNotes": "'Tu fais quoi dans la vie ?' — THE party question. 'Je viens de commencer' — venir de for 'just started'. 'Ça te plaît ?' = do you like it (it pleases you).",
+    "slangRegisterNotes": "'Bosser' = to work (informal), 'boulot' = job, 'grave' = totally, 'carrément' = absolutely. Pure young-Paris register — all tu."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.week-end-recap",
+    "scenario": "Monday coffee — telling the weekend (passé composé workout)",
+    "speakers": [
+      { "id": "amelie", "name": "Amélie", "role": "colleague" },
+      { "id": "lucas", "name": "Lucas", "role": "colleague" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "amelie", "text": "Alors, ce week-end ? Tu as fait quoi ?" },
+      { "speakerId": "lucas", "text": "Samedi, on est allés au marché avec Sarah, et le soir on a vu le nouveau film de Dupieux." },
+      { "speakerId": "amelie", "text": "Il est bien ?" },
+      { "speakerId": "lucas", "text": "Complètement fou, mais on a adoré. Et toi ?" },
+      { "speakerId": "amelie", "text": "Moi, rien de spécial. J'ai dormi, j'ai lu, je me suis reposée. Dimanche, il a plu toute la journée." },
+      { "speakerId": "lucas", "text": "Ah oui, il a fait un temps horrible." },
+      { "speakerId": "amelie", "text": "Du coup j'ai fait des crêpes. J'en ai mangé six." },
+      { "speakerId": "lucas", "text": "Six ?! Respect." }
+    ],
+    "translation": [
+      { "speakerId": "amelie", "text": "So, this weekend? What did you do?" },
+      { "speakerId": "lucas", "text": "Saturday we went to the market with Sarah, and in the evening we saw the new Dupieux film." },
+      { "speakerId": "amelie", "text": "Is it good?" },
+      { "speakerId": "lucas", "text": "Completely crazy, but we loved it. And you?" },
+      { "speakerId": "amelie", "text": "Me, nothing special. I slept, I read, I rested. Sunday it rained all day." },
+      { "speakerId": "lucas", "text": "Oh yeah, the weather was horrible." },
+      { "speakerId": "amelie", "text": "So I made crêpes. I ate six of them." },
+      { "speakerId": "lucas", "text": "Six?! Respect." }
+    ],
+    "keyVocabulary": ["vocab.week-end", "vocab.marche", "vocab.film", "vocab.dormir", "vocab.lire"],
+    "grammarNotes": "A full passé composé tour: avoir verbs (a vu, a plu, ai fait), être verbs (on est allés), reflexive (je me suis reposée), and en + number (j'en ai mangé six).",
+    "slangRegisterNotes": "'Du coup' — the ubiquitous filler meaning 'so/as a result'. Some French people complain about how often everyone says it, while saying it."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.visite-appartement",
+    "scenario": "visiting an apartment for rent",
+    "speakers": [
+      { "id": "proprietaire", "name": "M. Girard", "role": "landlord" },
+      { "id": "visiteuse", "name": "Alice", "role": "prospective tenant" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "proprietaire", "text": "Entrez, je vous en prie. Alors, c'est un deux-pièces de quarante mètres carrés." },
+      { "speakerId": "visiteuse", "text": "C'est lumineux ! La chambre donne sur la rue ?" },
+      { "speakerId": "proprietaire", "text": "Non, sur la cour. C'est très calme." },
+      { "speakerId": "visiteuse", "text": "Et le loyer est de combien, charges comprises ?" },
+      { "speakerId": "proprietaire", "text": "Neuf cent cinquante euros, charges comprises. Chauffage collectif." },
+      { "speakerId": "visiteuse", "text": "Il y a un ascenseur ? C'est au cinquième, non ?" },
+      { "speakerId": "proprietaire", "text": "Oui, et l'immeuble a été refait l'année dernière. Le quartier est très vivant, le marché est juste en bas." },
+      { "speakerId": "visiteuse", "text": "Ça me plaît beaucoup. Quels documents faut-il pour le dossier ?" }
+    ],
+    "translation": [
+      { "speakerId": "proprietaire", "text": "Come in, please. So, it's a one-bedroom, forty square meters." },
+      { "speakerId": "visiteuse", "text": "It's bright! Does the bedroom face the street?" },
+      { "speakerId": "proprietaire", "text": "No, the courtyard. It's very quiet." },
+      { "speakerId": "visiteuse", "text": "And how much is the rent, utilities included?" },
+      { "speakerId": "proprietaire", "text": "Nine hundred fifty euros, utilities included. Building heating." },
+      { "speakerId": "visiteuse", "text": "Is there an elevator? It's on the fifth floor, right?" },
+      { "speakerId": "proprietaire", "text": "Yes, and the building was redone last year. The neighborhood is lively — the market is right downstairs." },
+      { "speakerId": "visiteuse", "text": "I really like it. What documents do you need for the application?" }
+    ],
+    "keyVocabulary": ["vocab.appartement", "vocab.loyer", "vocab.chambre", "vocab.ascenseur", "vocab.quartier", "vocab.immeuble"],
+    "grammarNotes": "'Un deux-pièces' counts rooms, not bedrooms. 'Donner sur' = to face/look onto. 'Charges comprises' = utilities included.",
+    "slangRegisterNotes": "'Le dossier' — the infamous French rental application file — is a cultural institution; expect to hear the word constantly when apartment hunting."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.tabac-poste",
+    "scenario": "at the tabac: stamps, and a package at the post office",
+    "speakers": [
+      { "id": "buraliste", "name": "M. Nasser", "role": "tabac owner" },
+      { "id": "cliente", "name": "Kate", "role": "customer" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "cliente", "text": "Bonjour ! Vous vendez des timbres ?" },
+      { "speakerId": "buraliste", "text": "Oui, bien sûr. Pour la France ou pour l'étranger ?" },
+      { "speakerId": "cliente", "text": "Pour les États-Unis. Trois timbres, s'il vous plaît. Et une carte de métro aussi." },
+      { "speakerId": "buraliste", "text": "Voilà. Autre chose ?" },
+      { "speakerId": "cliente", "text": "Oui, une question : pour envoyer un colis, c'est ici ?" },
+      { "speakerId": "buraliste", "text": "Non, pour les colis, il faut aller à La Poste. C'est à deux rues d'ici, à côté de la banque." },
+      { "speakerId": "cliente", "text": "Ah d'accord. Merci beaucoup !" },
+      { "speakerId": "buraliste", "text": "Je vous en prie. Bonne journée !" }
+    ],
+    "translation": [
+      { "speakerId": "cliente", "text": "Hello! Do you sell stamps?" },
+      { "speakerId": "buraliste", "text": "Yes, of course. For France or abroad?" },
+      { "speakerId": "cliente", "text": "For the United States. Three stamps, please. And a metro card too." },
+      { "speakerId": "buraliste", "text": "Here you go. Anything else?" },
+      { "speakerId": "cliente", "text": "Yes, a question: to send a package, is it here?" },
+      { "speakerId": "buraliste", "text": "No, for packages you have to go to the post office. It's two streets away, next to the bank." },
+      { "speakerId": "cliente", "text": "Ah, OK. Thank you very much!" },
+      { "speakerId": "buraliste", "text": "You're welcome. Have a good day!" }
+    ],
+    "keyVocabulary": ["vocab.envoyer", "vocab.etranger", "vocab.rue", "phrase.je-vous-en-prie"],
+    "grammarNotes": "'Il faut + infinitive' = you have to / one must — impersonal necessity, extremely common.",
+    "slangRegisterNotes": "The tabac is the everything-shop of France: stamps, transit cards, lottery, newspapers. Knowing what it sells is cultural literacy."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.telephone-plans",
+    "scenario": "phone call: making plans for tonight",
+    "speakers": [
+      { "id": "max", "name": "Max", "role": "friend" },
+      { "id": "zoe", "name": "Zoé", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "zoe", "text": "Allô, Max ? C'est Zoé !" },
+      { "speakerId": "max", "text": "Ah, salut ! Ça va ?" },
+      { "speakerId": "zoe", "text": "Ouais, tranquille. Dis, tu fais quoi ce soir ? Ça te dit un resto ?" },
+      { "speakerId": "max", "text": "Carrément ! Le petit italien près de chez toi ?" },
+      { "speakerId": "zoe", "text": "Parfait. Vingt heures, ça te va ?" },
+      { "speakerId": "max", "text": "Plutôt vingt heures trente, je finis tard. Je te rejoins là-bas." },
+      { "speakerId": "zoe", "text": "Ça marche. Je réserve une table. À toute !" },
+      { "speakerId": "max", "text": "À toute à l'heure !" }
+    ],
+    "translation": [
+      { "speakerId": "zoe", "text": "Hello, Max? It's Zoé!" },
+      { "speakerId": "max", "text": "Oh, hi! How's it going?" },
+      { "speakerId": "zoe", "text": "Yeah, all good. Say, what are you doing tonight? Fancy a restaurant?" },
+      { "speakerId": "max", "text": "Absolutely! The little Italian place near you?" },
+      { "speakerId": "zoe", "text": "Perfect. Eight o'clock work for you?" },
+      { "speakerId": "max", "text": "More like eight-thirty, I finish late. I'll meet you there." },
+      { "speakerId": "zoe", "text": "Deal. I'll book a table. See ya!" },
+      { "speakerId": "max", "text": "See you later!" }
+    ],
+    "keyVocabulary": ["phrase.ca-marche", "phrase.a-tout-a-lheure", "vocab.finir", "vocab.soir"],
+    "grammarNotes": "'Ça te dit … ?' (does it say to you?) = fancy it? 'Ça te va ?' = does that work for you? Both use the indirect pronoun te.",
+    "slangRegisterNotes": "'Allô' exists only on the phone. 'Tranquille' as an answer = 'all good'. 'Resto' = restaurant. 'À toute !' clips 'à tout à l'heure'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.meteo-smalltalk",
+    "scenario": "small talk about the weather with a neighbor",
+    "speakers": [
+      { "id": "voisine", "name": "Mme Dubois", "role": "neighbor" },
+      { "id": "voisin", "name": "Antoine", "role": "neighbor" }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "voisine", "text": "Bonjour Antoine ! Quel beau temps, enfin !" },
+      { "speakerId": "voisin", "text": "Bonjour Mme Dubois ! Oui, il fait super beau. Il était temps, après toute cette pluie…" },
+      { "speakerId": "voisine", "text": "Ah, la semaine dernière, quelle horreur. Il a plu tous les jours." },
+      { "speakerId": "voisin", "text": "Et ce week-end, ils annoncent vingt-cinq degrés." },
+      { "speakerId": "voisine", "text": "Parfait pour le marché de dimanche ! Bon, j'y vais. Bonne journée !" },
+      { "speakerId": "voisin", "text": "Bonne journée, à bientôt !" }
+    ],
+    "translation": [
+      { "speakerId": "voisine", "text": "Good morning Antoine! What beautiful weather, finally!" },
+      { "speakerId": "voisin", "text": "Good morning Mme Dubois! Yes, it's gorgeous out. About time, after all that rain…" },
+      { "speakerId": "voisine", "text": "Oh, last week — what a horror. It rained every day." },
+      { "speakerId": "voisin", "text": "And this weekend they're forecasting twenty-five degrees." },
+      { "speakerId": "voisine", "text": "Perfect for the Sunday market! Well, I'm off. Have a good day!" },
+      { "speakerId": "voisin", "text": "Good day to you, see you soon!" }
+    ],
+    "keyVocabulary": ["vocab.temps", "vocab.pluie", "vocab.soleil", "phrase.bonne-journee", "phrase.a-bientot"],
+    "grammarNotes": "Weather runs on 'il fait': il fait beau/chaud/froid/25 degrés. Past rain: 'il a plu' (pleuvoir → plu).",
+    "slangRegisterNotes": "Neighbors of different generations often stay at vous + first name or vous + Mme — a middle register English lacks."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.fromagerie",
+    "scenario": "at the cheese shop",
+    "speakers": [
+      { "id": "fromager", "name": "M. Laurent", "role": "cheesemonger" },
+      { "id": "client", "name": "Ben", "role": "customer" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "fromager", "text": "Bonjour monsieur ! Qu'est-ce qu'il vous faut aujourd'hui ?" },
+      { "speakerId": "client", "text": "Bonjour ! Je fais un plateau pour ce soir. Qu'est-ce que vous me conseillez ?" },
+      { "speakerId": "fromager", "text": "Pour un bon plateau : un chèvre, une pâte molle, une pâte dure. Vous aimez le fromage fort ?" },
+      { "speakerId": "client", "text": "J'adore ! Mais pas trop fort pour mes invités." },
+      { "speakerId": "fromager", "text": "Alors un comté dix-huit mois, un camembert bien fait, et un crottin doux. Goûtez le comté." },
+      { "speakerId": "client", "text": "Mmm… excellent. Je prends les trois." },
+      { "speakerId": "fromager", "text": "Sortez-les du frigo une heure avant de servir, surtout." },
+      { "speakerId": "client", "text": "Compris. Merci pour le conseil !" }
+    ],
+    "translation": [
+      { "speakerId": "fromager", "text": "Good morning, sir! What do you need today?" },
+      { "speakerId": "client", "text": "Good morning! I'm making a platter for tonight. What do you recommend?" },
+      { "speakerId": "fromager", "text": "For a good platter: a goat cheese, a soft cheese, a hard cheese. Do you like strong cheese?" },
+      { "speakerId": "client", "text": "I love it! But not too strong for my guests." },
+      { "speakerId": "fromager", "text": "Then an 18-month comté, a ripe camembert, and a mild crottin. Taste the comté." },
+      { "speakerId": "client", "text": "Mmm… excellent. I'll take all three." },
+      { "speakerId": "fromager", "text": "Above all, take them out of the fridge an hour before serving." },
+      { "speakerId": "client", "text": "Understood. Thanks for the advice!" }
+    ],
+    "keyVocabulary": ["vocab.fromage", "phrase.quest-ce-que-vous-conseillez", "vocab.prendre", "vocab.aimer"],
+    "grammarNotes": "'Qu'est-ce qu'il vous faut ?' — falloir + indirect pronoun for 'what do you need'. 'Je prends les trois' — les as pronoun.",
+    "slangRegisterNotes": "'Bien fait' for a camembert means perfectly ripe — the cheesemonger will ask when you plan to eat it and choose accordingly. Let them."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.retard-train",
+    "scenario": "complaining politely about a delayed train",
+    "speakers": [
+      { "id": "voyageuse", "name": "Fatou", "role": "passenger" },
+      { "id": "controleur", "name": "M. Blanc", "role": "conductor" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "voyageuse", "text": "Excusez-moi, monsieur. Le train a combien de retard, exactement ?" },
+      { "speakerId": "controleur", "text": "Environ quarante minutes, madame. Un problème technique à Dijon." },
+      { "speakerId": "voyageuse", "text": "Quarante minutes ! J'ai une correspondance à Lyon, je vais la rater…" },
+      { "speakerId": "controleur", "text": "À Lyon, allez directement au guichet. Avec plus de trente minutes de retard, vous pouvez demander un remboursement." },
+      { "speakerId": "voyageuse", "text": "Ah bon ? Comment ça marche ?" },
+      { "speakerId": "controleur", "text": "Gardez votre billet et remplissez le formulaire en ligne. C'est assez simple." },
+      { "speakerId": "voyageuse", "text": "Très bien, merci pour l'information." },
+      { "speakerId": "controleur", "text": "Je vous en prie. Et désolé pour le désagrément." }
+    ],
+    "translation": [
+      { "speakerId": "voyageuse", "text": "Excuse me, sir. How late is the train, exactly?" },
+      { "speakerId": "controleur", "text": "About forty minutes, ma'am. A technical problem at Dijon." },
+      { "speakerId": "voyageuse", "text": "Forty minutes! I have a connection in Lyon, I'm going to miss it…" },
+      { "speakerId": "controleur", "text": "In Lyon, go straight to the ticket counter. With more than thirty minutes' delay, you can ask for a refund." },
+      { "speakerId": "voyageuse", "text": "Really? How does that work?" },
+      { "speakerId": "controleur", "text": "Keep your ticket and fill in the online form. It's fairly simple." },
+      { "speakerId": "voyageuse", "text": "Very well, thanks for the information." },
+      { "speakerId": "controleur", "text": "You're welcome. And sorry for the inconvenience." }
+    ],
+    "keyVocabulary": ["vocab.retard", "vocab.correspondance", "vocab.rater", "vocab.billet", "vocab.train"],
+    "grammarNotes": "'Je vais la rater' — futur proche with the object pronoun (la = correspondance) before the infinitive. 'Comment ça marche ?' = how does it work?",
+    "slangRegisterNotes": "Complaining is a French art form, but to officials it stays formal: firm content, vous forms, 'merci' at the end."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.parler-travail",
+    "scenario": "colleagues chatting about work over lunch",
+    "speakers": [
+      { "id": "nadia", "name": "Nadia", "role": "colleague" },
+      { "id": "pierre", "name": "Pierre", "role": "colleague" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "pierre", "text": "T'as vu le mail du patron ? Encore une réunion demain matin…" },
+      { "speakerId": "nadia", "text": "Ouais, à neuf heures. J'espère qu'elle va être plus courte que la dernière." },
+      { "speakerId": "pierre", "text": "La dernière a duré deux heures. Deux heures pour décider de la couleur du logo !" },
+      { "speakerId": "nadia", "text": "Et au final, ils ont choisi le bleu. Comme au début." },
+      { "speakerId": "pierre", "text": "Voilà. Bon, sinon, ton nouveau projet, ça avance ?" },
+      { "speakerId": "nadia", "text": "Doucement. Le client change d'avis toutes les semaines. Mais l'équipe est top, donc ça va." },
+      { "speakerId": "pierre", "text": "C'est le principal. Allez, on reprend ? Il est presque quatorze heures." },
+      { "speakerId": "nadia", "text": "On y va. Je prends un café d'abord." }
+    ],
+    "translation": [
+      { "speakerId": "pierre", "text": "Did you see the boss's email? Another meeting tomorrow morning…" },
+      { "speakerId": "nadia", "text": "Yeah, at nine. I hope it'll be shorter than the last one." },
+      { "speakerId": "pierre", "text": "The last one lasted two hours. Two hours to decide the logo color!" },
+      { "speakerId": "nadia", "text": "And in the end they chose blue. Like at the start." },
+      { "speakerId": "pierre", "text": "Exactly. Anyway — your new project, is it moving along?" },
+      { "speakerId": "nadia", "text": "Slowly. The client changes their mind every week. But the team is great, so it's fine." },
+      { "speakerId": "pierre", "text": "That's the main thing. OK, back to it? It's almost two." },
+      { "speakerId": "nadia", "text": "Let's go. I'm grabbing a coffee first." }
+    ],
+    "keyVocabulary": ["vocab.reunion", "vocab.patron", "vocab.mail", "vocab.collegue", "vocab.cafe"],
+    "grammarNotes": "'Ça avance ?' = is it progressing? 'Elle va être plus courte que…' — futur proche + comparative in one.",
+    "slangRegisterNotes": "Colleagues of the same level tutoie each other in most workplaces now. 'Top' = great; 'voilà' = exactly/there you have it."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.projets-vacances",
+    "scenario": "friends planning summer vacation (futur proche workout)",
+    "speakers": [
+      { "id": "elisa", "name": "Elisa", "role": "friend" },
+      { "id": "theo", "name": "Théo", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "elisa", "text": "Alors, cet été, vous allez où ?" },
+      { "speakerId": "theo", "text": "On va faire le sud : d'abord Marseille, ensuite trois jours à Cassis." },
+      { "speakerId": "elisa", "text": "Trop bien ! Vous allez prendre le train ?" },
+      { "speakerId": "theo", "text": "Ouais, le TGV. On va louer des vélos sur place. Et toi ?" },
+      { "speakerId": "elisa", "text": "Moi, je vais rester chez mes parents en Bretagne. Pas de programme : la plage, les crêpes, dormir." },
+      { "speakerId": "theo", "text": "Franchement, c'est le meilleur programme." },
+      { "speakerId": "elisa", "text": "Et en août, peut-être qu'on va se faire un week-end tous ensemble ?" },
+      { "speakerId": "theo", "text": "Grave, on organise ça à la rentrée… non, avant la rentrée !" }
+    ],
+    "translation": [
+      { "speakerId": "elisa", "text": "So, this summer, where are you going?" },
+      { "speakerId": "theo", "text": "We're doing the south: Marseille first, then three days in Cassis." },
+      { "speakerId": "elisa", "text": "So great! Are you taking the train?" },
+      { "speakerId": "theo", "text": "Yeah, the TGV. We're renting bikes there. And you?" },
+      { "speakerId": "elisa", "text": "Me, I'm staying at my parents' in Brittany. No plans: the beach, crêpes, sleep." },
+      { "speakerId": "theo", "text": "Honestly, that's the best plan." },
+      { "speakerId": "elisa", "text": "And in August, maybe we all do a weekend together?" },
+      { "speakerId": "theo", "text": "Totally — let's organize it at the rentrée… no, before the rentrée!" }
+    ],
+    "keyVocabulary": ["vocab.vacances", "vocab.plage", "vocab.train", "vocab.louer", "vocab.velo", "vocab.rester"],
+    "grammarNotes": "Futur proche end to end: on va faire, vous allez prendre, je vais rester, on va se faire. 'Chez mes parents' — chez + person.",
+    "slangRegisterNotes": "'La rentrée' — the September return to school/work — is a concept-word every French speaker plans life around. 'Se faire un week-end' = to treat ourselves to a weekend."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.caviste",
+    "scenario": "picking a wine at the wine shop",
+    "speakers": [
+      { "id": "caviste", "name": "Mme Aubert", "role": "wine merchant" },
+      { "id": "client", "name": "Dan", "role": "customer" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "client", "text": "Bonjour ! Je cherche un vin pour un dîner. On mange du poulet." },
+      { "speakerId": "caviste", "text": "Avec du poulet, un blanc sec ou un rouge léger. Vous avez un budget ?" },
+      { "speakerId": "client", "text": "Une quinzaine d'euros, maximum." },
+      { "speakerId": "caviste", "text": "Alors ce chinon : un rouge léger, très facile à boire. Ou ce mâcon en blanc." },
+      { "speakerId": "client", "text": "Mes invités préfèrent le rouge, je crois." },
+      { "speakerId": "caviste", "text": "Le chinon, alors. Servez-le un peu frais, quinze degrés." },
+      { "speakerId": "client", "text": "Parfait, je le prends. Et une petite question… on ouvre la bouteille avant ?" },
+      { "speakerId": "caviste", "text": "Pas besoin pour celui-ci. Ouvrez-le à table, tout simplement." }
+    ],
+    "translation": [
+      { "speakerId": "client", "text": "Hello! I'm looking for a wine for a dinner. We're having chicken." },
+      { "speakerId": "caviste", "text": "With chicken, a dry white or a light red. Do you have a budget?" },
+      { "speakerId": "client", "text": "Around fifteen euros, max." },
+      { "speakerId": "caviste", "text": "Then this Chinon: a light red, very easy to drink. Or this Mâcon in white." },
+      { "speakerId": "client", "text": "My guests prefer red, I think." },
+      { "speakerId": "caviste", "text": "The Chinon, then. Serve it slightly cool, fifteen degrees." },
+      { "speakerId": "client", "text": "Perfect, I'll take it. And a little question… do we open the bottle beforehand?" },
+      { "speakerId": "caviste", "text": "No need for this one. Just open it at the table." }
+    ],
+    "keyVocabulary": ["vocab.vin", "vocab.poulet", "vocab.cher", "vocab.ouvrir", "vocab.prendre"],
+    "grammarNotes": "'Une quinzaine de' = about fifteen — the -aine suffix approximates numbers (une dizaine, une vingtaine).",
+    "slangRegisterNotes": "Telling the caviste your menu and budget is expected, not gauche — it's how the game is played."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.sport-hobbies",
+    "scenario": "talking about sports and hobbies",
+    "speakers": [
+      { "id": "romain", "name": "Romain", "role": "friend" },
+      { "id": "aicha", "name": "Aïcha", "role": "friend" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "romain", "text": "Tu fais du sport, toi ?" },
+      { "speakerId": "aicha", "text": "Ouais, je cours deux fois par semaine, et je fais du yoga le dimanche. Et toi ?" },
+      { "speakerId": "romain", "text": "Moi c'est le foot. On joue tous les mercredis soir avec des potes." },
+      { "speakerId": "aicha", "text": "Vous jouez où ?" },
+      { "speakerId": "romain", "text": "Sur un petit terrain près du canal. Tu devrais venir courir là-bas, c'est super agréable." },
+      { "speakerId": "aicha", "text": "Ah ouais, bonne idée. Et sinon, à part le foot ?" },
+      { "speakerId": "romain", "text": "Je fais de la guitare. Enfin… j'essaie. J'ai commencé il y a deux mois." },
+      { "speakerId": "aicha", "text": "C'est déjà bien ! Tu me joueras un truc un jour." }
+    ],
+    "translation": [
+      { "speakerId": "romain", "text": "Do you do any sports?" },
+      { "speakerId": "aicha", "text": "Yeah, I run twice a week, and I do yoga on Sundays. You?" },
+      { "speakerId": "romain", "text": "For me it's soccer. We play every Wednesday night with friends." },
+      { "speakerId": "aicha", "text": "Where do you play?" },
+      { "speakerId": "romain", "text": "On a little pitch near the canal. You should come run there, it's really nice." },
+      { "speakerId": "aicha", "text": "Oh yeah, good idea. And besides soccer?" },
+      { "speakerId": "romain", "text": "I play guitar. Well… I try. I started two months ago." },
+      { "speakerId": "aicha", "text": "That's already something! You'll play me something one day." }
+    ],
+    "keyVocabulary": ["vocab.sport", "vocab.foot", "vocab.jouer", "vocab.musique", "phrase.il-y-a"],
+    "grammarNotes": "faire de + activity (je fais du yoga, de la guitare), jouer à + sport, jouer de + instrument. 'Il y a deux mois' = two months ago.",
+    "slangRegisterNotes": "'Des potes' = buddies. 'Un truc' = a thing/something — the universal informal placeholder noun."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.famille",
+    "scenario": "talking about family over coffee",
+    "speakers": [
+      { "id": "marion", "name": "Marion", "role": "friend" },
+      { "id": "carlos", "name": "Carlos", "role": "friend" }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "fr-FR-standard",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "marion", "text": "Tu as des frères et sœurs, Carlos ?" },
+      { "speakerId": "carlos", "text": "Oui, j'ai un frère et deux sœurs. Mon frère habite à Madrid, avec mes parents." },
+      { "speakerId": "marion", "text": "Et tes sœurs ?" },
+      { "speakerId": "carlos", "text": "Ma grande sœur est médecin à Barcelone. La petite est encore étudiante. Et toi ?" },
+      { "speakerId": "marion", "text": "Je suis fille unique. Mais j'ai plein de cousins ! On se voit à Noël chez ma grand-mère." },
+      { "speakerId": "carlos", "text": "C'est bien, ça. La famille me manque, parfois." },
+      { "speakerId": "marion", "text": "Je comprends. Ils viennent te voir bientôt ?" },
+      { "speakerId": "carlos", "text": "Oui ! Mes parents arrivent le mois prochain. Je vais leur montrer Paris." }
+    ],
+    "translation": [
+      { "speakerId": "marion", "text": "Do you have brothers and sisters, Carlos?" },
+      { "speakerId": "carlos", "text": "Yes, I have a brother and two sisters. My brother lives in Madrid, with my parents." },
+      { "speakerId": "marion", "text": "And your sisters?" },
+      { "speakerId": "carlos", "text": "My big sister is a doctor in Barcelona. The younger one is still a student. And you?" },
+      { "speakerId": "marion", "text": "I'm an only child. But I have lots of cousins! We see each other at Christmas at my grandmother's." },
+      { "speakerId": "carlos", "text": "That's nice. I miss my family sometimes." },
+      { "speakerId": "marion", "text": "I understand. Are they coming to see you soon?" },
+      { "speakerId": "carlos", "text": "Yes! My parents arrive next month. I'm going to show them Paris." }
+    ],
+    "keyVocabulary": ["vocab.frere", "vocab.soeur", "vocab.famille", "vocab.medecin", "vocab.etudiant"],
+    "grammarNotes": "Possessives everywhere: mon frère, ma grande sœur, mes parents. 'La famille me manque' — the missed thing is the subject.",
+    "slangRegisterNotes": "'Plein de' = lots of (informal 'beaucoup de'). 'Fille/fils unique' = only child."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.boucherie-poulet",
+    "scenario": "Sunday roast chicken at the butcher",
+    "speakers": [
+      { "id": "boucher", "name": "M. Riva", "role": "butcher" },
+      { "id": "cliente", "name": "Hélène", "role": "customer" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "formal",
+    "transcript": [
+      { "speakerId": "boucher", "text": "Bonjour madame Hélène ! Comme d'habitude ?" },
+      { "speakerId": "cliente", "text": "Bonjour ! Oui, un poulet rôti et des pommes de terre." },
+      { "speakerId": "boucher", "text": "Il est encore bien chaud, je vous le mets dans un sac double. Autre chose ?" },
+      { "speakerId": "cliente", "text": "Quatre tranches de jambon, s'il vous plaît. Pas trop épaisses." },
+      { "speakerId": "boucher", "text": "Comme ça, ça vous va ?" },
+      { "speakerId": "cliente", "text": "Parfait. Ça fait combien en tout ?" },
+      { "speakerId": "boucher", "text": "Quinze euros quatre-vingts. Et bon appétit à toute la famille !" }
+    ],
+    "translation": [
+      { "speakerId": "boucher", "text": "Good morning, Madame Hélène! The usual?" },
+      { "speakerId": "cliente", "text": "Good morning! Yes, a roast chicken and potatoes." },
+      { "speakerId": "boucher", "text": "It's still nice and hot, I'll put it in a double bag for you. Anything else?" },
+      { "speakerId": "cliente", "text": "Four slices of ham, please. Not too thick." },
+      { "speakerId": "boucher", "text": "Like this, is that OK for you?" },
+      { "speakerId": "cliente", "text": "Perfect. How much all together?" },
+      { "speakerId": "boucher", "text": "Fifteen euros eighty. And bon appétit to the whole family!" }
+    ],
+    "keyVocabulary": ["vocab.poulet", "vocab.chaud", "vocab.sac", "phrase.cest-combien", "phrase.bon-appetit"],
+    "grammarNotes": "'Je vous le mets…' stacks two pronouns: vous (for you) + le (it). Order: indirect before direct with third-person le/la/les.",
+    "slangRegisterNotes": "The Sunday poulet rôti queue is a genuine institution. Regulars get 'Comme d'habitude ?' — the shopkeeper relationship is part of French life."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.bises-etiquette",
+    "scenario": "the cheek-kiss question, explained at a party",
+    "speakers": [
+      { "id": "emily", "name": "Emily", "role": "newcomer" },
+      { "id": "vincent", "name": "Vincent", "role": "French friend" }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "fr-FR-standard",
+    "formality": "informal",
+    "transcript": [
+      { "speakerId": "emily", "text": "Vincent, aide-moi… la bise, ça marche comment ? Je ne sais jamais quoi faire !" },
+      { "speakerId": "vincent", "text": "Ha ! Alors : entre amis, on se fait la bise. Deux, en général — une par joue." },
+      { "speakerId": "emily", "text": "On commence par quelle joue ?" },
+      { "speakerId": "vincent", "text": "Ah, ça dépend des régions ! À Paris, plutôt la droite. Le mieux, c'est de suivre l'autre." },
+      { "speakerId": "emily", "text": "Et au travail ?" },
+      { "speakerId": "vincent", "text": "Au bureau, une poignée de main, sauf avec les collègues proches. Et un inconnu dans une soirée comme ici, la bise, c'est normal." },
+      { "speakerId": "emily", "text": "Donc là, je fais la bise à tout le monde ?" },
+      { "speakerId": "vincent", "text": "Exactement. Allez, viens, je te présente." }
+    ],
+    "translation": [
+      { "speakerId": "emily", "text": "Vincent, help me… how does the bise work? I never know what to do!" },
+      { "speakerId": "vincent", "text": "Ha! So: between friends, you do the bise. Two, usually — one per cheek." },
+      { "speakerId": "emily", "text": "Which cheek do you start with?" },
+      { "speakerId": "vincent", "text": "Ah, that depends on the region! In Paris, usually the right. Best is to follow the other person." },
+      { "speakerId": "emily", "text": "And at work?" },
+      { "speakerId": "vincent", "text": "At the office, a handshake, except with close colleagues. And a stranger at a party like this — the bise is normal." },
+      { "speakerId": "emily", "text": "So here, I do the bise with everyone?" },
+      { "speakerId": "vincent", "text": "Exactly. Come on, I'll introduce you." }
+    ],
+    "keyVocabulary": ["vocab.main", "vocab.collegue", "vocab.soiree", "phrase.ca-depend"],
+    "grammarNotes": "'Ça marche comment ?' = how does it work? 'Le mieux, c'est de + infinitive' — the best (thing) is to…",
+    "slangRegisterNotes": "'La bise' is THE social protocol question for newcomers; asking about it openly, as here, is completely normal and a good icebreaker."
+  }
+]
