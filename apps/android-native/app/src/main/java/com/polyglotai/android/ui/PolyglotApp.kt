@@ -93,6 +93,7 @@ private sealed interface Screen {
     data class Pronunciation(val packId: String, val packName: String) : Screen
     data class Interpreter(val packId: String, val packName: String) : Screen
     data class Drill(val packId: String, val packName: String) : Screen
+    data class Mastery(val packId: String, val packName: String) : Screen
 }
 
 @Composable
@@ -132,6 +133,7 @@ fun PolyglotApp(
             is Screen.Pronunciation -> Screen.Dashboard(s.packId, s.packName)
             is Screen.Interpreter -> Screen.Dashboard(s.packId, s.packName)
             is Screen.Drill -> Screen.Dashboard(s.packId, s.packName)
+            is Screen.Mastery -> Screen.Dashboard(s.packId, s.packName)
         }
     }
 
@@ -163,6 +165,7 @@ fun PolyglotApp(
             onPronunciation = { screen = Screen.Pronunciation(s.packId, s.packName) },
             onInterpreter = { screen = Screen.Interpreter(s.packId, s.packName) },
             onDrill = { screen = Screen.Drill(s.packId, s.packName) },
+            onMastery = { screen = Screen.Mastery(s.packId, s.packName) },
             onSettings = { screen = Screen.Settings(returnTo = s) },
             onBack = {
                 onPackChange(Pack.DEFAULT)
@@ -195,6 +198,10 @@ fun PolyglotApp(
         )
         is Screen.Drill -> DrillScreen(
             container, modifier, s.packId, s.packName,
+            onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
+        )
+        is Screen.Mastery -> com.polyglotai.android.mastery.ui.MasteryScreen(
+            container.mastery, modifier,
             onBack = { screen = Screen.Dashboard(s.packId, s.packName) },
         )
       }
@@ -282,6 +289,7 @@ private fun DashboardScreen(
     onPronunciation: () -> Unit,
     onInterpreter: () -> Unit,
     onDrill: () -> Unit,
+    onMastery: () -> Unit,
     onSettings: () -> Unit,
     onBack: () -> Unit,
 ) {
@@ -442,7 +450,8 @@ private fun DashboardScreen(
                 TagCard("AI Tutor", "Get a full correction", "Write a sentence, get corrected/formal/casual/slang versions.", 0, onClick = onTutor)
                 TagCard("Conversation", "Roleplay a scenario", "Café, job interview, first date — pick a scenario and go.", 1, onClick = onConversation)
                 TagCard("Live Interpreter", "Interpret on the spot", "Two-way translation, either direction, with a register note.", 2, onClick = onInterpreter)
-                TagCard("Quick Drill", "Fast multiple choice", "Vocabulary rounds with distractors — a faster loop than review.", 0, onClick = onDrill)
+                TagCard("Sentence Mastery", "Build & speak, one take", "Word by word into a full sentence, strict restart on a miss.", 0, onClick = onMastery)
+                TagCard("Quick Drill", "Fast multiple choice", "Vocabulary rounds with distractors — a faster loop than review.", 1, onClick = onDrill)
                 TagCard("Pronunciation", "Record & score", "Say it back, get scored against the target.", 1, onClick = onPronunciation)
                 TagCard("Settings", "Daily goal & appearance", "Review pace, theme, and account.", 2, onClick = onSettings)
             }

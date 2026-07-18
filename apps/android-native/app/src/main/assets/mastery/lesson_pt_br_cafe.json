@@ -1,0 +1,49 @@
+{
+  "id": "pt-br-cafe-01",
+  "title": "No café",
+  "language": "pt",
+  "locale": "pt-BR",
+  "level": "A1",
+  "defaultRestartMode": "C",
+  "sentences": [
+    {
+      "id": "s1",
+      "targetText": "Eu quero um café, por favor.",
+      "translation": "I want a coffee, please.",
+      "grammarTags": ["subject-verb-object"],
+      "vocabularyTags": ["cafe", "polite"],
+      "segmentStarts": [0, 4],
+      "units": [
+        { "id": "s1u1", "position": 0, "displayText": "Eu", "translation": "I", "comprehension": { "prompt": "\"Eu\" means…", "options": ["I", "you", "he"], "correctIndex": 0 } },
+        { "id": "s1u2", "position": 1, "displayText": "quero", "translation": "want", "comprehension": { "prompt": "\"quero\" means…", "options": ["have", "want", "go"], "correctIndex": 1 } },
+        { "id": "s1u3", "position": 2, "displayText": "um", "translation": "a (masc.)" },
+        { "id": "s1u4", "position": 3, "displayText": "café", "translation": "coffee" },
+        { "id": "s1u5", "position": 4, "displayText": "por favor", "translation": "please", "unitType": "FIXED_PHRASE" }
+      ]
+    },
+    {
+      "id": "s2",
+      "targetText": "Você tem água?",
+      "translation": "Do you have water?",
+      "grammarTags": ["question"],
+      "segmentStarts": [0],
+      "units": [
+        { "id": "s2u1", "position": 0, "displayText": "Você", "translation": "you", "comprehension": { "prompt": "\"Você\" means…", "options": ["I", "you", "we"], "correctIndex": 1 } },
+        { "id": "s2u2", "position": 1, "displayText": "tem", "translation": "have (you)" },
+        { "id": "s2u3", "position": 2, "displayText": "água", "translation": "water" }
+      ]
+    },
+    {
+      "id": "s3",
+      "targetText": "A conta, por favor.",
+      "translation": "The check, please.",
+      "grammarTags": ["noun-phrase"],
+      "segmentStarts": [0, 2],
+      "units": [
+        { "id": "s3u1", "position": 0, "displayText": "A", "translation": "the (fem.)" },
+        { "id": "s3u2", "position": 1, "displayText": "conta", "translation": "check / bill" },
+        { "id": "s3u3", "position": 2, "displayText": "por favor", "translation": "please", "unitType": "FIXED_PHRASE" }
+      ]
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import com.polyglotai.android.data.db.ReviewDatabase
 import com.polyglotai.android.domain.LearningRepository
 import com.polyglotai.android.domain.account.AccountRepository
 import com.polyglotai.android.domain.ai.AiRepository
+import com.polyglotai.android.mastery.MasteryContainer
 
 /** Minimal manual dependency wiring — one instance held by MainActivity. */
 class AppContainer(context: Context) {
@@ -29,4 +30,7 @@ class AppContainer(context: Context) {
     val learning = LearningRepository(packs, db.reviewDao())
     val ai = AiRepository(ProxyClient(), DeviceTokenStore(app))
     val account = AccountRepository(SupabaseAuth(), AccountStore(app), SyncClient(), db.reviewDao())
+
+    /** Progressive Sentence Mastery — its own engine/module, sharing the app shell (spec §1). */
+    val mastery = MasteryContainer(app)
 }
