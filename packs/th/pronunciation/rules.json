@@ -6,11 +6,26 @@
     "ipa": "mid ˧ · low ˨˩ · falling ˥˩ · high ˦˥ · rising ˩˩˦",
     "description": "Thai is a tonal language: the SAME consonants and vowels carry a different meaning depending on the pitch melody you sing them on. Think of it the way a musician does — five fixed 'notes' (really contours) over a five-line staff, low pitch at the bottom (1) to high at the top (5). One syllable, kaa, becomes five different words. Master these first; every word you learn is one of these five melodies. (Which tone a written syllable takes is set by the consonant class + tone mark + vowel length — but as a learner you can just hear and copy the melody.)",
     "minimalPairs": [
-      { "a": "คา (khaa · mid, ˧)", "b": "to be stuck — a flat held note, right in the middle of your range" },
-      { "a": "ข่า (khàa · low, ˨˩)", "b": "galangal — sits below the mid note and stays low, sinking slightly" },
-      { "a": "ค่า (khâa · falling, ˥˩)", "b": "value / cost — start high and glide sharply down, like a sigh or a disappointed 'oh'" },
-      { "a": "ค้า (kháa · high, ˦˥)", "b": "trade / commerce — push up from mid to the top, tightening, like an insistent 'huh?!'" },
-      { "a": "ขา (khǎa · rising, ˩˩˦)", "b": "leg — dip low then scoop up, exactly the melody of an English surprised 'really?'" }
+      {
+        "a": "คา (khaa · mid, ˧)",
+        "b": "to be stuck — a flat held note, right in the middle of your range"
+      },
+      {
+        "a": "ข่า (khàa · low, ˨˩)",
+        "b": "galangal — sits below the mid note and stays low, sinking slightly"
+      },
+      {
+        "a": "ค่า (khâa · falling, ˥˩)",
+        "b": "value / cost — start high and glide sharply down, like a sigh or a disappointed 'oh'"
+      },
+      {
+        "a": "ค้า (kháa · high, ˦˥)",
+        "b": "trade / commerce — push up from mid to the top, tightening, like an insistent 'huh?!'"
+      },
+      {
+        "a": "ขา (khǎa · rising, ˩˩˦)",
+        "b": "leg — dip low then scoop up, exactly the melody of an English surprised 'really?'"
+      }
     ]
   },
   {
@@ -20,8 +35,14 @@
     "ipa": "˧ (33 — level, mid of your range)",
     "description": "A steady, flat note held in the middle of your speaking pitch — no rise, no fall. The default 'no drama' tone. For a musician: hum a comfortable mid note and hold it level for the whole syllable. Do not let it drift up at the end the way English statements sometimes do.",
     "minimalPairs": [
-      { "a": "มา maa", "b": "to come (mid) — vs ม้า máa 'horse' (high), หมา mǎa 'dog' (rising): one syllable, three animals-and-verbs apart" },
-      { "a": "ดี dii", "b": "good — a clean level mid note" }
+      {
+        "a": "มา maa",
+        "b": "to come (mid) — vs ม้า máa 'horse' (high), หมา mǎa 'dog' (rising): one syllable, three animals-and-verbs apart"
+      },
+      {
+        "a": "ดี dii",
+        "b": "good — a clean level mid note"
+      }
     ]
   },
   {
@@ -31,8 +52,14 @@
     "ipa": "˨˩ (21 — low, level to gently sinking)",
     "description": "Drop below your mid note and stay there, sinking slightly toward the bottom of your range. Calm and low, not creaky or forced. Think of the lowest comfortable note you can speak on held flat. Written with ไม้เอก ( ่ ) on mid/high-class consonants, or produced by class alone.",
     "minimalPairs": [
-      { "a": "ไก่ kài", "b": "chicken (low)" },
-      { "a": "ใส่ sài", "b": "to put in / to wear (low)" }
+      {
+        "a": "ไก่ kài",
+        "b": "chicken (low)"
+      },
+      {
+        "a": "ใส่ sài",
+        "b": "to put in / to wear (low)"
+      }
     ]
   },
   {
@@ -42,9 +69,18 @@
     "ipa": "˥˩ (41 — start high, glide sharply down)",
     "description": "Start at the top of your range and slide firmly down to the bottom within the one syllable — a descending glissando. It's the melody of a heavy English sigh, or saying 'NO.' with finality. This is the tone learners most often flatten; really commit to the drop.",
     "minimalPairs": [
-      { "a": "พ่อ phâw", "b": "father (falling)" },
-      { "a": "ไม่ mâi", "b": "not / no (falling) — the everyday negator; vs ไหม mǎi 'question particle' (rising)" },
-      { "a": "ให้ hâi", "b": "to give / to let (falling)" }
+      {
+        "a": "พ่อ phâw",
+        "b": "father (falling)"
+      },
+      {
+        "a": "ไม่ mâi",
+        "b": "not / no (falling) — the everyday negator; vs ไหม mǎi 'question particle' (rising)"
+      },
+      {
+        "a": "ให้ hâi",
+        "b": "to give / to let (falling)"
+      }
     ]
   },
   {
@@ -54,8 +90,14 @@
     "ipa": "˦˥ (45 — push up to the top, tightening)",
     "description": "Rise from mid-high up to the top of your range, often with a slight tightening/tension in the throat. Shorter and more clipped than the rising tone — it doesn't dip first, it just climbs and stays up. Like an insistent, slightly indignant English 'huh?!'",
     "minimalPairs": [
-      { "a": "ม้า máa", "b": "horse (high) — vs มา maa 'come' (mid)" },
-      { "a": "น้อง náwng", "b": "younger sibling (high)" }
+      {
+        "a": "ม้า máa",
+        "b": "horse (high) — vs มา maa 'come' (mid)"
+      },
+      {
+        "a": "น้อง náwng",
+        "b": "younger sibling (high)"
+      }
     ]
   },
   {
@@ -65,9 +107,18 @@
     "ipa": "˩˩˦ (215 — dip low, then scoop up)",
     "description": "Start around mid, dip down low, then scoop back up toward the top — a valley shape. It is EXACTLY the intonation of an English incredulous 'really?' or 'you sure?'. Because it moves the most, it takes a hair longer; give it room. Often written with ไม้จัตวา ( ๋ ) or produced by a high-class consonant.",
     "minimalPairs": [
-      { "a": "หมา mǎa", "b": "dog (rising) — vs มา maa 'come' (mid), ม้า máa 'horse' (high)" },
-      { "a": "ขา khǎa", "b": "leg (rising)" },
-      { "a": "สวย sǔay", "b": "beautiful (rising)" }
+      {
+        "a": "หมา mǎa",
+        "b": "dog (rising) — vs มา maa 'come' (mid), ม้า máa 'horse' (high)"
+      },
+      {
+        "a": "ขา khǎa",
+        "b": "leg (rising)"
+      },
+      {
+        "a": "สวย sǔay",
+        "b": "beautiful (rising)"
+      }
     ]
   },
   {
@@ -77,9 +128,18 @@
     "ipa": "p ت, t, k (no puff of air)",
     "description": "Thai distinguishes three ways where English has two. English 'p' always has a puff of air (aspirated). Thai ป is a p with NO puff — it sits between English 'b' and 'p', so it's often written 'bp'. Likewise ต = 'dt' (between d and t) and ก = 'g/k' unaspirated. Hold a tissue to your mouth: it should NOT flutter on these.",
     "minimalPairs": [
-      { "a": "ปา paa (throw)", "b": "vs ผ้า phâa 'cloth' — unaspirated vs aspirated p" },
-      { "a": "ตา taa (eye)", "b": "vs ท่า thâa 'pier/pose' — dt vs th" },
-      { "a": "ไก่ gài (chicken)", "b": "vs ไข่ khài 'egg' — g vs kh" }
+      {
+        "a": "ปา paa (throw)",
+        "b": "vs ผ้า phâa 'cloth' — unaspirated vs aspirated p"
+      },
+      {
+        "a": "ตา taa (eye)",
+        "b": "vs ท่า thâa 'pier/pose' — dt vs th"
+      },
+      {
+        "a": "ไก่ gài (chicken)",
+        "b": "vs ไข่ khài 'egg' — g vs kh"
+      }
     ]
   },
   {
@@ -89,8 +149,14 @@
     "ipa": "pʰ, tʰ, kʰ (with a puff)",
     "description": "The aspirated members: ph, th, kh each carry the English-style puff of air. Crucially 'ph' is NOT an 'f' sound — พ is an aspirated 'p' (as in 'top-hat'), never 'ph' as in 'phone'. Phuket is 'Poo-get', not 'Foo-ket'.",
     "minimalPairs": [
-      { "a": "พ (ph)", "b": "aspirated p — like 'p' in 'pot', never 'f'" },
-      { "a": "ค (kh)", "b": "aspirated k — like 'c' in 'cat'" }
+      {
+        "a": "พ (ph)",
+        "b": "aspirated p — like 'p' in 'pot', never 'f'"
+      },
+      {
+        "a": "ค (kh)",
+        "b": "aspirated k — like 'c' in 'cat'"
+      }
     ]
   },
   {
@@ -100,8 +166,14 @@
     "ipa": "ŋ (as syllable start)",
     "description": "English has the 'ng' sound only at the END of words ('sing'). Thai starts words with it: งู nguu 'snake', เงิน ngoen 'money'. Practice by saying 'singing', then holding the 'ng' and dropping 'si—' off the front.",
     "minimalPairs": [
-      { "a": "งู nguu", "b": "snake — the ng- is the initial, not an 'n'+'g'" },
-      { "a": "เงิน ngoen", "b": "money / silver" }
+      {
+        "a": "งู nguu",
+        "b": "snake — the ng- is the initial, not an 'n'+'g'"
+      },
+      {
+        "a": "เงิน ngoen",
+        "b": "money / silver"
+      }
     ]
   },
   {
@@ -111,8 +183,14 @@
     "ipa": "tɕ (unaspirated)",
     "description": "จ is an unaspirated palatal — between English 'j' and 'ch', with no puff. Softer than the English 'ch' in 'church'. Its aspirated partner ช is the puffy 'ch'.",
     "minimalPairs": [
-      { "a": "จาน jaan", "b": "plate (unaspirated j)" },
-      { "a": "ช้าง cháang", "b": "elephant (aspirated ch)" }
+      {
+        "a": "จาน jaan",
+        "b": "plate (unaspirated j)"
+      },
+      {
+        "a": "ช้าง cháang",
+        "b": "elephant (aspirated ch)"
+      }
     ]
   },
   {
@@ -122,8 +200,14 @@
     "ipa": "a vs aa · i vs ii · u vs uu",
     "description": "Vowel LENGTH changes meaning in Thai, independent of tone. A short vowel is clipped; a long vowel is held roughly twice as long. Keep them distinct — for a musician, it's the difference between an eighth note and a quarter note on the same pitch.",
     "minimalPairs": [
-      { "a": "เขา khǎo (he/she)", "b": "vs ขาว khǎaw 'white' — short vs long" },
-      { "a": "ข้าว khâao (rice)", "b": "long ā — vs a clipped short vowel would be a different word" }
+      {
+        "a": "เขา khǎo (he/she)",
+        "b": "vs ขาว khǎaw 'white' — short vs long"
+      },
+      {
+        "a": "ข้าว khâao (rice)",
+        "b": "long ā — vs a clipped short vowel would be a different word"
+      }
     ]
   },
   {
@@ -133,8 +217,14 @@
     "ipa": "ɯ (short) / ɯː (long)",
     "description": "A high back UNROUNDED vowel with no English equivalent. Make the 'oo' in 'food' but pull your lips back flat (unrounded) as if smiling — the tongue stays high and back. Common in หนึ่ง nùeng 'one', มือ muee 'hand'.",
     "minimalPairs": [
-      { "a": "มือ muee", "b": "hand (unrounded ue)" },
-      { "a": "หนึ่ง nùeng", "b": "one (short ue)" }
+      {
+        "a": "มือ muee",
+        "b": "hand (unrounded ue)"
+      },
+      {
+        "a": "หนึ่ง nùeng",
+        "b": "one (short ue)"
+      }
     ]
   },
   {
@@ -144,8 +234,14 @@
     "ipa": "ɤː / ə",
     "description": "A mid central-back unrounded vowel, like the 'u' in British 'fur' but with unrounded lips. Heard in เธอ thoe 'you (intimate)', เดิน doen 'to walk'.",
     "minimalPairs": [
-      { "a": "เธอ thoe", "b": "you / she (intimate)" },
-      { "a": "เดิน doen", "b": "to walk" }
+      {
+        "a": "เธอ thoe",
+        "b": "you / she (intimate)"
+      },
+      {
+        "a": "เดิน doen",
+        "b": "to walk"
+      }
     ]
   },
   {
@@ -155,8 +251,14 @@
     "ipa": "ɛː (แ) · ɔː (ออ)",
     "description": "แ is a wide-open 'a' as in 'cat' (แม่ mâe 'mother'). ออ is an open 'aw' as in British 'law' (พ่อ phâw 'father', รอ raw 'to wait'). English speakers tend to collapse both toward a plain 'e' or 'o' — keep the mouth open.",
     "minimalPairs": [
-      { "a": "แม่ mâe", "b": "mother (open ae)" },
-      { "a": "รอ raw", "b": "to wait (open aw)" }
+      {
+        "a": "แม่ mâe",
+        "b": "mother (open ae)"
+      },
+      {
+        "a": "รอ raw",
+        "b": "to wait (open aw)"
+      }
     ]
   },
   {
@@ -166,8 +268,14 @@
     "ipa": "p̚ t̚ k̚ (stopped, not released)",
     "description": "When p, t, or k ends a syllable, the mouth closes on it but does NOT release a puff — the sound is cut off. 'รัก' rák 'love' ends with the tongue at the k position, air stopped, no audible 'kuh'. English speakers over-release these; just stop.",
     "minimalPairs": [
-      { "a": "รัก rák", "b": "to love — final -k is stopped, silent release" },
-      { "a": "จบ jòp", "b": "to finish — final -p, lips close, no puff" }
+      {
+        "a": "รัก rák",
+        "b": "to love — final -k is stopped, silent release"
+      },
+      {
+        "a": "จบ jòp",
+        "b": "to finish — final -p, lips close, no puff"
+      }
     ]
   },
   {
@@ -177,8 +285,14 @@
     "ipa": "r (tap/trill) · l",
     "description": "ร is a tapped or lightly trilled 'r' (like Spanish 'pero'), distinct from ล 'l'. In fast, casual Bangkok speech ร is very often pronounced as 'l' (or dropped) — อะไร arai 'what' becomes 'alai'. Learn the careful 'r' but recognize the colloquial 'l'.",
     "minimalPairs": [
-      { "a": "รัก rák (love)", "b": "vs ลัก lák 'to steal' — r vs l" },
-      { "a": "อะไร arai", "b": "'what' — often heard as 'alai' in casual speech" }
+      {
+        "a": "รัก rák (love)",
+        "b": "vs ลัก lák 'to steal' — r vs l"
+      },
+      {
+        "a": "อะไร arai",
+        "b": "'what' — often heard as 'alai' in casual speech"
+      }
     ]
   },
   {
@@ -188,8 +302,14 @@
     "ipa": "ia · ɯa · ua",
     "description": "Three gliding vowels: ia as in เมีย mia 'wife', uea (the ue vowel gliding to a) as in เมือง mueang 'city/town', and ua as in กลัว glua 'to be afraid'. Glide smoothly from the first vowel into the light 'a' — one syllable, not two.",
     "minimalPairs": [
-      { "a": "เมือง mueang", "b": "city / town (uea glide)" },
-      { "a": "กลัว glua", "b": "to be afraid (ua glide)" }
+      {
+        "a": "เมือง mueang",
+        "b": "city / town (uea glide)"
+      },
+      {
+        "a": "กลัว glua",
+        "b": "to be afraid (ua glide)"
+      }
     ]
   },
   {
@@ -199,7 +319,10 @@
     "ipa": "even syllables, full tone on each",
     "description": "Thai is syllable-timed: each syllable gets roughly equal length and its FULL tone, unlike English which crushes unstressed syllables into a schwa. Don't 'swallow' small syllables — sing every one on its proper note. Multi-syllable words tend to carry the main prominence on the final syllable.",
     "minimalPairs": [
-      { "a": "สวัสดี sà-wàt-dii", "b": "hello — three clear syllables, each on its own tone, none reduced" }
+      {
+        "a": "สวัสดี sà-wàt-dii",
+        "b": "hello — three clear syllables, each on its own tone, none reduced"
+      }
     ]
   },
   {
@@ -209,8 +332,31 @@
     "ipa": "khráp (m) · khâ (f, statement) · khá (f, question)",
     "description": "Not a tone rule but a prosodic must: Thai sentences are softened with a sentence-final politeness particle that depends on the SPEAKER's gender. Male speakers say ครับ khráp; female speakers say ค่ะ khâ (falling) for statements and คะ khá (high) for questions. Omitting them sounds blunt or curt; sprinkle them liberally when being polite.",
     "minimalPairs": [
-      { "a": "สวัสดีครับ", "b": "'hello' said by a man (khráp)" },
-      { "a": "สวัสดีค่ะ", "b": "'hello' said by a woman (khâ)" }
+      {
+        "a": "สวัสดีครับ",
+        "b": "'hello' said by a man (khráp)"
+      },
+      {
+        "a": "สวัสดีค่ะ",
+        "b": "'hello' said by a woman (khâ)"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.special-vowels",
+    "grapheme": "Special vowels ไ- / ใ- / เ-า / -ำ",
+    "ipa": "ai · ai · ao · am",
+    "description": "Four common vowels written with the consonant tucked inside a fixed frame. ไ and ใ are both “ai” (as in ‘eye’) — only 20 words use ใ, the rest ไ. เ-า is “ao” (as in ‘cow’): เขา khǎo ‘he/she’. -ำ is “am”: นำ náam ‘water’. The consonant is read first, then the vowel, even though the vowel symbol may sit to the left.",
+    "minimalPairs": [
+      {
+        "a": "ไป bpai",
+        "b": "to go (ai)"
+      },
+      {
+        "a": "เอา ao",
+        "b": "to want / take (ao) — vs เขา khǎo ‘he/she’"
+      }
     ]
   }
 ]

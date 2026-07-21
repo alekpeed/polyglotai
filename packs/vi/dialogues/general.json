@@ -1,0 +1,2212 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.pho-stall",
+    "scenario": "phở stall",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Minh",
+        "role": "customer"
+      },
+      {
+        "id": "b",
+        "name": "Hoa",
+        "role": "phở vendor"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Cô ơi, cho cháu một bát phở bò ạ."
+      },
+      {
+        "speakerId": "b",
+        "text": "Cháu ăn tái hay chín?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Cho cháu tái ạ."
+      },
+      {
+        "speakerId": "b",
+        "text": "Có cần thêm quẩy không?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Vâng, cho cháu một cái."
+      },
+      {
+        "speakerId": "b",
+        "text": "Phở đây. Ăn nóng cho ngon nhé."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cháu cảm ơn cô. Bao nhiêu tiền ạ?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Bốn mươi nghìn cháu ạ."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Auntie, give me a bowl of beef phở, please."
+      },
+      {
+        "speakerId": "b",
+        "text": "Do you want it rare or well-done?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Rare, please."
+      },
+      {
+        "speakerId": "b",
+        "text": "Do you want extra fried dough sticks?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, give me one."
+      },
+      {
+        "speakerId": "b",
+        "text": "Here's the phở. Eat it hot, it's tastier."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thank you, auntie. How much is it?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Forty thousand, dear."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'cho + [person] + [thing]' = 'give (person) (thing)' is the standard way to order.",
+    "slangRegisterNotes": "'cô'/'cháu' (auntie/niece-nephew) are kinship pronouns a young customer uses with an older vendor."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.banh-mi-cart",
+    "scenario": "bánh mì cart",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Lan",
+        "role": "customer"
+      },
+      {
+        "id": "b",
+        "name": "Tú",
+        "role": "cart vendor"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Em ơi, cho chị một cái bánh mì trứng."
+      },
+      {
+        "speakerId": "b",
+        "text": "Chị có ăn cay không ạ?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Cho chị ít ớt thôi."
+      },
+      {
+        "speakerId": "b",
+        "text": "Chị có lấy thêm pa tê không?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Có, cho chị nhiều pa tê nhé."
+      },
+      {
+        "speakerId": "b",
+        "text": "Của chị đây ạ. Hai mươi nghìn."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cảm ơn em."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Hey, give me one egg bánh mì, please."
+      },
+      {
+        "speakerId": "b",
+        "text": "Do you want it spicy?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Just a little chili."
+      },
+      {
+        "speakerId": "b",
+        "text": "Do you want extra pâté?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, lots of pâté please."
+      },
+      {
+        "speakerId": "b",
+        "text": "Here you are. Twenty thousand."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thank you."
+      }
+    ],
+    "keyVocabulary": [],
+    "slangRegisterNotes": "An older woman calls a young male vendor 'em' and refers to herself as 'chị'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.ca-phe-sua-da",
+    "scenario": "ordering iced milk coffee",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Dũng",
+        "role": "customer"
+      },
+      {
+        "id": "b",
+        "name": "Chi",
+        "role": "barista"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Em ơi, cho anh một cốc cà phê sữa đá."
+      },
+      {
+        "speakerId": "b",
+        "text": "Anh uống ở đây hay mang đi ạ?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Anh uống ở đây."
+      },
+      {
+        "speakerId": "b",
+        "text": "Anh đợi một chút nhé."
+      },
+      {
+        "speakerId": "a",
+        "text": "Ừ. Ở đây có wifi không em?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Có ạ, mật khẩu ở trên bàn."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cà phê ở đây ngon quá."
+      },
+      {
+        "speakerId": "b",
+        "text": "Vâng, cảm ơn anh ạ."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Hey, give me a glass of iced milk coffee."
+      },
+      {
+        "speakerId": "b",
+        "text": "Drinking here or taking it away?"
+      },
+      {
+        "speakerId": "a",
+        "text": "I'll drink here."
+      },
+      {
+        "speakerId": "b",
+        "text": "Please wait a moment."
+      },
+      {
+        "speakerId": "a",
+        "text": "Sure. Is there wifi here?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes, the password is on the table."
+      },
+      {
+        "speakerId": "a",
+        "text": "The coffee here is really good."
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes, thank you."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'cốc' is the Northern word for a glass/cup (Southern uses 'ly').",
+    "slangRegisterNotes": "'cà phê sữa đá' = iced coffee with sweetened condensed milk, a daily staple."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.grab-ride",
+    "scenario": "motorbike (Grab/xe ôm) ride",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Thu",
+        "role": "passenger"
+      },
+      {
+        "id": "b",
+        "name": "Sơn",
+        "role": "driver"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Anh ơi, cho em đến hồ Hoàn Kiếm nhé."
+      },
+      {
+        "speakerId": "b",
+        "text": "Được, em lên xe đi. Đội mũ bảo hiểm vào nhé."
+      },
+      {
+        "speakerId": "a",
+        "text": "Vâng. Đi đường Trần Hưng Đạo có nhanh hơn không anh?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Giờ này tắc đường, mình đi đường khác nhé."
+      },
+      {
+        "speakerId": "a",
+        "text": "Vâng, anh đi đường nào nhanh nhất cũng được."
+      },
+      {
+        "speakerId": "b",
+        "text": "Đến nơi rồi em. Ba mươi lăm nghìn."
+      },
+      {
+        "speakerId": "a",
+        "text": "Em gửi anh tiền. Cảm ơn anh."
+      },
+      {
+        "speakerId": "b",
+        "text": "Cảm ơn em, đi cẩn thận nhé."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Hey, take me to Hoàn Kiếm Lake, please."
+      },
+      {
+        "speakerId": "b",
+        "text": "Sure, hop on. Put the helmet on."
+      },
+      {
+        "speakerId": "a",
+        "text": "Okay. Is it faster to go via Trần Hưng Đạo street?"
+      },
+      {
+        "speakerId": "b",
+        "text": "It's jammed this hour, let's take another road."
+      },
+      {
+        "speakerId": "a",
+        "text": "Sure, whichever road is fastest is fine."
+      },
+      {
+        "speakerId": "b",
+        "text": "We've arrived. Thirty-five thousand."
+      },
+      {
+        "speakerId": "a",
+        "text": "Here's the money. Thank you."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thanks, take care."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'nhanh hơn' = faster; '[adj] + hơn' forms the comparative.",
+    "slangRegisterNotes": "'tắc đường' (traffic jam) is the Northern term; the South says 'kẹt xe'."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.market-bargaining",
+    "scenario": "bargaining at the market",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Nga",
+        "role": "buyer"
+      },
+      {
+        "id": "b",
+        "name": "Bình",
+        "role": "clothes seller"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Chị ơi, cái áo này bao nhiêu tiền?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Cái này hai trăm nghìn em ạ."
+      },
+      {
+        "speakerId": "a",
+        "text": "Đắt thế! Bớt cho em một chút được không?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Em lấy thật thì chị bớt hai mươi nghìn."
+      },
+      {
+        "speakerId": "a",
+        "text": "Một trăm rưỡi thôi chị nhé?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Thôi được, lấy đi. Chị bán mở hàng cho em."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cảm ơn chị. Em lấy hai cái."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Excuse me, how much is this shirt?"
+      },
+      {
+        "speakerId": "b",
+        "text": "This one is two hundred thousand."
+      },
+      {
+        "speakerId": "a",
+        "text": "So expensive! Can you lower it a bit for me?"
+      },
+      {
+        "speakerId": "b",
+        "text": "If you really buy it, I'll take off twenty thousand."
+      },
+      {
+        "speakerId": "a",
+        "text": "Just a hundred and fifty, okay?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Alright, take it. I'll give you the first-sale price."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thank you. I'll take two."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'nếu... thì...' (if... then...) appears here shortened to 'lấy thật thì...'.",
+    "slangRegisterNotes": "'bán mở hàng' = the day's first sale, believed to bring luck; sellers often discount it."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.hotel-checkin",
+    "scenario": "hotel check-in",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Nam",
+        "role": "guest"
+      },
+      {
+        "id": "b",
+        "name": "Vân",
+        "role": "receptionist"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "Chào anh, anh cần em giúp gì ạ?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Chào em. Anh đã đặt một phòng đôi tên Nam."
+      },
+      {
+        "speakerId": "b",
+        "text": "Anh cho em xem hộ chiếu được không ạ?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Đây, hộ chiếu của anh."
+      },
+      {
+        "speakerId": "b",
+        "text": "Phòng của anh ở tầng ba, số 305. Đây là chìa khóa ạ."
+      },
+      {
+        "speakerId": "a",
+        "text": "Khách sạn có phục vụ bữa sáng không em?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Có ạ, bữa sáng từ bảy giờ đến chín giờ ở tầng một."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cảm ơn em nhiều."
+      },
+      {
+        "speakerId": "b",
+        "text": "Chúc anh nghỉ ngơi vui vẻ ạ."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Hello, how can I help you?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Hello. I booked a double room under the name Nam."
+      },
+      {
+        "speakerId": "b",
+        "text": "May I see your passport?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Here is my passport."
+      },
+      {
+        "speakerId": "b",
+        "text": "Your room is on the third floor, number 305. Here's the key."
+      },
+      {
+        "speakerId": "a",
+        "text": "Does the hotel serve breakfast?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes, breakfast is from seven to nine on the ground floor."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thank you very much."
+      },
+      {
+        "speakerId": "b",
+        "text": "Have a pleasant stay."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'đã' before a verb marks completed/past action ('anh đã đặt' = I booked)."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.asking-directions",
+    "scenario": "asking for directions",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Khách",
+        "role": "tourist"
+      },
+      {
+        "id": "b",
+        "name": "Hạnh",
+        "role": "passer-by"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "vi-VN-northern",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Cô ơi, cho cháu hỏi đường một chút ạ."
+      },
+      {
+        "speakerId": "b",
+        "text": "Cháu muốn đi đâu?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Cháu muốn đến bưu điện ạ. Có xa không cô?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Không xa. Cháu đi thẳng, đến ngã tư thì rẽ phải."
+      },
+      {
+        "speakerId": "a",
+        "text": "Đi bộ mất bao lâu ạ?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Khoảng năm phút thôi."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cháu cảm ơn cô ạ."
+      },
+      {
+        "speakerId": "b",
+        "text": "Không có gì."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Excuse me, may I ask for directions?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Where do you want to go?"
+      },
+      {
+        "speakerId": "a",
+        "text": "I want to get to the post office. Is it far?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Not far. Go straight, and at the intersection turn right."
+      },
+      {
+        "speakerId": "a",
+        "text": "How long does it take on foot?"
+      },
+      {
+        "speakerId": "b",
+        "text": "About five minutes."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thank you."
+      },
+      {
+        "speakerId": "b",
+        "text": "You're welcome."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "Direction words: 'đi thẳng' (go straight), 'rẽ phải' (turn right), 'rẽ trái' (turn left)."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.pharmacy",
+    "scenario": "at the pharmacy",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Yến",
+        "role": "customer"
+      },
+      {
+        "id": "b",
+        "name": "Đức",
+        "role": "pharmacist"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Em ơi, chị bị đau đầu và hơi sốt."
+      },
+      {
+        "speakerId": "b",
+        "text": "Chị bị mấy ngày rồi ạ?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Từ hôm qua. Chị cũng bị ho nữa."
+      },
+      {
+        "speakerId": "b",
+        "text": "Chị có bị dị ứng thuốc gì không ạ?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Không, chị không bị dị ứng gì cả."
+      },
+      {
+        "speakerId": "b",
+        "text": "Em đưa chị thuốc hạ sốt và thuốc ho. Ngày uống ba lần sau khi ăn."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cảm ơn em. Hết bao nhiêu tiền?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Của chị sáu mươi nghìn ạ."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Excuse me, I have a headache and a slight fever."
+      },
+      {
+        "speakerId": "b",
+        "text": "How many days has it been?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Since yesterday. I also have a cough."
+      },
+      {
+        "speakerId": "b",
+        "text": "Are you allergic to any medicine?"
+      },
+      {
+        "speakerId": "a",
+        "text": "No, I'm not allergic to anything."
+      },
+      {
+        "speakerId": "b",
+        "text": "I'll give you fever and cough medicine. Take it three times a day after meals."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thank you. How much altogether?"
+      },
+      {
+        "speakerId": "b",
+        "text": "That's sixty thousand."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'bị' marks an undesirable state: 'bị đau đầu' (have a headache), 'bị sốt' (have a fever)."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.restaurant-order",
+    "scenario": "ordering at a restaurant",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Tuấn",
+        "role": "customer"
+      },
+      {
+        "id": "b",
+        "name": "Ly",
+        "role": "waiter"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "Chào anh chị, anh chị dùng gì ạ?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Cho bọn anh xem thực đơn một chút."
+      },
+      {
+        "speakerId": "b",
+        "text": "Dạ, thực đơn đây ạ."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cho anh một đĩa nem rán và một bát canh chua."
+      },
+      {
+        "speakerId": "b",
+        "text": "Anh dùng đồ uống gì không ạ?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Cho anh hai cốc trà đá nữa."
+      },
+      {
+        "speakerId": "b",
+        "text": "Anh chị đợi một chút, món sẽ ra ngay ạ."
+      },
+      {
+        "speakerId": "a",
+        "text": "Ừ, em mang ra nhanh nhé."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Hello, what would you like to have?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Let us have a look at the menu."
+      },
+      {
+        "speakerId": "b",
+        "text": "Sure, here's the menu."
+      },
+      {
+        "speakerId": "a",
+        "text": "Give me a plate of fried spring rolls and a bowl of sour soup."
+      },
+      {
+        "speakerId": "b",
+        "text": "Would you like anything to drink?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Two glasses of iced tea as well."
+      },
+      {
+        "speakerId": "b",
+        "text": "Please wait a moment, the food will come right out."
+      },
+      {
+        "speakerId": "a",
+        "text": "Okay, bring it out quickly, please."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'nem rán' is the Northern name for fried spring rolls (Southern: 'chả giò').",
+    "slangRegisterNotes": "Classifiers: 'đĩa' (plate), 'bát' (bowl, Northern), 'cốc' (glass, Northern)."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.meeting-someone-new",
+    "scenario": "meeting someone new",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Linh",
+        "role": "student"
+      },
+      {
+        "id": "b",
+        "name": "Hùng",
+        "role": "teacher"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "vi-VN-northern",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Chào anh, em tên là Linh. Rất vui được gặp anh."
+      },
+      {
+        "speakerId": "b",
+        "text": "Chào em, anh là Hùng. Anh cũng rất vui được gặp em."
+      },
+      {
+        "speakerId": "a",
+        "text": "Anh làm nghề gì ạ?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Anh là giáo viên. Còn em?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Em là sinh viên. Em học tiếng Anh."
+      },
+      {
+        "speakerId": "b",
+        "text": "Em người ở đâu?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Em người Hà Nội ạ. Còn anh?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Anh ở Hải Phòng. Rất vui được làm quen với em."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Hello, my name is Linh. Nice to meet you."
+      },
+      {
+        "speakerId": "b",
+        "text": "Hello, I'm Hùng. Nice to meet you too."
+      },
+      {
+        "speakerId": "a",
+        "text": "What do you do for a living?"
+      },
+      {
+        "speakerId": "b",
+        "text": "I'm a teacher. And you?"
+      },
+      {
+        "speakerId": "a",
+        "text": "I'm a student. I study English."
+      },
+      {
+        "speakerId": "b",
+        "text": "Where are you from?"
+      },
+      {
+        "speakerId": "a",
+        "text": "I'm from Hanoi. And you?"
+      },
+      {
+        "speakerId": "b",
+        "text": "I'm from Hải Phòng. Glad to get to know you."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'tên là' = 'name is'; 'Còn + [pronoun]?' = 'And (you)?' to return a question."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.phone-call",
+    "scenario": "a phone call between friends",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Hương",
+        "role": "caller"
+      },
+      {
+        "id": "b",
+        "name": "Mai",
+        "role": "friend"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Alô, Mai đấy à?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Ừ, tớ đây. Ai đấy?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Tớ Hương đây. Tối nay cậu có rảnh không?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Có, tớ rảnh. Có chuyện gì thế?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Bọn mình đi xem phim nhé?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Ừ, hay đấy. Mấy giờ gặp nhau?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Bảy giờ ở trước rạp nhé."
+      },
+      {
+        "speakerId": "b",
+        "text": "Được, hẹn gặp lại tối nay."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Hello, is that Mai?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Yeah, it's me. Who's this?"
+      },
+      {
+        "speakerId": "a",
+        "text": "It's Hương. Are you free tonight?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes, I'm free. What's up?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Shall we go see a movie?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Sure, sounds good. What time shall we meet?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Seven o'clock in front of the cinema."
+      },
+      {
+        "speakerId": "b",
+        "text": "Okay, see you tonight."
+      }
+    ],
+    "keyVocabulary": [],
+    "slangRegisterNotes": "'tớ/cậu' are affectionate first/second-person pronouns between close friends of similar age, very common in the North."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.doctor-visit",
+    "scenario": "at the doctor",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Phương",
+        "role": "patient"
+      },
+      {
+        "id": "b",
+        "name": "Bác sĩ Long",
+        "role": "doctor"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "Chào chị, chị thấy trong người thế nào?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Chào bác sĩ. Tôi bị đau bụng mấy hôm nay."
+      },
+      {
+        "speakerId": "b",
+        "text": "Chị đau ở chỗ nào? Có buồn nôn không?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Đau ở đây ạ. Tôi cũng thấy hơi mệt."
+      },
+      {
+        "speakerId": "b",
+        "text": "Chị nằm xuống để tôi khám nhé."
+      },
+      {
+        "speakerId": "a",
+        "text": "Vâng, có sao không bác sĩ?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Không nghiêm trọng đâu. Chị nhớ uống nhiều nước và nghỉ ngơi."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cảm ơn bác sĩ."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Hello, how are you feeling?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Hello, doctor. I've had a stomachache for a few days."
+      },
+      {
+        "speakerId": "b",
+        "text": "Where does it hurt? Do you feel nauseous?"
+      },
+      {
+        "speakerId": "a",
+        "text": "It hurts here. I also feel a bit tired."
+      },
+      {
+        "speakerId": "b",
+        "text": "Please lie down so I can examine you."
+      },
+      {
+        "speakerId": "a",
+        "text": "Okay, is it serious, doctor?"
+      },
+      {
+        "speakerId": "b",
+        "text": "It's not serious. Remember to drink lots of water and rest."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thank you, doctor."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "With a doctor, adults often use neutral 'tôi' for themselves; '...không?' turns a statement into a yes/no question."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.buying-sim",
+    "scenario": "buying a SIM card and data",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Bảo",
+        "role": "customer"
+      },
+      {
+        "id": "b",
+        "name": "Trang",
+        "role": "shop clerk"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Em ơi, anh muốn mua một cái sim mới."
+      },
+      {
+        "speakerId": "b",
+        "text": "Anh dùng để nghe gọi hay dùng mạng ạ?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Anh dùng mạng là chính. Có gói nào rẻ không?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Có gói một trăm nghìn một tháng, mỗi ngày bốn gi-ga ạ."
+      },
+      {
+        "speakerId": "a",
+        "text": "Được đấy. Anh lấy gói đó."
+      },
+      {
+        "speakerId": "b",
+        "text": "Anh cho em xem căn cước công dân để đăng ký ạ."
+      },
+      {
+        "speakerId": "a",
+        "text": "Đây. Bao giờ thì dùng được?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Anh dùng được ngay bây giờ ạ."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Excuse me, I'd like to buy a new SIM card."
+      },
+      {
+        "speakerId": "b",
+        "text": "Will you use it for calls or for data?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Mainly for data. Is there a cheap package?"
+      },
+      {
+        "speakerId": "b",
+        "text": "There's a package for a hundred thousand a month, four gigabytes per day."
+      },
+      {
+        "speakerId": "a",
+        "text": "That's good. I'll take that package."
+      },
+      {
+        "speakerId": "b",
+        "text": "May I see your ID card to register it?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Here. When can I start using it?"
+      },
+      {
+        "speakerId": "b",
+        "text": "You can use it right now."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'để' + verb = 'in order to' ('để đăng ký' = in order to register); 'bao giờ' at the start asks about a future time."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.renting-motorbike",
+    "scenario": "renting a motorbike",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Quân",
+        "role": "customer"
+      },
+      {
+        "id": "b",
+        "name": "Hải",
+        "role": "rental owner"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Anh ơi, em muốn thuê một cái xe máy."
+      },
+      {
+        "speakerId": "b",
+        "text": "Em thuê mấy ngày?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Em thuê ba ngày. Bao nhiêu một ngày ạ?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Một trăm hai mươi nghìn một ngày, có cả mũ bảo hiểm."
+      },
+      {
+        "speakerId": "a",
+        "text": "Có cần đặt cọc không anh?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Em để lại hộ chiếu là được. Nhớ đổ đầy xăng khi trả xe nhé."
+      },
+      {
+        "speakerId": "a",
+        "text": "Vâng. Nếu xe hỏng thì sao ạ?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Có gì em gọi cho anh, anh mang xe khác đến."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Hey, I'd like to rent a motorbike."
+      },
+      {
+        "speakerId": "b",
+        "text": "How many days?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Three days. How much per day?"
+      },
+      {
+        "speakerId": "b",
+        "text": "A hundred and twenty thousand a day, helmet included."
+      },
+      {
+        "speakerId": "a",
+        "text": "Do I need to leave a deposit?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Leaving your passport is fine. Remember to fill the tank when you return it."
+      },
+      {
+        "speakerId": "a",
+        "text": "Okay. What if the bike breaks down?"
+      },
+      {
+        "speakerId": "b",
+        "text": "If anything happens, call me and I'll bring another bike."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'nếu... thì sao?' = 'what if...?'; 'đặt cọc' = to leave a deposit."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.coffee-with-friend",
+    "scenario": "catching up over coffee",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Trang",
+        "role": "friend"
+      },
+      {
+        "id": "b",
+        "name": "Việt",
+        "role": "friend"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Lâu lắm rồi không gặp cậu! Dạo này thế nào?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Tớ vẫn bình thường. Công việc dạo này hơi bận."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cậu vẫn làm ở công ty cũ à?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Không, tớ đổi việc rồi. Bây giờ tớ làm ở một công ty du lịch."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thích nhỉ! Thế cậu có hay đi công tác không?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Thỉnh thoảng thôi. Còn cậu, có gì mới không?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Tớ sắp cưới rồi. Tháng sau cậu đến dự nhé."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thật à? Chúc mừng cậu! Nhất định tớ sẽ đến."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Long time no see! How've you been lately?"
+      },
+      {
+        "speakerId": "b",
+        "text": "I'm okay. Work's been a bit busy lately."
+      },
+      {
+        "speakerId": "a",
+        "text": "Are you still at the old company?"
+      },
+      {
+        "speakerId": "b",
+        "text": "No, I changed jobs. Now I work at a travel company."
+      },
+      {
+        "speakerId": "a",
+        "text": "Nice! So do you travel for work often?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Only sometimes. And you, anything new?"
+      },
+      {
+        "speakerId": "a",
+        "text": "I'm getting married soon. Come to the wedding next month."
+      },
+      {
+        "speakerId": "b",
+        "text": "Really? Congratulations! I'll definitely come."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'sắp... rồi' = 'about to / soon' for the near future; 'đổi việc rồi' uses 'rồi' for a completed change.",
+    "slangRegisterNotes": "'đi công tác' = to go on a business trip; 'dạo này' = these days/lately."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.bia-hoi",
+    "scenario": "ordering at a bia hơi",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Cường",
+        "role": "customer"
+      },
+      {
+        "id": "b",
+        "name": "Hà",
+        "role": "waiter"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Em ơi, cho bọn anh bốn cốc bia hơi."
+      },
+      {
+        "speakerId": "b",
+        "text": "Các anh dùng gì để nhắm không ạ?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Cho bọn anh một đĩa lạc luộc và một đĩa nem chua."
+      },
+      {
+        "speakerId": "b",
+        "text": "Dạ, các anh đợi một chút ạ."
+      },
+      {
+        "speakerId": "a",
+        "text": "Bia ở đây có mát không em?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Mát lạnh ạ, anh yên tâm."
+      },
+      {
+        "speakerId": "a",
+        "text": "Tốt. Một lát nữa cho thêm đá nhé."
+      },
+      {
+        "speakerId": "b",
+        "text": "Vâng ạ."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Hey, four glasses of draft beer for us."
+      },
+      {
+        "speakerId": "b",
+        "text": "Anything to snack on with the beer?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Give us a plate of boiled peanuts and a plate of fermented pork."
+      },
+      {
+        "speakerId": "b",
+        "text": "Sure, please wait a moment."
+      },
+      {
+        "speakerId": "a",
+        "text": "Is the beer here nice and cold?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Ice cold, don't worry."
+      },
+      {
+        "speakerId": "a",
+        "text": "Good. Bring some more ice in a bit."
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes, sir."
+      }
+    ],
+    "keyVocabulary": [],
+    "slangRegisterNotes": "'bia hơi' is cheap fresh draft beer, a Hanoi institution; 'đồ nhắm'/'nhắm' = snacks eaten while drinking; 'lạc' = peanuts (Northern; South says 'đậu phộng')."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.train-station",
+    "scenario": "buying a train ticket",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Dương",
+        "role": "passenger"
+      },
+      {
+        "id": "b",
+        "name": "Ngọc",
+        "role": "ticket clerk"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Em ơi, cho chị hỏi mấy giờ có tàu đi Lào Cai?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Dạ, có chuyến lúc chín giờ tối ạ."
+      },
+      {
+        "speakerId": "a",
+        "text": "Chị muốn mua hai vé giường nằm."
+      },
+      {
+        "speakerId": "b",
+        "text": "Chị muốn tầng trên hay tầng dưới ạ?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Cho chị tầng dưới. Mất bao lâu thì đến nơi?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Khoảng tám tiếng ạ. Sáng mai chị sẽ đến."
+      },
+      {
+        "speakerId": "a",
+        "text": "Vé bao nhiêu tiền một người?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Hai trăm năm mươi nghìn một vé ạ."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cảm ơn em."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Excuse me, what time is there a train to Lào Cai?"
+      },
+      {
+        "speakerId": "b",
+        "text": "There's one at nine in the evening."
+      },
+      {
+        "speakerId": "a",
+        "text": "I'd like to buy two sleeper-berth tickets."
+      },
+      {
+        "speakerId": "b",
+        "text": "Would you like an upper or lower berth?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Lower berth, please. How long does it take to arrive?"
+      },
+      {
+        "speakerId": "b",
+        "text": "About eight hours. You'll arrive tomorrow morning."
+      },
+      {
+        "speakerId": "a",
+        "text": "How much is a ticket per person?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Two hundred fifty thousand per ticket."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thank you."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'giường nằm' = sleeper berth; 'mất bao lâu' = 'how long does it take'; 'tiếng' = hour (duration)."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.family-dinner",
+    "scenario": "family dinner",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Mẹ",
+        "role": "mother"
+      },
+      {
+        "id": "b",
+        "name": "Bin",
+        "role": "child"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Con ơi, ra ăn cơm đi!"
+      },
+      {
+        "speakerId": "b",
+        "text": "Vâng, con ra ngay đây mẹ."
+      },
+      {
+        "speakerId": "a",
+        "text": "Hôm nay mẹ nấu canh cua với cà pháo."
+      },
+      {
+        "speakerId": "b",
+        "text": "Ngon quá! Con thích canh cua lắm."
+      },
+      {
+        "speakerId": "a",
+        "text": "Con ăn thêm cơm không?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Cho con thêm một bát nữa ạ."
+      },
+      {
+        "speakerId": "a",
+        "text": "Ăn nhiều rau vào con nhé."
+      },
+      {
+        "speakerId": "b",
+        "text": "Vâng ạ. Cơm mẹ nấu ngon lắm."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Sweetie, come eat!"
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes, I'm coming right now, Mom."
+      },
+      {
+        "speakerId": "a",
+        "text": "Today I made crab soup with pickled eggplant."
+      },
+      {
+        "speakerId": "b",
+        "text": "Yum! I love crab soup."
+      },
+      {
+        "speakerId": "a",
+        "text": "Do you want more rice?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Give me one more bowl, please."
+      },
+      {
+        "speakerId": "a",
+        "text": "Eat plenty of vegetables, okay?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes. Your cooking is delicious, Mom."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'mẹ/con' (mother/child) are the pronouns used within the family.",
+    "slangRegisterNotes": "'canh cua' (crab soup) and 'cà pháo' (pickled baby eggplant) are classic Northern home dishes."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.shopping-clothes",
+    "scenario": "shopping for clothes",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Thảo",
+        "role": "customer"
+      },
+      {
+        "id": "b",
+        "name": "Oanh",
+        "role": "shop assistant"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Chị ơi, cái áo này có màu khác không?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Có màu xanh và màu trắng nữa em."
+      },
+      {
+        "speakerId": "a",
+        "text": "Em mặc thử cái màu xanh được không?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Được chứ, phòng thử ở đằng kia."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cái này hơi chật. Có cỡ to hơn không chị?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Để chị lấy cho em cỡ L nhé."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cái này vừa rồi. Bao nhiêu tiền ạ?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Hai trăm năm mươi nghìn em ạ."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Excuse me, does this shirt come in another color?"
+      },
+      {
+        "speakerId": "b",
+        "text": "It also comes in blue and white."
+      },
+      {
+        "speakerId": "a",
+        "text": "Can I try on the blue one?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Of course, the fitting room is over there."
+      },
+      {
+        "speakerId": "a",
+        "text": "This one is a bit tight. Is there a bigger size?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Let me get you a size L."
+      },
+      {
+        "speakerId": "a",
+        "text": "This one fits. How much is it?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Two hundred fifty thousand."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'mặc thử' = to try on (wearing); 'to hơn' = bigger (comparative); 'vừa' = to fit."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.weekend-plans",
+    "scenario": "making weekend plans",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Hoàng",
+        "role": "friend"
+      },
+      {
+        "id": "b",
+        "name": "Linh",
+        "role": "friend"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Cuối tuần này cậu có kế hoạch gì chưa?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Chưa. Cậu định làm gì à?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Bọn mình đi Tam Đảo chơi nhé? Nghe nói ở đó mát lắm."
+      },
+      {
+        "speakerId": "b",
+        "text": "Ý hay đấy! Nhưng đi bằng gì?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Bọn mình thuê ô tô đi cho tiện."
+      },
+      {
+        "speakerId": "b",
+        "text": "Ừ. Thế đi từ sáng thứ Bảy nhé?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Được. Tớ sẽ đặt khách sạn trước."
+      },
+      {
+        "speakerId": "b",
+        "text": "Ok, để tớ rủ thêm mấy đứa nữa."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Do you have any plans this weekend yet?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Not yet. Are you planning something?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Shall we go to Tam Đảo? I hear it's really cool there."
+      },
+      {
+        "speakerId": "b",
+        "text": "Great idea! But how do we get there?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Let's rent a car for convenience."
+      },
+      {
+        "speakerId": "b",
+        "text": "Okay. So we leave Saturday morning?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Sure. I'll book the hotel in advance."
+      },
+      {
+        "speakerId": "b",
+        "text": "Okay, let me invite a few more people."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'sẽ' marks the future ('tớ sẽ đặt' = I will book); 'đi bằng gì?' = 'by what (transport)?'.",
+    "slangRegisterNotes": "'rủ' = to invite/ask along; 'mấy đứa' = a few people (casual)."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.asking-time",
+    "scenario": "asking the time",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Tùng",
+        "role": "passer-by"
+      },
+      {
+        "id": "b",
+        "name": "Kiên",
+        "role": "man on the street"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Anh ơi, bây giờ là mấy giờ ạ?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Bây giờ là mười giờ kém mười lăm."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cảm ơn anh. Mấy giờ thì cửa hàng mở cửa ạ?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Chắc là mười giờ. Em đợi một chút nữa thôi."
+      },
+      {
+        "speakerId": "a",
+        "text": "Vâng ạ. Em cảm ơn anh."
+      },
+      {
+        "speakerId": "b",
+        "text": "Không có gì."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Excuse me, what time is it now?"
+      },
+      {
+        "speakerId": "b",
+        "text": "It's a quarter to ten."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thank you. What time does the shop open?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Probably ten. Just wait a little longer."
+      },
+      {
+        "speakerId": "a",
+        "text": "Okay. Thank you."
+      },
+      {
+        "speakerId": "b",
+        "text": "You're welcome."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "Time: 'mười giờ kém mười lăm' = 'fifteen to ten'; 'kém' = 'to/before' the hour."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.buying-fruit",
+    "scenario": "buying fruit at the market",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Hồng",
+        "role": "buyer"
+      },
+      {
+        "id": "b",
+        "name": "Loan",
+        "role": "fruit seller"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Cô ơi, cam này bao nhiêu một cân?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Ba mươi nghìn một cân cháu ạ."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cho cháu hai cân. Cam có ngọt không cô?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Ngọt lắm, cam Hà Giang đấy."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cô chọn cho cháu quả ngon nhé."
+      },
+      {
+        "speakerId": "b",
+        "text": "Yên tâm, cô chọn quả ngon cho. Sáu mươi nghìn cháu ạ."
+      },
+      {
+        "speakerId": "a",
+        "text": "Cháu gửi cô tiền. Cảm ơn cô."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Auntie, how much are these oranges per kilo?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Thirty thousand per kilo, dear."
+      },
+      {
+        "speakerId": "a",
+        "text": "Give me two kilos. Are the oranges sweet?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Very sweet, they're from Hà Giang."
+      },
+      {
+        "speakerId": "a",
+        "text": "Please pick good ones for me."
+      },
+      {
+        "speakerId": "b",
+        "text": "Don't worry, I'll pick good ones. Sixty thousand, dear."
+      },
+      {
+        "speakerId": "a",
+        "text": "Here's the money. Thank you."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'cân' = kilogram (Northern colloquial); 'quả' = the fruit classifier (Northern; South says 'trái')."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.taxi-airport",
+    "scenario": "taxi to the airport",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Hà",
+        "role": "passenger"
+      },
+      {
+        "id": "b",
+        "name": "Phong",
+        "role": "taxi driver"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "vi-VN-northern",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Anh cho tôi ra sân bay Nội Bài nhé."
+      },
+      {
+        "speakerId": "b",
+        "text": "Vâng chị. Chị đi chuyến mấy giờ ạ?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Chuyến bốn giờ chiều. Mình đi có kịp không anh?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Kịp chị ạ, đường giờ này vắng."
+      },
+      {
+        "speakerId": "a",
+        "text": "Anh đi cẩn thận giúp tôi nhé."
+      },
+      {
+        "speakerId": "b",
+        "text": "Vâng, chị yên tâm."
+      },
+      {
+        "speakerId": "a",
+        "text": "Đến nơi tôi trả bằng thẻ được không?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Được ạ, xe có máy quẹt thẻ."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Please take me to Nội Bài airport."
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes. What time is your flight?"
+      },
+      {
+        "speakerId": "a",
+        "text": "The four p.m. flight. Will we make it in time?"
+      },
+      {
+        "speakerId": "b",
+        "text": "We'll make it, the road is quiet this hour."
+      },
+      {
+        "speakerId": "a",
+        "text": "Please drive carefully."
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes, don't worry."
+      },
+      {
+        "speakerId": "a",
+        "text": "Can I pay by card when we arrive?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes, the car has a card reader."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'kịp' = to be in time; 'trả bằng thẻ' = to pay by card ('bằng' = by means of)."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.homestay",
+    "scenario": "checking amenities at a homestay",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Cháu",
+        "role": "guest"
+      },
+      {
+        "id": "b",
+        "name": "Xuân",
+        "role": "homestay host"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "vi-VN-northern",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Cô ơi, phòng cháu có nước nóng không ạ?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Có cháu, bình nóng lạnh ở trong nhà tắm."
+      },
+      {
+        "speakerId": "a",
+        "text": "Wifi ở đây tên gì ạ?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Tên wifi là 'homestay', mật khẩu là tám số tám."
+      },
+      {
+        "speakerId": "a",
+        "text": "Sáng mai mấy giờ có ăn sáng ạ?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Bảy giờ nhé. Cô nấu phở cho cả nhà."
+      },
+      {
+        "speakerId": "a",
+        "text": "Tuyệt quá! Cháu cảm ơn cô."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Auntie, does my room have hot water?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes, the water heater is in the bathroom."
+      },
+      {
+        "speakerId": "a",
+        "text": "What's the wifi name here?"
+      },
+      {
+        "speakerId": "b",
+        "text": "The wifi is 'homestay', the password is eight eights."
+      },
+      {
+        "speakerId": "a",
+        "text": "What time is breakfast tomorrow morning?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Seven o'clock. I'll cook phở for everyone."
+      },
+      {
+        "speakerId": "a",
+        "text": "Wonderful! Thank you, auntie."
+      }
+    ],
+    "keyVocabulary": [],
+    "slangRegisterNotes": "'bình nóng lạnh' = electric water heater; 'tám số tám' = 'eight eights' (88888888)."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.saying-goodbye",
+    "scenario": "leaving work for the day",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "Hằng",
+        "role": "junior colleague"
+      },
+      {
+        "id": "b",
+        "name": "Thành",
+        "role": "senior colleague"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "vi-VN-northern",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "Muộn rồi, em về trước đây ạ."
+      },
+      {
+        "speakerId": "b",
+        "text": "Ừ, em về cẩn thận nhé."
+      },
+      {
+        "speakerId": "a",
+        "text": "Vâng. Mai anh có đi họp không ạ?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Có, chín giờ sáng mai họp. Em nhớ đến đúng giờ nhé."
+      },
+      {
+        "speakerId": "a",
+        "text": "Vâng, em nhớ rồi. Em chào anh, hẹn mai gặp lại."
+      },
+      {
+        "speakerId": "b",
+        "text": "Chào em, mai gặp lại."
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "It's late, I'll head home first."
+      },
+      {
+        "speakerId": "b",
+        "text": "Sure, get home safe."
+      },
+      {
+        "speakerId": "a",
+        "text": "Okay. Are you going to the meeting tomorrow?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes, the meeting is at nine tomorrow. Remember to be on time."
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, I'll remember. Goodbye, see you tomorrow."
+      },
+      {
+        "speakerId": "b",
+        "text": "Bye, see you tomorrow."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "'về trước' = to leave first (before others); 'hẹn mai gặp lại' = 'see you again tomorrow'."
+  }
+]
