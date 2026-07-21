@@ -1,0 +1,176 @@
+[
+  {"schemaVersion": 1, "key": "lesson.greetings-courtesy", "lessonType": "vocabulary", "title": "Greetings and Courtesy", "cefr": "A1", "sequence": 1, "dialogueRef": null, "body": {"steps": [
+    {"type": "teach", "vocabRefs": ["vocab.xin-chao", "vocab.chao", "vocab.tam-biet", "vocab.cam-on", "vocab.xin-loi"]},
+    {"type": "quiz", "prompt": "How do you say 'hello' in the safe, all-purpose way?", "answer": "Xin chào"},
+    {"type": "quiz", "prompt": "Translate to Vietnamese: 'thank you'.", "answer": "Cảm ơn"},
+    {"type": "quiz", "prompt": "What does 'xin lỗi' mean?", "answer": "Sorry / excuse me"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.numbers-0-10", "lessonType": "vocabulary", "title": "Numbers 0 to 10", "cefr": "A1", "sequence": 2, "dialogueRef": null, "body": {"steps": [
+    {"type": "teach", "vocabRefs": ["vocab.mot", "vocab.hai", "vocab.ba-three", "vocab.bon", "vocab.nam-five", "vocab.sau", "vocab.bay", "vocab.tam", "vocab.chin", "vocab.muoi"]},
+    {"type": "quiz", "prompt": "Write the Vietnamese for the number 3.", "answer": "ba"},
+    {"type": "quiz", "prompt": "Which number is 'bảy'?", "answer": "seven"},
+    {"type": "quiz", "prompt": "Translate: 'ten'.", "answer": "mười"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.family-members", "lessonType": "vocabulary", "title": "Family Members", "cefr": "A1", "sequence": 3, "dialogueRef": null, "body": {"steps": [
+    {"type": "teach", "vocabRefs": ["vocab.gia-dinh", "vocab.bo-father", "vocab.me-mother", "vocab.con-trai", "vocab.con-gai"]},
+    {"type": "quiz", "prompt": "What is the Northern word for 'dad'?", "answer": "bố"},
+    {"type": "quiz", "prompt": "Translate to Vietnamese: 'my family has four people'.", "answer": "Gia đình tôi có bốn người"},
+    {"type": "quiz", "prompt": "What does 'con gái' mean?", "answer": "daughter / girl"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.food-and-drink", "lessonType": "vocabulary", "title": "Food and Drink Basics", "cefr": "A1", "sequence": 4, "dialogueRef": null, "body": {"steps": [
+    {"type": "teach", "vocabRefs": ["vocab.com-rice", "vocab.pho", "vocab.banh-mi", "vocab.nuoc-water", "vocab.ca-phe"]},
+    {"type": "quiz", "prompt": "What is 'phở'?", "answer": "pho (rice-noodle soup)"},
+    {"type": "quiz", "prompt": "Translate: 'give me a glass of water'.", "answer": "Cho tôi một cốc nước"},
+    {"type": "quiz", "prompt": "The word 'nước' means water and also what?", "answer": "country"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.days-of-week", "lessonType": "vocabulary", "title": "Days of the Week", "cefr": "A1", "sequence": 5, "dialogueRef": null, "body": {"steps": [
+    {"type": "teach", "vocabRefs": ["vocab.thu-hai", "vocab.thu-ba", "vocab.thu-tu", "vocab.thu-nam", "vocab.thu-sau", "vocab.thu-bay", "vocab.chu-nhat"]},
+    {"type": "quiz", "prompt": "Monday is literally 'the second'. Write it in Vietnamese.", "answer": "thứ hai"},
+    {"type": "quiz", "prompt": "Which day breaks the 'thứ + number' pattern?", "answer": "Sunday (chủ nhật)"},
+    {"type": "quiz", "prompt": "Translate: 'today is Tuesday'.", "answer": "Hôm nay là thứ ba"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.kinship-pronouns", "lessonType": "grammar", "title": "Kinship-Address Pronouns", "cefr": "A1", "sequence": 6, "dialogueRef": null, "body": {"steps": [
+    {"type": "teach", "vocabRefs": ["vocab.anh", "vocab.chi", "vocab.em", "vocab.ong", "vocab.ba-grandmother"]},
+    {"type": "quiz", "prompt": "You address a slightly older man. Which pronoun do you use for 'you'?", "answer": "anh"},
+    {"type": "quiz", "prompt": "Which pronoun addresses a slightly older woman?", "answer": "chị"},
+    {"type": "quiz", "prompt": "Which word addresses someone younger than you (and how they refer to themselves back)?", "answer": "em"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.yesno-questions", "lessonType": "grammar", "title": "Yes/No Questions with co...khong", "cefr": "A1", "sequence": 7, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "The frame 'có ... không?' wraps a verb/adjective to make a yes/no question. Turn 'anh khỏe' (you are well) into a question.", "answer": "Anh có khỏe không?"},
+    {"type": "quiz", "prompt": "To answer 'yes' you repeat the verb (có); to answer 'no' you say what?", "answer": "không"},
+    {"type": "quiz", "prompt": "Make a yes/no question meaning 'do you (older woman) drink tea?'", "answer": "Chị có uống trà không?"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.tense-markers", "lessonType": "grammar", "title": "Time Markers: da, dang, se", "cefr": "A2", "sequence": 8, "dialogueRef": null, "body": {"steps": [
+    {"type": "teach", "vocabRefs": ["vocab.da-already", "vocab.dang-progressive", "vocab.se-will"]},
+    {"type": "quiz", "prompt": "Which preverb marks a completed / past action?", "answer": "đã"},
+    {"type": "quiz", "prompt": "Translate: 'I am studying Vietnamese' (action in progress).", "answer": "Tôi đang học tiếng Việt"},
+    {"type": "quiz", "prompt": "Which preverb marks the future?", "answer": "sẽ"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.classifiers-basics", "lessonType": "grammar", "title": "Classifiers: cai, con, chiec", "cefr": "A2", "sequence": 9, "dialogueRef": null, "body": {"steps": [
+    {"type": "teach", "vocabRefs": ["vocab.cai-classifier", "vocab.con-classifier", "vocab.chiec-classifier"]},
+    {"type": "quiz", "prompt": "Which classifier is the default for inanimate objects?", "answer": "cái"},
+    {"type": "quiz", "prompt": "Which classifier is used for animals?", "answer": "con"},
+    {"type": "quiz", "prompt": "Translate: 'my house has two cats'.", "answer": "Nhà tôi có hai con mèo"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.connectors", "lessonType": "grammar", "title": "Connectors: vi, nhung, nen, neu", "cefr": "A2", "sequence": 10, "dialogueRef": null, "body": {"steps": [
+    {"type": "teach", "vocabRefs": ["vocab.vi-because", "vocab.nhung-but", "vocab.nen-so", "vocab.neu-if"]},
+    {"type": "quiz", "prompt": "Which word means 'because'?", "answer": "vì"},
+    {"type": "quiz", "prompt": "Translate: 'It's raining, so I stay home.'", "answer": "Trời mưa nên tôi ở nhà"},
+    {"type": "quiz", "prompt": "'Nếu' (if) is often paired with which word meaning 'then'?", "answer": "thì"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.listen-greeting", "lessonType": "listening_exercise", "title": "Listening: A Greeting", "cefr": "A1", "sequence": 11, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Audio: A young man greets an older woman. You hear: 'Chào chị! Chị có khỏe không?' What is he asking after greeting her?", "answer": "Whether she is well / how she is"},
+    {"type": "quiz", "prompt": "Audio again: 'Chào chị!' What pronoun does he use for her, and what does it tell you about her?", "answer": "chị — she is a slightly older woman"},
+    {"type": "quiz", "prompt": "How would she reply that she is well? Give one natural Vietnamese answer.", "answer": "Chị khỏe, cảm ơn em"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.listen-pho-order", "lessonType": "listening_exercise", "title": "Listening: Ordering Pho", "cefr": "A1", "sequence": 12, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Audio: In a small shop a customer says: 'Cho tôi một bát phở gà.' What did the customer order?", "answer": "One bowl of chicken pho"},
+    {"type": "quiz", "prompt": "The customer said 'một bát'. What does 'bát' mean (the Northern word)?", "answer": "bowl"},
+    {"type": "quiz", "prompt": "If the customer wanted beef instead of chicken they'd say 'phở bò'. What is 'gà'?", "answer": "chicken"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.listen-directions", "lessonType": "listening_exercise", "title": "Listening: Asking Directions", "cefr": "A1", "sequence": 13, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Audio: A local tells you: 'Đi thẳng rồi rẽ phải.' What are the two instructions?", "answer": "Go straight, then turn right"},
+    {"type": "quiz", "prompt": "In 'rẽ phải', what does 'phải' mean here?", "answer": "right (the direction)"},
+    {"type": "quiz", "prompt": "You then hear: 'Nhà vệ sinh ở bên trái.' Where is the toilet?", "answer": "On the left"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.listen-market-price", "lessonType": "listening_exercise", "title": "Listening: A Price at the Market", "cefr": "A1", "sequence": 14, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Audio: At the market a seller says: 'Cái này năm mươi nghìn đồng.' How much does this item cost?", "answer": "Fifty thousand dong"},
+    {"type": "quiz", "prompt": "You want to ask the price first. What question do you say?", "answer": "Cái này bao nhiêu tiền?"},
+    {"type": "quiz", "prompt": "'Nghìn' is the Northern word for which number word?", "answer": "thousand"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.listen-weather", "lessonType": "listening_exercise", "title": "Listening: A Weather Remark", "cefr": "A1", "sequence": 15, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Audio: A friend looks outside and says: 'Hôm nay trời nắng to.' What is the weather like today?", "answer": "Very sunny"},
+    {"type": "quiz", "prompt": "In weather sentences, 'trời' is the subject word. What does 'trời mưa' mean?", "answer": "It is raining"},
+    {"type": "quiz", "prompt": "You reply that today it is hot. Say it in Vietnamese.", "answer": "Hôm nay trời nóng"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.listen-family-intro", "lessonType": "listening_exercise", "title": "Listening: Introducing Family", "cefr": "A1", "sequence": 16, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Audio: Someone introduces their family: 'Gia đình tôi có bốn người: bố, mẹ, tôi và em trai.' How many people are in the family?", "answer": "Four"},
+    {"type": "quiz", "prompt": "They list 'bố' and 'mẹ'. Who are these?", "answer": "Father (dad) and mother (mom)"},
+    {"type": "quiz", "prompt": "'Em trai' means younger brother. Based on 'con gái = daughter/girl', what would 'con trai' mean?", "answer": "son / boy"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.listen-what-time", "lessonType": "listening_exercise", "title": "Listening: What Time Is It", "cefr": "A1", "sequence": 17, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Audio: You ask the time and hear: 'Bây giờ là ba giờ chiều.' What time is it?", "answer": "Three o'clock in the afternoon"},
+    {"type": "quiz", "prompt": "How do you ask 'what time is it now?' in Vietnamese?", "answer": "Bây giờ là mấy giờ?"},
+    {"type": "quiz", "prompt": "In 'ba giờ chiều', what does 'chiều' tell you about the time of day?", "answer": "It is the afternoon"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.listen-coffee-shop", "lessonType": "listening_exercise", "title": "Listening: At the Coffee Shop", "cefr": "A1", "sequence": 18, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Audio: A server asks: 'Anh uống gì ạ?' What is the server asking the customer?", "answer": "What (drink) would you like? / What will you drink?"},
+    {"type": "quiz", "prompt": "The polite particle 'ạ' at the end signals what?", "answer": "Politeness / respect"},
+    {"type": "quiz", "prompt": "The customer wants coffee. Give a natural reply.", "answer": "Cho tôi một cà phê"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.listen-doctor", "lessonType": "listening_exercise", "title": "Listening: At the Doctor", "cefr": "A2", "sequence": 19, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Audio: A patient tells the doctor: 'Tôi bị đau đầu và sốt.' What two problems does the patient have?", "answer": "A headache and a fever"},
+    {"type": "quiz", "prompt": "The pattern 'bị + problem' expresses a bad thing happening to you. What does 'bị sốt' mean?", "answer": "To have a fever"},
+    {"type": "quiz", "prompt": "The doctor says 'Uống thuốc sau khi ăn.' When should you take the medicine?", "answer": "After eating"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.listen-phone-call", "lessonType": "listening_exercise", "title": "Listening: A Phone Call", "cefr": "A2", "sequence": 20, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Audio: On the phone a colleague says: 'Ngày mai chúng ta có cuộc họp lúc chín giờ.' When is the meeting?", "answer": "Tomorrow at nine o'clock"},
+    {"type": "quiz", "prompt": "What does 'cuộc họp' mean?", "answer": "A meeting"},
+    {"type": "quiz", "prompt": "They add: 'Đừng quên nhé.' What are they reminding you?", "answer": "Don't forget"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.write-introduce-self", "lessonType": "writing_prompt", "title": "Writing: Introduce Yourself", "cefr": "A1", "sequence": 21, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Write two sentences in Vietnamese introducing yourself: your name and your nationality. Model answer:", "answer": "Xin chào! Tôi tên là Nam. Tôi là người Mỹ."},
+    {"type": "quiz", "prompt": "Now write that you are a student and you are studying Vietnamese.", "answer": "Tôi là sinh viên và tôi đang học tiếng Việt."}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.write-family", "lessonType": "writing_prompt", "title": "Writing: About Your Family", "cefr": "A1", "sequence": 22, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Write in Vietnamese how many people are in your family and name two members. Model answer:", "answer": "Gia đình tôi có bốn người: bố, mẹ, em gái và tôi."},
+    {"type": "quiz", "prompt": "Write one sentence saying what your father does, using 'bố tôi là ...'. Model answer:", "answer": "Bố tôi là bác sĩ."}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.write-order-food", "lessonType": "writing_prompt", "title": "Writing: Order Food", "cefr": "A1", "sequence": 23, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Write a polite order for one bowl of pho and one coffee, using the 'cho tôi ...' pattern. Model answer:", "answer": "Cho tôi một bát phở và một cà phê."},
+    {"type": "quiz", "prompt": "Write how you would ask for the menu. Model answer:", "answer": "Cho tôi xem thực đơn."}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.write-my-day", "lessonType": "writing_prompt", "title": "Writing: Describe Your Day", "cefr": "A1", "sequence": 24, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Write what you do in the morning, using 'buổi sáng'. Model answer:", "answer": "Buổi sáng tôi uống cà phê và đi làm."},
+    {"type": "quiz", "prompt": "Write what you do in the evening, using 'buổi tối'. Model answer:", "answer": "Buổi tối tôi ăn cơm ở nhà."}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.write-ask-directions", "lessonType": "writing_prompt", "title": "Writing: Ask for Directions", "cefr": "A1", "sequence": 25, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Write a polite question asking where the train station is. Model answer:", "answer": "Xin lỗi, nhà ga ở đâu ạ?"},
+    {"type": "quiz", "prompt": "Write a sentence saying the market is near your house. Model answer:", "answer": "Chợ gần nhà tôi."}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.write-weather", "lessonType": "writing_prompt", "title": "Writing: Describe the Weather", "cefr": "A1", "sequence": 26, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Write one sentence describing today's weather as sunny. Model answer:", "answer": "Hôm nay trời nắng."},
+    {"type": "quiz", "prompt": "Write a sentence saying that it is raining and cold. Model answer:", "answer": "Trời đang mưa và lạnh."}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.write-my-job", "lessonType": "writing_prompt", "title": "Writing: About Your Job", "cefr": "A2", "sequence": 27, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Write two sentences about your work: where you work and whether it is busy. Model answer:", "answer": "Tôi làm việc ở một công ty lớn. Công việc của tôi rất bận."},
+    {"type": "quiz", "prompt": "Write a sentence saying your colleagues are friendly. Model answer:", "answer": "Đồng nghiệp của tôi rất thân thiện."}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.write-text-message", "lessonType": "writing_prompt", "title": "Writing: A Text Message", "cefr": "A2", "sequence": 28, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Write a short text message to a friend asking to meet next week. Model answer:", "answer": "Tuần sau chúng ta gặp nhau nhé!"},
+    {"type": "quiz", "prompt": "Write a message saying you will call them tonight. Model answer:", "answer": "Tối nay tôi sẽ gọi điện cho bạn."}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.write-feelings", "lessonType": "writing_prompt", "title": "Writing: How You Feel", "cefr": "A2", "sequence": 29, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Write a sentence saying you are very tired after working. Model answer:", "answer": "Tôi rất mệt sau khi làm việc."},
+    {"type": "quiz", "prompt": "Write a sentence saying that work makes you stressed. Model answer:", "answer": "Công việc làm tôi căng thẳng."}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.write-last-weekend", "lessonType": "writing_prompt", "title": "Writing: About Last Weekend", "cefr": "A2", "sequence": 30, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Using the past marker 'đã', write what you did yesterday. Model answer:", "answer": "Hôm qua tôi đã đi làm và gặp bạn."},
+    {"type": "quiz", "prompt": "Write a sentence saying that last year you went to Japan, using 'năm ngoái'. Model answer:", "answer": "Năm ngoái tôi đã đi Nhật Bản."}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.roleplay-order-pho", "lessonType": "roleplay", "title": "Roleplay: Ordering Pho", "cefr": "A1", "sequence": 31, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Scenario: You enter a phở shop. The female server looks a bit older than you, so you address her as 'chị' and call yourself 'em'. She asks: 'Em ăn gì?' Order one bowl of beef pho politely.", "answer": "Chị cho em một bát phở bò ạ."},
+    {"type": "quiz", "prompt": "You want to add a glass of iced tea. Ask for it.", "answer": "Cho em thêm một cốc trà đá ạ."},
+    {"type": "quiz", "prompt": "You've finished and want the bill. Ask 'chị' for it politely.", "answer": "Chị ơi, cho em tính tiền ạ."}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.roleplay-meeting-someone", "lessonType": "roleplay", "title": "Roleplay: Meeting Someone New", "cefr": "A1", "sequence": 32, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Scenario: You meet a man about your own age. You address him as 'anh' and yourself as 'tôi'. Greet him and ask his name.", "answer": "Chào anh! Anh tên là gì?"},
+    {"type": "quiz", "prompt": "He asks 'Bạn là người nước nào?' (which country are you from). Answer that you are American.", "answer": "Tôi là người Mỹ."},
+    {"type": "quiz", "prompt": "End the conversation politely, saying nice to meet you and goodbye.", "answer": "Rất vui được gặp anh. Tạm biệt anh!"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.roleplay-market", "lessonType": "roleplay", "title": "Roleplay: Shopping at the Market", "cefr": "A1", "sequence": 33, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Scenario: At the market you speak to an older woman seller ('bà'). Ask her the price of this item.", "answer": "Bà ơi, cái này bao nhiêu tiền ạ?"},
+    {"type": "quiz", "prompt": "She says 'Năm mươi nghìn.' You think it's too expensive. Say so.", "answer": "Đắt quá!"},
+    {"type": "quiz", "prompt": "Try to bargain: ask if she can make it cheaper.", "answer": "Bà bớt cho cháu một chút được không ạ?"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.roleplay-pharmacy", "lessonType": "roleplay", "title": "Roleplay: At the Pharmacy", "cefr": "A2", "sequence": 34, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Scenario: You are at a pharmacy speaking to a female pharmacist about your age ('chị'). Tell her you have a headache and want medicine.", "answer": "Chị ơi, tôi bị đau đầu, tôi muốn mua thuốc."},
+    {"type": "quiz", "prompt": "She asks 'Anh/chị bị mấy ngày rồi?' (how many days). Answer: two days.", "answer": "Tôi bị hai ngày rồi."},
+    {"type": "quiz", "prompt": "Ask how to take the medicine (when to take it).", "answer": "Tôi uống thuốc khi nào ạ?"}
+  ]}},
+  {"schemaVersion": 1, "key": "lesson.roleplay-hotel", "lessonType": "roleplay", "title": "Roleplay: Booking a Hotel Room", "cefr": "A2", "sequence": 35, "dialogueRef": null, "body": {"steps": [
+    {"type": "quiz", "prompt": "Scenario: At a hotel reception you speak to a young male receptionist ('em'). Say you want to book a room for two nights.", "answer": "Em ơi, anh muốn đặt một phòng cho hai đêm."},
+    {"type": "quiz", "prompt": "He asks 'Anh trả bằng tiền mặt hay thẻ?' (cash or card). Say you will pay by card.", "answer": "Anh trả bằng thẻ."},
+    {"type": "quiz", "prompt": "Ask whether the room has free wifi.", "answer": "Phòng có wifi miễn phí không em?"}
+  ]}}
+]

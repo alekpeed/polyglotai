@@ -1,0 +1,964 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "lesson.greetings-courtesy",
+    "lessonType": "vocabulary",
+    "title": "Greetings and Courtesy",
+    "cefr": "A1",
+    "sequence": 1,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.sawatdii",
+            "vocab.khawp-khun",
+            "vocab.khaw-thoot",
+            "vocab.laa-kawn"
+          ]
+        },
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.khrap",
+            "vocab.kha-statement",
+            "vocab.kha-question"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "How do you say 'hello' politely as a male speaker?",
+          "answer": "สวัสดีครับ (sà-wàt-dii khráp)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "A woman thanks someone politely. Write it in Thai with romanization.",
+          "answer": "ขอบคุณค่ะ (khàwp-khun khâ)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.core-pronouns",
+    "lessonType": "vocabulary",
+    "title": "Core Pronouns (I, you, he/she)",
+    "cefr": "A1",
+    "sequence": 2,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.phom",
+            "vocab.dichan",
+            "vocab.chan",
+            "vocab.khun",
+            "vocab.khao-he",
+            "vocab.rao"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Which first-person pronoun does a male speaker normally use?",
+          "answer": "ผม (phǒm)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Translate 'you' (polite, neutral).",
+          "answer": "คุณ (khun)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.family-people",
+    "lessonType": "vocabulary",
+    "title": "Family and People",
+    "cefr": "A1",
+    "sequence": 3,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.mae",
+            "vocab.phaw",
+            "vocab.phii",
+            "vocab.nawng",
+            "vocab.luuk",
+            "vocab.khrawp-khrua"
+          ]
+        },
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.phuu-chaai",
+            "vocab.phuu-ying",
+            "vocab.phuean",
+            "vocab.khon"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Translate 'mother' and 'father' into Thai with romanization.",
+          "answer": "แม่ (mâe), พ่อ (phâw)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "What word means 'older sibling / older person'?",
+          "answer": "พี่ (phîi)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.numbers-1-10",
+    "lessonType": "vocabulary",
+    "title": "Numbers 1 to 10",
+    "cefr": "A1",
+    "sequence": 4,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.nueng",
+            "vocab.sawng",
+            "vocab.saam",
+            "vocab.sii-four",
+            "vocab.haa-five"
+          ]
+        },
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.hok",
+            "vocab.jet",
+            "vocab.paet",
+            "vocab.kao-nine",
+            "vocab.sip"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Count from one to three in Thai (romanization).",
+          "answer": "nùeng, sǎwng, sǎam"
+        },
+        {
+          "type": "quiz",
+          "prompt": "What is the Thai word for 'five'?",
+          "answer": "ห้า (hâa)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.food-drink-basics",
+    "lessonType": "vocabulary",
+    "title": "Food and Drink Basics",
+    "cefr": "A1",
+    "sequence": 5,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.khaao",
+            "vocab.naam",
+            "vocab.aahaan",
+            "vocab.kaafae",
+            "vocab.chaa"
+          ]
+        },
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.kai-chicken",
+            "vocab.muu",
+            "vocab.plaa",
+            "vocab.phak",
+            "vocab.khai-egg"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Translate 'rice' and 'water'.",
+          "answer": "ข้าว (khâao), น้ำ (náam)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Say 'Thai food' in Thai.",
+          "answer": "อาหารไทย (aa-hǎan thai)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.politeness-particles",
+    "lessonType": "grammar",
+    "title": "Politeness Particles: khráp / khâ / khá",
+    "cefr": "A1",
+    "sequence": 6,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.khrap",
+            "vocab.kha-statement",
+            "vocab.kha-question",
+            "vocab.na"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "A female speaker ends a QUESTION. Which particle does she use?",
+          "answer": "คะ (khá, high tone)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "A female speaker ends a STATEMENT. Which particle does she use?",
+          "answer": "ค่ะ (khâ, falling tone)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Which particle do male speakers use to be polite?",
+          "answer": "ครับ (khráp)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.negation-mai",
+    "lessonType": "grammar",
+    "title": "Negation with ไม่ (mâi)",
+    "cefr": "A1",
+    "sequence": 7,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.mai-not",
+            "vocab.pen",
+            "vocab.chawp",
+            "vocab.hiw"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "ไม่ goes BEFORE what part of speech (verb/adjective or noun)?",
+          "answer": "before the verb or adjective"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Say 'I am not hungry' (male speaker, polite).",
+          "answer": "ผมไม่หิวครับ (phǒm mâi hǐw khráp)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Turn ชอบ (to like) into 'do not like'.",
+          "answer": "ไม่ชอบ (mâi châwp)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.yes-no-questions-mai",
+    "lessonType": "grammar",
+    "title": "Yes/No Questions with ...ไหม (mǎi)",
+    "cefr": "A1",
+    "sequence": 8,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.dii",
+            "vocab.arawy",
+            "vocab.mii",
+            "vocab.pai"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Where do you add ไหม (mǎi) to make a yes/no question?",
+          "answer": "at the end of the sentence"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Ask 'Is it delicious?' in Thai.",
+          "answer": "อร่อยไหม (à-ràwy mǎi)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Ask 'Do you have (it)?' politely.",
+          "answer": "มีไหมครับ / มีไหมคะ (mii mǎi khráp/khá)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.classifier-thao-rai",
+    "lessonType": "grammar",
+    "title": "Asking 'How much?' with เท่าไหร่",
+    "cefr": "A1",
+    "sequence": 9,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.thao-rai",
+            "vocab.raakhaa",
+            "vocab.baat",
+            "vocab.phaeng",
+            "vocab.thuuk-cheap"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Ask 'How much is it?' (price) in Thai.",
+          "answer": "เท่าไหร่ (thâo-rài) or ราคาเท่าไหร่ (raa-khaa thâo-rài)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "The vendor says it is 50 baht. Write the number + baht.",
+          "answer": "ห้าสิบบาท (hâa-sìp bàat)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.future-and-past-markers",
+    "lessonType": "grammar",
+    "title": "Time Markers: จะ (future) and แล้ว (already)",
+    "cefr": "A2",
+    "sequence": 10,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.ja",
+            "vocab.laaeo",
+            "vocab.yang",
+            "vocab.khoei",
+            "vocab.phrung-nii",
+            "vocab.muea-waan"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Which word before a verb marks the future ('will')?",
+          "answer": "จะ (jà)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Say 'I have already eaten.' (male speaker).",
+          "answer": "ผมกินข้าวแล้ว (phǒm kin khâao láaeo)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Say 'Tomorrow I will go to work.'",
+          "answer": "พรุ่งนี้ผมจะไปทำงาน (phrûng-níi phǒm jà pai tham-ngaan)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.listen-greeting",
+    "lessonType": "listening_exercise",
+    "title": "Listening: A Polite Greeting",
+    "cefr": "A1",
+    "sequence": 11,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Audio (woman): 'สวัสดีค่ะ ยินดีที่ได้รู้จัก' (sà-wàt-dii khâ, yin-dii thîi dâi rúu-jàk). What is she doing?",
+          "answer": "Greeting and saying 'nice to meet you.'"
+        },
+        {
+          "type": "quiz",
+          "prompt": "From the audio, how do you know the speaker is female?",
+          "answer": "She ends with ค่ะ (khâ)."
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.listen-market-price",
+    "lessonType": "listening_exercise",
+    "title": "Listening: Price at the Market",
+    "cefr": "A1",
+    "sequence": 12,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Audio (vendor): 'อันนี้ห้าสิบบาทค่ะ' (an níi hâa-sìp bàat khâ). How much does the item cost?",
+          "answer": "50 baht (ห้าสิบบาท)."
+        },
+        {
+          "type": "quiz",
+          "prompt": "Is the vendor male or female? How can you tell?",
+          "answer": "Female, because she uses ค่ะ (khâ)."
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.listen-order-coffee",
+    "lessonType": "listening_exercise",
+    "title": "Listening: Ordering Coffee",
+    "cefr": "A1",
+    "sequence": 13,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Audio (customer): 'ขอกาแฟหนึ่งแก้วครับ' (khǎw kaa-fae nùeng kâew khráp). What does he order and how many?",
+          "answer": "One glass of coffee (กาแฟ หนึ่งแก้ว)."
+        },
+        {
+          "type": "quiz",
+          "prompt": "What polite particle tells you the speaker is male?",
+          "answer": "ครับ (khráp)."
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.listen-directions",
+    "lessonType": "listening_exercise",
+    "title": "Listening: Simple Directions",
+    "cefr": "A1",
+    "sequence": 14,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Audio: 'ห้องน้ำอยู่ทางซ้ายค่ะ' (hâwng-náam yùu thaang-sáai khâ). Where is the bathroom?",
+          "answer": "On the left (ทางซ้าย)."
+        },
+        {
+          "type": "quiz",
+          "prompt": "What place is being asked about?",
+          "answer": "The bathroom / toilet (ห้องน้ำ)."
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.listen-weather",
+    "lessonType": "listening_exercise",
+    "title": "Listening: Today's Weather",
+    "cefr": "A1",
+    "sequence": 15,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Audio: 'วันนี้ร้อนมาก' (wan-níi ráwn mâak). What is today's weather like?",
+          "answer": "Very hot (ร้อนมาก)."
+        },
+        {
+          "type": "quiz",
+          "prompt": "Which word means 'today' in the clip?",
+          "answer": "วันนี้ (wan-níi)."
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.listen-introduce-self",
+    "lessonType": "listening_exercise",
+    "title": "Listening: Introducing Yourself",
+    "cefr": "A1",
+    "sequence": 16,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Audio (man): 'ผมชื่อสมชาย ผมเป็นคนไทย' (phǒm chûe sǒm-chaai, phǒm pen khon thai). What is his name and nationality?",
+          "answer": "His name is Somchai and he is Thai."
+        },
+        {
+          "type": "quiz",
+          "prompt": "What does เป็นคนไทย (pen khon thai) mean?",
+          "answer": "'to be Thai / a Thai person.'"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.listen-restaurant-full",
+    "lessonType": "listening_exercise",
+    "title": "Listening: After the Meal",
+    "cefr": "A1",
+    "sequence": 17,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Audio: 'อิ่มแล้ว อร่อยมากค่ะ' (ìm láew, à-ràwy mâak khâ). How does the speaker feel about the meal?",
+          "answer": "She is full and thought it was very delicious."
+        },
+        {
+          "type": "quiz",
+          "prompt": "What does อิ่มแล้ว (ìm láew) mean?",
+          "answer": "'I'm full now.'"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.listen-time-days",
+    "lessonType": "listening_exercise",
+    "title": "Listening: Which Day?",
+    "cefr": "A1",
+    "sequence": 18,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Audio: 'พรุ่งนี้วันจันทร์' (phrûng-níi wan-jan). What day is tomorrow?",
+          "answer": "Monday (วันจันทร์)."
+        },
+        {
+          "type": "quiz",
+          "prompt": "Which word means 'tomorrow'?",
+          "answer": "พรุ่งนี้ (phrûng-níi)."
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.listen-feeling-sick",
+    "lessonType": "listening_exercise",
+    "title": "Listening: Feeling Unwell",
+    "cefr": "A2",
+    "sequence": 19,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Audio (man): 'ผมรู้สึกไม่สบาย ปวดหัว' (phǒm rúu-sùek mâi sà-baai, pùat-hǔa). What is wrong with him?",
+          "answer": "He feels unwell and has a headache."
+        },
+        {
+          "type": "quiz",
+          "prompt": "What does ปวดหัว (pùat-hǔa) mean?",
+          "answer": "'headache / my head hurts.'"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.listen-phone-plan",
+    "lessonType": "listening_exercise",
+    "title": "Listening: Making a Plan by Phone",
+    "cefr": "A2",
+    "sequence": 20,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Audio (woman): 'เดี๋ยวฉันโทรหาคุณนะคะ' (dǐao chǎn thoo hǎa khun ná khá). What will she do?",
+          "answer": "She will call you in a moment."
+        },
+        {
+          "type": "quiz",
+          "prompt": "Which verb means 'to call / phone' in the clip?",
+          "answer": "โทร (thoo)."
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.write-greet-teacher",
+    "lessonType": "writing_prompt",
+    "title": "Writing: Greet Your Teacher",
+    "cefr": "A1",
+    "sequence": 21,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Write a polite morning greeting to your teacher, as a female speaker.",
+          "answer": "สวัสดีค่ะ อาจารย์ (sà-wàt-dii khâ, aa-jaan)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.write-introduce-name",
+    "lessonType": "writing_prompt",
+    "title": "Writing: Say Your Name",
+    "cefr": "A1",
+    "sequence": 22,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Write 'My name is Anna' as a female speaker (use ฉัน).",
+          "answer": "ฉันชื่อแอนนา (chǎn chûe aan-nâa)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.write-order-food",
+    "lessonType": "writing_prompt",
+    "title": "Writing: Order One Plate of Rice",
+    "cefr": "A1",
+    "sequence": 23,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Write 'One plate of chicken rice, please' as a male speaker.",
+          "answer": "ขอข้าวไก่หนึ่งจานครับ (khǎw khâao kài nùeng jaan khráp)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.write-count-people",
+    "lessonType": "writing_prompt",
+    "title": "Writing: Say How Many People",
+    "cefr": "A1",
+    "sequence": 24,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Write 'Two people' (for a table at a restaurant).",
+          "answer": "สองคน (sǎwng khon)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.write-ask-price",
+    "lessonType": "writing_prompt",
+    "title": "Writing: Ask the Price",
+    "cefr": "A1",
+    "sequence": 25,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Write 'How much is this?' politely (female speaker).",
+          "answer": "อันนี้เท่าไหร่คะ (an níi thâo-rài khá)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.write-ask-bathroom",
+    "lessonType": "writing_prompt",
+    "title": "Writing: Ask Where the Bathroom Is",
+    "cefr": "A1",
+    "sequence": 26,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Write 'Where is the bathroom?' politely.",
+          "answer": "ห้องน้ำอยู่ไหนครับ / ห้องน้ำอยู่ไหนคะ (hâwng-náam yùu nǎi khráp/khá)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.write-say-not-spicy",
+    "lessonType": "writing_prompt",
+    "title": "Writing: Ask for 'Not Spicy'",
+    "cefr": "A1",
+    "sequence": 27,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Write 'I don't eat spicy food' (male speaker).",
+          "answer": "ผมไม่กินเผ็ดครับ (phǒm mâi kin phèt khráp)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.write-thank-you",
+    "lessonType": "writing_prompt",
+    "title": "Writing: Thank Someone",
+    "cefr": "A1",
+    "sequence": 28,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Write 'Thank you very much' as a female speaker.",
+          "answer": "ขอบคุณมากค่ะ (khàwp-khun mâak khâ)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.write-weekend-plan",
+    "lessonType": "writing_prompt",
+    "title": "Writing: A Weekend Plan",
+    "cefr": "A2",
+    "sequence": 29,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Write 'Next week I will go to Chiang Mai' (male speaker, use จะ).",
+          "answer": "อาทิตย์หน้าผมจะไปเชียงใหม่ (aa-thít nâa phǒm jà pai chiang-mài)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.write-feelings",
+    "lessonType": "writing_prompt",
+    "title": "Writing: Describe How You Feel",
+    "cefr": "A2",
+    "sequence": 30,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Write 'Today I am very tired but happy' (male speaker; use เหนื่อย and มีความสุข).",
+          "answer": "วันนี้ผมเหนื่อยมากแต่มีความสุข (wan-níi phǒm nùeay mâak tàae mii khwaam sùk)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.roleplay-market",
+    "lessonType": "roleplay",
+    "title": "Roleplay: Bargaining at the Market",
+    "cefr": "A1",
+    "sequence": 31,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.talaat",
+            "vocab.raakhaa",
+            "vocab.phaeng",
+            "vocab.thuuk-cheap",
+            "vocab.baat",
+            "vocab.sue-buy"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "VENDOR: 'อันนี้ร้อยบาทค่ะ' (an níi ráwy bàat khâ). Respond that it's expensive and ask if it can be cheaper.",
+          "answer": "แพงไปครับ ลดได้ไหมครับ (phaaeng pai khráp, lót dâai mǎi khráp)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Agree to buy it and say thank you (male speaker).",
+          "answer": "เอาครับ ขอบคุณครับ (ao khráp, khàwp-khun khráp)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.roleplay-restaurant",
+    "lessonType": "roleplay",
+    "title": "Roleplay: Ordering at a Restaurant",
+    "cefr": "A1",
+    "sequence": 32,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.meenuu",
+            "vocab.sang",
+            "vocab.khaw-ask",
+            "vocab.naam",
+            "vocab.arawy"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "You sit down. Ask the server for the menu (female speaker).",
+          "answer": "ขอเมนูหน่อยค่ะ (khǎw mee-nuu nàwy khâ)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "SERVER: 'รับอะไรดีคะ' (ráp à-rai dii khá). Order fried rice and one water.",
+          "answer": "ขอข้าวผัดกับน้ำหนึ่งที่ครับ (khǎw khâao-phàt kàp náam nùeng thîi khráp)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.roleplay-taxi",
+    "lessonType": "roleplay",
+    "title": "Roleplay: Taking a Taxi",
+    "cefr": "A1",
+    "sequence": 33,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.thaeksii",
+            "vocab.pai",
+            "vocab.sanaam-bin",
+            "vocab.thao-rai",
+            "vocab.trong"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Tell the taxi driver you want to go to the airport (male speaker).",
+          "answer": "ไปสนามบินครับ (pai sà-nǎam-bin khráp)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Ask how much it will cost.",
+          "answer": "เท่าไหร่ครับ (thâo-rài khráp)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.roleplay-introductions",
+    "lessonType": "roleplay",
+    "title": "Roleplay: Meeting Someone New",
+    "cefr": "A1",
+    "sequence": 34,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.sawatdii",
+            "vocab.yin-dii",
+            "vocab.khun",
+            "vocab.phom",
+            "vocab.chan"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Greet the person and say 'nice to meet you' (female speaker).",
+          "answer": "สวัสดีค่ะ ยินดีที่ได้รู้จักค่ะ (sà-wàt-dii khâ, yin-dii thîi dâi rúu-jàk khâ)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "They ask your name: 'คุณชื่ออะไรคะ' (khun chûe à-rai khá). Answer that your name is Nina.",
+          "answer": "ฉันชื่อนีน่าค่ะ (chǎn chûe nii-nâa khâ)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "lesson.roleplay-pharmacy",
+    "lessonType": "roleplay",
+    "title": "Roleplay: At the Pharmacy",
+    "cefr": "A2",
+    "sequence": 35,
+    "dialogueRef": null,
+    "body": {
+      "steps": [
+        {
+          "type": "teach",
+          "vocabRefs": [
+            "vocab.puat-hua",
+            "vocab.yaa-medicine",
+            "vocab.khaw-ask",
+            "vocab.pen-wat",
+            "vocab.maw-doctor"
+          ]
+        },
+        {
+          "type": "quiz",
+          "prompt": "Tell the pharmacist you have a headache and ask for medicine (male speaker).",
+          "answer": "ผมปวดหัว ขอยาหน่อยครับ (phǒm pùat-hǔa, khǎw yaa nàwy khráp)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "PHARMACIST: 'เป็นมากี่วันแล้วคะ' (pen maa kìi wan láew khá). Say 'two days.'",
+          "answer": "สองวันแล้วครับ (sǎwng wan láew khráp)"
+        }
+      ]
+    }
+  }
+]

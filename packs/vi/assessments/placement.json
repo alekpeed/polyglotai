@@ -1,0 +1,52 @@
+[
+  {"schemaVersion": 1, "key": "assessment.placement.greetings", "lessonType": "assessment", "title": "Placement 1: Greetings and Courtesy", "cefr": "A1", "sequence": 1, "body": {"steps": [
+    {"type": "quiz", "prompt": "Say 'hello' in the safe, all-purpose way.", "answer": "Xin chào"},
+    {"type": "quiz", "prompt": "How do you say 'thank you'?", "answer": "Cảm ơn"},
+    {"type": "quiz", "prompt": "What is the usual reply to 'cảm ơn'?", "answer": "Không có gì"}
+  ]}},
+  {"schemaVersion": 1, "key": "assessment.placement.pronouns", "lessonType": "assessment", "title": "Placement 2: Address Pronouns", "cefr": "A1", "sequence": 2, "body": {"steps": [
+    {"type": "quiz", "prompt": "You greet a slightly older man. Which pronoun do you use for 'you'?", "answer": "anh"},
+    {"type": "quiz", "prompt": "Which pronoun addresses a slightly older woman?", "answer": "chị"},
+    {"type": "quiz", "prompt": "A young person speaking to an elderly man calls themselves 'cháu' and calls him what?", "answer": "ông"}
+  ]}},
+  {"schemaVersion": 1, "key": "assessment.placement.numbers-time", "lessonType": "assessment", "title": "Placement 3: Numbers and Time", "cefr": "A1", "sequence": 3, "body": {"steps": [
+    {"type": "quiz", "prompt": "Write the Vietnamese for the number 7.", "answer": "bảy"},
+    {"type": "quiz", "prompt": "Translate: 'ten thousand'.", "answer": "mười nghìn"},
+    {"type": "quiz", "prompt": "Ask 'what time is it now?'", "answer": "Bây giờ là mấy giờ?"}
+  ]}},
+  {"schemaVersion": 1, "key": "assessment.placement.ordering", "lessonType": "assessment", "title": "Placement 4: Ordering and Food", "cefr": "A1", "sequence": 4, "body": {"steps": [
+    {"type": "quiz", "prompt": "Politely order one bowl of pho using the 'cho tôi ...' pattern.", "answer": "Cho tôi một bát phở"},
+    {"type": "quiz", "prompt": "Ask to see the menu.", "answer": "Cho tôi xem thực đơn"},
+    {"type": "quiz", "prompt": "Ask 'how much is this?'", "answer": "Cái này bao nhiêu tiền?"}
+  ]}},
+  {"schemaVersion": 1, "key": "assessment.placement.questions-directions", "lessonType": "assessment", "title": "Placement 5: Questions and Directions", "cefr": "A1", "sequence": 5, "body": {"steps": [
+    {"type": "quiz", "prompt": "Turn 'anh khỏe' into a yes/no question using 'có ... không'.", "answer": "Anh có khỏe không?"},
+    {"type": "quiz", "prompt": "Ask where the toilet is, politely.", "answer": "Nhà vệ sinh ở đâu ạ?"},
+    {"type": "quiz", "prompt": "Translate the instruction: 'go straight, then turn left'.", "answer": "Đi thẳng rồi rẽ trái"}
+  ]}},
+  {"schemaVersion": 1, "key": "assessment.placement.tones-pronoun-choice", "lessonType": "assessment", "title": "Placement 6: Tones and Pronoun Choice", "cefr": "A2", "sequence": 6, "body": {"steps": [
+    {"type": "quiz", "prompt": "The word 'ba' (level tone) means 'three'. What does 'bà' (huyền, low-falling tone) mean?", "answer": "grandmother / madam"},
+    {"type": "quiz", "prompt": "'Phở' (hỏi tone) is the noodle soup. What does 'phố' (sắc tone) mean?", "answer": "street"},
+    {"type": "quiz", "prompt": "You are older than the listener. Which pronoun do you use to address them, and which do they use to call themselves back to you?", "answer": "em (for both)"}
+  ]}},
+  {"schemaVersion": 1, "key": "assessment.placement.past-future", "lessonType": "assessment", "title": "Placement 7: Past and Future", "cefr": "A2", "sequence": 7, "body": {"steps": [
+    {"type": "quiz", "prompt": "Rewrite 'tôi ăn cơm' to mean 'I have already eaten', using the past marker and final particle.", "answer": "Tôi đã ăn cơm rồi"},
+    {"type": "quiz", "prompt": "Translate using the future marker: 'Tomorrow I will go to Hanoi.'", "answer": "Ngày mai tôi sẽ đi Hà Nội"},
+    {"type": "quiz", "prompt": "Which preverb marks an action in progress right now (the '-ing' marker)?", "answer": "đang"}
+  ]}},
+  {"schemaVersion": 1, "key": "assessment.placement.feelings-opinions", "lessonType": "assessment", "title": "Placement 8: Feelings and Opinions", "cefr": "A2", "sequence": 8, "body": {"steps": [
+    {"type": "quiz", "prompt": "Say 'I am very tired after working.'", "answer": "Tôi rất mệt sau khi làm việc"},
+    {"type": "quiz", "prompt": "Translate: 'I think it is going to rain.'", "answer": "Tôi nghĩ trời sắp mưa"},
+    {"type": "quiz", "prompt": "Say 'I agree with your opinion.'", "answer": "Tôi đồng ý với ý kiến của bạn"}
+  ]}},
+  {"schemaVersion": 1, "key": "assessment.placement.connectors-comparatives", "lessonType": "assessment", "title": "Placement 9: Connectors and Comparatives", "cefr": "A2", "sequence": 9, "body": {"steps": [
+    {"type": "quiz", "prompt": "Join into one sentence meaning 'I want to go but I'm busy', using the word for 'but'.", "answer": "Tôi muốn đi nhưng tôi bận"},
+    {"type": "quiz", "prompt": "Translate 'He is taller than me', using the comparison marker.", "answer": "Anh ấy cao hơn tôi"},
+    {"type": "quiz", "prompt": "Complete with the superlative marker: 'Đây là nhà hàng ngon ___' (this is the most delicious restaurant).", "answer": "nhất"}
+  ]}},
+  {"schemaVersion": 1, "key": "assessment.placement.everyday-a2", "lessonType": "assessment", "title": "Placement 10: Everyday A2 Situations", "cefr": "A2", "sequence": 10, "body": {"steps": [
+    {"type": "quiz", "prompt": "At a hotel, say you want to book a room for two nights.", "answer": "Tôi muốn đặt một phòng cho hai đêm"},
+    {"type": "quiz", "prompt": "Tell a doctor: 'I have a headache and a fever', using the 'bị' pattern.", "answer": "Tôi bị đau đầu và sốt"},
+    {"type": "quiz", "prompt": "Say 'It's raining, so I stay home', using the word for 'so/therefore'.", "answer": "Trời mưa nên tôi ở nhà"}
+  ]}}
+]
