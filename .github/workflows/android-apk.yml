@@ -1,0 +1,58 @@
+name: Build Android APK
+
+# Builds the native Android app into a debug APK and publishes it as a downloadable
+# build artifact. Runs on pushes that touch the app or the packs, and can be run
+# manually from the Actions tab. Uses only first-party actions + the runner's
+# preinstalled Android SDK (no third-party actions).
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - claude/polyglotai-language-packs-phgizp
+    paths:
+      - "apps/android-native/**"
+      - "packs/**"
+      - ".github/workflows/android-apk.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Ensure Android SDK packages
+        run: |
+          set -eu
+          yes | sdkmanager --licenses >/dev/null 2>&1 || true
+          sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0" >/dev/null
+          echo "ANDROID_HOME=${ANDROID_HOME:-$ANDROID_SDK_ROOT}"
+
+      - name: Build debug APK
+        working-directory: apps/android-native
+        run: ./gradlew :app:assembleDebug --no-daemon --stacktrace
+
+      - name: Rename APK
+        working-directory: apps/android-native
+        run: |
+          src=$(find app/build/outputs/apk/debug -name "*.apk" | head -1)
+          cp "$src" "polyglotai-debug.apk"
+          ls -la polyglotai-debug.apk
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: polyglotai-debug-apk
+          path: apps/android-native/polyglotai-debug.apk
+          if-no-files-found: error
+          retention-days: 30
