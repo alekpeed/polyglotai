@@ -20,6 +20,9 @@ data class AiCorrection(
 data class AiExample(val target: String = "", val translation: String = "", val note: String? = null)
 
 @Serializable
+data class AiTranslation(val translation: String = "", val note: String? = null)
+
+@Serializable
 private data class AiExamplesEnvelope(val examples: List<AiExample> = emptyList())
 
 /** Thrown when AI features can't run because there's no device token yet (needs a passcode). */
@@ -83,6 +86,17 @@ class AiRepository(
     /** Transcribe a recorded audio file via Whisper. `language` is an ISO-639-1 hint. */
     suspend fun transcribe(audio: java.io.File, language: String?): String =
         proxy.transcribe(requireToken(), audio, language = language)
+
+    /** Interpret free text between English and the target language. [toTarget] picks the direction. */
+    suspend fun interpret(targetLanguage: String, text: String, toTarget: Boolean): AiTranslation {
+        val token = requireToken()
+        val messages = listOf(
+            ChatMessage("system", Prompts.system(targetLanguage, "You return only strict JSON.")),
+            ChatMessage("user", Prompts.interpretTask(targetLanguage, text, toTarget)),
+        )
+        val raw = proxy.chat(token, messages, temperature = 0.3)
+        return json.decodeFromString(AiTranslation.serializer(), extractJson(raw))
+    }
 
     suspend fun examples(targetLanguage: String, word: String, meaning: String, count: Int = 3): List<AiExample> {
         val token = requireToken()

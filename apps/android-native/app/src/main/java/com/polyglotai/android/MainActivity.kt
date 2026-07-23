@@ -5,11 +5,19 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.Scaffold
-import androidx.compose.ui.Modifier
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Scaffold
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
 import com.polyglotai.android.ui.PolyglotApp
+import com.polyglotai.android.ui.theme.LocalPolyColors
+import com.polyglotai.android.ui.theme.Pack
+import com.polyglotai.android.ui.theme.PackVariant
 import com.polyglotai.android.ui.theme.PolyglotTheme
+import com.polyglotai.android.ui.theme.seigaiha
 
 class MainActivity : ComponentActivity() {
     private lateinit var container: AppContainer
@@ -19,9 +27,36 @@ class MainActivity : ComponentActivity() {
         container = AppContainer(this)
         enableEdgeToEdge()
         setContent {
-            PolyglotTheme {
+            // Appearance (light/dark/classic) and the active language's pack world are hoisted here
+            // so a change in either recolors the whole app immediately — the desktop app's
+            // data-theme × data-pack, in Compose.
+            var appTheme by remember { mutableStateOf(container.settings.appTheme) }
+            var pack by remember { mutableStateOf(Pack.DEFAULT) }
+            var packVariant by remember { mutableStateOf(PackVariant.DEFAULT) }
+            PolyglotTheme(theme = appTheme, pack = pack, variant = packVariant) {
+                val seigaihaColor = LocalPolyColors.current.seigaiha
                 Scaffold(modifier = Modifier.fillMaxSize()) { padding ->
-                    PolyglotApp(container, Modifier.padding(padding))
+                    PolyglotApp(
+                        container,
+                        Modifier.padding(padding).seigaiha(seigaihaColor),
+                        appTheme = appTheme,
+                        onThemeChange = {
+                            container.settings.appTheme = it
+                            appTheme = it
+                        },
+                        // A pack change also restores that world's saved palette variant (Gzhel vs
+                        // Hermitage for RU); single-look worlds resolve to DEFAULT.
+                        onPackChange = {
+                            pack = it
+                            packVariant = container.settings.variantFor(it)
+                        },
+                        pack = pack,
+                        packVariant = packVariant,
+                        onVariantChange = {
+                            container.settings.setVariant(pack, it)
+                            packVariant = it
+                        },
+                    )
                 }
             }
         }

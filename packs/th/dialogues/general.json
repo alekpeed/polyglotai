@@ -1,0 +1,2493 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.street-food-order",
+    "scenario": "Ordering pad thai from a street-food cart",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "แม่ค้า",
+        "role": "vendor"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "th-TH-central",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "สวัสดีครับ ขอผัดไทยหนึ่งจานครับ",
+        "romaji": "sà-wàt-dii khráp, khǎw phàt-thai nùeng jaan khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ใส่ไข่ไหมคะ",
+        "romaji": "sài khài mǎi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ใส่ครับ",
+        "romaji": "sài khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "เอาเผ็ดไหมคะ",
+        "romaji": "ao phèt mǎi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "เผ็ดนิดหน่อยครับ",
+        "romaji": "phèt nít-nàwy khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ได้ค่ะ รอสักครู่นะคะ",
+        "romaji": "dâi khâ, raw sàk-khrûu ná khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "เท่าไหร่ครับ",
+        "romaji": "thâo-rài khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "สี่สิบบาทค่ะ",
+        "romaji": "sìi-sìp bàat khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "นี่ครับ ขอบคุณครับ",
+        "romaji": "nîi khráp, khàwp-khun khráp"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Hello, one plate of pad thai please."
+      },
+      {
+        "speakerId": "a",
+        "text": "Do you want egg in it?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes, add egg."
+      },
+      {
+        "speakerId": "a",
+        "text": "Do you want it spicy?"
+      },
+      {
+        "speakerId": "b",
+        "text": "A little spicy."
+      },
+      {
+        "speakerId": "a",
+        "text": "Okay, please wait a moment."
+      },
+      {
+        "speakerId": "b",
+        "text": "How much is it?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Forty baht."
+      },
+      {
+        "speakerId": "b",
+        "text": "Here you go, thank you."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "ขอ khǎw (\"may I have\") is the standard polite way to ask for food or things. Men end sentences with ครับ khráp, women with ค่ะ khâ for statements and คะ khá for questions."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.taxi-metered",
+    "scenario": "Taking a metered taxi across the city",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "คนขับแท็กซี่",
+        "role": "taxi driver"
+      },
+      {
+        "id": "b",
+        "name": "ผู้โดยสาร",
+        "role": "passenger"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "ไปสยามพารากอนค่ะ",
+        "romaji": "pai sà-yǎam phaaraa-kawn khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "ได้ครับ ไปทางไหนดีครับ",
+        "romaji": "dâi khráp, pai thaang-nǎi dii khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "ไปทางด่วนได้ไหมคะ",
+        "romaji": "pai thaang-dùan dâi mǎi khá"
+      },
+      {
+        "speakerId": "a",
+        "text": "ได้ครับ แต่ต้องจ่ายค่าทางด่วนนะครับ",
+        "romaji": "dâi khráp, tàe tâwng jàai khâa thaang-dùan ná khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "ไม่เป็นไรค่ะ รีบหน่อยนะคะ",
+        "romaji": "mâi pen rai khâ, rîip nàwy ná khá"
+      },
+      {
+        "speakerId": "a",
+        "text": "ครับ เปิดมิเตอร์นะครับ",
+        "romaji": "khráp, pòet mí-toe ná khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ถึงแล้วครับ หนึ่งร้อยยี่สิบบาทครับ",
+        "romaji": "thǔeng láew khráp, nùeng-ráauy-yîi-sìp bàat khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "นี่ค่ะ ไม่ต้องทอนค่ะ",
+        "romaji": "nîi khâ, mâi tâwng thawn khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "ขอบคุณครับ เดินทางปลอดภัยนะครับ",
+        "romaji": "khàwp-khun khráp, doen-thaang plàwt-phai ná khráp"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "To Siam Paragon, please."
+      },
+      {
+        "speakerId": "a",
+        "text": "Sure. Which way should we go?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Can we take the expressway?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, but you'll have to pay the toll."
+      },
+      {
+        "speakerId": "b",
+        "text": "That's fine. Please hurry a bit."
+      },
+      {
+        "speakerId": "a",
+        "text": "Okay, I'll start the meter."
+      },
+      {
+        "speakerId": "a",
+        "text": "We've arrived. One hundred twenty baht."
+      },
+      {
+        "speakerId": "b",
+        "text": "Here you go, keep the change."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thank you. Have a safe trip."
+      }
+    ],
+    "keyVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.seven-eleven",
+    "scenario": "Checking out at a 7-Eleven",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "พนักงาน",
+        "role": "cashier"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "th-TH-central",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "ขอถุงด้วยครับ",
+        "romaji": "khǎw thǔng dûai khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "รับอะไรเพิ่มไหมคะ",
+        "romaji": "ráp à-rai phôem mǎi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอน้ำเปล่าขวดหนึ่งครับ",
+        "romaji": "khǎw náam-plào khùat nùeng khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ทั้งหมดสามสิบห้าบาทค่ะ",
+        "romaji": "tháng-mòt sǎam-sìp-hâa bàat khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "จ่ายด้วยบัตรได้ไหมครับ",
+        "romaji": "jàai dûai bàt dâi mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ได้ค่ะ แตะตรงนี้เลยค่ะ",
+        "romaji": "dâi khâ, tàe trong-níi loei khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอบคุณครับ",
+        "romaji": "khàwp-khun khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ขอบคุณค่ะ",
+        "romaji": "khàwp-khun khâ"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Can I have a bag too?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Anything else?"
+      },
+      {
+        "speakerId": "b",
+        "text": "One bottle of water, please."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thirty-five baht in total."
+      },
+      {
+        "speakerId": "b",
+        "text": "Can I pay by card?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, just tap here."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thank you."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thank you."
+      }
+    ],
+    "keyVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.coffee-shop",
+    "scenario": "Ordering an iced coffee to go",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "บาริสต้า",
+        "role": "barista"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "th-TH-central",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "ขอกาแฟเย็นแก้วหนึ่งค่ะ",
+        "romaji": "khǎw kaa-fae yen kâew nùeng khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "หวานปกติไหมคะ",
+        "romaji": "wǎan pòk-kà-tì mǎi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "หวานน้อยค่ะ",
+        "romaji": "wǎan náauy khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "รับอะไรเพิ่มไหมคะ",
+        "romaji": "ráp à-rai phôem mǎi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ไม่ค่ะ เท่านี้ค่ะ",
+        "romaji": "mâi khâ, thâo-níi khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "หกสิบบาทค่ะ นั่งที่ร้านหรือกลับบ้านคะ",
+        "romaji": "hòk-sìp bàat khâ, nâng thîi ráan rǔe klàp bâan khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "กลับบ้านค่ะ",
+        "romaji": "klàp bâan khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "รอสักครู่นะคะ",
+        "romaji": "raw sàk-khrûu ná khá"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "One iced coffee, please."
+      },
+      {
+        "speakerId": "a",
+        "text": "Normal sweetness?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Less sweet, please."
+      },
+      {
+        "speakerId": "a",
+        "text": "Anything else?"
+      },
+      {
+        "speakerId": "b",
+        "text": "No, that's all."
+      },
+      {
+        "speakerId": "a",
+        "text": "Sixty baht. For here or to go?"
+      },
+      {
+        "speakerId": "b",
+        "text": "To go."
+      },
+      {
+        "speakerId": "a",
+        "text": "Please wait a moment."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "กลับบ้าน klàp bâan literally \"go home\" is the everyday way to say \"takeaway / to go\" for food and drink; นั่งที่ร้าน nâng thîi ráan (\"sit at the shop\") means dine-in."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.hotel-checkin",
+    "scenario": "Checking in at a hotel with a reservation",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "พนักงานต้อนรับ",
+        "role": "receptionist"
+      },
+      {
+        "id": "b",
+        "name": "แขก",
+        "role": "guest"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "สวัสดีครับ ผมจองห้องไว้ครับ",
+        "romaji": "sà-wàt-dii khráp, phǒm jawng hâwng wái khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ขอชื่อและพาสปอร์ตด้วยค่ะ",
+        "romaji": "khǎw chûe láe pháat-sà-pàwt dûai khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ชื่อสมชายครับ นี่พาสปอร์ตครับ",
+        "romaji": "chûe sǒm-chai khráp, nîi pháat-sà-pàwt khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ขอบคุณค่ะ จองไว้สองคืนใช่ไหมคะ",
+        "romaji": "khàwp-khun khâ, jawng wái sǎwng khuen châi mǎi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ใช่ครับ มีอาหารเช้าไหมครับ",
+        "romaji": "châi khráp, mii aa-hǎan-cháo mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "มีค่ะ เจ็ดโมงถึงสิบโมงที่ชั้นสองค่ะ",
+        "romaji": "mii khâ, jèt moong thǔeng sìp moong thîi chán sǎwng khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ห้องอยู่ชั้นไหนครับ",
+        "romaji": "hâwng yùu chán nǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ชั้นห้า ห้องห้าศูนย์เจ็ดค่ะ นี่กุญแจค่ะ",
+        "romaji": "chán hâa, hâwng hâa-sǔun-jèt khâ, nîi kun-jae khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอบคุณมากครับ",
+        "romaji": "khàwp-khun mâak khráp"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Hello, I have a room reserved."
+      },
+      {
+        "speakerId": "a",
+        "text": "May I have your name and passport?"
+      },
+      {
+        "speakerId": "b",
+        "text": "My name is Somchai. Here's my passport."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thank you. Two nights, correct?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes. Is breakfast included?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, from 7 to 10 a.m. on the second floor."
+      },
+      {
+        "speakerId": "b",
+        "text": "Which floor is my room on?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Fifth floor, room 507. Here's your key."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thank you very much."
+      }
+    ],
+    "keyVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.asking-directions",
+    "scenario": "Asking a passer-by for the way to the train station",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "คนเดินถนน",
+        "role": "passer-by"
+      },
+      {
+        "id": "b",
+        "name": "นักท่องเที่ยว",
+        "role": "tourist"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "ขอโทษครับ สถานีรถไฟฟ้าอยู่ที่ไหนครับ",
+        "romaji": "khǎw-thôot khráp, sà-thǎa-nii rót-fai-fáa yùu thîi-nǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "เดินตรงไปแล้วเลี้ยวขวาค่ะ",
+        "romaji": "doen trong pai láew líao khwǎa khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ไกลไหมครับ",
+        "romaji": "klai mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ไม่ไกลค่ะ ประมาณห้านาทีค่ะ",
+        "romaji": "mâi klai khâ, prà-maan hâa naa-thii khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอบคุณมากครับ",
+        "romaji": "khàwp-khun mâak khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ไม่เป็นไรค่ะ",
+        "romaji": "mâi pen rai khâ"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Excuse me, where is the BTS station?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Walk straight ahead and turn right."
+      },
+      {
+        "speakerId": "b",
+        "text": "Is it far?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Not far, about five minutes."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thank you very much."
+      },
+      {
+        "speakerId": "a",
+        "text": "You're welcome."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "เลี้ยวขวา líao khwǎa = turn right; เลี้ยวซ้าย líao sáai = turn left; ตรงไป trong pai = go straight. ไม่เป็นไร mâi pen rai covers both \"no problem\" and \"you're welcome.\""
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.pharmacy",
+    "scenario": "Describing symptoms at a pharmacy",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "เภสัชกร",
+        "role": "pharmacist"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "สวัสดีครับ ผมปวดหัวครับ",
+        "romaji": "sà-wàt-dii khráp, phǒm pùat-hǔa khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "มีไข้ด้วยไหมคะ",
+        "romaji": "mii khâi dûai mǎi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "มีนิดหน่อยครับ แล้วก็เจ็บคอด้วย",
+        "romaji": "mii nít-nàwy khráp, láew-kâw jèp-khaw dûai"
+      },
+      {
+        "speakerId": "a",
+        "text": "เป็นมากี่วันแล้วคะ",
+        "romaji": "pen maa kìi wan láew khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "สองวันแล้วครับ",
+        "romaji": "sǎwng wan láew khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ทานยานี้วันละสามครั้งหลังอาหารนะคะ",
+        "romaji": "thaan yaa níi wan-lá sǎam khráng lǎng aa-hǎan ná khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "มีผลข้างเคียงไหมครับ",
+        "romaji": "mii phǒn-khâang-khiang mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "อาจง่วงนอนค่ะ ถ้าไม่ดีขึ้นให้ไปหาหมอนะคะ",
+        "romaji": "àat ngûang-nawn khâ, thâa mâi dii khûen hâi pai hǎa mǎw ná khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอบคุณครับ",
+        "romaji": "khàwp-khun khráp"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Hello, I have a headache."
+      },
+      {
+        "speakerId": "a",
+        "text": "Do you have a fever too?"
+      },
+      {
+        "speakerId": "b",
+        "text": "A little, and a sore throat as well."
+      },
+      {
+        "speakerId": "a",
+        "text": "How many days have you had it?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Two days now."
+      },
+      {
+        "speakerId": "a",
+        "text": "Take this medicine three times a day after meals."
+      },
+      {
+        "speakerId": "b",
+        "text": "Are there any side effects?"
+      },
+      {
+        "speakerId": "a",
+        "text": "It may make you drowsy. If it doesn't improve, please see a doctor."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thank you."
+      }
+    ],
+    "keyVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.restaurant-order",
+    "scenario": "Ordering a meal at a sit-down restaurant",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "พนักงานเสิร์ฟ",
+        "role": "waiter"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "ขอเมนูหน่อยค่ะ",
+        "romaji": "khǎw mee-nuu nàwy khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "นี่ครับ วันนี้มีปลาสดแนะนำครับ",
+        "romaji": "nîi khráp, wan-níi mii plaa sòt náe-nam khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอต้มยำกุ้งกับข้าวสวยสองที่ค่ะ",
+        "romaji": "khǎw tôm-yam kûng kàp khâao-sǔai sǎwng thîi khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "รับเครื่องดื่มอะไรดีครับ",
+        "romaji": "ráp khrûeang-dùem à-rai dii khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอน้ำมะนาวสองแก้วค่ะ",
+        "romaji": "khǎw náam-má-naao sǎwng kâew khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "รับเผ็ดระดับไหนครับ",
+        "romaji": "ráp phèt rá-dàp nǎi khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "เผ็ดปานกลางค่ะ",
+        "romaji": "phèt paan-klaang khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "ได้ครับ สักครู่นะครับ",
+        "romaji": "dâi khráp, sàk-khrûu ná khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอบคุณค่ะ",
+        "romaji": "khàwp-khun khâ"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "May I have the menu?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Here you are. Today we recommend the fresh fish."
+      },
+      {
+        "speakerId": "b",
+        "text": "Tom yum goong and two servings of rice, please."
+      },
+      {
+        "speakerId": "a",
+        "text": "What would you like to drink?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Two glasses of lime juice, please."
+      },
+      {
+        "speakerId": "a",
+        "text": "How spicy would you like it?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Medium spicy."
+      },
+      {
+        "speakerId": "a",
+        "text": "Certainly, just a moment."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thank you."
+      }
+    ],
+    "keyVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.market-bargaining",
+    "scenario": "Bargaining over a shirt at a market",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "แม่ค้า",
+        "role": "vendor"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "เสื้อตัวนี้เท่าไหร่คะ",
+        "romaji": "sûea tua níi thâo-rài khá"
+      },
+      {
+        "speakerId": "a",
+        "text": "สามร้อยบาทค่ะ",
+        "romaji": "sǎam-ráauy bàat khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "แพงไปค่ะ ลดได้ไหมคะ",
+        "romaji": "phaeng pai khâ, lót dâi mǎi khá"
+      },
+      {
+        "speakerId": "a",
+        "text": "ลดให้ห้าสิบ เหลือสองร้อยห้าสิบค่ะ",
+        "romaji": "lót hâi hâa-sìp, lǔea sǎwng-ráauy-hâa-sìp khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "สองร้อยได้ไหมคะ",
+        "romaji": "sǎwng-ráauy dâi mǎi khá"
+      },
+      {
+        "speakerId": "a",
+        "text": "สองร้อยยี่สิบก็แล้วกันค่ะ",
+        "romaji": "sǎwng-ráauy-yîi-sìp kâw láew-kan khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ได้ค่ะ เอาตัวนี้ค่ะ",
+        "romaji": "dâi khâ, ao tua níi khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "ขอบคุณค่ะ เดี๋ยวใส่ถุงให้นะคะ",
+        "romaji": "khàwp-khun khâ, dǐao sài thǔng hâi ná khá"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "How much is this shirt?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Three hundred baht."
+      },
+      {
+        "speakerId": "b",
+        "text": "That's too expensive. Can you lower it?"
+      },
+      {
+        "speakerId": "a",
+        "text": "I'll take off fifty, so two hundred fifty."
+      },
+      {
+        "speakerId": "b",
+        "text": "Can you do two hundred?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Two hundred twenty then, let's say."
+      },
+      {
+        "speakerId": "b",
+        "text": "Okay, I'll take this one."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thank you, I'll put it in a bag for you."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "แพงไป phaeng pai = \"too expensive\"; adding ไป pai after an adjective means \"too / excessively.\" ลด lót = to discount/lower a price."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.meeting-someone-new",
+    "scenario": "Introducing yourself to someone for the first time",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "คนไทย",
+        "role": "local"
+      },
+      {
+        "id": "b",
+        "name": "ชาวต่างชาติ",
+        "role": "foreigner"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "สวัสดีครับ ผมชื่อจอห์นครับ",
+        "romaji": "sà-wàt-dii khráp, phǒm chûe jawn khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "สวัสดีค่ะ ดิฉันชื่อมะลิค่ะ",
+        "romaji": "sà-wàt-dii khâ, dì-chǎn chûe má-lí khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ยินดีที่ได้รู้จักครับ",
+        "romaji": "yin-dii thîi dâi rúu-jàk khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "คุณมาจากไหนคะ",
+        "romaji": "khun maa jàak nǎi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ผมมาจากอเมริกาครับ",
+        "romaji": "phǒm maa jàak à-mee-rí-kaa khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "คุณพูดภาษาไทยเก่งนะคะ",
+        "romaji": "khun phûut phaa-sǎa thai kèng ná khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอบคุณครับ พูดได้นิดหน่อยครับ",
+        "romaji": "khàwp-khun khráp, phûut dâi nít-nàwy khráp"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Hello, my name is John."
+      },
+      {
+        "speakerId": "a",
+        "text": "Hello, my name is Mali."
+      },
+      {
+        "speakerId": "b",
+        "text": "Nice to meet you."
+      },
+      {
+        "speakerId": "a",
+        "text": "Where are you from?"
+      },
+      {
+        "speakerId": "b",
+        "text": "I'm from America."
+      },
+      {
+        "speakerId": "a",
+        "text": "You speak Thai well."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thank you, I can speak just a little."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "ผม phǒm (male) and ดิฉัน dì-chǎn (female, formal) both mean \"I.\" คุณ khun is a polite \"you.\" ยินดีที่ได้รู้จัก yin-dii thîi dâi rúu-jàk is the fixed phrase for \"nice to meet you.\""
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.phone-call-plans",
+    "scenario": "Calling a friend to make plans for a movie",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "เพื่อน",
+        "role": "friend"
+      },
+      {
+        "id": "b",
+        "name": "เพื่อน",
+        "role": "friend"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "ฮัลโหล ทำอะไรอยู่คะ",
+        "romaji": "han-lǒo, tham à-rai yùu khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "อยู่บ้านครับ มีอะไรเหรอ",
+        "romaji": "yùu bâan khráp, mii à-rai rǒe"
+      },
+      {
+        "speakerId": "a",
+        "text": "พรุ่งนี้ว่างไหมคะ อยากไปดูหนัง",
+        "romaji": "phrûng-níi wâang mǎi khá, yàak pai duu nǎng"
+      },
+      {
+        "speakerId": "b",
+        "text": "ว่างครับ กี่โมงดี",
+        "romaji": "wâang khráp, kìi moong dii"
+      },
+      {
+        "speakerId": "a",
+        "text": "บ่ายสองได้ไหมคะ",
+        "romaji": "bàai sǎwng dâi mǎi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ได้ครับ เจอกันที่ห้างนะ",
+        "romaji": "dâi khráp, joe kan thîi hâang ná"
+      },
+      {
+        "speakerId": "a",
+        "text": "โอเคค่ะ แล้วเจอกันนะคะ",
+        "romaji": "oo-khee khâ, láew joe kan ná khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "บายครับ",
+        "romaji": "baai khráp"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Hello, what are you doing?"
+      },
+      {
+        "speakerId": "b",
+        "text": "I'm at home. What's up?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Are you free tomorrow? I want to see a movie."
+      },
+      {
+        "speakerId": "b",
+        "text": "I'm free. What time?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Is 2 p.m. okay?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Sure, let's meet at the mall."
+      },
+      {
+        "speakerId": "a",
+        "text": "Okay, see you then."
+      },
+      {
+        "speakerId": "b",
+        "text": "Bye."
+      }
+    ],
+    "keyVocabulary": [],
+    "slangRegisterNotes": "เหรอ rǒe is a casual spoken question ending (\"huh? / oh yeah?\"). บาย baai (from English \"bye\") and โอเค oo-khee are relaxed, friend-to-friend register."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.doctor-visit",
+    "scenario": "Explaining stomach trouble to a doctor",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "หมอ",
+        "role": "doctor"
+      },
+      {
+        "id": "b",
+        "name": "คนไข้",
+        "role": "patient"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "สวัสดีครับ วันนี้เป็นอะไรมาครับ",
+        "romaji": "sà-wàt-dii khráp, wan-níi pen à-rai maa khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "ปวดท้องมากค่ะ",
+        "romaji": "pùat tháwng mâak khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "ปวดตรงไหนครับ",
+        "romaji": "pùat trong-nǎi khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "ตรงนี้ค่ะ แล้วก็คลื่นไส้ด้วย",
+        "romaji": "trong-níi khâ, láew-kâw khlûen-sâi dûai"
+      },
+      {
+        "speakerId": "a",
+        "text": "กินอะไรแปลก ๆ มาไหมครับ",
+        "romaji": "kin à-rai plàek-plàek maa mǎi khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "เมื่อคืนกินอาหารทะเลค่ะ",
+        "romaji": "mûea-khuen kin aa-hǎan-thá-lee khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "น่าจะอาหารเป็นพิษครับ ผมจะจ่ายยาให้",
+        "romaji": "nâa-jà aa-hǎan-pen-phít khráp, phǒm jà jàai yaa hâi"
+      },
+      {
+        "speakerId": "b",
+        "text": "ต้องพักไหมคะ",
+        "romaji": "tâwng phák mǎi khá"
+      },
+      {
+        "speakerId": "a",
+        "text": "พักสักวันสองวัน ดื่มน้ำเยอะ ๆ นะครับ",
+        "romaji": "phák sàk wan sǎwng wan, dùem náam yóe-yóe ná khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอบคุณค่ะ",
+        "romaji": "khàwp-khun khâ"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Hello, what brings you in today?"
+      },
+      {
+        "speakerId": "b",
+        "text": "I have a bad stomachache."
+      },
+      {
+        "speakerId": "a",
+        "text": "Where does it hurt?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Right here, and I feel nauseous too."
+      },
+      {
+        "speakerId": "a",
+        "text": "Did you eat anything unusual?"
+      },
+      {
+        "speakerId": "b",
+        "text": "I had seafood last night."
+      },
+      {
+        "speakerId": "a",
+        "text": "It's probably food poisoning. I'll prescribe some medicine."
+      },
+      {
+        "speakerId": "b",
+        "text": "Do I need to rest?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Rest for a day or two and drink plenty of water."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thank you."
+      }
+    ],
+    "keyVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.booking-tour",
+    "scenario": "Booking an island day tour at an agency",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "พนักงานทัวร์",
+        "role": "tour agent"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "สวัสดีครับ ผมอยากจองทัวร์เกาะครับ",
+        "romaji": "sà-wàt-dii khráp, phǒm yàak jawng thua kàw khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ไปวันไหนดีคะ",
+        "romaji": "pai wan-nǎi dii khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "วันเสาร์นี้ครับ ไปกี่คนได้บ้าง",
+        "romaji": "wan-sǎo níi khráp, pai kìi khon dâi bâang"
+      },
+      {
+        "speakerId": "a",
+        "text": "ได้หลายคนค่ะ ราคาคนละแปดร้อยบาทค่ะ",
+        "romaji": "dâi lǎai khon khâ, raa-khaa khon-lá pàet-ráauy bàat khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "รวมอาหารกลางวันไหมครับ",
+        "romaji": "ruam aa-hǎan-klaang-wan mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "รวมค่ะ แล้วก็มีรถมารับที่โรงแรมด้วยค่ะ",
+        "romaji": "ruam khâ, láew-kâw mii rót maa ráp thîi roong-raem dûai khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ออกกี่โมงครับ",
+        "romaji": "àwk kìi moong khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "แปดโมงเช้าค่ะ กรุณามาก่อนเวลานะคะ",
+        "romaji": "pàet moong cháo khâ, kà-rú-naa maa kàwn wee-laa ná khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ได้ครับ ขอจองสองคนครับ",
+        "romaji": "dâi khráp, khǎw jawng sǎwng khon khráp"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Hello, I'd like to book an island tour."
+      },
+      {
+        "speakerId": "a",
+        "text": "Which day would you like to go?"
+      },
+      {
+        "speakerId": "b",
+        "text": "This Saturday. How many people can go?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Many can go. It's eight hundred baht per person."
+      },
+      {
+        "speakerId": "b",
+        "text": "Does it include lunch?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, and there's a pickup from the hotel too."
+      },
+      {
+        "speakerId": "b",
+        "text": "What time does it leave?"
+      },
+      {
+        "speakerId": "a",
+        "text": "8 a.m. Please arrive before the time."
+      },
+      {
+        "speakerId": "b",
+        "text": "Okay, I'd like to book for two."
+      }
+    ],
+    "keyVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.temple-etiquette",
+    "scenario": "Asking about the rules before entering a temple",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "เจ้าหน้าที่วัด",
+        "role": "temple staff"
+      },
+      {
+        "id": "b",
+        "name": "นักท่องเที่ยว",
+        "role": "tourist"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "ขอโทษครับ เข้าไปข้างในได้ไหมครับ",
+        "romaji": "khǎw-thôot khráp, khâo pai khâang-nai dâi mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ได้ค่ะ แต่ต้องถอดรองเท้าก่อนนะคะ",
+        "romaji": "dâi khâ, tàe tâwng thàwt rawng-tháo kàwn ná khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ใส่กางเกงขาสั้นเข้าได้ไหมครับ",
+        "romaji": "sài kaang-keng khǎa-sân khâo dâi mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ไม่ได้ค่ะ ต้องปิดหัวเข่าและไหล่ค่ะ",
+        "romaji": "mâi dâi khâ, tâwng pìt hǔa-khào láe lài khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "มีผ้าให้ยืมไหมครับ",
+        "romaji": "mii phâa hâi yuem mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "มีค่ะ ยืมได้ตรงนั้นค่ะ",
+        "romaji": "mii khâ, yuem dâi trong-nán khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ถ่ายรูปได้ไหมครับ",
+        "romaji": "thàai rûup dâi mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ถ่ายได้ค่ะ แต่ห้ามชี้เท้าไปที่พระนะคะ",
+        "romaji": "thàai dâi khâ, tàe hâam chíi tháo pai thîi phrá ná khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "เข้าใจแล้วครับ ขอบคุณครับ",
+        "romaji": "khâo-jai láew khráp, khàwp-khun khráp"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Excuse me, may I go inside?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, but you must take off your shoes first."
+      },
+      {
+        "speakerId": "b",
+        "text": "Can I go in wearing shorts?"
+      },
+      {
+        "speakerId": "a",
+        "text": "No, you must cover your knees and shoulders."
+      },
+      {
+        "speakerId": "b",
+        "text": "Is there a cloth I can borrow?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, you can borrow one over there."
+      },
+      {
+        "speakerId": "b",
+        "text": "Can I take photos?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, but don't point your feet at the Buddha image."
+      },
+      {
+        "speakerId": "b",
+        "text": "I understand. Thank you."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "ห้าม hâam = \"it is forbidden to.\" Pointing your feet at Buddha images or monks is a serious breach of etiquette in Thailand."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.renting-motorbike",
+    "scenario": "Renting a motorbike for a few days",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "เจ้าของร้านเช่า",
+        "role": "rental owner"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "สวัสดีค่ะ อยากเช่ามอเตอร์ไซค์ค่ะ",
+        "romaji": "sà-wàt-dii khâ, yàak châo maw-toe-sai khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "เช่ากี่วันครับ",
+        "romaji": "châo kìi wan khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "สามวันค่ะ วันละเท่าไหร่คะ",
+        "romaji": "sǎam wan khâ, wan-lá thâo-rài khá"
+      },
+      {
+        "speakerId": "a",
+        "text": "วันละสองร้อยบาทครับ ใช้ใบขับขี่ด้วยนะครับ",
+        "romaji": "wan-lá sǎwng-ráauy bàat khráp, chái bai-khàp-khìi dûai ná khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "มีค่ะ ต้องวางมัดจำไหมคะ",
+        "romaji": "mii khâ, tâwng waang mát-jam mǎi khá"
+      },
+      {
+        "speakerId": "a",
+        "text": "ต้องวางสองพันบาทครับ คืนรถแล้วได้เงินคืนครับ",
+        "romaji": "tâwng waang sǎwng-phan bàat khráp, khuen rót láew dâi ngoen khuen khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "มีหมวกกันน็อกไหมคะ",
+        "romaji": "mii mùak-kan-náwk mǎi khá"
+      },
+      {
+        "speakerId": "a",
+        "text": "มีครับ ขับปลอดภัยนะครับ",
+        "romaji": "mii khráp, khàp plàwt-phai ná khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอบคุณค่ะ",
+        "romaji": "khàwp-khun khâ"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Hello, I'd like to rent a motorbike."
+      },
+      {
+        "speakerId": "a",
+        "text": "For how many days?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Three days. How much per day?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Two hundred baht a day. I'll need your driver's license too."
+      },
+      {
+        "speakerId": "b",
+        "text": "I have it. Is there a deposit?"
+      },
+      {
+        "speakerId": "a",
+        "text": "A two thousand baht deposit. You'll get it back when you return the bike."
+      },
+      {
+        "speakerId": "b",
+        "text": "Is there a helmet?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes. Drive safely."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thank you."
+      }
+    ],
+    "keyVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.massage-shop",
+    "scenario": "Getting a Thai massage and telling them where it aches",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "พนักงานนวด",
+        "role": "masseuse"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "สวัสดีครับ นวดไทยชั่วโมงละเท่าไหร่ครับ",
+        "romaji": "sà-wàt-dii khráp, nûat thai chûa-moong lá thâo-rài khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ชั่วโมงละสองร้อยบาทค่ะ",
+        "romaji": "chûa-moong lá sǎwng-ráauy bàat khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอนวดสองชั่วโมงครับ",
+        "romaji": "khǎw nûat sǎwng chûa-moong khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "เชิญด้านในค่ะ เจ็บตรงไหนเป็นพิเศษไหมคะ",
+        "romaji": "choen dâan-nai khâ, jèp trong-nǎi pen phí-sèet mǎi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ปวดหลังกับไหล่ครับ",
+        "romaji": "pùat lǎng kàp lài khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "หนักหรือเบาดีคะ",
+        "romaji": "nàk rǔe bao dii khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "หนักหน่อยครับ",
+        "romaji": "nàk nàwy khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ได้ค่ะ ถ้าเจ็บบอกได้นะคะ",
+        "romaji": "dâi khâ, thâa jèp bàwk dâi ná khá"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Hello, how much for Thai massage per hour?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Two hundred baht per hour."
+      },
+      {
+        "speakerId": "b",
+        "text": "I'd like a two-hour massage."
+      },
+      {
+        "speakerId": "a",
+        "text": "Please come inside. Does anywhere hurt in particular?"
+      },
+      {
+        "speakerId": "b",
+        "text": "My back and shoulders ache."
+      },
+      {
+        "speakerId": "a",
+        "text": "Would you like it firm or gentle?"
+      },
+      {
+        "speakerId": "b",
+        "text": "A bit firm, please."
+      },
+      {
+        "speakerId": "a",
+        "text": "Okay, tell me if it hurts."
+      }
+    ],
+    "keyVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.spice-level",
+    "scenario": "Ordering som tam and setting the spice level",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "แม่ค้า",
+        "role": "vendor"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "th-TH-central",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "ขอส้มตำหนึ่งที่ครับ",
+        "romaji": "khǎw sôm-tam nùeng thîi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "เอากี่พริกคะ",
+        "romaji": "ao kìi phrík khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "สองเม็ดพอครับ",
+        "romaji": "sǎwng mét phaw khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ใส่ปูไหมคะ",
+        "romaji": "sài puu mǎi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ไม่ใส่ครับ ไม่กินปู",
+        "romaji": "mâi sài khráp, mâi kin puu"
+      },
+      {
+        "speakerId": "a",
+        "text": "เปรี้ยวไหมคะ",
+        "romaji": "prîao mǎi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "เปรี้ยวนิดหน่อยครับ",
+        "romaji": "prîao nít-nàwy khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ได้ค่ะ สี่สิบบาทค่ะ",
+        "romaji": "dâi khâ, sìi-sìp bàat khâ"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "One som tam, please."
+      },
+      {
+        "speakerId": "a",
+        "text": "How many chilies?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Two chilies is enough."
+      },
+      {
+        "speakerId": "a",
+        "text": "Add crab?"
+      },
+      {
+        "speakerId": "b",
+        "text": "No crab, I don't eat crab."
+      },
+      {
+        "speakerId": "a",
+        "text": "Do you want it sour?"
+      },
+      {
+        "speakerId": "b",
+        "text": "A little sour."
+      },
+      {
+        "speakerId": "a",
+        "text": "Okay, forty baht."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "For som tam, spice is measured in chilies: กี่พริก kìi phrík = \"how many chilies?\" นิดหน่อย nít-nàwy = \"just a little,\" a handy softener after most adjectives."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.train-station",
+    "scenario": "Buying a bus ticket to Chiang Mai at the station",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "พนักงานขายตั๋ว",
+        "role": "ticket clerk"
+      },
+      {
+        "id": "b",
+        "name": "ผู้โดยสาร",
+        "role": "passenger"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "ขอตั๋วไปเชียงใหม่หนึ่งใบครับ",
+        "romaji": "khǎw tǔa pai chiang-mài nùeng bai khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ไปวันนี้หรือพรุ่งนี้คะ",
+        "romaji": "pai wan-níi rǔe phrûng-níi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "พรุ่งนี้เช้าครับ มีรอบกี่โมงบ้างครับ",
+        "romaji": "phrûng-níi cháo khráp, mii râwp kìi moong bâang khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "มีรอบแปดโมงกับสิบโมงค่ะ",
+        "romaji": "mii râwp pàet moong kàp sìp moong khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "เอารอบแปดโมงครับ ใช้เวลานานไหมครับ",
+        "romaji": "ao râwp pàet moong khráp, chái wee-laa naan mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ประมาณสิบชั่วโมงค่ะ ราคาห้าร้อยห้าสิบบาทค่ะ",
+        "romaji": "prà-maan sìp chûa-moong khâ, raa-khaa hâa-ráauy-hâa-sìp bàat khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "รถออกจากชานชาลาไหนครับ",
+        "romaji": "rót àwk jàak chaan-chaa-laa nǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ชานชาลาสามค่ะ กรุณามาก่อนเวลานะคะ",
+        "romaji": "chaan-chaa-laa sǎam khâ, kà-rú-naa maa kàwn wee-laa ná khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอบคุณครับ",
+        "romaji": "khàwp-khun khráp"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "One ticket to Chiang Mai, please."
+      },
+      {
+        "speakerId": "a",
+        "text": "Traveling today or tomorrow?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Tomorrow morning. What departure times are there?"
+      },
+      {
+        "speakerId": "a",
+        "text": "There are 8 a.m. and 10 a.m. departures."
+      },
+      {
+        "speakerId": "b",
+        "text": "I'll take the 8 a.m. one. How long does it take?"
+      },
+      {
+        "speakerId": "a",
+        "text": "About ten hours. Five hundred fifty baht."
+      },
+      {
+        "speakerId": "b",
+        "text": "Which platform does it leave from?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Platform three. Please arrive early."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thank you."
+      }
+    ],
+    "keyVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.beach-plans",
+    "scenario": "Making weekend beach plans with a friend",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "เพื่อน",
+        "role": "friend"
+      },
+      {
+        "id": "b",
+        "name": "เพื่อน",
+        "role": "friend"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "สุดสัปดาห์นี้อยากไปทะเลไหม",
+        "romaji": "sùt-sàp-daa níi yàak pai thá-lee mǎi"
+      },
+      {
+        "speakerId": "b",
+        "text": "อยากไปครับ ไปที่ไหนดี",
+        "romaji": "yàak pai khráp, pai thîi-nǎi dii"
+      },
+      {
+        "speakerId": "a",
+        "text": "ไปหัวหินไหม ขับรถแค่สามชั่วโมง",
+        "romaji": "pai hǔa-hǐn mǎi, khàp rót khâe sǎam chûa-moong"
+      },
+      {
+        "speakerId": "b",
+        "text": "ดีเลย ไปกันวันเสาร์นะ",
+        "romaji": "dii loei, pai kan wan-sǎo ná"
+      },
+      {
+        "speakerId": "a",
+        "text": "เราจะพักที่ไหนดี",
+        "romaji": "rao jà phák thîi-nǎi dii"
+      },
+      {
+        "speakerId": "b",
+        "text": "เดี๋ยวผมจองโรงแรมให้",
+        "romaji": "dǐao phǒm jawng roong-raem hâi"
+      },
+      {
+        "speakerId": "a",
+        "text": "ขอบคุณนะ ตื่นเต้นจัง",
+        "romaji": "khàwp-khun ná, tùen-tên jang"
+      },
+      {
+        "speakerId": "b",
+        "text": "ผมก็ตื่นเต้นเหมือนกัน",
+        "romaji": "phǒm kâw tùen-tên mǔean-kan"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Do you want to go to the beach this weekend?"
+      },
+      {
+        "speakerId": "b",
+        "text": "I'd love to. Where should we go?"
+      },
+      {
+        "speakerId": "a",
+        "text": "How about Hua Hin? It's only a three-hour drive."
+      },
+      {
+        "speakerId": "b",
+        "text": "Great, let's go on Saturday."
+      },
+      {
+        "speakerId": "a",
+        "text": "Where should we stay?"
+      },
+      {
+        "speakerId": "b",
+        "text": "I'll book a hotel."
+      },
+      {
+        "speakerId": "a",
+        "text": "Thanks! I'm so excited."
+      },
+      {
+        "speakerId": "b",
+        "text": "I'm excited too."
+      }
+    ],
+    "keyVocabulary": [],
+    "slangRegisterNotes": "ดีเลย dii loei (\"great!\") and จัง jang (an intensifier, \"so/really\") are informal, warm markers typical between friends. ไปกัน pai kan = \"let's go.\""
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.tuk-tuk",
+    "scenario": "Negotiating a tuk-tuk fare to the market",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "คนขับตุ๊กตุ๊ก",
+        "role": "tuk-tuk driver"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "th-TH-central",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "ไปตลาดนัดเท่าไหร่คะ",
+        "romaji": "pai tà-làat-nát thâo-rài khá"
+      },
+      {
+        "speakerId": "a",
+        "text": "ร้อยบาทครับ",
+        "romaji": "ráauy bàat khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "แพงไปค่ะ หกสิบได้ไหมคะ",
+        "romaji": "phaeng pai khâ, hòk-sìp dâi mǎi khá"
+      },
+      {
+        "speakerId": "a",
+        "text": "แปดสิบครับ ใกล้ ๆ นี่เอง",
+        "romaji": "pàet-sìp khráp, klâi-klâi nîi-eng"
+      },
+      {
+        "speakerId": "b",
+        "text": "ได้ค่ะ ไปเลยค่ะ",
+        "romaji": "dâi khâ, pai loei khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "ขึ้นมาเลยครับ",
+        "romaji": "khûen maa loei khráp"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "How much to the market?"
+      },
+      {
+        "speakerId": "a",
+        "text": "One hundred baht."
+      },
+      {
+        "speakerId": "b",
+        "text": "Too expensive. Can you do sixty?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Eighty, it's quite close by."
+      },
+      {
+        "speakerId": "b",
+        "text": "Okay, let's go."
+      },
+      {
+        "speakerId": "a",
+        "text": "Hop on."
+      }
+    ],
+    "keyVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.grab-ride",
+    "scenario": "Being picked up by a Grab driver for the airport",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "คนขับแกร็บ",
+        "role": "Grab driver"
+      },
+      {
+        "id": "b",
+        "name": "ผู้โดยสาร",
+        "role": "passenger"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "สวัสดีครับ ไปสนามบินใช่ไหมครับ",
+        "romaji": "sà-wàt-dii khráp, pai sà-nǎam-bin châi mǎi khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "ใช่ค่ะ ขอบคุณที่มารับนะคะ",
+        "romaji": "châi khâ, khàwp-khun thîi maa ráp ná khá"
+      },
+      {
+        "speakerId": "a",
+        "text": "มีกระเป๋าเยอะไหมครับ จะช่วยยกครับ",
+        "romaji": "mii krà-pǎo yóe mǎi khráp, jà chûai yók khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "มีสองใบค่ะ ขอบคุณค่ะ",
+        "romaji": "mii sǎwng bai khâ, khàwp-khun khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "รถติดนิดหน่อยนะครับ แต่ไม่นานครับ",
+        "romaji": "rót-tìt nít-nàwy ná khráp, tàe mâi naan khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "ไม่เป็นไรค่ะ ยังมีเวลาค่ะ",
+        "romaji": "mâi pen rai khâ, yang mii wee-laa khâ"
+      },
+      {
+        "speakerId": "a",
+        "text": "เปิดแอร์เพิ่มไหมครับ",
+        "romaji": "pòet ae phôem mǎi khráp"
+      },
+      {
+        "speakerId": "b",
+        "text": "เย็นพอแล้วค่ะ ขอบคุณค่ะ",
+        "romaji": "yen phaw láew khâ, khàwp-khun khâ"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Hello, going to the airport, right?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Yes. Thanks for picking me up."
+      },
+      {
+        "speakerId": "a",
+        "text": "Do you have a lot of luggage? I'll help lift it."
+      },
+      {
+        "speakerId": "b",
+        "text": "Two bags. Thank you."
+      },
+      {
+        "speakerId": "a",
+        "text": "There's a bit of traffic, but it won't be long."
+      },
+      {
+        "speakerId": "b",
+        "text": "That's fine, I still have time."
+      },
+      {
+        "speakerId": "a",
+        "text": "Should I turn up the air conditioning?"
+      },
+      {
+        "speakerId": "b",
+        "text": "It's cool enough, thank you."
+      }
+    ],
+    "keyVocabulary": [],
+    "slangRegisterNotes": "รถติด rót-tìt = \"traffic jam,\" an everyday Bangkok phrase (literally \"cars stuck\")."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.buying-fruit",
+    "scenario": "Buying mangoes and mangosteen from a fruit stall",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "แม่ค้าผลไม้",
+        "role": "fruit vendor"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "th-TH-central",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "มะม่วงกิโลละเท่าไหร่ครับ",
+        "romaji": "má-mûang kì-loo lá thâo-rài khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "กิโลละสี่สิบบาทค่ะ",
+        "romaji": "kì-loo lá sìi-sìp bàat khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอสองกิโลครับ หวานไหมครับ",
+        "romaji": "khǎw sǎwng kì-loo khráp, wǎan mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "หวานมากค่ะ กำลังอร่อยเลย",
+        "romaji": "wǎan mâak khâ, kam-lang à-ràwy loei"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอมังคุดด้วยครึ่งกิโลครับ",
+        "romaji": "khǎw mang-khút dûai khrûeng kì-loo khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ได้ค่ะ ทั้งหมดร้อยสิบบาทค่ะ",
+        "romaji": "dâi khâ, tháng-mòt ráauy-sìp bàat khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "นี่ครับ ขอบคุณครับ",
+        "romaji": "nîi khráp, khàwp-khun khráp"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "How much per kilo for mangoes?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Forty baht per kilo."
+      },
+      {
+        "speakerId": "b",
+        "text": "Two kilos please. Are they sweet?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Very sweet, they're perfect right now."
+      },
+      {
+        "speakerId": "b",
+        "text": "Half a kilo of mangosteen too, please."
+      },
+      {
+        "speakerId": "a",
+        "text": "Sure. One hundred ten baht in total."
+      },
+      {
+        "speakerId": "b",
+        "text": "Here you go, thank you."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "กิโลละ kì-loo lá = \"per kilo\"; the pattern <unit> + ละ lá means \"per <unit>\" (วันละ wan-lá = per day, คนละ khon-lá = per person)."
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.hotel-checkout",
+    "scenario": "Checking out and leaving luggage at the hotel",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "พนักงานต้อนรับ",
+        "role": "receptionist"
+      },
+      {
+        "id": "b",
+        "name": "แขก",
+        "role": "guest"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "สวัสดีครับ ผมจะเช็คเอาท์ครับ",
+        "romaji": "sà-wàt-dii khráp, phǒm jà chék-áo khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ห้องเบอร์อะไรคะ",
+        "romaji": "hâwng boe à-rai khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ห้องห้าศูนย์เจ็ดครับ",
+        "romaji": "hâwng hâa-sǔun-jèt khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "มีใช้มินิบาร์ไหมคะ",
+        "romaji": "mii chái mí-ní-baa mǎi khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ไม่ได้ใช้ครับ มีค่าใช้จ่ายอื่นไหมครับ",
+        "romaji": "mâi dâi chái khráp, mii khâa-chái-jàai ùen mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ไม่มีค่ะ ทุกอย่างจ่ายแล้วค่ะ",
+        "romaji": "mâi mii khâ, thúk-yàang jàai láew khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ฝากกระเป๋าไว้ถึงบ่ายได้ไหมครับ",
+        "romaji": "fàak krà-pǎo wái thǔeng bàai dâi mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ได้ค่ะ วางไว้ตรงนี้ได้เลยค่ะ",
+        "romaji": "dâi khâ, waang wái trong-níi dâi loei khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอบคุณมากครับ",
+        "romaji": "khàwp-khun mâak khráp"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Hello, I'd like to check out."
+      },
+      {
+        "speakerId": "a",
+        "text": "What's your room number?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Room 507."
+      },
+      {
+        "speakerId": "a",
+        "text": "Did you use the minibar?"
+      },
+      {
+        "speakerId": "b",
+        "text": "No, I didn't. Are there any other charges?"
+      },
+      {
+        "speakerId": "a",
+        "text": "No, everything is paid."
+      },
+      {
+        "speakerId": "b",
+        "text": "Can I leave my luggage here until the afternoon?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, you can leave it right here."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thank you very much."
+      }
+    ],
+    "keyVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.cafe-wifi",
+    "scenario": "Asking about wifi and a seat at a cafe",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "พนักงาน",
+        "role": "staff"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A1",
+    "regionDialect": "th-TH-central",
+    "formality": "informal",
+    "transcript": [
+      {
+        "speakerId": "b",
+        "text": "ขอโทษครับ ที่นี่มีไวไฟไหมครับ",
+        "romaji": "khǎw-thôot khráp, thîi-nîi mii wai-fai mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "มีค่ะ รหัสอยู่บนโต๊ะค่ะ",
+        "romaji": "mii khâ, rá-hàt yùu bon tó khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "มีปลั๊กไฟไหมครับ",
+        "romaji": "mii plák-fai mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "มีค่ะ อยู่ข้างผนังค่ะ",
+        "romaji": "mii khâ, yùu khâang phà-nǎng khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "นั่งตรงนี้ได้ไหมครับ",
+        "romaji": "nâng trong-níi dâi mǎi khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ได้ค่ะ ตามสบายเลยค่ะ",
+        "romaji": "dâi khâ, taam sà-baai loei khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอบคุณครับ",
+        "romaji": "khàwp-khun khráp"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "b",
+        "text": "Excuse me, is there wifi here?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, the password is on the table."
+      },
+      {
+        "speakerId": "b",
+        "text": "Is there a power outlet?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, it's by the wall."
+      },
+      {
+        "speakerId": "b",
+        "text": "Can I sit here?"
+      },
+      {
+        "speakerId": "a",
+        "text": "Yes, make yourself comfortable."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thank you."
+      }
+    ],
+    "keyVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "dialogue.restaurant-booking",
+    "scenario": "Booking a dinner table over the phone",
+    "speakers": [
+      {
+        "id": "a",
+        "name": "พนักงานร้านอาหาร",
+        "role": "restaurant staff"
+      },
+      {
+        "id": "b",
+        "name": "ลูกค้า",
+        "role": "customer"
+      }
+    ],
+    "targetLevel": "A2",
+    "regionDialect": "th-TH-central",
+    "formality": "formal",
+    "transcript": [
+      {
+        "speakerId": "a",
+        "text": "สวัสดีค่ะ ร้านอาหารบ้านสวนค่ะ",
+        "romaji": "sà-wàt-dii khâ, ráan-aa-hǎan bâan-sǔan khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "สวัสดีครับ ผมอยากจองโต๊ะครับ",
+        "romaji": "sà-wàt-dii khráp, phǒm yàak jawng tó khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "สำหรับกี่ท่านคะ",
+        "romaji": "sǎm-ràp kìi thâan khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "สี่คนครับ คืนนี้สองทุ่มครับ",
+        "romaji": "sìi khon khráp, khuen-níi sǎwng thûm khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "ได้ค่ะ ขอชื่อและเบอร์โทรด้วยค่ะ",
+        "romaji": "dâi khâ, khǎw chûe láe boe thoo dûai khâ"
+      },
+      {
+        "speakerId": "b",
+        "text": "ชื่อวิชัยครับ เดี๋ยวส่งเบอร์ให้ทางไลน์ครับ",
+        "romaji": "chûe wí-chai khráp, dǐao sòng boe hâi thaang laai khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "รับทราบค่ะ มีที่นั่งริมสวนให้นะคะ",
+        "romaji": "ráp-sâap khâ, mii thîi-nâng rim sǔan hâi ná khá"
+      },
+      {
+        "speakerId": "b",
+        "text": "ขอบคุณมากครับ",
+        "romaji": "khàwp-khun mâak khráp"
+      },
+      {
+        "speakerId": "a",
+        "text": "แล้วพบกันคืนนี้นะคะ",
+        "romaji": "láew phóp kan khuen-níi ná khá"
+      }
+    ],
+    "translation": [
+      {
+        "speakerId": "a",
+        "text": "Hello, Baan Suan Restaurant."
+      },
+      {
+        "speakerId": "b",
+        "text": "Hello, I'd like to book a table."
+      },
+      {
+        "speakerId": "a",
+        "text": "For how many people?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Four people, tonight at 8 p.m."
+      },
+      {
+        "speakerId": "a",
+        "text": "Certainly, may I have your name and phone number?"
+      },
+      {
+        "speakerId": "b",
+        "text": "Wichai. I'll send my number via LINE."
+      },
+      {
+        "speakerId": "a",
+        "text": "Noted. We'll give you a table by the garden."
+      },
+      {
+        "speakerId": "b",
+        "text": "Thank you very much."
+      },
+      {
+        "speakerId": "a",
+        "text": "See you tonight."
+      }
+    ],
+    "keyVocabulary": [],
+    "grammarNotes": "Thai tells evening time with ทุ่ม thûm: สองทุ่ม sǎwng thûm = 8 p.m. (the 2nd hour after 6 p.m.). ท่าน thâan is a very polite classifier/pronoun for people, common in service settings."
+  }
+]

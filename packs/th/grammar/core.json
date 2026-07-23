@@ -1,0 +1,526 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "grammar.word-order",
+    "title": "Word Order — Topic-Comment and Basic SVO",
+    "cefr": "A1",
+    "explanationMd": "Thai is an **analytic** language: words never change shape. There is no conjugation, no plurals, no articles, and no endings for case or tense — meaning comes from **word order** and small helper words. The default order is **Subject–Verb–Object (SVO)**, just like English: ผมกินข้าว (phǒm kin khâao) = 'I eat rice'.\n\nThai also loves the **topic-comment** pattern: put what you're talking about first, then comment on it. อาหารไทย ผมชอบ (aa-hǎan thai, phǒm châwp) literally 'Thai food, I like [it]' — the topic (Thai food) is fronted, then the comment follows. This feels natural in Thai even when English would keep the object at the end.",
+    "examples": [
+      { "text": "ผมกินข้าว", "romaji": "phǒm kin khâao", "translation": "I eat rice." },
+      { "text": "อาหารไทย ผมชอบมาก", "romaji": "aa-hǎan thai, phǒm châwp mâak", "translation": "Thai food, I like [it] a lot." }
+    ],
+    "commonErrors": [
+      { "wrong": "ข้าวกินผม", "right": "ผมกินข้าว", "note": "Word order carries the meaning. Reversing subject and object changes who is eating whom." },
+      { "wrong": "ผมกิน (with no object when one is expected)", "right": "ผมกินข้าว", "note": "Thai needs the object stated unless it is clear from context." }
+    ],
+    "drills": [
+      { "prompt": "Put in order: กิน / ผม / ข้าว (I eat rice)", "answer": "ผมกินข้าว (phǒm kin khâao)" },
+      { "prompt": "Front the topic: 'Coffee, I like it.' using กาแฟ (kaafae) / ชอบ / ผม", "answer": "กาแฟ ผมชอบ (kaafae, phǒm châwp)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.pronouns-register",
+    "title": "Pronouns and Register (ผม / ดิฉัน / ฉัน / คุณ / เขา)",
+    "cefr": "A1",
+    "explanationMd": "Thai pronouns depend on **who you are and how polite you're being**. For 'I': men usually say **ผม (phǒm)**; women say **ดิฉัน (dì-chǎn)** in formal settings or **ฉัน (chǎn)** informally. For 'you', the safe neutral word is **คุณ (khun)** — also used before names like a title (คุณสมชาย = 'Mr. Somchai'). For 'he/she/they' use **เขา (khǎo)**; there is one word for both genders.\n\nCrucially, Thai **drops pronouns** whenever the subject is obvious from context. Answering 'Where are you going?' you can simply say ไปตลาด (pai tà-làat, '[I'm] going to the market') with no 'I' at all. Overusing pronouns can sound stiff or even rude.",
+    "examples": [
+      { "text": "ผมชื่อสมชาย", "romaji": "phǒm chûue Sǒm-chaai", "translation": "My name is Somchai. (male speaker)" },
+      { "text": "คุณไปไหน", "romaji": "khun pai nǎi", "translation": "Where are you going?" },
+      { "text": "เขาเป็นครู", "romaji": "khǎo pen khruu", "translation": "He/She is a teacher." }
+    ],
+    "commonErrors": [
+      { "wrong": "ผม (used by a woman)", "right": "ดิฉัน / ฉัน", "note": "ผม is for male speakers only; women use ดิฉัน (formal) or ฉัน (casual)." },
+      { "wrong": "ผมไปตลาด ผมซื้อผม... (repeating ผม in every clause)", "right": "ไปตลาด ซื้อของ", "note": "Drop the pronoun once the subject is clear; repeating it sounds unnatural." }
+    ],
+    "drills": [
+      { "prompt": "A woman formally says 'I am a student' (นักเรียน nák-rian)", "answer": "ดิฉันเป็นนักเรียน (dì-chǎn pen nák-rian)" },
+      { "prompt": "Say 'Where is he going?'", "answer": "เขาไปไหน (khǎo pai nǎi)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.politeness-particles",
+    "title": "Politeness Particles ครับ / ค่ะ",
+    "cefr": "A1",
+    "explanationMd": "Thai adds a **sentence-final politeness particle** to sound polite and friendly. Which one you use depends on the **speaker's gender**, not the listener's:\n- Male speakers always say **ครับ (khráp)** — for statements, questions, and even 'yes'.\n- Female speakers say **ค่ะ (khâ)** for statements, but switch to **คะ (khá)** for questions and requests.\n\nThese particles carry no dictionary meaning; they wrap the whole sentence in politeness. In everyday polite speech they appear on nearly every sentence. ครับ/ค่ะ alone can also mean a polite 'yes' or 'I see'.",
+    "examples": [
+      { "text": "ขอบคุณครับ", "romaji": "khàwp-khun khráp", "translation": "Thank you. (male speaker)" },
+      { "text": "สวัสดีค่ะ", "romaji": "sà-wàt-dii khâ", "translation": "Hello. (female speaker, statement)" },
+      { "text": "ไปไหนคะ", "romaji": "pai nǎi khá", "translation": "Where are you going? (female speaker, question)" }
+    ],
+    "commonErrors": [
+      { "wrong": "ไปไหนค่ะ (a woman asking a question)", "right": "ไปไหนคะ", "note": "Women use the high-tone คะ for questions, but the falling-tone ค่ะ for statements." },
+      { "wrong": "A man saying ค่ะ", "right": "ครับ", "note": "The particle matches the speaker's gender; men always use ครับ." }
+    ],
+    "drills": [
+      { "prompt": "A man says 'Hello' politely.", "answer": "สวัสดีครับ (sà-wàt-dii khráp)" },
+      { "prompt": "A woman politely asks 'What is this?' (นี่อะไร nîi à-rai)", "answer": "นี่อะไรคะ (nîi à-rai khá)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.classifiers-counting",
+    "title": "Classifiers and Counting (Noun + Number + Classifier)",
+    "cefr": "A1",
+    "explanationMd": "When you count things in Thai, you can't just put a number in front of a noun. You need a **classifier** (ลักษณนาม) that matches the kind of thing. The order is **Noun + Number + Classifier**: หมาสองตัว (mǎa sǎwng tua) = 'two dogs' (literally 'dog two [animal-classifier]').\n\nCommon classifiers:\n- **คน (khon)** — people\n- **ตัว (tua)** — animals, and also shirts/tables\n- **อัน (an)** — small general objects\n- **ใบ (bai)** — cups, sheets, fruit, tickets\n- **เล่ม (lêm)** — books\n- **คัน (khan)** — vehicles\n\nIf you don't know the right classifier, **อัน (an)** is a common fallback for small objects, though not always correct.",
+    "examples": [
+      { "text": "หมาสองตัว", "romaji": "mǎa sǎwng tua", "translation": "two dogs" },
+      { "text": "นักเรียนสามคน", "romaji": "nák-rian sǎam khon", "translation": "three students" },
+      { "text": "หนังสือหนึ่งเล่ม", "romaji": "nǎng-sǔe nùeng lêm", "translation": "one book" }
+    ],
+    "commonErrors": [
+      { "wrong": "สองหมา", "right": "หมาสองตัว", "note": "The number cannot sit directly before the noun; use Noun + Number + Classifier." },
+      { "wrong": "หนังสือสองคน", "right": "หนังสือสองเล่ม", "note": "Match the classifier to the noun — books take เล่ม, not the people classifier คน." }
+    ],
+    "drills": [
+      { "prompt": "Say 'five people' (ห้า = hâa)", "answer": "ห้าคน → คนห้าคน / (people) ...ห้าคน (hâa khon)" },
+      { "prompt": "Say 'two cars' (รถ rót, คัน)", "answer": "รถสองคัน (rót sǎwng khan)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.this-that-classifier",
+    "title": "This / That with a Classifier (นี้ / นั้น)",
+    "cefr": "A1",
+    "explanationMd": "To say 'this ___' or 'that ___', Thai uses the pattern **Noun + Classifier + นี้/นั้น**. **นี้ (níi)** = 'this' (near), **นั้น (nán)** = 'that' (far). So 'this book' is หนังสือเล่มนี้ (nǎng-sǔe lêm níi) — literally 'book [classifier] this'.\n\nWatch the tones and the standalone forms: **นี่ (nîi, falling)** and **นั่น (nân, falling)** are pronouns meaning 'this one / that one' used alone (นี่อะไร nîi à-rai = 'what is this?'), while **นี้ (níi, high)** and **นั้น (nán, high)** attach after a classifier to modify a noun.",
+    "examples": [
+      { "text": "หนังสือเล่มนี้", "romaji": "nǎng-sǔe lêm níi", "translation": "this book" },
+      { "text": "รถคันนั้นสวย", "romaji": "rót khan nán sǔay", "translation": "That car is beautiful." },
+      { "text": "คนนี้เป็นเพื่อนผม", "romaji": "khon níi pen phûean phǒm", "translation": "This person is my friend." }
+    ],
+    "commonErrors": [
+      { "wrong": "นี้หนังสือ", "right": "หนังสือเล่มนี้", "note": "'This/that' comes after the noun and its classifier, not before the noun." },
+      { "wrong": "หนังสือนี้เล่ม", "right": "หนังสือเล่มนี้", "note": "Order is Noun + Classifier + นี้/นั้น." }
+    ],
+    "drills": [
+      { "prompt": "Say 'this dog' (หมา, ตัว)", "answer": "หมาตัวนี้ (mǎa tua níi)" },
+      { "prompt": "Say 'that house' (บ้าน bâan, หลัง lǎng)", "answer": "บ้านหลังนั้น (bâan lǎng nán)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.yes-no-questions-mai",
+    "title": "Yes/No Questions with ไหม",
+    "cefr": "A1",
+    "explanationMd": "The most common way to make a yes/no question is to add **ไหม (mǎi)** to the end of a statement. It works like a spoken question mark: คุณหิวไหม (khun hǐu mǎi) = 'Are you hungry?'\n\nThai has **no single word for 'yes'**. To answer, you **repeat the verb or adjective**: หิว (hǐu, 'hungry' = yes) or ไม่หิว (mâi hǐu, 'not hungry' = no). In casual speech ไหม is often pronounced **มั้ย (mái, high tone)**. Politeness particles come after: ไปไหมครับ (pai mǎi khráp).",
+    "examples": [
+      { "text": "คุณหิวไหม", "romaji": "khun hǐu mǎi", "translation": "Are you hungry?" },
+      { "text": "อร่อยไหม", "romaji": "à-ròi mǎi", "translation": "Is it delicious?" },
+      { "text": "ไปด้วยกันไหมครับ", "romaji": "pai dûai-gan mǎi khráp", "translation": "Shall [we] go together?" }
+    ],
+    "commonErrors": [
+      { "wrong": "ใช่ (as a general 'yes' answer to หิวไหม)", "right": "หิว / ไม่หิว", "note": "Answer yes/no questions by repeating the verb or adjective, not with ใช่." },
+      { "wrong": "ไหมคุณหิว", "right": "คุณหิวไหม", "note": "ไหม always goes at the very end of the sentence." }
+    ],
+    "drills": [
+      { "prompt": "Ask 'Do you like Thai food?' (ชอบ / อาหารไทย)", "answer": "ชอบอาหารไทยไหม (châwp aa-hǎan thai mǎi)" },
+      { "prompt": "Answer 'no' to อร่อยไหม", "answer": "ไม่อร่อย (mâi à-ròi)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.confirmation-questions",
+    "title": "Confirmation Questions with หรือ and ใช่ไหม",
+    "cefr": "A2",
+    "explanationMd": "Besides ไหม, Thai has two ways to ask for **confirmation** of something you already half-believe:\n- **...ใช่ไหม (châi mǎi)** = 'right?', a tag question checking a whole statement: คุณเป็นคนไทยใช่ไหม (khun pen khon thai châi mǎi) = 'You're Thai, right?' Answer ใช่ (châi, 'that's right') or ไม่ใช่ (mâi châi, 'no / not so').\n- **...หรือ / ...หรือเปล่า (rǔe / rǔe plào)** softens a yes/no question, often 'or not?'. In casual speech หรือ shrinks to **รึ (rúe)**: ไปหรือเปล่า (pai rǔe plào) = 'Are [you] going or not?'\n\nUse ใช่ไหม to confirm a fact you assume is true; use หรือเปล่า for a genuinely open 'yes or no'.",
+    "examples": [
+      { "text": "คุณเป็นคนไทยใช่ไหม", "romaji": "khun pen khon thai châi mǎi", "translation": "You're Thai, right?" },
+      { "text": "อันนี้ของคุณใช่ไหม", "romaji": "an níi khǎwng khun châi mǎi", "translation": "This one is yours, isn't it?" },
+      { "text": "ไปหรือเปล่า", "romaji": "pai rǔe plào", "translation": "Are you going or not?" }
+    ],
+    "commonErrors": [
+      { "wrong": "Answering ใช่ไหม with หิว/ไม่หิว style verb-repeat", "right": "ใช่ / ไม่ใช่", "note": "A ใช่ไหม tag is confirmed with ใช่ or ไม่ใช่, since it checks the truth of the whole statement." },
+      { "wrong": "คุณเป็นคนไทยไหมใช่", "right": "คุณเป็นคนไทยใช่ไหม", "note": "The fixed tag order is ใช่ไหม at the end." }
+    ],
+    "drills": [
+      { "prompt": "Turn 'You like coffee' into a tag question", "answer": "คุณชอบกาแฟใช่ไหม (khun châwp kaafae châi mǎi)" },
+      { "prompt": "Confirm 'yes, that's right'", "answer": "ใช่ (châi)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.question-words",
+    "title": "Question Words (อะไร / ที่ไหน / ใคร / เมื่อไหร่ / ทำไม / อย่างไร / เท่าไหร่)",
+    "cefr": "A1",
+    "explanationMd": "For 'wh-' questions, Thai keeps normal word order and simply **puts the question word where the answer would go** — no inversion, no ไหม.\n- **อะไร (à-rai)** = what → กินอะไร (kin à-rai) 'eat what?'\n- **ที่ไหน (thîi nǎi)** = where → ไปที่ไหน (pai thîi nǎi) 'go where?'\n- **ใคร (khrai)** = who → ใครมา (khrai maa) 'who came?'\n- **เมื่อไหร่ (mûea-rài)** = when → มาเมื่อไหร่ (maa mûea-rài) 'come when?'\n- **ทำไม (tham-mai)** = why → ทำไมไม่มา (tham-mai mâi maa) 'why not come?'\n- **อย่างไร / ยังไง (yàang-rai / yang-ngai)** = how → ไปยังไง (pai yang-ngai) 'how to go?'\n- **เท่าไหร่ (thâo-rài)** = how much/many → เท่าไหร่ (thâo-rài) 'how much?'\n\nThe question word simply replaces the unknown; the rest of the sentence stays put.",
+    "examples": [
+      { "text": "คุณกินอะไร", "romaji": "khun kin à-rai", "translation": "What are you eating?" },
+      { "text": "ห้องน้ำอยู่ที่ไหน", "romaji": "hâwng-náam yùu thîi nǎi", "translation": "Where is the bathroom?" },
+      { "text": "อันนี้เท่าไหร่", "romaji": "an níi thâo-rài", "translation": "How much is this one?" }
+    ],
+    "commonErrors": [
+      { "wrong": "อะไรคุณกิน", "right": "คุณกินอะไร", "note": "The question word stays in the answer's slot; don't move it to the front like English." },
+      { "wrong": "ไปไหมที่ไหน", "right": "ไปที่ไหน", "note": "Don't combine a wh-word with ไหม; wh-questions never take ไหม." }
+    ],
+    "drills": [
+      { "prompt": "Ask 'Who is that person?' (คนนั้น khon nán)", "answer": "คนนั้นคือใคร / คนนั้นเป็นใคร (khon nán pen khrai)" },
+      { "prompt": "Ask 'When are you coming?'", "answer": "คุณมาเมื่อไหร่ (khun maa mûea-rài)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.negation-mai",
+    "title": "Negation with ไม่ + Verb",
+    "cefr": "A1",
+    "explanationMd": "To make a verb or adjective negative, put **ไม่ (mâi, falling tone)** directly in front of it: ไม่กิน (mâi kin) 'don't eat', ไม่อร่อย (mâi à-ròi) 'not delicious'. Because Thai verbs never change form, ไม่ works for any subject and any time — 'I don't', 'he doesn't', 'we didn't' are all just ไม่ + verb.\n\nDon't confuse the falling-tone **ไม่ (mâi)** 'not' with the rising-tone question particle **ไหม (mǎi)** — same letters in casual writing, opposite jobs. For emphasis you can add เลย: ไม่ชอบเลย (mâi châwp loei) 'don't like [it] at all'.",
+    "examples": [
+      { "text": "ผมไม่กินเนื้อ", "romaji": "phǒm mâi kin núea", "translation": "I don't eat beef." },
+      { "text": "วันนี้ไม่ร้อน", "romaji": "wan-níi mâi ráwn", "translation": "Today isn't hot." },
+      { "text": "เขาไม่ชอบเลย", "romaji": "khǎo mâi châwp loei", "translation": "He doesn't like it at all." }
+    ],
+    "commonErrors": [
+      { "wrong": "กินไม่", "right": "ไม่กิน", "note": "ไม่ goes before the verb, never after." },
+      { "wrong": "Using ไม่ to negate a noun (ไม่ครู)", "right": "ไม่ใช่ครู", "note": "ไม่ negates verbs/adjectives; to say 'is not [a noun]' use ไม่ใช่." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I don't like it.'", "answer": "ผมไม่ชอบ / ฉันไม่ชอบ (mâi châwp)" },
+      { "prompt": "Negate อร่อย ('delicious')", "answer": "ไม่อร่อย (mâi à-ròi)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.negation-maichai",
+    "title": "Negating 'To Be' with ไม่ใช่",
+    "cefr": "A1",
+    "explanationMd": "Thai uses **เป็น (pen)** or **คือ (khuue)** to link a subject to a noun ('X is a Y'). To negate that — 'X is NOT a Y' — you don't use ไม่; you use the fixed phrase **ไม่ใช่ (mâi châi)** in place of เป็น: เขาไม่ใช่คนไทย (khǎo mâi châi khon thai) = 'He is not Thai'.\n\n**ไม่ใช่** also stands alone as an emphatic 'No / That's not right', the natural negative answer to a ใช่ไหม tag question. Remember: negate **verbs/adjectives** with ไม่, but negate **being a noun** with ไม่ใช่.",
+    "examples": [
+      { "text": "เขาไม่ใช่คนไทย", "romaji": "khǎo mâi châi khon thai", "translation": "He is not Thai." },
+      { "text": "นี่ไม่ใช่ของผม", "romaji": "nîi mâi châi khǎwng phǒm", "translation": "This is not mine." },
+      { "text": "ไม่ใช่ครับ", "romaji": "mâi châi khráp", "translation": "No, that's not right. (male speaker)" }
+    ],
+    "commonErrors": [
+      { "wrong": "เขาไม่เป็นคนไทย", "right": "เขาไม่ใช่คนไทย", "note": "'Is not a [noun]' uses ไม่ใช่, not ไม่ + เป็น." },
+      { "wrong": "นี่ไม่ของผม", "right": "นี่ไม่ใช่ของผม", "note": "Negating identity/possession of a noun needs the full ไม่ใช่." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I am not a teacher.' (ครู khruu)", "answer": "ผมไม่ใช่ครู / ฉันไม่ใช่ครู (mâi châi khruu)" },
+      { "prompt": "Answer 'No' to a ใช่ไหม question", "answer": "ไม่ใช่ (mâi châi)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.perfective-laew",
+    "title": "Past / Completed Action with แล้ว",
+    "cefr": "A1",
+    "explanationMd": "Thai verbs don't change for tense; time is shown with helper words or just context. To signal that something is **already done or has changed state**, add **แล้ว (láew)** at the end: กินแล้ว (kin láew) = '[I've] already eaten'. It marks completion (a perfective), close to English 'already' / 'now'.\n\nแล้ว also works with adjectives and states to show a change: อิ่มแล้ว (ìm láew) 'I'm full now', หมดแล้ว (mòt láew) 'it's all gone now'. For 'not yet', use **ยัง...(อยู่) / ยังไม่...** instead: ยังไม่กิน (yang mâi kin) 'haven't eaten yet'.",
+    "examples": [
+      { "text": "ผมกินข้าวแล้ว", "romaji": "phǒm kin khâao láew", "translation": "I've already eaten." },
+      { "text": "รถมาแล้ว", "romaji": "rót maa láew", "translation": "The car/bus has come (it's here now)." },
+      { "text": "ยังไม่เสร็จ", "romaji": "yang mâi sèt", "translation": "Not finished yet." }
+    ],
+    "commonErrors": [
+      { "wrong": "แล้วกินข้าว (meaning 'already ate')", "right": "กินข้าวแล้ว", "note": "As a completion marker, แล้ว goes at the end of the clause." },
+      { "wrong": "Using แล้ว for 'not yet'", "right": "ยังไม่...", "note": "'Not yet' is expressed with ยังไม่ / ยัง...อยู่, not with แล้ว." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I've already paid.' (จ่าย jàai)", "answer": "จ่ายแล้ว (jàai láew)" },
+      { "prompt": "Say 'The train has left already.' (รถไฟ rót-fai / ออก àwk)", "answer": "รถไฟออกแล้ว (rót-fai àwk láew)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.future-ja",
+    "title": "Future with จะ",
+    "cefr": "A1",
+    "explanationMd": "To talk about the **future** or an intention, put **จะ (jà)** directly before the verb: ผมจะไป (phǒm jà pai) = 'I will go / I'm going to go'. จะ covers plans, predictions, and willingness — anything not-yet-happened.\n\nBecause time is often clear from context, Thai frequently uses a **time word instead of จะ**: พรุ่งนี้ไปตลาด (phrûng-níi pai tà-làat) 'tomorrow [I] go to the market' already implies future. You can combine them: พรุ่งนี้ผมจะไป (phrûng-níi phǒm jà pai). To negate, put ไม่ after จะ: จะไม่ไป (jà mâi pai) 'won't go'.",
+    "examples": [
+      { "text": "พรุ่งนี้ผมจะไปตลาด", "romaji": "phrûng-níi phǒm jà pai tà-làat", "translation": "Tomorrow I will go to the market." },
+      { "text": "เขาจะมาไหม", "romaji": "khǎo jà maa mǎi", "translation": "Will he/she come?" },
+      { "text": "ผมจะไม่ไป", "romaji": "phǒm jà mâi pai", "translation": "I won't go." }
+    ],
+    "commonErrors": [
+      { "wrong": "ผมไปจะตลาด", "right": "ผมจะไปตลาด", "note": "จะ comes immediately before the verb, not after it." },
+      { "wrong": "ผมไม่จะไป", "right": "ผมจะไม่ไป", "note": "For 'will not', ไม่ follows จะ and precedes the verb: จะไม่ + verb." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I will eat later.' (เดี๋ยว dǐao = in a moment)", "answer": "เดี๋ยวผมจะกิน (dǐao phǒm jà kin)" },
+      { "prompt": "Ask 'Will you buy it?' (ซื้อ súe)", "answer": "คุณจะซื้อไหม (khun jà súe mǎi)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.progressive-kamlang-yu",
+    "title": "Progressive with กำลัง ... อยู่",
+    "cefr": "A1",
+    "explanationMd": "To say an action is **happening right now** (English '-ing'), Thai frames the verb with **กำลัง (kam-lang)** before it and/or **อยู่ (yùu)** after it: กำลังกินอยู่ (kam-lang kin yùu) = '[I'm] eating (right now)'.\n\nAll three patterns are correct:\n- **กำลัง + verb** — กำลังกิน\n- **verb + อยู่** — กินอยู่\n- **กำลัง + verb + อยู่** — กำลังกินอยู่ (most explicit)\n\nกำลัง stresses that the action is in progress; อยู่ stresses the ongoing state. Note อยู่ alone also means 'to be located / to stay', so context tells them apart.",
+    "examples": [
+      { "text": "ผมกำลังกินข้าวอยู่", "romaji": "phǒm kam-lang kin khâao yùu", "translation": "I am eating (right now)." },
+      { "text": "เขากำลังทำงาน", "romaji": "khǎo kam-lang tham-ngaan", "translation": "He/She is working." },
+      { "text": "ฝนตกอยู่", "romaji": "fǒn tòk yùu", "translation": "It's raining." }
+    ],
+    "commonErrors": [
+      { "wrong": "ผมกินกำลัง", "right": "ผมกำลังกิน", "note": "กำลัง goes before the verb; อยู่ goes after it." },
+      { "wrong": "Using กำลัง...อยู่ for habits ('I eat rice every day')", "right": "plain verb", "note": "The progressive is for actions in progress now, not routines; habits use a plain verb with a time word." }
+    ],
+    "drills": [
+      { "prompt": "Say 'She is reading a book.' (อ่าน àan / หนังสือ)", "answer": "เขากำลังอ่านหนังสืออยู่ (khǎo kam-lang àan nǎng-sǔe yùu)" },
+      { "prompt": "Ask 'What are you doing?' (ทำ tham)", "answer": "คุณกำลังทำอะไรอยู่ (khun kam-lang tham à-rai yùu)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.want-yak",
+    "title": "Want to do Something: อยาก + Verb",
+    "cefr": "A1",
+    "explanationMd": "To say you **want to do** something, put **อยาก (yàak)** before the verb: อยากกิน (yàak kin) 'want to eat', อยากไป (yàak pai) 'want to go'. Politely you often hear อยากจะ (yàak jà) + verb.\n\nBe careful with a different word: **อยากได้ (yàak dâi)** = 'want [to have/get] a thing (a noun)': อยากได้กาแฟ (yàak dâi kaafae) 'I want a coffee'. So use **อยาก + verb** for actions and **อยากได้ + noun** for objects. Negate with ไม่อยาก (mâi yàak) 'don't want to'.",
+    "examples": [
+      { "text": "ผมอยากกินข้าว", "romaji": "phǒm yàak kin khâao", "translation": "I want to eat." },
+      { "text": "อยากได้กาแฟหนึ่งแก้ว", "romaji": "yàak dâi kaafae nùeng kâew", "translation": "I want one coffee." },
+      { "text": "ไม่อยากไป", "romaji": "mâi yàak pai", "translation": "[I] don't want to go." }
+    ],
+    "commonErrors": [
+      { "wrong": "อยากกาแฟ", "right": "อยากได้กาแฟ", "note": "For wanting a noun/thing, use อยากได้ + noun; อยาก alone must be followed by a verb." },
+      { "wrong": "อยากได้ไป", "right": "อยากไป", "note": "For wanting to do an action, use อยาก + verb (no ได้)." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I want to sleep.' (นอน nawn)", "answer": "อยากนอน (yàak nawn)" },
+      { "prompt": "Say 'I want water.' (น้ำ náam)", "answer": "อยากได้น้ำ (yàak dâi náam)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.must-should-tong-khuan",
+    "title": "Must / Should: ต้อง and ควร",
+    "cefr": "A2",
+    "explanationMd": "These modal helpers sit **before the verb**:\n- **ต้อง (tông)** = 'must / have to' (obligation or strong necessity): ผมต้องไป (phǒm tông pai) 'I must go'.\n- **ควร (khuan)**, often **ควรจะ (khuan jà)** = 'should / ought to' (advice, milder): คุณควรพักผ่อน (khun khuan phák-phàwn) 'You should rest'.\n\nNegate by inserting ไม่: **ไม่ต้อง (mâi tông)** means 'don't have to / no need' (not 'must not'), and **ไม่ควร (mâi khuan)** = 'shouldn't'. ไม่ต้อง is also a very common polite 'no need, thanks'.",
+    "examples": [
+      { "text": "ผมต้องไปทำงาน", "romaji": "phǒm tông pai tham-ngaan", "translation": "I have to go to work." },
+      { "text": "คุณควรพักผ่อน", "romaji": "khun khuan phák-phàwn", "translation": "You should rest." },
+      { "text": "ไม่ต้องครับ", "romaji": "mâi tông khráp", "translation": "No need, thanks. (male speaker)" }
+    ],
+    "commonErrors": [
+      { "wrong": "ไม่ต้อง = 'must not'", "right": "ไม่ต้อง = 'don't have to'", "note": "ไม่ต้อง means 'no need / don't have to', not prohibition. Prohibition uses ห้าม (hâam)." },
+      { "wrong": "ผมไปต้อง", "right": "ผมต้องไป", "note": "ต้อง and ควร come before the verb." }
+    ],
+    "drills": [
+      { "prompt": "Say 'You should sleep.' (นอน nawn)", "answer": "คุณควรนอน (khun khuan nawn)" },
+      { "prompt": "Say 'I have to study.' (เรียน rian)", "answer": "ผมต้องเรียน / ฉันต้องเรียน (tông rian)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.can-dai",
+    "title": "Can / Able to: ได้",
+    "cefr": "A1",
+    "explanationMd": "**ได้ (dâi)** placed **after the verb (phrase)** means 'can / be able to / it's possible', covering permission and general possibility: ไปได้ (pai dâi) 'can go', พูดไทยได้ (phûut thai dâi) 'can speak Thai'. Note ได้ comes at the **end**, after the object.\n\nAsk with ...ได้ไหม (dâi mǎi) 'can [you/I]...?' — very common for requests: ช่วยได้ไหม (chûai dâi mǎi) 'can you help?'. Negate with ...ไม่ได้ (mâi dâi) 'cannot': ไปไม่ได้ (pai mâi dâi) 'can't go'. (Front-position ได้ + verb is a different, past-tense usage.)",
+    "examples": [
+      { "text": "ผมพูดภาษาไทยได้", "romaji": "phǒm phûut phaa-sǎa thai dâi", "translation": "I can speak Thai." },
+      { "text": "ช่วยผมได้ไหม", "romaji": "chûai phǒm dâi mǎi", "translation": "Can you help me?" },
+      { "text": "วันนี้ไปไม่ได้", "romaji": "wan-níi pai mâi dâi", "translation": "[I] can't go today." }
+    ],
+    "commonErrors": [
+      { "wrong": "ผมได้พูดไทย (to mean 'I can speak Thai')", "right": "ผมพูดไทยได้", "note": "For ability, ได้ follows the verb phrase; ได้ before the verb means something else (that it happened)." },
+      { "wrong": "ไปไม่ได้ไหม order mistakes", "right": "ไปได้ไหม / ไปไม่ได้", "note": "Question ...ได้ไหม; negative ...ไม่ได้ — the ได้ stays at the end." }
+    ],
+    "drills": [
+      { "prompt": "Ask 'Can I sit here?' (นั่ง nâng / ที่นี่ thîi-nîi)", "answer": "นั่งที่นี่ได้ไหม (nâng thîi-nîi dâi mǎi)" },
+      { "prompt": "Say 'I can't eat spicy food.' (กินเผ็ด kin phèt)", "answer": "กินเผ็ดไม่ได้ (kin phèt mâi dâi)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.can-pen-wai",
+    "title": "Can: เป็น (know how) and ไหว (up to it)",
+    "cefr": "A2",
+    "explanationMd": "Thai splits 'can' into three flavors; ได้ is general, and these two are more specific — both go **after the verb**:\n- **เป็น (pen)** = 'can, know how to (a learned skill)': ว่ายน้ำเป็น (wâai-náam pen) 'can swim / know how to swim', ทำอาหารเป็น (tham aa-hǎan pen) 'can cook'. Negate: ...ไม่เป็น 'don't know how'.\n- **ไหว (wǎi)** = 'can, have the strength/stamina to (physically manage)': เดินไหว (doen wǎi) 'can manage to walk', กินไหว (kin wǎi) 'can manage to eat (it all)'. Negate: ...ไม่ไหว 'can't manage / too much'.\n\nSo choose ได้ for possibility/permission, เป็น for skill, ไหว for physical capacity.",
+    "examples": [
+      { "text": "ผมว่ายน้ำเป็น", "romaji": "phǒm wâai-náam pen", "translation": "I can swim (know how)." },
+      { "text": "เขาทำอาหารไทยไม่เป็น", "romaji": "khǎo tham aa-hǎan thai mâi pen", "translation": "He/She doesn't know how to cook Thai food." },
+      { "text": "เหนื่อยมาก เดินไม่ไหว", "romaji": "nùeay mâak, doen mâi wǎi", "translation": "So tired, [I] can't manage to walk." }
+    ],
+    "commonErrors": [
+      { "wrong": "ว่ายน้ำได้ to mean 'I know how to swim'", "right": "ว่ายน้ำเป็น", "note": "For a learned skill use เป็น; ได้ would suggest possibility/permission rather than know-how." },
+      { "wrong": "กินไม่เป็น to mean 'too full to finish'", "right": "กินไม่ไหว", "note": "'Physically can't manage more' uses ไหว; ไม่เป็น means 'don't know how'." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I can drive.' (ขับรถ khàp rót)", "answer": "ผมขับรถเป็น / ฉันขับรถเป็น (khàp rót pen)" },
+      { "prompt": "Say 'I can't eat any more.' (กิน)", "answer": "กินไม่ไหว (kin mâi wǎi)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.comparatives-superlatives",
+    "title": "Comparatives กว่า and Superlatives ที่สุด",
+    "cefr": "A2",
+    "explanationMd": "Comparison is simple and uses no 'more' word:\n- **Comparative:** Adjective + **กว่า (kwàa)** = 'more ___ than'. Pattern: A + Adj + กว่า + B. รถคันนี้แพงกว่าคันนั้น (rót khan níi phaeng kwàa khan nán) 'This car is more expensive than that one'.\n- **Superlative:** Adjective + **ที่สุด (thîi-sùt)** = 'the most ___'. อันนี้ดีที่สุด (an níi dii thîi-sùt) 'This one is the best'.\n\nFor 'as ___ as / equal', use **เท่ากับ / ...เท่ากัน (thâo-gàp / thâo-gan)**. Since adjectives already act as verbs, you never add a 'to be' word.",
+    "examples": [
+      { "text": "รถคันนี้แพงกว่าคันนั้น", "romaji": "rót khan níi phaeng kwàa khan nán", "translation": "This car is more expensive than that one." },
+      { "text": "อาหารร้านนี้อร่อยที่สุด", "romaji": "aa-hǎan ráan níi à-ròi thîi-sùt", "translation": "The food at this shop is the most delicious." },
+      { "text": "เขาสูงกว่าผม", "romaji": "khǎo sǔung kwàa phǒm", "translation": "He/She is taller than me." }
+    ],
+    "commonErrors": [
+      { "wrong": "มากแพงกว่า (using มาก as 'more')", "right": "แพงกว่า", "note": "Don't add a separate 'more' word; the comparative is just Adjective + กว่า." },
+      { "wrong": "ที่สุดดี", "right": "ดีที่สุด", "note": "ที่สุด follows the adjective: Adjective + ที่สุด." }
+    ],
+    "drills": [
+      { "prompt": "Say 'This is cheaper than that.' (ถูก thùuk)", "answer": "อันนี้ถูกกว่าอันนั้น (an níi thùuk kwàa an nán)" },
+      { "prompt": "Say 'This one is the best.' (ดี dii)", "answer": "อันนี้ดีที่สุด (an níi dii thîi-sùt)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.adjectives-as-verbs",
+    "title": "Adjectives Follow the Noun and Act Like Verbs (No 'To Be')",
+    "cefr": "A1",
+    "explanationMd": "Two key rules: (1) Thai adjectives come **after** the noun they describe — บ้านใหญ่ (bâan yài) 'big house' (literally 'house big'), รถสีแดง (rót sǐi daeng) 'red car'. (2) An adjective is itself **verb-like (a stative verb)**, so you **do not add any 'to be'** when it's the predicate: บ้านใหญ่ (bâan yài) already means 'The house is big'.\n\nSo เป็น is **not** used with adjectives — เขาสวย (khǎo sǔay) = 'She is beautiful', never เขาเป็นสวย. You can intensify with มาก (mâak) after: อร่อยมาก (à-ròi mâak) 'very delicious'.",
+    "examples": [
+      { "text": "บ้านหลังนี้ใหญ่", "romaji": "bâan lǎng níi yài", "translation": "This house is big." },
+      { "text": "อาหารอร่อยมาก", "romaji": "aa-hǎan à-ròi mâak", "translation": "The food is very delicious." },
+      { "text": "ผู้หญิงคนนั้นสวย", "romaji": "phûu-yǐng khon nán sǔay", "translation": "That woman is beautiful." }
+    ],
+    "commonErrors": [
+      { "wrong": "เขาเป็นสวย", "right": "เขาสวย", "note": "Never use เป็น with an adjective; the adjective already works as the verb 'is ___'." },
+      { "wrong": "ใหญ่บ้าน", "right": "บ้านใหญ่", "note": "The adjective follows the noun, unlike English." }
+    ],
+    "drills": [
+      { "prompt": "Say 'a red car' (รถ / สีแดง sǐi daeng)", "answer": "รถสีแดง (rót sǐi daeng)" },
+      { "prompt": "Say 'The food is delicious.' (อาหาร / อร่อย)", "answer": "อาหารอร่อย (aa-hǎan à-ròi)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.hai-give-for",
+    "title": "ให้ — Give, For, and Let",
+    "cefr": "A2",
+    "explanationMd": "**ให้ (hâi)** is a workhorse with three linked uses:\n1. **'give'** (main verb): ผมให้เงินเขา (phǒm hâi ngoen khǎo) 'I give him money'. Pattern: give + thing + recipient, or give + recipient + thing.\n2. **'for / to (benefit of)'**: ทำอาหารให้เพื่อน (tham aa-hǎan hâi phûean) 'cook food for a friend'; ซื้อให้คุณ (súe hâi khun) 'buy [it] for you'. ให้ + person marks who benefits.\n3. **'let / have someone do' (causative)**: แม่ให้ผมไป (mâe hâi phǒm pai) 'Mom lets/has me go'. ให้ + person + verb.\n\nContext and position tell the three apart.",
+    "examples": [
+      { "text": "ผมให้เงินเขา", "romaji": "phǒm hâi ngoen khǎo", "translation": "I give him/her money." },
+      { "text": "ผมซื้อของขวัญให้คุณ", "romaji": "phǒm súe khǎwng-khwǎn hâi khun", "translation": "I buy a gift for you." },
+      { "text": "แม่ให้ผมไปเที่ยว", "romaji": "mâe hâi phǒm pai thîao", "translation": "Mom lets me go out / travel." }
+    ],
+    "commonErrors": [
+      { "wrong": "ผมซื้อคุณของขวัญ (dropping ให้ for 'for you')", "right": "ผมซื้อของขวัญให้คุณ", "note": "Mark the beneficiary with ให้ + person, usually after the object." },
+      { "wrong": "แม่ผมให้ไป word-order slip", "right": "แม่ให้ผมไป", "note": "Causative order is ให้ + person + verb." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I'll cook for you.' (ทำอาหาร)", "answer": "ผมจะทำอาหารให้คุณ (phǒm jà tham aa-hǎan hâi khun)" },
+      { "prompt": "Say 'Give me water, please.' (น้ำ / ขอ khǎw)", "answer": "ขอน้ำให้ผมหน่อย / ขอน้ำหน่อย (khǎw náam nòi)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.serial-verbs-directional",
+    "title": "Serial Verbs and Direction with ไป / มา",
+    "cefr": "A2",
+    "explanationMd": "Thai freely **chains verbs** in a row with no connector (no 'to' or 'and'), and they happen in sequence: ไปกินข้าว (pai kin khâao) 'go eat', ไปซื้อของ (pai súe khǎwng) 'go shopping', นั่งรถไปทำงาน (nâng rót pai tham-ngaan) 'take a car to go to work'.\n\nTwo of these verbs also work as **directional markers** after another verb, showing motion relative to the speaker:\n- **ไป (pai)** = 'away (from here)': เดินไป (doen pai) 'walk away/along', เอาไป (ao pai) 'take [it] away'.\n- **มา (maa)** = 'toward (here)': เดินมา (doen maa) 'walk over here', เอามา (ao maa) 'bring [it] here'.",
+    "examples": [
+      { "text": "ผมไปซื้อของที่ตลาด", "romaji": "phǒm pai súe khǎwng thîi tà-làat", "translation": "I go shopping at the market." },
+      { "text": "เอาน้ำมาให้ผมหน่อย", "romaji": "ao náam maa hâi phǒm nòi", "translation": "Bring me some water, please." },
+      { "text": "เขาเดินไปโรงเรียน", "romaji": "khǎo doen pai roong-rian", "translation": "He/She walks to school." }
+    ],
+    "commonErrors": [
+      { "wrong": "ไปและกินข้าว", "right": "ไปกินข้าว", "note": "Don't insert และ ('and') between chained verbs; Thai just places them side by side." },
+      { "wrong": "เอามา to send something away", "right": "เอาไป", "note": "ไป = motion away from speaker; มา = motion toward speaker. Pick by direction." }
+    ],
+    "drills": [
+      { "prompt": "Say 'go eat rice' as a serial-verb phrase", "answer": "ไปกินข้าว (pai kin khâao)" },
+      { "prompt": "Tell someone 'bring the book here' (หนังสือ / เอา ao)", "answer": "เอาหนังสือมา (ao nǎng-sǔe maa)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.possession-khong",
+    "title": "Possession with ของ",
+    "cefr": "A1",
+    "explanationMd": "Possession uses **ของ (khǎwng)** = 'of / belonging to', in the order **Thing + ของ + Owner**: หนังสือของผม (nǎng-sǔe khǎwng phǒm) 'my book' (literally 'book of me'). ของ can also stand alone as a noun meaning 'thing/stuff/belongings': ของผม (khǎwng phǒm) 'mine'.\n\nIn casual speech ของ is often **dropped** when possession is obvious: บ้านผม (bâan phǒm) 'my house' works just as well as บ้านของผม. Keep ของ when you want to be clear or a touch more formal.",
+    "examples": [
+      { "text": "หนังสือของผม", "romaji": "nǎng-sǔe khǎwng phǒm", "translation": "my book" },
+      { "text": "นี่เป็นของคุณ", "romaji": "nîi pen khǎwng khun", "translation": "This is yours." },
+      { "text": "รถของเขาสวย", "romaji": "rót khǎwng khǎo sǔay", "translation": "His/Her car is beautiful." }
+    ],
+    "commonErrors": [
+      { "wrong": "ของผมหนังสือ", "right": "หนังสือของผม", "note": "Order is Thing + ของ + Owner, not Owner-first." },
+      { "wrong": "ผมของหนังสือ", "right": "หนังสือของผม", "note": "The possessor comes after ของ." }
+    ],
+    "drills": [
+      { "prompt": "Say 'your house' (บ้าน / คุณ)", "answer": "บ้านของคุณ / บ้านคุณ (bâan khǎwng khun)" },
+      { "prompt": "Say 'This is mine.'", "answer": "นี่เป็นของผม / นี่ของผม (nîi khǎwng phǒm)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.existence-mii",
+    "title": "There Is / Have with มี",
+    "cefr": "A1",
+    "explanationMd": "**มี (mii)** covers both **'to have'** and **'there is / there are'** — one word for both:\n- Possession: ผมมีรถ (phǒm mii rót) 'I have a car'.\n- Existence: ที่นี่มีร้านอาหาร (thîi-nîi mii ráan aa-hǎan) 'There's a restaurant here'; มีคนเยอะ (mii khon yóe) 'There are a lot of people'.\n\nNegate with **ไม่มี (mâi mii)** 'don't have / there isn't': ไม่มีเงิน (mâi mii ngoen) 'have no money'. Ask existence/possession with มี...ไหม: มีห้องว่างไหม (mii hâwng wâang mǎi) 'Are there any vacant rooms?'",
+    "examples": [
+      { "text": "ผมมีพี่สาวสองคน", "romaji": "phǒm mii phîi-sǎao sǎwng khon", "translation": "I have two older sisters." },
+      { "text": "ที่นี่มีห้องน้ำไหม", "romaji": "thîi-nîi mii hâwng-náam mǎi", "translation": "Is there a bathroom here?" },
+      { "text": "วันนี้ไม่มีเวลา", "romaji": "wan-níi mâi mii wee-laa", "translation": "[I] have no time today." }
+    ],
+    "commonErrors": [
+      { "wrong": "Using เป็น for 'there is'", "right": "มี", "note": "Existence ('there is/are') uses มี, not เป็น." },
+      { "wrong": "มีไม่เงิน", "right": "ไม่มีเงิน", "note": "Negate with ไม่มี as a unit, before the noun." }
+    ],
+    "drills": [
+      { "prompt": "Ask 'Do you have a pen?' (ปากกา pàak-kaa)", "answer": "คุณมีปากกาไหม (khun mii pàak-kaa mǎi)" },
+      { "prompt": "Say 'There is no water.' (น้ำ)", "answer": "ไม่มีน้ำ (mâi mii náam)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.location-prepositions",
+    "title": "Location Prepositions ที่ / ใน / บน",
+    "cefr": "A1",
+    "explanationMd": "The three most common location words go **before the place**:\n- **ที่ (thîi)** = 'at' (general location): อยู่ที่บ้าน (yùu thîi bâan) 'at home', ทำงานที่กรุงเทพ (tham-ngaan thîi krung-thêep) 'work in Bangkok'.\n- **ใน (nai)** = 'in / inside': ในกระเป๋า (nai krà-pǎo) 'in the bag', ในห้อง (nai hâwng) 'in the room'.\n- **บน (bon)** = 'on / on top of': บนโต๊ะ (bon tó) 'on the table'.\n\nTo say where something is located, use **อยู่ (yùu)** = 'to be located' + preposition + place: หนังสืออยู่บนโต๊ะ (nǎng-sǔe yùu bon tó) 'The book is on the table'. ที่ is the safe general choice when in doubt.",
+    "examples": [
+      { "text": "ผมอยู่ที่บ้าน", "romaji": "phǒm yùu thîi bâan", "translation": "I'm at home." },
+      { "text": "แมวอยู่ในห้อง", "romaji": "maew yùu nai hâwng", "translation": "The cat is in the room." },
+      { "text": "หนังสืออยู่บนโต๊ะ", "romaji": "nǎng-sǔe yùu bon tó", "translation": "The book is on the table." }
+    ],
+    "commonErrors": [
+      { "wrong": "หนังสือบนโต๊ะ (dropping อยู่ when stating location)", "right": "หนังสืออยู่บนโต๊ะ", "note": "To state where something is, use อยู่ + preposition + place." },
+      { "wrong": "Using ใน for 'on the table'", "right": "บนโต๊ะ", "note": "ใน = inside, บน = on top of; choose by the real spatial relation." }
+    ],
+    "drills": [
+      { "prompt": "Say 'The keys are in the bag.' (กุญแจ kun-jae / กระเป๋า)", "answer": "กุญแจอยู่ในกระเป๋า (kun-jae yùu nai krà-pǎo)" },
+      { "prompt": "Ask 'Where are you?' (using อยู่)", "answer": "คุณอยู่ที่ไหน (khun yùu thîi nǎi)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.time-expressions",
+    "title": "Time Expressions and Their Word Order",
+    "cefr": "A2",
+    "explanationMd": "Since verbs don't conjugate, **time words carry the tense**. A time expression usually sits at the **start of the sentence** (topic-like) or right after the subject — not tucked at the very end like English: พรุ่งนี้ผมจะไป (phrûng-níi phǒm jà pai) 'Tomorrow I'll go' or ผมจะไปพรุ่งนี้.\n\nCommon time words: **วันนี้ (wan-níi)** today, **พรุ่งนี้ (phrûng-níi)** tomorrow, **เมื่อวาน (mûea-waan)** yesterday, **ตอนเช้า (tawn-cháao)** in the morning, **ตอนเย็น (tawn-yen)** in the evening, **ทุกวัน (thúk wan)** every day. Thai orders time from **big to small**: day/part-of-day before clock time. Clock time uses โมง (moong) for hours, e.g. เจ็ดโมงเช้า (jèt moong cháao) '7 a.m.'.",
+    "examples": [
+      { "text": "เมื่อวานผมไปตลาด", "romaji": "mûea-waan phǒm pai tà-làat", "translation": "Yesterday I went to the market." },
+      { "text": "ทุกวันผมตื่นเจ็ดโมงเช้า", "romaji": "thúk wan phǒm tùuen jèt moong cháao", "translation": "Every day I wake up at 7 a.m." },
+      { "text": "พรุ่งนี้ตอนเย็นเขาจะมา", "romaji": "phrûng-níi tawn-yen khǎo jà maa", "translation": "Tomorrow evening he/she will come." }
+    ],
+    "commonErrors": [
+      { "wrong": "ผมไปตลาดเมื่อวานตอนเช้า with day placed after clock time", "right": "เมื่อวานตอนเช้าผมไปตลาด", "note": "Order time big-to-small (day before part-of-day/clock), and prefer placing the time phrase up front." },
+      { "wrong": "Adding จะ with เมื่อวาน ('yesterday will')", "right": "เมื่อวาน + plain verb", "note": "Don't combine a past time word with the future marker จะ; let the time word set the tense." }
+    ],
+    "drills": [
+      { "prompt": "Say 'Today I'm working.' (วันนี้ / ทำงาน)", "answer": "วันนี้ผมทำงาน (wan-níi phǒm tham-ngaan)" },
+      { "prompt": "Say 'I'll go tomorrow.' front-loading the time word", "answer": "พรุ่งนี้ผมจะไป (phrûng-níi phǒm jà pai)" }
+    ],
+    "relatedVocabulary": []
+  }
+]

@@ -48,6 +48,20 @@ object Prompts {
         """.trimIndent(),
     )
 
+    fun interpretTask(targetLanguage: String, text: String, toTarget: Boolean): String {
+        val (from, to) = if (toTarget) "English" to targetLanguage else targetLanguage to "English"
+        return """
+        Interpret the following text from $from into $to for an adult learner. Give the most natural
+        rendering a fluent speaker would actually use, not a word-for-word gloss.
+
+        Text ($from):
+        $text
+
+        Respond with ONLY a JSON object (no prose, no code fences):
+        { "translation": "<$to>", "note": "<optional: register, tone, or a literal gloss if it helps>" }
+        """.trimIndent()
+    }
+
     fun examplesTask(targetLanguage: String, word: String, meaning: String, count: Int): String = """
         Give an adult $targetLanguage learner $count natural example sentences that use the word
         or phrase "$word" (meaning: $meaning). Vary the situations.

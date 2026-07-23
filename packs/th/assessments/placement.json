@@ -1,0 +1,222 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "assessment.placement.greetings",
+    "lessonType": "assessment",
+    "title": "Placement 1: Greetings and Politeness",
+    "cefr": "A1",
+    "sequence": 1,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "How do you say 'hello' in Thai?",
+          "answer": "สวัสดี (sà-wàt-dii)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "A male speaker wants to be polite. Which particle does he add?",
+          "answer": "ครับ (khráp)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.placement.thanks-sorry",
+    "lessonType": "assessment",
+    "title": "Placement 2: Thanks and Apologies",
+    "cefr": "A1",
+    "sequence": 2,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Translate 'thank you'.",
+          "answer": "ขอบคุณ (khàwp-khun)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Translate 'sorry / excuse me'.",
+          "answer": "ขอโทษ (khǎw-thôot)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.placement.pronouns-particles",
+    "lessonType": "assessment",
+    "title": "Placement 3: Pronouns and Gendered Politeness",
+    "cefr": "A1",
+    "sequence": 3,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "A female speaker ends a QUESTION politely with which particle?",
+          "answer": "คะ (khá, high tone)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Which first-person pronoun is used by male speakers?",
+          "answer": "ผม (phǒm)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.placement.numbers-prices",
+    "lessonType": "assessment",
+    "title": "Placement 4: Numbers and Prices",
+    "cefr": "A1",
+    "sequence": 4,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Ask 'How much is it?' in Thai.",
+          "answer": "เท่าไหร่ / ราคาเท่าไหร่ (thâo-rài / raa-khaa thâo-rài)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Write the price 'twenty baht' in Thai.",
+          "answer": "ยี่สิบบาท (yîi-sìp bàat)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.placement.ordering-food",
+    "lessonType": "assessment",
+    "title": "Placement 5: Ordering Food",
+    "cefr": "A1",
+    "sequence": 5,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Politely request the menu (female speaker).",
+          "answer": "ขอเมนูหน่อยค่ะ (khǎw mee-nuu nàwy khâ)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Say 'I don't eat spicy' (male speaker).",
+          "answer": "ผมไม่กินเผ็ดครับ (phǒm mâi kin phèt khráp)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.placement.directions",
+    "lessonType": "assessment",
+    "title": "Placement 6: Directions and Places",
+    "cefr": "A1",
+    "sequence": 6,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Ask 'Where is the bathroom?' politely.",
+          "answer": "ห้องน้ำอยู่ไหนครับ / คะ (hâwng-náam yùu nǎi khráp/khá)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Tell a taxi 'Go straight' in Thai.",
+          "answer": "ตรงไป (trong pai)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.placement.negation-questions",
+    "lessonType": "assessment",
+    "title": "Placement 7: Negation and Yes/No Questions",
+    "cefr": "A2",
+    "sequence": 7,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Turn ชอบ (to like) into 'do not like'.",
+          "answer": "ไม่ชอบ (mâi châwp)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Make a yes/no question meaning 'Is it delicious?'",
+          "answer": "อร่อยไหม (à-ràwy mǎi)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.placement.time-tense",
+    "lessonType": "assessment",
+    "title": "Placement 8: Time and Tense Markers",
+    "cefr": "A2",
+    "sequence": 8,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Say 'I have already eaten' (male speaker).",
+          "answer": "ผมกินข้าวแล้ว (phǒm kin khâao láaeo)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Say 'Tomorrow I will go to work' using จะ.",
+          "answer": "พรุ่งนี้ผมจะไปทำงาน (phrûng-níi phǒm jà pai tham-ngaan)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.placement.feelings-opinions",
+    "lessonType": "assessment",
+    "title": "Placement 9: Feelings and Opinions",
+    "cefr": "A2",
+    "sequence": 9,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Say 'I feel unwell' (male speaker).",
+          "answer": "ผมรู้สึกไม่สบายครับ (phǒm rúu-sùek mâi sà-baai khráp)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Agree with someone: 'I agree with you' (male speaker).",
+          "answer": "ผมเห็นด้วยกับคุณครับ (phǒm hěn-dûai kàp khun khráp)"
+        }
+      ]
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "key": "assessment.placement.connectors-register",
+    "lessonType": "assessment",
+    "title": "Placement 10: Connectors and Polite Register",
+    "cefr": "A2",
+    "sequence": 10,
+    "body": {
+      "steps": [
+        {
+          "type": "quiz",
+          "prompt": "Join two clauses with 'because': 'I'm stressed because of work.' (male speaker)",
+          "answer": "ผมเครียดเพราะงานครับ (phǒm khrîat phráw ngaan khráp)"
+        },
+        {
+          "type": "quiz",
+          "prompt": "Politely decline in a formal setting as a woman: 'No, thank you.'",
+          "answer": "ไม่ค่ะ ขอบคุณค่ะ (mâi khâ, khàwp-khun khâ)"
+        }
+      ]
+    }
+  }
+]

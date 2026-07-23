@@ -1,14 +1,17 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { dailyGoalOf, type Repos } from "@polyglotai/core-learning";
+import type { LoadedPack } from "@polyglotai/language-pack-sdk";
 import type { LearnerProfile, RealSpeechLevel } from "@polyglotai/shared-types";
 import { readAiSettings } from "../ai/aiContext";
 import { signOut } from "../auth/authContext";
 import { supabase } from "../auth/supabaseClient";
 import { getStoredTheme, setTheme, type ThemePreference } from "../theme";
+import { getStoredVariant, setStoredVariant, variantsForPack } from "../packVariant";
 
 interface Props {
   repos: Repos;
   profile: LearnerProfile;
+  pack: LoadedPack;
   onSaved: (profile: LearnerProfile) => void;
   onDone: () => void;
   onSwitchLanguage: () => void;
@@ -38,7 +41,16 @@ const AI_MODELS = ["gpt-4o-mini"] as const;
 
 const DAILY_GOALS = [10, 20, 30, 50] as const;
 
-export function Settings({ repos, profile, onSaved, onDone, onSwitchLanguage }: Props) {
+export function Settings({ repos, profile, pack, onSaved, onDone, onSwitchLanguage }: Props) {
+  const packWorld = pack.manifest.basePack ?? pack.manifest.id;
+  const variants = variantsForPack(packWorld);
+  const [variant, setVariantState] = useState(() => getStoredVariant(packWorld));
+
+  function handleVariantChange(id: string) {
+    setStoredVariant(packWorld, id);
+    setVariantState(id);
+  }
+
   const initial = readAiSettings(profile);
   const [model, setModel] = useState(
     AI_MODELS.includes(initial.openaiModel as (typeof AI_MODELS)[number]) ? initial.openaiModel! : "gpt-4o-mini",
@@ -106,6 +118,28 @@ export function Settings({ repos, profile, onSaved, onDone, onSwitchLanguage }: 
             <span className="hint">{THEMES.find((t) => t.value === themePref)?.hint}</span>
           </div>
         </section>
+
+        {variants.length > 1 && (
+          <section className="settings-card">
+            <div className="settings-card-head">
+              <h3>Theme variant</h3>
+              <p>This language has more than one look. Applies immediately — no need to save.</p>
+            </div>
+            <div className="pill-select">
+              {variants.map((v) => (
+                <button
+                  key={v.id}
+                  type="button"
+                  className={`neutral ${variant === v.id ? "active" : ""}`}
+                  onClick={() => handleVariantChange(v.id)}
+                >
+                  {v.label}
+                </button>
+              ))}
+              <span className="hint">{variants.find((v) => v.id === variant)?.hint}</span>
+            </div>
+          </section>
+        )}
 
         {supabase && (
           <section className="settings-card">

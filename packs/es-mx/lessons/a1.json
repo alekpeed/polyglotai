@@ -1,0 +1,166 @@
+[
+  { "schemaVersion": 1, "key": "lesson.a1.saludos", "lessonType": "vocabulary", "title": "Greetings & courtesy", "cefr": "A1", "sequence": 1, "body": { "steps": [
+    { "type": "teach", "vocabRefs": ["vocab.hola", "vocab.gracias", "vocab.por-favor", "phrase.como-estas"] },
+    { "type": "quiz", "prompt": "Greet a friend and ask how they are (casual).", "answer": "¡Hola! ¿Qué onda? / ¿Cómo estás?" },
+    { "type": "quiz", "prompt": "It's 7 p.m. What greeting?", "answer": "Buenas tardes (or buenas noches once it's dark)." },
+    { "type": "quiz", "prompt": "Someone says '¡muchas gracias!' — reply.", "answer": "De nada. / Por nada." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.taqueria-vocab", "lessonType": "vocabulary", "title": "Taquería & café survival", "cefr": "A1", "sequence": 2, "body": { "steps": [
+    { "type": "teach", "vocabRefs": ["vocab.taco", "vocab.salsa", "vocab.cafe", "phrase.me-da", "phrase.la-cuenta"] },
+    { "type": "quiz", "prompt": "Order three al pastor tacos, Mexican style.", "answer": "¿Me da tres de pastor, por favor?" },
+    { "type": "quiz", "prompt": "Ask if the salsa is spicy.", "answer": "¿Pica la salsa?" },
+    { "type": "quiz", "prompt": "Ask for the check.", "answer": "La cuenta, por favor. / ¿Me regala la cuenta?" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.ser-estar", "lessonType": "grammar", "title": "ser vs estar — the two 'to be's", "cefr": "A1", "sequence": 3, "body": { "steps": [
+    { "type": "quiz", "prompt": "'I'm tired': ___ cansado.", "answer": "Estoy" },
+    { "type": "quiz", "prompt": "'I'm from Mexico': ___ de México.", "answer": "Soy" },
+    { "type": "quiz", "prompt": "'Where is the restroom?' — ser or estar?", "answer": "estar: ¿Dónde está el baño?" },
+    { "type": "quiz", "prompt": "'She is a teacher':", "answer": "Ella es maestra." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.tener", "lessonType": "grammar", "title": "tener: age, hunger, and having", "cefr": "A1", "sequence": 4, "body": { "steps": [
+    { "type": "quiz", "prompt": "'I'm 30 years old':", "answer": "Tengo treinta años." },
+    { "type": "quiz", "prompt": "'I'm hungry':", "answer": "Tengo hambre." },
+    { "type": "quiz", "prompt": "'How old are you?' (tú):", "answer": "¿Cuántos años tienes?" },
+    { "type": "quiz", "prompt": "Why is 'soy 30 años' wrong?", "answer": "Age uses tener, not ser: tengo 30 años." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.taqueria-listening", "lessonType": "listening_exercise", "title": "At the taquería (listening)", "cefr": "A1", "sequence": 5, "dialogueRef": "dialogue.taqueria", "body": { "steps": [
+    { "type": "quiz", "prompt": "What does Emma order?", "answer": "Three al pastor tacos with everything, and a horchata." },
+    { "type": "quiz", "prompt": "What does '¿con todo?' mean at a taco stand?", "answer": "With all the toppings — cilantro and onion." },
+    { "type": "quiz", "prompt": "How much does she pay?", "answer": "Forty-five pesos." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.cafe-listening", "lessonType": "listening_exercise", "title": "Ordering coffee (listening)", "cefr": "A1", "sequence": 6, "dialogueRef": "dialogue.cafe", "body": { "steps": [
+    { "type": "quiz", "prompt": "What does Marco order to eat?", "answer": "Una concha (a shell-shaped sweet bread)." },
+    { "type": "quiz", "prompt": "What two questions does the barista ask about the coffee?", "answer": "'¿Grande o chico?' and '¿Para aquí o para llevar?'" },
+    { "type": "quiz", "prompt": "How does Marco pay?", "answer": "Con tarjeta (by card)." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.metro-listening", "lessonType": "listening_exercise", "title": "Metro directions (listening)", "cefr": "A1", "sequence": 7, "dialogueRef": "dialogue.metro", "body": { "steps": [
+    { "type": "quiz", "prompt": "Which line and stop for Coyoacán?", "answer": "Line 3 toward Universidad, get off at Miguel Ángel de Quevedo." },
+    { "type": "quiz", "prompt": "How much is the card and each ride?", "answer": "The card is 15 pesos; each ride is 5." },
+    { "type": "quiz", "prompt": "What warm goodbye does the clerk use?", "answer": "'Que le vaya bien.'" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.direcciones-listening", "lessonType": "listening_exercise", "title": "Asking the way (listening)", "cefr": "A1", "sequence": 8, "dialogueRef": "dialogue.direcciones", "body": { "steps": [
+    { "type": "quiz", "prompt": "What is David looking for?", "answer": "El Zócalo (the main square)." },
+    { "type": "quiz", "prompt": "Summarize the route.", "answer": "Straight for two blocks, then turn right — the cathedral is there." },
+    { "type": "quiz", "prompt": "What does 'no tiene pierde' mean?", "answer": "You can't miss it / you won't get lost." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.mercado-listening", "lessonType": "listening_exercise", "title": "At the market (listening)", "cefr": "A1", "sequence": 9, "dialogueRef": "dialogue.mercado", "body": { "steps": [
+    { "type": "quiz", "prompt": "What does '¿a cómo el kilo?' ask?", "answer": "The price per kilo." },
+    { "type": "quiz", "prompt": "What does the vendor throw in for free?", "answer": "A little lime — 'un limoncito de pilón'." },
+    { "type": "quiz", "prompt": "What does 'jitomate' mean?", "answer": "(Red) tomato — the Mexican word." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.hotel-listening", "lessonType": "listening_exercise", "title": "Hotel check-in (listening)", "cefr": "A1", "sequence": 10, "dialogueRef": "dialogue.hotel", "body": { "steps": [
+    { "type": "quiz", "prompt": "When and where is breakfast?", "answer": "From 7 to 10, on the planta baja (ground floor)." },
+    { "type": "quiz", "prompt": "Where is the wifi password?", "answer": "On the key card." },
+    { "type": "quiz", "prompt": "What floor is room 205 on?", "answer": "El segundo piso (the second floor)." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.farmacia-listening", "lessonType": "listening_exercise", "title": "At the pharmacy (listening)", "cefr": "A2", "sequence": 11, "dialogueRef": "dialogue.farmacia", "body": { "steps": [
+    { "type": "quiz", "prompt": "What symptoms does James describe, and for how long?", "answer": "Sore throat and cough, for three days (desde hace tres días)." },
+    { "type": "quiz", "prompt": "Does he need a prescription?", "answer": "No — 'no necesita receta' (over the counter)." },
+    { "type": "quiz", "prompt": "What's the dosage?", "answer": "Three times a day, after eating." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.fin-listening", "lessonType": "listening_exercise", "title": "Weekend recap (listening — preterite)", "cefr": "A2", "sequence": 12, "dialogueRef": "dialogue.fin-de-semana", "body": { "steps": [
+    { "type": "quiz", "prompt": "What did Lucas do on Saturday?", "answer": "Went to the market with Sara, then watched a movie at night." },
+    { "type": "quiz", "prompt": "What did Ana make on Sunday, and why did she stay in?", "answer": "She made pozole; it rained all day." },
+    { "type": "quiz", "prompt": "Identify two irregular preterites in the dialogue.", "answer": "fui (ir), hice (hacer), estuvo (estar), me puse (ponerse)." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.telefono-listening", "lessonType": "listening_exercise", "title": "Making plans by phone (listening)", "cefr": "A2", "sequence": 13, "dialogueRef": "dialogue.telefono-planes", "body": { "steps": [
+    { "type": "quiz", "prompt": "How do Mexicans answer the phone (in the dialogue)?", "answer": "'¿Bueno?'" },
+    { "type": "quiz", "prompt": "What time do they finally agree on, and why the change?", "answer": "8:30 instead of 8 — Max gets off work late." },
+    { "type": "quiz", "prompt": "What does '¿te late?' mean?", "answer": "Does it work for you / sound good?" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.trabajo-listening", "lessonType": "listening_exercise", "title": "Coworkers at lunch (listening)", "cefr": "A2", "sequence": 14, "dialogueRef": "dialogue.trabajo", "body": { "steps": [
+    { "type": "quiz", "prompt": "What are Nadia and Pedro annoyed about?", "answer": "Another early meeting; the last one took two hours to pick a logo color." },
+    { "type": "quiz", "prompt": "What does 'ni modo' express here?", "answer": "Resigned acceptance — 'oh well, nothing to be done'." },
+    { "type": "quiz", "prompt": "Give the neutral version of 'buena onda'.", "answer": "amable / simpático (nice)." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.presentarse-writing", "lessonType": "writing_prompt", "title": "Introduce yourself", "cefr": "A1", "sequence": 15, "body": { "steps": [
+    { "type": "quiz", "prompt": "Write two sentences: your name and where you're from.", "answer": "e.g. Me llamo Alex. Soy de Estados Unidos." },
+    { "type": "quiz", "prompt": "Add where you live now and since when.", "answer": "e.g. Vivo en la CDMX desde hace seis meses." },
+    { "type": "quiz", "prompt": "Add your age (careful with the verb).", "answer": "e.g. Tengo veintiocho años." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.orden-writing", "lessonType": "writing_prompt", "title": "Write your taquería order", "cefr": "A1", "sequence": 16, "body": { "steps": [
+    { "type": "quiz", "prompt": "Order two tacos and a drink politely, one sentence.", "answer": "e.g. ¿Me da dos tacos de bistec y un agua de horchata, por favor?" },
+    { "type": "quiz", "prompt": "Ask for the check and say it's to go.", "answer": "La cuenta, por favor. Para llevar." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.familia-writing", "lessonType": "writing_prompt", "title": "Describe your family", "cefr": "A1", "sequence": 17, "body": { "steps": [
+    { "type": "quiz", "prompt": "Write 2-3 sentences about your family using possessives.", "answer": "e.g. Tengo un hermano y una hermana. Mi hermano vive en Texas. Mi hermana es estudiante." },
+    { "type": "quiz", "prompt": "Say who you get along with best.", "answer": "e.g. Me llevo muy bien con mi mamá." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.rutina-writing", "lessonType": "writing_prompt", "title": "Your daily routine", "cefr": "A1", "sequence": 18, "body": { "steps": [
+    { "type": "quiz", "prompt": "Describe your morning with two reflexive verbs.", "answer": "e.g. Me levanto a las siete. Me baño y desayuno." },
+    { "type": "quiz", "prompt": "Say what time you start and finish work.", "answer": "e.g. Empiezo a trabajar a las nueve y termino a las seis." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.clima-writing", "lessonType": "writing_prompt", "title": "Weather small talk", "cefr": "A1", "sequence": 19, "body": { "steps": [
+    { "type": "quiz", "prompt": "Write today's weather two ways (hace… / hay/está…).", "answer": "e.g. Hace calor y hace sol. / Está despejado." },
+    { "type": "quiz", "prompt": "Say it rained all day yesterday (preterite).", "answer": "Ayer llovió todo el día." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.fin-writing", "lessonType": "writing_prompt", "title": "What did you do this weekend?", "cefr": "A2", "sequence": 20, "body": { "steps": [
+    { "type": "quiz", "prompt": "Write three preterite sentences about your weekend.", "answer": "e.g. Fui al mercado. Comí pozole. Vi una película." },
+    { "type": "quiz", "prompt": "Add a background description with the imperfect.", "answer": "e.g. Hacía frío, así que me quedé en casa." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.planes-writing", "lessonType": "writing_prompt", "title": "Your plans (ir a + infinitive)", "cefr": "A2", "sequence": 21, "body": { "steps": [
+    { "type": "quiz", "prompt": "Write three plans for next week with ir a + infinitive.", "answer": "e.g. Voy a visitar un museo. Vamos a cenar con amigos. Voy a empezar un libro." },
+    { "type": "quiz", "prompt": "Add one negative plan.", "answer": "e.g. No voy a trabajar el domingo." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.mensaje-writing", "lessonType": "writing_prompt", "title": "Text a friend to make plans", "cefr": "A2", "sequence": 22, "body": { "steps": [
+    { "type": "quiz", "prompt": "Write a casual text proposing tacos tonight.", "answer": "e.g. ¿Qué onda? ¿Vamos por unos tacos hoy? ¿Como a las 8?" },
+    { "type": "quiz", "prompt": "Confirm the plan the casual Mexican way.", "answer": "¡Va! / ¡Sale! Ahí nos vemos." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.queja-writing", "lessonType": "writing_prompt", "title": "A polite complaint", "cefr": "A2", "sequence": 23, "body": { "steps": [
+    { "type": "quiz", "prompt": "Your food arrived cold. Complain politely to the waiter.", "answer": "e.g. Disculpe, mi comida está fría. ¿Me la puede calentar, por favor?" },
+    { "type": "quiz", "prompt": "The ATM kept your card — explain the problem to the guard.", "answer": "e.g. El cajero se tragó mi tarjeta y no me la devolvió." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.depa-writing", "lessonType": "writing_prompt", "title": "Describe your ideal apartment", "cefr": "A2", "sequence": 24, "body": { "steps": [
+    { "type": "quiz", "prompt": "Describe an apartment: rooms, floor, neighborhood (3 sentences).", "answer": "e.g. Es un depa de dos recámaras en el tercer piso. Tiene una cocina grande. La colonia es muy tranquila." },
+    { "type": "quiz", "prompt": "Say how much the rent is.", "answer": "e.g. La renta es de diez mil pesos al mes, con agua incluida." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.taqueria-roleplay", "lessonType": "roleplay", "title": "You're at the taquería", "cefr": "A1", "sequence": 25, "dialogueRef": "dialogue.taqueria", "body": { "steps": [
+    { "type": "quiz", "prompt": "Order three tacos with everything.", "answer": "¿Me da tres tacos con todo, por favor?" },
+    { "type": "quiz", "prompt": "The taquero asks '¿pica?' about the salsa — ask which one is milder.", "answer": "¿Cuál pica menos, la verde o la roja?" },
+    { "type": "quiz", "prompt": "Pay and say thanks.", "answer": "Aquí está. ¡Gracias!" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.direcciones-roleplay", "lessonType": "roleplay", "title": "You're lost in the city", "cefr": "A1", "sequence": 26, "dialogueRef": "dialogue.direcciones", "body": { "steps": [
+    { "type": "quiz", "prompt": "Stop a stranger politely and say you're looking for the metro.", "answer": "Disculpe, estoy buscando la estación del metro." },
+    { "type": "quiz", "prompt": "Ask them to repeat more slowly.", "answer": "¿Puede repetir más despacio, por favor?" },
+    { "type": "quiz", "prompt": "Repeat the route back: straight, then left.", "answer": "Entonces derecho y luego a la izquierda, ¿verdad?" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.restaurante-roleplay", "lessonType": "roleplay", "title": "Dinner reservation and ordering", "cefr": "A2", "sequence": 27, "dialogueRef": "dialogue.restaurante", "body": { "steps": [
+    { "type": "quiz", "prompt": "Announce your reservation for two under your name.", "answer": "Tengo una reservación para dos a nombre de [nombre]." },
+    { "type": "quiz", "prompt": "Ask the waiter what they recommend.", "answer": "¿Qué nos recomienda?" },
+    { "type": "quiz", "prompt": "Order the special and ask for the check.", "answer": "Dos de la especialidad, y luego la cuenta, por favor." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.fiesta-roleplay", "lessonType": "roleplay", "title": "Meeting someone at a party", "cefr": "A2", "sequence": 28, "dialogueRef": "dialogue.presentaciones", "body": { "steps": [
+    { "type": "quiz", "prompt": "Introduce yourself casually and ask how they know the host.", "answer": "¡Qué onda! Soy [nombre]. ¿De dónde conoces a [anfitrión]?" },
+    { "type": "quiz", "prompt": "They ask what you do — answer and bounce it back.", "answer": "Trabajo en [campo]. ¿Y tú, a qué te dedicas?" },
+    { "type": "quiz", "prompt": "Wrap up warmly and suggest exchanging numbers.", "answer": "¡Estuvo padre platicar! ¿Nos pasamos el número?" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.doctor-roleplay", "lessonType": "roleplay", "title": "At the doctor's", "cefr": "A2", "sequence": 29, "dialogueRef": "dialogue.doctor", "body": { "steps": [
+    { "type": "quiz", "prompt": "Describe your symptoms: headache since yesterday, slept badly.", "answer": "Me duele la cabeza desde ayer y dormí mal." },
+    { "type": "quiz", "prompt": "Ask if you need a prescription.", "answer": "¿Necesito receta?" },
+    { "type": "quiz", "prompt": "Ask how much the visit costs.", "answer": "¿Cuánto es la consulta?" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.numeros-drill", "lessonType": "translation_drill", "title": "Numbers under fire: prices and time", "cefr": "A1", "sequence": 30, "body": { "steps": [
+    { "type": "quiz", "prompt": "Say '$45 pesos' the way the taquero does.", "answer": "Cuarenta y cinco pesos." },
+    { "type": "quiz", "prompt": "Say 100.", "answer": "Cien." },
+    { "type": "quiz", "prompt": "Say 530.", "answer": "Quinientos treinta." },
+    { "type": "quiz", "prompt": "'It's 3:30':", "answer": "Son las tres y media." },
+    { "type": "quiz", "prompt": "'It's 1:00':", "answer": "Es la una. (only 1 o'clock takes 'es la')" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.analisis-usted", "lessonType": "dialogue_analysis", "title": "Decoding the usted → tú switch", "cefr": "A2", "sequence": 31, "dialogueRef": "dialogue.saludo-usted", "body": { "steps": [
+    { "type": "quiz", "prompt": "How does Emily open with the friend's mother, and why?", "answer": "With courtesy appropriate to usted — she's an elder Emily just met." },
+    { "type": "quiz", "prompt": "How does the señora signal warmth?", "answer": "She switches Emily to tú (pásale, siéntate, ¿ya comiste?) and says 'estás en tu casa'." },
+    { "type": "quiz", "prompt": "What's the cultural 'dance' around the tamales?", "answer": "Declining once ('no quiero molestar') then accepting when insisted — polite Mexican hospitality." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.slang-mexicano", "lessonType": "slang_breakdown", "title": "Mexican slang starter pack", "cefr": "A2", "sequence": 32, "body": { "steps": [
+    { "type": "quiz", "prompt": "What does 'güey' mean and who can you say it to?", "answer": "Dude/bro — only with friends your age, never elders/bosses/strangers." },
+    { "type": "quiz", "prompt": "'¡No manches!' — meaning and its vulgar twin.", "answer": "'No way!' — the clean version of the vulgar '¡no mames!'." },
+    { "type": "quiz", "prompt": "What can 'ahorita' actually mean?", "answer": "'Right now', 'in a bit', or 'eventually / maybe never' — it's elastic; tone decides." },
+    { "type": "quiz", "prompt": "Give clean equivalents for 'chido' and 'chamba'.", "answer": "chido → genial/padre; chamba → trabajo." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.slang-groserias", "lessonType": "slang_breakdown", "title": "chingar, madre & friends — calibrating Mexican profanity", "cefr": "A2", "sequence": 33, "body": { "steps": [
+    { "type": "quiz", "prompt": "Why is 'chingón' almost a compliment but 'chinga tu madre' a grave insult?", "answer": "The chingar family spans a huge severity range — chingón = badass (playful), the madre insult = severity 7, fight-starting." },
+    { "type": "quiz", "prompt": "Rank by severity: híjole, pinche, no mames.", "answer": "híjole (1) < pinche (3) < no mames (4)." },
+    { "type": "quiz", "prompt": "Which should a learner produce vs only recognize?", "answer": "Produce: híjole, caray, chin (clean). Recognize-only/avoid: no mames, pinche, pendejo, cabrón, the chingar/madre families." },
+    { "type": "quiz", "prompt": "What's the clean stand-in for the whole 'chingar' family?", "answer": "'Fregar' — chingón→padre, chingadera→fregadera, etc." }
+  ] } }
+]

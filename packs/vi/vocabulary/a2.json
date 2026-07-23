@@ -1,0 +1,3367 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "vocab.cong-viec",
+    "entryType": "word",
+    "lemma": "công việc",
+    "romaji": "kong vieek",
+    "translation": "work / job",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 180,
+    "register": "neutral",
+    "tags": [
+      "work",
+      "daily-life"
+    ],
+    "naturalMeaning": "General word for work or a task; công việc = 'job/task' broadly, not a job title.",
+    "examples": [
+      {
+        "text": "Công việc của tôi rất bận.",
+        "translation": "My job is very busy."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.lam-viec",
+    "entryType": "word",
+    "lemma": "làm việc",
+    "romaji": "laam vieek",
+    "translation": "to work",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 150,
+    "register": "neutral",
+    "tags": [
+      "work"
+    ],
+    "naturalMeaning": "làm (do) + việc (task); the everyday verb for 'to work'.",
+    "examples": [
+      {
+        "text": "Tôi làm việc ở một công ty lớn.",
+        "translation": "I work at a big company."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.cong-ty",
+    "entryType": "word",
+    "lemma": "công ty",
+    "romaji": "kong tee",
+    "translation": "company",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 210,
+    "register": "neutral",
+    "tags": [
+      "work",
+      "business"
+    ],
+    "naturalMeaning": "Standard word for a company or firm.",
+    "examples": [
+      {
+        "text": "Công ty tôi có nhiều nhân viên.",
+        "translation": "My company has many employees."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.van-phong",
+    "entryType": "word",
+    "lemma": "văn phòng",
+    "romaji": "van fong",
+    "translation": "office",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 320,
+    "register": "neutral",
+    "tags": [
+      "work"
+    ],
+    "naturalMeaning": "An office (the workplace room/building).",
+    "examples": [
+      {
+        "text": "Văn phòng của chúng tôi ở tầng ba.",
+        "translation": "Our office is on the third floor."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nhan-vien",
+    "entryType": "word",
+    "lemma": "nhân viên",
+    "romaji": "nyun vieen",
+    "translation": "employee / staff",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 260,
+    "register": "neutral",
+    "tags": [
+      "work"
+    ],
+    "naturalMeaning": "An employee or member of staff.",
+    "examples": [
+      {
+        "text": "Cô ấy là nhân viên mới.",
+        "translation": "She is a new employee."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sep",
+    "entryType": "word",
+    "lemma": "sếp",
+    "romaji": "sep",
+    "translation": "boss",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 340,
+    "register": "informal",
+    "tags": [
+      "work"
+    ],
+    "naturalMeaning": "Informal, very common word for one's boss; sắc tone (sếp).",
+    "examples": [
+      {
+        "text": "Sếp tôi rất tốt bụng.",
+        "translation": "My boss is very kind."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.dong-nghiep",
+    "entryType": "word",
+    "lemma": "đồng nghiệp",
+    "romaji": "dong ngieep",
+    "translation": "colleague",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 380,
+    "register": "neutral",
+    "tags": [
+      "work"
+    ],
+    "naturalMeaning": "A co-worker or colleague.",
+    "examples": [
+      {
+        "text": "Đồng nghiệp của tôi rất thân thiện.",
+        "translation": "My colleagues are very friendly."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.luong",
+    "entryType": "word",
+    "lemma": "lương",
+    "romaji": "luong",
+    "translation": "salary",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 300,
+    "register": "neutral",
+    "tags": [
+      "work",
+      "money"
+    ],
+    "naturalMeaning": "Salary or wages.",
+    "examples": [
+      {
+        "text": "Lương của tôi trả vào cuối tháng.",
+        "translation": "My salary is paid at the end of the month."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.cuoc-hop",
+    "entryType": "word",
+    "lemma": "cuộc họp",
+    "romaji": "kuok hop",
+    "translation": "meeting",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 360,
+    "register": "neutral",
+    "tags": [
+      "work"
+    ],
+    "naturalMeaning": "A meeting; the verb 'to have a meeting' is họp.",
+    "examples": [
+      {
+        "text": "Cuộc họp bắt đầu lúc chín giờ.",
+        "translation": "The meeting starts at nine o'clock."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nghe-nghiep",
+    "entryType": "word",
+    "lemma": "nghề nghiệp",
+    "romaji": "ngye ngieep",
+    "translation": "profession / occupation",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 420,
+    "register": "neutral",
+    "tags": [
+      "work"
+    ],
+    "naturalMeaning": "One's profession or career field.",
+    "examples": [
+      {
+        "text": "Nghề nghiệp của anh ấy là gì?",
+        "translation": "What is his profession?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sinh-vien",
+    "entryType": "word",
+    "lemma": "sinh viên",
+    "romaji": "sing vieen",
+    "translation": "university student",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 280,
+    "register": "neutral",
+    "tags": [
+      "study"
+    ],
+    "naturalMeaning": "A university/college student (a school pupil is học sinh).",
+    "examples": [
+      {
+        "text": "Tôi là sinh viên năm thứ hai.",
+        "translation": "I am a second-year student."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.bai-tap",
+    "entryType": "word",
+    "lemma": "bài tập",
+    "romaji": "baai tap",
+    "translation": "homework / exercise",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 340,
+    "register": "neutral",
+    "tags": [
+      "study"
+    ],
+    "naturalMeaning": "A homework assignment or practice exercise.",
+    "examples": [
+      {
+        "text": "Tôi có nhiều bài tập tối nay.",
+        "translation": "I have a lot of homework tonight."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.ky-thi",
+    "entryType": "word",
+    "lemma": "kỳ thi",
+    "romaji": "kee thee",
+    "translation": "exam / examination",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 400,
+    "register": "neutral",
+    "tags": [
+      "study"
+    ],
+    "naturalMeaning": "A formal exam period; also written kì thi.",
+    "examples": [
+      {
+        "text": "Kỳ thi cuối năm rất khó.",
+        "translation": "The end-of-year exam is very hard."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.ky-su",
+    "entryType": "word",
+    "lemma": "kỹ sư",
+    "romaji": "kee su",
+    "translation": "engineer",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 700,
+    "register": "neutral",
+    "tags": [
+      "work",
+      "jobs"
+    ],
+    "naturalMeaning": "The profession 'engineer'; ngã tone on kỹ.",
+    "examples": [
+      {
+        "text": "Anh ấy làm kỹ sư máy tính.",
+        "translation": "He works as a computer engineer."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.ngan-hang",
+    "entryType": "word",
+    "lemma": "ngân hàng",
+    "romaji": "ngun haang",
+    "translation": "bank",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 260,
+    "register": "neutral",
+    "tags": [
+      "money",
+      "city"
+    ],
+    "naturalMeaning": "A bank (the financial institution).",
+    "examples": [
+      {
+        "text": "Tôi đi ngân hàng để rút tiền.",
+        "translation": "I go to the bank to withdraw money."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tien-mat",
+    "entryType": "word",
+    "lemma": "tiền mặt",
+    "romaji": "tieen mat",
+    "translation": "cash",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 380,
+    "register": "neutral",
+    "tags": [
+      "money"
+    ],
+    "naturalMeaning": "Cash, as opposed to card payment.",
+    "examples": [
+      {
+        "text": "Tôi muốn trả bằng tiền mặt.",
+        "translation": "I want to pay in cash."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.the-card",
+    "entryType": "word",
+    "lemma": "thẻ",
+    "romaji": "the",
+    "translation": "card (bank/ID)",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 340,
+    "register": "neutral",
+    "tags": [
+      "money",
+      "tech"
+    ],
+    "naturalMeaning": "A card — bank card, ID card, etc.; hỏi tone (thẻ).",
+    "examples": [
+      {
+        "text": "Tôi quẹt thẻ để mua hàng.",
+        "translation": "I swipe the card to buy things."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tai-khoan",
+    "entryType": "word",
+    "lemma": "tài khoản",
+    "romaji": "taai khoaan",
+    "translation": "account",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 480,
+    "register": "neutral",
+    "tags": [
+      "money",
+      "tech"
+    ],
+    "naturalMeaning": "An account — bank account or online account.",
+    "examples": [
+      {
+        "text": "Tài khoản của tôi hết tiền rồi.",
+        "translation": "My account is out of money already."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.rut-tien",
+    "entryType": "word",
+    "lemma": "rút tiền",
+    "romaji": "zoot tieen",
+    "translation": "to withdraw money",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 520,
+    "register": "neutral",
+    "tags": [
+      "money"
+    ],
+    "naturalMeaning": "To withdraw money, e.g. from an ATM (máy rút tiền).",
+    "examples": [
+      {
+        "text": "Tôi cần rút tiền ở cây ATM.",
+        "translation": "I need to withdraw money at the ATM."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tiet-kiem",
+    "entryType": "word",
+    "lemma": "tiết kiệm",
+    "romaji": "tieet kieem",
+    "translation": "to save / thrifty",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 560,
+    "register": "neutral",
+    "tags": [
+      "money"
+    ],
+    "naturalMeaning": "To save money; also used as an adjective 'economical/thrifty'.",
+    "examples": [
+      {
+        "text": "Tôi tiết kiệm tiền để đi du lịch.",
+        "translation": "I save money to travel."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tra-tien",
+    "entryType": "word",
+    "lemma": "trả tiền",
+    "romaji": "chaa tieen",
+    "translation": "to pay",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 300,
+    "register": "neutral",
+    "tags": [
+      "money"
+    ],
+    "naturalMeaning": "To pay money; trả alone can also mean 'to return' something.",
+    "examples": [
+      {
+        "text": "Ai trả tiền bữa ăn này?",
+        "translation": "Who is paying for this meal?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hoa-don",
+    "entryType": "word",
+    "lemma": "hóa đơn",
+    "romaji": "hwaa don",
+    "translation": "bill / invoice",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 620,
+    "register": "neutral",
+    "tags": [
+      "money"
+    ],
+    "naturalMeaning": "A bill or invoice/receipt.",
+    "examples": [
+      {
+        "text": "Cho tôi xin hóa đơn.",
+        "translation": "Please give me the bill."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.vay-borrow",
+    "entryType": "word",
+    "lemma": "vay",
+    "romaji": "vaay",
+    "translation": "to borrow (money) / loan",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 680,
+    "register": "neutral",
+    "tags": [
+      "money"
+    ],
+    "naturalMeaning": "vay is used specifically for borrowing money; mượn is for borrowing objects.",
+    "examples": [
+      {
+        "text": "Anh ấy vay tiền để mua nhà.",
+        "translation": "He borrows money to buy a house."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.buon",
+    "entryType": "word",
+    "lemma": "buồn",
+    "romaji": "buon",
+    "translation": "sad",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 280,
+    "register": "neutral",
+    "tags": [
+      "feelings"
+    ],
+    "naturalMeaning": "Feeling sad; huyền tone (buồn). Can also mean 'bored' (buồn chán).",
+    "examples": [
+      {
+        "text": "Tôi thấy buồn khi trời mưa.",
+        "translation": "I feel sad when it rains."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.gian",
+    "entryType": "word",
+    "lemma": "giận",
+    "romaji": "zan",
+    "translation": "angry",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 360,
+    "register": "neutral",
+    "tags": [
+      "feelings"
+    ],
+    "naturalMeaning": "To be angry (often at someone); nặng tone (giận).",
+    "examples": [
+      {
+        "text": "Cô ấy giận vì tôi đến muộn.",
+        "translation": "She is angry because I arrived late."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.lo-lang",
+    "entryType": "word",
+    "lemma": "lo lắng",
+    "romaji": "law lang",
+    "translation": "worried",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 420,
+    "register": "neutral",
+    "tags": [
+      "feelings"
+    ],
+    "naturalMeaning": "To feel worried or anxious.",
+    "examples": [
+      {
+        "text": "Mẹ lo lắng cho sức khỏe của tôi.",
+        "translation": "Mom is worried about my health."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.so-afraid",
+    "entryType": "word",
+    "lemma": "sợ",
+    "romaji": "suh",
+    "translation": "afraid / to fear",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 300,
+    "register": "neutral",
+    "tags": [
+      "feelings"
+    ],
+    "naturalMeaning": "To be afraid of something; nặng tone (sợ).",
+    "examples": [
+      {
+        "text": "Em bé sợ chó.",
+        "translation": "The baby is afraid of dogs."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hanh-phuc",
+    "entryType": "word",
+    "lemma": "hạnh phúc",
+    "romaji": "haing fook",
+    "translation": "happy (deep) / happiness",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 380,
+    "register": "neutral",
+    "tags": [
+      "feelings"
+    ],
+    "naturalMeaning": "A deep, lasting happiness (vs. vui, momentary fun).",
+    "examples": [
+      {
+        "text": "Gia đình tôi rất hạnh phúc.",
+        "translation": "My family is very happy."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.met",
+    "entryType": "word",
+    "lemma": "mệt",
+    "romaji": "met",
+    "translation": "tired",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 260,
+    "register": "neutral",
+    "tags": [
+      "feelings",
+      "health"
+    ],
+    "naturalMeaning": "Tired or worn out; nặng tone (mệt).",
+    "examples": [
+      {
+        "text": "Tôi rất mệt sau khi làm việc.",
+        "translation": "I am very tired after working."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.ngac-nhien",
+    "entryType": "word",
+    "lemma": "ngạc nhiên",
+    "romaji": "ngak nyeen",
+    "translation": "surprised",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 560,
+    "register": "neutral",
+    "tags": [
+      "feelings"
+    ],
+    "naturalMeaning": "To feel surprised.",
+    "examples": [
+      {
+        "text": "Tôi rất ngạc nhiên khi gặp anh ở đây.",
+        "translation": "I was very surprised to meet you here."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.that-vong",
+    "entryType": "word",
+    "lemma": "thất vọng",
+    "romaji": "that vong",
+    "translation": "disappointed",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 620,
+    "register": "neutral",
+    "tags": [
+      "feelings"
+    ],
+    "naturalMeaning": "To be disappointed.",
+    "examples": [
+      {
+        "text": "Tôi thất vọng về kết quả.",
+        "translation": "I am disappointed about the result."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hai-long",
+    "entryType": "word",
+    "lemma": "hài lòng",
+    "romaji": "haai long",
+    "translation": "satisfied / pleased",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 600,
+    "register": "neutral",
+    "tags": [
+      "feelings"
+    ],
+    "naturalMeaning": "To be content or satisfied with something.",
+    "examples": [
+      {
+        "text": "Khách hàng rất hài lòng.",
+        "translation": "The customers are very satisfied."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.cang-thang",
+    "entryType": "word",
+    "lemma": "căng thẳng",
+    "romaji": "kang thang",
+    "translation": "stressed / tense",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 640,
+    "register": "neutral",
+    "tags": [
+      "feelings"
+    ],
+    "naturalMeaning": "Feeling stressed; also describes a tense situation.",
+    "examples": [
+      {
+        "text": "Công việc làm tôi căng thẳng.",
+        "translation": "Work makes me stressed."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.cam-xuc",
+    "entryType": "word",
+    "lemma": "cảm xúc",
+    "romaji": "kam sook",
+    "translation": "emotion / feeling",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 720,
+    "register": "neutral",
+    "tags": [
+      "feelings"
+    ],
+    "naturalMeaning": "Emotion or feeling (the noun).",
+    "examples": [
+      {
+        "text": "Cô ấy không giấu được cảm xúc.",
+        "translation": "She cannot hide her emotions."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.y-kien",
+    "entryType": "word",
+    "lemma": "ý kiến",
+    "romaji": "ee kieen",
+    "translation": "opinion",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 440,
+    "register": "neutral",
+    "tags": [
+      "opinion"
+    ],
+    "naturalMeaning": "An opinion or viewpoint.",
+    "examples": [
+      {
+        "text": "Bạn có ý kiến gì không?",
+        "translation": "Do you have any opinion?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.dong-y",
+    "entryType": "word",
+    "lemma": "đồng ý",
+    "romaji": "dong ee",
+    "translation": "to agree",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 380,
+    "register": "neutral",
+    "tags": [
+      "opinion"
+    ],
+    "naturalMeaning": "To agree with someone or something.",
+    "examples": [
+      {
+        "text": "Tôi đồng ý với ý kiến của bạn.",
+        "translation": "I agree with your opinion."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nghi-think",
+    "entryType": "word",
+    "lemma": "nghĩ",
+    "romaji": "ngee",
+    "translation": "to think",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 240,
+    "register": "neutral",
+    "tags": [
+      "opinion"
+    ],
+    "naturalMeaning": "To think or hold an opinion; ngã tone (nghĩ).",
+    "examples": [
+      {
+        "text": "Tôi nghĩ trời sắp mưa.",
+        "translation": "I think it is going to rain."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tin-believe",
+    "entryType": "word",
+    "lemma": "tin",
+    "romaji": "tin",
+    "translation": "to believe / trust",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 320,
+    "register": "neutral",
+    "tags": [
+      "opinion"
+    ],
+    "naturalMeaning": "To believe or trust; ngang tone (tin).",
+    "examples": [
+      {
+        "text": "Tôi tin bạn.",
+        "translation": "I trust you."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thong-minh",
+    "entryType": "word",
+    "lemma": "thông minh",
+    "romaji": "thong ming",
+    "translation": "smart / intelligent",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 400,
+    "register": "neutral",
+    "tags": [
+      "character"
+    ],
+    "naturalMeaning": "Intelligent, clever.",
+    "examples": [
+      {
+        "text": "Con bạn rất thông minh.",
+        "translation": "Your child is very smart."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.luoi",
+    "entryType": "word",
+    "lemma": "lười",
+    "romaji": "luhy",
+    "translation": "lazy",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 460,
+    "register": "neutral",
+    "tags": [
+      "character"
+    ],
+    "naturalMeaning": "Lazy; huyền tone (lười).",
+    "examples": [
+      {
+        "text": "Anh ấy lười học.",
+        "translation": "He is lazy about studying."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.cham-chi",
+    "entryType": "word",
+    "lemma": "chăm chỉ",
+    "romaji": "cham chee",
+    "translation": "hardworking / diligent",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 480,
+    "register": "neutral",
+    "tags": [
+      "character"
+    ],
+    "naturalMeaning": "Diligent and hardworking.",
+    "examples": [
+      {
+        "text": "Học sinh chăm chỉ sẽ thành công.",
+        "translation": "Diligent students will succeed."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tot-bung",
+    "entryType": "word",
+    "lemma": "tốt bụng",
+    "romaji": "tot boong",
+    "translation": "kind-hearted",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 500,
+    "register": "neutral",
+    "tags": [
+      "character"
+    ],
+    "naturalMeaning": "Kind and good-hearted; tốt bụng literally 'good stomach'.",
+    "examples": [
+      {
+        "text": "Bà ấy là người tốt bụng.",
+        "translation": "She is a kind-hearted person."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.that-tha",
+    "entryType": "word",
+    "lemma": "thật thà",
+    "romaji": "that thaa",
+    "translation": "honest",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 700,
+    "register": "neutral",
+    "tags": [
+      "character"
+    ],
+    "naturalMeaning": "Honest and truthful.",
+    "examples": [
+      {
+        "text": "Em bé rất thật thà.",
+        "translation": "The child is very honest."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nghiem-khac",
+    "entryType": "word",
+    "lemma": "nghiêm khắc",
+    "romaji": "ngieem khak",
+    "translation": "strict",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 760,
+    "register": "neutral",
+    "tags": [
+      "character"
+    ],
+    "naturalMeaning": "Strict or stern (a teacher, parent).",
+    "examples": [
+      {
+        "text": "Thầy giáo rất nghiêm khắc.",
+        "translation": "The teacher is very strict."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tinh-cach",
+    "entryType": "word",
+    "lemma": "tính cách",
+    "romaji": "ting kak",
+    "translation": "personality / character",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 640,
+    "register": "neutral",
+    "tags": [
+      "character"
+    ],
+    "naturalMeaning": "A person's personality or character.",
+    "examples": [
+      {
+        "text": "Tính cách của cô ấy rất dễ thương.",
+        "translation": "Her personality is very lovely."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hom-qua",
+    "entryType": "word",
+    "lemma": "hôm qua",
+    "romaji": "hom kwaa",
+    "translation": "yesterday",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 160,
+    "register": "neutral",
+    "tags": [
+      "time"
+    ],
+    "naturalMeaning": "Yesterday.",
+    "examples": [
+      {
+        "text": "Hôm qua tôi đi làm.",
+        "translation": "Yesterday I went to work."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.ngay-mai",
+    "entryType": "word",
+    "lemma": "ngày mai",
+    "romaji": "ngaay maai",
+    "translation": "tomorrow",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 150,
+    "register": "neutral",
+    "tags": [
+      "time"
+    ],
+    "naturalMeaning": "Tomorrow.",
+    "examples": [
+      {
+        "text": "Ngày mai tôi sẽ gặp bạn.",
+        "translation": "Tomorrow I will meet you."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.da-already",
+    "entryType": "word",
+    "lemma": "đã",
+    "romaji": "daa",
+    "translation": "already / past marker",
+    "partOfSpeech": "particle",
+    "cefr": "A2",
+    "frequencyRank": 90,
+    "register": "neutral",
+    "tags": [
+      "time",
+      "grammar"
+    ],
+    "naturalMeaning": "Preverb marking completed/past action; sắc tone (đã).",
+    "examples": [
+      {
+        "text": "Tôi đã ăn cơm rồi.",
+        "translation": "I have already eaten."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.se-will",
+    "entryType": "word",
+    "lemma": "sẽ",
+    "romaji": "se",
+    "translation": "will (future marker)",
+    "partOfSpeech": "particle",
+    "cefr": "A2",
+    "frequencyRank": 100,
+    "register": "neutral",
+    "tags": [
+      "time",
+      "grammar"
+    ],
+    "naturalMeaning": "Preverb marking future action; ngã tone (sẽ).",
+    "examples": [
+      {
+        "text": "Tôi sẽ đi Hà Nội.",
+        "translation": "I will go to Hanoi."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.roi-already",
+    "entryType": "word",
+    "lemma": "rồi",
+    "romaji": "zoy",
+    "translation": "already (completed) / then",
+    "partOfSpeech": "particle",
+    "cefr": "A2",
+    "frequencyRank": 110,
+    "register": "neutral",
+    "tags": [
+      "time",
+      "grammar"
+    ],
+    "naturalMeaning": "Sentence-final particle marking that something is done; huyền tone (rồi).",
+    "examples": [
+      {
+        "text": "Tôi làm xong rồi.",
+        "translation": "I have finished already."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.chua-notyet",
+    "entryType": "word",
+    "lemma": "chưa",
+    "romaji": "chuh",
+    "translation": "not yet / yet?",
+    "partOfSpeech": "particle",
+    "cefr": "A2",
+    "frequencyRank": 130,
+    "register": "neutral",
+    "tags": [
+      "time",
+      "grammar"
+    ],
+    "naturalMeaning": "Means 'not yet'; also turns a sentence into a 'have you...yet?' question.",
+    "examples": [
+      {
+        "text": "Tôi chưa ăn sáng.",
+        "translation": "I haven't had breakfast yet."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tuan-truoc",
+    "entryType": "word",
+    "lemma": "tuần trước",
+    "romaji": "tuan chuok",
+    "translation": "last week",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 340,
+    "register": "neutral",
+    "tags": [
+      "time"
+    ],
+    "naturalMeaning": "Last week (trước = before/previous).",
+    "examples": [
+      {
+        "text": "Tuần trước tôi bị ốm.",
+        "translation": "Last week I was sick."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tuan-sau",
+    "entryType": "word",
+    "lemma": "tuần sau",
+    "romaji": "tuan sau",
+    "translation": "next week",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 340,
+    "register": "neutral",
+    "tags": [
+      "time"
+    ],
+    "naturalMeaning": "Next week (sau = after/next).",
+    "examples": [
+      {
+        "text": "Tuần sau chúng ta gặp nhau nhé.",
+        "translation": "Let's meet next week."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thang-truoc",
+    "entryType": "word",
+    "lemma": "tháng trước",
+    "romaji": "thang chuok",
+    "translation": "last month",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 380,
+    "register": "neutral",
+    "tags": [
+      "time"
+    ],
+    "naturalMeaning": "Last month.",
+    "examples": [
+      {
+        "text": "Tháng trước tôi mới chuyển nhà.",
+        "translation": "I just moved house last month."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nam-ngoai",
+    "entryType": "word",
+    "lemma": "năm ngoái",
+    "romaji": "nam ngoaai",
+    "translation": "last year",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 360,
+    "register": "neutral",
+    "tags": [
+      "time"
+    ],
+    "naturalMeaning": "Last year (năm ngoái is more idiomatic than năm trước).",
+    "examples": [
+      {
+        "text": "Năm ngoái tôi đi Nhật Bản.",
+        "translation": "Last year I went to Japan."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sap-soon",
+    "entryType": "word",
+    "lemma": "sắp",
+    "romaji": "sap",
+    "translation": "about to / soon",
+    "partOfSpeech": "particle",
+    "cefr": "A2",
+    "frequencyRank": 300,
+    "register": "neutral",
+    "tags": [
+      "time",
+      "grammar"
+    ],
+    "naturalMeaning": "Preverb meaning an action is about to happen; sắc tone (sắp).",
+    "examples": [
+      {
+        "text": "Trời sắp tối rồi.",
+        "translation": "It is about to get dark."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.vua-just",
+    "entryType": "word",
+    "lemma": "vừa",
+    "romaji": "vuh",
+    "translation": "just (recently)",
+    "partOfSpeech": "particle",
+    "cefr": "A2",
+    "frequencyRank": 320,
+    "register": "neutral",
+    "tags": [
+      "time",
+      "grammar"
+    ],
+    "naturalMeaning": "Marks an action that just happened; huyền tone (vừa).",
+    "examples": [
+      {
+        "text": "Tôi vừa về nhà.",
+        "translation": "I just got home."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.dang-progressive",
+    "entryType": "word",
+    "lemma": "đang",
+    "romaji": "daang",
+    "translation": "(currently) -ing",
+    "partOfSpeech": "particle",
+    "cefr": "A2",
+    "frequencyRank": 120,
+    "register": "neutral",
+    "tags": [
+      "time",
+      "grammar"
+    ],
+    "naturalMeaning": "Preverb marking an action in progress right now.",
+    "examples": [
+      {
+        "text": "Tôi đang học tiếng Việt.",
+        "translation": "I am studying Vietnamese."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.truoc-before",
+    "entryType": "word",
+    "lemma": "trước",
+    "romaji": "chuok",
+    "translation": "before / in front",
+    "partOfSpeech": "adverb",
+    "cefr": "A2",
+    "frequencyRank": 230,
+    "register": "neutral",
+    "tags": [
+      "time",
+      "position"
+    ],
+    "naturalMeaning": "Before (in time) or in front (in space); sắc tone (trước).",
+    "examples": [
+      {
+        "text": "Hãy gọi cho tôi trước khi đến.",
+        "translation": "Please call me before you come."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.buu-dien",
+    "entryType": "word",
+    "lemma": "bưu điện",
+    "romaji": "buu dieen",
+    "translation": "post office",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 620,
+    "register": "neutral",
+    "tags": [
+      "city",
+      "services"
+    ],
+    "naturalMeaning": "The post office.",
+    "examples": [
+      {
+        "text": "Tôi ra bưu điện gửi thư.",
+        "translation": "I go to the post office to send a letter."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.cong-an",
+    "entryType": "word",
+    "lemma": "công an",
+    "romaji": "kong an",
+    "translation": "police (public security)",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 520,
+    "register": "neutral",
+    "tags": [
+      "city",
+      "services"
+    ],
+    "naturalMeaning": "The Vietnamese police / public-security force; also the officer.",
+    "examples": [
+      {
+        "text": "Công an đang kiểm tra giấy tờ.",
+        "translation": "The police are checking documents."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.canh-sat",
+    "entryType": "word",
+    "lemma": "cảnh sát",
+    "romaji": "kaing saat",
+    "translation": "police / police officer",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 540,
+    "register": "neutral",
+    "tags": [
+      "city",
+      "services"
+    ],
+    "naturalMeaning": "Police officer; cảnh sát giao thông = traffic police.",
+    "examples": [
+      {
+        "text": "Cảnh sát giúp người bị nạn.",
+        "translation": "The police help the victim."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hieu-thuoc",
+    "entryType": "word",
+    "lemma": "hiệu thuốc",
+    "romaji": "hieu thuok",
+    "translation": "pharmacy",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 680,
+    "register": "neutral",
+    "tags": [
+      "city",
+      "health"
+    ],
+    "naturalMeaning": "A pharmacy / drugstore (Northern; also nhà thuốc).",
+    "examples": [
+      {
+        "text": "Tôi mua thuốc ở hiệu thuốc.",
+        "translation": "I buy medicine at the pharmacy."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.trung-tam",
+    "entryType": "word",
+    "lemma": "trung tâm",
+    "romaji": "choong tum",
+    "translation": "center",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 480,
+    "register": "neutral",
+    "tags": [
+      "city"
+    ],
+    "naturalMeaning": "A center (city center, or a training/service center).",
+    "examples": [
+      {
+        "text": "Trung tâm thành phố rất đông.",
+        "translation": "The city center is very crowded."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.cau-bridge",
+    "entryType": "word",
+    "lemma": "cầu",
+    "romaji": "kuh",
+    "translation": "bridge",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 560,
+    "register": "neutral",
+    "tags": [
+      "city"
+    ],
+    "naturalMeaning": "A bridge; huyền tone (cầu).",
+    "examples": [
+      {
+        "text": "Cây cầu này rất dài.",
+        "translation": "This bridge is very long."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thu-letter",
+    "entryType": "word",
+    "lemma": "thư",
+    "romaji": "thuh",
+    "translation": "letter / mail",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 500,
+    "register": "neutral",
+    "tags": [
+      "city",
+      "services"
+    ],
+    "naturalMeaning": "A letter (mail); ngang tone (thư).",
+    "examples": [
+      {
+        "text": "Tôi nhận được một lá thư.",
+        "translation": "I received a letter."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tem",
+    "entryType": "word",
+    "lemma": "tem",
+    "romaji": "tem",
+    "translation": "stamp",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 900,
+    "register": "neutral",
+    "tags": [
+      "city",
+      "services"
+    ],
+    "naturalMeaning": "A postage stamp.",
+    "examples": [
+      {
+        "text": "Tôi cần mua tem để gửi thư.",
+        "translation": "I need to buy a stamp to send the letter."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.dien-thoai",
+    "entryType": "word",
+    "lemma": "điện thoại",
+    "romaji": "dieen thoaai",
+    "translation": "(tele)phone",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 220,
+    "register": "neutral",
+    "tags": [
+      "tech"
+    ],
+    "naturalMeaning": "A telephone / mobile phone.",
+    "examples": [
+      {
+        "text": "Điện thoại của tôi hết pin.",
+        "translation": "My phone is out of battery."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.may-tinh",
+    "entryType": "word",
+    "lemma": "máy tính",
+    "romaji": "maay ting",
+    "translation": "computer",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 300,
+    "register": "neutral",
+    "tags": [
+      "tech"
+    ],
+    "naturalMeaning": "A computer; máy tính xách tay = laptop.",
+    "examples": [
+      {
+        "text": "Tôi làm việc trên máy tính.",
+        "translation": "I work on the computer."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.mang-network",
+    "entryType": "word",
+    "lemma": "mạng",
+    "romaji": "maang",
+    "translation": "internet / network",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 340,
+    "register": "neutral",
+    "tags": [
+      "tech"
+    ],
+    "naturalMeaning": "The internet or a network; nặng tone (mạng).",
+    "examples": [
+      {
+        "text": "Mạng ở đây rất chậm.",
+        "translation": "The internet here is very slow."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.wifi",
+    "entryType": "word",
+    "lemma": "wifi",
+    "romaji": "wai-fai",
+    "translation": "wifi",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 520,
+    "register": "neutral",
+    "tags": [
+      "tech"
+    ],
+    "naturalMeaning": "Wifi (loanword, pronounced 'wai-fai').",
+    "examples": [
+      {
+        "text": "Quán này có wifi miễn phí.",
+        "translation": "This cafe has free wifi."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tin-nhan",
+    "entryType": "word",
+    "lemma": "tin nhắn",
+    "romaji": "tin nyan",
+    "translation": "text message",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 460,
+    "register": "neutral",
+    "tags": [
+      "tech"
+    ],
+    "naturalMeaning": "A text message; nhắn tin = to text.",
+    "examples": [
+      {
+        "text": "Tôi gửi cho bạn một tin nhắn.",
+        "translation": "I send you a text message."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.goi-dien",
+    "entryType": "word",
+    "lemma": "gọi điện",
+    "romaji": "goy dieen",
+    "translation": "to call (phone)",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 320,
+    "register": "neutral",
+    "tags": [
+      "tech"
+    ],
+    "naturalMeaning": "To make a phone call.",
+    "examples": [
+      {
+        "text": "Tôi sẽ gọi điện cho bạn tối nay.",
+        "translation": "I will call you tonight."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.email",
+    "entryType": "word",
+    "lemma": "email",
+    "romaji": "ee-meo",
+    "translation": "email",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 480,
+    "register": "neutral",
+    "tags": [
+      "tech",
+      "work"
+    ],
+    "naturalMeaning": "Email (loanword).",
+    "examples": [
+      {
+        "text": "Tôi gửi email cho sếp.",
+        "translation": "I send an email to my boss."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.mat-khau",
+    "entryType": "word",
+    "lemma": "mật khẩu",
+    "romaji": "mat khau",
+    "translation": "password",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 640,
+    "register": "neutral",
+    "tags": [
+      "tech"
+    ],
+    "naturalMeaning": "A password.",
+    "examples": [
+      {
+        "text": "Tôi quên mật khẩu rồi.",
+        "translation": "I forgot the password."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.ung-dung",
+    "entryType": "word",
+    "lemma": "ứng dụng",
+    "romaji": "ung zoong",
+    "translation": "app / application",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 700,
+    "register": "neutral",
+    "tags": [
+      "tech"
+    ],
+    "naturalMeaning": "A software app / application.",
+    "examples": [
+      {
+        "text": "Ứng dụng này rất tiện lợi.",
+        "translation": "This app is very convenient."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tai-download",
+    "entryType": "word",
+    "lemma": "tải",
+    "romaji": "taai",
+    "translation": "to download",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 760,
+    "register": "neutral",
+    "tags": [
+      "tech"
+    ],
+    "naturalMeaning": "To download (also 'to load'); hỏi tone (tải).",
+    "examples": [
+      {
+        "text": "Tôi tải một bộ phim mới.",
+        "translation": "I download a new movie."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sac-charge",
+    "entryType": "word",
+    "lemma": "sạc",
+    "romaji": "sak",
+    "translation": "to charge / charger",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 820,
+    "register": "neutral",
+    "tags": [
+      "tech"
+    ],
+    "naturalMeaning": "To charge a device, or the charger itself; nặng tone (sạc).",
+    "examples": [
+      {
+        "text": "Cho tôi mượn cục sạc.",
+        "translation": "Lend me the charger."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.pin",
+    "entryType": "word",
+    "lemma": "pin",
+    "romaji": "pin",
+    "translation": "battery",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 620,
+    "register": "neutral",
+    "tags": [
+      "tech"
+    ],
+    "naturalMeaning": "A battery; hết pin = out of battery.",
+    "examples": [
+      {
+        "text": "Máy tính của tôi hết pin.",
+        "translation": "My laptop is out of battery."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.ve-ticket",
+    "entryType": "word",
+    "lemma": "vé",
+    "romaji": "ve",
+    "translation": "ticket",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 320,
+    "register": "neutral",
+    "tags": [
+      "travel"
+    ],
+    "naturalMeaning": "A ticket (bus, train, plane, cinema); sắc tone (vé).",
+    "examples": [
+      {
+        "text": "Tôi mua hai vé máy bay.",
+        "translation": "I buy two plane tickets."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.ho-chieu",
+    "entryType": "word",
+    "lemma": "hộ chiếu",
+    "romaji": "ho chieu",
+    "translation": "passport",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 620,
+    "register": "neutral",
+    "tags": [
+      "travel"
+    ],
+    "naturalMeaning": "A passport.",
+    "examples": [
+      {
+        "text": "Đừng quên mang hộ chiếu.",
+        "translation": "Don't forget to bring your passport."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khach-san",
+    "entryType": "word",
+    "lemma": "khách sạn",
+    "romaji": "khak saan",
+    "translation": "hotel",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 380,
+    "register": "neutral",
+    "tags": [
+      "travel"
+    ],
+    "naturalMeaning": "A hotel.",
+    "examples": [
+      {
+        "text": "Chúng tôi ở một khách sạn gần biển.",
+        "translation": "We stay at a hotel near the beach."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.dat-phong",
+    "entryType": "word",
+    "lemma": "đặt phòng",
+    "romaji": "dat fong",
+    "translation": "to book a room",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 640,
+    "register": "neutral",
+    "tags": [
+      "travel"
+    ],
+    "naturalMeaning": "To reserve a hotel room.",
+    "examples": [
+      {
+        "text": "Tôi đã đặt phòng cho hai đêm.",
+        "translation": "I have booked a room for two nights."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hanh-ly",
+    "entryType": "word",
+    "lemma": "hành lý",
+    "romaji": "haing lee",
+    "translation": "luggage",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 600,
+    "register": "neutral",
+    "tags": [
+      "travel"
+    ],
+    "naturalMeaning": "Luggage or baggage.",
+    "examples": [
+      {
+        "text": "Hành lý của tôi rất nặng.",
+        "translation": "My luggage is very heavy."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.chuyen-bay",
+    "entryType": "word",
+    "lemma": "chuyến bay",
+    "romaji": "chueen baay",
+    "translation": "flight",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 520,
+    "register": "neutral",
+    "tags": [
+      "travel"
+    ],
+    "naturalMeaning": "A flight.",
+    "examples": [
+      {
+        "text": "Chuyến bay bị hoãn hai tiếng.",
+        "translation": "The flight is delayed by two hours."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.vali",
+    "entryType": "word",
+    "lemma": "vali",
+    "romaji": "vaa-li",
+    "translation": "suitcase",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 720,
+    "register": "neutral",
+    "tags": [
+      "travel"
+    ],
+    "naturalMeaning": "A suitcase (loanword from French 'valise').",
+    "examples": [
+      {
+        "text": "Tôi cho quần áo vào vali.",
+        "translation": "I put my clothes in the suitcase."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.du-lich",
+    "entryType": "word",
+    "lemma": "du lịch",
+    "romaji": "zoo lik",
+    "translation": "travel / tourism",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 360,
+    "register": "neutral",
+    "tags": [
+      "travel"
+    ],
+    "naturalMeaning": "Travel or tourism; đi du lịch = to go traveling.",
+    "examples": [
+      {
+        "text": "Tôi thích đi du lịch nước ngoài.",
+        "translation": "I like traveling abroad."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.dat-reserve",
+    "entryType": "word",
+    "lemma": "đặt",
+    "romaji": "dat",
+    "translation": "to book / reserve / order",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 420,
+    "register": "neutral",
+    "tags": [
+      "travel",
+      "daily-life"
+    ],
+    "naturalMeaning": "To reserve or order (a table, ticket, food); nặng tone (đặt).",
+    "examples": [
+      {
+        "text": "Tôi muốn đặt một bàn cho bốn người.",
+        "translation": "I want to reserve a table for four."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sot-fever",
+    "entryType": "word",
+    "lemma": "sốt",
+    "romaji": "sot",
+    "translation": "fever",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 480,
+    "register": "neutral",
+    "tags": [
+      "health"
+    ],
+    "naturalMeaning": "A fever; bị sốt = to have a fever; sắc tone (sốt).",
+    "examples": [
+      {
+        "text": "Con tôi bị sốt cao.",
+        "translation": "My child has a high fever."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thuoc-medicine",
+    "entryType": "word",
+    "lemma": "thuốc",
+    "romaji": "thuok",
+    "translation": "medicine",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 300,
+    "register": "neutral",
+    "tags": [
+      "health"
+    ],
+    "naturalMeaning": "Medicine/drugs; uống thuốc = to take medicine; sắc tone (thuốc).",
+    "examples": [
+      {
+        "text": "Bác sĩ cho tôi uống thuốc.",
+        "translation": "The doctor has me take medicine."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.dau-hurt",
+    "entryType": "word",
+    "lemma": "đau",
+    "romaji": "dau",
+    "translation": "to hurt / ache / painful",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 280,
+    "register": "neutral",
+    "tags": [
+      "health"
+    ],
+    "naturalMeaning": "To be painful or to ache; ngang tone (đau).",
+    "examples": [
+      {
+        "text": "Tôi bị đau chân.",
+        "translation": "My leg hurts."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.om-sick",
+    "entryType": "word",
+    "lemma": "ốm",
+    "romaji": "om",
+    "translation": "sick / ill",
+    "partOfSpeech": "adjective",
+    "cefr": "A2",
+    "frequencyRank": 340,
+    "register": "neutral",
+    "tags": [
+      "health"
+    ],
+    "naturalMeaning": "To be sick; in the North ốm means 'ill' (in the South it means 'thin').",
+    "examples": [
+      {
+        "text": "Cô ấy bị ốm nên nghỉ làm.",
+        "translation": "She is sick, so she takes off work."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.kham",
+    "entryType": "word",
+    "lemma": "khám",
+    "romaji": "khaam",
+    "translation": "to examine (medical)",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 560,
+    "register": "neutral",
+    "tags": [
+      "health"
+    ],
+    "naturalMeaning": "For a doctor to examine a patient; đi khám = to go for a checkup.",
+    "examples": [
+      {
+        "text": "Tôi đi khám bác sĩ sáng nay.",
+        "translation": "I go to see the doctor this morning."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.dau-dau",
+    "entryType": "word",
+    "lemma": "đau đầu",
+    "romaji": "dau dau",
+    "translation": "headache",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 520,
+    "register": "neutral",
+    "tags": [
+      "health"
+    ],
+    "naturalMeaning": "A headache (đau = hurt + đầu = head).",
+    "examples": [
+      {
+        "text": "Tôi bị đau đầu cả ngày.",
+        "translation": "I have a headache all day."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.vet-thuong",
+    "entryType": "word",
+    "lemma": "vết thương",
+    "romaji": "vet thuong",
+    "translation": "wound / injury",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 780,
+    "register": "neutral",
+    "tags": [
+      "health"
+    ],
+    "naturalMeaning": "A wound or injury.",
+    "examples": [
+      {
+        "text": "Vết thương của anh ấy đang lành.",
+        "translation": "His wound is healing."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.cuoc-hen",
+    "entryType": "word",
+    "lemma": "cuộc hẹn",
+    "romaji": "kuok hen",
+    "translation": "appointment",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 720,
+    "register": "neutral",
+    "tags": [
+      "health",
+      "daily-life"
+    ],
+    "naturalMeaning": "An appointment (with a doctor, or a date); hẹn = to make an appointment.",
+    "examples": [
+      {
+        "text": "Tôi có một cuộc hẹn với bác sĩ.",
+        "translation": "I have an appointment with the doctor."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.suc-khoe",
+    "entryType": "word",
+    "lemma": "sức khỏe",
+    "romaji": "suk khwe",
+    "translation": "health",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 400,
+    "register": "neutral",
+    "tags": [
+      "health"
+    ],
+    "naturalMeaning": "Health / physical condition; hỏi tone on khỏe.",
+    "examples": [
+      {
+        "text": "Sức khỏe là quan trọng nhất.",
+        "translation": "Health is the most important thing."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.bep-kitchen",
+    "entryType": "word",
+    "lemma": "bếp",
+    "romaji": "bep",
+    "translation": "kitchen / stove",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 440,
+    "register": "neutral",
+    "tags": [
+      "household"
+    ],
+    "naturalMeaning": "The kitchen, or the stove; sắc tone (bếp).",
+    "examples": [
+      {
+        "text": "Mẹ đang nấu ăn trong bếp.",
+        "translation": "Mom is cooking in the kitchen."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.giuong",
+    "entryType": "word",
+    "lemma": "giường",
+    "romaji": "zuong",
+    "translation": "bed",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 420,
+    "register": "neutral",
+    "tags": [
+      "household"
+    ],
+    "naturalMeaning": "A bed; huyền tone (giường).",
+    "examples": [
+      {
+        "text": "Tôi nằm trên giường đọc sách.",
+        "translation": "I lie on the bed reading a book."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tu-lanh",
+    "entryType": "word",
+    "lemma": "tủ lạnh",
+    "romaji": "too laing",
+    "translation": "refrigerator",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 480,
+    "register": "neutral",
+    "tags": [
+      "household"
+    ],
+    "naturalMeaning": "A refrigerator (tủ = cabinet + lạnh = cold).",
+    "examples": [
+      {
+        "text": "Sữa ở trong tủ lạnh.",
+        "translation": "The milk is in the refrigerator."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.cua-so",
+    "entryType": "word",
+    "lemma": "cửa sổ",
+    "romaji": "kuh so",
+    "translation": "window",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 460,
+    "register": "neutral",
+    "tags": [
+      "household"
+    ],
+    "naturalMeaning": "A window (cửa = door + sổ).",
+    "examples": [
+      {
+        "text": "Xin mở cửa sổ ra.",
+        "translation": "Please open the window."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.den-lamp",
+    "entryType": "word",
+    "lemma": "đèn",
+    "romaji": "den",
+    "translation": "lamp / light",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 400,
+    "register": "neutral",
+    "tags": [
+      "household"
+    ],
+    "naturalMeaning": "A lamp or light; huyền tone (đèn); bật đèn = turn on the light.",
+    "examples": [
+      {
+        "text": "Tối rồi, bật đèn lên đi.",
+        "translation": "It's dark, turn on the light."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.chia-khoa",
+    "entryType": "word",
+    "lemma": "chìa khóa",
+    "romaji": "chiaa khwaa",
+    "translation": "key",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 560,
+    "register": "neutral",
+    "tags": [
+      "household"
+    ],
+    "naturalMeaning": "A key.",
+    "examples": [
+      {
+        "text": "Tôi để quên chìa khóa ở nhà.",
+        "translation": "I left my key at home."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.don-dep",
+    "entryType": "word",
+    "lemma": "dọn dẹp",
+    "romaji": "zon zep",
+    "translation": "to clean / tidy up",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 640,
+    "register": "neutral",
+    "tags": [
+      "household"
+    ],
+    "naturalMeaning": "To clean and tidy a space.",
+    "examples": [
+      {
+        "text": "Cuối tuần tôi dọn dẹp nhà cửa.",
+        "translation": "On weekends I tidy up the house."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nau-an",
+    "entryType": "word",
+    "lemma": "nấu ăn",
+    "romaji": "nau an",
+    "translation": "to cook",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 380,
+    "register": "neutral",
+    "tags": [
+      "household",
+      "food-drink"
+    ],
+    "naturalMeaning": "To cook (prepare food).",
+    "examples": [
+      {
+        "text": "Bố tôi nấu ăn rất ngon.",
+        "translation": "My dad cooks very well."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.quan-ao",
+    "entryType": "word",
+    "lemma": "quần áo",
+    "romaji": "kwan ao",
+    "translation": "clothes",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 320,
+    "register": "neutral",
+    "tags": [
+      "clothing"
+    ],
+    "naturalMeaning": "Clothes / clothing (quần = pants + áo = shirt).",
+    "examples": [
+      {
+        "text": "Tôi giặt quần áo vào chủ nhật.",
+        "translation": "I wash clothes on Sunday."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.ao-khoac",
+    "entryType": "word",
+    "lemma": "áo khoác",
+    "romaji": "ao khwaak",
+    "translation": "jacket / coat",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 500,
+    "register": "neutral",
+    "tags": [
+      "clothing"
+    ],
+    "naturalMeaning": "A jacket or coat (worn over clothes).",
+    "examples": [
+      {
+        "text": "Trời lạnh, mặc áo khoác vào.",
+        "translation": "It's cold, put on a jacket."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.giay-shoes",
+    "entryType": "word",
+    "lemma": "giày",
+    "romaji": "zaay",
+    "translation": "shoes",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 380,
+    "register": "neutral",
+    "tags": [
+      "clothing"
+    ],
+    "naturalMeaning": "Shoes; huyền tone (giày). A pair = đôi giày.",
+    "examples": [
+      {
+        "text": "Đôi giày này rất đẹp.",
+        "translation": "This pair of shoes is very nice."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.mu-hat",
+    "entryType": "word",
+    "lemma": "mũ",
+    "romaji": "moo",
+    "translation": "hat",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 520,
+    "register": "neutral",
+    "tags": [
+      "clothing"
+    ],
+    "naturalMeaning": "A hat (Northern; Southern speakers say nón); ngã tone (mũ).",
+    "examples": [
+      {
+        "text": "Đội mũ vào kẻo nắng.",
+        "translation": "Put on a hat or you'll get sunburned."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.kinh-glasses",
+    "entryType": "word",
+    "lemma": "kính",
+    "romaji": "king",
+    "translation": "glasses",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 540,
+    "register": "neutral",
+    "tags": [
+      "clothing"
+    ],
+    "naturalMeaning": "Eyeglasses; also means 'mirror/glass'; sắc tone (kính).",
+    "examples": [
+      {
+        "text": "Tôi đeo kính khi đọc sách.",
+        "translation": "I wear glasses when reading."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.mac-wear",
+    "entryType": "word",
+    "lemma": "mặc",
+    "romaji": "mak",
+    "translation": "to wear (clothes)",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 340,
+    "register": "neutral",
+    "tags": [
+      "clothing"
+    ],
+    "naturalMeaning": "To wear clothes; other verbs are used for hats (đội), shoes (đi).",
+    "examples": [
+      {
+        "text": "Hôm nay cô ấy mặc váy đỏ.",
+        "translation": "Today she wears a red dress."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.dong-ho",
+    "entryType": "word",
+    "lemma": "đồng hồ",
+    "romaji": "dong ho",
+    "translation": "watch / clock",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 440,
+    "register": "neutral",
+    "tags": [
+      "clothing",
+      "daily-life"
+    ],
+    "naturalMeaning": "A watch or a clock.",
+    "examples": [
+      {
+        "text": "Đồng hồ của tôi bị hỏng.",
+        "translation": "My watch is broken."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.vi-because",
+    "entryType": "word",
+    "lemma": "vì",
+    "romaji": "vee",
+    "translation": "because",
+    "partOfSpeech": "conjunction",
+    "cefr": "A2",
+    "frequencyRank": 200,
+    "register": "neutral",
+    "tags": [
+      "connectors",
+      "grammar"
+    ],
+    "naturalMeaning": "Because (introduces a reason); huyền tone (vì).",
+    "examples": [
+      {
+        "text": "Tôi ở nhà vì trời mưa.",
+        "translation": "I stay home because it's raining."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nhung-but",
+    "entryType": "word",
+    "lemma": "nhưng",
+    "romaji": "nyung",
+    "translation": "but",
+    "partOfSpeech": "conjunction",
+    "cefr": "A2",
+    "frequencyRank": 180,
+    "register": "neutral",
+    "tags": [
+      "connectors",
+      "grammar"
+    ],
+    "naturalMeaning": "But / however (contrast).",
+    "examples": [
+      {
+        "text": "Tôi muốn đi nhưng tôi bận.",
+        "translation": "I want to go but I'm busy."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nen-so",
+    "entryType": "word",
+    "lemma": "nên",
+    "romaji": "nen",
+    "translation": "so / therefore",
+    "partOfSpeech": "conjunction",
+    "cefr": "A2",
+    "frequencyRank": 210,
+    "register": "neutral",
+    "tags": [
+      "connectors",
+      "grammar"
+    ],
+    "naturalMeaning": "So / therefore (result); nên also means 'should'.",
+    "examples": [
+      {
+        "text": "Trời mưa nên tôi ở nhà.",
+        "translation": "It's raining, so I stay home."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.neu-if",
+    "entryType": "word",
+    "lemma": "nếu",
+    "romaji": "neu",
+    "translation": "if",
+    "partOfSpeech": "conjunction",
+    "cefr": "A2",
+    "frequencyRank": 220,
+    "register": "neutral",
+    "tags": [
+      "connectors",
+      "grammar"
+    ],
+    "naturalMeaning": "If (condition); often paired with thì.",
+    "examples": [
+      {
+        "text": "Nếu trời đẹp thì tôi sẽ đi chơi.",
+        "translation": "If the weather is nice, I'll go out."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.mac-du",
+    "entryType": "word",
+    "lemma": "mặc dù",
+    "romaji": "mak zoo",
+    "translation": "although / even though",
+    "partOfSpeech": "conjunction",
+    "cefr": "A2",
+    "frequencyRank": 520,
+    "register": "neutral",
+    "tags": [
+      "connectors",
+      "grammar"
+    ],
+    "naturalMeaning": "Although / even though; often paired with nhưng.",
+    "examples": [
+      {
+        "text": "Mặc dù mệt nhưng tôi vẫn đi làm.",
+        "translation": "Although I'm tired, I still go to work."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thi-then",
+    "entryType": "word",
+    "lemma": "thì",
+    "romaji": "thee",
+    "translation": "then / topic marker",
+    "partOfSpeech": "conjunction",
+    "cefr": "A2",
+    "frequencyRank": 170,
+    "register": "neutral",
+    "tags": [
+      "connectors",
+      "grammar"
+    ],
+    "naturalMeaning": "Then / in that case; also marks the topic of a clause; huyền tone (thì).",
+    "examples": [
+      {
+        "text": "Nếu bạn đến thì gọi tôi nhé.",
+        "translation": "If you come, then call me."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hoac-or",
+    "entryType": "word",
+    "lemma": "hoặc",
+    "romaji": "hwak",
+    "translation": "or",
+    "partOfSpeech": "conjunction",
+    "cefr": "A2",
+    "frequencyRank": 320,
+    "register": "neutral",
+    "tags": [
+      "connectors",
+      "grammar"
+    ],
+    "naturalMeaning": "Or (in statements); questions often use hay instead.",
+    "examples": [
+      {
+        "text": "Bạn uống cà phê hoặc trà?",
+        "translation": "Do you drink coffee or tea?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tuy-nhien",
+    "entryType": "word",
+    "lemma": "tuy nhiên",
+    "romaji": "tui nyeen",
+    "translation": "however",
+    "partOfSpeech": "conjunction",
+    "cefr": "A2",
+    "frequencyRank": 600,
+    "register": "neutral",
+    "tags": [
+      "connectors",
+      "grammar"
+    ],
+    "naturalMeaning": "However (formal-ish sentence connector).",
+    "examples": [
+      {
+        "text": "Trời rất lạnh; tuy nhiên tôi vẫn đi bơi.",
+        "translation": "It's very cold; however, I still go swimming."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hon-more",
+    "entryType": "word",
+    "lemma": "hơn",
+    "romaji": "huhn",
+    "translation": "more (than)",
+    "partOfSpeech": "adverb",
+    "cefr": "A2",
+    "frequencyRank": 190,
+    "register": "neutral",
+    "tags": [
+      "comparatives",
+      "grammar"
+    ],
+    "naturalMeaning": "Marks comparison 'more/-er than'; placed after the adjective.",
+    "examples": [
+      {
+        "text": "Anh ấy cao hơn tôi.",
+        "translation": "He is taller than me."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.kem-less",
+    "entryType": "word",
+    "lemma": "kém",
+    "romaji": "kem",
+    "translation": "less / worse (than)",
+    "partOfSpeech": "adverb",
+    "cefr": "A2",
+    "frequencyRank": 620,
+    "register": "neutral",
+    "tags": [
+      "comparatives",
+      "grammar"
+    ],
+    "naturalMeaning": "Less / inferior; kém can also mean 'weak/poor at'; sắc tone (kém).",
+    "examples": [
+      {
+        "text": "Món này ngon kém món kia.",
+        "translation": "This dish is less tasty than that one."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nhat-most",
+    "entryType": "word",
+    "lemma": "nhất",
+    "romaji": "nyat",
+    "translation": "most / -est (superlative)",
+    "partOfSpeech": "adverb",
+    "cefr": "A2",
+    "frequencyRank": 210,
+    "register": "neutral",
+    "tags": [
+      "comparatives",
+      "grammar"
+    ],
+    "naturalMeaning": "Superlative marker placed after the adjective; sắc tone (nhất).",
+    "examples": [
+      {
+        "text": "Đây là nhà hàng ngon nhất.",
+        "translation": "This is the most delicious restaurant."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.bang-equal",
+    "entryType": "word",
+    "lemma": "bằng",
+    "romaji": "bang",
+    "translation": "equal to / as ... as",
+    "partOfSpeech": "adverb",
+    "cefr": "A2",
+    "frequencyRank": 300,
+    "register": "neutral",
+    "tags": [
+      "comparatives",
+      "grammar"
+    ],
+    "naturalMeaning": "Equal comparison 'as...as'; bằng also means 'by (means of)'.",
+    "examples": [
+      {
+        "text": "Em cao bằng anh.",
+        "translation": "You are as tall as me."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.cang-more",
+    "entryType": "word",
+    "lemma": "càng",
+    "romaji": "kaang",
+    "translation": "the more ... (the more)",
+    "partOfSpeech": "adverb",
+    "cefr": "A2",
+    "frequencyRank": 560,
+    "register": "neutral",
+    "tags": [
+      "comparatives",
+      "grammar"
+    ],
+    "naturalMeaning": "Used as càng...càng... = 'the more...the more'; huyền tone (càng).",
+    "examples": [
+      {
+        "text": "Càng học càng thấy khó.",
+        "translation": "The more I study, the harder it feels."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.giup",
+    "entryType": "word",
+    "lemma": "giúp",
+    "romaji": "zoop",
+    "translation": "to help",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 240,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "daily-life"
+    ],
+    "naturalMeaning": "To help; giúp đỡ is a fuller form; sắc tone (giúp).",
+    "examples": [
+      {
+        "text": "Bạn có thể giúp tôi không?",
+        "translation": "Can you help me?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.doi-wait",
+    "entryType": "word",
+    "lemma": "đợi",
+    "romaji": "duhy",
+    "translation": "to wait",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 280,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "daily-life"
+    ],
+    "naturalMeaning": "To wait (for someone/something); nặng tone (đợi); chờ is a synonym.",
+    "examples": [
+      {
+        "text": "Xin đợi tôi một chút.",
+        "translation": "Please wait for me a moment."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.quen-forget",
+    "entryType": "word",
+    "lemma": "quên",
+    "romaji": "kwen",
+    "translation": "to forget",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 300,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "daily-life"
+    ],
+    "naturalMeaning": "To forget; ngang tone (quên).",
+    "examples": [
+      {
+        "text": "Tôi quên mang ô rồi.",
+        "translation": "I forgot to bring an umbrella."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nho-remember",
+    "entryType": "word",
+    "lemma": "nhớ",
+    "romaji": "nyuh",
+    "translation": "to remember / to miss",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 260,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "daily-life"
+    ],
+    "naturalMeaning": "To remember, and also to miss someone; sắc tone (nhớ).",
+    "examples": [
+      {
+        "text": "Tôi nhớ nhà.",
+        "translation": "I miss home."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.quyet-dinh",
+    "entryType": "word",
+    "lemma": "quyết định",
+    "romaji": "kweet ding",
+    "translation": "to decide / decision",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 480,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "daily-life"
+    ],
+    "naturalMeaning": "To decide; also the noun 'decision'.",
+    "examples": [
+      {
+        "text": "Tôi đã quyết định nghỉ việc.",
+        "translation": "I have decided to quit the job."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thu-try",
+    "entryType": "word",
+    "lemma": "thử",
+    "romaji": "thuh",
+    "translation": "to try / try on",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 380,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "daily-life"
+    ],
+    "naturalMeaning": "To try (doing something), or to try on clothes; hỏi tone (thử).",
+    "examples": [
+      {
+        "text": "Tôi muốn thử cái áo này.",
+        "translation": "I want to try on this shirt."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.mang-bring",
+    "entryType": "word",
+    "lemma": "mang",
+    "romaji": "maang",
+    "translation": "to bring / carry",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 320,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "daily-life"
+    ],
+    "naturalMeaning": "To bring or carry something; ngang tone (mang).",
+    "examples": [
+      {
+        "text": "Nhớ mang theo áo mưa.",
+        "translation": "Remember to bring a raincoat."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.gui-send",
+    "entryType": "word",
+    "lemma": "gửi",
+    "romaji": "guhy",
+    "translation": "to send",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 340,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "daily-life"
+    ],
+    "naturalMeaning": "To send (a letter, message, or item); hỏi tone (gửi).",
+    "examples": [
+      {
+        "text": "Tôi gửi quà cho bạn.",
+        "translation": "I send a gift to you."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.dung-use",
+    "entryType": "word",
+    "lemma": "dùng",
+    "romaji": "zoong",
+    "translation": "to use",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 280,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "daily-life"
+    ],
+    "naturalMeaning": "To use; also a polite verb for 'to eat/drink'; huyền tone (dùng).",
+    "examples": [
+      {
+        "text": "Tôi dùng máy tính để làm việc.",
+        "translation": "I use a computer to work."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.muon-borrow",
+    "entryType": "word",
+    "lemma": "mượn",
+    "romaji": "muhn",
+    "translation": "to borrow (objects)",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 520,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "daily-life"
+    ],
+    "naturalMeaning": "To borrow an object (for money, use vay); nặng tone (mượn).",
+    "examples": [
+      {
+        "text": "Cho tôi mượn cái bút.",
+        "translation": "Lend me the pen."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tim-find",
+    "entryType": "word",
+    "lemma": "tìm",
+    "romaji": "tim",
+    "translation": "to look for / find",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 300,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "daily-life"
+    ],
+    "naturalMeaning": "To look for or search for; huyền tone (tìm).",
+    "examples": [
+      {
+        "text": "Tôi đang tìm chìa khóa.",
+        "translation": "I am looking for my key."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.chuan-bi",
+    "entryType": "word",
+    "lemma": "chuẩn bị",
+    "romaji": "chwan bee",
+    "translation": "to prepare / get ready",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 440,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "daily-life"
+    ],
+    "naturalMeaning": "To prepare or get ready.",
+    "examples": [
+      {
+        "text": "Tôi chuẩn bị cho kỳ thi.",
+        "translation": "I prepare for the exam."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thay-doi",
+    "entryType": "word",
+    "lemma": "thay đổi",
+    "romaji": "thaay doi",
+    "translation": "to change",
+    "partOfSpeech": "verb",
+    "cefr": "A2",
+    "frequencyRank": 500,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "daily-life"
+    ],
+    "naturalMeaning": "To change / alter; hỏi tone on đổi.",
+    "examples": [
+      {
+        "text": "Thời tiết thay đổi nhanh.",
+        "translation": "The weather changes quickly."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.cai-classifier",
+    "entryType": "word",
+    "lemma": "cái",
+    "romaji": "kaai",
+    "translation": "classifier (general, inanimate)",
+    "partOfSpeech": "classifier",
+    "cefr": "A2",
+    "frequencyRank": 80,
+    "register": "neutral",
+    "tags": [
+      "classifiers",
+      "grammar"
+    ],
+    "naturalMeaning": "The default classifier for inanimate objects; sắc tone (cái). Also 'thing'.",
+    "examples": [
+      {
+        "text": "Cho tôi một cái bàn.",
+        "translation": "Give me one table."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.con-classifier",
+    "entryType": "word",
+    "lemma": "con",
+    "romaji": "kon",
+    "translation": "classifier (animals)",
+    "partOfSpeech": "classifier",
+    "cefr": "A2",
+    "frequencyRank": 85,
+    "register": "neutral",
+    "tags": [
+      "classifiers",
+      "grammar"
+    ],
+    "naturalMeaning": "Classifier for animals (and some other nouns like con dao, con đường); ngang tone.",
+    "examples": [
+      {
+        "text": "Nhà tôi có hai con mèo.",
+        "translation": "My house has two cats."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nguoi-classifier",
+    "entryType": "word",
+    "lemma": "người",
+    "romaji": "nguhy",
+    "translation": "classifier (people) / person",
+    "partOfSpeech": "classifier",
+    "cefr": "A2",
+    "frequencyRank": 70,
+    "register": "neutral",
+    "tags": [
+      "classifiers",
+      "grammar"
+    ],
+    "naturalMeaning": "Means 'person' and is the classifier for people; huyền tone (người).",
+    "examples": [
+      {
+        "text": "Có ba người đang chờ.",
+        "translation": "There are three people waiting."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.chiec-classifier",
+    "entryType": "word",
+    "lemma": "chiếc",
+    "romaji": "chieek",
+    "translation": "classifier (vehicles/single items)",
+    "partOfSpeech": "classifier",
+    "cefr": "A2",
+    "frequencyRank": 260,
+    "register": "neutral",
+    "tags": [
+      "classifiers",
+      "grammar"
+    ],
+    "naturalMeaning": "Classifier for vehicles and single objects (chiếc xe, chiếc giày); sắc tone.",
+    "examples": [
+      {
+        "text": "Tôi mua một chiếc xe máy.",
+        "translation": "I buy a motorbike."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.qua-classifier",
+    "entryType": "word",
+    "lemma": "quả",
+    "romaji": "kwaa",
+    "translation": "classifier (fruit/round things)",
+    "partOfSpeech": "classifier",
+    "cefr": "A2",
+    "frequencyRank": 240,
+    "register": "neutral",
+    "tags": [
+      "classifiers",
+      "grammar"
+    ],
+    "naturalMeaning": "Northern classifier for fruits and round objects (Southern uses trái); hỏi tone (quả).",
+    "examples": [
+      {
+        "text": "Tôi ăn một quả táo.",
+        "translation": "I eat one apple."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.cay-classifier",
+    "entryType": "word",
+    "lemma": "cây",
+    "romaji": "kaay",
+    "translation": "classifier (long/plant things) / tree",
+    "partOfSpeech": "classifier",
+    "cefr": "A2",
+    "frequencyRank": 250,
+    "register": "neutral",
+    "tags": [
+      "classifiers",
+      "grammar"
+    ],
+    "naturalMeaning": "Means 'tree/plant' and classifies long thin objects (cây bút, cây cầu); ngang tone.",
+    "examples": [
+      {
+        "text": "Cho tôi một cây bút.",
+        "translation": "Give me one pen."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.phong-van",
+    "entryType": "word",
+    "lemma": "phỏng vấn",
+    "romaji": "fong vun",
+    "translation": "interview",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 1500,
+    "register": "neutral",
+    "tags": [
+      "work"
+    ],
+    "naturalMeaning": "A job or press interview (hỏi).",
+    "examples": [
+      {
+        "text": "phỏng vấn",
+        "romaji": "fong vun",
+        "translation": "interview"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.kinh-nghiem",
+    "entryType": "word",
+    "lemma": "kinh nghiệm",
+    "romaji": "kin ngiem",
+    "translation": "experience",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 1500,
+    "register": "neutral",
+    "tags": [
+      "work"
+    ],
+    "naturalMeaning": "Work or life experience (nặng).",
+    "examples": [
+      {
+        "text": "kinh nghiệm",
+        "romaji": "kin ngiem",
+        "translation": "experience"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.bao-hiem",
+    "entryType": "word",
+    "lemma": "bảo hiểm",
+    "romaji": "bao hiem",
+    "translation": "insurance",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 1500,
+    "register": "neutral",
+    "tags": [
+      "work"
+    ],
+    "naturalMeaning": "Health or travel insurance (hỏi, hỏi).",
+    "examples": [
+      {
+        "text": "bảo hiểm",
+        "romaji": "bao hiem",
+        "translation": "insurance"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thue-tax",
+    "entryType": "word",
+    "lemma": "thuế",
+    "romaji": "tweh",
+    "translation": "tax",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 1500,
+    "register": "neutral",
+    "tags": [
+      "work"
+    ],
+    "naturalMeaning": "Money paid to the state (sắc).",
+    "examples": [
+      {
+        "text": "thuế",
+        "romaji": "tweh",
+        "translation": "tax"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.loi-nhuan",
+    "entryType": "word",
+    "lemma": "lợi nhuận",
+    "romaji": "loi nyuun",
+    "translation": "profit",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 1500,
+    "register": "neutral",
+    "tags": [
+      "work"
+    ],
+    "naturalMeaning": "Money gained after costs (nặng, nặng).",
+    "examples": [
+      {
+        "text": "lợi nhuận",
+        "romaji": "loi nyuun",
+        "translation": "profit"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hop-dong",
+    "entryType": "word",
+    "lemma": "hợp đồng",
+    "romaji": "hop dong",
+    "translation": "contract",
+    "partOfSpeech": "noun",
+    "cefr": "A2",
+    "frequencyRank": 1500,
+    "register": "neutral",
+    "tags": [
+      "work"
+    ],
+    "naturalMeaning": "A formal written agreement (nặng, huyền).",
+    "examples": [
+      {
+        "text": "hợp đồng",
+        "romaji": "hop dong",
+        "translation": "contract"
+      }
+    ]
+  }
+]

@@ -1,0 +1,166 @@
+[
+  { "schemaVersion": 1, "key": "lesson.a1.salutations", "lessonType": "vocabulary", "title": "Greetings & courtesy", "cefr": "A1", "sequence": 1, "body": { "steps": [
+    { "type": "teach", "vocabRefs": ["vocab.bonjour", "vocab.merci", "phrase.sil-vous-plait", "phrase.ca-va"] },
+    { "type": "quiz", "prompt": "You walk into a shop at 10 a.m. What MUST you say first?", "answer": "Bonjour ! (skipping it reads as rude)" },
+    { "type": "quiz", "prompt": "Greet a friend and ask how they are.", "answer": "Salut, ça va ?" },
+    { "type": "quiz", "prompt": "It's 8 p.m. and you're arriving at a dinner. Greeting?", "answer": "Bonsoir !" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.cafe-vocab", "lessonType": "vocabulary", "title": "Café & boulangerie survival", "cefr": "A1", "sequence": 2, "body": { "steps": [
+    { "type": "teach", "vocabRefs": ["vocab.cafe", "vocab.baguette", "vocab.croissant", "phrase.je-voudrais", "phrase.laddition-svp"] },
+    { "type": "quiz", "prompt": "Order an espresso politely.", "answer": "Un café, s'il vous plaît. / Je voudrais un café, s'il vous plaît." },
+    { "type": "quiz", "prompt": "What do you get if you order just 'un café' ?", "answer": "An espresso — for milk, ask for un café crème." },
+    { "type": "quiz", "prompt": "Ask for the check.", "answer": "L'addition, s'il vous plaît !" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.etre-avoir", "lessonType": "grammar", "title": "être and avoir — the two engines", "cefr": "A1", "sequence": 3, "body": { "steps": [
+    { "type": "quiz", "prompt": "'I am tired': Je ___ fatigué.", "answer": "suis" },
+    { "type": "quiz", "prompt": "'I am 30 years old' — être or avoir?", "answer": "avoir: J'ai trente ans." },
+    { "type": "quiz", "prompt": "'We are hungry' (spoken, with on):", "answer": "On a faim." },
+    { "type": "quiz", "prompt": "'You're right' (to a friend):", "answer": "Tu as raison." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.articles", "lessonType": "grammar", "title": "Gender, articles, and the partitive", "cefr": "A1", "sequence": 4, "body": { "steps": [
+    { "type": "quiz", "prompt": "'I'd like some bread': Je voudrais ___ pain.", "answer": "du" },
+    { "type": "quiz", "prompt": "'I like cheese' (in general): J'aime ___ fromage.", "answer": "le" },
+    { "type": "quiz", "prompt": "'There's no more milk': Il n'y a plus ___ lait.", "answer": "de" },
+    { "type": "quiz", "prompt": "'the water' with the right article:", "answer": "l'eau" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.boulangerie-listening", "lessonType": "listening_exercise", "title": "At the bakery (listening)", "cefr": "A1", "sequence": 5, "dialogueRef": "dialogue.boulangerie", "body": { "steps": [
+    { "type": "quiz", "prompt": "What kind of baguette does Emma ask for?", "answer": "Une tradition, bien cuite (well-baked artisanal baguette)." },
+    { "type": "quiz", "prompt": "What does 'Et avec ceci ?' mean?", "answer": "'Anything else?' — the standard shop question." },
+    { "type": "quiz", "prompt": "How much does she pay?", "answer": "Three euros sixty (trois euros soixante)." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.cafe-listening", "lessonType": "listening_exercise", "title": "Café terrace (listening)", "cefr": "A1", "sequence": 6, "dialogueRef": "dialogue.cafe-terrasse", "body": { "steps": [
+    { "type": "quiz", "prompt": "What does Marc order?", "answer": "Un café crème et un verre d'eau — a coffee with milk and a glass of water." },
+    { "type": "quiz", "prompt": "How does he get the waiter's attention for the bill?", "answer": "'Excusez-moi, l'addition, s'il vous plaît !'" },
+    { "type": "quiz", "prompt": "Is the exchange in tu or vous — and why?", "answer": "Vous — customer/waiter interactions stay formal." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.directions-listening", "lessonType": "listening_exercise", "title": "Asking the way (listening)", "cefr": "A1", "sequence": 7, "dialogueRef": "dialogue.demander-chemin", "body": { "steps": [
+    { "type": "quiz", "prompt": "What is David looking for?", "answer": "La gare de Lyon (the Gare de Lyon train station)." },
+    { "type": "quiz", "prompt": "Summarize the route he's given.", "answer": "Straight ahead, then left at the traffic light — five minutes on foot." },
+    { "type": "quiz", "prompt": "What smart move does David make after hearing the directions?", "answer": "He repeats them back to confirm ('Donc tout droit, puis à gauche au feu. C'est ça ?')." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.metro-listening", "lessonType": "listening_exercise", "title": "Metro tickets (listening)", "cefr": "A1", "sequence": 8, "dialogueRef": "dialogue.metro-tickets", "body": { "steps": [
+    { "type": "quiz", "prompt": "What does the agent suggest instead of single tickets?", "answer": "Un carnet de dix — a pack of ten, better value." },
+    { "type": "quiz", "prompt": "Which line and stop for Montmartre?", "answer": "Line 12 direction Mairie d'Aubervilliers, get off at Abbesses." },
+    { "type": "quiz", "prompt": "What does 'c'est plus intéressant' mean about a price?", "answer": "It's a better deal — not 'more interesting'." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.marche-listening", "lessonType": "listening_exercise", "title": "At the market (listening)", "cefr": "A1", "sequence": 9, "dialogueRef": "dialogue.marche", "body": { "steps": [
+    { "type": "quiz", "prompt": "What two things does Sophie buy besides basil?", "answer": "Strawberries (une barquette de fraises) and a kilo of tomatoes." },
+    { "type": "quiz", "prompt": "What does the vendor ask about the tomatoes?", "answer": "Whether they're for salad or for cooking." },
+    { "type": "quiz", "prompt": "What's the total?", "answer": "Eight euros twenty." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.hotel-listening", "lessonType": "listening_exercise", "title": "Hotel check-in (listening)", "cefr": "A1", "sequence": 10, "dialogueRef": "dialogue.hotel-checkin", "body": { "steps": [
+    { "type": "quiz", "prompt": "When is breakfast served, and where?", "answer": "From 7 to 10, on the ground floor (rez-de-chaussée)." },
+    { "type": "quiz", "prompt": "Room 302 is on which floor, French-style?", "answer": "Le troisième étage — which is the 4th floor by US counting." },
+    { "type": "quiz", "prompt": "Where is the wifi code?", "answer": "On the key card." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.pharmacie-listening", "lessonType": "listening_exercise", "title": "At the pharmacy (listening)", "cefr": "A2", "sequence": 11, "dialogueRef": "dialogue.pharmacie", "body": { "steps": [
+    { "type": "quiz", "prompt": "What symptoms does James describe, and for how long?", "answer": "Sore throat and coughing, for three days (depuis trois jours)." },
+    { "type": "quiz", "prompt": "What does 'sans ordonnance' mean?", "answer": "Over the counter — without a prescription." },
+    { "type": "quiz", "prompt": "What's the dosage instruction?", "answer": "Three times a day, after meals." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.weekend-listening", "lessonType": "listening_exercise", "title": "Weekend recap (listening — passé composé)", "cefr": "A2", "sequence": 12, "dialogueRef": "dialogue.week-end-recap", "body": { "steps": [
+    { "type": "quiz", "prompt": "What did Lucas do on Saturday?", "answer": "Went to the market with Sarah, then saw the new Dupieux film in the evening." },
+    { "type": "quiz", "prompt": "Why does Amélie say 'on est allés' but 'j'ai dormi'?", "answer": "aller takes être in the passé composé; dormir takes avoir." },
+    { "type": "quiz", "prompt": "What does 'j'en ai mangé six' mean, and what does 'en' replace?", "answer": "'I ate six of them' — en stands for the crêpes." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.sncf-listening", "lessonType": "listening_exercise", "title": "Train station (listening)", "cefr": "A2", "sequence": 13, "dialogueRef": "dialogue.sncf", "body": { "steps": [
+    { "type": "quiz", "prompt": "What kind of ticket does Sam buy?", "answer": "Un aller-retour (round trip) to Marseille." },
+    { "type": "quiz", "prompt": "When is the platform announced?", "answer": "Twenty minutes before departure." },
+    { "type": "quiz", "prompt": "What must you do with a paper ticket before boarding?", "answer": "Composter it — validate it in the machine." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.soiree-listening", "lessonType": "listening_exercise", "title": "At a party (listening — informal register)", "cefr": "A2", "sequence": 14, "dialogueRef": "dialogue.soiree-rencontre", "body": { "steps": [
+    { "type": "quiz", "prompt": "What is Julie's job and how new is it?", "answer": "Graphic designer — she just started ('je viens de commencer'), her first job." },
+    { "type": "quiz", "prompt": "List three informal words from the dialogue and their neutral versions.", "answer": "bosser→travailler, boulot→travail, grave→vraiment/totalement (also carrément→absolument)." },
+    { "type": "quiz", "prompt": "What construction is 'je viens de commencer'?", "answer": "venir de + infinitive — 'to have just done'." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.intro-writing", "lessonType": "writing_prompt", "title": "Introduce yourself", "cefr": "A1", "sequence": 15, "body": { "steps": [
+    { "type": "quiz", "prompt": "Write two sentences: your name and where you're from.", "answer": "e.g. Je m'appelle Alex. Je viens des États-Unis." },
+    { "type": "quiz", "prompt": "Add where you live now and since when (depuis + present).", "answer": "e.g. J'habite à Paris depuis six mois." },
+    { "type": "quiz", "prompt": "Add your age.", "answer": "e.g. J'ai vingt-huit ans." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.commande-writing", "lessonType": "writing_prompt", "title": "Write your café order", "cefr": "A1", "sequence": 16, "body": { "steps": [
+    { "type": "quiz", "prompt": "Order a coffee and a croissant politely, in one sentence.", "answer": "e.g. Bonjour, je voudrais un café et un croissant, s'il vous plaît." },
+    { "type": "quiz", "prompt": "Say you'd like the check.", "answer": "L'addition, s'il vous plaît." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.famille-writing", "lessonType": "writing_prompt", "title": "Describe your family", "cefr": "A1", "sequence": 17, "body": { "steps": [
+    { "type": "quiz", "prompt": "Write 2-3 sentences about your family with possessives (mon/ma/mes).", "answer": "e.g. J'ai un frère et une sœur. Mon frère habite à Lyon. Ma sœur est étudiante." },
+    { "type": "quiz", "prompt": "Say who you look like — 'je ressemble à…'.", "answer": "e.g. Je ressemble à ma mère." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.journee-writing", "lessonType": "writing_prompt", "title": "Your daily routine", "cefr": "A1", "sequence": 18, "body": { "steps": [
+    { "type": "quiz", "prompt": "Describe your morning with two reflexive verbs.", "answer": "e.g. Je me lève à sept heures. Je me douche et je prends un café." },
+    { "type": "quiz", "prompt": "Say what time you start and finish work.", "answer": "e.g. Je commence à neuf heures et je finis à dix-huit heures." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.meteo-writing", "lessonType": "writing_prompt", "title": "Weather small talk", "cefr": "A1", "sequence": 19, "body": { "steps": [
+    { "type": "quiz", "prompt": "Write today's weather in two ways (il fait… / il y a…).", "answer": "e.g. Il fait beau et chaud. / Il y a du soleil." },
+    { "type": "quiz", "prompt": "Complain about yesterday's rain (passé composé of pleuvoir).", "answer": "Il a plu toute la journée hier." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.weekend-writing", "lessonType": "writing_prompt", "title": "What did you do this weekend?", "cefr": "A2", "sequence": 20, "body": { "steps": [
+    { "type": "quiz", "prompt": "Write three sentences in passé composé: one with avoir, one with être, one reflexive.", "answer": "e.g. J'ai vu un film. Je suis allé(e) au marché. Je me suis reposé(e)." },
+    { "type": "quiz", "prompt": "Add a background description with c'était or il faisait.", "answer": "e.g. C'était super. / Il faisait très beau." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.projets-writing", "lessonType": "writing_prompt", "title": "Your plans (futur proche)", "cefr": "A2", "sequence": 21, "body": { "steps": [
+    { "type": "quiz", "prompt": "Write three plans for next week with aller + infinitive.", "answer": "e.g. Je vais visiter un musée. On va dîner chez des amis. Je vais commencer un nouveau livre." },
+    { "type": "quiz", "prompt": "Add one negative plan.", "answer": "e.g. Je ne vais pas travailler dimanche." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.message-ami-writing", "lessonType": "writing_prompt", "title": "Text a friend to make plans", "cefr": "A2", "sequence": 22, "body": { "steps": [
+    { "type": "quiz", "prompt": "Write a casual text proposing dinner tonight (use 'ça te dit').", "answer": "e.g. Salut ! Ça te dit un resto ce soir ? Vers 20h ?" },
+    { "type": "quiz", "prompt": "Confirm the plan the casual way.", "answer": "Ça marche ! À toute à l'heure." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.plainte-writing", "lessonType": "writing_prompt", "title": "A polite complaint", "cefr": "A2", "sequence": 23, "body": { "steps": [
+    { "type": "quiz", "prompt": "Your order arrived cold. Complain politely to the waiter.", "answer": "e.g. Excusez-moi, mais mon plat est froid. Vous pouvez le réchauffer, s'il vous plaît ?" },
+    { "type": "quiz", "prompt": "Ask for a refund for a delayed train, formally.", "answer": "e.g. Bonjour, mon train a eu quarante minutes de retard. Je voudrais demander un remboursement." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.appart-writing", "lessonType": "writing_prompt", "title": "Describe your dream apartment", "cefr": "A2", "sequence": 24, "body": { "steps": [
+    { "type": "quiz", "prompt": "Describe an apartment: rooms, floor, neighborhood (3 sentences).", "answer": "e.g. C'est un deux-pièces au troisième étage. Il y a une grande cuisine. Le quartier est très vivant." },
+    { "type": "quiz", "prompt": "Say how much the rent is.", "answer": "e.g. Le loyer est de neuf cents euros par mois, charges comprises." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.boulangerie-roleplay", "lessonType": "roleplay", "title": "You're at the bakery", "cefr": "A1", "sequence": 25, "dialogueRef": "dialogue.boulangerie", "body": { "steps": [
+    { "type": "quiz", "prompt": "Greet the baker and order a baguette and two croissants.", "answer": "Bonjour ! Une baguette et deux croissants, s'il vous plaît." },
+    { "type": "quiz", "prompt": "The baker asks 'Et avec ceci ?' — close the order.", "answer": "C'est tout, merci." },
+    { "type": "quiz", "prompt": "Pay and leave politely.", "answer": "Voilà. Merci, bonne journée !" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.directions-roleplay", "lessonType": "roleplay", "title": "You're lost in Paris", "cefr": "A1", "sequence": 26, "dialogueRef": "dialogue.demander-chemin", "body": { "steps": [
+    { "type": "quiz", "prompt": "Stop a passerby politely and say you're looking for the station.", "answer": "Excusez-moi, madame/monsieur, je cherche la gare." },
+    { "type": "quiz", "prompt": "You didn't catch the directions — ask them to repeat slowly.", "answer": "Pardon, vous pouvez répéter plus lentement, s'il vous plaît ?" },
+    { "type": "quiz", "prompt": "Repeat the route back to confirm: straight, then right.", "answer": "Donc tout droit, puis à droite. C'est ça ?" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.restaurant-roleplay", "lessonType": "roleplay", "title": "Dinner reservation and ordering", "cefr": "A2", "sequence": 27, "dialogueRef": "dialogue.restaurant", "body": { "steps": [
+    { "type": "quiz", "prompt": "Announce your reservation for two under your name.", "answer": "Bonsoir, j'ai réservé une table pour deux au nom de [nom]." },
+    { "type": "quiz", "prompt": "Ask the waiter what they recommend.", "answer": "Qu'est-ce que vous me conseillez ?" },
+    { "type": "quiz", "prompt": "Order the special and a bottle of red.", "answer": "Le plat du jour pour moi, et une bouteille de rouge, s'il vous plaît." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.soiree-roleplay", "lessonType": "roleplay", "title": "Meeting someone at a party", "cefr": "A2", "sequence": 28, "dialogueRef": "dialogue.soiree-rencontre", "body": { "steps": [
+    { "type": "quiz", "prompt": "Introduce yourself the casual way and ask how they know the host.", "answer": "Salut, moi c'est [nom] ! Tu connais Léa comment ?" },
+    { "type": "quiz", "prompt": "They ask what you do — answer and bounce it back.", "answer": "Je travaille dans [domaine]. Et toi, tu fais quoi dans la vie ?" },
+    { "type": "quiz", "prompt": "Wrap up warmly and suggest exchanging numbers.", "answer": "C'était super de discuter ! On échange nos numéros ?" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.medecin-roleplay", "lessonType": "roleplay", "title": "At the doctor's", "cefr": "A2", "sequence": 29, "dialogueRef": "dialogue.chez-le-medecin", "body": { "steps": [
+    { "type": "quiz", "prompt": "Describe your symptoms: headache since yesterday, badly slept.", "answer": "J'ai mal à la tête depuis hier, et j'ai mal dormi." },
+    { "type": "quiz", "prompt": "Ask if you need a prescription.", "answer": "Il me faut une ordonnance ?" },
+    { "type": "quiz", "prompt": "Ask how much you owe, formally.", "answer": "Je vous dois combien ?" }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a1.nombres-drill", "lessonType": "translation_drill", "title": "Numbers under fire: prices and times", "cefr": "A1", "sequence": 30, "body": { "steps": [
+    { "type": "quiz", "prompt": "Say €3.60 the way the baker does.", "answer": "Trois euros soixante." },
+    { "type": "quiz", "prompt": "Say 80 — the famous one.", "answer": "Quatre-vingts." },
+    { "type": "quiz", "prompt": "Say 95.", "answer": "Quatre-vingt-quinze." },
+    { "type": "quiz", "prompt": "'The train leaves at 6:45 p.m.' (24h clock)", "answer": "Le train part à dix-huit heures quarante-cinq." },
+    { "type": "quiz", "prompt": "'It's €17.35.'", "answer": "Ça fait dix-sept euros trente-cinq." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.dialogue-analysis-bises", "lessonType": "dialogue_analysis", "title": "Decoding the bise dialogue", "cefr": "A2", "sequence": 31, "dialogueRef": "dialogue.bises-etiquette", "body": { "steps": [
+    { "type": "quiz", "prompt": "How many bises are standard in Paris, and which cheek first?", "answer": "Two — usually starting right, but follow the other person." },
+    { "type": "quiz", "prompt": "When is a handshake expected instead?", "answer": "At work / professional settings, except with close colleagues." },
+    { "type": "quiz", "prompt": "What does 'le mieux, c'est de suivre l'autre' teach grammatically?", "answer": "The pattern 'le mieux, c'est de + infinitive' — 'the best thing is to…'." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.slang-verlan", "lessonType": "slang_breakdown", "title": "Verlan starter pack", "cefr": "A2", "sequence": 32, "body": { "steps": [
+    { "type": "quiz", "prompt": "What is 'meuf' the verlan of, and what does it mean?", "answer": "femme — girl/girlfriend." },
+    { "type": "quiz", "prompt": "'C'était un truc de ouf !' — decode it.", "answer": "'It was an insane thing!' — ouf is verlan of fou (crazy), here positive." },
+    { "type": "quiz", "prompt": "Your friend calls the metro strike 'relou'. Meaning and origin?", "answer": "Annoying/a pain — verlan of lourd (heavy)." },
+    { "type": "quiz", "prompt": "Should you invent your own verlan words?", "answer": "No — real verlan is a fixed conventional set; learn the classics, don't generate new ones." }
+  ] } },
+  { "schemaVersion": 1, "key": "lesson.a2.slang-putain", "lessonType": "slang_breakdown", "title": "putain, merde & friends — calibrating French swearing", "cefr": "A2", "sequence": 33, "body": { "steps": [
+    { "type": "quiz", "prompt": "Why can 'putain !' express both fury and delight?", "answer": "It's fully detached from its literal meaning — pure exclamation, tone decides everything." },
+    { "type": "quiz", "prompt": "Rank by severity: mince, ta gueule, merde.", "answer": "mince (1) < merde (3) < ta gueule (5)." },
+    { "type": "quiz", "prompt": "Which of these should a learner produce, and which only recognize?", "answer": "Produce: mince, merde, putain (as exclamations, informal company). Recognize-only: ta gueule, salaud/salope." },
+    { "type": "quiz", "prompt": "What's the polite substitute family for putain/merde?", "answer": "punaise, purée, mince, zut — the minced oaths." }
+  ] } }
+]

@@ -49,6 +49,23 @@ interface ReviewDao {
 
     @Query("SELECT COUNT(*) FROM review_items WHERE packId = :packId AND lastReviewedAtMillis IS NOT NULL")
     suspend fun countReviewed(packId: String): Int
+
+    /** Cards whose most recent review landed at/after [since] — drives the "reviewed today" goal. */
+    @Query("SELECT COUNT(*) FROM review_items WHERE packId = :packId AND lastReviewedAtMillis >= :since")
+    suspend fun countReviewedSince(packId: String, since: Long): Int
+
+    /** Every tracked card, across all packs — the push side of cloud sync. */
+    @Query("SELECT * FROM review_items")
+    suspend fun listAll(): List<ReviewItem>
+
+    /** Every review timestamp for a pack — bucketed by calendar day in Kotlin to drive the streak
+     *  tracker (day-of-week dots, consecutive-day count). */
+    @Query("SELECT lastReviewedAtMillis FROM review_items WHERE packId = :packId AND lastReviewedAtMillis IS NOT NULL")
+    suspend fun listReviewedMillis(packId: String): List<Long>
+
+    /** Replace local rows with cloud winners (used by the pull side of sync). */
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun upsertAll(items: List<ReviewItem>)
 }
 
 @Database(entities = [ReviewItem::class], version = 1, exportSchema = false)

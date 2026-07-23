@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Speech bubble with three dots — the conversation mark, sized to sit inside the adaptive-icon
+     safe zone (content kept within the centered ~72dp region so the launcher mask never clips it). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- bubble body (rounded rect) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,32 H74 A11,11 0 0 1 85,43 V61 A11,11 0 0 1 74,72 H34 A11,11 0 0 1 23,61 V43 A11,11 0 0 1 34,32 Z" />
+    <!-- tail -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,70 L36,84 L50,70 Z" />
+    <!-- three dots -->
+    <path
+        android:fillColor="#4B4BE0"
+        android:pathData="M40,52 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 Z" />
+    <path
+        android:fillColor="#4B4BE0"
+        android:pathData="M50,52 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 Z" />
+    <path
+        android:fillColor="#4B4BE0"
+        android:pathData="M60,52 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 Z" />
+</vector>

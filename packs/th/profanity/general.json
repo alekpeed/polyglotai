@@ -1,0 +1,202 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "profanity.hia",
+    "kind": "profanity",
+    "phrase": "เหี้ย",
+    "romaji": "hîa",
+    "literal": "the water monitor lizard",
+    "natural": "one of the strongest everyday Thai swears: as an interjection 'fuck!/shit!', or aimed at a person 'evil bastard/piece of shit'",
+    "register": "obscene",
+    "severity": 6,
+    "region": null,
+    "whoUses": "heard constantly in angry or intense male and mixed-company speech; taboo in polite settings",
+    "usageContext": "venting anger, shock, or contempt; extremely offensive when directed at someone",
+    "learnerShouldUse": "recognize-only",
+    "saferAlternatives": ["แย่มาก", "เวร"],
+    "warningNotes": "Very strong. Even the plain word for the lizard (ตัวเงินตัวทอง is the polite substitute) is avoided because of this swear. Never use toward a person; understand it, don't say it.",
+    "examples": [
+      { "text": "เหี้ย ลืมกุญแจไว้ในรถ", "romaji": "hîa, luem kun-jae wái nai rót", "translation": "Fuck, I left the keys in the car." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "profanity.sat",
+    "kind": "profanity",
+    "phrase": "สัตว์ / สัส",
+    "romaji": "sàt / sàs",
+    "literal": "animal / beast",
+    "natural": "'you animal / beast' as an insult, or a heavy intensifier tacked on the end ('...as fuck'); สัส is the slangy respelling",
+    "register": "obscene",
+    "severity": 5,
+    "region": null,
+    "whoUses": "common in heated informal speech, especially among young men online and offline",
+    "usageContext": "insulting someone's behavior, or intensifying: 'โคตรแพงสัส' = 'fucking expensive'",
+    "learnerShouldUse": "recognize-only",
+    "saferAlternatives": ["แย่จัง", "มากๆ"],
+    "warningNotes": "The neutral word สัตว์ 'animal' is fine in normal contexts (e.g. 'สวนสัตว์' = zoo); it only becomes a swear as an insult or intensifier. สัส is unmistakably vulgar.",
+    "examples": [
+      { "text": "รถติดโคตรสัส", "romaji": "rót tìt khôot sàs", "translation": "The traffic is fucking terrible." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "profanity.khuay",
+    "kind": "profanity",
+    "phrase": "ควย",
+    "romaji": "khuay",
+    "literal": "dick / cock",
+    "natural": "the vulgar word for penis; also a raw interjection of anger or a dismissive 'bullshit'",
+    "register": "obscene",
+    "severity": 6,
+    "region": null,
+    "whoUses": "crude informal speech, mostly male; strongly taboo in mixed or polite company",
+    "usageContext": "insult, angry outburst, or crude reference to the anatomy",
+    "learnerShouldUse": "avoid",
+    "saferAlternatives": ["(polite/clinical) อวัยวะเพศชาย"],
+    "warningNotes": "Highly offensive. Do not use. Included for comprehension only.",
+    "examples": [
+      { "text": "พูดอะไรของมึง ควย", "romaji": "phûut à-rai khɔ̌ɔng mueng, khuay", "translation": "What the hell are you talking about — bullshit." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "profanity.hii",
+    "kind": "profanity",
+    "phrase": "หี",
+    "romaji": "hǐi",
+    "literal": "cunt / pussy",
+    "natural": "the crudest word for the female genitals; a strong obscenity",
+    "register": "obscene",
+    "severity": 6,
+    "region": null,
+    "whoUses": "very crude speech; deeply taboo in almost all settings",
+    "usageContext": "crude anatomical reference or vulgar insult",
+    "learnerShouldUse": "avoid",
+    "saferAlternatives": ["(polite/clinical) อวัยวะเพศหญิง"],
+    "warningNotes": "Extremely vulgar and offensive. Do not use. Recognition only.",
+    "examples": [
+      { "text": "เขาพูดคำว่า หี ออกสื่อไม่ได้", "romaji": "kháo phûut kham wâa hǐi ɔ̀ɔk sùee mâi dâi", "translation": "That word (cunt) can't be said on air." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "profanity.yet",
+    "kind": "profanity",
+    "phrase": "เย็ด",
+    "romaji": "yét",
+    "literal": "to fuck (the sexual act)",
+    "natural": "the vulgar verb 'to fuck'; also in aggressive curses like 'เย็ดแม่' (a severe insult)",
+    "register": "obscene",
+    "severity": 7,
+    "region": null,
+    "whoUses": "the crudest, most aggressive speech; near-total taboo",
+    "usageContext": "extreme anger, sexual crudeness, or fighting words; 'เย็ดแม่' targets someone's mother and can start fights",
+    "learnerShouldUse": "avoid",
+    "saferAlternatives": ["(polite) มีเพศสัมพันธ์"],
+    "warningNotes": "Among the most severe in Thai, especially in mother-directed curses. Never use. Recognition only.",
+    "examples": [
+      { "text": "อย่าพูดคำหยาบแบบนั้น มันแรงมาก", "romaji": "yàa phûut kham yàap bàep nán, man raeng mâak", "translation": "Don't say that swear — it's extremely strong." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "profanity.maeng",
+    "kind": "profanity",
+    "phrase": "แม่ง",
+    "romaji": "mâeng",
+    "literal": "(reduced form of มัน 'it' fused with a curse)",
+    "natural": "a vulgar emphatic 'damn / fucking' dropped into a sentence for force",
+    "register": "vulgar",
+    "severity": 4,
+    "region": null,
+    "whoUses": "very common in relaxed male and young-people speech; not for polite settings",
+    "usageContext": "emphasis or irritation mid-sentence; 'แม่งโคตรเซ็ง' = 'this is fucking annoying'",
+    "learnerShouldUse": "recognize-only",
+    "saferAlternatives": ["น่าเบื่อจัง", "เซ็งเลย"],
+    "warningNotes": "Milder than เหี้ย/ควย but still clearly vulgar. Fine to understand; avoid producing it with strangers, elders, or at work.",
+    "examples": [
+      { "text": "รอมาตั้งนาน แม่งไม่มาซะที", "romaji": "raaw maa tâng naan, mâeng mâi maa sá thii", "translation": "Waited forever and the damn thing still isn't here." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "profanity.ai-ii-prefix",
+    "kind": "profanity",
+    "phrase": "ไอ้ / อี",
+    "romaji": "âi / ii",
+    "literal": "derogatory prefix for males (ไอ้) / for females (อี)",
+    "natural": "a contemptuous name-prefix, like 'that damn ...' before a person's name or a noun (ไอ้เหี้ย, อีบ้า); attaches the speaker's scorn",
+    "register": "vulgar",
+    "severity": 4,
+    "region": null,
+    "whoUses": "angry or crude speech; also, confusingly, used affectionately among very close male friends",
+    "usageContext": "insulting or dismissing someone; อี toward a woman is especially offensive",
+    "learnerShouldUse": "avoid",
+    "saferAlternatives": ["คุณ", "(name) + พี่/น้อง"],
+    "warningNotes": "Directed at a woman, อี is a serious insult. Among tight male friends ไอ้ can be joking ('ไอ้เพื่อน'), but a learner will misjudge the line — avoid producing it.",
+    "examples": [
+      { "text": "ไอ้นี่มันโกหกตลอด", "romaji": "âi nîi man koo-hòk talɔ̀ɔt", "translation": "This damn guy lies all the time." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "profanity.khoot",
+    "kind": "profanity",
+    "phrase": "โคตร",
+    "romaji": "khôot",
+    "literal": "lineage / ancestry",
+    "natural": "a vulgar intensifier 'as hell / fucking / super' placed before adjectives; 'โคตรดี' = 'fucking great'",
+    "register": "vulgar",
+    "severity": 4,
+    "region": null,
+    "whoUses": "very widespread in casual speech, especially younger people; not for formal settings",
+    "usageContext": "amplifying anything, good or bad; its 'ancestry' sense makes it crude to elders",
+    "learnerShouldUse": "recognize-only",
+    "saferAlternatives": ["...มาก", "สุดๆ"],
+    "warningNotes": "Extremely common but vulgar; touching on ancestry it can offend elders. Understand it; use มาก/สุดๆ instead.",
+    "examples": [
+      { "text": "หนังเรื่องนี้โคตรสนุก", "romaji": "nǎng rûeang níi khôot sà-nùk", "translation": "This movie is fucking fun." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "profanity.chip-haai",
+    "kind": "profanity",
+    "phrase": "ฉิบหาย",
+    "romaji": "chìp-hǎai",
+    "literal": "to be ruined / go to ruin",
+    "natural": "'goddamn / all hell / totally screwed'; an exclamation of disaster or a heavy intensifier",
+    "register": "vulgar",
+    "severity": 5,
+    "region": null,
+    "whoUses": "heated informal speech; the variant ชิบหาย is softened slightly",
+    "usageContext": "reacting to a disaster, or intensifying: 'แพงฉิบหาย' = 'ridiculously expensive'",
+    "learnerShouldUse": "recognize-only",
+    "saferAlternatives": ["แย่แล้ว", "มากๆ"],
+    "warningNotes": "Strongly vulgar. Fine for comprehension; don't use in polite or professional company.",
+    "examples": [
+      { "text": "ฉิบหายแล้ว ลืมส่งงาน", "romaji": "chìp-hǎai láew, luem sòng ngaan", "translation": "Oh hell, I forgot to submit the work." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "profanity.mueng-kuu",
+    "kind": "profanity",
+    "phrase": "มึง / กู",
+    "romaji": "mueng / kuu",
+    "literal": "you (มึง) / I (กู)",
+    "natural": "the crude/intimate pronoun pair for 'you' and 'I'; warm and normal between close friends, but rude and aggressive toward anyone else",
+    "register": "street",
+    "severity": 3,
+    "region": null,
+    "whoUses": "extremely common among close friends and within tight peer groups of all ages; a fighting register with strangers",
+    "usageContext": "relaxed talk between best friends signals closeness; aimed at a stranger, elder, or superior it's a deliberate insult",
+    "learnerShouldUse": "recognize-only",
+    "saferAlternatives": ["เธอ / ฉัน", "คุณ / ผม / ดิฉัน"],
+    "warningNotes": "Context is everything: bonding among friends, but provocative or contemptuous otherwise. A learner should recognize it and default to เธอ/ฉัน or คุณ/ผม.",
+    "examples": [
+      { "text": "มึงจะไปไหน กูรอตั้งนาน", "romaji": "mueng jà pai nǎi, kuu raaw tâng naan", "translation": "Where are you going? I've been waiting ages. (between close friends)" }
+    ]
+  }
+]

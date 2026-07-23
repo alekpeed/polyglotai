@@ -70,6 +70,51 @@ const PACK_HERO_THEMES: Record<string, HeroTheme> = {
       { text: "大丈夫", top: "58%", left: "76%", size: "2.4rem", rotate: 8 },
     ],
   },
+  fr: {
+    eyebrow: "PolyglotAI · France",
+    headline: "On y va.",
+    blurb:
+      "Everyday spoken French — dropped ne, on for nous, tu vs vous done right — not stiff textbook forms.",
+    textureWords: [
+      { text: "meuf", top: "8%", left: "56%", size: "4.2rem", rotate: -8 },
+      { text: "kiffer", top: "20%", left: "2%", size: "3rem", rotate: 5 },
+      { text: "grave", top: "70%", left: "58%", size: "3.6rem", rotate: -4 },
+      { text: "chelou", top: "48%", left: "9%", size: "2.5rem", rotate: 10 },
+      { text: "carrément", top: "4%", left: "6%", size: "2.6rem", rotate: -12 },
+      { text: "du coup", top: "80%", left: "6%", size: "2.2rem", rotate: 6 },
+      { text: "relou", top: "58%", left: "78%", size: "2.6rem", rotate: 8 },
+    ],
+  },
+  "es-mx": {
+    eyebrow: "PolyglotAI · México",
+    headline: "¡Órale!",
+    blurb:
+      "Real Mexican speech — ustedes, seseo, and the slang from güey to the chingar family, labeled honestly.",
+    textureWords: [
+      { text: "güey", top: "8%", left: "56%", size: "4.4rem", rotate: -8 },
+      { text: "chido", top: "20%", left: "2%", size: "3.1rem", rotate: 5 },
+      { text: "neta", top: "70%", left: "60%", size: "3.6rem", rotate: -4 },
+      { text: "ahorita", top: "48%", left: "8%", size: "2.4rem", rotate: 10 },
+      { text: "no manches", top: "4%", left: "6%", size: "2.5rem", rotate: -12 },
+      { text: "chamba", top: "80%", left: "6%", size: "2.2rem", rotate: 6 },
+      { text: "buena onda", top: "58%", left: "74%", size: "2.3rem", rotate: 8 },
+    ],
+  },
+  ru: {
+    eyebrow: "PolyglotAI · Русский",
+    headline: "Поехали.",
+    blurb:
+      "Cyrillic with stress-marked transliteration side by side — real reading, not romanized word lists.",
+    textureWords: [
+      { text: "давай", top: "8%", left: "54%", size: "4rem", rotate: -8 },
+      { text: "круто", top: "20%", left: "2%", size: "3.2rem", rotate: 5 },
+      { text: "здорово", top: "70%", left: "58%", size: "3rem", rotate: -4 },
+      { text: "конечно", top: "48%", left: "8%", size: "2.4rem", rotate: 10 },
+      { text: "привет", top: "4%", left: "8%", size: "2.9rem", rotate: -12 },
+      { text: "пока", top: "80%", left: "6%", size: "2.4rem", rotate: 6 },
+      { text: "спасибо", top: "58%", left: "74%", size: "2.3rem", rotate: 8 },
+    ],
+  },
 };
 
 const DEFAULT_HERO_THEME: HeroTheme = {

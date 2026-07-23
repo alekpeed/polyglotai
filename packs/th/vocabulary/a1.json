@@ -1,0 +1,3485 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sawatdii",
+    "entryType": "word",
+    "lemma": "สวัสดี",
+    "romaji": "sà-wàt-dii",
+    "translation": "hello / goodbye",
+    "partOfSpeech": "interjection",
+    "cefr": "A1",
+    "frequencyRank": 30,
+    "register": "neutral",
+    "tags": [
+      "greetings"
+    ],
+    "naturalMeaning": "All-purpose greeting for hello and goodbye; add ครับ/ค่ะ to be polite.",
+    "examples": [
+      {
+        "text": "สวัสดีครับ",
+        "romaji": "sà-wàt-dii khráp",
+        "translation": "Hello."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khawp-khun",
+    "entryType": "word",
+    "lemma": "ขอบคุณ",
+    "romaji": "khàwp-khun",
+    "translation": "thank you",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 40,
+    "register": "neutral",
+    "tags": [
+      "greetings",
+      "politeness"
+    ],
+    "naturalMeaning": "The standard 'thank you'; soften with ครับ/ค่ะ.",
+    "examples": [
+      {
+        "text": "ขอบคุณมากค่ะ",
+        "romaji": "khàwp-khun mâak khâ",
+        "translation": "Thank you very much."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khaw-thoot",
+    "entryType": "word",
+    "lemma": "ขอโทษ",
+    "romaji": "khǎw-thôot",
+    "translation": "sorry / excuse me",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 60,
+    "register": "neutral",
+    "tags": [
+      "greetings",
+      "politeness"
+    ],
+    "naturalMeaning": "Used both to apologize and to get someone's attention.",
+    "examples": [
+      {
+        "text": "ขอโทษครับ",
+        "romaji": "khǎw-thôot khráp",
+        "translation": "Excuse me / Sorry."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.chai",
+    "entryType": "word",
+    "lemma": "ใช่",
+    "romaji": "châi",
+    "translation": "yes / correct",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 25,
+    "register": "neutral",
+    "tags": [
+      "greetings"
+    ],
+    "naturalMeaning": "Confirms that something is so; the natural 'yes, that's right'.",
+    "examples": [
+      {
+        "text": "ใช่ครับ",
+        "romaji": "châi khráp",
+        "translation": "Yes, that's right."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.mai-not",
+    "entryType": "word",
+    "lemma": "ไม่",
+    "romaji": "mâi",
+    "translation": "no / not",
+    "partOfSpeech": "adverb",
+    "cefr": "A1",
+    "frequencyRank": 8,
+    "register": "neutral",
+    "tags": [
+      "greetings"
+    ],
+    "naturalMeaning": "The core negator placed before verbs and adjectives.",
+    "examples": [
+      {
+        "text": "ไม่เป็นไร",
+        "romaji": "mâi pen rai",
+        "translation": "It's nothing / You're welcome."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.laa-kawn",
+    "entryType": "word",
+    "lemma": "ลาก่อน",
+    "romaji": "laa-kàwn",
+    "translation": "goodbye",
+    "partOfSpeech": "interjection",
+    "cefr": "A1",
+    "frequencyRank": 120,
+    "register": "neutral",
+    "tags": [
+      "greetings"
+    ],
+    "naturalMeaning": "A more formal farewell than just สวัสดี.",
+    "examples": [
+      {
+        "text": "ลาก่อนนะ",
+        "romaji": "laa-kàwn ná",
+        "translation": "Goodbye."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.yin-dii",
+    "entryType": "word",
+    "lemma": "ยินดี",
+    "romaji": "yin-dii",
+    "translation": "glad / pleased",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 150,
+    "register": "neutral",
+    "tags": [
+      "greetings",
+      "politeness"
+    ],
+    "naturalMeaning": "Expresses being pleased, as in 'nice to meet you'.",
+    "examples": [
+      {
+        "text": "ยินดีที่ได้รู้จัก",
+        "romaji": "yin-dii thîi dâi rúu-jàk",
+        "translation": "Nice to meet you."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khaw-ask",
+    "entryType": "word",
+    "lemma": "ขอ",
+    "romaji": "khǎw",
+    "translation": "to ask for / request",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 70,
+    "register": "neutral",
+    "tags": [
+      "greetings",
+      "politeness"
+    ],
+    "naturalMeaning": "Polite way to request something: ขอ + the thing.",
+    "examples": [
+      {
+        "text": "ขอน้ำหน่อย",
+        "romaji": "khǎw náam nàwy",
+        "translation": "May I have some water."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khrap",
+    "entryType": "word",
+    "lemma": "ครับ",
+    "romaji": "khráp",
+    "translation": "polite particle (male)",
+    "partOfSpeech": "particle",
+    "cefr": "A1",
+    "frequencyRank": 10,
+    "register": "formal",
+    "tags": [
+      "politeness"
+    ],
+    "naturalMeaning": "Sentence-final politeness particle used by male speakers.",
+    "examples": [
+      {
+        "text": "สวัสดีครับ",
+        "romaji": "sà-wàt-dii khráp",
+        "translation": "Hello (male speaker)."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.kha-statement",
+    "entryType": "word",
+    "lemma": "ค่ะ",
+    "romaji": "khâ",
+    "translation": "polite particle (female, statement)",
+    "partOfSpeech": "particle",
+    "cefr": "A1",
+    "frequencyRank": 11,
+    "register": "formal",
+    "tags": [
+      "politeness"
+    ],
+    "naturalMeaning": "Female speakers use falling-tone ค่ะ to end statements politely.",
+    "examples": [
+      {
+        "text": "ไม่ค่ะ",
+        "romaji": "mâi khâ",
+        "translation": "No (female speaker)."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.kha-question",
+    "entryType": "word",
+    "lemma": "คะ",
+    "romaji": "khá",
+    "translation": "polite particle (female, question)",
+    "partOfSpeech": "particle",
+    "cefr": "A1",
+    "frequencyRank": 12,
+    "register": "formal",
+    "tags": [
+      "politeness"
+    ],
+    "naturalMeaning": "Female speakers use high-tone คะ at the end of questions.",
+    "examples": [
+      {
+        "text": "อะไรคะ",
+        "romaji": "à-rai khá",
+        "translation": "What? (female speaker)"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.na",
+    "entryType": "word",
+    "lemma": "นะ",
+    "romaji": "ná",
+    "translation": "softening particle",
+    "partOfSpeech": "particle",
+    "cefr": "A1",
+    "frequencyRank": 20,
+    "register": "informal",
+    "tags": [
+      "politeness"
+    ],
+    "naturalMeaning": "Softens a sentence, making it gentler or more persuasive.",
+    "examples": [
+      {
+        "text": "ไปนะ",
+        "romaji": "pai ná",
+        "translation": "I'm off, okay?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.phom",
+    "entryType": "word",
+    "lemma": "ผม",
+    "romaji": "phǒm",
+    "translation": "I / me (male)",
+    "partOfSpeech": "pronoun",
+    "cefr": "A1",
+    "frequencyRank": 15,
+    "register": "neutral",
+    "tags": [
+      "pronouns"
+    ],
+    "naturalMeaning": "Polite first-person pronoun used by male speakers.",
+    "examples": [
+      {
+        "text": "ผมชื่อสมชาย",
+        "romaji": "phǒm chûe sǒm-chaai",
+        "translation": "My name is Somchai."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.dichan",
+    "entryType": "word",
+    "lemma": "ดิฉัน",
+    "romaji": "dì-chǎn",
+    "translation": "I / me (female, formal)",
+    "partOfSpeech": "pronoun",
+    "cefr": "A1",
+    "frequencyRank": 90,
+    "register": "formal",
+    "tags": [
+      "pronouns"
+    ],
+    "naturalMeaning": "Formal first-person pronoun used by female speakers.",
+    "examples": [
+      {
+        "text": "ดิฉันเป็นคนไทย",
+        "romaji": "dì-chǎn pen khon thai",
+        "translation": "I am Thai."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.chan",
+    "entryType": "word",
+    "lemma": "ฉัน",
+    "romaji": "chǎn",
+    "translation": "I / me (informal)",
+    "partOfSpeech": "pronoun",
+    "cefr": "A1",
+    "frequencyRank": 22,
+    "register": "informal",
+    "tags": [
+      "pronouns"
+    ],
+    "naturalMeaning": "Casual first-person pronoun, common among friends and by women.",
+    "examples": [
+      {
+        "text": "ฉันหิว",
+        "romaji": "chǎn hǐw",
+        "translation": "I'm hungry."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khun",
+    "entryType": "word",
+    "lemma": "คุณ",
+    "romaji": "khun",
+    "translation": "you",
+    "partOfSpeech": "pronoun",
+    "cefr": "A1",
+    "frequencyRank": 14,
+    "register": "neutral",
+    "tags": [
+      "pronouns"
+    ],
+    "naturalMeaning": "Polite, neutral 'you'; also a title like Mr./Ms.",
+    "examples": [
+      {
+        "text": "คุณสบายดีไหม",
+        "romaji": "khun sà-baai dii mǎi",
+        "translation": "How are you?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khao-he",
+    "entryType": "word",
+    "lemma": "เขา",
+    "romaji": "kháo",
+    "translation": "he / she / they",
+    "partOfSpeech": "pronoun",
+    "cefr": "A1",
+    "frequencyRank": 18,
+    "register": "neutral",
+    "tags": [
+      "pronouns"
+    ],
+    "naturalMeaning": "General third-person pronoun for a person.",
+    "examples": [
+      {
+        "text": "เขาเป็นเพื่อนผม",
+        "romaji": "kháo pen phûean phǒm",
+        "translation": "He is my friend."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.rao",
+    "entryType": "word",
+    "lemma": "เรา",
+    "romaji": "rao",
+    "translation": "we / us",
+    "partOfSpeech": "pronoun",
+    "cefr": "A1",
+    "frequencyRank": 24,
+    "register": "neutral",
+    "tags": [
+      "pronouns"
+    ],
+    "naturalMeaning": "First-person plural 'we'; also casual 'I' in some contexts.",
+    "examples": [
+      {
+        "text": "เราเป็นคนไทย",
+        "romaji": "rao pen khon thai",
+        "translation": "We are Thai."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nii-this",
+    "entryType": "word",
+    "lemma": "นี่",
+    "romaji": "nîi",
+    "translation": "this / here (it is)",
+    "partOfSpeech": "pronoun",
+    "cefr": "A1",
+    "frequencyRank": 35,
+    "register": "neutral",
+    "tags": [
+      "pronouns"
+    ],
+    "naturalMeaning": "Points to something near the speaker: 'this one / this is'.",
+    "examples": [
+      {
+        "text": "นี่อะไร",
+        "romaji": "nîi à-rai",
+        "translation": "What is this?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nan-that",
+    "entryType": "word",
+    "lemma": "นั่น",
+    "romaji": "nân",
+    "translation": "that",
+    "partOfSpeech": "pronoun",
+    "cefr": "A1",
+    "frequencyRank": 36,
+    "register": "neutral",
+    "tags": [
+      "pronouns"
+    ],
+    "naturalMeaning": "Points to something near the listener or away: 'that one'.",
+    "examples": [
+      {
+        "text": "นั่นสวย",
+        "romaji": "nân sǔai",
+        "translation": "That is pretty."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.mae",
+    "entryType": "word",
+    "lemma": "แม่",
+    "romaji": "mâe",
+    "translation": "mother",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 45,
+    "register": "neutral",
+    "tags": [
+      "family"
+    ],
+    "naturalMeaning": "Word for mother; also a respectful term for older women.",
+    "examples": [
+      {
+        "text": "แม่ทำอาหาร",
+        "romaji": "mâe tham aa-hǎan",
+        "translation": "Mom is cooking."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.phaw",
+    "entryType": "word",
+    "lemma": "พ่อ",
+    "romaji": "phâw",
+    "translation": "father",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 46,
+    "register": "neutral",
+    "tags": [
+      "family"
+    ],
+    "naturalMeaning": "Word for father.",
+    "examples": [
+      {
+        "text": "พ่ออยู่บ้าน",
+        "romaji": "phâw yùu bâan",
+        "translation": "Dad is at home."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.phii",
+    "entryType": "word",
+    "lemma": "พี่",
+    "romaji": "phîi",
+    "translation": "older sibling / older person",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 48,
+    "register": "neutral",
+    "tags": [
+      "family",
+      "people"
+    ],
+    "naturalMeaning": "Used for an older sibling, or politely for anyone slightly older.",
+    "examples": [
+      {
+        "text": "พี่ชื่ออะไร",
+        "romaji": "phîi chûe à-rai",
+        "translation": "What is your name?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nawng",
+    "entryType": "word",
+    "lemma": "น้อง",
+    "romaji": "náwng",
+    "translation": "younger sibling / younger person",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 50,
+    "register": "neutral",
+    "tags": [
+      "family",
+      "people"
+    ],
+    "naturalMeaning": "Used for a younger sibling, or for someone younger such as a server.",
+    "examples": [
+      {
+        "text": "น้องกินข้าว",
+        "romaji": "náwng kin khâao",
+        "translation": "The younger one is eating."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.luuk",
+    "entryType": "word",
+    "lemma": "ลูก",
+    "romaji": "lûuk",
+    "translation": "child (offspring)",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 80,
+    "register": "neutral",
+    "tags": [
+      "family"
+    ],
+    "naturalMeaning": "One's own child, regardless of age.",
+    "examples": [
+      {
+        "text": "ลูกน่ารัก",
+        "romaji": "lûuk nâa-rák",
+        "translation": "The child is cute."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.phuu-chaai",
+    "entryType": "word",
+    "lemma": "ผู้ชาย",
+    "romaji": "phûu-chaai",
+    "translation": "man / male",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 65,
+    "register": "neutral",
+    "tags": [
+      "people"
+    ],
+    "naturalMeaning": "General word for a man or male person.",
+    "examples": [
+      {
+        "text": "เขาเป็นผู้ชาย",
+        "romaji": "kháo pen phûu-chaai",
+        "translation": "He is a man."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.phuu-ying",
+    "entryType": "word",
+    "lemma": "ผู้หญิง",
+    "romaji": "phûu-yǐng",
+    "translation": "woman / female",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 66,
+    "register": "neutral",
+    "tags": [
+      "people"
+    ],
+    "naturalMeaning": "General word for a woman or female person.",
+    "examples": [
+      {
+        "text": "คนนั้นเป็นผู้หญิง",
+        "romaji": "khon nân pen phûu-yǐng",
+        "translation": "That person is a woman."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.phuean",
+    "entryType": "word",
+    "lemma": "เพื่อน",
+    "romaji": "phûean",
+    "translation": "friend",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 55,
+    "register": "neutral",
+    "tags": [
+      "people"
+    ],
+    "naturalMeaning": "A friend; also used loosely for a companion.",
+    "examples": [
+      {
+        "text": "เพื่อนของผม",
+        "romaji": "phûean khǎwng phǒm",
+        "translation": "my friend"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khon",
+    "entryType": "word",
+    "lemma": "คน",
+    "romaji": "khon",
+    "translation": "person / people",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 13,
+    "register": "neutral",
+    "tags": [
+      "people"
+    ],
+    "naturalMeaning": "Means 'person' and is also the classifier for people.",
+    "examples": [
+      {
+        "text": "คนไทย",
+        "romaji": "khon thai",
+        "translation": "Thai person"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khrawp-khrua",
+    "entryType": "word",
+    "lemma": "ครอบครัว",
+    "romaji": "khrâwp-khrua",
+    "translation": "family",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 85,
+    "register": "neutral",
+    "tags": [
+      "family"
+    ],
+    "naturalMeaning": "The family unit.",
+    "examples": [
+      {
+        "text": "ครอบครัวของฉัน",
+        "romaji": "khrâwp-khrua khǎwng chǎn",
+        "translation": "my family"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.suun",
+    "entryType": "word",
+    "lemma": "ศูนย์",
+    "romaji": "sǔun",
+    "translation": "zero",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 200,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "The number zero.",
+    "examples": [
+      {
+        "text": "ศูนย์บาท",
+        "romaji": "sǔun bàat",
+        "translation": "zero baht"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nueng",
+    "entryType": "word",
+    "lemma": "หนึ่ง",
+    "romaji": "nùeng",
+    "translation": "one",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 100,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "The number one.",
+    "examples": [
+      {
+        "text": "ขอหนึ่งที่",
+        "romaji": "khǎw nùeng thîi",
+        "translation": "One serving, please."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sawng",
+    "entryType": "word",
+    "lemma": "สอง",
+    "romaji": "sǎwng",
+    "translation": "two",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 101,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "The number two.",
+    "examples": [
+      {
+        "text": "สองคน",
+        "romaji": "sǎwng khon",
+        "translation": "two people"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.saam",
+    "entryType": "word",
+    "lemma": "สาม",
+    "romaji": "sǎam",
+    "translation": "three",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 102,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "The number three.",
+    "examples": [
+      {
+        "text": "สามบาท",
+        "romaji": "sǎam bàat",
+        "translation": "three baht"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sii-four",
+    "entryType": "word",
+    "lemma": "สี่",
+    "romaji": "sìi",
+    "translation": "four",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 103,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "The number four.",
+    "examples": [
+      {
+        "text": "สี่โมง",
+        "romaji": "sìi moong",
+        "translation": "four o'clock"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.haa-five",
+    "entryType": "word",
+    "lemma": "ห้า",
+    "romaji": "hâa",
+    "translation": "five",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 104,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "The number five; also texting slang '555' = laughing.",
+    "examples": [
+      {
+        "text": "ห้าบาท",
+        "romaji": "hâa bàat",
+        "translation": "five baht"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hok",
+    "entryType": "word",
+    "lemma": "หก",
+    "romaji": "hòk",
+    "translation": "six",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 105,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "The number six.",
+    "examples": [
+      {
+        "text": "หกคน",
+        "romaji": "hòk khon",
+        "translation": "six people"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.jet",
+    "entryType": "word",
+    "lemma": "เจ็ด",
+    "romaji": "jèt",
+    "translation": "seven",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 106,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "The number seven.",
+    "examples": [
+      {
+        "text": "เจ็ดวัน",
+        "romaji": "jèt wan",
+        "translation": "seven days"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.paet",
+    "entryType": "word",
+    "lemma": "แปด",
+    "romaji": "pàet",
+    "translation": "eight",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 107,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "The number eight.",
+    "examples": [
+      {
+        "text": "แปดโมง",
+        "romaji": "pàet moong",
+        "translation": "eight o'clock"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.kao-nine",
+    "entryType": "word",
+    "lemma": "เก้า",
+    "romaji": "kâo",
+    "translation": "nine",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 108,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "The number nine.",
+    "examples": [
+      {
+        "text": "เก้าบาท",
+        "romaji": "kâo bàat",
+        "translation": "nine baht"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sip",
+    "entryType": "word",
+    "lemma": "สิบ",
+    "romaji": "sìp",
+    "translation": "ten",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 109,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "The number ten; base for the teens and tens.",
+    "examples": [
+      {
+        "text": "สิบบาท",
+        "romaji": "sìp bàat",
+        "translation": "ten baht"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sip-et",
+    "entryType": "word",
+    "lemma": "สิบเอ็ด",
+    "romaji": "sìp-èt",
+    "translation": "eleven",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 130,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "Eleven; note เอ็ด replaces หนึ่ง for the '1' in 11.",
+    "examples": [
+      {
+        "text": "สิบเอ็ดบาท",
+        "romaji": "sìp-èt bàat",
+        "translation": "eleven baht"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.yii-sip",
+    "entryType": "word",
+    "lemma": "ยี่สิบ",
+    "romaji": "yîi-sìp",
+    "translation": "twenty",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 131,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "Twenty; the tens use ยี่ for 20 then สาม-สิบ etc.",
+    "examples": [
+      {
+        "text": "ยี่สิบบาท",
+        "romaji": "yîi-sìp bàat",
+        "translation": "twenty baht"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.rawy",
+    "entryType": "word",
+    "lemma": "ร้อย",
+    "romaji": "ráwy",
+    "translation": "hundred",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 140,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "One hundred, said with หนึ่ง in front: หนึ่งร้อย.",
+    "examples": [
+      {
+        "text": "หนึ่งร้อยบาท",
+        "romaji": "nùeng ráwy bàat",
+        "translation": "one hundred baht"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.phan",
+    "entryType": "word",
+    "lemma": "พัน",
+    "romaji": "phan",
+    "translation": "thousand",
+    "partOfSpeech": "number",
+    "cefr": "A1",
+    "frequencyRank": 141,
+    "register": "neutral",
+    "tags": [
+      "numbers"
+    ],
+    "naturalMeaning": "One thousand: หนึ่งพัน.",
+    "examples": [
+      {
+        "text": "หนึ่งพันบาท",
+        "romaji": "nùeng phan bàat",
+        "translation": "one thousand baht"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.wan",
+    "entryType": "word",
+    "lemma": "วัน",
+    "romaji": "wan",
+    "translation": "day",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 60,
+    "register": "neutral",
+    "tags": [
+      "time"
+    ],
+    "naturalMeaning": "A day; also used to build the names of the weekdays.",
+    "examples": [
+      {
+        "text": "ทุกวัน",
+        "romaji": "thúk wan",
+        "translation": "every day"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.wan-nii",
+    "entryType": "word",
+    "lemma": "วันนี้",
+    "romaji": "wan-níi",
+    "translation": "today",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 58,
+    "register": "neutral",
+    "tags": [
+      "time"
+    ],
+    "naturalMeaning": "Today; a present-time expression suitable for beginners.",
+    "examples": [
+      {
+        "text": "วันนี้ร้อน",
+        "romaji": "wan-níi ráwn",
+        "translation": "Today is hot."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.chao",
+    "entryType": "word",
+    "lemma": "เช้า",
+    "romaji": "cháo",
+    "translation": "morning",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 70,
+    "register": "neutral",
+    "tags": [
+      "time"
+    ],
+    "naturalMeaning": "The morning; ตอนเช้า means 'in the morning'.",
+    "examples": [
+      {
+        "text": "ตอนเช้า",
+        "romaji": "tawn-cháo",
+        "translation": "in the morning"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.baai",
+    "entryType": "word",
+    "lemma": "บ่าย",
+    "romaji": "bàai",
+    "translation": "afternoon",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 71,
+    "register": "neutral",
+    "tags": [
+      "time"
+    ],
+    "naturalMeaning": "The early afternoon.",
+    "examples": [
+      {
+        "text": "ตอนบ่าย",
+        "romaji": "tawn-bàai",
+        "translation": "in the afternoon"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.yen",
+    "entryType": "word",
+    "lemma": "เย็น",
+    "romaji": "yen",
+    "translation": "evening / cool",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 72,
+    "register": "neutral",
+    "tags": [
+      "time"
+    ],
+    "naturalMeaning": "Late afternoon and early evening; also means 'cool' for temperature.",
+    "examples": [
+      {
+        "text": "ตอนเย็น",
+        "romaji": "tawn-yen",
+        "translation": "in the evening"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.klaang-khuen",
+    "entryType": "word",
+    "lemma": "กลางคืน",
+    "romaji": "klaang-khuen",
+    "translation": "night",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 73,
+    "register": "neutral",
+    "tags": [
+      "time"
+    ],
+    "naturalMeaning": "Night-time.",
+    "examples": [
+      {
+        "text": "ตอนกลางคืน",
+        "romaji": "tawn klaang-khuen",
+        "translation": "at night"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.wan-jan",
+    "entryType": "word",
+    "lemma": "วันจันทร์",
+    "romaji": "wan-jan",
+    "translation": "Monday",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 160,
+    "register": "neutral",
+    "tags": [
+      "days",
+      "time"
+    ],
+    "naturalMeaning": "Monday; วัน (day) + จันทร์ (moon).",
+    "examples": [
+      {
+        "text": "วันจันทร์",
+        "romaji": "wan-jan",
+        "translation": "Monday"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.wan-angkhaan",
+    "entryType": "word",
+    "lemma": "วันอังคาร",
+    "romaji": "wan-ang-khaan",
+    "translation": "Tuesday",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 161,
+    "register": "neutral",
+    "tags": [
+      "days",
+      "time"
+    ],
+    "naturalMeaning": "Tuesday.",
+    "examples": [
+      {
+        "text": "วันอังคาร",
+        "romaji": "wan-ang-khaan",
+        "translation": "Tuesday"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.wan-phut",
+    "entryType": "word",
+    "lemma": "วันพุธ",
+    "romaji": "wan-phút",
+    "translation": "Wednesday",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 162,
+    "register": "neutral",
+    "tags": [
+      "days",
+      "time"
+    ],
+    "naturalMeaning": "Wednesday.",
+    "examples": [
+      {
+        "text": "วันพุธ",
+        "romaji": "wan-phút",
+        "translation": "Wednesday"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.wan-pharuehat",
+    "entryType": "word",
+    "lemma": "วันพฤหัสบดี",
+    "romaji": "wan-phá-rúe-hàt-sà-baw-dii",
+    "translation": "Thursday",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 163,
+    "register": "neutral",
+    "tags": [
+      "days",
+      "time"
+    ],
+    "naturalMeaning": "Thursday; often shortened in speech to วันพฤหัส.",
+    "examples": [
+      {
+        "text": "วันพฤหัสบดี",
+        "romaji": "wan-phá-rúe-hàt-sà-baw-dii",
+        "translation": "Thursday"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.wan-suk",
+    "entryType": "word",
+    "lemma": "วันศุกร์",
+    "romaji": "wan-sùk",
+    "translation": "Friday",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 164,
+    "register": "neutral",
+    "tags": [
+      "days",
+      "time"
+    ],
+    "naturalMeaning": "Friday.",
+    "examples": [
+      {
+        "text": "วันศุกร์",
+        "romaji": "wan-sùk",
+        "translation": "Friday"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.wan-sao",
+    "entryType": "word",
+    "lemma": "วันเสาร์",
+    "romaji": "wan-sǎo",
+    "translation": "Saturday",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 165,
+    "register": "neutral",
+    "tags": [
+      "days",
+      "time"
+    ],
+    "naturalMeaning": "Saturday.",
+    "examples": [
+      {
+        "text": "วันเสาร์",
+        "romaji": "wan-sǎo",
+        "translation": "Saturday"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.wan-aathit",
+    "entryType": "word",
+    "lemma": "วันอาทิตย์",
+    "romaji": "wan-aa-thít",
+    "translation": "Sunday",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 166,
+    "register": "neutral",
+    "tags": [
+      "days",
+      "time"
+    ],
+    "naturalMeaning": "Sunday; อาทิตย์ also means the sun and 'week'.",
+    "examples": [
+      {
+        "text": "วันอาทิตย์",
+        "romaji": "wan-aa-thít",
+        "translation": "Sunday"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khaao",
+    "entryType": "word",
+    "lemma": "ข้าว",
+    "romaji": "khâao",
+    "translation": "rice / meal",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 42,
+    "register": "neutral",
+    "tags": [
+      "food-drink"
+    ],
+    "naturalMeaning": "Rice, and by extension a meal (กินข้าว = to eat).",
+    "examples": [
+      {
+        "text": "กินข้าว",
+        "romaji": "kin khâao",
+        "translation": "to eat (a meal)"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.naam",
+    "entryType": "word",
+    "lemma": "น้ำ",
+    "romaji": "náam",
+    "translation": "water",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 41,
+    "register": "neutral",
+    "tags": [
+      "food-drink"
+    ],
+    "naturalMeaning": "Water; also the base word for many drinks.",
+    "examples": [
+      {
+        "text": "ขอน้ำครับ",
+        "romaji": "khǎw náam khráp",
+        "translation": "Water, please."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.aahaan",
+    "entryType": "word",
+    "lemma": "อาหาร",
+    "romaji": "aa-hǎan",
+    "translation": "food",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 75,
+    "register": "neutral",
+    "tags": [
+      "food-drink"
+    ],
+    "naturalMeaning": "Food in general.",
+    "examples": [
+      {
+        "text": "อาหารไทย",
+        "romaji": "aa-hǎan thai",
+        "translation": "Thai food"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.kaafae",
+    "entryType": "word",
+    "lemma": "กาแฟ",
+    "romaji": "kaa-fae",
+    "translation": "coffee",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 110,
+    "register": "neutral",
+    "tags": [
+      "food-drink"
+    ],
+    "naturalMeaning": "Coffee (a loanword).",
+    "examples": [
+      {
+        "text": "ขอกาแฟหนึ่งแก้ว",
+        "romaji": "khǎw kaa-fae nùeng kâew",
+        "translation": "One coffee, please."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.chaa",
+    "entryType": "word",
+    "lemma": "ชา",
+    "romaji": "chaa",
+    "translation": "tea",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 111,
+    "register": "neutral",
+    "tags": [
+      "food-drink"
+    ],
+    "naturalMeaning": "Tea.",
+    "examples": [
+      {
+        "text": "ชาเย็น",
+        "romaji": "chaa-yen",
+        "translation": "iced tea"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nom",
+    "entryType": "word",
+    "lemma": "นม",
+    "romaji": "nom",
+    "translation": "milk",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 112,
+    "register": "neutral",
+    "tags": [
+      "food-drink"
+    ],
+    "naturalMeaning": "Milk.",
+    "examples": [
+      {
+        "text": "นมเย็น",
+        "romaji": "nom yen",
+        "translation": "cold milk"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khai-egg",
+    "entryType": "word",
+    "lemma": "ไข่",
+    "romaji": "khài",
+    "translation": "egg",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 113,
+    "register": "neutral",
+    "tags": [
+      "food-drink"
+    ],
+    "naturalMeaning": "Egg.",
+    "examples": [
+      {
+        "text": "ไข่ไก่",
+        "romaji": "khài kài",
+        "translation": "chicken egg"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.plaa",
+    "entryType": "word",
+    "lemma": "ปลา",
+    "romaji": "plaa",
+    "translation": "fish",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 114,
+    "register": "neutral",
+    "tags": [
+      "food-drink"
+    ],
+    "naturalMeaning": "Fish.",
+    "examples": [
+      {
+        "text": "ปลาอร่อย",
+        "romaji": "plaa à-ràwy",
+        "translation": "The fish is delicious."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.kai-chicken",
+    "entryType": "word",
+    "lemma": "ไก่",
+    "romaji": "kài",
+    "translation": "chicken",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 115,
+    "register": "neutral",
+    "tags": [
+      "food-drink"
+    ],
+    "naturalMeaning": "Chicken (the bird and the meat).",
+    "examples": [
+      {
+        "text": "ข้าวไก่",
+        "romaji": "khâao kài",
+        "translation": "rice with chicken"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.muu",
+    "entryType": "word",
+    "lemma": "หมู",
+    "romaji": "mǔu",
+    "translation": "pork / pig",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 116,
+    "register": "neutral",
+    "tags": [
+      "food-drink"
+    ],
+    "naturalMeaning": "Pork, and the animal pig.",
+    "examples": [
+      {
+        "text": "หมูอร่อย",
+        "romaji": "mǔu à-ràwy",
+        "translation": "The pork is delicious."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.phak",
+    "entryType": "word",
+    "lemma": "ผัก",
+    "romaji": "phàk",
+    "translation": "vegetable",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 117,
+    "register": "neutral",
+    "tags": [
+      "food-drink"
+    ],
+    "naturalMeaning": "Vegetables.",
+    "examples": [
+      {
+        "text": "กินผัก",
+        "romaji": "kin phàk",
+        "translation": "to eat vegetables"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.meenuu",
+    "entryType": "word",
+    "lemma": "เมนู",
+    "romaji": "mee-nuu",
+    "translation": "menu",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 170,
+    "register": "neutral",
+    "tags": [
+      "restaurant"
+    ],
+    "naturalMeaning": "The menu (a loanword).",
+    "examples": [
+      {
+        "text": "ขอเมนูหน่อย",
+        "romaji": "khǎw mee-nuu nàwy",
+        "translation": "May I have the menu."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sang",
+    "entryType": "word",
+    "lemma": "สั่ง",
+    "romaji": "sàng",
+    "translation": "to order",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 118,
+    "register": "neutral",
+    "tags": [
+      "restaurant"
+    ],
+    "naturalMeaning": "To order food or goods.",
+    "examples": [
+      {
+        "text": "สั่งอาหาร",
+        "romaji": "sàng aa-hǎan",
+        "translation": "to order food"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.arawy",
+    "entryType": "word",
+    "lemma": "อร่อย",
+    "romaji": "à-ràwy",
+    "translation": "delicious",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 90,
+    "register": "neutral",
+    "tags": [
+      "restaurant",
+      "food-drink"
+    ],
+    "naturalMeaning": "Tasty; a very common word of praise for food.",
+    "examples": [
+      {
+        "text": "อร่อยมาก",
+        "romaji": "à-ràwy mâak",
+        "translation": "very delicious"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.im",
+    "entryType": "word",
+    "lemma": "อิ่ม",
+    "romaji": "ìm",
+    "translation": "full (satiated)",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 119,
+    "register": "neutral",
+    "tags": [
+      "restaurant"
+    ],
+    "naturalMeaning": "Feeling full after eating.",
+    "examples": [
+      {
+        "text": "อิ่มแล้ว",
+        "romaji": "ìm láew",
+        "translation": "I'm full now."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hiw",
+    "entryType": "word",
+    "lemma": "หิว",
+    "romaji": "hǐw",
+    "translation": "hungry",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 95,
+    "register": "neutral",
+    "tags": [
+      "restaurant"
+    ],
+    "naturalMeaning": "Feeling hungry.",
+    "examples": [
+      {
+        "text": "หิวข้าว",
+        "romaji": "hǐw khâao",
+        "translation": "hungry (for a meal)"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.phet",
+    "entryType": "word",
+    "lemma": "เผ็ด",
+    "romaji": "phèt",
+    "translation": "spicy",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 96,
+    "register": "neutral",
+    "tags": [
+      "restaurant",
+      "food-drink"
+    ],
+    "naturalMeaning": "Spicy-hot from chili.",
+    "examples": [
+      {
+        "text": "เผ็ดมาก",
+        "romaji": "phèt mâak",
+        "translation": "very spicy"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.ngoen",
+    "entryType": "word",
+    "lemma": "เงิน",
+    "romaji": "ngoen",
+    "translation": "money",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 67,
+    "register": "neutral",
+    "tags": [
+      "money",
+      "shopping"
+    ],
+    "naturalMeaning": "Money; also means silver.",
+    "examples": [
+      {
+        "text": "มีเงินไหม",
+        "romaji": "mii ngoen mǎi",
+        "translation": "Do you have money?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.baat",
+    "entryType": "word",
+    "lemma": "บาท",
+    "romaji": "bàat",
+    "translation": "baht (currency)",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 68,
+    "register": "neutral",
+    "tags": [
+      "money",
+      "shopping"
+    ],
+    "naturalMeaning": "The Thai currency unit.",
+    "examples": [
+      {
+        "text": "ห้าสิบบาท",
+        "romaji": "hâa-sìp bàat",
+        "translation": "fifty baht"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.raakhaa",
+    "entryType": "word",
+    "lemma": "ราคา",
+    "romaji": "raa-khaa",
+    "translation": "price",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 125,
+    "register": "neutral",
+    "tags": [
+      "money",
+      "shopping"
+    ],
+    "naturalMeaning": "The price of something.",
+    "examples": [
+      {
+        "text": "ราคาเท่าไหร่",
+        "romaji": "raa-khaa thâo-rài",
+        "translation": "What is the price?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.phaeng",
+    "entryType": "word",
+    "lemma": "แพง",
+    "romaji": "phaeng",
+    "translation": "expensive",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 97,
+    "register": "neutral",
+    "tags": [
+      "money",
+      "shopping"
+    ],
+    "naturalMeaning": "Costing a lot.",
+    "examples": [
+      {
+        "text": "แพงมาก",
+        "romaji": "phaeng mâak",
+        "translation": "very expensive"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thuuk-cheap",
+    "entryType": "word",
+    "lemma": "ถูก",
+    "romaji": "thùuk",
+    "translation": "cheap",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 98,
+    "register": "neutral",
+    "tags": [
+      "money",
+      "shopping"
+    ],
+    "naturalMeaning": "Inexpensive; the same word also means 'correct'.",
+    "examples": [
+      {
+        "text": "ถูกมาก",
+        "romaji": "thùuk mâak",
+        "translation": "very cheap"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sue-buy",
+    "entryType": "word",
+    "lemma": "ซื้อ",
+    "romaji": "súe",
+    "translation": "to buy",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 62,
+    "register": "neutral",
+    "tags": [
+      "shopping"
+    ],
+    "naturalMeaning": "To buy something.",
+    "examples": [
+      {
+        "text": "ซื้อของ",
+        "romaji": "súe khǎwng",
+        "translation": "to buy things"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khaai",
+    "entryType": "word",
+    "lemma": "ขาย",
+    "romaji": "khǎai",
+    "translation": "to sell",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 99,
+    "register": "neutral",
+    "tags": [
+      "shopping"
+    ],
+    "naturalMeaning": "To sell something.",
+    "examples": [
+      {
+        "text": "ขายอาหาร",
+        "romaji": "khǎai aa-hǎan",
+        "translation": "to sell food"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.talaat",
+    "entryType": "word",
+    "lemma": "ตลาด",
+    "romaji": "tà-làat",
+    "translation": "market",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 78,
+    "register": "neutral",
+    "tags": [
+      "places",
+      "shopping"
+    ],
+    "naturalMeaning": "A market where food and goods are sold.",
+    "examples": [
+      {
+        "text": "ไปตลาด",
+        "romaji": "pai tà-làat",
+        "translation": "to go to the market"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.baan",
+    "entryType": "word",
+    "lemma": "บ้าน",
+    "romaji": "bâan",
+    "translation": "house / home",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 52,
+    "register": "neutral",
+    "tags": [
+      "places"
+    ],
+    "naturalMeaning": "House or home.",
+    "examples": [
+      {
+        "text": "อยู่บ้าน",
+        "romaji": "yùu bâan",
+        "translation": "to be at home"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.roong-riian",
+    "entryType": "word",
+    "lemma": "โรงเรียน",
+    "romaji": "roong-riian",
+    "translation": "school",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 76,
+    "register": "neutral",
+    "tags": [
+      "places"
+    ],
+    "naturalMeaning": "School.",
+    "examples": [
+      {
+        "text": "ไปโรงเรียน",
+        "romaji": "pai roong-riian",
+        "translation": "to go to school"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.roong-phayaabaan",
+    "entryType": "word",
+    "lemma": "โรงพยาบาล",
+    "romaji": "roong-phá-yaa-baan",
+    "translation": "hospital",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 127,
+    "register": "neutral",
+    "tags": [
+      "places",
+      "health"
+    ],
+    "naturalMeaning": "Hospital.",
+    "examples": [
+      {
+        "text": "ไปโรงพยาบาล",
+        "romaji": "pai roong-phá-yaa-baan",
+        "translation": "to go to the hospital"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hawng-naam",
+    "entryType": "word",
+    "lemma": "ห้องน้ำ",
+    "romaji": "hâwng-náam",
+    "translation": "toilet / bathroom",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 77,
+    "register": "neutral",
+    "tags": [
+      "places"
+    ],
+    "naturalMeaning": "Toilet or bathroom; literally 'water room'.",
+    "examples": [
+      {
+        "text": "ห้องน้ำอยู่ไหน",
+        "romaji": "hâwng-náam yùu nǎi",
+        "translation": "Where is the toilet?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sathaanii",
+    "entryType": "word",
+    "lemma": "สถานี",
+    "romaji": "sà-thǎa-nii",
+    "translation": "station",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 128,
+    "register": "neutral",
+    "tags": [
+      "places",
+      "transport"
+    ],
+    "naturalMeaning": "A station, e.g. for trains or buses.",
+    "examples": [
+      {
+        "text": "สถานีรถไฟ",
+        "romaji": "sà-thǎa-nii rót-fai",
+        "translation": "train station"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.sanaam-bin",
+    "entryType": "word",
+    "lemma": "สนามบิน",
+    "romaji": "sà-nǎam-bin",
+    "translation": "airport",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 129,
+    "register": "neutral",
+    "tags": [
+      "places",
+      "transport"
+    ],
+    "naturalMeaning": "Airport; literally 'flying field'.",
+    "examples": [
+      {
+        "text": "ไปสนามบิน",
+        "romaji": "pai sà-nǎam-bin",
+        "translation": "to go to the airport"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thanaakhaan",
+    "entryType": "word",
+    "lemma": "ธนาคาร",
+    "romaji": "thá-naa-khaan",
+    "translation": "bank",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 135,
+    "register": "neutral",
+    "tags": [
+      "places",
+      "money"
+    ],
+    "naturalMeaning": "A bank.",
+    "examples": [
+      {
+        "text": "ไปธนาคาร",
+        "romaji": "pai thá-naa-khaan",
+        "translation": "to go to the bank"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.raan-aahaan",
+    "entryType": "word",
+    "lemma": "ร้านอาหาร",
+    "romaji": "ráan-aa-hǎan",
+    "translation": "restaurant",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 79,
+    "register": "neutral",
+    "tags": [
+      "places",
+      "restaurant"
+    ],
+    "naturalMeaning": "A restaurant; ร้าน (shop) + อาหาร (food).",
+    "examples": [
+      {
+        "text": "ร้านอาหารไทย",
+        "romaji": "ráan-aa-hǎan thai",
+        "translation": "Thai restaurant"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.saai",
+    "entryType": "word",
+    "lemma": "ซ้าย",
+    "romaji": "sáai",
+    "translation": "left",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 145,
+    "register": "neutral",
+    "tags": [
+      "directions"
+    ],
+    "naturalMeaning": "The left side.",
+    "examples": [
+      {
+        "text": "เลี้ยวซ้าย",
+        "romaji": "líao sáai",
+        "translation": "turn left"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khwaa",
+    "entryType": "word",
+    "lemma": "ขวา",
+    "romaji": "khwǎa",
+    "translation": "right",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 146,
+    "register": "neutral",
+    "tags": [
+      "directions"
+    ],
+    "naturalMeaning": "The right side.",
+    "examples": [
+      {
+        "text": "เลี้ยวขวา",
+        "romaji": "líao khwǎa",
+        "translation": "turn right"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.trong",
+    "entryType": "word",
+    "lemma": "ตรง",
+    "romaji": "trong",
+    "translation": "straight",
+    "partOfSpeech": "adverb",
+    "cefr": "A1",
+    "frequencyRank": 147,
+    "register": "neutral",
+    "tags": [
+      "directions"
+    ],
+    "naturalMeaning": "Straight; ตรงไป = go straight ahead.",
+    "examples": [
+      {
+        "text": "ตรงไป",
+        "romaji": "trong pai",
+        "translation": "go straight"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.klai-near",
+    "entryType": "word",
+    "lemma": "ใกล้",
+    "romaji": "klâi",
+    "translation": "near / close",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 148,
+    "register": "neutral",
+    "tags": [
+      "directions"
+    ],
+    "naturalMeaning": "Close by; contrast with ไกล (far), a tricky minimal pair.",
+    "examples": [
+      {
+        "text": "อยู่ใกล้ๆ",
+        "romaji": "yùu klâi klâi",
+        "translation": "It's nearby."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.klai-far",
+    "entryType": "word",
+    "lemma": "ไกล",
+    "romaji": "klai",
+    "translation": "far",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 149,
+    "register": "neutral",
+    "tags": [
+      "directions"
+    ],
+    "naturalMeaning": "Far away; note the mid tone versus ใกล้ 'near' (falling).",
+    "examples": [
+      {
+        "text": "บ้านไกล",
+        "romaji": "bâan klai",
+        "translation": "The house is far."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thii-nii-here",
+    "entryType": "word",
+    "lemma": "ที่นี่",
+    "romaji": "thîi-nîi",
+    "translation": "here",
+    "partOfSpeech": "adverb",
+    "cefr": "A1",
+    "frequencyRank": 150,
+    "register": "neutral",
+    "tags": [
+      "directions"
+    ],
+    "naturalMeaning": "This place, 'here'.",
+    "examples": [
+      {
+        "text": "อยู่ที่นี่",
+        "romaji": "yùu thîi-nîi",
+        "translation": "It's here."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thii-nan-there",
+    "entryType": "word",
+    "lemma": "ที่นั่น",
+    "romaji": "thîi-nân",
+    "translation": "there",
+    "partOfSpeech": "adverb",
+    "cefr": "A1",
+    "frequencyRank": 151,
+    "register": "neutral",
+    "tags": [
+      "directions"
+    ],
+    "naturalMeaning": "That place, 'there'.",
+    "examples": [
+      {
+        "text": "อยู่ที่นั่น",
+        "romaji": "yùu thîi-nân",
+        "translation": "It's there."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.rot",
+    "entryType": "word",
+    "lemma": "รถ",
+    "romaji": "rót",
+    "translation": "car / vehicle",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 63,
+    "register": "neutral",
+    "tags": [
+      "transport"
+    ],
+    "naturalMeaning": "A car or vehicle in general.",
+    "examples": [
+      {
+        "text": "ขึ้นรถ",
+        "romaji": "khûen rót",
+        "translation": "to get in/on a vehicle"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.rot-mee",
+    "entryType": "word",
+    "lemma": "รถเมล์",
+    "romaji": "rót-mee",
+    "translation": "bus",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 132,
+    "register": "neutral",
+    "tags": [
+      "transport"
+    ],
+    "naturalMeaning": "A public city bus.",
+    "examples": [
+      {
+        "text": "ขึ้นรถเมล์",
+        "romaji": "khûen rót-mee",
+        "translation": "to take the bus"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.rot-fai",
+    "entryType": "word",
+    "lemma": "รถไฟ",
+    "romaji": "rót-fai",
+    "translation": "train",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 133,
+    "register": "neutral",
+    "tags": [
+      "transport"
+    ],
+    "naturalMeaning": "A train; literally 'fire vehicle'.",
+    "examples": [
+      {
+        "text": "นั่งรถไฟ",
+        "romaji": "nâng rót-fai",
+        "translation": "to ride the train"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thaeksii",
+    "entryType": "word",
+    "lemma": "แท็กซี่",
+    "romaji": "tháek-sîi",
+    "translation": "taxi",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 134,
+    "register": "neutral",
+    "tags": [
+      "transport"
+    ],
+    "naturalMeaning": "A taxi (a loanword).",
+    "examples": [
+      {
+        "text": "เรียกแท็กซี่",
+        "romaji": "rîak tháek-sîi",
+        "translation": "to call a taxi"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.rot-fai-faa",
+    "entryType": "word",
+    "lemma": "รถไฟฟ้า",
+    "romaji": "rót-fai-fáa",
+    "translation": "skytrain / electric train",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 136,
+    "register": "neutral",
+    "tags": [
+      "transport"
+    ],
+    "naturalMeaning": "The elevated electric train (BTS) in Bangkok.",
+    "examples": [
+      {
+        "text": "นั่งรถไฟฟ้า",
+        "romaji": "nâng rót-fai-fáa",
+        "translation": "to ride the skytrain"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.ruea",
+    "entryType": "word",
+    "lemma": "เรือ",
+    "romaji": "ruea",
+    "translation": "boat",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 137,
+    "register": "neutral",
+    "tags": [
+      "transport"
+    ],
+    "naturalMeaning": "A boat.",
+    "examples": [
+      {
+        "text": "นั่งเรือ",
+        "romaji": "nâng ruea",
+        "translation": "to ride a boat"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khrueang-bin",
+    "entryType": "word",
+    "lemma": "เครื่องบิน",
+    "romaji": "khrûeang-bin",
+    "translation": "airplane",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 138,
+    "register": "neutral",
+    "tags": [
+      "transport"
+    ],
+    "naturalMeaning": "An airplane.",
+    "examples": [
+      {
+        "text": "ขึ้นเครื่องบิน",
+        "romaji": "khûen khrûeang-bin",
+        "translation": "to board a plane"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.nang",
+    "entryType": "word",
+    "lemma": "นั่ง",
+    "romaji": "nâng",
+    "translation": "to sit / to ride",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 64,
+    "register": "neutral",
+    "tags": [
+      "transport"
+    ],
+    "naturalMeaning": "To sit; also used for riding in a vehicle.",
+    "examples": [
+      {
+        "text": "นั่งลง",
+        "romaji": "nâng long",
+        "translation": "to sit down"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hua",
+    "entryType": "word",
+    "lemma": "หัว",
+    "romaji": "hǔa",
+    "translation": "head",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 180,
+    "register": "neutral",
+    "tags": [
+      "body"
+    ],
+    "naturalMeaning": "The head.",
+    "examples": [
+      {
+        "text": "ปวดหัว",
+        "romaji": "pùat hǔa",
+        "translation": "to have a headache"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.taa",
+    "entryType": "word",
+    "lemma": "ตา",
+    "romaji": "taa",
+    "translation": "eye",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 181,
+    "register": "neutral",
+    "tags": [
+      "body"
+    ],
+    "naturalMeaning": "The eye; also means maternal grandfather.",
+    "examples": [
+      {
+        "text": "ตาสวย",
+        "romaji": "taa sǔai",
+        "translation": "beautiful eyes"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.huu",
+    "entryType": "word",
+    "lemma": "หู",
+    "romaji": "hǔu",
+    "translation": "ear",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 182,
+    "register": "neutral",
+    "tags": [
+      "body"
+    ],
+    "naturalMeaning": "The ear.",
+    "examples": [
+      {
+        "text": "หูสองข้าง",
+        "romaji": "hǔu sǎwng khâang",
+        "translation": "two ears"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.paak",
+    "entryType": "word",
+    "lemma": "ปาก",
+    "romaji": "pàak",
+    "translation": "mouth",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 183,
+    "register": "neutral",
+    "tags": [
+      "body"
+    ],
+    "naturalMeaning": "The mouth.",
+    "examples": [
+      {
+        "text": "ปิดปาก",
+        "romaji": "pìt pàak",
+        "translation": "to close the mouth"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.mue",
+    "entryType": "word",
+    "lemma": "มือ",
+    "romaji": "mue",
+    "translation": "hand",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 184,
+    "register": "neutral",
+    "tags": [
+      "body"
+    ],
+    "naturalMeaning": "The hand.",
+    "examples": [
+      {
+        "text": "ล้างมือ",
+        "romaji": "láang mue",
+        "translation": "to wash hands"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.puat",
+    "entryType": "word",
+    "lemma": "ปวด",
+    "romaji": "pùat",
+    "translation": "to ache / hurt (dull pain)",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 185,
+    "register": "neutral",
+    "tags": [
+      "health"
+    ],
+    "naturalMeaning": "A dull, internal ache such as a headache or sore muscle.",
+    "examples": [
+      {
+        "text": "ปวดท้อง",
+        "romaji": "pùat tháwng",
+        "translation": "to have a stomachache"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.jep",
+    "entryType": "word",
+    "lemma": "เจ็บ",
+    "romaji": "jèp",
+    "translation": "to hurt (sharp) / be injured",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 186,
+    "register": "neutral",
+    "tags": [
+      "health"
+    ],
+    "naturalMeaning": "A sharp pain or an injury on the body.",
+    "examples": [
+      {
+        "text": "เจ็บมือ",
+        "romaji": "jèp mue",
+        "translation": "My hand hurts."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.puai",
+    "entryType": "word",
+    "lemma": "ป่วย",
+    "romaji": "pùai",
+    "translation": "to be sick / ill",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 187,
+    "register": "neutral",
+    "tags": [
+      "health"
+    ],
+    "naturalMeaning": "To be ill.",
+    "examples": [
+      {
+        "text": "ผมป่วย",
+        "romaji": "phǒm pùai",
+        "translation": "I am sick."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.yaa",
+    "entryType": "word",
+    "lemma": "ยา",
+    "romaji": "yaa",
+    "translation": "medicine",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 188,
+    "register": "neutral",
+    "tags": [
+      "health"
+    ],
+    "naturalMeaning": "Medicine or drugs.",
+    "examples": [
+      {
+        "text": "กินยา",
+        "romaji": "kin yaa",
+        "translation": "to take medicine"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.maw",
+    "entryType": "word",
+    "lemma": "หมอ",
+    "romaji": "mǎw",
+    "translation": "doctor",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 189,
+    "register": "neutral",
+    "tags": [
+      "health",
+      "people"
+    ],
+    "naturalMeaning": "A doctor (informal, everyday word).",
+    "examples": [
+      {
+        "text": "ไปหาหมอ",
+        "romaji": "pai hǎa mǎw",
+        "translation": "to go see a doctor"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.aakaat",
+    "entryType": "word",
+    "lemma": "อากาศ",
+    "romaji": "aa-kàat",
+    "translation": "weather / air",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 190,
+    "register": "neutral",
+    "tags": [
+      "weather"
+    ],
+    "naturalMeaning": "The weather, and also the air.",
+    "examples": [
+      {
+        "text": "อากาศดี",
+        "romaji": "aa-kàat dii",
+        "translation": "The weather is nice."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.fon",
+    "entryType": "word",
+    "lemma": "ฝน",
+    "romaji": "fǒn",
+    "translation": "rain",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 191,
+    "register": "neutral",
+    "tags": [
+      "weather"
+    ],
+    "naturalMeaning": "Rain; ฝนตก means 'it rains'.",
+    "examples": [
+      {
+        "text": "ฝนตก",
+        "romaji": "fǒn tòk",
+        "translation": "It's raining."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.daet",
+    "entryType": "word",
+    "lemma": "แดด",
+    "romaji": "dàet",
+    "translation": "sunshine / sunlight",
+    "partOfSpeech": "noun",
+    "cefr": "A1",
+    "frequencyRank": 192,
+    "register": "neutral",
+    "tags": [
+      "weather"
+    ],
+    "naturalMeaning": "Sunlight; แดดออก means the sun is out.",
+    "examples": [
+      {
+        "text": "แดดร้อน",
+        "romaji": "dàet ráwn",
+        "translation": "The sun is hot."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.pai",
+    "entryType": "word",
+    "lemma": "ไป",
+    "romaji": "pai",
+    "translation": "to go",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 5,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "To go; also marks motion away from the speaker.",
+    "examples": [
+      {
+        "text": "ไปไหน",
+        "romaji": "pai nǎi",
+        "translation": "Where are you going?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.maa-come",
+    "entryType": "word",
+    "lemma": "มา",
+    "romaji": "maa",
+    "translation": "to come",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 6,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "To come; marks motion toward the speaker.",
+    "examples": [
+      {
+        "text": "มานี่",
+        "romaji": "maa nîi",
+        "translation": "Come here."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.kin",
+    "entryType": "word",
+    "lemma": "กิน",
+    "romaji": "kin",
+    "translation": "to eat",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 7,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "food-drink"
+    ],
+    "naturalMeaning": "To eat; กินข้าว is the everyday phrase for 'to have a meal'.",
+    "examples": [
+      {
+        "text": "กินข้าวหรือยัง",
+        "romaji": "kin khâao rǔe yang",
+        "translation": "Have you eaten yet?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.duem",
+    "entryType": "word",
+    "lemma": "ดื่ม",
+    "romaji": "dùem",
+    "translation": "to drink",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 81,
+    "register": "neutral",
+    "tags": [
+      "verbs",
+      "food-drink"
+    ],
+    "naturalMeaning": "To drink (more formal than กิน for beverages).",
+    "examples": [
+      {
+        "text": "ดื่มน้ำ",
+        "romaji": "dùem náam",
+        "translation": "to drink water"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.yaak-want",
+    "entryType": "word",
+    "lemma": "อยาก",
+    "romaji": "yàak",
+    "translation": "to want (to do)",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 26,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "Expresses wanting to do something: อยาก + verb.",
+    "examples": [
+      {
+        "text": "อยากกินข้าว",
+        "romaji": "yàak kin khâao",
+        "translation": "I want to eat."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.ao",
+    "entryType": "word",
+    "lemma": "เอา",
+    "romaji": "ao",
+    "translation": "to want / to take",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 27,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "To want or take a thing: เอา + noun.",
+    "examples": [
+      {
+        "text": "เอาอันนี้",
+        "romaji": "ao an-níi",
+        "translation": "I'll take this one."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.mii",
+    "entryType": "word",
+    "lemma": "มี",
+    "romaji": "mii",
+    "translation": "to have / there is",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 9,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "To have or possess; also 'there is/are'.",
+    "examples": [
+      {
+        "text": "มีเงินไหม",
+        "romaji": "mii ngoen mǎi",
+        "translation": "Do you have money?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.pen",
+    "entryType": "word",
+    "lemma": "เป็น",
+    "romaji": "pen",
+    "translation": "to be (equate) / can",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 16,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "Links a subject to a noun (X is a Y); also 'to be able to'.",
+    "examples": [
+      {
+        "text": "ผมเป็นครู",
+        "romaji": "phǒm pen khruu",
+        "translation": "I am a teacher."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.yuu",
+    "entryType": "word",
+    "lemma": "อยู่",
+    "romaji": "yùu",
+    "translation": "to be located / to stay",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 17,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "To be at a place, or to be staying; also marks ongoing action.",
+    "examples": [
+      {
+        "text": "อยู่ที่ไหน",
+        "romaji": "yùu thîi-nǎi",
+        "translation": "Where is it / are you?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.chawp",
+    "entryType": "word",
+    "lemma": "ชอบ",
+    "romaji": "châwp",
+    "translation": "to like",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 28,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "To like something or someone.",
+    "examples": [
+      {
+        "text": "ชอบอาหารไทย",
+        "romaji": "châwp aa-hǎan thai",
+        "translation": "to like Thai food"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hen",
+    "entryType": "word",
+    "lemma": "เห็น",
+    "romaji": "hěn",
+    "translation": "to see",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 29,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "To see or perceive with the eyes.",
+    "examples": [
+      {
+        "text": "เห็นไหม",
+        "romaji": "hěn mǎi",
+        "translation": "Do you see it?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.hai",
+    "entryType": "word",
+    "lemma": "ให้",
+    "romaji": "hâi",
+    "translation": "to give / for",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 19,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "To give; also 'for' someone or 'to let/have someone do'.",
+    "examples": [
+      {
+        "text": "ให้เงิน",
+        "romaji": "hâi ngoen",
+        "translation": "to give money"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tham",
+    "entryType": "word",
+    "lemma": "ทำ",
+    "romaji": "tham",
+    "translation": "to do / to make",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 21,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "To do or make.",
+    "examples": [
+      {
+        "text": "ทำอะไร",
+        "romaji": "tham à-rai",
+        "translation": "What are you doing?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.phuut",
+    "entryType": "word",
+    "lemma": "พูด",
+    "romaji": "phûut",
+    "translation": "to speak / talk",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 31,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "To speak or talk.",
+    "examples": [
+      {
+        "text": "พูดไทย",
+        "romaji": "phûut thai",
+        "translation": "to speak Thai"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.dai",
+    "entryType": "word",
+    "lemma": "ได้",
+    "romaji": "dâi",
+    "translation": "can / to be able / to get",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 4,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "Very common: 'can', 'able to', or 'to get/receive'.",
+    "examples": [
+      {
+        "text": "ได้ไหม",
+        "romaji": "dâi mǎi",
+        "translation": "Is it okay? / Can you?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.duu",
+    "entryType": "word",
+    "lemma": "ดู",
+    "romaji": "duu",
+    "translation": "to look / watch",
+    "partOfSpeech": "verb",
+    "cefr": "A1",
+    "frequencyRank": 32,
+    "register": "neutral",
+    "tags": [
+      "verbs"
+    ],
+    "naturalMeaning": "To look at or watch; also 'to seem'.",
+    "examples": [
+      {
+        "text": "ดูหนัง",
+        "romaji": "duu nǎng",
+        "translation": "to watch a movie"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.yai",
+    "entryType": "word",
+    "lemma": "ใหญ่",
+    "romaji": "yài",
+    "translation": "big / large",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 33,
+    "register": "neutral",
+    "tags": [
+      "adjectives"
+    ],
+    "naturalMeaning": "Big in size.",
+    "examples": [
+      {
+        "text": "บ้านใหญ่",
+        "romaji": "bâan yài",
+        "translation": "a big house"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.lek",
+    "entryType": "word",
+    "lemma": "เล็ก",
+    "romaji": "lék",
+    "translation": "small / little",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 34,
+    "register": "neutral",
+    "tags": [
+      "adjectives"
+    ],
+    "naturalMeaning": "Small in size.",
+    "examples": [
+      {
+        "text": "รถเล็ก",
+        "romaji": "rót lék",
+        "translation": "a small car"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.rawn-hot",
+    "entryType": "word",
+    "lemma": "ร้อน",
+    "romaji": "ráwn",
+    "translation": "hot",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 37,
+    "register": "neutral",
+    "tags": [
+      "adjectives",
+      "weather"
+    ],
+    "naturalMeaning": "Hot to the touch or in temperature.",
+    "examples": [
+      {
+        "text": "น้ำร้อน",
+        "romaji": "náam ráwn",
+        "translation": "hot water"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.naao",
+    "entryType": "word",
+    "lemma": "หนาว",
+    "romaji": "nǎao",
+    "translation": "cold (weather)",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 38,
+    "register": "neutral",
+    "tags": [
+      "adjectives",
+      "weather"
+    ],
+    "naturalMeaning": "Cold, used for weather and how the body feels.",
+    "examples": [
+      {
+        "text": "อากาศหนาว",
+        "romaji": "aa-kàat nǎao",
+        "translation": "The weather is cold."
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.dii",
+    "entryType": "word",
+    "lemma": "ดี",
+    "romaji": "dii",
+    "translation": "good",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 23,
+    "register": "neutral",
+    "tags": [
+      "adjectives"
+    ],
+    "naturalMeaning": "Good; one of the most common adjectives.",
+    "examples": [
+      {
+        "text": "ดีมาก",
+        "romaji": "dii mâak",
+        "translation": "very good"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.suai",
+    "entryType": "word",
+    "lemma": "สวย",
+    "romaji": "sǔai",
+    "translation": "beautiful / pretty",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 39,
+    "register": "neutral",
+    "tags": [
+      "adjectives"
+    ],
+    "naturalMeaning": "Beautiful, used especially for women, places, and things.",
+    "examples": [
+      {
+        "text": "สวยมาก",
+        "romaji": "sǔai mâak",
+        "translation": "very beautiful"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.maak",
+    "entryType": "word",
+    "lemma": "มาก",
+    "romaji": "mâak",
+    "translation": "much / very",
+    "partOfSpeech": "adverb",
+    "cefr": "A1",
+    "frequencyRank": 12,
+    "register": "neutral",
+    "tags": [
+      "adjectives"
+    ],
+    "naturalMeaning": "Placed after a word to mean 'very' or 'a lot'.",
+    "examples": [
+      {
+        "text": "ดีมาก",
+        "romaji": "dii mâak",
+        "translation": "very good"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.kao-old",
+    "entryType": "word",
+    "lemma": "เก่า",
+    "romaji": "kào",
+    "translation": "old (of things)",
+    "partOfSpeech": "adjective",
+    "cefr": "A1",
+    "frequencyRank": 93,
+    "register": "neutral",
+    "tags": [
+      "adjectives"
+    ],
+    "naturalMeaning": "Old, for objects (not people; for people use แก่).",
+    "examples": [
+      {
+        "text": "รถเก่า",
+        "romaji": "rót kào",
+        "translation": "an old car"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.khrai",
+    "entryType": "word",
+    "lemma": "ใคร",
+    "romaji": "khrai",
+    "translation": "who",
+    "partOfSpeech": "pronoun",
+    "cefr": "A1",
+    "frequencyRank": 43,
+    "register": "neutral",
+    "tags": [
+      "question-words"
+    ],
+    "naturalMeaning": "The question word 'who'.",
+    "examples": [
+      {
+        "text": "ใครมา",
+        "romaji": "khrai maa",
+        "translation": "Who is coming?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.arai",
+    "entryType": "word",
+    "lemma": "อะไร",
+    "romaji": "à-rai",
+    "translation": "what",
+    "partOfSpeech": "pronoun",
+    "cefr": "A1",
+    "frequencyRank": 44,
+    "register": "neutral",
+    "tags": [
+      "question-words"
+    ],
+    "naturalMeaning": "The question word 'what'.",
+    "examples": [
+      {
+        "text": "นี่อะไร",
+        "romaji": "nîi à-rai",
+        "translation": "What is this?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thii-nai-where",
+    "entryType": "word",
+    "lemma": "ที่ไหน",
+    "romaji": "thîi-nǎi",
+    "translation": "where",
+    "partOfSpeech": "adverb",
+    "cefr": "A1",
+    "frequencyRank": 47,
+    "register": "neutral",
+    "tags": [
+      "question-words",
+      "directions"
+    ],
+    "naturalMeaning": "The question word 'where'.",
+    "examples": [
+      {
+        "text": "อยู่ที่ไหน",
+        "romaji": "yùu thîi-nǎi",
+        "translation": "Where is it?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.muea-rai",
+    "entryType": "word",
+    "lemma": "เมื่อไหร่",
+    "romaji": "mûea-rài",
+    "translation": "when",
+    "partOfSpeech": "adverb",
+    "cefr": "A1",
+    "frequencyRank": 143,
+    "register": "neutral",
+    "tags": [
+      "question-words"
+    ],
+    "naturalMeaning": "The question word 'when'.",
+    "examples": [
+      {
+        "text": "มาเมื่อไหร่",
+        "romaji": "maa mûea-rài",
+        "translation": "When are you coming?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.tham-mai",
+    "entryType": "word",
+    "lemma": "ทำไม",
+    "romaji": "tham-mai",
+    "translation": "why",
+    "partOfSpeech": "adverb",
+    "cefr": "A1",
+    "frequencyRank": 144,
+    "register": "neutral",
+    "tags": [
+      "question-words"
+    ],
+    "naturalMeaning": "The question word 'why'.",
+    "examples": [
+      {
+        "text": "ทำไมไม่มา",
+        "romaji": "tham-mai mâi maa",
+        "translation": "Why aren't you coming?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.yang-ngai",
+    "entryType": "word",
+    "lemma": "ยังไง",
+    "romaji": "yang-ngai",
+    "translation": "how",
+    "partOfSpeech": "adverb",
+    "cefr": "A1",
+    "frequencyRank": 142,
+    "register": "neutral",
+    "tags": [
+      "question-words"
+    ],
+    "naturalMeaning": "The everyday spoken word for 'how' (from อย่างไร).",
+    "examples": [
+      {
+        "text": "ทำยังไง",
+        "romaji": "tham yang-ngai",
+        "translation": "How do you do it?"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "vocab.thao-rai",
+    "entryType": "word",
+    "lemma": "เท่าไหร่",
+    "romaji": "thâo-rài",
+    "translation": "how much / how many",
+    "partOfSpeech": "adverb",
+    "cefr": "A1",
+    "frequencyRank": 57,
+    "register": "neutral",
+    "tags": [
+      "question-words",
+      "money"
+    ],
+    "naturalMeaning": "Asks about amount or price.",
+    "examples": [
+      {
+        "text": "เท่าไหร่ครับ",
+        "romaji": "thâo-rài khráp",
+        "translation": "How much is it?"
+      }
+    ]
+  }
+]

@@ -1,0 +1,363 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "slang.thee",
+    "kind": "slang",
+    "phrase": "เท่",
+    "romaji": "thêe",
+    "literal": "(no literal meaning)",
+    "natural": "cool / stylish / suave",
+    "register": "informal",
+    "severity": 1,
+    "region": null,
+    "whoUses": "everyone, all ages; the default word for 'cool' about a person, look, or thing",
+    "usageContext": "praising style, charisma, or a slick object; 'ดูเท่มาก' = 'looks so cool'",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["ดีมาก", "สวย"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "เสื้อตัวนี้เท่มากเลย", "romaji": "sûea tua níi thêe mâak looei", "translation": "This shirt is really cool." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.saep",
+    "kind": "slang",
+    "phrase": "แซ่บ",
+    "romaji": "sâep",
+    "literal": "spicy-delicious (Isaan/Lao origin)",
+    "natural": "deliciously spicy; by extension slang for a 'hot'/sexy person or a fierce look",
+    "register": "informal",
+    "severity": 2,
+    "region": null,
+    "whoUses": "everyone for food; younger people and social media for the 'hot/fierce' sense",
+    "usageContext": "raving about spicy food, or playfully calling someone or their outfit hot/on-point",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["อร่อย", "เผ็ดอร่อย"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "ส้มตำร้านนี้แซ่บมาก", "romaji": "sôm-tam ráan níi sâep mâak", "translation": "The papaya salad here is deliciously spicy." },
+      { "text": "วันนี้แต่งตัวแซ่บมาก", "romaji": "wan níi tàeng-tua sâep mâak", "translation": "You look super hot today." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.jing-di",
+    "kind": "slang",
+    "phrase": "จริงดิ",
+    "romaji": "jing dì",
+    "literal": "true, huh?",
+    "natural": "for real? / seriously? / no way",
+    "register": "informal",
+    "severity": 1,
+    "region": null,
+    "whoUses": "young people and casual chat; very common in texting",
+    "usageContext": "reacting to surprising news; also spelled จริงดิ่",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["จริงเหรอ", "จริงหรอ"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "เขาเลิกกันแล้วเหรอ จริงดิ", "romaji": "kháo lôek kan láew rǒe, jing dì", "translation": "They broke up? For real?" }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.chin",
+    "kind": "slang",
+    "phrase": "ชิลๆ",
+    "romaji": "chiw chiw",
+    "literal": "(from English 'chill', reduplicated)",
+    "natural": "chill / relaxed / no big deal / take it easy",
+    "register": "informal",
+    "severity": 1,
+    "region": null,
+    "whoUses": "young and middle-aged people; ubiquitous loanword",
+    "usageContext": "describing a laid-back mood, place, or plan; often written ชิลๆ with the repeat mark",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["สบายๆ", "เรื่อยๆ"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "วันหยุดนี้อยู่บ้านชิลๆ", "romaji": "wan-yùt níi yùu bâan chiw chiw", "translation": "This weekend I'm just chilling at home." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.thep",
+    "kind": "slang",
+    "phrase": "เทพ",
+    "romaji": "thêep",
+    "literal": "deity / god (from Sanskrit deva)",
+    "natural": "godlike, super skilled, a pro (esp. at gaming or any craft)",
+    "register": "informal",
+    "severity": 1,
+    "region": null,
+    "whoUses": "gamers and young people, now general; leet respelling เมพ also seen",
+    "usageContext": "praising someone very skilled; 'เล่นเกมเทพมาก' = 'plays insanely well'",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["เก่งมาก", "มือโปร"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "พี่คนนี้วาดรูปเทพมาก", "romaji": "phîi khon níi wâat rûup thêep mâak", "translation": "This guy draws like a god." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.pro",
+    "kind": "slang",
+    "phrase": "โปร",
+    "romaji": "proo",
+    "literal": "(from English 'pro')",
+    "natural": "professional-level, skilled; also short for a promotion/deal",
+    "register": "informal",
+    "severity": 1,
+    "region": null,
+    "whoUses": "everyone; loanword",
+    "usageContext": "'เล่นโปรมาก' = plays like a pro; also 'มีโปรลดราคา' = there's a promo/deal",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["มืออาชีพ", "เก่ง"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "เขาถ่ายรูปโปรมาก", "romaji": "kháo thàai rûup proo mâak", "translation": "He takes photos like a pro." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.ngaawn",
+    "kind": "slang",
+    "phrase": "งอน",
+    "romaji": "ngaawn",
+    "literal": "to sulk / be miffed",
+    "natural": "to sulk or pout, usually playfully, especially with a partner or close friend",
+    "register": "affectionate",
+    "severity": 1,
+    "region": null,
+    "whoUses": "everyone; strongly tied to couple and close-friend dynamics",
+    "usageContext": "when someone gives you the silent treatment or pouts to get attention",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["โกรธ", "ไม่พอใจ"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "อย่างอนสิ เดี๋ยวพาไปกินข้าว", "romaji": "yàa ngaawn sì, dǐao phaa pai kin khâao", "translation": "Don't sulk, I'll take you out to eat." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.khii-kiat",
+    "kind": "slang",
+    "phrase": "ขี้เกียจ",
+    "romaji": "khîi-kìat",
+    "literal": "excrement-lazy (ขี้ = a prefix for 'prone to')",
+    "natural": "lazy; can't be bothered / don't feel like it",
+    "register": "informal",
+    "severity": 1,
+    "region": null,
+    "whoUses": "everyone; extremely common everyday word",
+    "usageContext": "admitting you don't feel like doing something; 'ขี้เกียจไปทำงาน' = can't be bothered to go to work",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["ไม่อยากทำ", "เหนื่อย"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "วันนี้ขี้เกียจทำกับข้าว สั่งเดลิเวอรีดีกว่า", "romaji": "wan níi khîi-kìat tham kàp-khâao, sàng deliveree dii kwàa", "translation": "Too lazy to cook today, let's just order delivery." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.khrap-phom",
+    "kind": "slang",
+    "phrase": "ครับผม",
+    "romaji": "khráp phǒm",
+    "literal": "'khrap' (polite particle) + 'phom' (I, male)",
+    "natural": "emphatic 'yes sir / you got it / roger that' (male speaker); deferential or cheerfully joking",
+    "register": "humorous",
+    "severity": 1,
+    "region": null,
+    "whoUses": "male speakers; a peppier, more eager version of plain ครับ",
+    "usageContext": "acknowledging an order or agreeing readily, sometimes with playful over-politeness",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["ครับ", "ได้ครับ"],
+    "warningNotes": "Male speakers only. Women use ค่ะ/คะ, not ผม.",
+    "examples": [
+      { "text": "เอาอันนี้ห่อกลับนะ ครับผม", "romaji": "ao an níi hɔ̀ɔ klàp ná, khráp phǒm", "translation": "Wrap this one up to go — you got it!" }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "idiom.mai-pen-rai",
+    "kind": "idiom",
+    "phrase": "ไม่เป็นไร",
+    "romaji": "mâi pen rai",
+    "literal": "it is not anything",
+    "natural": "never mind / it's okay / no worries / you're welcome — the quintessential Thai easygoing phrase",
+    "register": "informal",
+    "severity": 1,
+    "region": null,
+    "whoUses": "everyone, constantly; a cultural cornerstone",
+    "usageContext": "brushing off a mistake, declining fuss, or replying to 'thank you'/'sorry'",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["ไม่เป็นไรครับ", "ไม่เป็นไรค่ะ"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "ขอโทษที่มาสาย ไม่เป็นไรครับ", "romaji": "khɔ̌ɔ-thôot thîi maa sǎai — mâi pen rai khráp", "translation": "Sorry I'm late. — It's okay, no worries." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.kik",
+    "kind": "slang",
+    "phrase": "กิ๊ก",
+    "romaji": "kík",
+    "literal": "(onomatopoeic; no literal meaning)",
+    "natural": "a casual romantic fling / someone you're seeing on the side, less than an official partner",
+    "register": "informal",
+    "severity": 2,
+    "region": null,
+    "whoUses": "young and middle-aged people; gossip and dating talk",
+    "usageContext": "referring to a non-committed romantic interest; can imply cheating depending on context",
+    "learnerShouldUse": "recognize-only",
+    "saferAlternatives": ["คนคุย", "แฟน"],
+    "warningNotes": "Implies a casual/secret fling; can suggest infidelity, so use carefully.",
+    "examples": [
+      { "text": "เขาไม่ใช่แฟน เป็นแค่กิ๊ก", "romaji": "kháo mâi châi faen, pen khâe kík", "translation": "He's not my boyfriend, just a fling." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.tua-eeng",
+    "kind": "slang",
+    "phrase": "ตัวเอง",
+    "romaji": "tua-eeng",
+    "literal": "oneself / self",
+    "natural": "a sweet second-person 'you' (like 'babe/hon') used between couples and very close friends; literally still means 'oneself' in other contexts",
+    "register": "affectionate",
+    "severity": 1,
+    "region": null,
+    "whoUses": "couples and close (often female) friends; endearing address",
+    "usageContext": "addressing a partner or bestie affectionately; 'ตัวเองกินข้าวยัง' = 'have you eaten, babe?'",
+    "learnerShouldUse": "recognize-only",
+    "saferAlternatives": ["คุณ", "เธอ"],
+    "warningNotes": "Only sweet with people you're close to; sounds odd or overfamiliar with acquaintances.",
+    "examples": [
+      { "text": "ตัวเองถึงบ้านหรือยัง", "romaji": "tua-eeng thǔeng bâan rǔe yang", "translation": "Are you home yet, babe?" }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.phueak",
+    "kind": "slang",
+    "phrase": "เผือก",
+    "romaji": "phùeak",
+    "literal": "taro (the root vegetable)",
+    "natural": "to be nosy / butt into other people's business; 'a busybody'",
+    "register": "internet",
+    "severity": 2,
+    "region": null,
+    "whoUses": "young people and social media; a well-known meme sense",
+    "usageContext": "teasing someone who's prying; 'อย่ามาเผือก' = 'mind your own business'",
+    "learnerShouldUse": "recognize-only",
+    "saferAlternatives": ["อย่ายุ่ง", "เรื่องของฉัน"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "เธอนี่ชอบเผือกเรื่องชาวบ้านจริงๆ", "romaji": "thooe nîi chɔ̂ɔp phùeak rûeang chaao-bâan jing jing", "translation": "You really love poking into everyone's business." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.woe",
+    "kind": "slang",
+    "phrase": "เว่อร์",
+    "romaji": "wêr",
+    "literal": "(from English 'over')",
+    "natural": "over-the-top / exaggerated / extra / dramatic",
+    "register": "informal",
+    "severity": 1,
+    "region": null,
+    "whoUses": "everyone informally; common loanword",
+    "usageContext": "calling out drama or exaggeration; 'พูดเว่อร์ไป' = 'you're exaggerating'",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["เกินไป", "พูดเกินจริง"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "ร้องไห้ทำไม เว่อร์ไปแล้ว", "romaji": "rɔ́ɔng-hâi tham-mai, wêr pai láew", "translation": "Why are you crying? That's way over the top." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.fin",
+    "kind": "slang",
+    "phrase": "ฟิน",
+    "romaji": "fin",
+    "literal": "(from English 'finale'/blissful ending)",
+    "natural": "blissed out, in heaven, totally loving it (a moment of pure enjoyment)",
+    "register": "informal",
+    "severity": 1,
+    "region": null,
+    "whoUses": "young people and social media; very common",
+    "usageContext": "peak enjoyment of food, music, rest, romance; 'ฟินมาก' = 'so blissful'",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["มีความสุขมาก", "สุดยอด"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "ได้นอนเต็มอิ่มวันนี้ ฟินมาก", "romaji": "dâi naawn tem-ìm wan níi, fin mâak", "translation": "Got a full sleep-in today — pure bliss." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "slang.pang",
+    "kind": "slang",
+    "phrase": "ปัง",
+    "romaji": "pang",
+    "literal": "(onomatopoeia for a bang/pop)",
+    "natural": "a hit / fabulous / slaying it — a look or performance that's on fire",
+    "register": "internet",
+    "severity": 1,
+    "region": null,
+    "whoUses": "young people and social media; trendy praise",
+    "usageContext": "hyping a great outfit, photo, or result; 'ลุคนี้ปังมาก' = 'this look is slaying'",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["สวยมาก", "เยี่ยม"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "เมคอัพวันนี้ปังมาก", "romaji": "méek-áp wan níi pang mâak", "translation": "Today's makeup is slaying." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "idiom.muu-muu",
+    "kind": "idiom",
+    "phrase": "หมูๆ",
+    "romaji": "mǔu mǔu",
+    "literal": "pig pig (reduplicated 'pig')",
+    "natural": "easy / a piece of cake / no sweat",
+    "register": "informal",
+    "severity": 1,
+    "region": null,
+    "whoUses": "everyone informally",
+    "usageContext": "saying a task is very easy; 'ข้อสอบหมูๆ' = 'the exam was a breeze'",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["ง่ายมาก", "สบายมาก"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "งานนี้หมูๆ เดี๋ยวเสร็จ", "romaji": "ngaan níi mǔu mǔu, dǐao sèt", "translation": "This job is a piece of cake, it'll be done in a sec." }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "idiom.jai-yen",
+    "kind": "idiom",
+    "phrase": "ใจเย็น",
+    "romaji": "jai yen",
+    "literal": "cool heart",
+    "natural": "stay calm / take it easy / be patient",
+    "register": "informal",
+    "severity": 1,
+    "region": null,
+    "whoUses": "everyone; a core cultural value phrase",
+    "usageContext": "telling someone to relax or not rush; often doubled 'ใจเย็นๆ'",
+    "learnerShouldUse": "use",
+    "saferAlternatives": ["ใจเย็นๆ", "ค่อยๆ"],
+    "warningNotes": null,
+    "examples": [
+      { "text": "ใจเย็นๆ เดี๋ยวก็ถึงแล้ว", "romaji": "jai yen yen, dǐao kɔ̂ɔ thǔeng láew", "translation": "Take it easy, we're almost there." }
+    ]
+  }
+]

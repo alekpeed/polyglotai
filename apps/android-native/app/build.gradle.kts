@@ -14,8 +14,8 @@ android {
         applicationId = "com.polyglotai.android"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = 2
+        versionName = "0.2.0"
     }
 
     buildTypes {
@@ -64,4 +64,8 @@ dependencies {
     ksp("androidx.room:room-compiler:$room")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
+
+    // JVM unit tests for the pure mastery engine (no Android, no mic, no network).
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.1")
 }

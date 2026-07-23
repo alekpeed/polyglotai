@@ -1,0 +1,522 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "grammar.word-order-svo",
+    "title": "Basic word order (SVO) and no inflection",
+    "cefr": "A1",
+    "explanationMd": "Vietnamese is an **analytic** language: words never change shape. There is **no verb conjugation, no plurals, no articles (a/the), and no grammatical gender**. The core order is **Subject – Verb – Object**, just like English: **Tôi ăn cơm** (I eat rice). One form of a word covers every person and tense — **ăn** means eat / eats / ate / eaten. Meaning comes from word order and from separate helper words (đã, đang, sẽ...), not from endings. The plural is understood from context or from words like **các** / **những**, never from the noun itself.",
+    "examples": [
+      { "text": "Tôi ăn cơm.", "translation": "I eat rice." },
+      { "text": "Cô ấy uống cà phê.", "translation": "She drinks coffee." },
+      { "text": "Chúng tôi học tiếng Việt.", "translation": "We study Vietnamese." }
+    ],
+    "commonErrors": [
+      { "wrong": "Tôi ăns cơm.", "right": "Tôi ăn cơm.", "note": "Verbs never take endings — do not add -s or any suffix." },
+      { "wrong": "Tôi ăn những cơms.", "right": "Tôi ăn cơm.", "note": "Nouns have no plural -s; leave the noun bare." }
+    ],
+    "drills": [
+      { "prompt": "Arrange: cơm / ăn / tôi", "answer": "Tôi ăn cơm." },
+      { "prompt": "Say 'She studies Vietnamese.'", "answer": "Cô ấy học tiếng Việt." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.pronoun-toi-minh",
+    "title": "Saying 'I': tôi and mình",
+    "cefr": "A1",
+    "explanationMd": "Vietnamese has no single neutral word for **I**; you pick one that fits the relationship. The safe default with strangers, in class, or in any neutral situation is **tôi** (I). Among close friends or with a partner, people use **mình** (I / me, intimate). **Mình** can also mean **we** and is used to address a spouse affectionately. Start with **tôi** everywhere until you know the relationship — it is polite and never wrong for a beginner. Note that in warm, family-style conversation, native speakers often replace even **tôi** with a kinship term for 'I' (see the kinship entries).",
+    "examples": [
+      { "text": "Tôi là sinh viên.", "translation": "I am a student." },
+      { "text": "Tôi tên là Nam.", "translation": "My name is Nam." },
+      { "text": "Mình đi trước nhé.", "translation": "I'll go first, okay. (to a friend)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Mình là bác sĩ. (to your new boss)", "right": "Tôi là bác sĩ.", "note": "Mình is intimate; use tôi with people you don't know well." }
+    ],
+    "drills": [
+      { "prompt": "Introduce yourself politely: 'I am a teacher.'", "answer": "Tôi là giáo viên." },
+      { "prompt": "Tell a close friend 'I'm tired.'", "answer": "Mình mệt." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.pronoun-kinship-address",
+    "title": "Addressing people with kinship terms (anh/chị/em/ông/bà/con/cháu)",
+    "cefr": "A1",
+    "explanationMd": "This is **the** central feature of Vietnamese. Instead of a neutral 'you', you address people with **family words** chosen by their **age and gender relative to you**:\n\n- **anh** — a man slightly older than you (older brother)\n- **chị** — a woman slightly older than you (older sister)\n- **em** — a person younger than you (younger sibling); also how a younger person or a student is addressed\n- **ông** — an old man / 'sir, grandfather'\n- **bà** — an old woman / 'madam, grandmother'\n- **con** — a child (a parent addressing their child)\n- **cháu** — a young child speaking to a much older adult (grandchild / niece / nephew)\n\nYou judge age and pick the term. A waiter your age: **anh** or **chị**. A teenager: **em**. An elderly shopkeeper: **ông** / **bà**. Using the right term is basic politeness; getting it roughly right matters more than perfection.",
+    "examples": [
+      { "text": "Chào anh!", "translation": "Hello! (to a man a bit older than you)" },
+      { "text": "Chị ơi, cho em hỏi.", "translation": "Excuse me (older woman), may I ask. (you are younger)" },
+      { "text": "Cháu chào ông ạ.", "translation": "Hello, sir. (a child/young person to an old man)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Chào bạn! (to an elderly man)", "right": "Chào ông ạ!", "note": "bạn (friend/peer) sounds textbook-flat with elders; use ông/bà for older people." }
+    ],
+    "drills": [
+      { "prompt": "Greet a woman slightly older than you.", "answer": "Chào chị!" },
+      { "prompt": "Greet an old woman respectfully.", "answer": "Chào bà ạ!" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.pronoun-shifting-i-you",
+    "title": "How 'I' and 'you' shift with the relationship",
+    "cefr": "A2",
+    "explanationMd": "The kinship terms are **relative**, so the same person is different words depending on who is speaking. The pair moves together: whatever you call the other person, **you** usually call **yourself** the matching term.\n\n- Talking **up** to someone older: they are **anh/chị/ông/bà**, and you become **em** or **cháu**. *Anh khỏe không? Em khỏe.* (Are you well? I'm well.)\n- Talking **down** to someone younger: they are **em**, and you become **anh** or **chị**. *Em ăn chưa? Anh ăn rồi.* (Have you eaten? I have.)\n\nSo **em** can mean **I** (when speaking to an elder) or **you** (when speaking to a junior) — it depends on the direction. Two friends chatting might both call the older one **anh** and the younger one **em** throughout. When unsure, **tôi** (I) plus a kinship term for the other person is a safe mix.",
+    "examples": [
+      { "text": "Anh ơi, em hỏi một chút.", "translation": "Excuse me (older man), I have a quick question. (I = em)" },
+      { "text": "Em ơi, anh gọi món nhé.", "translation": "Hey (younger one), I'll order. (I = anh, you = em)" },
+      { "text": "Bà ơi, cháu giúp bà nhé.", "translation": "Grandma, I'll help you. (I = cháu, you = bà)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Anh khỏe không? Anh khỏe. (about yourself, to an elder)", "right": "Anh khỏe không? Em khỏe.", "note": "If the other person is anh, you are em — don't call yourself anh too." }
+    ],
+    "drills": [
+      { "prompt": "To an older man, ask 'Have you eaten?' and answer 'I have.'", "answer": "Anh ăn chưa? Em ăn rồi." },
+      { "prompt": "To a younger person, say 'I'll help you.'", "answer": "Anh giúp em nhé. (or Chị giúp em nhé.)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.classifiers",
+    "title": "Classifiers and Number + Classifier + Noun",
+    "cefr": "A1",
+    "explanationMd": "To count or point at a noun, Vietnamese inserts a **classifier** (a measure word) between the number and the noun: **Number + Classifier + Noun**. Common classifiers:\n\n- **cái** — general/inanimate things (bàn, ghế): *ba cái ghế* (three chairs)\n- **con** — animals (and a few things like knives, rivers): *hai con chó* (two dogs)\n- **chiếc** — vehicles and single items of a pair: *một chiếc xe* (one vehicle)\n- **người** — people: *bốn người* (four people)\n- **quả** (Northern) / trái (Southern) — fruit and round things: *năm quả cam* (five oranges)\n- **cuốn / quyển** — books: *một cuốn sách* (one book)\n\nWith a bare number you must include the classifier: **hai con mèo** (two cats), not *hai mèo*. The classifier is also used with **này/kia/đó** to say 'this/that one' (see demonstratives).",
+    "examples": [
+      { "text": "Tôi có hai con mèo.", "translation": "I have two cats." },
+      { "text": "Cho tôi ba quả cam.", "translation": "Give me three oranges." },
+      { "text": "Có bốn người trong phòng.", "translation": "There are four people in the room." }
+    ],
+    "commonErrors": [
+      { "wrong": "hai mèo", "right": "hai con mèo", "note": "A number needs a classifier before the noun: hai con mèo." },
+      { "wrong": "một cái chó", "right": "một con chó", "note": "Animals take con, not cái." }
+    ],
+    "drills": [
+      { "prompt": "Say 'three chairs'.", "answer": "ba cái ghế" },
+      { "prompt": "Say 'two dogs'.", "answer": "hai con chó" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.demonstratives-nay-kia-do",
+    "title": "This and that: này, kia, đó",
+    "cefr": "A1",
+    "explanationMd": "Demonstratives come **after** the noun (or after the classifier + noun), the opposite of English:\n\n- **này** — this (near the speaker): *cái này* (this one), *quyển sách này* (this book)\n- **đó / ấy** — that (near the listener / already mentioned): *cái đó* (that one)\n- **kia** — that over there (far from both): *cái kia* (that one over there)\n\nUse them with a classifier to mean 'this/that one': **cái này** (this one), **con kia** (that animal over there). To ask 'which', use **nào**: *cái nào?* (which one?).",
+    "examples": [
+      { "text": "Cái này bao nhiêu tiền?", "translation": "How much is this (one)?" },
+      { "text": "Quyển sách kia là của tôi.", "translation": "That book over there is mine." },
+      { "text": "Người đó là ai?", "translation": "Who is that person?" }
+    ],
+    "commonErrors": [
+      { "wrong": "này cái", "right": "cái này", "note": "The demonstrative follows the noun/classifier: cái này." },
+      { "wrong": "sách này quyển", "right": "quyển sách này", "note": "Order is classifier + noun + này: quyển sách này." }
+    ],
+    "drills": [
+      { "prompt": "Say 'this one' (a general object).", "answer": "cái này" },
+      { "prompt": "Say 'that house over there'.", "answer": "ngôi nhà kia (or cái nhà kia)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.past-da",
+    "title": "Past with đã",
+    "cefr": "A1",
+    "explanationMd": "The verb never changes for tense. To mark a completed / past action, put **đã** **before the verb**: **Tôi đã ăn** (I ate / I have eaten). **đã** is often optional when the time is already clear from context or a time word (**hôm qua** = yesterday), so *Hôm qua tôi đi Hà Nội* (Yesterday I went to Hanoi) needs no đã. Use **đã** when you want to make 'already did' explicit. To mark completion you can also add **rồi** at the end (see the rồi/chưa entry), and the two often combine: **đã... rồi**.",
+    "examples": [
+      { "text": "Tôi đã ăn sáng.", "translation": "I ate / have had breakfast." },
+      { "text": "Cô ấy đã đi làm.", "translation": "She (has) went to work." },
+      { "text": "Hôm qua trời đã mưa.", "translation": "It rained yesterday." }
+    ],
+    "commonErrors": [
+      { "wrong": "Tôi ăned sáng.", "right": "Tôi đã ăn sáng.", "note": "No verb endings — mark past with đã before the verb." },
+      { "wrong": "Tôi ăn đã.", "right": "Tôi đã ăn.", "note": "đã goes before the verb, not after." }
+    ],
+    "drills": [
+      { "prompt": "Make past: 'Tôi đi Hà Nội.'", "answer": "Tôi đã đi Hà Nội." },
+      { "prompt": "Say 'She has eaten.'", "answer": "Cô ấy đã ăn (rồi)." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.progressive-dang",
+    "title": "Progressive with đang",
+    "cefr": "A1",
+    "explanationMd": "To say an action is **happening right now** (the -ing form), put **đang** **before the verb**: **Tôi đang ăn** (I am eating). It expresses an ongoing action at the moment of speaking, or at a reference time: *Lúc đó tôi đang ngủ* (I was sleeping at that time). Drop **đang** for general truths and habits — you would not use it in *Tôi thích cà phê* (I like coffee).",
+    "examples": [
+      { "text": "Tôi đang học tiếng Việt.", "translation": "I am studying Vietnamese." },
+      { "text": "Cô ấy đang nấu ăn.", "translation": "She is cooking." },
+      { "text": "Bạn đang làm gì?", "translation": "What are you doing?" }
+    ],
+    "commonErrors": [
+      { "wrong": "Tôi đang thích cà phê.", "right": "Tôi thích cà phê.", "note": "Don't use đang with states/preferences like thích (to like)." },
+      { "wrong": "Tôi ăn đang.", "right": "Tôi đang ăn.", "note": "đang precedes the verb." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I am working.'", "answer": "Tôi đang làm việc." },
+      { "prompt": "Ask a friend 'What are you doing?'", "answer": "Bạn đang làm gì? (or Em đang làm gì?)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.future-se",
+    "title": "Future with sẽ",
+    "cefr": "A1",
+    "explanationMd": "For a **future** action, put **sẽ** **before the verb**: **Tôi sẽ đi** (I will go). Like đã, it is often optional when a future time word makes the meaning clear — *Ngày mai tôi đi Hà Nội* (Tomorrow I go/will go to Hanoi) is fine without sẽ. Use **sẽ** to state intentions and predictions: *Tôi sẽ gọi cho bạn* (I will call you).",
+    "examples": [
+      { "text": "Tôi sẽ đi Hà Nội.", "translation": "I will go to Hanoi." },
+      { "text": "Ngày mai tôi sẽ gọi cho anh.", "translation": "Tomorrow I will call you." },
+      { "text": "Trời sẽ mưa.", "translation": "It will rain." }
+    ],
+    "commonErrors": [
+      { "wrong": "Tôi will đi.", "right": "Tôi sẽ đi.", "note": "Use the Vietnamese marker sẽ before the verb." },
+      { "wrong": "Tôi đi sẽ.", "right": "Tôi sẽ đi.", "note": "sẽ comes before the verb." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I will eat later.' (later = lát nữa)", "answer": "Lát nữa tôi sẽ ăn." },
+      { "prompt": "Make future: 'Cô ấy học tiếng Anh.'", "answer": "Cô ấy sẽ học tiếng Anh." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.vua-moi-sap",
+    "title": "Just and about to: vừa / mới and sắp",
+    "cefr": "A2",
+    "explanationMd": "Two more time markers go **before the verb**:\n\n- **vừa / mới** (or **vừa mới**) — 'just (now)', an action that happened a moment ago: *Tôi vừa ăn xong* (I just finished eating), *Cô ấy mới đến* (She just arrived).\n- **sắp** — 'about to / soon', an action in the near future: *Tôi sắp đi* (I'm about to go), *Trời sắp mưa* (It's about to rain).\n\nThink of them as a scale: **sắp** (about to) → now → **vừa/mới** (just did). **sắp** often pairs with **rồi** for 'almost / any moment now': *Sắp xong rồi* (Almost done).",
+    "examples": [
+      { "text": "Tôi vừa ăn xong.", "translation": "I just finished eating." },
+      { "text": "Cô ấy mới về.", "translation": "She just got home." },
+      { "text": "Tàu sắp đến rồi.", "translation": "The train is about to arrive." }
+    ],
+    "commonErrors": [
+      { "wrong": "Tôi sắp ăn xong. (meaning 'I just ate')", "right": "Tôi vừa ăn xong.", "note": "sắp = about to (future); vừa/mới = just did (past)." }
+    ],
+    "drills": [
+      { "prompt": "Say 'She just arrived.'", "answer": "Cô ấy vừa/mới đến." },
+      { "prompt": "Say 'I'm about to leave.'", "answer": "Tôi sắp đi." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.roi-chua",
+    "title": "Already and not yet: rồi and chưa",
+    "cefr": "A1",
+    "explanationMd": "**rồi** = 'already / now' and goes at the **end** of the sentence to mark that something has happened or a state has changed: **Tôi ăn rồi** (I've already eaten), *Anh ấy đi rồi* (He's gone now). It often replaces or joins đã.\n\n**chưa** = 'not yet' and goes **before the verb** to say something hasn't happened: **Tôi chưa ăn** (I haven't eaten yet). So the natural pair is **...rồi** (done) vs **chưa...** (not yet). The question 'have you ...yet?' uses **...chưa?** at the end, answered with **rồi** (yes) or **chưa** (not yet) — see the questions entry.",
+    "examples": [
+      { "text": "Tôi ăn cơm rồi.", "translation": "I've already eaten." },
+      { "text": "Tôi chưa ăn cơm.", "translation": "I haven't eaten yet." },
+      { "text": "Anh ấy đi làm rồi.", "translation": "He has (already) gone to work." }
+    ],
+    "commonErrors": [
+      { "wrong": "Tôi rồi ăn.", "right": "Tôi ăn rồi.", "note": "rồi goes at the end of the sentence." },
+      { "wrong": "Tôi ăn chưa. (meaning 'I haven't eaten')", "right": "Tôi chưa ăn.", "note": "For a statement, chưa goes before the verb; chưa at the end makes it a question." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I've already gone.'", "answer": "Tôi đi rồi." },
+      { "prompt": "Say 'She hasn't come yet.'", "answer": "Cô ấy chưa đến." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.negation-khong",
+    "title": "Negation: không + verb",
+    "cefr": "A1",
+    "explanationMd": "To make a verb or adjective negative, put **không** ('not') **directly before** it: **Tôi không ăn** (I don't eat / am not eating), **Tôi không mệt** (I'm not tired). It works for all tenses; combine with time markers as **không** + verb, e.g. *Tôi sẽ không đi* (I won't go), *Tôi chưa không...* is wrong — use **chưa** alone for 'not yet'. Note the same word **không** also means 'zero' and appears in the yes/no question frame **có...không** (see questions).",
+    "examples": [
+      { "text": "Tôi không hiểu.", "translation": "I don't understand." },
+      { "text": "Cô ấy không thích cà phê.", "translation": "She doesn't like coffee." },
+      { "text": "Hôm nay tôi không đi làm.", "translation": "Today I'm not going to work." }
+    ],
+    "commonErrors": [
+      { "wrong": "Tôi ăn không.", "right": "Tôi không ăn.", "note": "không goes before the verb for negation (ăn không sounds like a question)." },
+      { "wrong": "Tôi không là mệt.", "right": "Tôi không mệt.", "note": "Adjectives take không directly, without là." }
+    ],
+    "drills": [
+      { "prompt": "Negate: 'Tôi hiểu.'", "answer": "Tôi không hiểu." },
+      { "prompt": "Say 'She isn't tired.'", "answer": "Cô ấy không mệt." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.negation-khong-phai",
+    "title": "Negating nouns: không phải (là)",
+    "cefr": "A1",
+    "explanationMd": "You cannot negate the linking verb **là** with plain **không**. To say 'is not (a) ...' before a **noun**, use **không phải (là)**: **Tôi không phải là sinh viên** (I am not a student). The **là** is often dropped in speech: *Đây không phải điện thoại của tôi* (This isn't my phone). Compare:\n\n- Before a **noun** → **không phải (là)**: *Cô ấy không phải là bác sĩ.* (She isn't a doctor.)\n- Before a **verb/adjective** → plain **không**: *Cô ấy không đi.* / *Cô ấy không cao.*\n\n**không phải** on its own also means 'that's not right / no'.",
+    "examples": [
+      { "text": "Tôi không phải là người Việt.", "translation": "I am not Vietnamese." },
+      { "text": "Đây không phải là nhà tôi.", "translation": "This is not my house." },
+      { "text": "Không phải, đó là chị tôi.", "translation": "No / That's not right, that's my older sister." }
+    ],
+    "commonErrors": [
+      { "wrong": "Tôi không là sinh viên.", "right": "Tôi không phải là sinh viên.", "note": "Negate là with không phải, not không alone." },
+      { "wrong": "Cô ấy không phải đi.", "right": "Cô ấy không đi.", "note": "Before a verb use plain không; không phải is for noun predicates." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I'm not a teacher.'", "answer": "Tôi không phải là giáo viên." },
+      { "prompt": "Say 'This isn't coffee.'", "answer": "Đây không phải là cà phê." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.question-co-khong-da-chua",
+    "title": "Yes/no questions: có...không and đã...chưa",
+    "cefr": "A1",
+    "explanationMd": "The main yes/no question frame wraps the verb: **có + verb + không?** → **Anh có ăn không?** (Do you eat / Are you eating?). Answer **có** (yes) or **không** (no). With adjectives you can drop có: *Anh khỏe không?* (Are you well?). For a plain question you may also just add **không?** to the end.\n\nTo ask 'have you ...yet?', use **đã + verb + chưa?** (đã is optional): **Anh (đã) ăn cơm chưa?** (Have you eaten yet?). Answer **rồi** (yes, already) or **chưa** (not yet). This đã...chưa frame is extremely common for checking on completed actions.",
+    "examples": [
+      { "text": "Anh có nói tiếng Anh không?", "translation": "Do you speak English?" },
+      { "text": "Chị khỏe không?", "translation": "Are you well?" },
+      { "text": "Em ăn cơm chưa? — Rồi. / Chưa.", "translation": "Have you eaten yet? — Yes (already). / Not yet." }
+    ],
+    "commonErrors": [
+      { "wrong": "Anh có khỏe không phải?", "right": "Anh có khỏe không?", "note": "The frame is có...không; don't add phải." },
+      { "wrong": "Anh ăn cơm không? (to ask 'have you eaten yet')", "right": "Anh ăn cơm chưa?", "note": "For 'yet?', end with chưa, not không." }
+    ],
+    "drills": [
+      { "prompt": "Ask 'Do you drink coffee?'", "answer": "Anh/Chị có uống cà phê không?" },
+      { "prompt": "Ask 'Have you gone yet?'", "answer": "Anh/Chị đi chưa?" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.question-tags-phai-khong-a",
+    "title": "Tag questions: phải không and à",
+    "cefr": "A2",
+    "explanationMd": "To turn a statement into a confirmation question ('right?', 'isn't it?'), add **phải không?** at the end: **Anh là người Hà Nội, phải không?** (You're from Hanoi, right?). In casual speech it shrinks to **phải không → không?** or even the very common **... à?**, a softer 'oh?/really?': *Anh đi Hà Nội à?* (Oh, you're going to Hanoi?). **à** signals mild surprise or friendly checking. Answer confirmations with **phải / đúng rồi** (that's right) or **không phải** (no).",
+    "examples": [
+      { "text": "Anh là giáo viên, phải không?", "translation": "You're a teacher, aren't you?" },
+      { "text": "Em mệt à?", "translation": "Oh, you're tired?" },
+      { "text": "Đây là nhà của chị, phải không? — Đúng rồi.", "translation": "This is your house, right? — That's right." }
+    ],
+    "commonErrors": [
+      { "wrong": "Anh là giáo viên, không phải?", "right": "Anh là giáo viên, phải không?", "note": "The fixed tag is phải không, in that order." }
+    ],
+    "drills": [
+      { "prompt": "Add a tag: 'Chị là người Việt ___?'", "answer": "phải không?" },
+      { "prompt": "Ask with surprise 'Oh, you're going now?'", "answer": "Anh đi bây giờ à?" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.question-words",
+    "title": "Question words (gì, ai, đâu, nào, bao giờ, bao nhiêu, thế nào, tại sao)",
+    "cefr": "A1",
+    "explanationMd": "Question words usually stay **in the place of the answer** — you do not move them to the front like English:\n\n- **gì** — what: *Anh làm gì?* (What do you do?)\n- **ai** — who: *Ai đến?* (Who is coming?) / *Đó là ai?* (Who is that?)\n- **đâu** — where: *Anh đi đâu?* (Where are you going?), *Ở đâu?* (Where?)\n- **nào** — which (after a noun/classifier): *Cái nào?* (Which one?)\n- **bao giờ / khi nào** — when: front = future (*Bao giờ anh đi?*), end = past (*Anh đi bao giờ?*)\n- **bao nhiêu** — how much/many: *Bao nhiêu tiền?* (How much money?)\n- **thế nào** — how / what like: *Món này thế nào?* (How's this dish?)\n- **tại sao / sao** — why: *Tại sao anh buồn?* (Why are you sad?)",
+    "examples": [
+      { "text": "Anh tên là gì?", "translation": "What is your name?" },
+      { "text": "Nhà vệ sinh ở đâu?", "translation": "Where is the toilet?" },
+      { "text": "Cái này bao nhiêu tiền?", "translation": "How much is this?" }
+    ],
+    "commonErrors": [
+      { "wrong": "Gì anh làm?", "right": "Anh làm gì?", "note": "The question word stays in the answer's position, not at the front." },
+      { "wrong": "Anh đi đâu không?", "right": "Anh đi đâu?", "note": "Don't add không to a wh-question; đâu already asks 'where'." }
+    ],
+    "drills": [
+      { "prompt": "Ask 'Where are you going?'", "answer": "Anh/Chị đi đâu?" },
+      { "prompt": "Ask 'Who is that?'", "answer": "Đó là ai? (or Người đó là ai?)" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.la-vs-adjectives",
+    "title": "'To be' là vs. adjectives (no là before adjectives)",
+    "cefr": "A1",
+    "explanationMd": "**là** links a subject to a **noun** ('X is a Y'): **Tôi là sinh viên** (I am a student), *Đây là cà phê* (This is coffee). But with **adjectives** Vietnamese uses **no 'to be' at all** — the adjective works like a verb on its own: **Tôi mệt** (I am tired), **Cà phê nóng** (The coffee is hot). Saying *Tôi là mệt* is a classic beginner mistake. Quick test: before a noun → use **là**; before an adjective → use nothing (and negate with **không** directly: *Tôi không mệt*).",
+    "examples": [
+      { "text": "Tôi là bác sĩ.", "translation": "I am a doctor. (noun → là)" },
+      { "text": "Tôi rất vui.", "translation": "I am very happy. (adjective → no là)" },
+      { "text": "Phở này ngon.", "translation": "This phở is delicious." }
+    ],
+    "commonErrors": [
+      { "wrong": "Tôi là mệt.", "right": "Tôi mệt.", "note": "No là before an adjective." },
+      { "wrong": "Cà phê nóng là.", "right": "Cà phê nóng.", "note": "Adjectives stand alone as the predicate — don't add là." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I am a student.'", "answer": "Tôi là sinh viên." },
+      { "prompt": "Say 'The weather is hot.' (weather = trời)", "answer": "Trời nóng." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.adjectives-after-noun",
+    "title": "Adjectives follow the noun",
+    "cefr": "A1",
+    "explanationMd": "When an adjective describes a noun, it comes **after** the noun, the reverse of English: **nhà đẹp** (house beautiful = a beautiful house), **áo đỏ** (shirt red = a red shirt), **cà phê nóng** (hot coffee). Intensifiers like **rất** (very) go **before** the adjective: *một ngôi nhà rất đẹp* (a very beautiful house). Full order inside a noun phrase is roughly: (classifier) + noun + adjective + demonstrative — *cái áo đỏ này* (this red shirt).",
+    "examples": [
+      { "text": "Tôi thích áo đỏ.", "translation": "I like the red shirt." },
+      { "text": "Đây là một ngôi nhà đẹp.", "translation": "This is a beautiful house." },
+      { "text": "Cái áo trắng này rất đẹp.", "translation": "This white shirt is very beautiful." }
+    ],
+    "commonErrors": [
+      { "wrong": "đỏ áo", "right": "áo đỏ", "note": "Adjective comes after the noun: áo đỏ (red shirt)." },
+      { "wrong": "một đẹp nhà", "right": "một ngôi nhà đẹp", "note": "Keep noun before adjective: nhà đẹp." }
+    ],
+    "drills": [
+      { "prompt": "Say 'a big house' (big = to).", "answer": "một ngôi nhà to" },
+      { "prompt": "Say 'hot coffee'.", "answer": "cà phê nóng" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.comparatives",
+    "title": "Comparatives: hơn, nhất, bằng, càng...càng",
+    "cefr": "A2",
+    "explanationMd": "Comparisons use small words after the adjective:\n\n- **hơn** — 'more than': **A + adjective + hơn + B** → *Cà phê đắng hơn trà* (Coffee is more bitter than tea), *Anh ấy cao hơn tôi* (He is taller than me).\n- **nhất** — 'the most' (superlative): **adjective + nhất** → *Phở này ngon nhất* (This phở is the most delicious).\n- **bằng** — 'as ... as / equal to': *Tôi cao bằng anh* (I'm as tall as you).\n- **càng ... càng ...** — 'the more ... the more ...': *Càng học càng thích* (The more I study, the more I like it).\n\nThere are no -er/-est endings; the adjective never changes.",
+    "examples": [
+      { "text": "Hà Nội lớn hơn Huế.", "translation": "Hanoi is bigger than Huế." },
+      { "text": "Món này ngon nhất.", "translation": "This dish is the most delicious." },
+      { "text": "Càng ngày càng nóng.", "translation": "It gets hotter day by day (the more time passes, the hotter)." }
+    ],
+    "commonErrors": [
+      { "wrong": "Anh ấy cao hơn nhất.", "right": "Anh ấy cao nhất.", "note": "Use nhất alone for the superlative; don't mix with hơn." },
+      { "wrong": "Cà phê hơn đắng trà.", "right": "Cà phê đắng hơn trà.", "note": "Order is adjective + hơn: đắng hơn." }
+    ],
+    "drills": [
+      { "prompt": "Say 'He is taller than me.'", "answer": "Anh ấy cao hơn tôi." },
+      { "prompt": "Say 'This coffee is the best.'", "answer": "Cà phê này ngon nhất." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.possession-cua",
+    "title": "Possession with của",
+    "cefr": "A1",
+    "explanationMd": "Possession is shown with **của** ('of'), placed between the thing and the owner: **thing + của + owner** → **sách của tôi** (book of me = my book), **nhà của cô ấy** (her house). The order is the reverse of English 'my book'. With close relationships (family, body parts) **của** is often dropped: *mẹ tôi* (my mother), *tay tôi* (my hand). To ask 'whose?', use **của ai**: *Cái này của ai?* (Whose is this?).",
+    "examples": [
+      { "text": "Đây là điện thoại của tôi.", "translation": "This is my phone." },
+      { "text": "Xe của anh ấy màu đen.", "translation": "His car is black." },
+      { "text": "Cái túi này của ai?", "translation": "Whose bag is this?" }
+    ],
+    "commonErrors": [
+      { "wrong": "tôi của sách", "right": "sách của tôi", "note": "Order is thing + của + owner: sách của tôi (my book)." },
+      { "wrong": "của tôi sách", "right": "sách của tôi", "note": "của follows the possessed noun, not precedes it." }
+    ],
+    "drills": [
+      { "prompt": "Say 'my house'.", "answer": "nhà của tôi (or nhà tôi)" },
+      { "prompt": "Ask 'Whose phone is this?'", "answer": "Điện thoại này của ai?" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.co-have-there-is",
+    "title": "có: to have and there is/are",
+    "cefr": "A1",
+    "explanationMd": "**có** covers both **'to have'** and **'there is / there are'**:\n\n- Possession: **Tôi có hai con mèo** (I have two cats).\n- Existence: **Có** + noun → *Có một nhà hàng gần đây* (There's a restaurant nearby), *Ở đây có wifi không?* (Is there wifi here?).\n\nNegate with **không có** (don't have / there isn't): *Tôi không có tiền* (I don't have money). Ask with the **có...không** frame: *Anh có xe không?* (Do you have a car?). Note **có** is also the 'yes' answer to those questions.",
+    "examples": [
+      { "text": "Tôi có một em gái.", "translation": "I have a younger sister." },
+      { "text": "Ở đây có nhà vệ sinh không?", "translation": "Is there a toilet here?" },
+      { "text": "Tôi không có tiền mặt.", "translation": "I don't have cash." }
+    ],
+    "commonErrors": [
+      { "wrong": "Tôi là hai con mèo.", "right": "Tôi có hai con mèo.", "note": "Use có (have), not là, for possession." },
+      { "wrong": "Tôi không tiền.", "right": "Tôi không có tiền.", "note": "Negate 'have' as không có, keeping có." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I have two children.'", "answer": "Tôi có hai con." },
+      { "prompt": "Ask 'Is there coffee?'", "answer": "Có cà phê không?" }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.modals",
+    "title": "Modal verbs: muốn, có thể / được, phải, nên",
+    "cefr": "A2",
+    "explanationMd": "Modal ideas are separate helper words placed **before the main verb** (except **được**):\n\n- **muốn** — want to: **Tôi muốn ăn phở** (I want to eat phở).\n- **có thể** — can / be able to (before the verb): *Tôi có thể bơi* (I can swim). The word **được** means 'can / be allowed' and usually comes **after** the verb or phrase: *Tôi nói tiếng Việt được* (I can speak Vietnamese), *Ở đây hút thuốc được không?* (Can one smoke here?).\n- **phải** — must / have to: *Tôi phải đi bây giờ* (I must go now).\n- **nên** — should: *Anh nên nghỉ ngơi* (You should rest).\n\nNegate before the verb ones with **không**: *không muốn* (don't want), *không nên* (shouldn't), *không phải* here would be confused with 'not be', so 'don't have to' is **không cần** (need not).",
+    "examples": [
+      { "text": "Tôi muốn uống nước.", "translation": "I want to drink water." },
+      { "text": "Anh có thể giúp tôi không?", "translation": "Can you help me?" },
+      { "text": "Bạn nên đi ngủ sớm.", "translation": "You should go to bed early." }
+    ],
+    "commonErrors": [
+      { "wrong": "Tôi muốn ăn phở được.", "right": "Tôi muốn ăn phở.", "note": "Don't stack modals randomly; muốn + verb is enough for 'want to'." },
+      { "wrong": "Tôi được nói tiếng Việt.", "right": "Tôi nói tiếng Việt được. (or Tôi có thể nói tiếng Việt.)", "note": "được for 'can/able' usually comes after the verb phrase; use có thể before the verb." }
+    ],
+    "drills": [
+      { "prompt": "Say 'I want to go home.'", "answer": "Tôi muốn về nhà." },
+      { "prompt": "Say 'You must go now.'", "answer": "Anh/Chị phải đi bây giờ." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.giving-cho",
+    "title": "Giving and 'for' with cho",
+    "cefr": "A2",
+    "explanationMd": "**cho** means **'give'** and also **'to / for'** (the recipient). As a main verb: **Tôi cho anh ấy một quyển sách** (I give him a book) — order is **cho + recipient + thing**. As a preposition marking the recipient, it comes after the verb: *Tôi gọi cho anh* (I call you), *Mua cho tôi một cốc cà phê* (Buy me a coffee). In shops and restaurants **Cho tôi...** is the standard polite way to order: **Cho tôi một bát phở** (Give me / I'll have a bowl of phở).",
+    "examples": [
+      { "text": "Cho tôi một cốc cà phê.", "translation": "Give me / I'll have a cup of coffee." },
+      { "text": "Tôi sẽ gọi cho anh.", "translation": "I will call you." },
+      { "text": "Mẹ cho con tiền.", "translation": "Mom gives the child money." }
+    ],
+    "commonErrors": [
+      { "wrong": "Cho một cốc cà phê tôi.", "right": "Cho tôi một cốc cà phê.", "note": "Recipient comes right after cho: cho tôi + thing." },
+      { "wrong": "Tôi gọi anh. (meaning 'I'll call you')", "right": "Tôi gọi cho anh.", "note": "Use cho to mark the person you call/give to." }
+    ],
+    "drills": [
+      { "prompt": "Order 'one bowl of phở' politely.", "answer": "Cho tôi một bát phở." },
+      { "prompt": "Say 'I'll call you.' (to an older man)", "answer": "Em sẽ gọi cho anh." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.time-expression-word-order",
+    "title": "Word order of time expressions",
+    "cefr": "A2",
+    "explanationMd": "Time expressions (hôm qua, ngày mai, bây giờ, lúc 7 giờ...) are flexible but usually sit at the **start** of the sentence or right **after the subject** — not at the very end like English often does: **Hôm qua tôi đi Hà Nội** or **Tôi đi Hà Nội hôm qua** (both fine), with the front position most natural. Clock times use **lúc** ('at'): *Tôi dậy lúc 7 giờ* (I get up at 7). A rough order for a full sentence is **Time – Subject – (marker) – Verb – Object – Place**: *Ngày mai tôi sẽ gặp anh ở quán cà phê* (Tomorrow I'll meet you at the café).",
+    "examples": [
+      { "text": "Hôm nay tôi rất bận.", "translation": "Today I'm very busy." },
+      { "text": "Tôi ăn sáng lúc 7 giờ.", "translation": "I eat breakfast at 7 o'clock." },
+      { "text": "Ngày mai chúng ta đi biển nhé.", "translation": "Tomorrow let's go to the beach." }
+    ],
+    "commonErrors": [
+      { "wrong": "Tôi lúc 7 giờ dậy.", "right": "Tôi dậy lúc 7 giờ.", "note": "A clock time with lúc normally follows the verb: dậy lúc 7 giờ." },
+      { "wrong": "Đi Hà Nội hôm qua tôi.", "right": "Hôm qua tôi đi Hà Nội.", "note": "Keep Subject–Verb order; put the time word at the front or after the subject." }
+    ],
+    "drills": [
+      { "prompt": "Say 'Tomorrow I will go to work.'", "answer": "Ngày mai tôi sẽ đi làm." },
+      { "prompt": "Say 'I sleep at 11 o'clock.'", "answer": "Tôi ngủ lúc 11 giờ." }
+    ],
+    "relatedVocabulary": []
+  },
+  {
+    "schemaVersion": 1,
+    "key": "grammar.final-particles",
+    "title": "Final particles for politeness and tone: nhé, nhỉ, ạ, đấy",
+    "cefr": "A2",
+    "explanationMd": "Small words at the **end** of a sentence carry tone, politeness, and attitude — they are essential for sounding natural:\n\n- **nhé** — friendly suggestion, gentle request, or 'okay?': *Đi ăn nhé!* (Let's go eat, okay?), *Nhớ gọi cho mình nhé* (Remember to call me, okay).\n- **nhỉ** — seeking agreement, 'isn't it? / right?': *Trời đẹp nhỉ!* (Nice weather, isn't it!).\n- **ạ** — a respect particle added when speaking to elders/superiors; makes anything more polite: *Vâng ạ* (Yes (respectfully)), *Cảm ơn ạ* (Thank you, respectfully).\n- **đấy** — draws attention / emphasis, 'you know / there': *Đắt đấy!* (That's expensive, you know!).\n\nAdding **ạ** at the end of sentences with elders is one of the easiest ways to sound polite.",
+    "examples": [
+      { "text": "Mình đi nhé!", "translation": "I'm off, okay! / See you!" },
+      { "text": "Hôm nay trời đẹp nhỉ!", "translation": "The weather's nice today, isn't it!" },
+      { "text": "Cháu chào bà ạ.", "translation": "Hello, grandma. (respectful)" }
+    ],
+    "commonErrors": [
+      { "wrong": "Cảm ơn. (to an elderly person)", "right": "Cảm ơn ạ.", "note": "Add ạ with elders/superiors to sound properly polite." },
+      { "wrong": "Trời đẹp nhé! (fishing for agreement)", "right": "Trời đẹp nhỉ!", "note": "For 'isn't it?' use nhỉ; nhé is for suggestions/requests." }
+    ],
+    "drills": [
+      { "prompt": "Suggest to a friend 'Let's eat, okay?'", "answer": "Ăn thôi nhé! (or Đi ăn nhé!)" },
+      { "prompt": "Say 'Thank you' respectfully to an elder.", "answer": "Cảm ơn ạ." }
+    ],
+    "relatedVocabulary": []
+  }
+]

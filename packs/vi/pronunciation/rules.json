@@ -1,0 +1,358 @@
+[
+  {
+    "schemaVersion": 1,
+    "key": "pron.tones-overview",
+    "grapheme": "The six tones · thanh điệu (Northern)",
+    "ipa": "ngang ˧ · huyền ˧˩ · sắc ˧˥ · hỏi ˧˩˧ · ngã ˧ˀ˥ · nặng ˧˩ˀ",
+    "description": "Vietnamese pitch melody changes meaning, and the tone is written right into the word via its diacritic. Northern Hanoi speech has six. Picture a five-line staff, low (1) to high (5): the same syllable 'ma' becomes six different words depending on its contour. Two of them (ngã, nặng) also involve a glottal catch — your voice momentarily stops — which English never uses lexically. Learn to hear all six here; every Vietnamese word is one of them.",
+    "minimalPairs": [
+      {
+        "a": "ma (ngang, level ˧)",
+        "b": "ghost — a flat mid note, held level"
+      },
+      {
+        "a": "mà (huyền, low-falling ˧˩)",
+        "b": "but / which — start mid and drift down low, relaxed and a touch breathy"
+      },
+      {
+        "a": "má (sắc, high-rising ˧˥)",
+        "b": "cheek / mother — push up from mid to high, bright and clear"
+      },
+      {
+        "a": "mả (hỏi, dipping ˧˩˧)",
+        "b": "grave / tomb — dip down then curl back up, a smooth question-like scoop"
+      },
+      {
+        "a": "mã (ngã, broken-rising ˧ˀ˥)",
+        "b": "horse / code — rise like sắc but with a glottal CATCH in the middle, as if your voice cracks then finishes higher"
+      },
+      {
+        "a": "mạ (nặng, heavy ˧˩ˀ)",
+        "b": "rice seedling — drop low, short and hard, cut off by a glottal stop, like a grunted 'uh!'"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.tone-ngang",
+    "grapheme": "Ngang · level (no mark)",
+    "ipa": "˧ (33 — mid, level)",
+    "description": "The unmarked tone: a steady mid-pitch note held flat, maybe a touch higher than your rest pitch. No rise, no fall, no catch. The neutral baseline the other five bend away from.",
+    "minimalPairs": [
+      {
+        "a": "ba",
+        "b": "three / dad — flat mid note"
+      },
+      {
+        "a": "không",
+        "b": "no / zero — level tone"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.tone-huyen",
+    "grapheme": "Huyền · low falling ( ` )",
+    "ipa": "˧˩ (21/31 — low, falling, breathy)",
+    "description": "Start around mid and slope gently down to the bottom of your range, relaxed and slightly breathy — like a soft, tired exhale. Lower and calmer than English falling intonation.",
+    "minimalPairs": [
+      {
+        "a": "bà",
+        "b": "grandmother / she (older woman) — low falling"
+      },
+      {
+        "a": "về",
+        "b": "to return / go home — low falling"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.tone-sac",
+    "grapheme": "Sắc · high rising ( ´ )",
+    "ipa": "˧˥ (35/45 — rising to high)",
+    "description": "Climb from mid up to the top of your range, bright and clean, no catch. The melody of an eager English 'yeah?' going up. Its evil twin is ngã — same rise, but ngã adds a glottal break.",
+    "minimalPairs": [
+      {
+        "a": "cá",
+        "b": "fish — high rising"
+      },
+      {
+        "a": "nước",
+        "b": "water / country — rising on a short, stopped syllable"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.tone-hoi",
+    "grapheme": "Hỏi · dipping-rising ( ˀ / hook ả )",
+    "ipa": "˧˩˧ (313/214 — dip then rise)",
+    "description": "Begin mid, dip down, then curl back up — a smooth valley, no glottal catch (in the North). It sounds like a drawn-out, thoughtful English 'really…?'. Distinct from ngã, which breaks in the middle; hỏi is smooth throughout.",
+    "minimalPairs": [
+      {
+        "a": "phở",
+        "b": "the noodle soup — dipping tone"
+      },
+      {
+        "a": "hỏi",
+        "b": "to ask — the tone named after itself: dip and rise"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.tone-nga",
+    "grapheme": "Ngã · broken rising ( ~ )",
+    "ipa": "˧ˀ˥ (3ʔ5 — rise with a mid glottal stop)",
+    "description": "The hardest tone for English speakers. Start mid, rise toward high like sắc — but crack your voice with a glottal stop partway through, then finish the rise. It's a rising note interrupted by a tiny 'uh-oh' catch. If you can't do the break yet, Northern speakers will still understand a clean sắc, but aim for the catch.",
+    "minimalPairs": [
+      {
+        "a": "mã",
+        "b": "horse / code (ngã) — vs má 'cheek' (sắc): same rise, ngã has the break"
+      },
+      {
+        "a": "cũng",
+        "b": "also / too — very common; rise with a glottal catch"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.tone-nang",
+    "grapheme": "Nặng · heavy ( dot below ạ )",
+    "ipa": "˧˩ˀ (21ʔ — low, short, glottal-stopped)",
+    "description": "A low, short, heavy tone that drops fast and is cut off hard by a glottal stop — the syllable feels clipped and 'weighted', like a grunted 'uh!' with the throat snapping shut. Shorter than all the others.",
+    "minimalPairs": [
+      {
+        "a": "mạ",
+        "b": "rice seedling — heavy, cut off short"
+      },
+      {
+        "a": "một",
+        "b": "one — the number, on a short stopped syllable"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.d-implosive",
+    "grapheme": "đ vs d/gi",
+    "ipa": "đ = ɗ (implosive) · d, gi = z (North)",
+    "description": "Two letters that trip up beginners. đ (d with a bar) is an implosive 'd' — a normal-sounding d made by pulling air slightly inward, as in đi 'to go'. Plain d and the digraph gi are NOT 'd' at all in the North — they're a 'z' sound: da 'skin' = 'za', gia đình 'family' = 'za-din'.",
+    "minimalPairs": [
+      {
+        "a": "đi (to go)",
+        "b": "implosive đ = a firm 'd'"
+      },
+      {
+        "a": "da (skin)",
+        "b": "plain d = 'z' in the North ('za')"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.north-z-merger",
+    "grapheme": "Northern d / gi / r all = /z/",
+    "ipa": "d, gi, r → z (Hanoi)",
+    "description": "In Northern speech, three spellings collapse to one sound, /z/: d (da 'zah'), gi (giá 'záh'), and r (rồi 'zồi' 'already'). In the South these stay distinct (r is a real 'r'). Learn the /z/ for Hanoi, but recognize the spellings are different words.",
+    "minimalPairs": [
+      {
+        "a": "rồi",
+        "b": "already — Hanoi 'zồi', Saigon 'rồi'"
+      },
+      {
+        "a": "giá",
+        "b": "price — Hanoi 'záh'"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.vowel-o-horn",
+    "grapheme": "The vowel ơ (and â)",
+    "ipa": "ơ = əː · â = ə̆",
+    "description": "ơ is a mid central unrounded vowel, like the 'u' in 'fur' with unrounded lips, held long: cơm 'rice', bơ 'butter/avocado'. â is the same quality but SHORT: sân 'yard'. Don't round the lips — that turns it into ô ('oh').",
+    "minimalPairs": [
+      {
+        "a": "cơm (rice)",
+        "b": "long ơ"
+      },
+      {
+        "a": "cân (to weigh)",
+        "b": "short â — vs côn/cơn different vowels"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.vowel-u-horn",
+    "grapheme": "The vowel ư",
+    "ipa": "ɯ (unrounded high back)",
+    "description": "Like the 'oo' in 'food' but with lips pulled back flat and unrounded — the same alien vowel Thai has. Found in tư 'four/private', chưa 'not yet', nước 'water'. Smile while you say 'oo'.",
+    "minimalPairs": [
+      {
+        "a": "chưa",
+        "b": "not yet — unrounded ư"
+      },
+      {
+        "a": "tư",
+        "b": "fourth / private"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.final-ng-labial",
+    "grapheme": "Final -ng / -c after rounded vowels",
+    "ipa": "-ŋm / -kp̚ (double closure)",
+    "description": "After rounded back vowels (o, ô, u), a final -ng or -c is made with a simultaneous lip closure — học 'to study' ends with the lips popping shut ('hawkp'), and không 'no' ends with rounded lips ('khawngm'). English speakers miss the lip-round on the final.",
+    "minimalPairs": [
+      {
+        "a": "học",
+        "b": "to study — final -c with lips closing"
+      },
+      {
+        "a": "không",
+        "b": "no — final -ng with rounded lips"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.nh",
+    "grapheme": "nh (palatal nasal)",
+    "ipa": "ɲ (initial) · -ɲ / -jŋ (final)",
+    "description": "nh is a palatal 'ny' (like Spanish ñ or 'canyon'): nhà 'house' = 'nyah'. As a final it colours the vowel toward an 'i/ng' glide: anh 'older brother' ≈ 'ang/ain'.",
+    "minimalPairs": [
+      {
+        "a": "nhà (house)",
+        "b": "initial nh = 'ny'"
+      },
+      {
+        "a": "anh",
+        "b": "older brother — final -nh"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.ng-ngh",
+    "grapheme": "Initial ng- / ngh-",
+    "ipa": "ŋ (start of a syllable)",
+    "description": "Vietnamese starts words with the 'ng' sound English only puts at the end: ngon 'delicious', người 'person', nghe 'to listen' (ngh before e/i/ê). Say 'singer', hold the 'ng', drop the 'si—'.",
+    "minimalPairs": [
+      {
+        "a": "ngon",
+        "b": "delicious — initial ng-"
+      },
+      {
+        "a": "nghe",
+        "b": "to listen — ngh- before e"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.kh-velar",
+    "grapheme": "kh (velar fricative)",
+    "ipa": "x (like Scottish 'loch')",
+    "description": "kh is not an English 'k' — it's a raspy velar fricative, the 'ch' in 'loch' or German 'Bach': không 'no' = 'khong' with friction at the back of the throat, khách 'guest'.",
+    "minimalPairs": [
+      {
+        "a": "khách",
+        "b": "guest — raspy kh"
+      },
+      {
+        "a": "không",
+        "b": "no — kh, not a clean k"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.ch-tr",
+    "grapheme": "ch / tr (Northern merger)",
+    "ipa": "ch, tr → tɕ (Hanoi)",
+    "description": "In the North, ch and tr are both a soft unaspirated 'ch': trà 'tea' and cha 'father' start alike ('cha'). In the South tr is a distinct retroflex. Learn the Hanoi merger; note the spellings differ.",
+    "minimalPairs": [
+      {
+        "a": "trà (tea)",
+        "b": "Hanoi 'chà'"
+      },
+      {
+        "a": "chè (sweet soup)",
+        "b": "also 'ch'"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.final-stops",
+    "grapheme": "Final unreleased -c -t -p",
+    "ipa": "k̚ t̚ p̚ (stopped)",
+    "description": "Like Thai, final c/t/p are cut off with no release — một 'one' ends with the tongue at 't', air stopped, no 'tuh'. These short stopped syllables only ever carry sắc or nặng (rising or heavy).",
+    "minimalPairs": [
+      {
+        "a": "một",
+        "b": "one — stopped final -t"
+      },
+      {
+        "a": "đẹp",
+        "b": "beautiful — stopped final -p"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.diphthongs",
+    "grapheme": "Diphthongs iê/yê · uô · ươ",
+    "ipa": "iə · uə · ɯə",
+    "description": "Three centering glides that end in a soft 'ə': tiền 'money' (iê), muốn 'to want' (uô), người 'person' (ươ). Glide smoothly into the schwa — one syllable, and don't drop the tone.",
+    "minimalPairs": [
+      {
+        "a": "tiền",
+        "b": "money (iê glide)"
+      },
+      {
+        "a": "muốn",
+        "b": "to want (uô glide)"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.syllable-rhythm",
+    "grapheme": "One syllable, one tone, written apart",
+    "ipa": "monosyllabic, syllable-timed",
+    "description": "Vietnamese is written with a space around every syllable, and each syllable carries exactly one tone at roughly equal length — no reduced/schwa syllables like English. 'Việt Nam' is two full tone-bearing beats, not 'vyet-num'. Give every syllable its note.",
+    "minimalPairs": [
+      {
+        "a": "Việt Nam",
+        "b": "two equal tone-bearing syllables (nặng, then level)"
+      },
+      {
+        "a": "cảm ơn",
+        "b": "'thank you' — two beats: hỏi, then level"
+      }
+    ]
+  },
+  {
+    "schemaVersion": 1,
+    "key": "pron.e-o-close-open",
+    "grapheme": "ê/e and ô/o/ơ (close vs open)",
+    "ipa": "ê e̛ ô ɔ əː",
+    "description": "Vietnamese splits vowels English lumps together. ê is a close ‘ay’ (êm ‘soft/gentle’) while e is open ‘eh’ (em ‘younger sibling’). ô is close ‘oh’ (cô ‘aunt/miss’), o is open ‘aw’ (co ‘to shrink’), and ơ is the unrounded central vowel (cơ ‘opportunity’). Keep the mouth tension distinct — they are different words.",
+    "minimalPairs": [
+      {
+        "a": "cô (aunt/Miss, close ô)",
+        "b": "vs cơ ‘opportunity’ (unrounded ơ)"
+      },
+      {
+        "a": "êm (gentle, close ê)",
+        "b": "vs em ‘younger sibling’ (open e)"
+      }
+    ]
+  }
+]
